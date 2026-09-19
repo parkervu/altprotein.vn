@@ -22,6 +22,10 @@ The compiled Worker returned successful responses for the homepage, chapter page
 
 A fresh checkout installed successfully with `pnpm install --frozen-lockfile`. Content validation and all eight unit tests passed from that clean installation. Type checking completed without errors or warnings, and its production build succeeded. The build emits an upstream large-chunk advisory for bundled CMS assets; this is not a failed build.
 
-## Deployment boundary
+## Production deployment — 19 September 2026
 
-No live Cloudflare resources or DNS changes were made. Production account access, remote D1 migration, domain-bound passkeys, DNS/TLS, and live backup/observability checks remain part of deployment, as detailed in `deployment.md`.
+Deployed to https://scoping.altprotein.vn with Worker version `f2da4b02-2935-4429-8c39-707361e99200`. D1, private R2 and session KV were provisioned. The report import created all 20 entries; the administrator completed passkey registration on the final domain. A second deployment retained the imported content and completed setup.
+
+Verified HTTPS responses for all 19 chapters, homepage, front matter, sitemap and logo; 404 for an unknown chapter; 403 for anonymous previews and the development login endpoint. Public and authoritative DNS resolve to Cloudflare. The operator's local resolver initially retained an NXDOMAIN response, so endpoint checks used the authoritative IP with full TLS hostname verification.
+
+A private D1 backup was exported outside Git. Live request logs and two scheduled maintenance events showed successful outcomes without exceptions. A backup restore drill remains an operational follow-up check. Desktop and mobile browser smoke checks passed without runtime errors or mobile page overflow. The original local persistence and editor tests remain the evidence for edit/rebuild behavior; production content was not changed for those tests.

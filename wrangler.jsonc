@@ -11,10 +11,20 @@
   "env": {
     "production": {
       "name": "altprotein-scoping",
-      "d1_databases": [{ "binding": "DB", "database_name": "altprotein-scoping" }],
+      "account_id": "ec5e9c2a4c8ff209dd8f16b129809657",
+      "workers_dev": false,
+      "kv_namespaces": [{ "binding": "SESSION", "id": "edaede5269d745128ab384f35df189c8" }],
+      "preview_urls": false,
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "altprotein-scoping",
+          "database_id": "24951da1-734d-45c8-91ca-8a72934de162",
+        },
+      ],
       "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "altprotein-scoping-media" }],
       "triggers": { "crons": ["* * * * *"] },
-      // After first setup: "routes": [{ "pattern": "scoping.altprotein.vn", "custom_domain": true }]
+      "routes": [{ "pattern": "scoping.altprotein.vn", "custom_domain": true }],
     },
   },
 }
