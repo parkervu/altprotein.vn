@@ -4,6 +4,7 @@ import type { ChapterData } from '../../lib/types';
 import Base from '../../layouts/Base.astro';
 import Contents from '../../components/Contents.astro';
 import EvidenceFilters from '../../components/EvidenceFilters.astro';
+import ScenarioTools from '../../components/ScenarioTools';
 import { getChapters, mayPreview } from '../../lib/content';
 import { chapterHref, headingId, textOf } from '../../lib/report.mjs';
 import { renderReport, referenceMap } from '../../lib/render.mjs';
@@ -77,6 +78,7 @@ const html = entry
               </ol>
             </details>
           )}
+          {number === 5 && <ScenarioTools client:load />}
           <div class="prose" set:html={html} />
           <nav class="chapter-pagination" aria-label="Chapter navigation">
             {previous ? (

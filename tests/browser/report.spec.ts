@@ -41,6 +41,17 @@ test('evidence filter and reset work with keyboard and badge clicks', async ({ p
   await page.locator('.evidence-badge').first().click();
   await expect(button).toHaveAttribute('aria-pressed', 'true');
 });
+test('scenario tools recalculate outcomes and restore report assumptions', async ({ page }) => {
+  const ranking = chapters.find((chapter) => chapter.data.number === 5)!;
+  await page.goto('/chapters/' + ranking.slug);
+  const lab = page.getByRole('region', { name: 'Model a biomass protein scenario' });
+  await expect(lab).toBeVisible();
+  await expect(lab.getByText('$3.8m')).toBeVisible();
+  await lab.getByLabel('Plant utilisation').press('Home');
+  await expect(lab.getByText('$1.5m')).toBeVisible();
+  await lab.getByRole('button', { name: 'Reset assumptions' }).click();
+  await expect(lab.getByText('$3.8m')).toBeVisible();
+});
 test('mobile navigation and wide tables stay within viewport; print restores evidence', async ({
   page,
 }) => {
