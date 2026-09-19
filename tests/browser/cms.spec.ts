@@ -5,6 +5,8 @@ test('editor can save, privately preview and publish; reseeding preserves edits'
   page,
   request,
 }) => {
+  // A fresh CI runner also compiles the full EmDash editor on its first visit.
+  test.setTimeout(120000);
   const editor = await apiRequest.newContext({
     baseURL,
     extraHTTPHeaders: { Origin: baseURL, 'X-EmDash-Request': '1' },
