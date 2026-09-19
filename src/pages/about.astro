@@ -1,0 +1,34 @@
+---
+import Base from '../layouts/Base.astro';
+import { getChapters, getReport, mayPreview } from '../lib/content';
+import { renderReport, referenceMap } from '../lib/render.mjs';
+if (Astro.url.searchParams.has('_preview') && !mayPreview(Astro.locals.user))
+  return new Response('Editor sign-in is required for previews.', {
+    status: 403,
+    headers: { 'Cache-Control': 'private, no-store' },
+  });
+const [report, chapters] = await Promise.all([getReport(), getChapters()]);
+if (!report)
+  return new Response('The report is being prepared. Please check back shortly.', {
+    status: 503,
+    headers: { 'Cache-Control': 'no-store' },
+  });
+---
+
+<Base
+  title="About this study"
+  content={{ collection: 'report', id: report.data.id, slug: 'report' }}
+  noindex={Astro.url.searchParams.has('_preview')}
+>
+  <article class="about-page">
+    <p class="eyebrow">The study / About & revision notes</p>
+    <h1>{report.data.title}</h1>
+    <div
+      class="prose"
+      set:html={renderReport(report.data.content, { refs: referenceMap(chapters) })}
+    />
+    <a class="button primary" href="/#contents">
+      Explore the full report →
+    </a>
+  </article>
+</Base>

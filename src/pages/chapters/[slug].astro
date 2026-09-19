@@ -1,0 +1,112 @@
+---
+import { getEmDashEntry, decodeSlug } from 'emdash';
+import type { ChapterData } from '../../lib/types';
+import Base from '../../layouts/Base.astro';
+import Contents from '../../components/Contents.astro';
+import EvidenceFilters from '../../components/EvidenceFilters.astro';
+import { getChapters, mayPreview } from '../../lib/content';
+import { chapterHref, headingId, textOf } from '../../lib/report.mjs';
+import { renderReport, referenceMap } from '../../lib/render.mjs';
+const slug = decodeSlug(Astro.params.slug);
+if (!slug) return new Response('Chapter not found', { status: 404 });
+if (Astro.url.searchParams.has('_preview') && !mayPreview(Astro.locals.user))
+  return new Response('Editor sign-in is required for previews.', {
+    status: 403,
+    headers: { 'Cache-Control': 'private, no-store' },
+  });
+const { entry, error, isPreview } = await getEmDashEntry<'chapters', ChapterData>('chapters', slug);
+if (error && error.name !== 'LiveEntryNotFoundError')
+  return new Response('Unable to load chapter. Please try again.', { status: 503 });
+const chapters = await getChapters();
+if (!entry) Astro.response.status = 404;
+const number = Number(entry?.data.number);
+const index = chapters.findIndex((c) => Number(c.data.number) === number);
+const previous = chapters[index - 1],
+  next = chapters[index + 1];
+const headings = (entry?.data.content ?? []).filter((b) => b.style === 'h2');
+const html = entry
+  ? renderReport(entry.data.content, { refs: referenceMap(chapters), number })
+  : '';
+---
+
+<Base
+  title={entry?.data.title ?? 'Chapter not found'}
+  content={entry ? { collection: 'chapters', id: entry.data.id, slug } : undefined}
+  noindex={!entry || isPreview}
+>
+  {entry ? (
+    <div class="reader-layout">
+      <aside class="reader-sidebar">
+        <Contents chapters={chapters} active={number} />
+      </aside>
+      <div class="reader-main">
+        <details class="mobile-contents">
+          <summary>
+            Report contents <span>＋</span>
+          </summary>
+          <Contents chapters={chapters} active={number} />
+        </details>
+        <article>
+          <header class="chapter-header">
+            <p class="eyebrow">
+              Part {entry.data.part} / {entry.data.part_title}
+            </p>
+            <p class="chapter-number">Chapter {String(number).padStart(2, '0')}</p>
+            <h1>{entry.data.title}</h1>
+            <p class="chapter-meta">
+              September 2026 <span>·</span> Second public revision <span>·</span>{' '}
+              {Math.ceil(textOf({ children: entry.data.content }).split(/\s+/).length / 220)} min
+              read
+            </p>
+          </header>
+          {isPreview && (
+            <p class="notice" role="alert">
+              Editor preview — unpublished changes. <a href={Astro.url.pathname}>Exit preview</a>
+            </p>
+          )}
+          <EvidenceFilters />
+          {headings.length > 0 && (
+            <details class="section-contents">
+              <summary>In this chapter</summary>
+              <ol>
+                {headings.map((h) => (
+                  <li>
+                    <a href={`#${headingId(h)}`}>{textOf(h)}</a>
+                  </li>
+                ))}
+              </ol>
+            </details>
+          )}
+          <div class="prose" set:html={html} />
+          <nav class="chapter-pagination" aria-label="Chapter navigation">
+            {previous ? (
+              <a href={chapterHref(previous)}>
+                <span>← Previous chapter</span>
+                <strong>{previous.data.title}</strong>
+              </a>
+            ) : (
+              <a href="/about">About this study</a>
+            )}
+            {next ? (
+              <a href={chapterHref(next)}>
+                <span>Next chapter →</span>
+                <strong>{next.data.title}</strong>
+              </a>
+            ) : (
+              <a href="/">Return to overview →</a>
+            )}
+          </nav>
+        </article>
+      </div>
+    </div>
+  ) : (
+    <section class="empty-state">
+      <p class="eyebrow">404 / Chapter not found</p>
+      <h1>This chapter isn’t available.</h1>
+      <p>It may have moved or may not yet be published.</p>
+      <a class="button primary" href="/#contents">
+        Browse the report →
+      </a>
+    </section>
+  )}
+</Base>

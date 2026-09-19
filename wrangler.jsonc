@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "altprotein-scoping-local",
+  "main": "./src/worker.ts",
+  "compatibility_date": "2026-09-18",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [{ "binding": "DB", "database_name": "altprotein-scoping-local" }],
+  "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "altprotein-scoping-media-local" }],
+  "triggers": { "crons": ["* * * * *"] },
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  "env": {
+    "production": {
+      "name": "altprotein-scoping",
+      "d1_databases": [{ "binding": "DB", "database_name": "altprotein-scoping" }],
+      "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "altprotein-scoping-media" }],
+      "triggers": { "crons": ["* * * * *"] },
+      // After first setup: "routes": [{ "pattern": "scoping.altprotein.vn", "custom_domain": true }]
+    },
+  },
+}

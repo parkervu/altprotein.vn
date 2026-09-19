@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.wrangler/
+.astro/
+content/
+seed/
+pnpm-lock.yaml
+worker-configuration.d.ts
+emdash-env.d.ts
+public/logo.svg

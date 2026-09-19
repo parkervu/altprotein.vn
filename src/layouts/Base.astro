@@ -1,0 +1,87 @@
+---
+import '@fontsource-variable/work-sans';
+import '../styles/global.css';
+import { EmDashHead, EmDashBodyStart, EmDashBodyEnd } from 'emdash/ui';
+import { createPublicPageContext } from 'emdash/page';
+interface Props {
+  title: string;
+  description?: string;
+  content?: { collection: string; id: string; slug?: string };
+  noindex?: boolean;
+}
+const {
+  title,
+  description = 'A supply-side scoping study of alternative protein in Vietnam.',
+  content,
+  noindex = false,
+} = Astro.props;
+Astro.response.headers.set('Cache-Control', 'private, no-store');
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const page = createPublicPageContext({
+  Astro,
+  kind: content ? 'content' : 'custom',
+  pageType: 'website',
+  title: `${title} · altprotein.vn`,
+  description,
+  canonical,
+  content,
+  siteName: 'altprotein.vn',
+});
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title} · altprotein.vn</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="article" />
+    <meta name="theme-color" content="#009A8F" />
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
+    <EmDashHead page={page} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      Skip to content
+    </a>
+    <EmDashBodyStart page={page} />
+    <header class="site-header">
+      <a href="/" aria-label="altprotein.vn report overview">
+        <img src="/logo.svg" width="183" height="45" alt="altprotein Vietnam" />
+      </a>
+      <span class="header-divider" aria-hidden="true"></span>
+      <span class="site-label">Research / 2026</span>
+      <nav aria-label="Main navigation">
+        <a href="/" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>
+          Overview
+        </a>
+        <a href="/#contents">The report</a>
+        <a href="/about" aria-current={Astro.url.pathname === '/about' ? 'page' : undefined}>
+          About this study
+        </a>
+      </nav>
+      <span class="edition">
+        <span aria-hidden="true">●</span> Public research
+      </span>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <img src="/logo.svg" width="146" height="36" alt="altprotein Vietnam" />
+      <p>
+        Independent questions. Open evidence.
+        <br />
+        <span>Ho Chi Minh City · September 2026</span>
+      </p>
+      <a href="/about">About & revision notes ↗</a>
+      <a href="/_emdash/admin">Editor sign in ↗</a>
+    </footer>
+    <EmDashBodyEnd page={page} />
+  </body>
+</html>
