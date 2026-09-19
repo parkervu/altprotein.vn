@@ -1,0 +1,54 @@
+{
+  "name": "altprotein-scoping",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "emdash": {
+    "seed": "seed/seed.json"
+  },
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro build",
+    "preview": "wrangler dev --local",
+    "typecheck": "astro check",
+    "cf:types": "wrangler types --include-runtime=false",
+    "content:import": "node scripts/import-report.mjs",
+    "content:check": "node scripts/import-report.mjs --check",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "playwright test",
+    "build:production": "CLOUDFLARE_ENV=production astro build",
+    "deploy:production": "pnpm build:production && wrangler deploy --env production",
+    "setup:local": "node scripts/setup-local.mjs"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^14.3.1",
+    "@astrojs/react": "^6.0.5",
+    "@emdash-cms/cloudflare": "^0.38.0",
+    "@fontsource-variable/work-sans": "^5.3.0",
+    "astro": "^7.3.2",
+    "emdash": "^0.38.0",
+    "highlight.js": "^11.12.0",
+    "lowlight": "^3.3.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@cloudflare/workers-types": "^5.20260820.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "prettier": "^3.9.8",
+    "prettier-plugin-astro": "^1.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "typescript": "^6.0.3",
+    "unified": "^11.0.5",
+    "wrangler": "^4.125.0"
+  },
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
