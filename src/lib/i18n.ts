@@ -2,6 +2,8 @@ export type Lang = 'en' | 'vi';
 
 const en = {
   skip: 'Skip to content',
+  draftLabel: 'Draft',
+  draftNotice: 'This report is a draft and subject to change.',
   siteName: 'AltProtein Vietnam',
   reportShort: 'Vietnam supply-side scoping study',
   home: 'Home',
@@ -146,6 +148,8 @@ type Dict = typeof en;
 const vi: Dict = {
   ...en,
   skip: 'Chuyển đến nội dung',
+  draftLabel: 'Bản dự thảo',
+  draftNotice: 'Báo cáo này là bản dự thảo và có thể thay đổi.',
   reportShort: 'Nghiên cứu phạm vi phía cung tại Việt Nam',
   home: 'Trang chủ',
   summary: 'Tóm tắt',

@@ -54,6 +54,10 @@ test('routes, redirects, the Vietnamese interface and access rules', async ({ re
   expect(vi.status()).toBe(200);
   const html = await vi.text();
   expect(html).toContain('<html lang="vi"');
+  expect(html).toContain('Báo cáo này là bản dự thảo và có thể thay đổi.');
+  expect(await (await request.get('/')).text()).toContain(
+    'This report is a draft and subject to change.',
+  );
   expect(html).toContain('href="/vi/report/ch12-policy-options"');
   for (const path of [
     '/report',

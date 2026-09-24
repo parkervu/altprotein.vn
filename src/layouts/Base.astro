@@ -103,6 +103,10 @@ const searchAction = localize('/search', lang);
       {s.skip}
     </a>
     <EmDashBodyStart page={page} />
+    <div class="draft-banner" role="note">
+      <strong>{s.draftLabel}.</strong>
+      {s.draftNotice}
+    </div>
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href={localize('/', lang)} aria-label={`${s.siteName}: ${s.home}`}>
