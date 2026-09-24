@@ -1,8 +1,38 @@
 // Bar-family charts: horizontal, vertical, grouped, stacked, tornado, log bars, and the plays ranking.
 import {
-  W, S, INK, MUTED, AXIS, SURFACE, HIGHLIGHT, DIM, BAND, GRID,
-  esc, fmtStr, fmtNum, num, linear, logScale, niceTicks, text, textLines, line, rect, hbar, vbar, rangeBar, hit, mark,
-  tipFields, legend, wrap, textWidth, yAxis, table, R,
+  W,
+  S,
+  INK,
+  MUTED,
+  AXIS,
+  SURFACE,
+  HIGHLIGHT,
+  DIM,
+  BAND,
+  GRID,
+  esc,
+  fmtStr,
+  fmtNum,
+  num,
+  linear,
+  logScale,
+  niceTicks,
+  text,
+  textLines,
+  line,
+  rect,
+  hbar,
+  vbar,
+  rangeBar,
+  hit,
+  mark,
+  tipFields,
+  legend,
+  wrap,
+  textWidth,
+  yAxis,
+  table,
+  R,
 } from './lib.mjs';
 import { hLayout, endLabel } from './layout.mjs';
 
@@ -20,10 +50,17 @@ function stackH(scale, x0, y, h, segs) {
     const b = scale(cum);
     const last = i === visible.length - 1;
     const bEnd = last ? b : b - 2;
-    const shape = last ? hbar(a, bEnd, y, h, s.fill) : rect(a, y, Math.max(bEnd - a, 0.8), h, s.fill);
+    const shape = last
+      ? hbar(a, bEnd, y, h, s.fill)
+      : rect(a, y, Math.max(bEnd - a, 0.8), h, s.fill);
     let lab = '';
     if (s.label && textWidth(s.label, 12) + 10 <= bEnd - a && h >= 16) {
-      lab = text((a + bEnd) / 2, y + h / 2, s.label, { size: 12, fill: s.labelFill || 'var(--chart-on-dark)', anchor: 'middle', weight: 600 });
+      lab = text((a + bEnd) / 2, y + h / 2, s.label, {
+        size: 12,
+        fill: s.labelFill || 'var(--chart-on-dark)',
+        anchor: 'middle',
+        weight: 600,
+      });
     }
     out.push(mark(s.tip, shape + lab + hit(a, y - 3, Math.max(b - a, 6), h + 6)));
   });
@@ -34,7 +71,9 @@ function stackH(scale, x0, y, h, segs) {
 export function feedImportDependence(spec, D) {
   const rows = D.csv(spec.data.file);
   const isHL = (r) => /^Soy protein/.test(r.ingredient); // annotation: highlight the "Soy protein" bar
-  const lab = (r) => `${fmtStr(r.import_share_pct_high)}%` + (r.imports_2025_mt ? ` (${fmtStr(r.imports_2025_mt)} Mt)` : '');
+  const lab = (r) =>
+    `${fmtStr(r.import_share_pct_high)}%` +
+    (r.imports_2025_mt ? ` (${fmtStr(r.imports_2025_mt)} Mt)` : '');
   const L = hLayout({
     rows: rows.map((r) => ({ label: r.ingredient, bold: isHL(r), data: r })),
     labelW: 180,
@@ -50,17 +89,24 @@ export function feedImportDependence(spec, D) {
       const by = y + (h - bh) / 2;
       const x1 = ctx.scale(num(r.import_share_pct_high));
       const tip = [
-        `${r.ingredient}: ${fmtStr(r.import_share_pct_high)}% imported` + (r.imports_2025_mt ? `, ${fmtStr(r.imports_2025_mt)} Mt imported in 2025` : ''),
+        `${r.ingredient}: ${fmtStr(r.import_share_pct_high)}% imported` +
+          (r.imports_2025_mt ? `, ${fmtStr(r.imports_2025_mt)} Mt imported in 2025` : ''),
         ...tipFields(r, spec.encoding.tooltip),
       ];
       return (
-        mark(tip, hbar(ctx.plotLeft, x1, by, bh, isHL(r) ? HIGHLIGHT : DIM) + hit(ctx.plotLeft, y, x1 - ctx.plotLeft + 4, h)) +
-        endLabel(x1 + 2, y + h / 2, lab(r), W, { weight: isHL(r) ? 600 : undefined, size: 13 })
+        mark(
+          tip,
+          hbar(ctx.plotLeft, x1, by, bh, isHL(r) ? HIGHLIGHT : DIM) +
+            hit(ctx.plotLeft, y, x1 - ctx.plotLeft + 4, h),
+        ) + endLabel(x1 + 2, y + h / 2, lab(r), W, { weight: isHL(r) ? 600 : undefined, size: 13 })
       );
     },
     under: (ctx) => {
       const x = ctx.scale(100);
-      return line(x, ctx.top - 8, x, ctx.bottom, INK, 1) + text(x, ctx.top - 16, '100% imported', { size: 12, fill: INK, anchor: 'middle' });
+      return (
+        line(x, ctx.top - 8, x, ctx.bottom, INK, 1) +
+        text(x, ctx.top - 16, '100% imported', { size: 12, fill: INK, anchor: 'middle' })
+      );
     },
   });
   const tbl = table(
@@ -82,7 +128,20 @@ export function animalProteinOutput(spec, D) {
   const rows = D.csv(spec.data.file);
   const bases = uniq(rows.map((r) => r.basis));
   const color = (b) => S(bases.indexOf(b) + 1);
-  const lg = legend(bases.map((b) => ({ label: b === 'live weight' ? 'Meat, live weight' : b === 'harvest' ? 'Aquaculture, harvest' : cap(b), color: color(b) })), 0, 0, W);
+  const lg = legend(
+    bases.map((b) => ({
+      label:
+        b === 'live weight'
+          ? 'Meat, live weight'
+          : b === 'harvest'
+            ? 'Aquaculture, harvest'
+            : cap(b),
+      color: color(b),
+    })),
+    0,
+    0,
+    W,
+  );
   const parts = [lg.svg];
   const top = lg.height + 34;
   const plotH = 250;
@@ -90,7 +149,12 @@ export function animalProteinOutput(spec, D) {
   const left = 60;
   const right = W - 12;
   const y = linear(0, 6000, base, top);
-  parts.push(yAxis(y, [0, 1000, 2000, 3000, 4000, 5000, 6000], left, right, (t) => fmtNum(t), { title: 'Thousand tonnes (kt)', titleX: left - 50 }));
+  parts.push(
+    yAxis(y, [0, 1000, 2000, 3000, 4000, 5000, 6000], left, right, (t) => fmtNum(t), {
+      title: 'Thousand tonnes (kt)',
+      titleX: left - 50,
+    }),
+  );
   // slots with a gap between the two bases
   const nSlots = rows.length + 0.6;
   const slotW = (right - left) / nSlots;
@@ -102,18 +166,30 @@ export function animalProteinOutput(spec, D) {
     const v = num(r.output_kt);
     const y1 = y(v);
     const tip = [`${r.product}: ${fmtStr(r.output_kt)} kt (${r.basis}), 2025`];
-    parts.push(mark(tip, vbar(cx - bw / 2, bw, base, y1, color(r.basis)) + hit(cx - slotW / 2 + 4, y1 - 20, slotW - 8, base - y1 + 20)));
-    parts.push(text(cx, y1 - 10, `${fmtStr(r.output_kt)} kt`, { size: 13, fill: INK, anchor: 'middle' }));
+    parts.push(
+      mark(
+        tip,
+        vbar(cx - bw / 2, bw, base, y1, color(r.basis)) +
+          hit(cx - slotW / 2 + 4, y1 - 20, slotW - 8, base - y1 + 20),
+      ),
+    );
+    parts.push(
+      text(cx, y1 - 10, `${fmtStr(r.output_kt)} kt`, { size: 13, fill: INK, anchor: 'middle' }),
+    );
     const nl = wrap(r.product, slotW - 8, 12);
     parts.push(textLines(cx, base + 14, nl, { size: 12, fill: INK, anchor: 'middle', lineH: 15 }));
     labelBottom = Math.max(labelBottom, base + 14 + nl.length * 15);
   });
   parts.push(line(left, base, right, base, AXIS, 1));
-  const tbl = table(spec.title, [
-    { key: 'product', label: 'Product' },
-    { key: 'output_kt', label: 'Output, 2025 (kt)', num: true },
-    { key: 'basis', label: 'Basis' },
-  ], rows);
+  const tbl = table(
+    spec.title,
+    [
+      { key: 'product', label: 'Product' },
+      { key: 'output_kt', label: 'Output, 2025 (kt)', num: true },
+      { key: 'basis', label: 'Basis' },
+    ],
+    rows,
+  );
   return { body: parts.join(''), height: labelBottom + 8, table: tbl };
 }
 
@@ -124,7 +200,11 @@ export function cassavaTrade(spec, D) {
   const color = (f) => S(flows.indexOf(f) + 1);
   const L = hLayout({
     legend: flows.map((f) => ({ label: f, color: color(f) })),
-    rows: rows.map((r) => ({ label: r.product, sub: `${r.reporter}-reported, ${r.year}`, data: r })),
+    rows: rows.map((r) => ({
+      label: r.product,
+      sub: `${r.reporter}-reported, ${r.year}`,
+      data: r,
+    })),
     labelW: 170,
     plotRight: W - 150,
     minRowH: 40,
@@ -138,25 +218,37 @@ export function cassavaTrade(spec, D) {
       const v = num(r.value_usd_m);
       let x1 = ctx.scale(v);
       const tiny = x1 - ctx.plotLeft < 2;
-      const shape = tiny ? rect(ctx.plotLeft, by, 2, bh, color(r.flow)) : hbar(ctx.plotLeft, x1, by, bh, color(r.flow));
+      const shape = tiny
+        ? rect(ctx.plotLeft, by, 2, bh, color(r.flow))
+        : hbar(ctx.plotLeft, x1, by, bh, color(r.flow));
       if (tiny) x1 = ctx.plotLeft + 2;
-      const tip = [`${r.product}, ${r.flow}, ${r.year}: USD ${fmtStr(r.value_usd_m)} million`, ...tipFields(r, spec.encoding.tooltip)];
+      const tip = [
+        `${r.product}, ${r.flow}, ${r.year}: USD ${fmtStr(r.value_usd_m)} million`,
+        ...tipFields(r, spec.encoding.tooltip),
+      ];
       const isCallout = /glucose/i.test(r.product); // annotation: call out glucose syrup
       return (
         mark(tip, shape + hit(ctx.plotLeft, y, Math.max(x1 - ctx.plotLeft, 30), h)) +
-        endLabel(x1, y + h / 2, `USD ${fmtStr(r.value_usd_m)} million`, W, { size: 13, weight: isCallout ? 600 : undefined })
+        endLabel(x1, y + h / 2, `USD ${fmtStr(r.value_usd_m)} million`, W, {
+          size: 13,
+          weight: isCallout ? 600 : undefined,
+        })
       );
     },
   });
-  const tbl = table(spec.title, [
-    { key: 'product', label: 'Product' },
-    { key: 'flow', label: 'Flow' },
-    { key: 'year', label: 'Year' },
-    { key: 'value_usd_m', label: 'Value (USD million)', num: true },
-    { key: 'volume_kt', label: 'Volume (kt)', num: true },
-    { key: 'hs_code', label: 'HS code' },
-    { key: 'reporter', label: 'Reporter' },
-  ], rows);
+  const tbl = table(
+    spec.title,
+    [
+      { key: 'product', label: 'Product' },
+      { key: 'flow', label: 'Flow' },
+      { key: 'year', label: 'Year' },
+      { key: 'value_usd_m', label: 'Value (USD million)', num: true },
+      { key: 'volume_kt', label: 'Volume (kt)', num: true },
+      { key: 'hs_code', label: 'HS code' },
+      { key: 'reporter', label: 'Reporter' },
+    ],
+    rows,
+  );
   return { body: L.body, height: L.height, table: tbl };
 }
 
@@ -168,14 +260,24 @@ export function vcAgritech(spec, D) {
     { key: 'agriculture_vc_usd_m', label: 'Agriculture' },
     { key: 'climate_tech_vc_usd_m', label: 'Climate tech' },
   ];
-  const lg = legend(series.map((s, i) => ({ label: s.label, color: S(i + 1) })), 0, 0, W);
+  const lg = legend(
+    series.map((s, i) => ({ label: s.label, color: S(i + 1) })),
+    0,
+    0,
+    W,
+  );
   const parts = [lg.svg];
   const top = lg.height + 30;
   const base = top + 240;
   const left = 60;
   const right = W - 12;
   const y = linear(0, 600, base, top);
-  parts.push(yAxis(y, [0, 100, 200, 300, 400, 500, 600], left, right, fmtNum, { title: 'USD million', titleX: left - 50 }));
+  parts.push(
+    yAxis(y, [0, 100, 200, 300, 400, 500, 600], left, right, fmtNum, {
+      title: 'USD million',
+      titleX: left - 50,
+    }),
+  );
   const gw = (right - left) / rows.length;
   const bw = 30;
   rows.forEach((r, gi) => {
@@ -185,18 +287,33 @@ export function vcAgritech(spec, D) {
       const x = x0 + si * (bw + 2);
       const v = num(r[s.key]);
       const y1 = y(v);
-      const tip = [`${r.year}, ${s.label}: USD ${fmtStr(r[s.key])} million`, ...tipFields(r, spec.encoding.tooltip)];
-      parts.push(mark(tip, vbar(x, bw, base, y1, S(si + 1)) + hit(x - 1, Math.min(y1, base - 14) - 16, bw + 2, base - Math.min(y1, base - 14) + 16)));
-      parts.push(text(x + bw / 2, y1 - 10, fmtStr(r[s.key]), { size: 13, fill: INK, anchor: 'middle' }));
+      const tip = [
+        `${r.year}, ${s.label}: USD ${fmtStr(r[s.key])} million`,
+        ...tipFields(r, spec.encoding.tooltip),
+      ];
+      parts.push(
+        mark(
+          tip,
+          vbar(x, bw, base, y1, S(si + 1)) +
+            hit(x - 1, Math.min(y1, base - 14) - 16, bw + 2, base - Math.min(y1, base - 14) + 16),
+        ),
+      );
+      parts.push(
+        text(x + bw / 2, y1 - 10, fmtStr(r[s.key]), { size: 13, fill: INK, anchor: 'middle' }),
+      );
     });
     parts.push(text(cx, base + 16, r.year, { size: 13, fill: INK, anchor: 'middle' }));
   });
   parts.push(line(left, base, right, base, AXIS, 1));
-  const tbl = table(spec.title, [
-    { key: 'year', label: 'Year' },
-    ...series.map((s) => ({ key: s.key, label: `${s.label} (USD million)`, num: true })),
-    { key: 'note', label: 'Note' },
-  ], rows);
+  const tbl = table(
+    spec.title,
+    [
+      { key: 'year', label: 'Year' },
+      ...series.map((s) => ({ key: s.key, label: `${s.label} (USD million)`, num: true })),
+      { key: 'note', label: 'Note' },
+    ],
+    rows,
+  );
   return { body: parts.join(''), height: base + 30, table: tbl };
 }
 
@@ -208,7 +325,8 @@ export function researchBenchmark(spec, D) {
   const lrows = [];
   for (const t of topics) {
     lrows.push({ label: t, header: true, headerH: 30 });
-    for (const r of rows.filter((x) => x.topic === t)) lrows.push({ label: r.country, bold: isVN(r), data: r });
+    for (const r of rows.filter((x) => x.topic === t))
+      lrows.push({ label: r.country, bold: isVN(r), data: r });
   }
   const L = hLayout({
     legend: [
@@ -227,19 +345,36 @@ export function researchBenchmark(spec, D) {
       const bh = 16;
       const by = y + (h - bh) / 2;
       const x1 = ctx.scale(num(r.per_10k_publications));
-      const tip = [`${r.country}, ${r.topic}: ${fmtStr(r.per_10k_publications)} per 10,000 publications`, `Records 2015 to 2026: ${fmtStr(r.records_2015_2026)}`];
+      const tip = [
+        `${r.country}, ${r.topic}: ${fmtStr(r.per_10k_publications)} per 10,000 publications`,
+        `Records 2015 to 2026: ${fmtStr(r.records_2015_2026)}`,
+      ];
       return (
-        mark(tip, hbar(ctx.plotLeft, x1, by, bh, isVN(r) ? HIGHLIGHT : DIM) + hit(ctx.plotLeft, y, x1 - ctx.plotLeft + 4, h)) +
-        endLabel(x1, y + h / 2, `${fmtStr(r.per_10k_publications)} (${fmtStr(r.records_2015_2026)} records)`, W, { weight: isVN(r) ? 600 : undefined })
+        mark(
+          tip,
+          hbar(ctx.plotLeft, x1, by, bh, isVN(r) ? HIGHLIGHT : DIM) +
+            hit(ctx.plotLeft, y, x1 - ctx.plotLeft + 4, h),
+        ) +
+        endLabel(
+          x1,
+          y + h / 2,
+          `${fmtStr(r.per_10k_publications)} (${fmtStr(r.records_2015_2026)} records)`,
+          W,
+          { weight: isVN(r) ? 600 : undefined },
+        )
       );
     },
   });
-  const tbl = table(spec.title, [
-    { key: 'topic', label: 'Topic' },
-    { key: 'country', label: 'Country' },
-    { key: 'per_10k_publications', label: 'Per 10,000 national publications', num: true },
-    { key: 'records_2015_2026', label: 'Records, 2015 to 2026', num: true },
-  ], rows);
+  const tbl = table(
+    spec.title,
+    [
+      { key: 'topic', label: 'Topic' },
+      { key: 'country', label: 'Country' },
+      { key: 'per_10k_publications', label: 'Per 10,000 national publications', num: true },
+      { key: 'records_2015_2026', label: 'Records, 2015 to 2026', num: true },
+    ],
+    rows,
+  );
   return { body: L.body, height: L.height, table: tbl };
 }
 
@@ -247,12 +382,25 @@ export function researchBenchmark(spec, D) {
 export function globalInvestment(spec, D) {
   const rows = D.csv(spec.data.file);
   const periods = uniq(rows.map((r) => r.period));
-  const cats = ['Plant-based', 'Fermentation', 'Cultivated', 'Other categories', 'Total (all categories)'];
+  const cats = [
+    'Plant-based',
+    'Fermentation',
+    'Cultivated',
+    'Other categories',
+    'Total (all categories)',
+  ];
   const colorOf = (c) => (c === 'Total (all categories)' ? DIM : S(cats.indexOf(c) + 1));
   const present = cats.filter((c) => rows.some((r) => r.category === c));
-  const sub = { '2025': 'Full year', '2026 H1': 'Half year, not split by category', '2026 Q2': 'Quarter' };
+  const sub = {
+    2025: 'Full year',
+    '2026 H1': 'Half year, not split by category',
+    '2026 Q2': 'Quarter',
+  };
   const L = hLayout({
-    legend: present.map((c) => ({ label: c === 'Total (all categories)' ? 'All categories (not split)' : c, color: colorOf(c) })),
+    legend: present.map((c) => ({
+      label: c === 'Total (all categories)' ? 'All categories (not split)' : c,
+      color: colorOf(c),
+    })),
     rows: periods.map((p) => ({ label: p, sub: sub[p] })),
     labelW: 130,
     plotRight: W - 140,
@@ -273,14 +421,21 @@ export function globalInvestment(spec, D) {
       const total = segs.reduce((a, s) => a + s.v, 0);
       const bh = 26;
       const by = y + (h - bh) / 2;
-      return stackH(ctx.scale, ctx.plotLeft, by, bh, segs) + endLabel(ctx.scale(total), y + h / 2, `USD ${fmtNum(total)} million`, W, { size: 13 });
+      return (
+        stackH(ctx.scale, ctx.plotLeft, by, bh, segs) +
+        endLabel(ctx.scale(total), y + h / 2, `USD ${fmtNum(total)} million`, W, { size: 13 })
+      );
     },
   });
-  const tbl = table(spec.title, [
-    { key: 'period', label: 'Period' },
-    { key: 'category', label: 'Category' },
-    { key: 'usd_m', label: 'USD million', num: true },
-  ], rows);
+  const tbl = table(
+    spec.title,
+    [
+      { key: 'period', label: 'Period' },
+      { key: 'category', label: 'Category' },
+      { key: 'usd_m', label: 'USD million', num: true },
+    ],
+    rows,
+  );
   return { body: L.body, height: L.height, table: tbl };
 }
 
@@ -296,7 +451,15 @@ export function costStackFungal(spec, D) {
     { label: 'Land', lines: ['Land'] },
     { label: 'Labour', lines: ['Labour'] },
     { label: 'Electricity (excluding cooling)', lines: ['Electricity (excluding cooling)'] },
-    { label: 'Other: nitrogen, minerals, cooling power, water', lines: ['Nitrogen', 'Minerals, vitamins, antifoam, enzymes', 'Cooling electricity', 'Water and wastewater'] },
+    {
+      label: 'Other: nitrogen, minerals, cooling power, water',
+      lines: [
+        'Nitrogen',
+        'Minerals, vitamins, antifoam, enzymes',
+        'Cooling electricity',
+        'Water and wastewater',
+      ],
+    },
   ];
   const byLine = Object.fromEntries(rows.map((r) => [r.line, r]));
   const cases = [
@@ -318,7 +481,10 @@ export function costStackFungal(spec, D) {
       const segs = groups.map((g, gi) => {
         const vals = g.lines.map((l) => num(byLine[l][c.key]));
         const v = vals.reduce((a, b) => a + b, 0);
-        const detail = g.lines.length > 1 ? g.lines.map((l) => `${l}: USD ${fmtStr(byLine[l][c.key])}`) : [`Basis: ${byLine[g.lines[0]].basis}`];
+        const detail =
+          g.lines.length > 1
+            ? g.lines.map((l) => `${l}: USD ${fmtStr(byLine[l][c.key])}`)
+            : [`Basis: ${byLine[g.lines[0]].basis}`];
         return {
           v,
           fill: S(gi + 1),
@@ -334,17 +500,31 @@ export function costStackFungal(spec, D) {
         line(ctx.plotLeft, bracketY, capEnd - 2, bracketY, INK, 1) +
         line(ctx.plotLeft, bracketY, ctx.plotLeft, bracketY + 5, INK, 1) +
         line(capEnd - 2, bracketY, capEnd - 2, bracketY + 5, INK, 1) +
-        text(ctx.plotLeft, bracketY - 10, `Capital charge plus maintenance: ${c.share}`, { size: 12, fill: INK });
+        text(ctx.plotLeft, bracketY - 10, `Capital charge plus maintenance: ${c.share}`, {
+          size: 12,
+          fill: INK,
+        });
       const total = segs.reduce((a, s) => a + s.v, 0);
-      return stackH(ctx.scale, ctx.plotLeft, by, bh, segs) + bracket + endLabel(ctx.scale(total), by + bh / 2, `USD ${c.total} per t`, W, { size: 13, weight: 600 });
+      return (
+        stackH(ctx.scale, ctx.plotLeft, by, bh, segs) +
+        bracket +
+        endLabel(ctx.scale(total), by + bh / 2, `USD ${c.total} per t`, W, {
+          size: 13,
+          weight: 600,
+        })
+      );
     },
   });
-  const tbl = table(spec.title, [
-    { key: 'line', label: 'Cost line' },
-    { key: 'usd_per_t_product_low', label: 'Low case (USD per t)', num: true },
-    { key: 'usd_per_t_product_high', label: 'High case (USD per t)', num: true },
-    { key: 'basis', label: 'Basis' },
-  ], rows);
+  const tbl = table(
+    spec.title,
+    [
+      { key: 'line', label: 'Cost line' },
+      { key: 'usd_per_t_product_low', label: 'Low case (USD per t)', num: true },
+      { key: 'usd_per_t_product_high', label: 'High case (USD per t)', num: true },
+      { key: 'basis', label: 'Basis' },
+    ],
+    rows,
+  );
   return { body: L.body, height: L.height, table: tbl };
 }
 
@@ -381,12 +561,19 @@ export function sourcesByType(spec, D) {
         tip: [`${a.type}, ${wl(w)}: ${a.counts[w]} sources`, `All waves: ${a.total} sources`],
       }));
       const bh = 20;
-      return stackH(ctx.scale, ctx.plotLeft, y + (h - bh) / 2, bh, segs) + endLabel(ctx.scale(a.total), y + h / 2, fmtNum(a.total), W, { size: 13 });
+      return (
+        stackH(ctx.scale, ctx.plotLeft, y + (h - bh) / 2, bh, segs) +
+        endLabel(ctx.scale(a.total), y + h / 2, fmtNum(a.total), W, { size: 13 })
+      );
     },
   });
   const tbl = table(
     spec.title,
-    [{ key: 'type', label: 'Source type' }, ...waves.map((w) => ({ key: w, label: wl(w), num: true, get: (r) => String(r.counts[w]) })), { key: 'total', label: 'Total', num: true, get: (r) => String(r.total) }],
+    [
+      { key: 'type', label: 'Source type' },
+      ...waves.map((w) => ({ key: w, label: wl(w), num: true, get: (r) => String(r.counts[w]) })),
+      { key: 'total', label: 'Total', num: true, get: (r) => String(r.total) },
+    ],
     agg,
   );
   return { body: L.body, height: L.height, table: tbl };
@@ -430,10 +617,17 @@ export function playsScoring(spec, D) {
       const { p, s } = ranked[i];
       const bh = 18;
       const x1 = ctx.scale(s);
-      const tip = [`${p.play_id} ${p.name}: ${s.toFixed(2)} (balanced weights, 1 to 5)`, ...tipFields(p, spec.encoding.tooltip)];
+      const tip = [
+        `${p.play_id} ${p.name}: ${s.toFixed(2)} (balanced weights, 1 to 5)`,
+        ...tipFields(p, spec.encoding.tooltip),
+      ];
       return (
-        mark(tip, hbar(ctx.plotLeft, x1, y + (h - bh) / 2, bh, S(1)) + hit(ctx.plotLeft, y, x1 - ctx.plotLeft + 4, h), `data-play="${esc(p.play_id)}" data-score="${s.toFixed(2)}"`) +
-        endLabel(x1, y + h / 2, s.toFixed(2), W, { size: 13 })
+        mark(
+          tip,
+          hbar(ctx.plotLeft, x1, y + (h - bh) / 2, bh, S(1)) +
+            hit(ctx.plotLeft, y, x1 - ctx.plotLeft + 4, h),
+          `data-play="${esc(p.play_id)}" data-score="${s.toFixed(2)}"`,
+        ) + endLabel(x1, y + h / 2, s.toFixed(2), W, { size: 13 })
       );
     },
   });
@@ -443,7 +637,9 @@ export function playsScoring(spec, D) {
   parts.push(text(0, y, 'Top three under each preset', { size: 13, fill: INK, weight: 600 }));
   y += 22;
   const cols = [0, 200, 350, 500];
-  ['Preset', 'First', 'Second', 'Third'].forEach((h, i) => parts.push(text(cols[i], y, h, { size: 12 })));
+  ['Preset', 'First', 'Second', 'Third'].forEach((h, i) =>
+    parts.push(text(cols[i], y, h, { size: 12 })),
+  );
   y += 6;
   parts.push(line(0, y, W, y, GRID, 1));
   y += 13;
@@ -465,12 +661,16 @@ export function playsScoring(spec, D) {
     ],
     ranked.map((r, i) => ({ ...r, rank: i + 1 })),
   );
-  const tbl2 = table('Top three under each preset', [
-    { key: 'preset', label: 'Preset' },
-    { key: 'a', label: 'First', get: (r) => r.t3[0] || '' },
-    { key: 'b', label: 'Second', get: (r) => r.t3[1] || '' },
-    { key: 'c', label: 'Third', get: (r) => r.t3[2] || '' },
-  ], tops);
+  const tbl2 = table(
+    'Top three under each preset',
+    [
+      { key: 'preset', label: 'Preset' },
+      { key: 'a', label: 'First', get: (r) => r.t3[0] || '' },
+      { key: 'b', label: 'Second', get: (r) => r.t3[1] || '' },
+      { key: 'c', label: 'Third', get: (r) => r.t3[2] || '' },
+    ],
+    tops,
+  );
   return { body: parts.join(''), height: y + 4, table: tbl + tbl2, topThree: tops, ranked };
 }
 
@@ -505,32 +705,62 @@ export function sbmTornado(spec, D) {
       ]) {
         const v = num(r[key]);
         const x = ctx.scale(v);
-        const tip = [`${r.assumption_varied}, ${name.toLowerCase()}: ${fmtStr(r[key])} Mt in 2050`, `Trend: ${fmtStr(r.sbm_2050_central_mt)} Mt`, `Swing: ${fmtStr(r.swing_mt)} Mt`];
-        out.push(mark(tip, hbar(xc, x, by, bh, col, op) + hit(Math.min(x, xc), y, Math.abs(x - xc) + 2, h)));
+        const tip = [
+          `${r.assumption_varied}, ${name.toLowerCase()}: ${fmtStr(r[key])} Mt in 2050`,
+          `Trend: ${fmtStr(r.sbm_2050_central_mt)} Mt`,
+          `Swing: ${fmtStr(r.swing_mt)} Mt`,
+        ];
+        out.push(
+          mark(
+            tip,
+            hbar(xc, x, by, bh, col, op) + hit(Math.min(x, xc), y, Math.abs(x - xc) + 2, h),
+          ),
+        );
         const lx = v < central ? x - 5 : x + 5;
-        out.push(text(lx, y + h / 2, fmtStr(r[key]), { size: 12, fill: INK, anchor: v < central ? 'end' : 'start', weight: i < 2 ? 600 : undefined, halo: true }));
+        out.push(
+          text(lx, y + h / 2, fmtStr(r[key]), {
+            size: 12,
+            fill: INK,
+            anchor: v < central ? 'end' : 'start',
+            weight: i < 2 ? 600 : undefined,
+            halo: true,
+          }),
+        );
       }
       return out.join('');
     },
     over: (ctx) => {
       const x = ctx.scale(central);
-      return line(x, ctx.top - 8, x, ctx.bottom, INK, 1.5) + text(x, ctx.top - 16, `Trend ${fmtNum(Math.round(central * 10) / 10)} Mt`, { size: 12, fill: INK, anchor: 'middle' });
+      return (
+        line(x, ctx.top - 8, x, ctx.bottom, INK, 1.5) +
+        text(x, ctx.top - 16, `Trend ${fmtNum(Math.round(central * 10) / 10)} Mt`, {
+          size: 12,
+          fill: INK,
+          anchor: 'middle',
+        })
+      );
     },
   });
-  const tbl = table(spec.title, [
-    { key: 'rank', label: 'Rank' },
-    { key: 'assumption_varied', label: 'Assumption varied' },
-    { key: 'sbm_2050_low_case_mt', label: 'Low case (Mt)', num: true },
-    { key: 'sbm_2050_central_mt', label: 'Trend (Mt)', num: true },
-    { key: 'sbm_2050_high_case_mt', label: 'High case (Mt)', num: true },
-    { key: 'swing_mt', label: 'Swing (Mt)', num: true },
-  ], rows);
+  const tbl = table(
+    spec.title,
+    [
+      { key: 'rank', label: 'Rank' },
+      { key: 'assumption_varied', label: 'Assumption varied' },
+      { key: 'sbm_2050_low_case_mt', label: 'Low case (Mt)', num: true },
+      { key: 'sbm_2050_central_mt', label: 'Trend (Mt)', num: true },
+      { key: 'sbm_2050_high_case_mt', label: 'High case (Mt)', num: true },
+      { key: 'swing_mt', label: 'Swing (Mt)', num: true },
+    ],
+    rows,
+  );
   return { body: L.body, height: L.height, table: tbl };
 }
 
 // ---------------------------------------------------------------------------
 export function retailPricePerProtein(spec, D) {
-  const rows = D.csv(spec.data.file).sort((a, b) => num(a.med_price_100g_protein) - num(b.med_price_100g_protein));
+  const rows = D.csv(spec.data.file).sort(
+    (a, b) => num(a.med_price_100g_protein) - num(b.med_price_100g_protein),
+  );
   // Reference bands as stated in spec.data.reference (COST-39 to COST-41).
   const bands = [
     { label: 'Eggs', lo: 34000, hi: 40000, row: 1, anchor: 'end' },
@@ -561,9 +791,17 @@ export function retailPricePerProtein(spec, D) {
           const cx = (x0 + x1) / 2;
           const ly = ctx.top - 32 + b.row * 16;
           return (
-            mark(tip, rect(x0, ctx.top, x1 - x0, ctx.bottom - ctx.top, BAND) + hit(x0, ctx.top, Math.max(x1 - x0, 8), ctx.bottom - ctx.top)) +
+            mark(
+              tip,
+              rect(x0, ctx.top, x1 - x0, ctx.bottom - ctx.top, BAND) +
+                hit(x0, ctx.top, Math.max(x1 - x0, 8), ctx.bottom - ctx.top),
+            ) +
             line(cx, ly + 7, cx, ctx.top, MUTED, 1) +
-            text(b.anchor === 'end' ? cx - 4 : cx + 4, ly, b.label, { size: 12, fill: INK, anchor: b.anchor })
+            text(b.anchor === 'end' ? cx - 4 : cx + 4, ly, b.label, {
+              size: 12,
+              fill: INK,
+              anchor: b.anchor,
+            })
           );
         })
         .join(''),
@@ -574,7 +812,10 @@ export function retailPricePerProtein(spec, D) {
       const xa = ctx.scale(num(r.min_pp));
       const xb = ctx.scale(num(r.max_pp));
       const cy = y + h / 2;
-      const whisk = line(xa, cy, xb, cy, INK, 1.5) + line(xa, cy - 5, xa, cy + 5, INK, 1.5) + line(xb, cy - 5, xb, cy + 5, INK, 1.5);
+      const whisk =
+        line(xa, cy, xb, cy, INK, 1.5) +
+        line(xa, cy - 5, xa, cy + 5, INK, 1.5) +
+        line(xb, cy - 5, xb, cy + 5, INK, 1.5);
       const tip = [
         `${r.product_type}: median VND ${fmtStr(r.med_price_100g_protein)} per 100 g of protein`,
         `Range: VND ${fmtStr(r.min_pp)} to ${fmtStr(r.max_pp)}`,
@@ -583,16 +824,30 @@ export function retailPricePerProtein(spec, D) {
       const lab = fmtStr(r.med_price_100g_protein);
       const lw = textWidth(lab, 12);
       const lxRight = xb + 6;
-      const labelSvg = lxRight + lw <= W ? text(lxRight, cy, lab, { size: 12, fill: INK, halo: true }) : text(xa - 6, cy, lab, { size: 12, fill: INK, anchor: 'end', halo: true });
-      return mark(tip, hbar(ctx.plotLeft, xm, by, bh, S(1)) + whisk + hit(ctx.plotLeft, y, xb - ctx.plotLeft + 4, h)) + labelSvg;
+      const labelSvg =
+        lxRight + lw <= W
+          ? text(lxRight, cy, lab, { size: 12, fill: INK, halo: true })
+          : text(xa - 6, cy, lab, { size: 12, fill: INK, anchor: 'end', halo: true });
+      return (
+        mark(
+          tip,
+          hbar(ctx.plotLeft, xm, by, bh, S(1)) +
+            whisk +
+            hit(ctx.plotLeft, y, xb - ctx.plotLeft + 4, h),
+        ) + labelSvg
+      );
     },
   });
-  const tbl = table(spec.title, [
-    { key: 'product_type', label: 'Product type' },
-    { key: 'n', label: 'Products', num: true },
-    { key: 'med_price_100g_protein', label: 'Median VND per 100 g of protein', num: true },
-    { key: 'min_pp', label: 'Lowest (VND)', num: true },
-    { key: 'max_pp', label: 'Highest (VND)', num: true },
-  ], rows);
+  const tbl = table(
+    spec.title,
+    [
+      { key: 'product_type', label: 'Product type' },
+      { key: 'n', label: 'Products', num: true },
+      { key: 'med_price_100g_protein', label: 'Median VND per 100 g of protein', num: true },
+      { key: 'min_pp', label: 'Lowest (VND)', num: true },
+      { key: 'max_pp', label: 'Highest (VND)', num: true },
+    ],
+    rows,
+  );
   return { body: L.body, height: L.height, table: tbl };
 }

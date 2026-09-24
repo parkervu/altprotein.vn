@@ -42,10 +42,22 @@ export function renderChartFigure(id: string, lang: Lang, cite: (ids: string[]) 
   const c =
     CHARTS[id] ??
     (id === 'chart-plays-scoring'
-      ? ({ id, type: 'interactive-bar', title: 'Ten plays, scored with weights you can change', svg: '', table: '', alt: '', source_ids: [] } as ChartOutput)
+      ? ({
+          id,
+          type: 'interactive-bar',
+          title: 'Ten plays, scored with weights you can change',
+          svg: '',
+          table: '',
+          alt: '',
+          source_ids: [],
+        } as ChartOutput)
       : undefined);
-  if (!c) return `<figure class="chart chart-missing" id="${escapeHtml(id)}"><p>${escapeHtml(s.chartUnavailable)}</p></figure>`;
-  const body = id === 'chart-plays-scoring' ? renderPlaysTool(lang, c.svg) : `<div class="chart-body">${c.svg}</div>`;
+  if (!c)
+    return `<figure class="chart chart-missing" id="${escapeHtml(id)}"><p>${escapeHtml(s.chartUnavailable)}</p></figure>`;
+  const body =
+    id === 'chart-plays-scoring'
+      ? renderPlaysTool(lang, c.svg)
+      : `<div class="chart-body">${c.svg}</div>`;
   return `<figure class="chart chart-${escapeHtml(c.type)}" id="${escapeHtml(id)}" aria-labelledby="${escapeHtml(id)}-cap">
 <div class="chart-head"><p class="chart-title" id="${escapeHtml(id)}-cap" lang="en">${escapeHtml(c.title)}</p>${c.subtitle ? `<p class="chart-sub" lang="en">${escapeHtml(c.subtitle)}</p>` : ''}</div>
 ${body}

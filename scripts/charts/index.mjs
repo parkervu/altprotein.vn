@@ -74,7 +74,10 @@ export function renderChart(spec, reportDir, D = dataCtx(reportDir)) {
   const fn = RENDERERS[spec.id];
   if (!fn) throw new Error(`No renderer for chart ${spec.id} (type ${spec.type})`);
   const out = fn(spec, D);
-  const svg = out.html !== undefined ? out.html : svgDoc(spec.id, out.height, out.body, spec.title, spec.alt_text);
+  const svg =
+    out.html !== undefined
+      ? out.html
+      : svgDoc(spec.id, out.height, out.body, spec.title, spec.alt_text);
   return {
     id: spec.id,
     type: spec.type,
@@ -93,7 +96,9 @@ export function renderChart(spec, reportDir, D = dataCtx(reportDir)) {
 
 /** @param {string} reportDir absolute path to report/ */
 export function renderAllCharts(reportDir) {
-  const specs = JSON.parse(fs.readFileSync(path.join(reportDir, 'charts', 'chart-specs.json'), 'utf8'));
+  const specs = JSON.parse(
+    fs.readFileSync(path.join(reportDir, 'charts', 'chart-specs.json'), 'utf8'),
+  );
   const D = dataCtx(reportDir);
   const out = {};
   for (const spec of specs.charts) out[spec.id] = renderChart(spec, reportDir, D);

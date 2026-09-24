@@ -10,7 +10,11 @@ const reportDir = path.resolve(here, '../../report');
 const outDir = path.join(here, '.preview');
 fs.mkdirSync(outDir, { recursive: true });
 
-const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const esc = (s) =>
+  String(s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
 const charts = renderAllCharts(reportDir);
 
 // Optional local copy of Work Sans (not committed; .preview is ignored) so screenshots use real metrics offline.

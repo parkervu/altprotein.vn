@@ -31,7 +31,8 @@ function cell(col: string, value: string, needle: string, sourcesHref: string): 
     return `<a href="${escapeHtml(value)}" rel="noopener" class="ext">${highlight(value.replace(/^https?:\/\/(www\.)?/, '').slice(0, 60), needle)}</a>`;
   }
   if (col === 'evidence_label' && /^(VN-direct|VN-adjacent|general)$/.test(value)) {
-    const kind = value === 'VN-direct' ? 'direct' : value === 'VN-adjacent' ? 'adjacent' : 'general';
+    const kind =
+      value === 'VN-direct' ? 'direct' : value === 'VN-adjacent' ? 'adjacent' : 'general';
     return `<span class="ev" data-ev="${kind}"><span class="ev-l">${value}</span></span>`;
   }
   if (col === 'confidence' && CONF_DOTS[value.toLowerCase()]) {
@@ -72,13 +73,16 @@ export function initDataTables() {
     function render() {
       const needle = input.value.trim();
       const lower = needle.toLowerCase();
-      let list = lower ? rows.filter((r) => cols.some((c) => (r[c] ?? '').toLowerCase().includes(lower))) : rows.slice();
+      let list = lower
+        ? rows.filter((r) => cols.some((c) => (r[c] ?? '').toLowerCase().includes(lower)))
+        : rows.slice();
       if (sortCol) {
         const c = sortCol;
         list.sort((a, b) => {
           const x = a[c] ?? '';
           const y = b[c] ?? '';
-          if (numeric(x) && numeric(y)) return (Number(x.replace(/,/g, '')) - Number(y.replace(/,/g, ''))) * sortDir;
+          if (numeric(x) && numeric(y))
+            return (Number(x.replace(/,/g, '')) - Number(y.replace(/,/g, ''))) * sortDir;
           return x.localeCompare(y, 'en', { numeric: true }) * sortDir;
         });
       }

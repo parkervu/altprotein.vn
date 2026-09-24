@@ -50,7 +50,12 @@ const closing = sections
   .join('\n');
 const version = String(cover?.data.updatedAt ?? '');
 // In the Vietnamese interface the hero carries the Vietnamese summary, so only the tiles are kept.
-const heroSource = vi ? introBody.split('\n').filter((l) => l.includes('{{kn:')).join('\n') : introBody;
+const heroSource = vi
+  ? introBody
+      .split('\n')
+      .filter((l) => l.includes('{{kn:'))
+      .join('\n')
+  : introBody;
 const hero = renderPage('front-cover', heroSource, lang, `hero-${version}`, false);
 const heroHtml = hero.html;
 const closingHtml = renderPage('front-cover', closing, lang, `closing-${version}`, false).html;
@@ -62,18 +67,34 @@ const briefs = PAGES.filter((p) => p.section === 'brief');
 const appendices = PAGES.filter((p) => p.section === 'appendix');
 const partNote: Record<string, string> = {
   'I. The case': vi ? 'Vì sao là Việt Nam và Việt Nam có gì' : 'Why Vietnam, and what it has',
-  'II. The conditions': vi ? 'Quy định, nhân lực, vốn, khu vực và chi phí' : 'Rules, talent, capital, the region and costs',
-  'III. The opportunity': vi ? 'Công nghệ, mười hướng đi và chính sách' : 'Technologies, ten plays and policy options',
-  'IV. Looking ahead': vi ? 'Triển vọng đến 2035 và những điều chưa biết' : 'Outlook to 2035 and the unknowns',
-  'V. Futures 2030 to 2050': vi ? 'Động lực, cân bằng protein, kịch bản và tầm nhìn' : 'Drivers, the protein balance, scenarios and a vision',
+  'II. The conditions': vi
+    ? 'Quy định, nhân lực, vốn, khu vực và chi phí'
+    : 'Rules, talent, capital, the region and costs',
+  'III. The opportunity': vi
+    ? 'Công nghệ, mười hướng đi và chính sách'
+    : 'Technologies, ten plays and policy options',
+  'IV. Looking ahead': vi
+    ? 'Triển vọng đến 2035 và những điều chưa biết'
+    : 'Outlook to 2035 and the unknowns',
+  'V. Futures 2030 to 2050': vi
+    ? 'Động lực, cân bằng protein, kịch bản và tầm nhìn'
+    : 'Drivers, the protein balance, scenarios and a vision',
 };
-const count = (file: string) => (datasets as { file: string; rows: number }[]).find((d) => d.file === file)?.rows ?? 0;
+const count = (file: string) =>
+  (datasets as { file: string; rows: number }[]).find((d) => d.file === file)?.rows ?? 0;
 const dataStats = [
-  { n: (datasets as { group: string }[]).filter((d) => (d as { group: string }).group === 'data').length, label: vi ? 'bảng dữ liệu' : 'data tables' },
+  {
+    n: (datasets as { group: string }[]).filter((d) => (d as { group: string }).group === 'data')
+      .length,
+    label: vi ? 'bảng dữ liệu' : 'data tables',
+  },
   { n: count('sources.csv'), label: vi ? 'nguồn' : 'sources' },
   { n: count('companies.csv'), label: vi ? 'doanh nghiệp và tổ chức' : 'companies and actors' },
   { n: count('facilities.csv'), label: vi ? 'cơ sở sản xuất' : 'facilities' },
-  { n: count('retail_audit_skus.csv'), label: vi ? 'sản phẩm bán lẻ được khảo sát' : 'audited retail products' },
+  {
+    n: count('retail_audit_skus.csv'),
+    label: vi ? 'sản phẩm bán lẻ được khảo sát' : 'audited retail products',
+  },
 ];
 const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
 ---
@@ -89,47 +110,58 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
     <div class="frame hero-inner">
       <div class="hero-text">
         <p class="eyebrow">
-          <span>{SITE.publisher}</span><span>·</span><span>{vi ? 'Ấn bản 1.1, tháng 9/2026' : 'Edition 1.1, September 2026'}</span>
-          <a class="new-pill" href={localize('/report', lang) + '#part-v'}>{vi ? 'Mới: Phần V, Tương lai 2030 đến 2050' : 'New: Part V, Futures 2030 to 2050'}</a>
+          <span>{SITE.publisher}</span>
+          <span>·</span>
+          <span>{vi ? 'Ấn bản 1.1, tháng 9/2026' : 'Edition 1.1, September 2026'}</span>
+          <a class="new-pill" href={localize('/report', lang) + '#part-v'}>
+            {vi ? 'Mới: Phần V, Tương lai 2030 đến 2050' : 'New: Part V, Futures 2030 to 2050'}
+          </a>
         </p>
-        {
-          vi ? (
-            <h1 lang="vi">
-              Protein thay thế tại Việt Nam
-              <span class="hero-sub">Khảo sát phía cung 2026</span>
-            </h1>
-          ) : (
-            <h1>
-              {h1}
-              {h2 && <span class="hero-sub">{h2}</span>}
-            </h1>
-          )
-        }
+        {vi ? (
+          <h1 lang="vi">
+            Protein thay thế tại Việt Nam
+            <span class="hero-sub">Khảo sát phía cung 2026</span>
+          </h1>
+        ) : (
+          <h1>
+            {h1}
+            {h2 && <span class="hero-sub">{h2}</span>}
+          </h1>
+        )}
         {cover?.data.subtitle && !vi && <p class="hero-question">{cover.data.subtitle}</p>}
-        {vi && <p class="hero-lead" lang="vi">{viSummary.summary}</p>}
+        {vi && (
+          <p class="hero-lead" lang="vi">
+            {viSummary.summary}
+          </p>
+        )}
         <div class="hero-cta">
-          {
-            vi ? (
-              <>
-                <a class="btn btn-primary" href={href('front-exec-summary-vi', lang)} lang="vi">
-                  {s.readSummaryVi} <span aria-hidden="true">→</span>
-                </a>
-                <a class="btn btn-secondary" href={href('front-exec-summary', lang)}>
-                  {s.readSummary}
-                </a>
-              </>
-            ) : (
-              <>
-                <a class="btn btn-primary" href={href('front-exec-summary', lang)}>
-                  {s.readSummary} <span class="btn-meta">{enSummary.reading_time_min} min</span>
-                </a>
-                <a class="btn btn-secondary" href={href('front-exec-summary-vi', lang)} lang="vi" hreflang="vi">
-                  Tóm tắt tiếng Việt
-                </a>
-              </>
-            )
-          }
-          <a class="btn btn-secondary" href={href('front-at-a-glance', lang)}>{vi ? 'Tổng quan nhanh' : 'At a glance'}</a>
+          {vi ? (
+            <>
+              <a class="btn btn-primary" href={href('front-exec-summary-vi', lang)} lang="vi">
+                {s.readSummaryVi} <span aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn-secondary" href={href('front-exec-summary', lang)}>
+                {s.readSummary}
+              </a>
+            </>
+          ) : (
+            <>
+              <a class="btn btn-primary" href={href('front-exec-summary', lang)}>
+                {s.readSummary} <span class="btn-meta">{enSummary.reading_time_min} min</span>
+              </a>
+              <a
+                class="btn btn-secondary"
+                href={href('front-exec-summary-vi', lang)}
+                lang="vi"
+                hreflang="vi"
+              >
+                Tóm tắt tiếng Việt
+              </a>
+            </>
+          )}
+          <a class="btn btn-secondary" href={href('front-at-a-glance', lang)}>
+            {vi ? 'Tổng quan nhanh' : 'At a glance'}
+          </a>
         </div>
       </div>
       <div class="hero-body prose" lang={vi ? 'en' : undefined} set:html={heroHtml} />
@@ -145,61 +177,80 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
         </div>
       </div>
       <div class="aud-picker" role="group" aria-label={s.audienceHeading}>
-        {
-          AUDIENCES.map((a) => (
-            <a class="aud-btn" href={`?for=${a}`} data-set-audience={a} role="button" aria-pressed="false">
-              {audienceLabel(a, lang, SITE.audiences[a])}
-            </a>
-          ))
-        }
-        <a class="aud-btn aud-clear" href="?for=" data-set-audience="" role="button" aria-pressed="false">{s.audienceAll}</a>
+        {AUDIENCES.map((a) => (
+          <a
+            class="aud-btn"
+            href={`?for=${a}`}
+            data-set-audience={a}
+            role="button"
+            aria-pressed="false"
+          >
+            {audienceLabel(a, lang, SITE.audiences[a])}
+          </a>
+        ))}
+        <a
+          class="aud-btn aud-clear"
+          href="?for="
+          data-set-audience=""
+          role="button"
+          aria-pressed="false"
+        >
+          {s.audienceAll}
+        </a>
       </div>
       <div class="aud-paths">
         <div class="aud-path" data-audience-none>
           <ol class="path-list path-default">
-            {
-              ['front-exec-summary', 'front-at-a-glance', 'ch11-plays', 'ch12-policy-options', 'ch18-scenarios-2050', 'ch20-robust-moves'].map((id, i) => {
-                const p = PAGE_BY_ID.get(id)!;
+            {[
+              'front-exec-summary',
+              'front-at-a-glance',
+              'ch11-plays',
+              'ch12-policy-options',
+              'ch18-scenarios-2050',
+              'ch20-robust-moves',
+            ].map((id, i) => {
+              const p = PAGE_BY_ID.get(id)!;
+              return (
+                <li>
+                  <a href={href(id, lang)}>
+                    <span class="path-n">{i + 1}</span>
+                    <span class="path-t" lang={vi ? 'en' : undefined}>
+                      {p.short_title}
+                    </span>
+                    <span class="path-s" lang={vi ? 'en' : undefined}>
+                      {p.summary}
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+        {Object.entries(SITE.audience_paths).map(([aud, ids]) => (
+          <div class="aud-path" data-audience-path={aud} hidden>
+            <p class="path-title">
+              {s.audiencePath}: <strong>{audienceLabel(aud, lang, SITE.audiences[aud])}</strong>
+            </p>
+            <ol class="path-list">
+              {ids.map((id, i) => {
+                const p = PAGE_BY_ID.get(id);
+                if (!p) return null;
                 return (
                   <li>
-                    <a href={href(id, lang)}>
+                    <a href={href(id, lang)} lang={p.lang !== lang ? p.lang : undefined}>
                       <span class="path-n">{i + 1}</span>
-                      <span class="path-t" lang={vi ? 'en' : undefined}>{p.short_title}</span>
-                      <span class="path-s" lang={vi ? 'en' : undefined}>{p.summary}</span>
+                      <span class="path-t">
+                        {p.short_title}
+                        {p.new_in && <span class="new-pill">{s.new}</span>}
+                      </span>
+                      <span class="path-s">{p.summary}</span>
                     </a>
                   </li>
                 );
-              })
-            }
-          </ol>
-        </div>
-        {
-          Object.entries(SITE.audience_paths).map(([aud, ids]) => (
-            <div class="aud-path" data-audience-path={aud} hidden>
-              <p class="path-title">
-                {s.audiencePath}: <strong>{audienceLabel(aud, lang, SITE.audiences[aud])}</strong>
-              </p>
-              <ol class="path-list">
-                {ids.map((id, i) => {
-                  const p = PAGE_BY_ID.get(id);
-                  if (!p) return null;
-                  return (
-                    <li>
-                      <a href={href(id, lang)} lang={p.lang !== lang ? p.lang : undefined}>
-                        <span class="path-n">{i + 1}</span>
-                        <span class="path-t">
-                          {p.short_title}
-                          {p.new_in && <span class="new-pill">{s.new}</span>}
-                        </span>
-                        <span class="path-s">{p.summary}</span>
-                      </a>
-                    </li>
-                  );
-                })}
-              </ol>
-            </div>
-          ))
-        }
+              })}
+            </ol>
+          </div>
+        ))}
       </div>
     </div>
   </section>
@@ -209,37 +260,47 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
       <div class="section-head">
         <div>
           <h2 id="parts-h">{s.partsHeading}</h2>
-          <p>{vi ? 'Hai mươi chương, từ luận cứ đến những bước đi hiệu quả trong mọi kịch bản năm 2050. Nội dung báo cáo bằng tiếng Anh.' : 'Twenty chapters, from the case for Vietnam to the moves that pay off in any 2050.'}</p>
+          <p>
+            {vi
+              ? 'Hai mươi chương, từ luận cứ đến những bước đi hiệu quả trong mọi kịch bản năm 2050. Nội dung báo cáo bằng tiếng Anh.'
+              : 'Twenty chapters, from the case for Vietnam to the moves that pay off in any 2050.'}
+          </p>
         </div>
-        <a class="btn btn-secondary" href={localize('/report', lang)}>{vi ? 'Toàn bộ mục lục' : 'Full contents'} →</a>
+        <a class="btn btn-secondary" href={localize('/report', lang)}>
+          {vi ? 'Toàn bộ mục lục' : 'Full contents'} →
+        </a>
       </div>
       <div class="parts-grid">
-        {
-          PARTS.map((part) => {
-            const list = chapters.filter((c) => c.part === part);
-            const isNew = part.startsWith('V.');
-            return (
-              <div class={`part-card${isNew ? ' is-new' : ''}`}>
-                <p class="part-num">{vi ? 'Phần' : 'Part'} {part.split('.')[0]}</p>
-                <h3>
-                  {label(part, lang).replace(/^[IV]+\. /, '')}
-                  {isNew && <span class="new-pill">{s.newIn11}</span>}
-                </h3>
-                <p class="part-note">{partNote[part]}</p>
-                <ol>
-                  {list.map((c) => (
-                    <li>
-                      <a href={href(c.id, lang)} data-aud={c.audiences.join(' ')} lang={vi ? 'en' : undefined}>
-                        <span class="num">{chapterNumber(c.id)}</span>
-                        <span>{c.short_title}</span>
-                      </a>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            );
-          })
-        }
+        {PARTS.map((part) => {
+          const list = chapters.filter((c) => c.part === part);
+          const isNew = part.startsWith('V.');
+          return (
+            <div class={`part-card${isNew ? ' is-new' : ''}`}>
+              <p class="part-num">
+                {vi ? 'Phần' : 'Part'} {part.split('.')[0]}
+              </p>
+              <h3>
+                {label(part, lang).replace(/^[IV]+\. /, '')}
+                {isNew && <span class="new-pill">{s.newIn11}</span>}
+              </h3>
+              <p class="part-note">{partNote[part]}</p>
+              <ol>
+                {list.map((c) => (
+                  <li>
+                    <a
+                      href={href(c.id, lang)}
+                      data-aud={c.audiences.join(' ')}
+                      lang={vi ? 'en' : undefined}
+                    >
+                      <span class="num">{chapterNumber(c.id)}</span>
+                      <span>{c.short_title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          );
+        })}
       </div>
     </div>
   </section>
@@ -249,23 +310,29 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
       <div class="section-head">
         <div>
           <h2 id="briefs-h">{s.briefsHeading}</h2>
-          <p>{vi ? 'Mỗi bản khoảng năm trang, dành cho một nhóm độc giả.' : 'About five pages each, written for one audience.'}</p>
+          <p>
+            {vi
+              ? 'Mỗi bản khoảng năm trang, dành cho một nhóm độc giả.'
+              : 'About five pages each, written for one audience.'}
+          </p>
         </div>
       </div>
       <div class="card-grid">
-        {
-          briefs.map((b) => (
-            <a class="card" href={href(b.id, lang)} data-aud={b.audiences.join(' ')}>
-              <span class="card-kicker">
-                {vi ? 'Bản tóm lược' : 'Brief'}
-                <span class="for-you">{s.forAudience}</span>
-              </span>
-              <span class="card-title" lang={vi ? 'en' : undefined}>{b.short_title}</span>
-              <span class="card-text" lang={vi ? 'en' : undefined}>{b.summary}</span>
-              <span class="card-meta">{b.reading_time_min && s.minRead(b.reading_time_min)}</span>
-            </a>
-          ))
-        }
+        {briefs.map((b) => (
+          <a class="card" href={href(b.id, lang)} data-aud={b.audiences.join(' ')}>
+            <span class="card-kicker">
+              {vi ? 'Bản tóm lược' : 'Brief'}
+              <span class="for-you">{s.forAudience}</span>
+            </span>
+            <span class="card-title" lang={vi ? 'en' : undefined}>
+              {b.short_title}
+            </span>
+            <span class="card-text" lang={vi ? 'en' : undefined}>
+              {b.summary}
+            </span>
+            <span class="card-meta">{b.reading_time_min && s.minRead(b.reading_time_min)}</span>
+          </a>
+        ))}
       </div>
     </div>
   </section>
@@ -275,22 +342,30 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
       <div class="section-head">
         <div>
           <h2 id="app-h">{s.appendicesHeading}</h2>
-          <p>{vi ? 'Bằng chứng chi tiết: số liệu, danh bạ, quy định, chi phí, khoa học và nguồn.' : 'The micro findings: data sheets, directories, regulation, costs, science and sources.'}</p>
+          <p>
+            {vi
+              ? 'Bằng chứng chi tiết: số liệu, danh bạ, quy định, chi phí, khoa học và nguồn.'
+              : 'The micro findings: data sheets, directories, regulation, costs, science and sources.'}
+          </p>
         </div>
-        <a class="btn btn-secondary" href={localize('/appendices', lang)}>{vi ? 'Tất cả phụ lục' : 'All appendices'} →</a>
+        <a class="btn btn-secondary" href={localize('/appendices', lang)}>
+          {vi ? 'Tất cả phụ lục' : 'All appendices'} →
+        </a>
       </div>
       <ul class="app-list">
-        {
-          appendices.map((a) => (
-            <li>
-              <a href={href(a.id, lang)} data-aud={a.audiences.join(' ')} lang={vi ? 'en' : undefined}>
-                <span class="app-letter">{appendixLetter(a.id)}</span>
-                <span>{a.short_title.replace(/^[A-Z]\. /, '')}</span>
-                {a.new_in && <span class="new-pill">{s.new}</span>}
-              </a>
-            </li>
-          ))
-        }
+        {appendices.map((a) => (
+          <li>
+            <a
+              href={href(a.id, lang)}
+              data-aud={a.audiences.join(' ')}
+              lang={vi ? 'en' : undefined}
+            >
+              <span class="app-letter">{appendixLetter(a.id)}</span>
+              <span>{a.short_title.replace(/^[A-Z]\. /, '')}</span>
+              {a.new_in && <span class="new-pill">{s.new}</span>}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   </section>
@@ -302,22 +377,34 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
           <h2 id="data-h">{s.dataHeading}</h2>
           <p>{s.dataIntro}</p>
         </div>
-        <a class="btn btn-primary" href={localize('/data', lang)}>{vi ? 'Mở trình duyệt dữ liệu' : 'Open the data browser'} →</a>
+        <a class="btn btn-primary" href={localize('/data', lang)}>
+          {vi ? 'Mở trình duyệt dữ liệu' : 'Open the data browser'} →
+        </a>
       </div>
       <dl class="stat-row">
-        {
-          dataStats.map((d) => (
-            <div>
-              <dt>{d.label}</dt>
-              <dd>{nf.format(d.n)}</dd>
-            </div>
-          ))
-        }
+        {dataStats.map((d) => (
+          <div>
+            <dt>{d.label}</dt>
+            <dd>{nf.format(d.n)}</dd>
+          </div>
+        ))}
       </dl>
       <ul class="download-list">
-        <li><a href="/downloads/altprotein-vn-data.zip" download>{s.downloadData}</a></li>
-        <li><a href="/downloads/altprotein-vn-working-papers.zip" download>{s.downloadWorking}</a></li>
-        <li><a href="/downloads/altprotein-vn-report-markdown.zip" download>{s.downloadMarkdown}</a></li>
+        <li>
+          <a href="/downloads/altprotein-vn-data.zip" download>
+            {s.downloadData}
+          </a>
+        </li>
+        <li>
+          <a href="/downloads/altprotein-vn-working-papers.zip" download>
+            {s.downloadWorking}
+          </a>
+        </li>
+        <li>
+          <a href="/downloads/altprotein-vn-report-markdown.zip" download>
+            {s.downloadMarkdown}
+          </a>
+        </li>
       </ul>
     </div>
   </section>
@@ -333,7 +420,11 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
 <style>
   .hero {
     background:
-      radial-gradient(120% 90% at 100% 0%, color-mix(in srgb, var(--brand) 12%, transparent), transparent 60%),
+      radial-gradient(
+        120% 90% at 100% 0%,
+        color-mix(in srgb, var(--brand) 12%, transparent),
+        transparent 60%
+      ),
       linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
     border-bottom: 1px solid var(--line);
   }

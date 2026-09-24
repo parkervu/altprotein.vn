@@ -13,12 +13,7 @@ export interface SearchRecord {
 }
 const RECORDS = recordsJson as SearchRecord[];
 
-const fold = (s: string) =>
-  s
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/đ/g, 'd');
+const fold = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd');
 const INDEX = RECORDS.map((r) => ({
   r,
   title: fold(`${r.id} ${r.title} ${r.title_vi ?? ''}`),
@@ -58,7 +53,10 @@ export function cleanSnippet(snippet: string): string {
     .replace(/\{(VN-direct|VN-adjacent|general)\\?\|(High|Medium|Low)\}/g, '')
     .replace(/\{fx:[a-z]+\}/g, '')
     .replace(/\{\{(kn|chart):[a-z0-9-]+\}\}/g, '')
-    .replace(/\[\[([a-z0-9-]+)(#[a-z0-9-]+)?\]\]/g, (_, id) => PAGE_BY_ID.get(id)?.short_title ?? id)
+    .replace(
+      /\[\[([a-z0-9-]+)(#[a-z0-9-]+)?\]\]/g,
+      (_, id) => PAGE_BY_ID.get(id)?.short_title ?? id,
+    )
     .replace(/(\*\*|__|-{3,}|\||^#+ |\n#+ )/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
@@ -73,7 +71,11 @@ export async function searchPages(query: string, limit = 30) {
     const res = await search(fts, { collections: ['pages'], limit });
     return res.items
       .filter((item) => PAGE_BY_ID.has(item.slug ?? item.id))
-      .map((item) => ({ id: item.slug ?? item.id, snippet: item.snippet ? cleanSnippet(item.snippet) : '', score: item.score }));
+      .map((item) => ({
+        id: item.slug ?? item.id,
+        snippet: item.snippet ? cleanSnippet(item.snippet) : '',
+        score: item.score,
+      }));
   } catch (error) {
     console.error('Search failed', error);
     return [];

@@ -13,121 +13,128 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
 const sourcesHref = href('app-t-sources', lang);
 ---
 
-{
-  d ? (
-    <Base title={d.file} section="data" description={d.purpose}>
-      <div class="frame">
-        <ol class="crumbs" style="margin-top:28px">
-          <li>
-            <a href={localize('/', lang)}>{s.home}</a>
-          </li>
-          <li>
-            <a href={localize('/data', lang)}>{s.data}</a>
-          </li>
-        </ol>
-        <header class="page-head" style="max-width:60rem">
-          <p class="eyebrow">
-            {d.group === 'chart' ? s.dataChart : s.data}
-            {d.new_in && <span class="new-pill">{s.newIn11}</span>}
+{d ? (
+  <Base title={d.file} section="data" description={d.purpose}>
+    <div class="frame">
+      <ol class="crumbs" style="margin-top:28px">
+        <li>
+          <a href={localize('/', lang)}>{s.home}</a>
+        </li>
+        <li>
+          <a href={localize('/data', lang)}>{s.data}</a>
+        </li>
+      </ol>
+      <header class="page-head" style="max-width:60rem">
+        <p class="eyebrow">
+          {d.group === 'chart' ? s.dataChart : s.data}
+          {d.new_in && <span class="new-pill">{s.newIn11}</span>}
+        </p>
+        <h1>
+          <code class="file-title">{d.file}</code>
+        </h1>
+        {d.purpose && (
+          <p class="page-lead" lang={vi ? 'en' : undefined}>
+            {d.purpose}
           </p>
-          <h1>
-            <code class="file-title">{d.file}</code>
-          </h1>
-          {d.purpose && <p class="page-lead" lang={vi ? 'en' : undefined}>{d.purpose}</p>}
-          <div class="page-meta">
-            <span>
-              {nf.format(d.rows)} {s.rows} · {d.columns.length} {vi ? 'cột' : 'columns'}
-            </span>
-            <a class="btn btn-secondary" href={d.href} download>
-              {s.download}
-            </a>
-            {d.pages.length > 0 && (
-              <span>
-                {s.usedIn}:{' '}
-                {d.pages.map((id, i) => (
-                  <>
-                    {i > 0 && ', '}
-                    <a href={href(id, lang)}>{PAGE_BY_ID.get(id)?.short_title}</a>
-                  </>
-                ))}
-              </span>
-            )}
-          </div>
-        </header>
-        {d.columns.some((c) => c.doc) && (
-          <details class="col-docs">
-            <summary>{s.columns}</summary>
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th scope="col">{s.column}</th>
-                    <th scope="col">{s.meaning}</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {d.columns.map((c) => (
-                    <tr>
-                      <td>
-                        <code>{c.name}</code>
-                      </td>
-                      <td lang={vi ? 'en' : undefined}>{c.doc}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </details>
         )}
-        <div
-          class="datatable"
-          data-datatable
-          data-src={d.href}
-          data-sources-href={sourcesHref}
-          data-docs={JSON.stringify(Object.fromEntries(d.columns.map((c) => [c.name, c.doc])))}
-          data-i18n={JSON.stringify({ showing: s.showing(0, 0), more: s.loadMore, filter: s.filterPlaceholder, lang })}
-        >
-          <div class="filters">
-            <label class="field">
-              {s.filter}
-              <input type="search" name="filter" placeholder={s.filterPlaceholder} disabled />
-            </label>
-            <p class="dt-count" aria-live="polite" />
-          </div>
-          <noscript>
-            <p class="lang-note">
-              {s.noJs} <a href={d.href}>{s.download}</a>
-            </p>
-          </noscript>
-          <div class="table-wrap dt-wrap" tabindex="0" role="region" aria-label={d.file}>
+        <div class="page-meta">
+          <span>
+            {nf.format(d.rows)} {s.rows} · {d.columns.length} {vi ? 'cột' : 'columns'}
+          </span>
+          <a class="btn btn-secondary" href={d.href} download>
+            {s.download}
+          </a>
+          {d.pages.length > 0 && (
+            <span>
+              {s.usedIn}:{' '}
+              {d.pages.map((id, i) => (
+                <>
+                  {i > 0 && ', '}
+                  <a href={href(id, lang)}>{PAGE_BY_ID.get(id)?.short_title}</a>
+                </>
+              ))}
+            </span>
+          )}
+        </div>
+      </header>
+      {d.columns.some((c) => c.doc) && (
+        <details class="col-docs">
+          <summary>{s.columns}</summary>
+          <div class="table-wrap">
             <table>
               <thead>
                 <tr>
-                  {d.columns.map((c) => (
-                    <th scope="col" title={c.doc || undefined}>
-                      {c.name}
-                    </th>
-                  ))}
+                  <th scope="col">{s.column}</th>
+                  <th scope="col">{s.meaning}</th>
                 </tr>
               </thead>
-              <tbody />
+              <tbody>
+                {d.columns.map((c) => (
+                  <tr>
+                    <td>
+                      <code>{c.name}</code>
+                    </td>
+                    <td lang={vi ? 'en' : undefined}>{c.doc}</td>
+                  </tr>
+                ))}
+              </tbody>
             </table>
           </div>
-          <p>
-            <button class="btn-ghost dt-more" type="button" hidden>
-              {s.loadMore}
-            </button>
-          </p>
+        </details>
+      )}
+      <div
+        class="datatable"
+        data-datatable
+        data-src={d.href}
+        data-sources-href={sourcesHref}
+        data-docs={JSON.stringify(Object.fromEntries(d.columns.map((c) => [c.name, c.doc])))}
+        data-i18n={JSON.stringify({
+          showing: s.showing(0, 0),
+          more: s.loadMore,
+          filter: s.filterPlaceholder,
+          lang,
+        })}
+      >
+        <div class="filters">
+          <label class="field">
+            {s.filter}
+            <input type="search" name="filter" placeholder={s.filterPlaceholder} disabled />
+          </label>
+          <p class="dt-count" aria-live="polite" />
         </div>
-        <div style="height:48px" />
+        <noscript>
+          <p class="lang-note">
+            {s.noJs} <a href={d.href}>{s.download}</a>
+          </p>
+        </noscript>
+        <div class="table-wrap dt-wrap" tabindex="0" role="region" aria-label={d.file}>
+          <table>
+            <thead>
+              <tr>
+                {d.columns.map((c) => (
+                  <th scope="col" title={c.doc || undefined}>
+                    {c.name}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody />
+          </table>
+        </div>
+        <p>
+          <button class="btn-ghost dt-more" type="button" hidden>
+            {s.loadMore}
+          </button>
+        </p>
       </div>
-    </Base>
-  ) : (
-    <Base title="Not found" noindex>
-      <NotFound />
-    </Base>
-  )
-}
+      <div style="height:48px" />
+    </div>
+  </Base>
+) : (
+  <Base title="Not found" noindex>
+    <NotFound />
+  </Base>
+)}
 
 <style>
   .file-title {

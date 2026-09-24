@@ -40,7 +40,9 @@ export function buildSeed() {
           field('title', 'Title', 'string', { required: true }),
           field('short_title', 'Short title (navigation)', 'string', { required: true }),
           field('subtitle', 'Subtitle', 'string'),
-          field('summary', 'Summary (cards and meta description)', 'text', { options: { rows: 3 } }),
+          field('summary', 'Summary (cards and meta description)', 'text', {
+            options: { rows: 3 },
+          }),
           field('body', 'Body (Markdown with report tokens)', 'text', {
             required: true,
             searchable: true,

@@ -117,7 +117,8 @@ function keyNumberTile(state: State, id: string): string {
   const useVi = (contentLang === 'vi' || lang === 'vi') && k.label_vi;
   const labelText = useVi ? k.label_vi! : k.label;
   const vision = k.foresight_type === 'vision';
-  const primary = k.primary_page && k.primary_page !== state.opts.pageId && PAGE_BY_ID.has(k.primary_page);
+  const primary =
+    k.primary_page && k.primary_page !== state.opts.pageId && PAGE_BY_ID.has(k.primary_page);
   return `<figure class="kn${vision ? ' kn-vision' : ''}" id="${escapeHtml(id)}" data-ev="${k.evidence === 'VN-direct' ? 'direct' : k.evidence === 'VN-adjacent' ? 'adjacent' : 'general'}">
 <div class="kn-value">${escapeHtml(k.value)}</div>
 <figcaption class="kn-label"${useVi ? ' lang="vi"' : ''}>${escapeHtml(labelText)}</figcaption>
@@ -152,7 +153,9 @@ function buildMarked(state: State): Marked {
       if (m) return { type: 'evidence', raw: m[0], fx: m[1] };
     },
     renderer: (token) =>
-      token.fx ? foresightBadge(token.fx as string, lang) : evidenceBadge(token.label as string, token.confidence as string, lang),
+      token.fx
+        ? foresightBadge(token.fx as string, lang)
+        : evidenceBadge(token.label as string, token.confidence as string, lang),
   };
   const xref: TokenizerAndRendererExtension = {
     name: 'xref',
@@ -195,14 +198,18 @@ function buildMarked(state: State): Marked {
     tokenizer(src) {
       const m = /^(?:[ \t]*(?:\{\{(?:kn|chart):[a-z0-9-]+\}\}[ \t]*)+(?:\n|$))+/.exec(src);
       if (!m) return;
-      const items = [...m[0].matchAll(/\{\{(kn|chart):([a-z0-9-]+)\}\}/g)].map((x) => ({ kind: x[1], id: x[2] }));
+      const items = [...m[0].matchAll(/\{\{(kn|chart):([a-z0-9-]+)\}\}/g)].map((x) => ({
+        kind: x[1],
+        id: x[2],
+      }));
       return { type: 'embeds', raw: m[0], items };
     },
     renderer(token) {
       const out: string[] = [];
       let tiles: string[] = [];
       const flush = () => {
-        if (tiles.length) out.push(`<div class="kn-grid" data-count="${tiles.length}">${tiles.join('')}</div>`);
+        if (tiles.length)
+          out.push(`<div class="kn-grid" data-count="${tiles.length}">${tiles.join('')}</div>`);
         tiles = [];
       };
       for (const item of token.items as { kind: string; id: string }[]) {
@@ -252,14 +259,17 @@ function buildMarked(state: State): Marked {
           return `<${tag}${tag === 'th' ? ' scope="col"' : ''}${align}>${this.parser.parseInline(c.tokens)}</${tag}>`;
         };
         const head = `<tr>${token.header.map((c, i) => cell(c, 'th', i)).join('')}</tr>`;
-        const body = token.rows.map((row) => `<tr>${row.map((c, i) => cell(c, 'td', i)).join('')}</tr>`).join('\n');
+        const body = token.rows
+          .map((row) => `<tr>${row.map((c, i) => cell(c, 'td', i)).join('')}</tr>`)
+          .join('\n');
         const cols = token.header.length;
         return `<div class="table-wrap" data-cols="${cols}" tabindex="0" role="region" aria-label="${lang === 'vi' ? 'Bảng' : 'Table'}: ${escapeHtml(stripTags(this.parser.parseInline(token.header[0].tokens)))}"><table><thead>${head}</thead><tbody>${body}</tbody></table></div>\n`;
       },
       html(token: Tokens.HTML | Tokens.Tag) {
         const raw = token.raw;
         const anchor = /^<a id="([A-Za-z0-9_-]+)"><\/a>/.exec(raw.trim());
-        if (anchor) return `<a id="${anchor[1]}" class="src-anchor"></a>${raw.trim().length > anchor[0].length ? escapeHtml(raw.trim().slice(anchor[0].length)) : ''}`;
+        if (anchor)
+          return `<a id="${anchor[1]}" class="src-anchor"></a>${raw.trim().length > anchor[0].length ? escapeHtml(raw.trim().slice(anchor[0].length)) : ''}`;
         if (/^<a id="[A-Za-z0-9_-]+">$/.test(raw)) return raw.replace('>', ' class="src-anchor">');
         if (raw === '</a>') return raw;
         if (/^<br\s*\/?>$/i.test(raw)) return '<br>';
@@ -298,7 +308,10 @@ export function plainText(markdown: string): string {
     .replace(/\{(VN-direct|VN-adjacent|general)\\?\|(High|Medium|Low)\}/g, '')
     .replace(/\{fx:[a-z]+\}/g, '')
     .replace(/\{\{(kn|chart):[a-z0-9-]+\}\}/g, '')
-    .replace(/\[\[([a-z0-9-]+)(#[a-z0-9-]+)?\]\]/g, (_, id) => PAGE_BY_ID.get(id)?.short_title ?? id)
+    .replace(
+      /\[\[([a-z0-9-]+)(#[a-z0-9-]+)?\]\]/g,
+      (_, id) => PAGE_BY_ID.get(id)?.short_title ?? id,
+    )
     .replace(/<[^>]+>/g, '')
     .replace(/[*_`#>|]/g, ' ')
     .replace(/\s+/g, ' ')

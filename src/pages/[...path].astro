@@ -25,7 +25,9 @@ if (meta) {
     loaded = await loadPage(meta.id);
   } catch (error) {
     console.error(error);
-    return new Response('The report is temporarily unavailable. Please try again.', { status: 503 });
+    return new Response('The report is temporarily unavailable. Please try again.', {
+      status: 503,
+    });
   }
 }
 const entry = loaded?.entry;
@@ -33,7 +35,13 @@ if (!entry) Astro.response.status = 404;
 const data = entry?.data;
 const rendered =
   meta && data
-    ? renderPage(meta.id, data.body ?? '', lang, String(data.updatedAt ?? ''), Boolean(loaded?.isPreview))
+    ? renderPage(
+        meta.id,
+        data.body ?? '',
+        lang,
+        String(data.updatedAt ?? ''),
+        Boolean(loaded?.isPreview),
+      )
     : null;
 const section =
   meta?.section === 'report'
@@ -47,22 +55,26 @@ const section =
           : undefined;
 ---
 
-{
-  meta && data && rendered ? (
-    <Base
-      title={data.short_title && meta.section === 'front' ? data.title : data.title}
-      description={data.summary ?? meta.summary}
-      content={{ collection: 'pages', id: entry!.id, slug: meta.id }}
-      noindex={loaded?.isPreview}
-      current={meta.id}
-      section={section}
-      pageClass={`page-${meta.section} page-${meta.id}`}
-    >
-      <PageView meta={meta} title={data.title} summary={data.summary} rendered={rendered} isPreview={loaded?.isPreview} />
-    </Base>
-  ) : (
-    <Base title="Not found" noindex>
-      <NotFound />
-    </Base>
-  )
-}
+{meta && data && rendered ? (
+  <Base
+    title={data.short_title && meta.section === 'front' ? data.title : data.title}
+    description={data.summary ?? meta.summary}
+    content={{ collection: 'pages', id: entry!.id, slug: meta.id }}
+    noindex={loaded?.isPreview}
+    current={meta.id}
+    section={section}
+    pageClass={`page-${meta.section} page-${meta.id}`}
+  >
+    <PageView
+      meta={meta}
+      title={data.title}
+      summary={data.summary}
+      rendered={rendered}
+      isPreview={loaded?.isPreview}
+    />
+  </Base>
+) : (
+  <Base title="Not found" noindex>
+    <NotFound />
+  </Base>
+)}

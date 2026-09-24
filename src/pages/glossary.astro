@@ -16,8 +16,19 @@ const fold = (x: string) => x.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,
 <Base title={s.glossaryHeading} description={s.glossaryIntro}>
   <div class="frame">
     <header class="index-head">
-      <h1>{s.glossaryHeading} <span class="gl-sub" lang={vi ? 'en' : 'vi'}>{vi ? 'Glossary' : 'Thuật ngữ'}</span></h1>
-      <p>{s.glossaryIntro} <a href={href('app-s-glossary', lang)}>{vi ? 'Phụ lục S' : 'Appendix S'}</a> · <a href="/data/glossary.csv" download>glossary.csv</a></p>
+      <h1>
+        {s.glossaryHeading}{' '}
+        <span class="gl-sub" lang={vi ? 'en' : 'vi'}>
+          {vi ? 'Glossary' : 'Thuật ngữ'}
+        </span>
+      </h1>
+      <p>
+        {s.glossaryIntro}{' '}
+        <a href={href('app-s-glossary', lang)}>{vi ? 'Phụ lục S' : 'Appendix S'}</a> ·{' '}
+        <a href="/data/glossary.csv" download>
+          glossary.csv
+        </a>
+      </p>
     </header>
     <div class="filters gl-filters" data-gl-filters hidden>
       <label class="field">
@@ -28,37 +39,41 @@ const fold = (x: string) => x.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,
         {vi ? 'Nhóm' : 'Category'}
         <select name="gl-cat">
           <option value="">{s.allCategories}</option>
-          {categories.map((c) => <option value={c}>{c}</option>)}
+          {categories.map((c) => (
+            <option value={c}>{c}</option>
+          ))}
         </select>
       </label>
       <p class="gl-count" aria-live="polite"></p>
     </div>
-    {
-      categories.map((cat) => (
-        <section class="gl-section" data-cat={cat}>
-          <h2 lang="en">{cat}</h2>
-          <dl class="gl-list">
-            {terms
-              .filter((g) => g.category === cat)
-              .map((g) => (
-                <div class="gl-term" id={g.term_id} data-search={fold(Object.values(g).join(' '))}>
-                  <dt>
-                    <span lang="en" class="gl-en">
-                      {g.term_en}
-                      {g.abbreviation && <abbr> ({g.abbreviation})</abbr>}
-                    </span>
-                    <span lang="vi" class="gl-vi">{g.term_vi}</span>
-                  </dt>
-                  <dd>
-                    <p lang="en">{g.definition_en}</p>
-                    <p lang="vi" class="gl-def-vi">{g.definition_vi}</p>
-                  </dd>
-                </div>
-              ))}
-          </dl>
-        </section>
-      ))
-    }
+    {categories.map((cat) => (
+      <section class="gl-section" data-cat={cat}>
+        <h2 lang="en">{cat}</h2>
+        <dl class="gl-list">
+          {terms
+            .filter((g) => g.category === cat)
+            .map((g) => (
+              <div class="gl-term" id={g.term_id} data-search={fold(Object.values(g).join(' '))}>
+                <dt>
+                  <span lang="en" class="gl-en">
+                    {g.term_en}
+                    {g.abbreviation && <abbr> ({g.abbreviation})</abbr>}
+                  </span>
+                  <span lang="vi" class="gl-vi">
+                    {g.term_vi}
+                  </span>
+                </dt>
+                <dd>
+                  <p lang="en">{g.definition_en}</p>
+                  <p lang="vi" class="gl-def-vi">
+                    {g.definition_vi}
+                  </p>
+                </dd>
+              </div>
+            ))}
+        </dl>
+      </section>
+    ))}
     <div style="height:64px"></div>
   </div>
 </Base>
@@ -162,7 +177,9 @@ const fold = (x: string) => x.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,
         });
         sec.hidden = !any;
       });
-      count.textContent = vi ? `${n} trên ${terms.length} thuật ngữ` : `${n} of ${terms.length} terms`;
+      count.textContent = vi
+        ? `${n} trên ${terms.length} thuật ngữ`
+        : `${n} of ${terms.length} terms`;
     };
     q.addEventListener('input', apply);
     cat.addEventListener('change', apply);

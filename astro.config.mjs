@@ -15,6 +15,10 @@ export default defineConfig({
   devToolbar: { enabled: false },
   vite: {
     // The report package and the build scripts are inputs to `pnpm data:build`, not to Vite.
-    server: { watch: { ignored: ['**/report/**', '**/scripts/**', '**/public/data/**', '**/public/downloads/**'] } },
+    server: {
+      watch: {
+        ignored: ['**/report/**', '**/scripts/**', '**/public/data/**', '**/public/downloads/**'],
+      },
+    },
   },
 });

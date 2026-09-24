@@ -56,7 +56,9 @@ function setDrawer(open: boolean) {
   opener?.setAttribute('aria-expanded', String(open));
 }
 opener?.addEventListener('click', () => setDrawer(true));
-drawer?.querySelectorAll('[data-drawer-close]').forEach((el) => el.addEventListener('click', () => setDrawer(false)));
+drawer
+  ?.querySelectorAll('[data-drawer-close]')
+  .forEach((el) => el.addEventListener('click', () => setDrawer(false)));
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && drawer?.hasAttribute('data-open')) setDrawer(false);
 });
@@ -121,10 +123,12 @@ function tipText(el: Element): string {
   return '';
 }
 // Move native titles into data attributes so the browser tooltip does not double up.
-document.querySelectorAll<HTMLElement>('sup.cite a[title], .ev[title], .fx[title]').forEach((el) => {
-  el.dataset.tip = el.title;
-  el.removeAttribute('title');
-});
+document
+  .querySelectorAll<HTMLElement>('sup.cite a[title], .ev[title], .fx[title]')
+  .forEach((el) => {
+    el.dataset.tip = el.title;
+    el.removeAttribute('title');
+  });
 document.querySelectorAll<SVGElement>('.chart-body .mark').forEach((mark) => {
   const title = mark.querySelector(':scope > title');
   const text = mark.getAttribute('data-tip') || title?.textContent || '';
@@ -143,7 +147,8 @@ document.addEventListener('pointerover', (e) => {
   else showTip(el, text);
 });
 document.addEventListener('pointermove', (e) => {
-  if (tipOwner?.closest('.chart-body') && tip && !tip.hidden) showTip(tipOwner, tip.textContent ?? '', e.clientX, e.clientY);
+  if (tipOwner?.closest('.chart-body') && tip && !tip.hidden)
+    showTip(tipOwner, tip.textContent ?? '', e.clientX, e.clientY);
 });
 document.addEventListener('pointerout', (e) => {
   if (tipOwner && !(tipOwner as Element).contains(e.relatedTarget as Node)) hideTip();
@@ -159,12 +164,16 @@ window.addEventListener('scroll', hideTip, { passive: true });
 const tocLinks = [...document.querySelectorAll<HTMLAnchorElement>('.doc-toc a[href^="#"]')];
 if (tocLinks.length && 'IntersectionObserver' in window) {
   const byId = new Map(tocLinks.map((a) => [decodeURIComponent(a.hash.slice(1)), a]));
-  const headings = [...byId.keys()].map((id) => document.getElementById(id)).filter(Boolean) as HTMLElement[];
+  const headings = [...byId.keys()]
+    .map((id) => document.getElementById(id))
+    .filter(Boolean) as HTMLElement[];
   let active: HTMLAnchorElement | undefined;
   const visible = new Set<Element>();
   const io = new IntersectionObserver(
     (entries) => {
-      entries.forEach((en) => (en.isIntersecting ? visible.add(en.target) : visible.delete(en.target)));
+      entries.forEach((en) =>
+        en.isIntersecting ? visible.add(en.target) : visible.delete(en.target),
+      );
       const first = headings.find((h) => visible.has(h));
       const link = first ? byId.get(first.id) : undefined;
       if (link && link !== active) {
@@ -179,7 +188,9 @@ if (tocLinks.length && 'IntersectionObserver' in window) {
 }
 
 // Print button ------------------------------------------------------------------------
-document.querySelectorAll('[data-print]').forEach((b) => b.addEventListener('click', () => window.print()));
+document
+  .querySelectorAll('[data-print]')
+  .forEach((b) => b.addEventListener('click', () => window.print()));
 
 // Open details that contain a targeted anchor (e.g. a play card or a key-number context).
 function openTarget() {

@@ -2,7 +2,10 @@ import { test, expect, request as apiRequest } from '@playwright/test';
 
 const baseURL = 'http://127.0.0.1:4321';
 
-test('editor can save, privately preview and publish a page; reseeding preserves edits', async ({ page, request }) => {
+test('editor can save, privately preview and publish a page; reseeding preserves edits', async ({
+  page,
+  request,
+}) => {
   test.setTimeout(180000);
   const editor = await apiRequest.newContext({
     baseURL,
@@ -38,7 +41,10 @@ test('editor can save, privately preview and publish a page; reseeding preserves
     expect((await editor.get(endpoint + '/revisions')).ok()).toBeTruthy();
     await page.context().addCookies((await editor.storageState()).cookies);
     await page.goto(`/_emdash/admin/content/pages/${original.id}`);
-    await page.getByRole('button', { name: 'Get Started', exact: true }).click({ timeout: 5000 }).catch(() => {});
+    await page
+      .getByRole('button', { name: 'Get Started', exact: true })
+      .click({ timeout: 5000 })
+      .catch(() => {});
     await page.waitForLoadState('networkidle');
     await expect(page.locator('textarea').first()).toBeVisible({ timeout: 30000 });
   } finally {

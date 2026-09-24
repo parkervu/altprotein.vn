@@ -46,7 +46,8 @@ const en = {
   foresight: 'Foresight',
   visionNotForecast: 'Vision, not forecast',
   audienceHeading: 'Read it your way',
-  audienceIntro: 'Choose who you are. We highlight the pages written for you and give you a reading path.',
+  audienceIntro:
+    'Choose who you are. We highlight the pages written for you and give you a reading path.',
   audienceAll: 'Everyone',
   audiencePath: 'Your reading path',
   forAudience: 'Written for you',
@@ -82,7 +83,8 @@ const en = {
   searchHeading: 'Search',
   searchResults: (n: number, q: string) => `${n} results for “${q}”`,
   searchNone: (q: string) => `Nothing found for “${q}”. Try a shorter or different word.`,
-  searchHint: 'Search the full text of every page, the glossary, companies, facilities, open questions, disagreements and policy options.',
+  searchHint:
+    'Search the full text of every page, the glossary, companies, facilities, open questions, disagreements and policy options.',
   kinds: {
     page: 'Page',
     glossary: 'Glossary',
@@ -100,7 +102,8 @@ const en = {
   cite: 'How to cite',
   editorSignIn: 'Editor sign in',
   notAdvice: 'Scoping research. Not investment, legal or engineering advice.',
-  footerLine: 'An evidence-tagged scoping study of what Vietnam could make, from what, under which rules, at what cost, and who could do it.',
+  footerLine:
+    'An evidence-tagged scoping study of what Vietnam could make, from what, under which rules, at what cost, and who could do it.',
   notFound: 'Page not found',
   notFoundText: 'We could not find that page. It may have moved in edition 1.1.',
   backHome: 'Back to the home page',
@@ -129,7 +132,8 @@ const en = {
   },
   scenarios: {
     heading: 'Explore the four worlds',
-    intro: 'Select a world to see its picture of 2050, the signposts that would tell you it is arriving, and how each play fares in it.',
+    intro:
+      'Select a world to see its picture of 2050, the signposts that would tell you it is arriving, and how each play fares in it.',
     picture: 'The picture in 2050',
     signposts: 'Signposts',
     playScores: 'Plays in this world',
@@ -185,7 +189,8 @@ const vi: Dict = {
   foresight: 'Dự báo',
   visionNotForecast: 'Tầm nhìn, không phải dự báo',
   audienceHeading: 'Đọc theo cách của bạn',
-  audienceIntro: 'Chọn nhóm của bạn. Chúng tôi làm nổi bật các trang viết cho bạn và gợi ý lộ trình đọc.',
+  audienceIntro:
+    'Chọn nhóm của bạn. Chúng tôi làm nổi bật các trang viết cho bạn và gợi ý lộ trình đọc.',
   audienceAll: 'Tất cả',
   audiencePath: 'Lộ trình đọc gợi ý',
   forAudience: 'Viết cho bạn',
@@ -270,7 +275,8 @@ const vi: Dict = {
   },
   scenarios: {
     heading: 'Khám phá bốn thế giới',
-    intro: 'Chọn một thế giới để xem bức tranh năm 2050, các dấu hiệu báo trước và kết quả của từng hướng đi.',
+    intro:
+      'Chọn một thế giới để xem bức tranh năm 2050, các dấu hiệu báo trước và kết quả của từng hướng đi.',
     picture: 'Bức tranh năm 2050',
     signposts: 'Dấu hiệu báo trước',
     playScores: 'Các hướng đi trong thế giới này',

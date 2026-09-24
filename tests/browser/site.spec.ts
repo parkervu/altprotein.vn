@@ -14,7 +14,11 @@ const FRONT: Record<string, string> = {
   'front-at-a-glance': '/at-a-glance',
   'front-how-to-read': '/how-to-read',
 };
-const SECTION: Record<string, string> = { report: '/report', brief: '/briefs', appendix: '/appendices' };
+const SECTION: Record<string, string> = {
+  report: '/report',
+  brief: '/briefs',
+  appendix: '/appendices',
+};
 const pathOf = (id: string) => {
   const page = site.pages.find((p) => p.id === id)!;
   return FRONT[id] ?? `${SECTION[page.section]}/${id}`;
@@ -29,7 +33,9 @@ test('every report page loads, with working in-page anchors', async ({ page }) =
     const broken = await page
       .locator('main a[href^="#"]')
       .evaluateAll((links) =>
-        links.map((a) => decodeURIComponent(a.getAttribute('href')!.slice(1))).filter((id) => id && !document.getElementById(id)),
+        links
+          .map((a) => decodeURIComponent(a.getAttribute('href')!.slice(1)))
+          .filter((id) => id && !document.getElementById(id)),
       );
     expect(broken, entry.id).toEqual([]);
   }
@@ -49,7 +55,16 @@ test('routes, redirects, the Vietnamese interface and access rules', async ({ re
   const html = await vi.text();
   expect(html).toContain('<html lang="vi"');
   expect(html).toContain('href="/vi/report/ch12-policy-options"');
-  for (const path of ['/report', '/briefs', '/appendices', '/data', '/data/companies', '/glossary', '/about', '/search?q=cassava'])
+  for (const path of [
+    '/report',
+    '/briefs',
+    '/appendices',
+    '/data',
+    '/data/companies',
+    '/glossary',
+    '/about',
+    '/search?q=cassava',
+  ])
     expect((await request.get(path)).status(), path).toBe(200);
   expect((await request.get('/data/companies.csv')).status()).toBe(200);
   expect((await request.get('/downloads/altprotein-vn-working-papers.zip')).status()).toBe(200);
@@ -76,7 +91,10 @@ test('scenario explorer works with the keyboard', async ({ page }) => {
   await expect(tabA).toHaveAttribute('aria-selected', 'true');
   await tabA.focus();
   await page.keyboard.press('ArrowRight');
-  await expect(page.getByRole('tab', { name: /Security build-out/ })).toHaveAttribute('aria-selected', 'true');
+  await expect(page.getByRole('tab', { name: /Security build-out/ })).toHaveAttribute(
+    'aria-selected',
+    'true',
+  );
   await expect(page.locator('#scen-panel-C')).toBeVisible();
   await expect(page.locator('#scen-panel-A')).toBeHidden();
 });
@@ -102,7 +120,9 @@ test('data browser filters, sorts and search finds data', async ({ page }) => {
 test('theme toggle, mobile layout and print', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/report/ch08-regional');
-  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(
+    true,
+  );
   await page.getByRole('button', { name: /Menu/ }).click();
   await expect(page.locator('#drawer')).toBeVisible();
   await page.keyboard.press('Escape');

@@ -1,5 +1,15 @@
 // Row-based horizontal layout used by bar, range, gantt and dot-range charts.
-import { W, INK, MUTED, legend as mkLegend, textLines, wrap, text, xAxis, textWidth } from './lib.mjs';
+import {
+  W,
+  INK,
+  MUTED,
+  legend as mkLegend,
+  textLines,
+  wrap,
+  text,
+  xAxis,
+  textWidth,
+} from './lib.mjs';
 
 /**
  * o = {
@@ -37,7 +47,8 @@ export function hLayout(o) {
   const top = y;
   const rowsY = [];
   for (const r of o.rows) {
-    const lines = r.lines || wrap(r.label, r.header ? W : labelW, labelSize, r.bold || r.header ? 600 : 400);
+    const lines =
+      r.lines || wrap(r.label, r.header ? W : labelW, labelSize, r.bold || r.header ? 600 : 400);
     const subLines = r.sub ? wrap(r.sub, labelW, 12) : [];
     const textH = lines.length * labelSize * 1.2 + subLines.length * 14.5;
     const h = r.header ? (r.headerH ?? textH + 14) : Math.max(o.minRowH ?? 30, textH + 10);
@@ -47,7 +58,10 @@ export function hLayout(o) {
   const bottom = y;
   const ctx = { scale, top, bottom, plotLeft, plotRight, rowsY, labelW };
   // grid + axis
-  if (o.ticks) parts.push(xAxis(scale, o.ticks, top, bottom, o.fmtTick, { title: o.axisTitle, titleX: plotRight }));
+  if (o.ticks)
+    parts.push(
+      xAxis(scale, o.ticks, top, bottom, o.fmtTick, { title: o.axisTitle, titleX: plotRight }),
+    );
   if (o.under) parts.push(o.under(ctx));
   o.rows.forEach((r, i) => {
     const ry = rowsY[i];
@@ -55,7 +69,14 @@ export function hLayout(o) {
     const blockH = ry.lines.length * lh + ry.subLines.length * 14.5;
     let ly = ry.y + ry.h / 2 - blockH / 2 + lh / 2 + (r.labelDy ?? 0);
     if (r.header) {
-      parts.push(textLines(0, ry.y + ry.h - lh / 2 - 4, ry.lines, { size: labelSize, fill: INK, weight: 600, lineH: lh }));
+      parts.push(
+        textLines(0, ry.y + ry.h - lh / 2 - 4, ry.lines, {
+          size: labelSize,
+          fill: INK,
+          weight: 600,
+          lineH: lh,
+        }),
+      );
       return;
     }
     parts.push(
@@ -69,7 +90,9 @@ export function hLayout(o) {
     );
     if (ry.subLines.length) {
       const sy = ly + ry.lines.length * lh - lh / 2 + 7;
-      parts.push(textLines(labelW, sy, ry.subLines, { size: 12, fill: MUTED, anchor: 'end', lineH: 14.5 }));
+      parts.push(
+        textLines(labelW, sy, ry.subLines, { size: 12, fill: MUTED, anchor: 'end', lineH: 14.5 }),
+      );
     }
     parts.push(o.drawRow(r.data ?? r, i, ctx, ry.y, ry.h));
   });
@@ -88,6 +111,13 @@ export function hLayout(o) {
 /** Place a value label to the right of x, or inside (end-anchored) if it would overflow maxX. */
 export function endLabel(x, y, str, maxX, o = {}) {
   const w = textWidth(str, o.size ?? 12, o.weight);
-  if (x + 6 + w <= maxX) return text(x + 6, y, str, { size: o.size ?? 12, fill: INK, weight: o.weight, halo: true });
-  return text(maxX, y, str, { size: o.size ?? 12, fill: INK, anchor: 'end', weight: o.weight, halo: true });
+  if (x + 6 + w <= maxX)
+    return text(x + 6, y, str, { size: o.size ?? 12, fill: INK, weight: o.weight, halo: true });
+  return text(maxX, y, str, {
+    size: o.size ?? 12,
+    fill: INK,
+    anchor: 'end',
+    weight: o.weight,
+    halo: true,
+  });
 }

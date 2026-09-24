@@ -19,7 +19,8 @@ export function loadPages() {
   return manifest.pages.map((entry) => {
     const text = fs.readFileSync(path.join(REPORT, entry.path), 'utf8');
     const { meta, body } = splitFrontmatter(text);
-    if (meta.id !== entry.id) throw new Error(`${entry.path}: id ${meta.id} does not match manifest ${entry.id}`);
+    if (meta.id !== entry.id)
+      throw new Error(`${entry.path}: id ${meta.id} does not match manifest ${entry.id}`);
     return { entry, meta, body };
   });
 }

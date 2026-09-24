@@ -34,75 +34,86 @@ const link = (k: string) => {
     <header class="index-head">
       <h1>{s.searchHeading}</h1>
       <form role="search" method="get" action={localize('/search', lang)} class="big-search">
-        <label class="visually-hidden" for="q-main">{s.search}</label>
-        <input id="q-main" name="q" type="search" value={q} placeholder={s.searchPlaceholder} autofocus={!q} />
-        <button class="btn btn-primary" type="submit">{s.search}</button>
+        <label class="visually-hidden" for="q-main">
+          {s.search}
+        </label>
+        <input
+          id="q-main"
+          name="q"
+          type="search"
+          value={q}
+          placeholder={s.searchPlaceholder}
+          autofocus={!q}
+        />
+        <button class="btn btn-primary" type="submit">
+          {s.search}
+        </button>
       </form>
       <p class="hint">{s.searchHint}</p>
     </header>
-    {
-      q && (
-        <p class="result-count" role="status">
-          {total ? s.searchResults(total, q) : s.searchNone(q)}
-        </p>
-      )
-    }
-    {
-      q && total > 0 && (
-        <nav class="kind-filter" aria-label={vi ? 'Lọc theo loại' : 'Filter by type'}>
-          <a href={link('')} aria-current={!kind ? 'true' : undefined}>
-            {vi ? 'Tất cả' : 'All'} <span>{total}</span>
+    {q && (
+      <p class="result-count" role="status">
+        {total ? s.searchResults(total, q) : s.searchNone(q)}
+      </p>
+    )}
+    {q && total > 0 && (
+      <nav class="kind-filter" aria-label={vi ? 'Lọc theo loại' : 'Filter by type'}>
+        <a href={link('')} aria-current={!kind ? 'true' : undefined}>
+          {vi ? 'Tất cả' : 'All'} <span>{total}</span>
+        </a>
+        {pages.length > 0 && (
+          <a href={link('page')} aria-current={kind === 'page' ? 'true' : undefined}>
+            {s.kinds.page} <span>{pages.length}</span>
           </a>
-          {pages.length > 0 && (
-            <a href={link('page')} aria-current={kind === 'page' ? 'true' : undefined}>
-              {s.kinds.page} <span>{pages.length}</span>
-            </a>
-          )}
-          {kinds.map((k) => (
-            <a href={link(k)} aria-current={kind === k ? 'true' : undefined}>
-              {s.kinds[k] ?? k} <span>{records.filter((r) => r.kind === k).length}</span>
-            </a>
-          ))}
-        </nav>
-      )
-    }
+        )}
+        {kinds.map((k) => (
+          <a href={link(k)} aria-current={kind === k ? 'true' : undefined}>
+            {s.kinds[k] ?? k} <span>{records.filter((r) => r.kind === k).length}</span>
+          </a>
+        ))}
+      </nav>
+    )}
     <ol class="results">
-      {
-        showPages &&
-          pages.map((r) => {
-            const p = PAGE_BY_ID.get(r.id)!;
-            return (
-              <li>
-                <a href={href(r.id, lang)} lang={p.lang !== lang ? p.lang : undefined}>
-                  <span class="r-kind">{kicker(r.id)}</span>
-                  <span class="r-title">{p.heading}</span>
-                  {r.snippet ? <span class="r-text" set:html={r.snippet} /> : <span class="r-text">{p.summary}</span>}
-                </a>
-              </li>
-            );
-          })
-      }
-      {
-        shownRecords.map((r) => (
-          <li>
-            <a href={localize(r.href, lang)}>
-              <span class="r-kind">
-                {s.kinds[r.kind] ?? r.kind} · {r.id}
-              </span>
-              <span class="r-title" lang="en">
-                {r.title}
-                {r.title_vi && (
-                  <span class="r-vi" lang="vi">
-                    {' '}
-                    · {r.title_vi}
-                  </span>
+      {showPages &&
+        pages.map((r) => {
+          const p = PAGE_BY_ID.get(r.id)!;
+          return (
+            <li>
+              <a href={href(r.id, lang)} lang={p.lang !== lang ? p.lang : undefined}>
+                <span class="r-kind">{kicker(r.id)}</span>
+                <span class="r-title">{p.heading}</span>
+                {r.snippet ? (
+                  <span class="r-text" set:html={r.snippet} />
+                ) : (
+                  <span class="r-text">{p.summary}</span>
                 )}
+              </a>
+            </li>
+          );
+        })}
+      {shownRecords.map((r) => (
+        <li>
+          <a href={localize(r.href, lang)}>
+            <span class="r-kind">
+              {s.kinds[r.kind] ?? r.kind} · {r.id}
+            </span>
+            <span class="r-title" lang="en">
+              {r.title}
+              {r.title_vi && (
+                <span class="r-vi" lang="vi">
+                  {' '}
+                  · {r.title_vi}
+                </span>
+              )}
+            </span>
+            {r.text && (
+              <span class="r-text" lang="en">
+                {r.text}
               </span>
-              {r.text && <span class="r-text" lang="en">{r.text}</span>}
-            </a>
-          </li>
-        ))
-      }
+            )}
+          </a>
+        </li>
+      ))}
     </ol>
     <div style="height:64px"></div>
   </div>

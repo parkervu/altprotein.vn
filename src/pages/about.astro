@@ -16,59 +16,82 @@ const citation =
         <p class="eyebrow">{SITE.publisher}</p>
         <h1>{s.about}</h1>
         <p lang={vi ? 'vi' : 'en'}>
-          {
-            vi
-              ? 'Một nghiên cứu công khai, có gắn nhãn bằng chứng, về năng lực sản xuất protein thay thế cho thực phẩm và thức ăn chăn nuôi của Việt Nam.'
-              : "A public, evidence-tagged scoping study of Vietnam's capacity to produce alternative proteins for food and feed."
-          }
+          {vi
+            ? 'Một nghiên cứu công khai, có gắn nhãn bằng chứng, về năng lực sản xuất protein thay thế cho thực phẩm và thức ăn chăn nuôi của Việt Nam.'
+            : "A public, evidence-tagged scoping study of Vietnam's capacity to produce alternative proteins for food and feed."}
         </p>
       </header>
       <div class="prose">
-        {
-          vi ? (
-            <>
-              <h2 id="scope">Phạm vi</h2>
-              <p>
-                Phía cung (nguyên liệu, quy trình, sản xuất, quy định, vốn, khoa học), cho cả thực phẩm và thức ăn chăn
-                nuôi, hiện nay và, trong Phần V, đến năm 2050. Phần V dùng phương pháp dự báo chiến lược: các kịch bản có
-                dấu hiệu báo trước và một tầm nhìn chuẩn tắc được ghi rõ. Không phần nào là dự báo; nhu cầu chỉ được dùng
-                như một đầu vào vĩ mô. Thịt nuôi cấy được xem xét đầy đủ. Côn trùng chỉ là mốc so sánh, không phải hướng
-                đi được khuyến nghị.
-              </p>
-              <p>
-                Cách tiếp cận trung lập, lấy an ninh thực phẩm và thức ăn chăn nuôi, giá trị công nghiệp và thương mại làm
-                trọng tâm; phúc lợi động vật và môi trường được nêu là động lực của một số bên. Nghiên cứu này không phải
-                là tư vấn đầu tư, pháp lý hay kỹ thuật.
-              </p>
-            </>
-          ) : (
-            <>
-              <h2 id="scope">Scope and framing</h2>
-              <p>
-                The supply side (raw materials, processes, manufacturing, rules, capital and science), for food and feed,
-                today and, in Part V, to 2050. Part V uses foresight: scenarios with signposts and one clearly labelled
-                normative vision. None of it is a forecast, and demand enters only as a macro input. Cultivated meat is
-                fully scoped. Insect protein appears as an incumbent and benchmark, not as a recommended play.
-              </p>
-              <p>
-                The framing is neutral and led by food and feed security, industrial value and trade; animal welfare and
-                environment are stated as motivations for some actors. The study is not investment, legal or engineering
-                advice.
-              </p>
-            </>
-          )
-        }
+        {vi ? (
+          <>
+            <h2 id="scope">Phạm vi</h2>
+            <p>
+              Phía cung (nguyên liệu, quy trình, sản xuất, quy định, vốn, khoa học), cho cả thực
+              phẩm và thức ăn chăn nuôi, hiện nay và, trong Phần V, đến năm 2050. Phần V dùng phương
+              pháp dự báo chiến lược: các kịch bản có dấu hiệu báo trước và một tầm nhìn chuẩn tắc
+              được ghi rõ. Không phần nào là dự báo; nhu cầu chỉ được dùng như một đầu vào vĩ mô.
+              Thịt nuôi cấy được xem xét đầy đủ. Côn trùng chỉ là mốc so sánh, không phải hướng đi
+              được khuyến nghị.
+            </p>
+            <p>
+              Cách tiếp cận trung lập, lấy an ninh thực phẩm và thức ăn chăn nuôi, giá trị công
+              nghiệp và thương mại làm trọng tâm; phúc lợi động vật và môi trường được nêu là động
+              lực của một số bên. Nghiên cứu này không phải là tư vấn đầu tư, pháp lý hay kỹ thuật.
+            </p>
+          </>
+        ) : (
+          <>
+            <h2 id="scope">Scope and framing</h2>
+            <p>
+              The supply side (raw materials, processes, manufacturing, rules, capital and science),
+              for food and feed, today and, in Part V, to 2050. Part V uses foresight: scenarios
+              with signposts and one clearly labelled normative vision. None of it is a forecast,
+              and demand enters only as a macro input. Cultivated meat is fully scoped. Insect
+              protein appears as an incumbent and benchmark, not as a recommended play.
+            </p>
+            <p>
+              The framing is neutral and led by food and feed security, industrial value and trade;
+              animal welfare and environment are stated as motivations for some actors. The study is
+              not investment, legal or engineering advice.
+            </p>
+          </>
+        )}
         <h2 id="reading">{vi ? 'Cách đọc' : 'How to read it'}</h2>
         <p>
-          {vi ? 'Mỗi nhận định được gắn nhãn loại bằng chứng và độ tin cậy:' : 'Every claim carries a badge for the kind of evidence behind it and a confidence level:'}
+          {vi
+            ? 'Mỗi nhận định được gắn nhãn loại bằng chứng và độ tin cậy:'
+            : 'Every claim carries a badge for the kind of evidence behind it and a confidence level:'}
         </p>
         <p class="legend-row">
-          <span class="ev" data-ev="direct" data-conf="high"><span class="ev-l">VN-direct</span><span class="ev-c"><i></i><i></i><i></i>High</span></span>
-          <span class="ev" data-ev="adjacent" data-conf="medium"><span class="ev-l">VN-adjacent</span><span class="ev-c"><i></i><i></i><i></i>Medium</span></span>
-          <span class="ev" data-ev="general" data-conf="low"><span class="ev-l">general</span><span class="ev-c"><i></i><i></i><i></i>Low</span></span>
+          <span class="ev" data-ev="direct" data-conf="high">
+            <span class="ev-l">VN-direct</span>
+            <span class="ev-c">
+              <i></i>
+              <i></i>
+              <i></i>High
+            </span>
+          </span>
+          <span class="ev" data-ev="adjacent" data-conf="medium">
+            <span class="ev-l">VN-adjacent</span>
+            <span class="ev-c">
+              <i></i>
+              <i></i>
+              <i></i>Medium
+            </span>
+          </span>
+          <span class="ev" data-ev="general" data-conf="low">
+            <span class="ev-l">general</span>
+            <span class="ev-c">
+              <i></i>
+              <i></i>
+              <i></i>Low
+            </span>
+          </span>
         </p>
         <p>
-          {vi ? 'Các nhận định hướng tới tương lai trong Phần V có thêm nhãn dự báo:' : 'Forward-looking claims in Part V also carry a foresight badge:'}
+          {vi
+            ? 'Các nhận định hướng tới tương lai trong Phần V có thêm nhãn dự báo:'
+            : 'Forward-looking claims in Part V also carry a foresight badge:'}
         </p>
         <p class="legend-row">
           {['trend', 'projection', 'estimate', 'signal', 'wildcard'].map((f) => (
@@ -76,44 +99,73 @@ const citation =
               <span>{f}</span>
             </span>
           ))}
-          <span class="fx" data-fx="vision"><span>vision</span></span>
+          <span class="fx" data-fx="vision">
+            <span>vision</span>
+          </span>
         </p>
         <p>
-          <a href={href('front-how-to-read', lang)}>{vi ? 'Giải thích đầy đủ trong “Cách đọc báo cáo”' : 'The full explanation is in How to read this report'}</a>
+          <a href={href('front-how-to-read', lang)}>
+            {vi
+              ? 'Giải thích đầy đủ trong “Cách đọc báo cáo”'
+              : 'The full explanation is in How to read this report'}
+          </a>
           {' · '}
-          <a href={href('app-a-method', lang)}>{vi ? 'Phương pháp (Phụ lục A)' : 'Method (Appendix A)'}</a>
+          <a href={href('app-a-method', lang)}>
+            {vi ? 'Phương pháp (Phụ lục A)' : 'Method (Appendix A)'}
+          </a>
           {' · '}
-          <a href={href('app-u-futures-method', lang)}>{vi ? 'Phương pháp dự báo (Phụ lục U)' : 'Futures method (Appendix U)'}</a>
+          <a href={href('app-u-futures-method', lang)}>
+            {vi ? 'Phương pháp dự báo (Phụ lục U)' : 'Futures method (Appendix U)'}
+          </a>
         </p>
         <h2 id="editions">{vi ? 'Các ấn bản' : 'Editions'}</h2>
         <ul>
-          {
-            SITE.editions.map((e) => (
-              <li>
-                <strong>{vi ? 'Ấn bản' : 'Edition'} {e.edition}</strong> ({e.date}): <span lang="en">{e.note}</span>
-              </li>
-            ))
-          }
+          {SITE.editions.map((e) => (
+            <li>
+              <strong>
+                {vi ? 'Ấn bản' : 'Edition'} {e.edition}
+              </strong>{' '}
+              ({e.date}): <span lang="en">{e.note}</span>
+            </li>
+          ))}
         </ul>
         <p>
-          <a href={href('app-b-corrections', lang)}>{vi ? 'Các thay đổi và đính chính (Phụ lục B)' : 'What changed and corrections (Appendix B)'}</a>
+          <a href={href('app-b-corrections', lang)}>
+            {vi
+              ? 'Các thay đổi và đính chính (Phụ lục B)'
+              : 'What changed and corrections (Appendix B)'}
+          </a>
         </p>
         <h2 id="cite">{s.cite}</h2>
-        <blockquote lang="en"><p>{citation}</p></blockquote>
+        <blockquote lang="en">
+          <p>{citation}</p>
+        </blockquote>
         <h2 id="data">{s.downloads}</h2>
         <ul>
-          <li><a href="/downloads/altprotein-vn-data.zip" download>{s.downloadData}</a></li>
-          <li><a href="/downloads/altprotein-vn-working-papers.zip" download>{s.downloadWorking}</a></li>
-          <li><a href="/downloads/altprotein-vn-report-markdown.zip" download>{s.downloadMarkdown}</a></li>
-          <li><a href={localize('/data', lang)}>{s.dataHeading}</a></li>
+          <li>
+            <a href="/downloads/altprotein-vn-data.zip" download>
+              {s.downloadData}
+            </a>
+          </li>
+          <li>
+            <a href="/downloads/altprotein-vn-working-papers.zip" download>
+              {s.downloadWorking}
+            </a>
+          </li>
+          <li>
+            <a href="/downloads/altprotein-vn-report-markdown.zip" download>
+              {s.downloadMarkdown}
+            </a>
+          </li>
+          <li>
+            <a href={localize('/data', lang)}>{s.dataHeading}</a>
+          </li>
         </ul>
         <h2 id="site">{vi ? 'Về trang web' : 'About this website'}</h2>
         <p>
-          {
-            vi
-              ? 'Nội dung báo cáo bằng tiếng Anh, có bản tóm tắt tiếng Việt và bảng thuật ngữ song ngữ. Giao diện có thể xem bằng tiếng Anh hoặc tiếng Việt. Trang web không dùng công cụ theo dõi. Biểu đồ được dựng sẵn dưới dạng SVG và mỗi biểu đồ có bảng số liệu đi kèm.'
-              : 'The report is in English, with a Vietnamese executive summary and a bilingual glossary; the interface can be switched between English and Vietnamese. The site uses no trackers. Charts are drawn as inline SVG at build time, and each has its data table.'
-          }
+          {vi
+            ? 'Nội dung báo cáo bằng tiếng Anh, có bản tóm tắt tiếng Việt và bảng thuật ngữ song ngữ. Giao diện có thể xem bằng tiếng Anh hoặc tiếng Việt. Trang web không dùng công cụ theo dõi. Biểu đồ được dựng sẵn dưới dạng SVG và mỗi biểu đồ có bảng số liệu đi kèm.'
+            : 'The report is in English, with a Vietnamese executive summary and a bilingual glossary; the interface can be switched between English and Vietnamese. The site uses no trackers. Charts are drawn as inline SVG at build time, and each has its data table.'}
         </p>
       </div>
     </div>

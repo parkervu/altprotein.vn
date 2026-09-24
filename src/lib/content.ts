@@ -27,7 +27,13 @@ export async function loadPage(id: string) {
 
 // Rendering is pure, so cache it per isolate by page, revision and language.
 const cache = new Map<string, RenderResult>();
-export function renderPage(id: string, body: string, lang: Lang, version: string, preview: boolean): RenderResult {
+export function renderPage(
+  id: string,
+  body: string,
+  lang: Lang,
+  version: string,
+  preview: boolean,
+): RenderResult {
   const page = PAGE_BY_ID.get(id);
   const key = `${id}|${lang}|${version}|${body.length}`;
   const hit = !preview && cache.get(key);

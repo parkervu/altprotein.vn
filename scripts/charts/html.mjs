@@ -2,10 +2,12 @@
 import { esc, clean, table } from './lib.mjs';
 
 const e = (s) => esc(clean(s));
-const wrapDiv = (type, alt, inner) => `<div class="chart-html chart-${type}" role="group" aria-label="${e(alt)}">${inner}</div>`;
+const wrapDiv = (type, alt, inner) =>
+  `<div class="chart-html chart-${type}" role="group" aria-label="${e(alt)}">${inner}</div>`;
 const chip = (cls, label, tip) =>
   `<span class="ch-chip ch-${cls} mark" tabindex="0" data-tip="${e(tip)}"><span class="ch-sw" aria-hidden="true"></span>${e(label)}</span>`;
-const key = (items) => `<ul class="ch-key">${items.map(([cls, label]) => `<li class="ch-${cls}"><span class="ch-sw" aria-hidden="true"></span>${e(label)}</li>`).join('')}</ul>`;
+const key = (items) =>
+  `<ul class="ch-key">${items.map(([cls, label]) => `<li class="ch-${cls}"><span class="ch-sw" aria-hidden="true"></span>${e(label)}</li>`).join('')}</ul>`;
 
 // ---------------------------------------------------------------------------
 export function capabilityMatrix(spec, D) {
@@ -29,13 +31,17 @@ export function capabilityMatrix(spec, D) {
     key(Object.values(ST)) +
       `<div class="ch-scroll"><table class="ch-matrix"><thead><tr><th scope="col">Capability</th><th scope="col">Status</th><th scope="col">Exists in Vietnam</th><th scope="col">Who</th><th scope="col">Open to third parties</th></tr></thead><tbody>${body}</tbody></table></div>`,
   );
-  const tbl = table(spec.title, [
-    { key: 'capability', label: 'Capability' },
-    { key: 'status', label: 'Status', fmt: (v) => (ST[v] ? ST[v][1] : v) },
-    { key: 'exists_in_vietnam', label: 'Exists in Vietnam' },
-    { key: 'who', label: 'Who' },
-    { key: 'open_to_third_parties', label: 'Open to third parties' },
-  ], rows);
+  const tbl = table(
+    spec.title,
+    [
+      { key: 'capability', label: 'Capability' },
+      { key: 'status', label: 'Status', fmt: (v) => (ST[v] ? ST[v][1] : v) },
+      { key: 'exists_in_vietnam', label: 'Exists in Vietnam' },
+      { key: 'who', label: 'Who' },
+      { key: 'open_to_third_parties', label: 'Open to third parties' },
+    ],
+    rows,
+  );
   return { html, table: tbl };
 }
 
@@ -80,13 +86,17 @@ export function routeToMarket(spec, D) {
     key(Object.values(ST)) +
       `<div class="ch-scroll"><table class="ch-matrix"><thead><tr><th scope="col">Product type</th><th scope="col">Status</th><th scope="col">Route</th><th scope="col">Documented agency time</th><th scope="col">Main open risk</th></tr></thead><tbody>${body}</tbody></table></div>`,
   );
-  const tbl = table(spec.title, [
-    { key: 'product_type', label: 'Product type' },
-    { key: 'record_id', label: 'Status', fmt: (v) => ST[ROUTE_STATUS[v] || 'amber'][1] },
-    { key: 'route', label: 'Route' },
-    { key: 'documented_agency_time', label: 'Documented agency time' },
-    { key: 'main_open_risk', label: 'Main open risk' },
-  ], rows);
+  const tbl = table(
+    spec.title,
+    [
+      { key: 'product_type', label: 'Product type' },
+      { key: 'record_id', label: 'Status', fmt: (v) => ST[ROUTE_STATUS[v] || 'amber'][1] },
+      { key: 'route', label: 'Route' },
+      { key: 'documented_agency_time', label: 'Documented agency time' },
+      { key: 'main_open_risk', label: 'Main open risk' },
+    ],
+    rows,
+  );
   return { html, table: tbl };
 }
 
@@ -94,22 +104,37 @@ export function routeToMarket(spec, D) {
 function card({ id, name, pos, body }) {
   return `<article class="ch-card"><p class="ch-card-title"><span class="ch-id">${e(id)}</span> <strong>${e(name)}</strong></p>${pos ? `<p class="ch-pos">${e(pos)}</p>` : ''}${body}</article>`;
 }
-const dl = (pairs) => `<dl>${pairs.map(([k, v]) => `<dt>${e(k)}</dt><dd>${e(v)}</dd>`).join('')}</dl>`;
+const dl = (pairs) =>
+  `<dl>${pairs.map(([k, v]) => `<dt>${e(k)}</dt><dd>${e(v)}</dd>`).join('')}</dl>`;
 
 export function scenarios2035(spec, D) {
   const rows = D.csv(spec.data.file);
   // Axes: x = food_law_route (no workable route | workable route), y = fishmeal_soy_gap (wide top, narrow bottom).
   // Notes: S2 spans both route states; S3 spans both gap states. S3 takes the whole right column; S2 sits
   // top left and says it spans both route states.
-  const col = (r) => (/^No workable/i.test(r.food_law_route) ? 1 : /^Workable/i.test(r.food_law_route) ? 2 : 1);
-  const rowOf = (r) => (/^Wide/i.test(r.fishmeal_soy_gap) ? 1 : /^Narrow/i.test(r.fishmeal_soy_gap) ? 2 : 0);
+  const col = (r) =>
+    /^No workable/i.test(r.food_law_route) ? 1 : /^Workable/i.test(r.food_law_route) ? 2 : 1;
+  const rowOf = (r) =>
+    /^Wide/i.test(r.fishmeal_soy_gap) ? 1 : /^Narrow/i.test(r.fishmeal_soy_gap) ? 2 : 0;
   const cells = rows
     .map((r) => {
       const c = col(r);
       const rr = rowOf(r);
-      const area = rr === 0 ? `grid-column:${c + 1};grid-row:2 / span 2` : `grid-column:${c + 1};grid-row:${rr + 1}`;
+      const area =
+        rr === 0
+          ? `grid-column:${c + 1};grid-row:2 / span 2`
+          : `grid-column:${c + 1};grid-row:${rr + 1}`;
       const pos = `Food-law route: ${r.food_law_route}. Fishmeal-soy price gap: ${r.fishmeal_soy_gap}.`;
-      return `<div class="ch-cell" style="${area}">${card({ id: r.scenario_id, name: r.name, pos, body: dl([['Picture', r.picture], ['Drivers', r.drivers], ['Signposts', r.signposts]]) })}</div>`;
+      return `<div class="ch-cell" style="${area}">${card({
+        id: r.scenario_id,
+        name: r.name,
+        pos,
+        body: dl([
+          ['Picture', r.picture],
+          ['Drivers', r.drivers],
+          ['Signposts', r.signposts],
+        ]),
+      })}</div>`;
     })
     .join('');
   const html = wrapDiv(
@@ -123,15 +148,19 @@ export function scenarios2035(spec, D) {
       cells +
       `</div>`,
   );
-  const tbl = table(spec.title, [
-    { key: 'scenario_id', label: 'Scenario' },
-    { key: 'name', label: 'Name' },
-    { key: 'food_law_route', label: 'Food-law route' },
-    { key: 'fishmeal_soy_gap', label: 'Fishmeal-soy gap' },
-    { key: 'picture', label: 'Picture' },
-    { key: 'drivers', label: 'Drivers' },
-    { key: 'signposts', label: 'Signposts' },
-  ], rows);
+  const tbl = table(
+    spec.title,
+    [
+      { key: 'scenario_id', label: 'Scenario' },
+      { key: 'name', label: 'Name' },
+      { key: 'food_law_route', label: 'Food-law route' },
+      { key: 'fishmeal_soy_gap', label: 'Fishmeal-soy gap' },
+      { key: 'picture', label: 'Picture' },
+      { key: 'drivers', label: 'Drivers' },
+      { key: 'signposts', label: 'Signposts' },
+    ],
+    rows,
+  );
   return { html, table: tbl };
 }
 
@@ -159,16 +188,20 @@ export function scenarios2050(spec, D) {
       `<div class="ch-xfoot" style="grid-column:2 / span 2;grid-row:3">${e(xLabel)}</div>` +
       `</div>`,
   );
-  const tbl = table(spec.title, [
-    { key: 'scenario_id', label: 'World' },
-    { key: 'name', label: 'Name' },
-    { key: 'import_stress', label: 'Import stress' },
-    { key: 'fermentation_market', label: 'Fermentation market' },
-    { key: 'one_line', label: 'Summary' },
-    { key: 'grows_from_2035', label: 'Grows from 2035' },
-    { key: 'sbm_2050_mt_indicative', label: 'Soybean-meal need 2050 (Mt, indicative)' },
-    { key: 'microbial_share_2050_indicative', label: 'Microbial share 2050 (indicative)' },
-  ], rows);
+  const tbl = table(
+    spec.title,
+    [
+      { key: 'scenario_id', label: 'World' },
+      { key: 'name', label: 'Name' },
+      { key: 'import_stress', label: 'Import stress' },
+      { key: 'fermentation_market', label: 'Fermentation market' },
+      { key: 'one_line', label: 'Summary' },
+      { key: 'grows_from_2035', label: 'Grows from 2035' },
+      { key: 'sbm_2050_mt_indicative', label: 'Soybean-meal need 2050 (Mt, indicative)' },
+      { key: 'microbial_share_2050_indicative', label: 'Microbial share 2050 (indicative)' },
+    ],
+    rows,
+  );
   return { html, table: tbl };
 }
 

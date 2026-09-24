@@ -77,7 +77,11 @@ export function pageIdForPath(pathname: string): string | undefined {
 
 /** Prefix an internal path with the interface language. */
 export function localize(path: string, lang: Lang): string {
-  if (lang === 'en' || /^(https?:|mailto:|#)/.test(path) || path.startsWith('/data/') && /\.\w+$/.test(path))
+  if (
+    lang === 'en' ||
+    /^(https?:|mailto:|#)/.test(path) ||
+    (path.startsWith('/data/') && /\.\w+$/.test(path))
+  )
     return path;
   if (path.startsWith('/downloads/') || path.startsWith('/_emdash')) return path;
   return path === '/' ? '/vi' : `/vi${path}`;
@@ -103,11 +107,14 @@ export const READING_ORDER: string[] = (() => {
 export function neighbours(id: string) {
   const i = READING_ORDER.indexOf(id);
   const prev = i > 0 ? PAGE_BY_ID.get(READING_ORDER[i - 1]) : undefined;
-  const next = i >= 0 && i < READING_ORDER.length - 1 ? PAGE_BY_ID.get(READING_ORDER[i + 1]) : undefined;
+  const next =
+    i >= 0 && i < READING_ORDER.length - 1 ? PAGE_BY_ID.get(READING_ORDER[i + 1]) : undefined;
   return { prev, next };
 }
 
-export const PARTS = [...new Set(PAGES.filter((p) => p.section === 'report').map((p) => p.part as string))];
+export const PARTS = [
+  ...new Set(PAGES.filter((p) => p.section === 'report').map((p) => p.part as string)),
+];
 
 export function chapterNumber(id: string): number | null {
   const m = /^ch(\d+)-/.exec(id);

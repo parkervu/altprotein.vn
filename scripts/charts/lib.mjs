@@ -55,7 +55,8 @@ export function fmtNum(n, dp) {
   } else s = n.toFixed(dp);
   return fmtStr(s);
 }
-export const num = (v) => (v === '' || v === null || v === undefined ? NaN : Number(String(v).replace(/,/g, '')));
+export const num = (v) =>
+  v === '' || v === null || v === undefined ? NaN : Number(String(v).replace(/,/g, ''));
 
 // ---------- scales ----------
 export function linear(d0, d1, r0, r1) {
@@ -75,7 +76,8 @@ export function logScale(d0, d1, r0, r1) {
 /** Piecewise-linear scale: segments [{d0,d1,r0,r1}] in order. */
 export function piecewise(segs) {
   const f = (v) => {
-    for (const s of [...segs].reverse()) if (v >= s.d0 && v <= s.d1) return s.r0 + ((v - s.d0) / (s.d1 - s.d0)) * (s.r1 - s.r0);
+    for (const s of [...segs].reverse())
+      if (v >= s.d0 && v <= s.d1) return s.r0 + ((v - s.d0) / (s.d1 - s.d0)) * (s.r1 - s.r0);
     if (v < segs[0].d0) return segs[0].r0;
     return segs[segs.length - 1].r1;
   };
@@ -89,7 +91,8 @@ export function niceTicks(min, max, count = 5) {
   const norm = raw / mag;
   const step = (norm < 1.5 ? 1 : norm < 3 ? 2 : norm < 7 ? 5 : 10) * mag;
   const out = [];
-  for (let v = Math.ceil(min / step) * step; v <= max + step * 1e-9; v += step) out.push(Math.round(v * 1e9) / 1e9);
+  for (let v = Math.ceil(min / step) * step; v <= max + step * 1e-9; v += step)
+    out.push(Math.round(v * 1e9) / 1e9);
   return out;
 }
 
@@ -99,7 +102,8 @@ const WIDE = new Set('mwMW@%'.split(''));
 export function textWidth(str, size = 12, weight = 400) {
   let w = 0;
   for (const ch of String(str)) {
-    if (NARROW.has(ch)) w += ch === ' ' ? 0.28 : ch === 'r' || ch === 'f' || ch === 't' ? 0.38 : 0.3;
+    if (NARROW.has(ch))
+      w += ch === ' ' ? 0.28 : ch === 'r' || ch === 'f' || ch === 't' ? 0.38 : 0.3;
     else if (WIDE.has(ch)) w += 0.88;
     else if (/[A-Z]/.test(ch)) w += 0.68;
     else if (/[0-9]/.test(ch)) w += 0.6;
@@ -134,7 +138,9 @@ export function text(x, y, str, o = {}) {
   if (dy) a.push(`dy="${dy}"`);
   if (weight) a.push(`font-weight="${weight}"`);
   if (italic) a.push('font-style="italic"');
-  const h = halo ? `;stroke:${SURFACE};stroke-width:3px;stroke-linejoin:round;paint-order:stroke` : '';
+  const h = halo
+    ? `;stroke:${SURFACE};stroke-width:3px;stroke-linejoin:round;paint-order:stroke`
+    : '';
   return `<text ${a.join(' ')} style="fill:${fill}${h}">${esc(clean(str))}</text>`;
 }
 /** Multi-line text; lines drawn from y (first baseline centre) with lineH spacing. */
@@ -144,7 +150,10 @@ export function textLines(x, y, lines, o = {}) {
   if (anchor !== 'start') a.push(`text-anchor="${anchor}"`);
   if (weight) a.push(`font-weight="${weight}"`);
   const spans = lines
-    .map((l, i) => `<tspan x="${r2(x)}" dy="${i === 0 ? '0.35em' : r2(lineH)}">${esc(clean(l))}</tspan>`)
+    .map(
+      (l, i) =>
+        `<tspan x="${r2(x)}" dy="${i === 0 ? '0.35em' : r2(lineH)}">${esc(clean(l))}</tspan>`,
+    )
     .join('');
   return `<text ${a.join(' ')} style="fill:${fill}">${spans}</text>`;
 }
@@ -210,7 +219,9 @@ export function vRangeBar(x, w, y0, y1, fill, extra = '') {
 
 /** Wrap a data mark for hover and focus. lines: first "Label: value unit", then extras. */
 export function mark(lines, inner, attrs = '') {
-  const arr = (Array.isArray(lines) ? lines : [lines]).filter((l) => l !== null && l !== undefined && l !== '').map(clean);
+  const arr = (Array.isArray(lines) ? lines : [lines])
+    .filter((l) => l !== null && l !== undefined && l !== '')
+    .map(clean);
   const tip = arr.join('\n');
   const tipAttr = esc(tip).replace(/\n/g, '&#10;');
   return `<g class="mark" tabindex="0" data-tip="${tipAttr}"${attrs ? ' ' + attrs : ''}><title>${esc(tip)}</title>${inner}</g>`;
@@ -320,7 +331,9 @@ export function legend(items, x = 0, y = 0, maxW = W) {
       default:
         sym = `<rect x="${cx}" y="${cy - 6}" width="12" height="12" rx="2" style="fill:${c}"/>`;
     }
-    parts.push(sym + text(cx + sw + 6, cy, it.label, { size, fill: it.shape === 'none' ? MUTED : INK }));
+    parts.push(
+      sym + text(cx + sw + 6, cy, it.label, { size, fill: it.shape === 'none' ? MUTED : INK }),
+    );
     cx += w;
   }
   return { svg: `<g class="legend">${parts.join('')}</g>`, height: cy - y + 12 };
@@ -366,7 +379,9 @@ export function table(caption, columns, rows) {
           const raw = typeof c.get === 'function' ? c.get(r) : r[c.key];
           const v = c.fmt ? c.fmt(raw, r) : c.num ? fmtStr(raw) : raw;
           const cls = c.num ? ' class="num"' : '';
-          return i === 0 ? `<th scope="row">${esc(clean(v))}</th>` : `<td${cls}>${esc(clean(v))}</td>`;
+          return i === 0
+            ? `<th scope="row">${esc(clean(v))}</th>`
+            : `<td${cls}>${esc(clean(v))}</td>`;
         })
         .join('');
       return `<tr>${cells}</tr>`;
@@ -386,7 +401,13 @@ export function xAxis(scale, ticks, top, bottom, fmt = fmtNum, o = {}) {
     parts.push(text(x, labelY, fmt(t), { size: 12, anchor: 'middle' }));
   }
   if (baseline && o.baseX !== undefined) parts.push(line(o.baseX, top, o.baseX, bottom, AXIS, 1));
-  if (title) parts.push(text(o.titleX ?? scale.range?.[1] ?? W, labelY + 18, title, { size: 12, anchor: o.titleAnchor || 'end' }));
+  if (title)
+    parts.push(
+      text(o.titleX ?? scale.range?.[1] ?? W, labelY + 18, title, {
+        size: 12,
+        anchor: o.titleAnchor || 'end',
+      }),
+    );
   return parts.join('');
 }
 /** Horizontal gridlines + left tick labels for a vertical-value scale. */
@@ -397,7 +418,13 @@ export function yAxis(scale, ticks, left, right, fmt = fmtNum, o = {}) {
     parts.push(line(left, y, right, y, GRID, 1));
     parts.push(text(left - 8, y, fmt(t), { size: 12, anchor: 'end' }));
   }
-  if (o.title) parts.push(text(o.titleX ?? left - 8, o.titleY ?? scale(ticks[ticks.length - 1]) - 18, o.title, { size: 12, anchor: o.titleAnchor || 'start' }));
+  if (o.title)
+    parts.push(
+      text(o.titleX ?? left - 8, o.titleY ?? scale(ticks[ticks.length - 1]) - 18, o.title, {
+        size: 12,
+        anchor: o.titleAnchor || 'start',
+      }),
+    );
   return parts.join('');
 }
 

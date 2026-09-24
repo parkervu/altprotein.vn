@@ -13,7 +13,9 @@ fs.mkdirSync(outDir, { recursive: true });
 const only = process.argv.slice(2);
 
 // ---- static checks ----
-const specs = JSON.parse(fs.readFileSync(path.join(reportDir, 'charts', 'chart-specs.json'), 'utf8')).charts;
+const specs = JSON.parse(
+  fs.readFileSync(path.join(reportDir, 'charts', 'chart-specs.json'), 'utf8'),
+).charts;
 const charts = renderAllCharts(reportDir);
 const problems = [];
 for (const s of specs) if (!charts[s.id]) problems.push(`missing ${s.id}`);
@@ -24,7 +26,8 @@ for (const c of Object.values(charts)) {
   }
   for (const k of ['svg', 'table']) {
     if (/#[0-9a-fA-F]{3,8}\b/.test(c[k])) problems.push(`${c.id}.${k} contains a hex colour`);
-    if (/\brgba?\(/.test(c[k]) || /\bhsla?\(/.test(c[k])) problems.push(`${c.id}.${k} contains rgb()/hsl()`);
+    if (/\brgba?\(/.test(c[k]) || /\bhsla?\(/.test(c[k]))
+      problems.push(`${c.id}.${k} contains rgb()/hsl()`);
     if (/font-family/.test(c[k])) problems.push(`${c.id}.${k} sets font-family`);
   }
   const sizes = [...c.svg.matchAll(/font-size="([\d.]+)"/g)].map((m) => +m[1]);
@@ -34,20 +37,26 @@ for (const c of Object.values(charts)) {
   if (c.interactive !== (c.type === 'interactive-bar')) problems.push(`${c.id} interactive flag`);
 }
 
-const exe = [process.env.PLAYWRIGHT_EXECUTABLE, '/opt/pw-browsers/chromium'].find((p) => p && fs.existsSync(p));
+const exe = [process.env.PLAYWRIGHT_EXECUTABLE, '/opt/pw-browsers/chromium'].find(
+  (p) => p && fs.existsSync(p),
+);
 const browser = await chromium.launch(exe ? { executablePath: exe } : {});
 const page = await browser.newPage({ viewport: { width: 760, height: 900 } });
 await page.goto('file://' + path.join(here, '.preview', 'index.html'));
 await page.evaluate(() => document.fonts.ready);
 await page.waitForTimeout(300);
-console.log('Work Sans loaded:', await page.evaluate(() => document.fonts.check("12px 'Work Sans'")));
+console.log(
+  'Work Sans loaded:',
+  await page.evaluate(() => document.fonts.check("12px 'Work Sans'")),
+);
 // XML well-formedness of every svg string, and counts
 const xmlErrors = await page.evaluate((all) => {
   const errs = [];
   for (const [id, c] of Object.entries(all)) {
     if (!c.svg.startsWith('<svg')) continue;
     const doc = new DOMParser().parseFromString(c.svg, 'image/svg+xml');
-    if (doc.getElementsByTagName('parsererror').length) errs.push(id + ': ' + doc.getElementsByTagName('parsererror')[0].textContent.slice(0, 200));
+    if (doc.getElementsByTagName('parsererror').length)
+      errs.push(id + ': ' + doc.getElementsByTagName('parsererror')[0].textContent.slice(0, 200));
   }
   return errs;
 }, charts);
@@ -63,15 +72,24 @@ const overflow = await page.evaluate(() => {
     const k = vb.width / sr.width;
     for (const t of svg.querySelectorAll('text')) {
       const r = t.getBoundingClientRect();
-      const b = { x: (r.left - sr.left) * k, y: (r.top - sr.top) * k, width: r.width * k, height: r.height * k };
+      const b = {
+        x: (r.left - sr.left) * k,
+        y: (r.top - sr.top) * k,
+        width: r.width * k,
+        height: r.height * k,
+      };
       if (b.x < -1 || b.y < -1 || b.x + b.width > vb.width + 1 || b.y + b.height > vb.height + 1)
-        out.push(`${svg.closest('figure').id}: "${t.textContent.slice(0, 40)}" bbox ${Math.round(b.x)},${Math.round(b.y)},${Math.round(b.width)}x${Math.round(b.height)} vs ${vb.width}x${vb.height}`);
+        out.push(
+          `${svg.closest('figure').id}: "${t.textContent.slice(0, 40)}" bbox ${Math.round(b.x)},${Math.round(b.y)},${Math.round(b.width)}x${Math.round(b.height)} vs ${vb.width}x${vb.height}`,
+        );
     }
   }
   return out;
 });
 problems.push(...overflow.map((o) => 'overflow ' + o));
-console.log(`svg.chart-svg: ${nSvg}, .chart-html: ${nHtml}, total ${nSvg + nHtml} of ${specs.length}`);
+console.log(
+  `svg.chart-svg: ${nSvg}, .chart-html: ${nHtml}, total ${nSvg + nHtml} of ${specs.length}`,
+);
 
 for (const theme of ['light', 'dark']) {
   await page.evaluate((t) => document.documentElement.setAttribute('data-theme', t), theme);

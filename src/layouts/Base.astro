@@ -19,7 +19,15 @@ interface Props {
   section?: 'summary' | 'report' | 'briefs' | 'appendices' | 'data' | 'search' | 'about';
   pageClass?: string;
 }
-const { title, description = SITE.title, content, noindex = false, current, section, pageClass } = Astro.props;
+const {
+  title,
+  description = SITE.title,
+  content,
+  noindex = false,
+  current,
+  section,
+  pageClass,
+} = Astro.props;
 const lang: Lang = Astro.locals.lang ?? 'en';
 const s = t(lang);
 Astro.response.headers.set('Cache-Control', 'private, no-store');
@@ -30,7 +38,8 @@ const enPath = basePath;
 const viPath = localize(basePath, 'vi');
 const otherHref = (lang === 'vi' ? enPath : viPath) + Astro.url.search;
 const canonical = new URL(lang === 'vi' ? viPath : enPath, Astro.site).href;
-const fullTitle = title === SITE.title ? `${SITE.title} · AltProtein Vietnam` : `${title} · AltProtein Vietnam`;
+const fullTitle =
+  title === SITE.title ? `${SITE.title} · AltProtein Vietnam` : `${title} · AltProtein Vietnam`;
 
 const page = createPublicPageContext({
   Astro,
@@ -43,7 +52,11 @@ const page = createPublicPageContext({
   siteName: 'AltProtein Vietnam',
 });
 const nav = [
-  { key: 'summary', label: s.summary, href: localize(lang === 'vi' ? '/tom-tat' : '/summary', lang) },
+  {
+    key: 'summary',
+    label: s.summary,
+    href: localize(lang === 'vi' ? '/tom-tat' : '/summary', lang),
+  },
   { key: 'report', label: s.report, href: localize('/report', lang) },
   { key: 'briefs', label: s.forYou, href: localize('/briefs', lang) },
   { key: 'appendices', label: s.appendices, href: localize('/appendices', lang) },
@@ -86,7 +99,9 @@ const searchAction = localize('/search', lang);
     <EmDashHead page={page} />
   </head>
   <body class={pageClass}>
-    <a class="skip-link" href="#main">{s.skip}</a>
+    <a class="skip-link" href="#main">
+      {s.skip}
+    </a>
     <EmDashBodyStart page={page} />
     <header class="site-header">
       <div class="header-inner">
@@ -95,40 +110,106 @@ const searchAction = localize('/search', lang);
           <span class="brand-label">{s.reportShort}</span>
         </a>
         <nav class="main-nav" aria-label={lang === 'vi' ? 'Điều hướng chính' : 'Main'}>
-          {
-            nav.map((item) => (
-              <a href={item.href} aria-current={section === item.key ? 'page' : undefined}>
-                {item.label}
-              </a>
-            ))
-          }
+          {nav.map((item) => (
+            <a href={item.href} aria-current={section === item.key ? 'page' : undefined}>
+              {item.label}
+            </a>
+          ))}
         </nav>
         <div class="header-tools">
           <form class="search-form" role="search" action={searchAction} method="get">
-            <label class="visually-hidden" for="q-top">{s.search}</label>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-              ><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg
+            <label class="visually-hidden" for="q-top">
+              {s.search}
+            </label>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
             >
-            <input id="q-top" name="q" type="search" placeholder={s.searchPlaceholder} autocomplete="off" />
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m20 20-3.5-3.5"></path>
+            </svg>
+            <input
+              id="q-top"
+              name="q"
+              type="search"
+              placeholder={s.searchPlaceholder}
+              autocomplete="off"
+            />
           </form>
-          <a class="lang-switch" href={otherHref} hreflang={lang === 'vi' ? 'en' : 'vi'} lang={lang === 'vi' ? 'en' : 'vi'} title={s.switchToLabel}>
+          <a
+            class="lang-switch"
+            href={otherHref}
+            hreflang={lang === 'vi' ? 'en' : 'vi'}
+            lang={lang === 'vi' ? 'en' : 'vi'}
+            title={s.switchToLabel}
+          >
             {lang === 'vi' ? 'EN' : 'VI'}
           </a>
           <button class="icon-btn theme-btn" type="button" data-theme-toggle aria-label={s.theme}>
-            <svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-              ><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg
+            <svg
+              class="i-sun"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
             >
-            <svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-              ><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+            </svg>
+            <svg
+              class="i-moon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
             >
-            <svg class="i-auto" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-              ><circle cx="12" cy="12" r="9"></circle><path d="M12 3v18" ></path><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" stroke="none"></path></svg
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+            </svg>
+            <svg
+              class="i-auto"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
             >
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 3v18"></path>
+              <path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" stroke="none"></path>
+            </svg>
           </button>
-          <button class="icon-btn menu-btn" type="button" data-drawer-open aria-controls="drawer" aria-expanded="false" aria-label={s.menu}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-              ><path d="M4 7h16M4 12h16M4 17h16"></path></svg
+          <button
+            class="icon-btn menu-btn"
+            type="button"
+            data-drawer-open
+            aria-controls="drawer"
+            aria-expanded="false"
+            aria-label={s.menu}
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
             >
+              <path d="M4 7h16M4 12h16M4 17h16"></path>
+            </svg>
           </button>
         </div>
       </div>
@@ -139,21 +220,42 @@ const searchAction = localize('/search', lang);
         <div class="drawer-head">
           <img src="/logo.svg" width="146" height="36" alt="" />
           <button class="icon-btn" type="button" data-drawer-close aria-label={s.close}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-              ><path d="M6 6l12 12M18 6 6 18"></path></svg
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
             >
+              <path d="M6 6l12 12M18 6 6 18"></path>
+            </svg>
           </button>
         </div>
         <form class="search-form" role="search" action={searchAction} method="get">
-          <label class="visually-hidden" for="q-drawer">{s.search}</label>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-            ><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg
+          <label class="visually-hidden" for="q-drawer">
+            {s.search}
+          </label>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
           >
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="m20 20-3.5-3.5"></path>
+          </svg>
           <input id="q-drawer" name="q" type="search" placeholder={s.searchPlaceholder} />
         </form>
         <div class="drawer-links">
           <a href={localize('/', lang)}>{s.home}</a>
-          {nav.map((item) => <a href={item.href}>{item.label}</a>)}
+          {nav.map((item) => (
+            <a href={item.href}>{item.label}</a>
+          ))}
           <a href={localize('/glossary', lang)}>{s.glossaryHeading}</a>
           <a href={localize('/about', lang)}>{s.about}</a>
         </div>
@@ -172,35 +274,78 @@ const searchAction = localize('/search', lang);
         <div>
           <h2>{s.report}</h2>
           <ul>
-            <li><a href={localize('/summary', lang)}>{lang === 'vi' ? 'Tóm tắt (tiếng Anh)' : 'Executive summary'}</a></li>
-            <li><a href={localize('/tom-tat', lang)} lang="vi">Tóm tắt tiếng Việt</a></li>
-            <li><a href={localize('/at-a-glance', lang)}>{lang === 'vi' ? 'Tổng quan nhanh' : 'At a glance'}</a></li>
-            <li><a href={localize('/report', lang)}>{s.report}</a></li>
-            <li><a href={localize('/briefs', lang)}>{s.forYou}</a></li>
-            <li><a href={localize('/appendices', lang)}>{s.appendices}</a></li>
+            <li>
+              <a href={localize('/summary', lang)}>
+                {lang === 'vi' ? 'Tóm tắt (tiếng Anh)' : 'Executive summary'}
+              </a>
+            </li>
+            <li>
+              <a href={localize('/tom-tat', lang)} lang="vi">
+                Tóm tắt tiếng Việt
+              </a>
+            </li>
+            <li>
+              <a href={localize('/at-a-glance', lang)}>
+                {lang === 'vi' ? 'Tổng quan nhanh' : 'At a glance'}
+              </a>
+            </li>
+            <li>
+              <a href={localize('/report', lang)}>{s.report}</a>
+            </li>
+            <li>
+              <a href={localize('/briefs', lang)}>{s.forYou}</a>
+            </li>
+            <li>
+              <a href={localize('/appendices', lang)}>{s.appendices}</a>
+            </li>
           </ul>
         </div>
         <div>
           <h2>{s.data}</h2>
           <ul>
-            <li><a href={localize('/data', lang)}>{s.dataHeading}</a></li>
-            <li><a href={localize('/glossary', lang)}>{s.glossaryHeading}</a></li>
-            <li><a href={localize('/search', lang)}>{s.search}</a></li>
-            <li><a href="/downloads/altprotein-vn-data.zip" download>{s.downloadData}</a></li>
+            <li>
+              <a href={localize('/data', lang)}>{s.dataHeading}</a>
+            </li>
+            <li>
+              <a href={localize('/glossary', lang)}>{s.glossaryHeading}</a>
+            </li>
+            <li>
+              <a href={localize('/search', lang)}>{s.search}</a>
+            </li>
+            <li>
+              <a href="/downloads/altprotein-vn-data.zip" download>
+                {s.downloadData}
+              </a>
+            </li>
           </ul>
         </div>
         <div>
           <h2>{s.about}</h2>
           <ul>
-            <li><a href={localize('/about', lang)}>{s.about}</a></li>
-            <li><a href={localize('/how-to-read', lang)}>{lang === 'vi' ? 'Cách đọc báo cáo' : 'How to read this report'}</a></li>
-            <li><a href={localize('/about', lang) + '#cite'}>{s.cite}</a></li>
-            <li><a href="/_emdash/admin" rel="nofollow">{s.editorSignIn}</a></li>
+            <li>
+              <a href={localize('/about', lang)}>{s.about}</a>
+            </li>
+            <li>
+              <a href={localize('/how-to-read', lang)}>
+                {lang === 'vi' ? 'Cách đọc báo cáo' : 'How to read this report'}
+              </a>
+            </li>
+            <li>
+              <a href={localize('/about', lang) + '#cite'}>{s.cite}</a>
+            </li>
+            <li>
+              <a href="/_emdash/admin" rel="nofollow">
+                {s.editorSignIn}
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <div class="footer-base">
-        <span>{SITE.publisher} · {lang === 'vi' ? 'Ấn bản 1.1, tháng 9 năm 2026' : 'Edition 1.1, September 2026'}</span>
+        <span>
+          {SITE.publisher} ·{' '}
+          {lang === 'vi' ? 'Ấn bản 1.1, tháng 9 năm 2026' : 'Edition 1.1, September 2026'}
+        </span>
         <span>{s.notAdvice}</span>
       </div>
     </footer>

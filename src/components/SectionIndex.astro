@@ -1,6 +1,14 @@
 ---
 import { label, t } from '../lib/i18n';
-import { PAGES, PARTS, SITE, appendixLetter, chapterNumber, href, type PageMeta } from '../lib/site';
+import {
+  PAGES,
+  PARTS,
+  SITE,
+  appendixLetter,
+  chapterNumber,
+  href,
+  type PageMeta,
+} from '../lib/site';
 
 interface Props {
   kind: 'report' | 'brief' | 'appendix';
@@ -20,8 +28,18 @@ const groups: { id: string; title: string; isNew: boolean; pages: PageMeta[] }[]
       }))
     : kind === 'appendix'
       ? [
-          { id: 'evidence', title: s.appendicesEvidence, isNew: false, pages: pages.filter((p) => !p.new_in) },
-          { id: 'futures', title: s.appendicesFutures, isNew: true, pages: pages.filter((p) => p.new_in) },
+          {
+            id: 'evidence',
+            title: s.appendicesEvidence,
+            isNew: false,
+            pages: pages.filter((p) => !p.new_in),
+          },
+          {
+            id: 'futures',
+            title: s.appendicesFutures,
+            isNew: true,
+            pages: pages.filter((p) => p.new_in),
+          },
         ]
       : [{ id: 'briefs', title: '', isNew: false, pages }];
 const heading = { report: s.report, brief: s.briefsHeading, appendix: s.appendicesHeading }[kind];
@@ -51,32 +69,32 @@ const kicker = (p: PageMeta) =>
     <h1>{heading}</h1>
     <p>{intro}</p>
   </header>
-  {
-    groups.map((g) => (
-      <section class="part-block" id={g.id} aria-labelledby={g.title ? `${g.id}-h` : undefined}>
-        {g.title && (
-          <h2 id={`${g.id}-h`}>
-            {g.title}
-            {g.isNew && <span class="new-pill">{s.newIn11}</span>}
-          </h2>
-        )}
-        <div class="card-grid">
-          {g.pages.map((p) => (
-            <a class="card" href={href(p.id, lang)} data-aud={p.audiences.join(' ')}>
-              <span class="card-kicker">
-                {kicker(p)}
-                <span class="for-you">{s.forAudience}</span>
-              </span>
-              <span class="card-title" lang={vi ? 'en' : undefined}>
-                {p.heading.replace(/^(\d+|[A-Z])\. /, '')}
-              </span>
-              <span class="card-text" lang={vi ? 'en' : undefined}>{p.summary}</span>
-              <span class="card-meta">{p.reading_time_min && s.minRead(p.reading_time_min)}</span>
-            </a>
-          ))}
-        </div>
-      </section>
-    ))
-  }
+  {groups.map((g) => (
+    <section class="part-block" id={g.id} aria-labelledby={g.title ? `${g.id}-h` : undefined}>
+      {g.title && (
+        <h2 id={`${g.id}-h`}>
+          {g.title}
+          {g.isNew && <span class="new-pill">{s.newIn11}</span>}
+        </h2>
+      )}
+      <div class="card-grid">
+        {g.pages.map((p) => (
+          <a class="card" href={href(p.id, lang)} data-aud={p.audiences.join(' ')}>
+            <span class="card-kicker">
+              {kicker(p)}
+              <span class="for-you">{s.forAudience}</span>
+            </span>
+            <span class="card-title" lang={vi ? 'en' : undefined}>
+              {p.heading.replace(/^(\d+|[A-Z])\. /, '')}
+            </span>
+            <span class="card-text" lang={vi ? 'en' : undefined}>
+              {p.summary}
+            </span>
+            <span class="card-meta">{p.reading_time_min && s.minRead(p.reading_time_min)}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
   <div style="height:64px"></div>
 </div>

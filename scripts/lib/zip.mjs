@@ -83,6 +83,9 @@ export function writeZip(outFile, entries) {
 export function zipDirectory(outFile, dir, prefix) {
   writeZip(
     outFile,
-    walk(dir).map((rel) => [path.posix.join(prefix, rel.split(path.sep).join('/')), path.join(dir, rel)]),
+    walk(dir).map((rel) => [
+      path.posix.join(prefix, rel.split(path.sep).join('/')),
+      path.join(dir, rel),
+    ]),
   );
 }

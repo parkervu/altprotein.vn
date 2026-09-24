@@ -6,7 +6,12 @@ import { href, PAGE_BY_ID } from './site';
 
 type Row = Record<string, string>;
 const PLAYS = playsJson as { plays: Row[]; criteria: Row[]; presets: Row[] };
-const SCEN = scenariosJson as { scenarios: Row[]; signposts: Row[]; robustness: Row[]; moves: Row[] };
+const SCEN = scenariosJson as {
+  scenarios: Row[];
+  signposts: Row[];
+  robustness: Row[];
+  moves: Row[];
+};
 
 export const PLAY_ROWS = PLAYS.plays.filter((p) => p.type === 'play');
 export const CRITERIA = PLAYS.criteria;
@@ -34,9 +39,11 @@ function relatedLinks(ids: string, lang: Lang) {
 
 function playCard(p: Row, lang: Lang, balanced: number): string {
   const s = t(lang).plays;
-  const field = (label: string, value: string) => (value ? `<dt>${e(label)}</dt><dd lang="en">${e(value)}</dd>` : '');
+  const field = (label: string, value: string) =>
+    value ? `<dt>${e(label)}</dt><dd lang="en">${e(value)}</dd>` : '';
   const scores = CRITERIA.map(
-    (c) => `<li><span>${e(c.label)}</span><b aria-label="${e(p[c.field])} of 5">${'●'.repeat(Number(p[c.field]))}<span class="off">${'●'.repeat(5 - Number(p[c.field]))}</span></b></li>`,
+    (c) =>
+      `<li><span>${e(c.label)}</span><b aria-label="${e(p[c.field])} of 5">${'●'.repeat(Number(p[c.field]))}<span class="off">${'●'.repeat(5 - Number(p[c.field]))}</span></b></li>`,
   ).join('');
   return `<details class="play-card" id="play-${e(p.play_id)}" data-play="${e(p.play_id)}">
 <summary><span class="play-id">${e(p.play_id)}</span> <span class="play-name" lang="en">${e(p.name)}</span> <span class="play-score">${balanced.toFixed(2)}</span></summary>
@@ -53,15 +60,28 @@ ${p.related_pages ? `<p class="play-related">${relatedLinks(p.related_pages, lan
 export function renderPlaysTool(lang: Lang, staticSvg: string): string {
   const s = t(lang).plays;
   const balanced = PRESETS.find((p) => p.preset_id === 'balanced')!;
-  const ranked = PLAY_ROWS.map((p) => ({ p, score: weightedScore(p, balanced) })).sort((a, b) => b.score - a.score);
+  const ranked = PLAY_ROWS.map((p) => ({ p, score: weightedScore(p, balanced) })).sort(
+    (a, b) => b.score - a.score,
+  );
   const data = {
-    plays: PLAY_ROWS.map((p) => ({ id: p.play_id, name: p.name, scores: Object.fromEntries(CRITERIA.map((c) => [c.field, Number(p[c.field])])) })),
+    plays: PLAY_ROWS.map((p) => ({
+      id: p.play_id,
+      name: p.name,
+      scores: Object.fromEntries(CRITERIA.map((c) => [c.field, Number(p[c.field])])),
+    })),
     criteria: CRITERIA.map((c) => ({ field: c.field, label: c.label, definition: c.definition })),
-    presets: PRESETS.map((p) => ({ id: p.preset_id, label: p.label, weights: Object.fromEntries(CRITERIA.map((c) => [c.field, Number(p[c.field])])) })),
+    presets: PRESETS.map((p) => ({
+      id: p.preset_id,
+      label: p.label,
+      weights: Object.fromEntries(CRITERIA.map((c) => [c.field, Number(p[c.field])])),
+    })),
   };
-  const options = PRESETS.map((p) => `<option value="${e(p.preset_id)}">${e(p.label)}</option>`).join('');
+  const options = PRESETS.map(
+    (p) => `<option value="${e(p.preset_id)}">${e(p.label)}</option>`,
+  ).join('');
   const sliders = CRITERIA.map(
-    (c) => `<label class="slider"><span class="slider-label" title="${e(c.definition)}">${e(c.label)}</span><input type="range" min="0" max="50" step="1" name="${e(c.field)}" value="${e(balanced[c.field])}" aria-describedby="w-${e(c.field)}"><output id="w-${e(c.field)}">${e(balanced[c.field])}%</output></label>`,
+    (c) =>
+      `<label class="slider"><span class="slider-label" title="${e(c.definition)}">${e(c.label)}</span><input type="range" min="0" max="50" step="1" name="${e(c.field)}" value="${e(balanced[c.field])}" aria-describedby="w-${e(c.field)}"><output id="w-${e(c.field)}">${e(balanced[c.field])}%</output></label>`,
   ).join('');
   return `<div class="plays-tool" data-plays-tool>
 <script type="application/json" class="plays-data">${JSON.stringify(data).replace(/</g, '\\u003c')}</script>
@@ -84,7 +104,8 @@ export function renderScenarioExplorer(lang: Lang): string {
   const s = t(lang).scenarios;
   const scen = SCEN.scenarios;
   const letter = (id: string) => id.replace('SC-', '');
-  const scoreKey = (l: string) => Object.keys(SCEN.robustness[0]).find((k) => k.startsWith(`score_${l}_`))!;
+  const scoreKey = (l: string) =>
+    Object.keys(SCEN.robustness[0]).find((k) => k.startsWith(`score_${l}_`))!;
   const name = (r: Row) => (lang === 'vi' && r.name_vi ? r.name_vi : r.name);
   const placement: Record<string, string> = { A: 'tl', B: 'bl', C: 'tr', D: 'br' };
   const tabs = scen
@@ -98,14 +119,25 @@ export function renderScenarioExplorer(lang: Lang): string {
       const l = letter(r.scenario_id);
       const key = scoreKey(l);
       const plays = [...SCEN.robustness]
-        .sort((a, b) => Number(b[key]) - Number(a[key]) || a.play_id.localeCompare(b.play_id, 'en', { numeric: true }))
-        .map((p) => `<li data-score="${e(p[key])}"><span class="rb-score" aria-label="score ${e(p[key])} of 2">${e(p[key])}</span><span class="rb-id">${e(p.play_id)}</span> <span lang="en">${e(p.play_name)}</span></li>`)
+        .sort(
+          (a, b) =>
+            Number(b[key]) - Number(a[key]) ||
+            a.play_id.localeCompare(b.play_id, 'en', { numeric: true }),
+        )
+        .map(
+          (p) =>
+            `<li data-score="${e(p[key])}"><span class="rb-score" aria-label="score ${e(p[key])} of 2">${e(p[key])}</span><span class="rb-id">${e(p.play_id)}</span> <span lang="en">${e(p.play_name)}</span></li>`,
+        )
         .join('');
       const signposts = SCEN.signposts
         .filter((sp) => list(sp.scenarios_favoured).includes(l))
-        .map((sp) => `<li><strong lang="en">${e(sp.signpost)}</strong> <span lang="en">${e(sp.threshold)}</span><br><span class="sp-status" lang="en">${e(sp.status_sep_2026)}</span></li>`)
+        .map(
+          (sp) =>
+            `<li><strong lang="en">${e(sp.signpost)}</strong> <span lang="en">${e(sp.threshold)}</span><br><span class="sp-status" lang="en">${e(sp.status_sep_2026)}</span></li>`,
+        )
         .join('');
-      const fact = (label: string, value: string) => (value ? `<div><dt>${e(label)}</dt><dd lang="en">${e(value)}</dd></div>` : '');
+      const fact = (label: string, value: string) =>
+        value ? `<div><dt>${e(label)}</dt><dd lang="en">${e(value)}</dd></div>` : '';
       return `<section class="scen-panel" role="tabpanel" id="scen-panel-${l}" aria-labelledby="scen-tab-${l}" data-scen="${l}">
 <h4><span class="scen-letter">${l}</span> ${e(name(r))} ${foresightBadge(r.foresight_type, lang)}</h4>
 <p class="scen-picture" lang="en">${e(r.picture_2050)}</p>

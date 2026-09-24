@@ -36,7 +36,9 @@ export function initPlays() {
       const ranked = data.plays
         .map((p) => ({
           ...p,
-          score: total ? data.criteria.reduce((n, c) => n + p.scores[c.field] * raw[c.field], 0) / total : 0,
+          score: total
+            ? data.criteria.reduce((n, c) => n + p.scores[c.field] * raw[c.field], 0) / total
+            : 0,
         }))
         .sort((a, b) => b.score - a.score || a.id.localeCompare(b.id, 'en', { numeric: true }));
       bars.replaceChildren(
@@ -57,7 +59,9 @@ export function initPlays() {
               card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
               card.querySelector('summary')?.focus({ preventScroll: true });
             }
-            bars.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+            bars
+              .querySelectorAll('button')
+              .forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
           });
           li.append(btn);
           return li;
@@ -85,7 +89,9 @@ export function initPlays() {
     select.addEventListener('change', () => applyPreset(select.value));
     sliders.forEach((s) =>
       s.addEventListener('input', () => {
-        const match = data.presets.find((p) => sliders.every((x) => p.weights[x.name] === Number(x.value)));
+        const match = data.presets.find((p) =>
+          sliders.every((x) => p.weights[x.name] === Number(x.value)),
+        );
         select.value = match ? match.id : 'custom';
         render();
       }),

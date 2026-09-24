@@ -29,7 +29,10 @@ export function initScenarios() {
         const target = layout[tab.dataset.scen!]?.[e.key];
         if (target) {
           e.preventDefault();
-          select(tabs.find((t) => t.dataset.scen === target)!, true);
+          select(
+            tabs.find((t) => t.dataset.scen === target)!,
+            true,
+          );
         }
       });
     });

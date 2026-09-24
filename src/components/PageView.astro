@@ -4,7 +4,16 @@ import SourcesList from './SourcesList.astro';
 import { audienceLabel, t, type Lang } from '../lib/i18n';
 import type { RenderResult } from '../lib/markdown';
 import datasets from '../generated/datasets.json';
-import { PAGE_BY_ID, SITE, href, localize, neighbours, chapterNumber, appendixLetter, type PageMeta } from '../lib/site';
+import {
+  PAGE_BY_ID,
+  SITE,
+  href,
+  localize,
+  neighbours,
+  chapterNumber,
+  appendixLetter,
+  type PageMeta,
+} from '../lib/site';
 
 interface Props {
   meta: PageMeta;
@@ -39,14 +48,26 @@ const eyebrow =
         : null;
 const related = meta.related_pages.map((id) => PAGE_BY_ID.get(id)).filter(Boolean) as PageMeta[];
 const dataFiles = meta.related_data
-  .map((f) => (datasets as { file: string; slug: string; group: string }[]).find((d) => d.file === f && d.group === 'data'))
+  .map((f) =>
+    (datasets as { file: string; slug: string; group: string }[]).find(
+      (d) => d.file === f && d.group === 'data',
+    ),
+  )
   .filter(Boolean) as { file: string; slug: string }[];
 const langNote =
   contentLang !== lang
     ? contentLang === 'vi'
-      ? { text: 'This page is in Vietnamese.', link: href('front-exec-summary', lang), linkText: 'Read the English summary' }
+      ? {
+          text: 'This page is in Vietnamese.',
+          link: href('front-exec-summary', lang),
+          linkText: 'Read the English summary',
+        }
       : vi
-        ? { text: 'Nội dung trang này bằng tiếng Anh.', link: href('front-exec-summary-vi', lang), linkText: 'Đọc bản tóm tắt tiếng Việt' }
+        ? {
+            text: 'Nội dung trang này bằng tiếng Anh.',
+            link: href('front-exec-summary-vi', lang),
+            linkText: 'Đọc bản tóm tắt tiếng Việt',
+          }
         : null
     : null;
 const isVision = meta.id === 'ch19-vision-2050';
@@ -60,162 +81,176 @@ const isVision = meta.id === 'ch19-vision-2050';
     </aside>
     <article class="doc-main" lang={contentLang !== lang ? contentLang : undefined}>
       <ol class="crumbs" lang={lang !== contentLang ? lang : undefined}>
-        <li><a href={localize('/', lang)}>{s.home}</a></li>
-        {sectionCrumb && <li><a href={sectionCrumb.href}>{sectionCrumb.label}</a></li>}
-        {meta.section === 'report' && meta.part && <li><span>{meta.part}</span></li>}
+        <li>
+          <a href={localize('/', lang)}>{s.home}</a>
+        </li>
+        {sectionCrumb && (
+          <li>
+            <a href={sectionCrumb.href}>{sectionCrumb.label}</a>
+          </li>
+        )}
+        {meta.section === 'report' && meta.part && (
+          <li>
+            <span>{meta.part}</span>
+          </li>
+        )}
       </ol>
       <header class="page-head">
-        {
-          (eyebrow || meta.new_in || isVision) && (
-            <p class="eyebrow" lang={lang !== contentLang ? lang : undefined}>
-              {eyebrow && <span>{eyebrow}</span>}
-              {meta.new_in && <span class="new-pill">{s.newIn11}</span>}
-              {isVision && (
-                <span class="fx" data-fx="vision">
-                  <span>{s.visionNotForecast}</span>
-                </span>
-              )}
-            </p>
-          )
-        }
+        {(eyebrow || meta.new_in || isVision) && (
+          <p class="eyebrow" lang={lang !== contentLang ? lang : undefined}>
+            {eyebrow && <span>{eyebrow}</span>}
+            {meta.new_in && <span class="new-pill">{s.newIn11}</span>}
+            {isVision && (
+              <span class="fx" data-fx="vision">
+                <span>{s.visionNotForecast}</span>
+              </span>
+            )}
+          </p>
+        )}
         <h1 set:html={rendered.heading ?? title} />
         {summary && <p class="page-lead">{summary}</p>}
         <div class="page-meta" lang={lang !== contentLang ? lang : undefined}>
           {meta.reading_time_min && <span>{s.minRead(meta.reading_time_min)}</span>}
-          {
-            meta.audiences.length > 0 && meta.audiences.length < 6 && (
-              <span class="aud-chips" aria-label={vi ? 'Dành cho' : 'Written for'}>
-                {meta.audiences.map((a) => (
-                  <span class="aud-chip" data-key={a}>
-                    {audienceLabel(a, lang, SITE.audiences[a])}
-                  </span>
-                ))}
-              </span>
-            )
-          }
+          {meta.audiences.length > 0 && meta.audiences.length < 6 && (
+            <span class="aud-chips" aria-label={vi ? 'Dành cho' : 'Written for'}>
+              {meta.audiences.map((a) => (
+                <span class="aud-chip" data-key={a}>
+                  {audienceLabel(a, lang, SITE.audiences[a])}
+                </span>
+              ))}
+            </span>
+          )}
           <a href={href('front-how-to-read', lang, 'evidence-tags')}>{s.evidenceLegend}</a>
-          <button class="btn-ghost no-print" type="button" data-print>{s.print}</button>
+          <button class="btn-ghost no-print" type="button" data-print>
+            {s.print}
+          </button>
         </div>
       </header>
-      {isPreview && <p class="preview-note" role="status" lang={lang}>{vi ? 'Bản xem trước của biên tập viên: nội dung chưa xuất bản.' : 'Editor preview: unpublished changes.'} <a href={Astro.url.pathname}>{vi ? 'Thoát' : 'Exit preview'}</a></p>}
-      {
-        langNote && (
-          <p class="lang-note" lang={lang}>
-            {langNote.text} <a href={langNote.link}>{langNote.linkText}</a>
+      {isPreview && (
+        <p class="preview-note" role="status" lang={lang}>
+          {vi
+            ? 'Bản xem trước của biên tập viên: nội dung chưa xuất bản.'
+            : 'Editor preview: unpublished changes.'}{' '}
+          <a href={Astro.url.pathname}>{vi ? 'Thoát' : 'Exit preview'}</a>
+        </p>
+      )}
+      {langNote && (
+        <p class="lang-note" lang={lang}>
+          {langNote.text} <a href={langNote.link}>{langNote.linkText}</a>
+        </p>
+      )}
+      {rendered.toc.filter((h) => h.depth === 2).length > 2 && (
+        <details class="mobile-toc">
+          <summary lang={lang}>{s.onThisPage}</summary>
+          <ol>
+            {rendered.toc
+              .filter((h) => h.depth === 2)
+              .map((h) => (
+                <li>
+                  <a href={`#${h.id}`}>{h.text}</a>
+                </li>
+              ))}
+          </ol>
+        </details>
+      )}
+      {meta.id === 'app-a-method' && (
+        <aside class="callout callout-note no-print" lang={lang}>
+          <p>
+            <strong>{s.downloads}.</strong>{' '}
+            <a href="/downloads/altprotein-vn-working-papers.zip" download>
+              {s.downloadWorking}
+            </a>{' '}
+            ·{' '}
+            <a href="/downloads/altprotein-vn-data.zip" download>
+              {s.downloadData}
+            </a>
           </p>
-        )
-      }
-      {
-        rendered.toc.filter((h) => h.depth === 2).length > 2 && (
-          <details class="mobile-toc">
-            <summary lang={lang}>{s.onThisPage}</summary>
-            <ol>
-              {rendered.toc
-                .filter((h) => h.depth === 2)
-                .map((h) => (
-                  <li>
-                    <a href={`#${h.id}`}>{h.text}</a>
-                  </li>
-                ))}
-            </ol>
-          </details>
-        )
-      }
-      {
-        meta.id === 'app-a-method' && (
-          <aside class="callout callout-note no-print" lang={lang}>
-            <p>
-              <strong>{s.downloads}.</strong>{' '}
-              <a href="/downloads/altprotein-vn-working-papers.zip" download>{s.downloadWorking}</a> ·{' '}
-              <a href="/downloads/altprotein-vn-data.zip" download>{s.downloadData}</a>
-            </p>
-          </aside>
-        )
-      }
-      {
-        meta.id === 'app-s-glossary' && (
-          <aside class="callout callout-note no-print" lang={lang}>
-            <p>
-              <strong>{vi ? 'Tìm nhanh.' : 'Quick search.'}</strong>{' '}
-              <a href={localize('/glossary', lang)}>{s.glossaryFilter}</a>
-            </p>
-          </aside>
-        )
-      }
+        </aside>
+      )}
+      {meta.id === 'app-s-glossary' && (
+        <aside class="callout callout-note no-print" lang={lang}>
+          <p>
+            <strong>{vi ? 'Tìm nhanh.' : 'Quick search.'}</strong>{' '}
+            <a href={localize('/glossary', lang)}>{s.glossaryFilter}</a>
+          </p>
+        </aside>
+      )}
       <div class={`prose${isVision ? ' prose-vision' : ''}`} set:html={rendered.html} />
       <SourcesList ids={rendered.citations} lang={lang} />
       <footer class="page-foot" lang={lang}>
-        {
-          related.length > 0 && (
-            <section>
-              <h2>{s.related}</h2>
-              <ul class="related-list">
-                {related.map((p) => (
-                  <li>
-                    <a href={href(p.id, lang)} lang={p.lang !== lang ? p.lang : undefined}>
-                      <small>{p.section === 'report' ? `${vi ? 'Chương' : 'Chapter'} ${chapterNumber(p.id)}` : p.section === 'appendix' ? `${vi ? 'Phụ lục' : 'Appendix'} ${appendixLetter(p.id)}` : p.section === 'brief' ? (vi ? 'Bản tóm lược' : 'Brief') : ''}</small>
-                      {p.short_title.replace(/^[A-Z]\. /, '')}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )
-        }
-        {
-          dataFiles.length > 0 && (
-            <section>
-              <h2>{s.relatedData}</h2>
-              <ul class="data-links">
-                {dataFiles.map((d) => (
-                  <li>
-                    <a href={localize(`/data/${d.slug}`, lang)}>{d.file}</a>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )
-        }
+        {related.length > 0 && (
+          <section>
+            <h2>{s.related}</h2>
+            <ul class="related-list">
+              {related.map((p) => (
+                <li>
+                  <a href={href(p.id, lang)} lang={p.lang !== lang ? p.lang : undefined}>
+                    <small>
+                      {p.section === 'report'
+                        ? `${vi ? 'Chương' : 'Chapter'} ${chapterNumber(p.id)}`
+                        : p.section === 'appendix'
+                          ? `${vi ? 'Phụ lục' : 'Appendix'} ${appendixLetter(p.id)}`
+                          : p.section === 'brief'
+                            ? vi
+                              ? 'Bản tóm lược'
+                              : 'Brief'
+                            : ''}
+                    </small>
+                    {p.short_title.replace(/^[A-Z]\. /, '')}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+        {dataFiles.length > 0 && (
+          <section>
+            <h2>{s.relatedData}</h2>
+            <ul class="data-links">
+              {dataFiles.map((d) => (
+                <li>
+                  <a href={localize(`/data/${d.slug}`, lang)}>{d.file}</a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
         <nav class="pager" aria-label={vi ? 'Trang trước và sau' : 'Previous and next'}>
-          {
-            prev && (
-              <a class="prev" href={href(prev.id, lang)} rel="prev">
-                <small>← {s.previous}</small>
-                <span lang={prev.lang !== lang ? prev.lang : undefined}>{prev.short_title}</span>
-              </a>
-            )
-          }
-          {
-            next && (
-              <a class="next" href={href(next.id, lang)} rel="next">
-                <small>{s.next} →</small>
-                <span lang={next.lang !== lang ? next.lang : undefined}>{next.short_title}</span>
-              </a>
-            )
-          }
+          {prev && (
+            <a class="prev" href={href(prev.id, lang)} rel="prev">
+              <small>← {s.previous}</small>
+              <span lang={prev.lang !== lang ? prev.lang : undefined}>{prev.short_title}</span>
+            </a>
+          )}
+          {next && (
+            <a class="next" href={href(next.id, lang)} rel="next">
+              <small>{s.next} →</small>
+              <span lang={next.lang !== lang ? next.lang : undefined}>{next.short_title}</span>
+            </a>
+          )}
         </nav>
       </footer>
     </article>
-    {
-      rendered.toc.length > 1 && (
-        <aside class="doc-toc" aria-labelledby="toc-title" lang={lang}>
-          <p class="toc-title" id="toc-title">
-            {s.onThisPage}
-          </p>
-          <ol lang={contentLang}>
-            {rendered.toc.map((h) => (
-              <li class={`d${h.depth}`}>
-                <a href={`#${h.id}`}>{h.text}</a>
-              </li>
-            ))}
-          </ol>
-          <div class="toc-tools">
-            <a href={href('front-how-to-read', lang, 'evidence-tags')}>{s.evidenceLegend}</a>
-            {rendered.citations.length > 0 && <a href="#sources-cited">{s.sourcesCited}</a>}
-            <button type="button" data-print>{s.print}</button>
-          </div>
-        </aside>
-      )
-    }
+    {rendered.toc.length > 1 && (
+      <aside class="doc-toc" aria-labelledby="toc-title" lang={lang}>
+        <p class="toc-title" id="toc-title">
+          {s.onThisPage}
+        </p>
+        <ol lang={contentLang}>
+          {rendered.toc.map((h) => (
+            <li class={`d${h.depth}`}>
+              <a href={`#${h.id}`}>{h.text}</a>
+            </li>
+          ))}
+        </ol>
+        <div class="toc-tools">
+          <a href={href('front-how-to-read', lang, 'evidence-tags')}>{s.evidenceLegend}</a>
+          {rendered.citations.length > 0 && <a href="#sources-cited">{s.sourcesCited}</a>}
+          <button type="button" data-print>
+            {s.print}
+          </button>
+        </div>
+      </aside>
+    )}
   </div>
 </div>
