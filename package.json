@@ -9,7 +9,7 @@
   "scripts": {
     "data:build": "node scripts/build-data.mjs",
     "dev": "node scripts/build-data.mjs && astro dev --host 127.0.0.1",
-    "build": "node scripts/build-data.mjs && astro build",
+    "build": "node scripts/build.mjs",
     "preview": "wrangler dev --local",
     "typecheck": "node scripts/build-data.mjs --quiet && astro check",
     "cf:types": "wrangler types --include-runtime=false",
@@ -17,7 +17,7 @@
     "content:check": "node scripts/build-seed.mjs --check && python3 report/tools/validate.py",
     "test": "node scripts/build-data.mjs --quiet && tsx --test tests/*.test.ts",
     "test:e2e": "playwright test",
-    "build:production": "node scripts/build-data.mjs && CLOUDFLARE_ENV=production astro build",
+    "build:production": "CLOUDFLARE_ENV=production node scripts/build.mjs",
     "deploy:production": "pnpm build:production && wrangler deploy --env production",
     "setup:local": "node scripts/setup-local.mjs",
     "charts:check": "node scripts/charts/preview.mjs && node scripts/charts/shoot.mjs"
