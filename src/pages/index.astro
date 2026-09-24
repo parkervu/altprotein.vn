@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import SourcesList from '../components/SourcesList.astro';
 import { loadPage, renderPage } from '../lib/content';
 import { audienceLabel, label, t } from '../lib/i18n';
 import { KEY_NUMBERS } from '../lib/markdown';
@@ -50,7 +51,8 @@ const closing = sections
 const version = String(cover?.data.updatedAt ?? '');
 // In the Vietnamese interface the hero carries the Vietnamese summary, so only the tiles are kept.
 const heroSource = vi ? introBody.split('\n').filter((l) => l.includes('{{kn:')).join('\n') : introBody;
-const heroHtml = renderPage('front-cover', heroSource, lang, `hero-${version}`, false).html;
+const hero = renderPage('front-cover', heroSource, lang, `hero-${version}`, false);
+const heroHtml = hero.html;
 const closingHtml = renderPage('front-cover', closing, lang, `closing-${version}`, false).html;
 
 const viSummary = PAGE_BY_ID.get('front-exec-summary-vi')!;
@@ -323,6 +325,7 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
   <section class="section closing" aria-label={s.cite}>
     <div class="frame">
       <div class="prose closing-notes" lang={vi ? 'en' : undefined} set:html={closingHtml} />
+      <SourcesList ids={hero.citations} lang={lang} />
     </div>
   </section>
 </Base>

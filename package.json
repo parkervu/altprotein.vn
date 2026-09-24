@@ -19,7 +19,8 @@
     "test:e2e": "playwright test",
     "build:production": "node scripts/build-data.mjs && CLOUDFLARE_ENV=production astro build",
     "deploy:production": "pnpm build:production && wrangler deploy --env production",
-    "setup:local": "node scripts/setup-local.mjs"
+    "setup:local": "node scripts/setup-local.mjs",
+    "charts:check": "node scripts/charts/preview.mjs && node scripts/charts/shoot.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^14.3.1",

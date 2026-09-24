@@ -7,9 +7,10 @@ export default defineConfig({
     baseURL: 'http://127.0.0.1:4321',
     headless: true,
     channel: process.env.PLAYWRIGHT_CHANNEL || undefined,
+    launchOptions: process.env.PLAYWRIGHT_EXECUTABLE ? { executablePath: process.env.PLAYWRIGHT_EXECUTABLE } : undefined,
   },
   webServer: {
-    command: 'pnpm exec astro dev --host 127.0.0.1 --ignore-lock',
+    command: 'node scripts/build-data.mjs --quiet && pnpm exec astro dev --host 127.0.0.1 --ignore-lock',
     url: 'http://127.0.0.1:4321/_emdash/api/setup/status',
     reuseExistingServer: !process.env.CI,
     timeout: 120000,

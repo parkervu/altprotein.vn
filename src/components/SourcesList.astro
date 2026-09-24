@@ -1,0 +1,47 @@
+---
+import { t, type Lang } from '../lib/i18n';
+import { SOURCES } from '../lib/markdown';
+import { href } from '../lib/site';
+interface Props {
+  ids: string[];
+  lang: Lang;
+}
+const { ids, lang } = Astro.props;
+const s = t(lang);
+---
+
+{
+  ids.length > 0 && (
+    <section class="sources-cited" aria-labelledby="sources-cited" lang={lang}>
+      <h2 id="sources-cited">{s.sourcesCited}</h2>
+      <p class="hint">
+        <a href={href('app-t-sources', lang)}>{s.allSources}</a>
+      </p>
+      <ol lang="en">
+        {ids.map((id) => {
+          const src = SOURCES[id];
+          return (
+            <li id={`src-${id}`}>
+              <a class="sid" href={href('app-t-sources', lang, id)}>
+                {id}
+              </a>{' '}
+              {src && (
+                <>
+                  {src.a && <span>{src.a}. </span>}
+                  {src.u ? (
+                    <a href={src.u} rel="noopener">
+                      {src.t}
+                    </a>
+                  ) : (
+                    <span>{src.t}</span>
+                  )}
+                  {src.d && <span>. {src.d}</span>}
+                </>
+              )}
+            </li>
+          );
+        })}
+      </ol>
+    </section>
+  )
+}

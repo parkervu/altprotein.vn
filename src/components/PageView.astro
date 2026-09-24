@@ -1,7 +1,7 @@
 ---
 import NavTree from './NavTree.astro';
+import SourcesList from './SourcesList.astro';
 import { audienceLabel, t, type Lang } from '../lib/i18n';
-import { SOURCES } from '../lib/markdown';
 import type { RenderResult } from '../lib/markdown';
 import datasets from '../generated/datasets.json';
 import { PAGE_BY_ID, SITE, href, localize, neighbours, chapterNumber, appendixLetter, type PageMeta } from '../lib/site';
@@ -143,41 +143,7 @@ const isVision = meta.id === 'ch19-vision-2050';
         )
       }
       <div class={`prose${isVision ? ' prose-vision' : ''}`} set:html={rendered.html} />
-      {
-        rendered.citations.length > 0 && (
-          <section class="sources-cited" aria-labelledby="sources-cited" lang={lang}>
-            <h2 id="sources-cited">{s.sourcesCited}</h2>
-            <p class="hint">
-              <a href={href('app-t-sources', lang)}>{s.allSources}</a>
-            </p>
-            <ol lang="en">
-              {rendered.citations.map((id) => {
-                const src = SOURCES[id];
-                return (
-                  <li id={`src-${id}`}>
-                    <a class="sid" href={href('app-t-sources', lang, id)}>
-                      {id}
-                    </a>{' '}
-                    {src ? (
-                      <>
-                        {src.a && <span>{src.a}. </span>}
-                        {src.u ? (
-                          <a href={src.u} rel="noopener">
-                            {src.t}
-                          </a>
-                        ) : (
-                          <span>{src.t}</span>
-                        )}
-                        {src.d && <span>. {src.d}</span>}
-                      </>
-                    ) : null}
-                  </li>
-                );
-              })}
-            </ol>
-          </section>
-        )
-      }
+      <SourcesList ids={rendered.citations} lang={lang} />
       <footer class="page-foot" lang={lang}>
         {
           related.length > 0 && (

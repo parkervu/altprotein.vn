@@ -33,7 +33,7 @@ export function buildSeed() {
         labelSingular: 'Report page',
         description:
           'Every page of the study: front matter, chapters, briefs and appendices. The body is Markdown with the report tokens described in report/STYLE.md.',
-        urlPattern: '/p/{slug}',
+        urlPattern: '/pages/{slug}',
         supports: ['drafts', 'revisions', 'preview', 'search'],
         admin: { listColumns: ['short_title'] },
         fields: [
