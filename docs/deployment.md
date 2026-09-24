@@ -26,6 +26,8 @@ pnpm build:production
 
 Edition 1.1 replaces the first site's `report` and `chapters` collections with a single `pages` collection. EmDash applies a seed only when a site is first set up, so the cleanest replacement is a **new, empty D1 database**; the old one stays untouched as a backup and a rollback path.
 
+> **Workers Builds is connected to this repository.** Merging to `main` deploys to production. The new database must therefore be bound in `wrangler.jsonc` **in the same pull request, before it is merged**; otherwise the edition 1.1 code would start against the old database, which has no `pages` collection.
+
 1. **Back up the current database** somewhere private (outside Git and outside `public/`):
 
    ```sh
@@ -38,17 +40,11 @@ Edition 1.1 replaces the first site's `report` and `chapters` collections with a
    pnpm exec wrangler d1 create altprotein-scoping-v2
    ```
 
-3. In `wrangler.jsonc`, under `env.production.d1_databases`, set `database_name` to `altprotein-scoping-v2` and `database_id` to the new id. Run `pnpm cf:types`, commit, and let CI pass.
+3. In `wrangler.jsonc`, under `env.production.d1_databases`, set `database_name` to `altprotein-scoping-v2` and `database_id` to the new id, on the edition 1.1 branch. Run `pnpm cf:types`, commit, and let CI pass.
 
-4. **Deploy:**
+4. **Merge** (Workers Builds deploys), or deploy by hand with `pnpm deploy:production`. On the first request EmDash creates its schema in the new database.
 
-   ```sh
-   pnpm deploy:production
-   ```
-
-   On the first request EmDash creates its schema in the new database.
-
-5. **Run the setup wizard** at `https://scoping.altprotein.vn/_emdash/admin`. Choose to include the bundled content (this is the full report, 57 pages, not placeholder content) and create the administrator. Passkeys are stored in the database, so the administrator registers a passkey again, on the production domain. Invite other editors from the admin.
+5. **Run the setup wizard** at `https://scoping.altprotein.vn/_emdash/admin` straight away. Choose to include the bundled content (this is the full report, 57 pages, not placeholder content) and create the administrator. Passkeys are stored in the database, so the administrator registers a passkey again, on the production domain. Until setup is done, report pages show the not-found page (the home, data and glossary pages still load). Invite other editors from the admin.
 
 6. **Check:** the admin lists 57 published Report pages; `/`, `/summary`, `/tom-tat`, `/report/ch11-plays` (sliders re-rank the plays), `/report/ch18-scenarios-2050` (scenario explorer), `/data/companies`, `/search?q=cassava`, `/glossary`, `/vi` and `/sitemap.xml` load; `/chapters/anything` redirects to `/report`; an anonymous request with `?_preview=x` gets 403; saving a draft leaves the public page unchanged until Publish.
 
