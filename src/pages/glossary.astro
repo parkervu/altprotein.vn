@@ -1,0 +1,188 @@
+---
+import Base from '../layouts/Base.astro';
+import glossaryJson from '../generated/glossary.json';
+import { t } from '../lib/i18n';
+import { href } from '../lib/site';
+
+type Term = Record<string, string>;
+const lang = Astro.locals.lang ?? 'en';
+const s = t(lang);
+const vi = lang === 'vi';
+const terms = glossaryJson as Term[];
+const categories = [...new Set(terms.map((g) => g.category))];
+const fold = (x: string) => x.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd');
+---
+
+<Base title={s.glossaryHeading} description={s.glossaryIntro}>
+  <div class="frame">
+    <header class="index-head">
+      <h1>
+        {s.glossaryHeading}{' '}
+        <span class="gl-sub" lang={vi ? 'en' : 'vi'}>
+          {vi ? 'Glossary' : 'Thuật ngữ'}
+        </span>
+      </h1>
+      <p>
+        {s.glossaryIntro}{' '}
+        <a href={href('app-s-glossary', lang)}>{vi ? 'Phụ lục S' : 'Appendix S'}</a> ·{' '}
+        <a href="/data/glossary.csv" download>
+          glossary.csv
+        </a>
+      </p>
+    </header>
+    <div class="filters gl-filters" data-gl-filters hidden>
+      <label class="field">
+        {s.glossaryFilter}
+        <input type="search" name="gl-q" autocomplete="off" />
+      </label>
+      <label class="field">
+        {vi ? 'Nhóm' : 'Category'}
+        <select name="gl-cat">
+          <option value="">{s.allCategories}</option>
+          {categories.map((c) => (
+            <option value={c}>{c}</option>
+          ))}
+        </select>
+      </label>
+      <p class="gl-count" aria-live="polite"></p>
+    </div>
+    {categories.map((cat) => (
+      <section class="gl-section" data-cat={cat}>
+        <h2 lang="en">{cat}</h2>
+        <dl class="gl-list">
+          {terms
+            .filter((g) => g.category === cat)
+            .map((g) => (
+              <div class="gl-term" id={g.term_id} data-search={fold(Object.values(g).join(' '))}>
+                <dt>
+                  <span lang="en" class="gl-en">
+                    {g.term_en}
+                    {g.abbreviation && <abbr> ({g.abbreviation})</abbr>}
+                  </span>
+                  <span lang="vi" class="gl-vi">
+                    {g.term_vi}
+                  </span>
+                </dt>
+                <dd>
+                  <p lang="en">{g.definition_en}</p>
+                  <p lang="vi" class="gl-def-vi">
+                    {g.definition_vi}
+                  </p>
+                </dd>
+              </div>
+            ))}
+        </dl>
+      </section>
+    ))}
+    <div style="height:64px"></div>
+  </div>
+</Base>
+
+<style>
+  .gl-sub {
+    font-weight: 400;
+    color: var(--muted);
+    font-size: 0.55em;
+  }
+  .gl-section {
+    margin-top: 36px;
+  }
+  .gl-section h2 {
+    font-size: 1.2rem;
+    margin: 0 0 12px;
+  }
+  .gl-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr));
+    gap: 10px;
+    margin: 0;
+  }
+  .gl-term {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+  }
+  .gl-term:target {
+    border-color: var(--brand);
+    box-shadow: 0 0 0 3px var(--brand-soft);
+  }
+  .gl-term dt {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 12px;
+    align-items: baseline;
+    margin-bottom: 6px;
+  }
+  .gl-en {
+    font-weight: 640;
+  }
+  .gl-en abbr {
+    font-weight: 400;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .gl-vi {
+    color: var(--brand-ink);
+    font-weight: 560;
+  }
+  .gl-term dd {
+    margin: 0;
+    font-size: 0.92rem;
+    color: var(--ink-2);
+  }
+  .gl-term dd p {
+    margin: 0;
+  }
+  .gl-def-vi {
+    margin-top: 6px !important;
+    color: var(--muted);
+  }
+  :global(html[lang='vi']) .gl-term dt {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .gl-count {
+    margin: 0;
+    font-size: 0.86rem;
+    color: var(--muted);
+  }
+</style>
+
+<script>
+  const box = document.querySelector<HTMLElement>('[data-gl-filters]');
+  if (box) {
+    box.hidden = false;
+    const q = box.querySelector<HTMLInputElement>('input')!;
+    const cat = box.querySelector<HTMLSelectElement>('select')!;
+    const count = box.querySelector<HTMLElement>('.gl-count')!;
+    const terms = [...document.querySelectorAll<HTMLElement>('.gl-term')];
+    const sections = [...document.querySelectorAll<HTMLElement>('.gl-section')];
+    const fold = (x: string) =>
+      x.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd');
+    const vi = document.documentElement.lang === 'vi';
+    const apply = () => {
+      const words = fold(q.value).split(/\s+/).filter(Boolean);
+      let n = 0;
+      sections.forEach((sec) => {
+        const catOk = !cat.value || sec.dataset.cat === cat.value;
+        let any = false;
+        sec.querySelectorAll<HTMLElement>('.gl-term').forEach((el) => {
+          const ok = catOk && words.every((w) => el.dataset.search!.includes(w));
+          el.hidden = !ok;
+          if (ok) {
+            any = true;
+            n++;
+          }
+        });
+        sec.hidden = !any;
+      });
+      count.textContent = vi
+        ? `${n} trên ${terms.length} thuật ngữ`
+        : `${n} of ${terms.length} terms`;
+    };
+    q.addEventListener('input', apply);
+    cat.addEventListener('change', apply);
+    apply();
+  }
+</script>

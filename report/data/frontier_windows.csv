@@ -1,0 +1,12 @@
+window_id,route,family,window_start,window_end,status_2026,condition_to_open,related_plays,foresight_type,evidence_label,confidence,source_ids
+FW-01,AI-assisted design of feed enzymes and yeast media,AI bio-design,2026,2030,"Global results in research; Vietnam has compute, no biofoundry",Shared wet-lab and data access,T2,estimate,VN-direct,Low,FTB-06; FTB-11
+FW-02,Single-cell feed protein on sugar and side streams (possibly second-hand tanks),Biomass fermentation,2027,2030,Commercial in China; one past Vietnamese project,A feed-list entry and one anchor buyer,T2; T3,estimate,VN-direct,Low,HSC-06; FTB-38
+FW-03,"Formulating imported, approved novel food ingredients",Food ingredients,2028,2035,No new-food route in Vietnam,A new-food route in the Food Safety Law,P1,estimate,VN-direct,Low,REG-12; FTG-03
+FW-04,Contract precision fermentation of high-value proteins,Precision fermentation,2030,2035,US clearances 2025; no Vietnamese capacity,New-food route; open pilot plant; mid-2030s patent expiries,T5; T7,estimate,VN-direct,Low,FTB-18; FTB-21
+FW-05,Food mycoprotein,Biomass fermentation,2030,2035,Approved in China 2025; none in Vietnam,New-food route; food-grade pilot plant,T9,estimate,VN-direct,Low,HSC-14
+FW-06,Algal and oilseed omega-3 in aquafeed (as buyer),Omega-3,2026,2035,Commercial abroad,Fish-oil price; feed specifications,T2,estimate,VN-direct,Low,AQF-19; AQF-23
+FW-07,Contained molecular farming,Molecular farming,2035,2045,US clearances; no food review,Biosafety route under Decree 43/2026,,estimate,VN-direct,Low,FTB-31; AQF-22
+FW-08,Cellulosic and one-carbon sugar at modest scale,Carbon feedstock,2040,2050,Western plants shut; Panipat at 62%,A working Asian straw plant; hydrogen at USD 1.5 to 2 per kg,T4,estimate,VN-direct,Low,NGF-11; NGF-12
+FW-09,Cultivated seafood cells from Vietnamese species,Cultivated cells,2040,2050,First livestock stem-cell work in Vietnam,Cell lines and media costs from abroad,T8,estimate,VN-direct,Low,FTB-24; HSC-01
+FW-10,Bulk feed protein from renewable power,Gas fermentation,2040,2050,Largest plant 160 to 230 t a year (Finland),"Five conditions: hydrogen, power, capital, fishmeal price, feed-list entry",none,estimate,VN-direct,Low,FTG-01; FTG-03
+FW-11,Cell-free synthesis for food,Cell-free,2050,2050,A design tool,Cost fall of several orders of magnitude,none,wildcard,general,Medium,FTB-35

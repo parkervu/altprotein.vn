@@ -1,0 +1,23 @@
+---
+import { t } from '../lib/i18n';
+import { localize } from '../lib/site';
+const lang = Astro.locals.lang ?? 'en';
+const s = t(lang);
+Astro.response.status = 404;
+---
+
+<div class="frame">
+  <div class="index-head" style="padding-bottom:80px">
+    <p class="eyebrow">404</p>
+    <h1>{s.notFound}</h1>
+    <p>{s.notFoundText}</p>
+    <p style="margin-top:24px;display:flex;gap:10px;flex-wrap:wrap">
+      <a class="btn btn-primary" href={localize('/', lang)}>
+        {s.backHome}
+      </a>
+      <a class="btn btn-secondary" href={localize('/search', lang)}>
+        {s.search}
+      </a>
+    </p>
+  </div>
+</div>

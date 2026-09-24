@@ -1,0 +1,88 @@
+indicator,value,unit,year,geography,measured_or_estimated,source_ids,evidence_label,confidence,notes
+"Pork production, live weight",5389.2,thousand t,2025,Vietnam,measured (official estimate),MAC-14; MAC-12,VN-direct,High,"+3.9% y/y. Implied 2024 about 5,187 kt."
+"Pork production, live weight",2860,thousand t,2026 H1,Vietnam,measured (official estimate),MAC-18,VN-direct,High,+4.8% y/y.
+"Poultry meat production, live weight",2601.9,thousand t,2025,Vietnam,measured (official estimate),MAC-14; MAC-12,VN-direct,High,+5.9% y/y.
+"Poultry meat production, live weight",1300,thousand t,2026 H1,Vietnam,measured (official estimate),MAC-18,VN-direct,High,+5.6% y/y.
+"Beef production, live weight",499.1,thousand t,2025,Vietnam,measured (official estimate),MAC-12,VN-direct,Medium,+1.7% y/y. Livestock Department figure via VnEconomy.
+"Buffalo meat production, live weight",125.2,thousand t,2025,Vietnam,measured (official estimate),MAC-12,VN-direct,Medium,Slight decline.
+"Total meat production, live weight",8660,thousand t,2025,Vietnam,measured (official estimate),MAC-12,VN-direct,Medium,"+4.3% y/y. Sum of four meats above is 8,615 kt; remainder presumably other species."
+Pork share of live-weight meat output,62.6,%,2025,Vietnam,derived,MAC-14; MAC-12,VN-direct,High,"Our calculation: 5,389.2 / (5,389.2 + 2,601.9 + 499.1 + 125.2)."
+"Meat production, carcass-weight equivalent (our estimate)",5.85-6.50 (central 6.18),million t,2025,Vietnam,estimated,MAC-14; MAC-12,VN-direct,Low,"Our conversion using assumed dressing yields: pigs 72-78%, poultry 65-75%, cattle and buffalo 45-55%. Assumptions not sourced. Compare Decision 1520 targets of 5.0-5.5 Mt (2025) and 6.0-6.5 Mt (2030) carcass meat."
+Eggs,21.4,billion eggs,2025,Vietnam,measured (official estimate),MAC-14,VN-direct,High,+5.3% y/y.
+Eggs,10.8,billion eggs,2026 H1,Vietnam,measured (official estimate),MAC-18,VN-direct,High,+2.6% y/y.
+Fresh milk,1.3,million t,2025,Vietnam,measured (official estimate),MAC-14,VN-direct,High,+5.5% y/y. Decision 1520 target for 2025 was 1.7-1.8 Mt.
+Pig herd,31.4,million head,2025 (end),Vietnam,measured (official estimate),MAC-12,VN-direct,Medium,+0.6% y/y (Livestock Department). NSO did not publish herd levels in the summary read; it reported herd falling sharply from Q3 2025 due to ASF.
+Pig herd change,2.2,% y/y,2026 (end June),Vietnam,measured,MAC-17,VN-direct,High,NSO.
+Poultry flock,584.9,million head,2025 (end),Vietnam,measured (official estimate),MAC-12,VN-direct,Medium,+3.0% y/y.
+Cattle herd,6.14,million head,2025 (end),Vietnam,measured (official estimate),MAC-12,VN-direct,Medium,-1.2% y/y; -2.8% y/y at end June 2026 (NSO).
+Dairy cows,321.8,thousand head,2025 (end),Vietnam,measured (official estimate),MAC-12,VN-direct,Medium,-1.2% y/y.
+Buffalo herd,1.95,million head,2025 (end),Vietnam,measured (official estimate),MAC-12,VN-direct,Medium,-3.9% y/y; -6.6% y/y at end June 2026 (NSO).
+Pigs slaughtered,53.53,million head,2024,Vietnam,reported,MAC-22,VN-direct,Low,Press report; underlying source not named in extract.
+Pigs culled due to ASF,1.2-1.3,million head,2025,Vietnam,reported,MAC-01; MAC-12,VN-direct,Medium,USDA about 1.2 M; Livestock Department 1.3 M.
+Pigs dead or culled due to ASF,about 6,million head,2019,Vietnam,estimated,MAC-37,VN-direct,High,More than 20% of national pig population (peer-reviewed).
+Poultry dead or culled (disease),3.68,million head,2025,Vietnam,reported,MAC-12,VN-direct,Medium,Livestock Department via VnEconomy.
+Total fisheries output,9947.5,thousand t,2025,Vietnam,measured (official estimate),MAC-15; MAC-13,VN-direct,High,"+3.0% y/y. 2024 preliminary was 9,547 kt; implied revised 2024 about 9,658 kt."
+Aquaculture output,6116.8,thousand t,2025,Vietnam,measured (official estimate),MAC-15,VN-direct,High,"+5.1%. Fish 4,035.0; shrimp 1,381.7; other 700.1."
+Capture fisheries output,3830.7,thousand t,2025,Vietnam,measured (official estimate),MAC-15,VN-direct,High,"-0.2%. Marine 3,638.6."
+Pangasius (ca tra) output,1938.8,thousand t,2025,Vietnam,measured (official estimate),MAC-15; MAC-14,VN-direct,High,+5.0%. 31.7% of aquaculture output.
+Pangasius output,935.4,thousand t,2026 H1,Vietnam,measured (official estimate),MAC-18,VN-direct,High,+5.0%.
+Whiteleg shrimp output,994.4,thousand t,2025,Vietnam,measured (official estimate),MAC-15; MAC-16,VN-direct,High,"+6.9%. One NSO page prints 944.4; 9-month (719.7) + Q4 (274.7) = 994.4, so 944.4 is a typo."
+Black tiger shrimp output,296.7,thousand t,2025,Vietnam,measured (official estimate),MAC-15,VN-direct,High,+3.6%. H1 2026: 167.6 kt (+4.3%).
+Tilapia output,,thousand t,2025,Vietnam,,MAC-15,VN-direct,Low,GAP: NSO release mentions tilapia as rising but gives no tonnage.
+Aquaculture output change,5.7,% y/y,2026 H1,Vietnam,measured,MAC-17,VN-direct,High,"Total fisheries H1 2026 4,954.2 kt, +3.6%."
+Industrial compound feed output (livestock and poultry),21.5,million t,2024,Vietnam,measured (official estimate),MAC-28; MAC-02; MAC-26,VN-direct,High,"+3.4% y/y. Split: pig 55.3%, poultry 40.9%, other livestock 3.7%. Aquafeed NOT included."
+Industrial compound feed output (livestock and poultry),about 22,million t,2025,Vietnam,measured (official estimate),MAC-01,VN-direct,High,+3% (USDA); +2.9% per Vietnamese trade press headline.
+Industrial feed output,12.43,million t,2026 H1,Vietnam,reported,MAC-03,VN-direct,Medium,"+7.5% y/y, media figure cited by USDA."
+Total feed demand (animal + aquafeed),28.6,million t,2025,Vietnam,estimated,MAC-01,VN-direct,Medium,USDA Post estimate: animal 22.12 + aquaculture 6.5.
+Total feed demand forecast,29.5,million t,2026,Vietnam,projected,MAC-01,VN-direct,Medium,Animal 22.77 + aquaculture 6.73.
+Total feed demand forecast,30.6,million t,2027,Vietnam,projected,MAC-01,VN-direct,Medium,Animal 23.48 + aquaculture 7.12.
+Aquafeed volume (USDA),6.5,million t,2025,Vietnam,estimated,MAC-01,VN-direct,Medium,Method not disclosed. 6.2 Mt for 2024 (MAC-02).
+"Aquafeed volume (industry, by species)",3.9-4.8,million t,2025,Vietnam,estimated,MAC-06,VN-direct,Low,Sum of shrimp up to 0.92 Mt + fish 3.0-3.9 Mt (pangasius 2.0-2.5; tilapia 0.4-0.5; snakehead up to 0.3; marine 0.08-0.10). Installed capacity up to 5.5 Mt at 60-70% use implies 3.3-3.85 Mt.
+"Shrimp feed, top six producers combined",640,thousand t,2025,Vietnam,estimated,MAC-06,VN-direct,Low,"Sheng Long, CP Vietnam, Uni-President Vietnam, Tongwei, Grobest, Gromax."
+FDI share of industrial feed output,more than 60,%,2025,Vietnam,reported,MAC-25,VN-direct,Low,Vietnam Report survey via Tuoi Tre. 2017 MARD figure 60-65% (MAC-29). More than 260 feed companies.
+Share of feed raw materials imported,65 to 85,%,2024-2025,Vietnam,reported (conflicting),MAC-25; MAC-27; MAC-28; MAC-43,VN-direct,Low,"More than 65% (Vietnam Report 2025; VietDVM 2024); 85% or about 17 Mt/yr (Livestock Department, 2024); 70-80% (review 2024). Definitions differ."
+Feed share of livestock production cost,60-70,%,2026,Vietnam,claimed (industry),MAC-24,VN-direct,Low,"Vietnam Poultry Association chair, April 2026. Review (MAC-43) gives more than 70% for pigs."
+Feed share of pangasius operating cost,70-90,%,2007-2011 studies,Vietnam,estimated,MAC-42,VN-direct,Medium,"Cited in peer-reviewed paper (2016); older data, flag currency."
+Feed price change since start of 2026,10-14,%,2026 (to April),Vietnam,claimed (industry),MAC-24,VN-direct,Low,Attributed to Middle East conflict; association warned of 20-25% if prolonged.
+Corn production,4.1,million t,MY2025/26,Vietnam,estimated,MAC-01,VN-direct,Medium,"810,000 ha. MY2024/25 4.105 Mt on 820,000 ha (USDA Post)."
+Corn feed and residual use,14.4,million t,MY2024/25,Vietnam,estimated,MAC-01,VN-direct,Medium,USDA PSD. Industrial feed ingredient table gives 9.2 Mt corn for CY2025 (different scope).
+Corn import share of supply,74,%,2025,Vietnam,derived,MAC-08; MAC-01,VN-direct,High,11.91 / (11.91 + 4.1).
+Soybean production,42-43,thousand t,2025,Vietnam,estimated,MAC-04,VN-direct,Medium,"26,300 ha. MY2025/26 forecast 41 kt on 25,000 ha."
+Soybean import share of supply,98.4,%,2025,Vietnam,derived,MAC-04; MAC-09,VN-direct,High,2.61 / (2.61 + 0.043).
+Soybean crush,1.9,million t,2025,Vietnam,estimated,MAC-04,VN-direct,Medium,1.4 Mt in 2024; forecast 2.5 Mt 2026 and 3.0 Mt 2027. Domestic beans equal at most about 2% of crush.
+Soybean meal production,1.48,million t,2025,Vietnam,estimated,MAC-04,VN-direct,Medium,78% extraction on 1.9 Mt crush. Forecast 1.95 Mt 2026.
+Soybean meal feed use,7.2,million t,2025,Vietnam,estimated,MAC-04; MAC-01,VN-direct,Medium,"Forecast 7.4 Mt 2026, 7.8 Mt 2027."
+Imported meal share of soybean meal supply,79,%,2025,Vietnam,derived,MAC-04,VN-direct,High,"5.703 / (1.482 + 5.703). Domestic meal is crushed from imported beans, so soy protein in feed is about 99% import-derived."
+Rice bran and broken rice used in feed,545,thousand t,2025,Vietnam,estimated,MAC-01,VN-direct,Medium,USDA industrial feed ingredient demand table.
+Rice paddy production,43.54,million t,2025,Vietnam,measured (official estimate),MAC-19,VN-direct,High,"NSO. USDA MY2025/26: 41.92 Mt paddy, 26.2 Mt milled."
+Pork consumption per capita,about 39,kg/person/yr,2025,Vietnam,reported,MAC-21,VN-direct,Low,"MOIT market bureau via VTV; about 37 kg 2024, about 30 kg 2021. Weight basis not stated."
+Pork consumption per capita,37.04,kg/person/yr,2024,Vietnam,reported,MAC-22,VN-direct,Low,"33.8 (2023), 32 (2022), about 30 (2021)."
+Live-weight pork produced per capita,52.7,kg/person,2025,Vietnam,derived,MAC-14; MAC-19,VN-direct,High,"5,389.2 kt / 102.3 M people. At 75% carcass yield = 39.5 kg, consistent with the 39 kg consumption figure."
+Eggs produced per capita,209,eggs/person,2025,Vietnam,derived,MAC-14; MAC-19,VN-direct,High,Decision 1520 targets 180-190 (2025) and 220-225 (2030).
+Fresh milk produced per capita,12.7,kg/person,2025,Vietnam,derived,MAC-14; MAC-19,VN-direct,High,Domestic fresh milk only; excludes imported milk powder. 1520 per-capita milk targets (16-18 kg 2025; 24-26 kg 2030) basis unclear.
+Meat per capita target,58-62,kg/person/yr,2030,Vietnam,target,MAC-23,VN-direct,High,Decision 1520/QD-TTg; 50-55 kg for 2025.
+Meat output target (carcass),6.0-6.5,million t,2030,Vietnam,target,MAC-23,VN-direct,High,"Pork 59-61%, poultry 29-31%, ruminant 10-11%."
+Industrial feed output target,30-32,million t,2030,Vietnam,target,MAC-23,VN-direct,High,Design capacity target 40-45 Mt. Whether aquafeed is included is not stated in the extract.
+Seafood exports,11.3,billion USD,2025,Vietnam,measured (official estimate),MAC-15,VN-direct,High,+12.4% y/y (NSO).
+Shrimp exports,4.6,billion USD,2025,Vietnam,reported,MAC-01,VN-direct,Medium,+19% (USDA citing trade data).
+Pangasius exports,2.2,billion USD,2025,Vietnam,reported,MAC-01,VN-direct,Medium,+8% (USDA).
+Seafood exports,8.00,billion USD,2026 Jan-Aug,Vietnam,reported,MAC-34,VN-direct,Medium,+11.8% y/y. Shrimp 3.29 bn; pangasius 1.5 bn; tuna 0.62 bn. China-HK 25.35% share.
+US tariff on Vietnamese shrimp (Section 301),12.5,%,from July 2026,Vietnam,reported,MAC-35,VN-direct,Low,"VASEP report; Ecuador, India, Indonesia at 10%. Verify against USTR."
+Livestock sector exports (incl. feed),more than 2.1,billion USD,2025,Vietnam,reported,MAC-12,VN-direct,Medium,+17.4%. Livestock products about 628 M; animal feed about 1.5 bn.
+Animal feed exports,1.44,billion USD,2025,Vietnam,reported,MAC-01,VN-direct,Medium,+40%; mainly to China and Southeast Asia. Plus 1.2 Mt rice bran and 4 Mt cassava exported.
+Pork imports,292,thousand t,2024,Vietnam,reported,MAC-22,VN-direct,Low,USD 460 M. 2025 total meat imports not found.
+Rice exports,8.07,million t,MY2024/25,Vietnam,estimated,MAC-01,VN-direct,Medium,USD 4.1 bn.
+Agriculture GHG emissions,104.5,MtCO2e,2020,Vietnam,estimated,MAC-32,VN-direct,High,19.8% of national total 528.4 MtCO2e (NDC 2022). 2014: 89.8 MtCO2e (31.6%).
+"Agriculture GHG emissions, BAU",112.1,MtCO2e,2030,Vietnam,projected,MAC-32,VN-direct,High,12.1% of BAU total 927.9 MtCO2e.
+Agriculture NDC reduction vs BAU (unconditional),12.4,MtCO2e,2030,Vietnam,target,MAC-32,VN-direct,High,"Equal to 1.3% of national BAU; conditional 50.9 MtCO2e (5.5%). Economy-wide 15.8% unconditional, 43.5% conditional."
+Livestock GHG (enteric + manure),18.5,MtCO2e,2016,Vietnam,estimated,MAC-33,VN-direct,Medium,Enteric 12.42 + manure 6.09 = 5.8% of national 316.7 MtCO2e. Rice cultivation 49.69 MtCO2e (15.7%). Old inventory; newer BTR not checked.
+Methane reduction commitment,30,% below 2020,2030,Vietnam,target,MAC-32,VN-direct,High,"Global Methane Pledge, cited in NDC 2022."
+Share of national antimicrobial use in animals,71.7,%,2015,Vietnam,estimated,MAC-36,VN-direct,Medium,"3,838 t total; pigs 41.7%, aquaculture 21.9%, chickens 4.8%."
+GDP growth,8.02,%,2025,Vietnam,measured (official estimate),MAC-19,VN-direct,High,H1 2026: 8.18% (MAC-17).
+GDP per capita,5026,USD,2025,Vietnam,measured (official estimate),MAC-19,VN-direct,High,"USDA gives 5,048 (MAC-31)."
+GDP,514,billion USD,2025,Vietnam,measured (official estimate),MAC-19,VN-direct,High,
+Population (average),102.3,million,2025,Vietnam,measured (official estimate),MAC-19,VN-direct,High,USDA uses 101.9 M.
+Urban population share,38.6,%,2025,Vietnam,measured (official estimate),MAC-19,VN-direct,High,
+"Agriculture, forestry, fishery share of GDP",11.64,%,2025,Vietnam,measured (official estimate),MAC-19,VN-direct,High,Sector growth 3.78%.
+FDI disbursed,27.62,billion USD,2025,Vietnam,measured (official estimate),MAC-19,VN-direct,High,Registered 38.42 bn. Food-processing FDI not found.
+Food processing industry revenue,88,billion USD,2025,Vietnam,reported,MAC-31,VN-direct,Medium,"USDA FPI Annual, +11%. Underlying source not stated in extract."

@@ -1,0 +1,12 @@
+stream,volume_mt_low,volume_mt_high,basis,year,protein_note,source_ids,confidence
+Paddy rice,43.5,43.5,harvest,2025,grain,FS-25,High
+Sugarcane crushed,13.3,13.3,crushed,2025/26,none,FS-31,High
+Cassava roots (grown),10.24,10.24,harvest,2025,low,FS-01,High
+Cassava roots (imported for processing),8,8,roughly,2025,low,FS-01,Medium
+Soybean meal fed (benchmark),7.2,7.2,feed use,2025,about 46% crude protein,MAC-04,High
+Cassava pulp,4,8,"wet, derived (central about 6)",2025,very low,FS-05; FS-06,Medium
+Rice bran,4.35,4.35,derived at 10% of paddy,2025,11 to 17% protein,FS-27,Medium
+Sugar,1.30,1.30,produced,2025/26,none,FS-31,High
+Brewer's spent grain,0.8,0.9,"wet, derived",2025,protein-bearing,FS-38; FS-40,Low
+Molasses,0.55,0.72,estimated from yield ratios,2025,none,FS-37,Low
+Okara,0,0.6,"wet, derived upper bound",2025,protein-bearing,FS-44; FS-24,Low

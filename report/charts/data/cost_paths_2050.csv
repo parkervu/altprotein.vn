@@ -1,0 +1,13 @@
+series,year,usd_per_kg_protein_low,usd_per_kg_protein_high,type,source_ids,note
+"Protein from power, made in Vietnam",2030,6.9,12.6,estimate,FTG-01; FTG-19,Our calculation (ftg_estimates.py)
+"Protein from power, made in Vietnam",2040,4.7,8.6,estimate,FTG-01; FTG-19,
+"Protein from power, made in Vietnam",2050,3.3,6.5,estimate,FTG-01; FTG-19,
+"Protein from power, best global sites",2030,4.8,5.4,projection,FTG-01,EUR 4.0 to 4.5 converted; 7% WACC
+"Protein from power, best global sites",2035,3.7,4.2,projection,FTG-01,
+"Protein from power, best global sites",2050,2.5,2.8,projection,FTG-01,
+"Fungal feed protein on cassava glucose, Vietnam",2030,3.0,12.5,estimate,COST-01; COST-43; ECF-01; ECF-02,Our calculation (ecf_calc.py); fast-case low end to central-case high end
+"Fungal feed protein on cassava glucose, Vietnam",2040,2.4,10.8,estimate,COST-01; COST-43; ECF-01; ECF-02,
+"Fungal feed protein on cassava glucose, Vietnam",2050,2.2,9.5,estimate,COST-01; COST-43; ECF-01; ECF-02,
+Reference: fishmeal protein (2025 to 2026 prices),2026,2.6,3.8,actual,GT-15,Band across all years
+Reference: soybean-meal protein (2025 to 2026 prices),2026,0.88,0.88,actual,GT-14,Line across all years
+Reference: fungal protein floor with free capital (2026 inputs),2026,1.87,1.87,estimate,COST-01; COST-43,Our calculation (ecf_calc.py); line across all years

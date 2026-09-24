@@ -1,0 +1,118 @@
+---
+import Base from '../../layouts/Base.astro';
+import { t } from '../../lib/i18n';
+import { DATASETS, type Dataset } from '../../lib/datasets';
+import { localize } from '../../lib/site';
+const lang = Astro.locals.lang ?? 'en';
+const s = t(lang);
+const vi = lang === 'vi';
+const featured = DATASETS.filter((d) => d.featured);
+const core = DATASETS.filter((d) => d.group === 'data' && !d.new_in);
+const futures = DATASETS.filter((d) => d.group === 'data' && d.new_in);
+const chart = DATASETS.filter((d) => d.group === 'chart');
+const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
+const groups: { id: string; title: string; list: Dataset[]; isNew?: boolean }[] = [
+  { id: 'core', title: vi ? 'Dữ liệu ấn bản 1.0' : 'Edition 1.0 tables', list: core },
+  {
+    id: 'futures',
+    title: vi ? 'Dữ liệu về tương lai (ấn bản 1.1)' : 'Futures tables (edition 1.1)',
+    list: futures,
+    isNew: true,
+  },
+  { id: 'charts', title: s.dataChart, list: chart },
+];
+---
+
+<Base title={s.dataHeading} section="data" description={s.dataIntro}>
+  <div class="frame">
+    <header class="index-head">
+      <h1>{s.dataHeading}</h1>
+      <p>{s.dataIntro}</p>
+      <p class="data-dl">
+        <a class="btn btn-primary" href="/downloads/altprotein-vn-data.zip" download>
+          {s.downloadData}
+        </a>
+        <a class="btn btn-secondary" href="/downloads/altprotein-vn-working-papers.zip" download>
+          {s.downloadWorking}
+        </a>
+        <a class="btn btn-secondary" href="/data/data-dictionary.md">
+          {vi ? 'Từ điển dữ liệu (Markdown)' : 'Data dictionary (Markdown)'}
+        </a>
+      </p>
+    </header>
+    <section class="part-block" aria-labelledby="feat-h">
+      <h2 id="feat-h">{s.dataFeatured}</h2>
+      <div class="card-grid">
+        {featured.map((d) => (
+          <a class="card always" href={localize(`/data/${d.slug}`, lang)}>
+            <span class="card-kicker">
+              <code>{d.file}</code>
+              {d.new_in && <span class="new-pill">{s.new}</span>}
+            </span>
+            <span class="card-text" lang={vi ? 'en' : undefined}>
+              {d.purpose}
+            </span>
+            <span class="card-meta">
+              {nf.format(d.rows)} {s.rows} · {d.columns.length} {vi ? 'cột' : 'columns'}
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+    {groups.map((g) => (
+      <section class="part-block" id={g.id} aria-labelledby={`${g.id}-h`}>
+        <h2 id={`${g.id}-h`}>
+          {g.title} {g.isNew && <span class="new-pill">{s.newIn11}</span>}
+        </h2>
+        <div class="table-wrap">
+          <table class="data-index">
+            <thead>
+              <tr>
+                <th scope="col">{vi ? 'Tệp' : 'File'}</th>
+                <th scope="col">{vi ? 'Số dòng' : 'Rows'}</th>
+                <th scope="col">{vi ? 'Mục đích' : 'Purpose'}</th>
+                <th scope="col">CSV</th>
+              </tr>
+            </thead>
+            <tbody>
+              {g.list.map((d) => (
+                <tr>
+                  <td>
+                    <a href={localize(`/data/${d.slug}`, lang)}>
+                      <code>{d.file}</code>
+                    </a>
+                  </td>
+                  <td style="text-align:right">{nf.format(d.rows)}</td>
+                  <td lang={vi ? 'en' : undefined}>{d.purpose}</td>
+                  <td>
+                    <a href={d.href} download aria-label={`${s.download}: ${d.file}`}>
+                      ↓
+                    </a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    ))}
+    <div style="height:64px"></div>
+  </div>
+</Base>
+
+<style>
+  .data-dl {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px !important;
+  }
+  .data-index td:nth-child(3) {
+    min-width: 24em;
+  }
+  .card-kicker code {
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 0.86rem;
+  }
+</style>

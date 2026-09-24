@@ -3,6 +3,7 @@ import react from '@astrojs/react';
 import { d1, r2 } from '@emdash-cms/cloudflare';
 import { defineConfig } from 'astro/config';
 import emdash from 'emdash/astro';
+
 export default defineConfig({
   site: 'https://scoping.altprotein.vn',
   output: 'server',
@@ -12,4 +13,12 @@ export default defineConfig({
     emdash({ database: d1({ binding: 'DB' }), storage: r2({ binding: 'MEDIA' }) }),
   ],
   devToolbar: { enabled: false },
+  vite: {
+    // The report package and the build scripts are inputs to `pnpm data:build`, not to Vite.
+    server: {
+      watch: {
+        ignored: ['**/report/**', '**/scripts/**', '**/public/data/**', '**/public/downloads/**'],
+      },
+    },
+  },
 });

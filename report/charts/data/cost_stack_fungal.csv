@@ -1,0 +1,12 @@
+line,usd_per_t_product_low,usd_per_t_product_high,basis,source_ids
+Carbon,600,1100,assumed USD 300 to 500 per t glucose-equivalent,
+Nitrogen,72,145,urea,COST-30; COST-33
+"Minerals, vitamins, antifoam, enzymes",50,150,assumption,
+Electricity (excluding cooling),58,117,tariff,COST-01; COST-06
+Cooling electricity,7,117,estimate,COST-50; COST-51
+Steam,78,218,rice-husk steam,COST-16; COST-17
+Water and wastewater,18,58,tariffs,COST-10; COST-13; COST-14
+Labour,44,124,60 to 100 staff,COST-19; COST-20
+Land,99,185,lease,COST-21
+Capital charge,960,3600,"capex USD 8,000 to 20,000 per annual t; 12 to 18% a year",COST-43; COST-44; COST-47
+Maintenance and insurance,240,800,3 to 4% of capex,

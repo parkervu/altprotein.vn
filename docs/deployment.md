@@ -1,80 +1,77 @@
 # Deploying scoping.altprotein.vn
 
-Production is live at **https://scoping.altprotein.vn** as of 19 September 2026. The Worker is `altprotein-scoping` in the Parker Vu Cloudflare account. D1 and session KV identifiers are pinned in `wrangler.jsonc`; R2 is bound by its bucket name. The apex domain is unchanged. The initial administrator registered a passkey on the production domain.
+The site runs as the Cloudflare Worker `altprotein-scoping` in the Parker Vu Cloudflare account, on the custom domain `scoping.altprotein.vn`. Bindings are set in `wrangler.jsonc` under `env.production`:
+
+| Binding   | Resource                      | Purpose                                              |
+| --------- | ----------------------------- | ---------------------------------------------------- |
+| `DB`      | D1 database                   | Page content, revisions, schema, CMS settings, users |
+| `MEDIA`   | R2 `altprotein-scoping-media` | CMS media and backups                                |
+| `SESSION` | KV namespace                  | Editor sessions                                      |
+| `ASSETS`  | Worker static assets          | CSS, JS, fonts, logo, CSV data and zip downloads     |
+
+The Worker upload is about 4.2 MB gzipped (EmDash, the bundled seed, and the build-time charts and data), within the 10 MB limit of the Workers Paid plan. Static assets (about 20 MB, including `public/data` and `public/downloads`) are served by Workers static assets.
 
 ## 1. Validate and build
 
-Use the checked-in pnpm lockfile and Node.js 24. Run the checks in the README. The intended runtime is Cloudflare Workers, not Pages.
+Use the checked-in lockfile and Node.js 24, and run the checks in the README. Then:
 
 ```sh
 pnpm exec wrangler login
 pnpm build:production
 ```
 
-`CLOUDFLARE_ENV=production` selects the production bindings at build time. Wrangler reads Astro's generated `.wrangler/deploy/config.json` pointer and `dist/server/wrangler.json`; inspect that generated configuration before deployment. It must name `altprotein-scoping`, with production D1 and R2 names. Astro also injects a `SESSION` KV binding and the static asset binding. Do not edit generated build files.
+`build:production` regenerates `src/generated/`, `public/data/` and `public/downloads/` from `report/`, then builds with the production bindings. Inspect `dist/server/wrangler.json` before deploying: it must name `altprotein-scoping` and the production D1 and R2 resources.
 
-## 2. Deploy to the production domain
+## 2. Replace the first edition in production (one time)
 
-```sh
-pnpm exec wrangler deploy --env production
-```
+Edition 1.1 replaces the first site's `report` and `chapters` collections with a single `pages` collection. EmDash applies a seed only when a site is first set up, so the cleanest replacement is a **new, empty D1 database**; the old one stays untouched as a backup and a rollback path.
 
-Production resources already exist. Subsequent deployments reconnect to them and preserve CMS edits:
+> **Workers Builds is connected to this repository.** Merging to `main` deploys to production. The new database must therefore be bound in `wrangler.jsonc` **in the same pull request, before it is merged**; otherwise the edition 1.1 code would start against the old database, which has no `pages` collection.
 
-| Binding   | Resource                        | Purpose                                      |
-| --------- | ------------------------------- | -------------------------------------------- |
-| `DB`      | D1 `altprotein-scoping`         | Content, revisions, schema, CMS settings     |
-| `MEDIA`   | R2 `altprotein-scoping-media`   | CMS media and backups                        |
-| `SESSION` | KV, provisioned for this Worker | Editor sessions                              |
-| `ASSETS`  | Worker static assets            | Compiled CSS, JS, logo and self-hosted fonts |
+1. **Back up the current database** somewhere private (outside Git and outside `public/`):
 
-Keep local and production resources separate. Do not add `remote: true` to local bindings. If Wrangler writes resource identifiers back to configuration, review and commit those identifiers; they are configuration, not credentials.
+   ```sh
+   pnpm exec wrangler d1 export altprotein-scoping --remote --env production --output <private-path>/altprotein-scoping-edition-1.sql
+   ```
 
-EmDash applies core migrations on first request with its default migration mode. On a new site it initializes the collections, then the setup wizard imports the bundled report when **sample content is selected**. That checkbox represents the supplied full report, not placeholder content.
+2. **Create the new database** and note its id:
 
-## 3. First administrator and content
+   ```sh
+   pnpm exec wrangler d1 create altprotein-scoping-v2
+   ```
 
-Open `https://scoping.altprotein.vn/_emdash/admin` and sign in with your passkey. Initial setup and import are complete. On a separate new installation, use EmDash's setup wizard and import the bundled content before creating the first administrator on that installation's permanent domain. Default passkeys need no email service; email invitations and magic links require a separately configured provider.
+3. In `wrangler.jsonc`, under `env.production.d1_databases`, set `database_name` to `altprotein-scoping-v2` and `database_id` to the new id, on the edition 1.1 branch. Run `pnpm cf:types`, commit, and let CI pass.
 
-Confirm there is one Report entry and 19 published Chapters. Check the homepage, tables in chapters 8 and 16, source links in chapter 19, editor draft preview, and publication. Editing a published entry should leave public content unchanged until Publish is clicked.
+4. **Merge** (Workers Builds deploys), or deploy by hand with `pnpm deploy:production`. On the first request EmDash creates its schema in the new database.
 
-Preview links are intentionally restricted to signed-in Editor/Administrator sessions. The `/report/{id}` preview URL redirects to `/about` with its token; chapter previews resolve both slugs and CMS IDs. Pages containing previews send `noindex` and `private, no-store`. No public HTML cache is enabled in this scaffold.
+5. **Run the setup wizard** at `https://scoping.altprotein.vn/_emdash/admin` straight away. Choose to include the bundled content (this is the full report, 57 pages, not placeholder content) and create the administrator. Passkeys are stored in the database, so the administrator registers a passkey again, on the production domain. Until setup is done, report pages show the not-found page (the home, data and glossary pages still load). Invite other editors from the admin.
 
-## 4. Activate the custom domain
+6. **Check:** the admin lists 57 published Report pages; `/`, `/summary`, `/tom-tat`, `/report/ch11-plays` (sliders re-rank the plays), `/report/ch18-scenarios-2050` (scenario explorer), `/data/companies`, `/search?q=cassava`, `/glossary`, `/vi` and `/sitemap.xml` load; `/chapters/anything` redirects to `/report`; an anonymous request with `?_preview=x` gets 403; saving a draft leaves the public page unchanged until Publish.
 
-The following property is already configured inside `env.production` in `wrangler.jsonc`:
+7. Keep the old database for as long as you want a rollback path, then delete it with `wrangler d1 delete altprotein-scoping`.
 
-```json
-"routes": [{ "pattern": "scoping.altprotein.vn", "custom_domain": true }]
-```
+**Rollback:** point `DB` back at the old database id and deploy the previous release (the commit before edition 1.1) with `wrangler rollback` or a redeploy. Do not point the edition 1.1 code at the old database: its schema has no `pages` collection.
 
-Then rebuild and deploy:
+**If you must keep the same database** (for example to keep the existing D1 id), export it as in step 1, then delete the old `report` and `chapters` collections in the admin, create the `pages` collection with the fields in `seed/seed.json`, and import the pages with EmDash's seed tooling or the admin. This is slower and easier to get wrong than steps 2 to 5.
 
-```sh
-pnpm deploy:production
-```
+## 3. Subsequent deploys
 
-HTTPS, public routes, and the canonical EmDash Site URL were verified on this final origin. `workers.dev` and version preview URLs are disabled. Passkeys are domain-bound; retain a supported account recovery path before changing the hostname.
-
-The root `altprotein.vn` hostname is not assigned a route by this project. No analytics, email sending, paid plugins, or AI Search is configured.
-
-## 5. Subsequent deploys and recovery
-
-- Build from the lockfile, run CI, and deploy the same reviewed build. Application deployment does not synchronize `seed/seed.json` over existing CMS content.
-- For content/schema changes after launch, use the CMS and EmDash's documented schema migration workflow. Do not rerun a seed in overwrite mode.
-- Before a schema or dependency upgrade, export D1 and create an EmDash backup. Store exports outside the public asset directory and outside Git.
+- Build from the lockfile, run CI, and deploy the same reviewed build (`pnpm deploy:production`). Deploying never overwrites page text edited in the CMS.
+- Changes to data, charts, key numbers, sources or the page structure are made in `report/` and ship with a deploy. Changes to page text are made in the CMS. If the same page text changes in `report/content` too, copy it into the CMS by hand (or on a fresh setup the seed carries it).
+- Before a schema or dependency upgrade, export D1 and create an EmDash backup; store exports outside Git and `public/`.
 
 ```sh
-pnpm exec wrangler d1 export altprotein-scoping --remote --env production --output <private-backup-path.sql>
+pnpm exec wrangler d1 export <database-name> --remote --env production --output <private-backup-path.sql>
 pnpm exec wrangler versions list --env production
 ```
 
-Rollback a Worker with Wrangler's supported rollback command after checking database compatibility. A code rollback does **not** undo data migrations or content edits. Recover content through EmDash revisions/backups; use a D1 recovery plan for database changes.
+A code rollback does not undo data migrations or content edits. Recover content through EmDash revisions and backups.
 
-R2 is private. Do not expose the entire bucket: backups may share it with media. The scheduled Worker handler runs EmDash maintenance every minute. Observability is enabled; inspect Worker logs for migration, request, and scheduled-task failures after deployment.
+## Notes
 
-## Production verification
+- `workers.dev` and version preview URLs are disabled; the custom domain route is in `wrangler.jsonc`.
+- R2 is private. Do not expose the bucket: backups may share it with media.
+- The scheduled handler runs EmDash maintenance every minute. Observability is enabled; check Worker logs after deploying.
+- No analytics, email sending, paid plugins or AI Search are configured. Previews are limited to signed-in Editors and Administrators.
 
-Remote D1 initialization imported 19 published chapters and one report entry. All report pages, sitemap and logo returned 200 over verified HTTPS. Unknown chapters returned 404; anonymous draft previews and the development authentication bypass returned 403. Administrator passkey setup is complete. A private D1 export was saved outside Git after setup. Worker request logs showed successful requests without exceptions. Scheduled maintenance is configured every minute. See `validation.md` for the deployment version and remaining operational checks.
-
-References: [EmDash deployment](https://docs.emdashcms.com/deployment/cloudflare/), [seed behavior](https://docs.emdashcms.com/themes/seed-files/), [authentication](https://docs.emdashcms.com/guides/authentication/), [evolving a deployed site](https://docs.emdashcms.com/deployment/schema-evolution/).
+References: [EmDash deployment](https://docs.emdashcms.com/deployment/cloudflare/), [seed behaviour](https://docs.emdashcms.com/themes/seed-files/), [authentication](https://docs.emdashcms.com/guides/authentication/), [evolving a deployed site](https://docs.emdashcms.com/deployment/schema-evolution/).

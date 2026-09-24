@@ -18,8 +18,8 @@
       "d1_databases": [
         {
           "binding": "DB",
-          "database_name": "altprotein-scoping",
-          "database_id": "24951da1-734d-45c8-91ca-8a72934de162",
+          "database_name": "altprotein-scoping-v2",
+          "database_id": "0d53e2ec-79d3-4fd9-8638-ceb2cae66f86",
         },
       ],
       "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "altprotein-scoping-media" }],

@@ -1,0 +1,2165 @@
+[
+ {
+  "id": "kn-soy-protein-import",
+  "label": "Share of soy protein in feed that is imported",
+  "label_vi": "Tỷ lệ đạm đậu tương nhập khẩu trong thức ăn chăn nuôi",
+  "value": "about 99%",
+  "value_low": 99,
+  "value_high": 99,
+  "unit": "%",
+  "as_of": "2025",
+  "context": "In 2025 Vietnam imported 2.61 Mt of soybeans (98.4% of supply) and 5.70 Mt of soybean meal. Domestic crushing uses imported beans, so it does not reduce protein import dependence.",
+  "source_ids": [
+   "MAC-04",
+   "MAC-09"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch01-why-vietnam",
+  "pages": [
+   "front-cover",
+   "front-exec-summary",
+   "front-exec-summary-vi",
+   "front-at-a-glance",
+   "ch01-why-vietnam",
+   "brief-policy"
+  ]
+ },
+ {
+  "id": "kn-corn-import-share",
+  "label": "Share of maize supply that is imported",
+  "label_vi": "Tỷ lệ ngô nhập khẩu trong thức ăn chăn nuôi",
+  "value": "about 74%",
+  "value_low": 74,
+  "value_high": 74,
+  "unit": "%",
+  "as_of": "2025",
+  "context": "Vietnam imported 11.91 Mt of maize worth USD 2.95 billion in 2025, about 74% of total maize supply, mainly from Argentina and Brazil; domestic output was flat to falling at about 4.1 Mt.",
+  "source_ids": [
+   "MAC-08",
+   "MAC-01"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch01-why-vietnam",
+  "pages": [
+   "front-at-a-glance",
+   "ch01-why-vietnam"
+  ]
+ },
+ {
+  "id": "kn-feed-import-bill",
+  "label": "Feed-ingredient import bill",
+  "label_vi": "Kim ngạch nhập khẩu nguyên liệu thức ăn chăn nuôi",
+  "value": "about USD 10.2 billion",
+  "value_low": 10.2,
+  "value_high": 10.2,
+  "unit": "USD billion",
+  "as_of": "2025",
+  "context": "Our sum of four 2025 customs lines: maize, soybeans, wheat and animal feed and ingredients. It is gross, includes some milling wheat and food soybeans, and is rounded to roughly USD 10 billion in summaries.",
+  "source_ids": [
+   "MAC-07",
+   "MAC-08",
+   "MAC-09",
+   "MAC-10"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch01-why-vietnam",
+  "pages": [
+   "front-exec-summary",
+   "front-exec-summary-vi",
+   "front-at-a-glance",
+   "ch01-why-vietnam",
+   "brief-policy",
+   "brief-international"
+  ]
+ },
+ {
+  "id": "kn-feed-output-2025",
+  "label": "Livestock and poultry feed output",
+  "label_vi": "Sản lượng thức ăn chăn nuôi gia súc, gia cầm",
+  "value": "about 22 Mt",
+  "value_low": 22,
+  "value_high": 22,
+  "unit": "Mt",
+  "as_of": "2025",
+  "context": "Industrial livestock and poultry feed, up from 21.5 Mt in 2024. It excludes aquafeed, for which 2025 estimates disagree: 3.9 to 4.8 Mt (industry) against 6.5 Mt (USDA).",
+  "source_ids": [
+   "MAC-01",
+   "MAC-28"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch01-why-vietnam",
+  "pages": [
+   "ch01-why-vietnam",
+   "app-h-feed-market"
+  ]
+ },
+ {
+  "id": "kn-seafood-exports-2025",
+  "label": "Seafood exports",
+  "label_vi": "Kim ngạch xuất khẩu thủy sản",
+  "value": "USD 11.3 billion",
+  "value_low": 11.3,
+  "value_high": 11.3,
+  "unit": "USD billion",
+  "as_of": "2025",
+  "context": "Seafood exports rose 12.4% in 2025 and included about USD 4.6 billion of shrimp and USD 2.2 billion of pangasius, much of it raised on imported feed protein.",
+  "source_ids": [
+   "MAC-15",
+   "MAC-01"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch01-why-vietnam",
+  "pages": [
+   "front-at-a-glance",
+   "ch01-why-vietnam"
+  ]
+ },
+ {
+  "id": "kn-fishmeal-aug-2026",
+  "label": "World fishmeal price",
+  "label_vi": "Giá bột cá thế giới",
+  "value": "USD 2,500 per t",
+  "value_low": 2500,
+  "value_high": 2500,
+  "unit": "USD per t",
+  "as_of": "Aug 2026",
+  "context": "World Bank series for Peruvian fishmeal at 65% protein. August 2026 was 43% above a year earlier and the highest of 2020 to 2026; the 2025 average was USD 1,706 per t.",
+  "source_ids": [
+   "FM-01",
+   "FM-02"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "High",
+  "primary_page": "ch01-why-vietnam",
+  "pages": [
+   "front-cover",
+   "front-exec-summary",
+   "front-exec-summary-vi",
+   "front-at-a-glance",
+   "ch01-why-vietnam",
+   "brief-manufacturers",
+   "app-h-feed-market"
+  ]
+ },
+ {
+  "id": "kn-pork-output-2025",
+  "label": "Pork output, live weight",
+  "label_vi": "Sản lượng thịt lợn hơi",
+  "value": "5.39 Mt",
+  "value_low": 5.39,
+  "value_high": 5.39,
+  "unit": "Mt",
+  "as_of": "2025",
+  "context": "Pork output grew 3.9% on 2024, alongside 2.60 Mt of poultry meat (live weight) in 2025. Vietnam is one of Asia's largest producers of animal protein.",
+  "source_ids": [
+   "MAC-14",
+   "MAC-12"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch01-why-vietnam",
+  "pages": [
+   "ch01-why-vietnam"
+  ]
+ },
+ {
+  "id": "kn-livestock-ghg-share",
+  "label": "Livestock share of national greenhouse-gas emissions",
+  "label_vi": "Tỷ trọng phát thải khí nhà kính của ngành chăn nuôi",
+  "value": "5.8%",
+  "value_low": 5.8,
+  "value_high": 5.8,
+  "unit": "%",
+  "as_of": "2016 inventory",
+  "context": "Enteric fermentation plus manure was 18.5 MtCO2e in the 2016 inventory, against 49.7 MtCO2e from rice. The environmental case rests more on imported feed, manure and antimicrobial use.",
+  "source_ids": [
+   "MAC-33"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch01-why-vietnam",
+  "pages": [
+   "ch01-why-vietnam"
+  ]
+ },
+ {
+  "id": "kn-cassava-roots-2025",
+  "label": "Cassava roots harvested",
+  "label_vi": "Sản lượng sắn củ tươi",
+  "value": "10.24 Mt",
+  "value_low": 10.24,
+  "value_high": 10.24,
+  "unit": "Mt",
+  "as_of": "2025",
+  "context": "Fresh roots harvested from 499,100 ha in 2025, down 18,600 ha on 2024. Starch factories also process roughly 8 Mt a year of roots imported from Cambodia and Laos.",
+  "source_ids": [
+   "FS-01"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch02-asset-map",
+  "pages": [
+   "front-at-a-glance",
+   "ch02-asset-map",
+   "app-c-feedstocks"
+  ]
+ },
+ {
+  "id": "kn-cassava-pulp",
+  "label": "Cassava pulp from starch factories",
+  "label_vi": "Lượng bã sắn từ các nhà máy tinh bột",
+  "value": "about 6 Mt wet",
+  "value_low": 6,
+  "value_high": 6,
+  "unit": "Mt",
+  "as_of": "2025",
+  "context": "Our 2025 estimate from Thai factory ratios and Vietnamese starch output: range 4 to 8 Mt wet, about 1.3 Mt dry matter. Pulp holds only 1.5% to 2.6% protein, so it is a carbon source.",
+  "source_ids": [
+   "FS-05",
+   "FS-06",
+   "FS-53",
+   "FS-01"
+  ],
+  "derived": true,
+  "evidence": "VN-adjacent",
+  "confidence": "Low",
+  "primary_page": "ch02-asset-map",
+  "pages": [
+   "front-cover",
+   "front-exec-summary",
+   "front-exec-summary-vi",
+   "front-at-a-glance",
+   "ch02-asset-map",
+   "app-c-feedstocks"
+  ]
+ },
+ {
+  "id": "kn-tay-ninh-starch",
+  "label": "Cassava starch factories in Tay Ninh",
+  "label_vi": "Số nhà máy chế biến tinh bột sắn tại Tây Ninh",
+  "value": "65 to 68 factories",
+  "value_low": 65,
+  "value_high": 68,
+  "unit": "count",
+  "as_of": "2025",
+  "context": "Tay Ninh, which now includes former Long An, has about 6.4 Mt a year of root capacity (2024 to 2025 reports), the largest cassava cluster and the natural site for pulp-based fermentation.",
+  "source_ids": [
+   "FS-03",
+   "FS-07"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch02-asset-map",
+  "pages": [
+   "ch02-asset-map",
+   "app-c-feedstocks"
+  ]
+ },
+ {
+  "id": "kn-rice-bran",
+  "label": "Rice bran produced",
+  "label_vi": "Sản lượng cám gạo",
+  "value": "about 4.35 Mt",
+  "value_low": 4.35,
+  "value_high": 4.35,
+  "unit": "Mt",
+  "as_of": "2025",
+  "context": "Our estimate at 10% of 43.5 Mt of paddy in 2025. Bran is traded, not free: about 1.2 Mt was exported in 2025, mostly to China, and much of the rest goes into domestic feed.",
+  "source_ids": [
+   "FS-27",
+   "FS-25"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch02-asset-map",
+  "pages": [
+   "ch02-asset-map",
+   "app-c-feedstocks"
+  ]
+ },
+ {
+  "id": "kn-bsg",
+  "label": "Brewer's spent grain, upper bound",
+  "label_vi": "Lượng bã bia phát sinh tối đa mỗi năm",
+  "value": "at most 0.8 to 0.9 Mt wet",
+  "value_low": 0.8,
+  "value_high": 0.9,
+  "unit": "Mt",
+  "as_of": "2022",
+  "context": "Derived from beer output of 4 to 4.4 billion litres a year (2019 to 2022 reports). It holds only about 32 to 35 kt of protein and spoils within two to three days.",
+  "source_ids": [
+   "FS-38",
+   "FS-40",
+   "FS-41"
+  ],
+  "derived": true,
+  "evidence": "VN-adjacent",
+  "confidence": "Low",
+  "primary_page": "ch02-asset-map",
+  "pages": [
+   "ch02-asset-map",
+   "app-c-feedstocks"
+  ]
+ },
+ {
+  "id": "kn-cassava-price-rise",
+  "label": "Rise in fresh cassava root prices in a year",
+  "label_vi": "Mức tăng giá sắn củ tươi sau một năm",
+  "value": "about 75%",
+  "value_low": 75,
+  "value_high": 75,
+  "unit": "%",
+  "as_of": "Apr 2026",
+  "context": "Fresh roots at 30% starch reached VND 3,000 to 3,550 per kg in April 2026, about 75% above April 2025, after a supply shortfall. The E10 fuel-ethanol mandate, in force from June 2026, adds a new buyer.",
+  "source_ids": [
+   "FS-11",
+   "FS-12"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch02-asset-map",
+  "pages": [
+   "front-at-a-glance",
+   "ch02-asset-map",
+   "app-c-feedstocks"
+  ]
+ },
+ {
+  "id": "kn-aerobic-volume",
+  "label": "Installed aerobic fermentation volume",
+  "label_vi": "Tổng thể tích bồn lên men hiếu khí đã lắp đặt",
+  "value": "11,000 to 34,000 m3",
+  "value_low": 11000,
+  "value_high": 34000,
+  "unit": "m3",
+  "as_of": "2026",
+  "context": "Our modelled 2026 estimate from published plant capacities for sterile, aerated tanks. Almost all of it sits inside Vedan, Ajinomoto and Daesang, and none is offered for contract fermentation.",
+  "source_ids": [
+   "IND-08",
+   "IND-01",
+   "IND-04",
+   "IND-13",
+   "IND-16",
+   "IND-17"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch03-industrial-base",
+  "pages": [
+   "front-exec-summary",
+   "front-at-a-glance",
+   "ch03-industrial-base",
+   "app-f-facilities"
+  ]
+ },
+ {
+  "id": "kn-feed-mills",
+  "label": "Industrial feed mills and their utilisation",
+  "label_vi": "Số nhà máy thức ăn chăn nuôi và mức khai thác công suất",
+  "value": "269 mills, about 48% utilisation",
+  "value_low": 269,
+  "value_high": 269,
+  "unit": "count",
+  "as_of": "2023",
+  "context": "In 2023, 269 mills had 43.2 Mt a year of design capacity; they produced 20.8 Mt in 2022, about 48% utilisation. Spare capacity makes feed trials easy to host.",
+  "source_ids": [
+   "IND-39"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch03-industrial-base",
+  "pages": [
+   "front-at-a-glance",
+   "ch03-industrial-base",
+   "app-f-facilities"
+  ]
+ },
+ {
+  "id": "kn-shrimp-feed-concentration",
+  "label": "Share of shrimp feed made by six firms",
+  "label_vi": "Thị phần thức ăn tôm của sáu doanh nghiệp dẫn đầu",
+  "value": "about 70%",
+  "value_low": 70,
+  "value_high": 70,
+  "unit": "%",
+  "as_of": "2025",
+  "context": "In 2025 Sheng Long (Haid), C.P., Uni-President, Tongwei, Grobest and Gromax supplied about 640 kt of shrimp feed, so a new feed protein has about six real buyers in shrimp.",
+  "source_ids": [
+   "IND-41",
+   "MAC-06"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch03-industrial-base",
+  "pages": [
+   "ch03-industrial-base",
+   "brief-manufacturers",
+   "app-f-facilities"
+  ]
+ },
+ {
+  "id": "kn-val-crush",
+  "label": "Soybean crushing capacity of the VAL plant",
+  "label_vi": "Công suất ép đậu tương của nhà máy VAL",
+  "value": "2.6 Mt a year",
+  "value_low": 2.6,
+  "value_high": 2.6,
+  "unit": "Mt per year",
+  "as_of": "Dec 2025",
+  "context": "Bunge and Wilmar's plant at Phu My, Ho Chi Minh City, after a USD 100 million second line in December 2025, probably design capacity. It crushes imported beans into feed-grade meal only.",
+  "source_ids": [
+   "VCO-16",
+   "FORM-10"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch03-industrial-base",
+  "pages": [
+   "ch03-industrial-base",
+   "app-f-facilities"
+  ]
+ },
+ {
+  "id": "kn-retail-median-protein",
+  "label": "Median protein in audited plant-based foods",
+  "label_vi": "Hàm lượng đạm trung vị của sản phẩm chay được khảo sát",
+  "value": "4.7 g per 100 g",
+  "value_low": 4.7,
+  "value_high": 4.7,
+  "unit": "g per 100 g",
+  "as_of": "Sep 2026",
+  "context": "Across 43 ready-to-eat or ready-to-cook products with a label value in our September 2026 audit of 11 stores; 53% had under 5 g and only 16% reached 10 g.",
+  "source_ids": [
+   "FORM-01"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch04-alt-protein-today",
+  "pages": [
+   "front-exec-summary",
+   "front-exec-summary-vi",
+   "front-at-a-glance",
+   "ch04-alt-protein-today",
+   "brief-manufacturers",
+   "app-d-retail-audit"
+  ]
+ },
+ {
+  "id": "kn-imported-protein-ingredient-share",
+  "label": "Audited products relying on imported protein",
+  "label_vi": "Tỷ lệ sản phẩm được khảo sát dùng đạm nhập khẩu",
+  "value": "77%, plus 11% partly",
+  "value_low": 77,
+  "value_high": 88,
+  "unit": "%",
+  "as_of": "Sep 2026",
+  "context": "Of 170 products in our September 2026 audit whose main protein ingredient could be identified, 77% rely on an imported one and 11% partly do. Soybeans count as imported.",
+  "source_ids": [
+   "FORM-01",
+   "FORM-09"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch04-alt-protein-today",
+  "pages": [
+   "front-exec-summary",
+   "front-at-a-glance",
+   "ch04-alt-protein-today",
+   "brief-manufacturers",
+   "app-d-retail-audit"
+  ]
+ },
+ {
+  "id": "kn-china-tvp-exports",
+  "label": "China's exports of textured protein to Vietnam",
+  "label_vi": "Lượng đạm tạo cấu trúc Trung Quốc xuất sang Việt Nam",
+  "value": "7,957 t",
+  "value_low": 7957,
+  "value_high": 7957,
+  "unit": "t",
+  "as_of": "2023",
+  "context": "China-reported 2023 exports under HS 2106.10 (protein concentrates and textured protein) at about USD 1.6 per kg, plus 10,028 t of HS 3504 and 10,338 t of gluten. Meat processors also use these.",
+  "source_ids": [
+   "FORM-05",
+   "FORM-06",
+   "FORM-07"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch04-alt-protein-today",
+  "pages": [
+   "ch04-alt-protein-today",
+   "app-d-retail-audit"
+  ]
+ },
+ {
+  "id": "kn-vinasoy-share",
+  "label": "Vinasoy's share of the soy-milk market",
+  "label_vi": "Thị phần sữa đậu nành của Vinasoy",
+  "value": "about 80%",
+  "value_low": 80,
+  "value_high": 80,
+  "unit": "%",
+  "as_of": "2024",
+  "context": "Company or press-reported, not audited. Vinasoy had more than VND 4,100 billion of soy-milk revenue in 2024 and 390 million litres a year of capacity (2022), on imported soybeans.",
+  "source_ids": [
+   "ECO-41",
+   "IND-48"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch04-alt-protein-today",
+  "pages": [
+   "ch04-alt-protein-today",
+   "app-e-directory"
+  ]
+ },
+ {
+  "id": "kn-entobel-capacity",
+  "label": "Entobel insect-meal design capacity",
+  "label_vi": "Công suất thiết kế bột côn trùng của Entobel",
+  "value": "about 11,000 t a year",
+  "value_low": 11000,
+  "value_high": 11000,
+  "unit": "t per year",
+  "as_of": "2023",
+  "context": "Black soldier fly meal from a 1,000 t plant in Dong Nai (2019) and a 10,000 t plant in Ho Chi Minh City (2023). Output is not disclosed; insects are a benchmark here, not a play.",
+  "source_ids": [
+   "ECO-01",
+   "ECO-02",
+   "ECO-03"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch04-alt-protein-today",
+  "pages": [
+   "ch04-alt-protein-today",
+   "app-e-directory"
+  ]
+ },
+ {
+  "id": "kn-vinh-hoan-offtake",
+  "label": "Vinh Hoan offtake of Entobel insect protein",
+  "label_vi": "Cam kết bao tiêu đạm côn trùng Entobel của Vĩnh Hoàn",
+  "value": "at least 15,000 t over 2025 to 2027",
+  "value_low": 15000,
+  "value_high": 15000,
+  "unit": "t",
+  "as_of": "2025 to 2027",
+  "context": "Signed in February 2024 by the pangasius exporter: about 5,000 t a year, roughly 45% of Entobel's design capacity. It anchors the only financed alternative-protein plant in Vietnam.",
+  "source_ids": [
+   "ECO-05"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch04-alt-protein-today",
+  "pages": [
+   "ch04-alt-protein-today",
+   "app-e-directory"
+  ]
+ },
+ {
+  "id": "kn-food-law-window",
+  "label": "Food Safety Law expected before the National Assembly",
+  "label_vi": "Kỳ họp Quốc hội xem xét Luật An toàn thực phẩm sửa đổi",
+  "value": "October to November 2026 (expected)",
+  "value_low": null,
+  "value_high": null,
+  "unit": "date",
+  "as_of": "2026",
+  "context": "The one near-term window to add a new-food clause. The draft was notified to the WTO in August 2026; the session timing is not yet confirmed on the agenda, and entry into force on 1 January 2027 is possible.",
+  "source_ids": [
+   "REG-12",
+   "REG2-04",
+   "REG-14"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch05-rules",
+  "pages": [
+   "front-cover",
+   "front-exec-summary",
+   "front-exec-summary-vi",
+   "front-at-a-glance",
+   "ch05-rules",
+   "ch12-policy-options",
+   "ch13-outlook",
+   "brief-investors",
+   "brief-policy",
+   "brief-international",
+   "app-g-regulation"
+  ]
+ },
+ {
+  "id": "kn-feed-trial-agency-days",
+  "label": "Agency time for a new feed-material trial",
+  "label_vi": "Thời gian xử lý hồ sơ khảo nghiệm thức ăn chăn nuôi mới",
+  "value": "about 40 working days",
+  "value_low": 40,
+  "value_high": 40,
+  "unit": "working days",
+  "as_of": "2026",
+  "context": "Protocol approval and result recognition take 15 plus 5 working days each (Circular 94/2025). The trial and annual list update come on top; 6 to 18 months in total is our estimate.",
+  "source_ids": [
+   "REG-29",
+   "REG-34"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch05-rules",
+  "pages": [
+   "ch05-rules",
+   "app-g-regulation"
+  ]
+ },
+ {
+  "id": "kn-unlisted-feed-fine",
+  "label": "Fine for using an unlisted feed raw material",
+  "label_vi": "Mức phạt khi dùng nguyên liệu ngoài danh mục thức ăn chăn nuôi",
+  "value": "VND 10 to 20 million per material",
+  "value_low": 10,
+  "value_high": 20,
+  "unit": "VND million per material",
+  "as_of": "Aug 2026",
+  "context": "Under Decree 211/2026, in force since 5 August 2026, plus one to three months' suspension of feed production and destruction of the material. The suspension costs more than the fine.",
+  "source_ids": [
+   "REG2-10"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch05-rules",
+  "pages": [
+   "ch05-rules",
+   "app-g-regulation"
+  ]
+ },
+ {
+  "id": "kn-cit-hightech",
+  "label": "Corporate income tax rate for high-tech projects",
+  "label_vi": "Thuế suất thu nhập doanh nghiệp ưu đãi cho dự án công nghệ cao",
+  "value": "10% for 15 years",
+  "value_low": 10,
+  "value_high": 10,
+  "unit": "%",
+  "as_of": "Oct 2025",
+  "context": "Under Law 67/2025, in force from 1 October 2025, high-tech enterprises and projects applying listed high technology also get four years' exemption and nine years at 50%.",
+  "source_ids": [
+   "REG-45"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch05-rules",
+  "pages": [
+   "ch05-rules",
+   "app-g-regulation"
+  ]
+ },
+ {
+  "id": "kn-novel-food-research-intensity",
+  "label": "Novel-food research intensity relative to Thailand",
+  "label_vi": "Cường độ nghiên cứu thực phẩm mới so với Thái Lan",
+  "value": "about a quarter to a third of Thailand's",
+  "value_low": 0.23,
+  "value_high": 0.31,
+  "unit": "ratio",
+  "as_of": "2015 to Sep 2026",
+  "context": "Plant-based or cultivated meat records per 10,000 publications, 2015 to September 2026: Vietnam 0.37 against Thailand 1.58 on OpenAIRE, about 23% (our calculation). Edition 1.1 adds OpenAlex: 4.1 against 13.4 core-basket works per 10,000 national publications, 2015 to 2025, about 31%. Counts are lower bounds.",
+  "source_ids": [
+   "BIB-01",
+   "HSC-01"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch06-knowledge-talent",
+  "pages": [
+   "front-at-a-glance",
+   "ch06-knowledge-talent",
+   "brief-research",
+   "app-k-research"
+  ]
+ },
+ {
+  "id": "kn-ctu-places",
+  "label": "Can Tho University places in three core programmes",
+  "label_vi": "Chỉ tiêu tuyển sinh ba ngành cốt lõi tại Đại học Cần Thơ",
+  "value": "860",
+  "value_low": 860,
+  "value_high": 860,
+  "unit": "count",
+  "as_of": "2026",
+  "context": "Places in food technology (300), biotechnology (240) and aquaculture (320) in 2026, within a total quota of 11,850. We could not build a national intake figure.",
+  "source_ids": [
+   "INF-15"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch06-knowledge-talent",
+  "pages": [
+   "ch06-knowledge-talent",
+   "brief-research",
+   "app-k-research",
+   "app-l-labs-talent"
+  ]
+ },
+ {
+  "id": "kn-entobel-financing",
+  "label": "Entobel insect-meal project financing",
+  "label_vi": "Tổng vốn dự án bột côn trùng Entobel",
+  "value": "USD 32.5 million",
+  "value_low": 32.5,
+  "value_high": 32.5,
+  "unit": "USD million",
+  "as_of": "2022 to 2023",
+  "context": "Mekong Capital USD 25 million and Dragon Capital USD 5 million (2022), plus an IFC USD 2.5 million upstream agreement (2023). Earlier drafts said USD 36 million, which is not supported.",
+  "source_ids": [
+   "CAP-01",
+   "CAP-02",
+   "CAP-04",
+   "VCO-20"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch07-capital",
+  "pages": [
+   "front-at-a-glance",
+   "ch07-capital",
+   "brief-investors",
+   "brief-international",
+   "app-m-capital"
+  ]
+ },
+ {
+  "id": "kn-vn-vc-2025",
+  "label": "Venture capital invested in Vietnam",
+  "label_vi": "Vốn đầu tư mạo hiểm vào Việt Nam",
+  "value": "USD 509 million",
+  "value_low": 509,
+  "value_high": 509,
+  "unit": "USD million",
+  "as_of": "2025",
+  "context": "Raised across 103 deals in 2025; definitions differ between reports. With no technology IPOs in 2025 or the four years before, exits run through trade sales and buyouts.",
+  "source_ids": [
+   "CAP-21",
+   "CAP-22"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch07-capital",
+  "pages": [
+   "ch07-capital",
+   "app-m-capital"
+  ]
+ },
+ {
+  "id": "kn-agritech-vc-2025",
+  "label": "Agriculture venture capital in Vietnam",
+  "label_vi": "Vốn đầu tư mạo hiểm vào nông nghiệp tại Việt Nam",
+  "value": "about USD 1 million",
+  "value_low": 1,
+  "value_high": 1,
+  "unit": "USD million",
+  "as_of": "2025",
+  "context": "About 0.2% of the USD 509 million of venture capital raised in Vietnam in 2025. We found no disclosed venture round for a Vietnam-based plant-based or fermentation company.",
+  "source_ids": [
+   "CAP-21"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch07-capital",
+  "pages": [
+   "front-exec-summary",
+   "front-exec-summary-vi",
+   "front-at-a-glance",
+   "ch07-capital",
+   "brief-investors",
+   "brief-international",
+   "app-m-capital"
+  ]
+ },
+ {
+  "id": "kn-global-altprotein-2025",
+  "label": "Global alternative-protein investment",
+  "label_vi": "Vốn đầu tư toàn cầu vào protein thay thế",
+  "value": "USD 881 million",
+  "value_low": 881,
+  "value_high": 881,
+  "unit": "USD million",
+  "as_of": "2025",
+  "context": "Plant-based USD 450 million, fermentation 357 million and cultivated 74 million in 2025, a cyclical low. Money is shifting towards fermentation and upstream ingredients.",
+  "source_ids": [
+   "CAP-51"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "High",
+  "primary_page": "ch07-capital",
+  "pages": [
+   "ch07-capital",
+   "app-m-capital"
+  ]
+ },
+ {
+  "id": "kn-hawkwood-regulatory-score",
+  "label": "Vietnam's regional score on regulatory readiness",
+  "label_vi": "Điểm sẵn sàng pháp lý của Việt Nam trong khu vực",
+  "value": "0 out of 100",
+  "value_low": 0,
+  "value_high": 0,
+  "unit": "score out of 100",
+  "as_of": "Oct 2025",
+  "context": "From the October 2025 GFI APAC and Hawkwood Biotech study of nine Asia-Pacific countries. Vietnam scores 100 on labour cost but has no novel-food framework and no approvals.",
+  "source_ids": [
+   "RGN-01",
+   "RGN-02"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch08-regional",
+  "pages": [
+   "front-exec-summary",
+   "front-at-a-glance",
+   "ch08-regional",
+   "brief-policy",
+   "brief-international",
+   "app-n-regional"
+  ]
+ },
+ {
+  "id": "kn-sfa-approvals",
+  "label": "Novel foods approved by Singapore",
+  "label_vi": "Số thực phẩm mới được Singapore phê duyệt",
+  "value": "18",
+  "value_low": 18,
+  "value_high": 18,
+  "unit": "count",
+  "as_of": "Aug 2026",
+  "context": "Singapore Food Agency list of 14 August 2026: 6 cultivated meats, 6 fungal or bacterial biomass proteins, 3 precision-fermented ingredients, 2 microalgae and 1 synthetic compound.",
+  "source_ids": [
+   "RGN-04",
+   "RGN-29"
+  ],
+  "derived": false,
+  "evidence": "VN-adjacent",
+  "confidence": "High",
+  "primary_page": "ch08-regional",
+  "pages": [
+   "ch08-regional",
+   "app-n-regional"
+  ]
+ },
+ {
+  "id": "kn-cassava-starch-exports",
+  "label": "Cassava starch exports",
+  "label_vi": "Xuất khẩu tinh bột sắn",
+  "value": "2.15 Mt (USD 1.06 billion)",
+  "value_low": 2.15,
+  "value_high": 2.15,
+  "unit": "Mt",
+  "as_of": "2023",
+  "context": "In 2023, 93.5% went to China. China imported only USD 0.16 million of glucose syrup from Vietnam in 2024, so the starch-to-sugar step that feeds fermentation mostly happens after the starch leaves Vietnam.",
+  "source_ids": [
+   "RGN-53"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch08-regional",
+  "pages": [
+   "front-at-a-glance",
+   "ch08-regional",
+   "app-n-regional"
+  ]
+ },
+ {
+  "id": "kn-protein-ingredient-imports",
+  "label": "Food protein ingredient imports",
+  "label_vi": "Kim ngạch nhập khẩu nguyên liệu đạm thực phẩm",
+  "value": "about USD 56 million",
+  "value_low": 56,
+  "value_high": 56,
+  "unit": "USD million",
+  "as_of": "2023",
+  "context": "Our sum of Vietnam-reported 2023 imports under HS 3504 (USD 22.2 million) and HS 2106.10 (USD 34.0 million). Small next to feed protein imports, and some of it is feed-grade.",
+  "source_ids": [
+   "RGN-45",
+   "RGN-46"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch08-regional",
+  "pages": [
+   "ch08-regional",
+   "app-n-regional"
+  ]
+ },
+ {
+  "id": "kn-labour-share-cost",
+  "label": "Labour share of fermentation production cost",
+  "label_vi": "Tỷ trọng chi phí nhân công trong giá thành lên men",
+  "value": "7% to 17%",
+  "value_low": 7,
+  "value_high": 17,
+  "unit": "%",
+  "as_of": "2025",
+  "context": "In the 2025 regional study's plant models, labour is 7% (biomass) and 17% (precision fermentation) of cost. The models are for a US Midwest plant, not an Asian site.",
+  "source_ids": [
+   "RGN-01"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "High",
+  "primary_page": "ch08-regional",
+  "pages": [
+   "ch08-regional"
+  ]
+ },
+ {
+  "id": "kn-power-blended",
+  "label": "Blended power price for a 24/7 plant",
+  "label_vi": "Giá điện bình quân cho nhà máy chạy liên tục",
+  "value": "1,952 VND per kWh",
+  "value_low": 1952,
+  "value_high": 1952,
+  "unit": "VND per kWh",
+  "as_of": "2026",
+  "context": "Our calculation for a 22 kV connection from the tariff in force since May 2025 and the April 2026 peak hours, about USD 0.075. It excludes VAT and any future capacity charge.",
+  "source_ids": [
+   "COST-01",
+   "COST-03"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch09-economics",
+  "pages": [
+   "ch09-economics",
+   "brief-startups",
+   "app-i-costs"
+  ]
+ },
+ {
+  "id": "kn-min-wage-2026",
+  "label": "Monthly minimum wage, Region I",
+  "label_vi": "Lương tối thiểu vùng I theo tháng",
+  "value": "VND 5,310,000 a month",
+  "value_low": 5310000,
+  "value_high": 5310000,
+  "unit": "VND per month",
+  "as_of": "2026",
+  "context": "From 1 January 2026 under Decree 293/2025, about USD 204. Earlier drafts used the 2024 to 2025 level of VND 4,960,000. Labour is a small share of fermentation cost.",
+  "source_ids": [
+   "COST-19",
+   "COST-20"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch09-economics",
+  "pages": [
+   "ch09-economics",
+   "brief-startups",
+   "app-i-costs"
+  ]
+ },
+ {
+  "id": "kn-grid-emission-factor",
+  "label": "Grid emission factor",
+  "label_vi": "Hệ số phát thải của lưới điện",
+  "value": "0.66 t CO2 per MWh",
+  "value_low": 0.66,
+  "value_high": 0.66,
+  "unit": "t CO2 per MWh",
+  "as_of": "2023",
+  "context": "Latest official factor (2023); no official 2024 or 2025 factor was published by September 2026. Power-intensive processes carry a high carbon footprint without renewable supply.",
+  "source_ids": [
+   "COST-08",
+   "COST-09"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch09-economics",
+  "pages": [
+   "ch09-economics",
+   "app-i-costs"
+  ]
+ },
+ {
+  "id": "kn-cost-fungal-feed",
+  "label": "Indicative cost of fungal feed protein in Vietnam",
+  "label_vi": "Giá thành ước tính của đạm nấm cho thức ăn chăn nuôi",
+  "value": "USD 4,050 to 14,700 per t protein",
+  "value_low": 4050,
+  "value_high": 14700,
+  "unit": "USD per t protein",
+  "as_of": "2026",
+  "context": "Our indicative 2026 cost stack for a 10,000 t a year plant, not a feasibility study. Capital charges and maintenance are 54% to 67% of cost; fishmeal protein costs USD 2,625 to 3,846.",
+  "source_ids": [
+   "COST-01",
+   "COST-19",
+   "COST-21",
+   "COST-33",
+   "COST-43",
+   "COST-44",
+   "COST-47"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch09-economics",
+  "pages": [
+   "front-exec-summary",
+   "front-exec-summary-vi",
+   "front-at-a-glance",
+   "ch09-economics",
+   "brief-investors",
+   "app-i-costs"
+  ]
+ },
+ {
+  "id": "kn-fishmeal-protein-price",
+  "label": "Fishmeal price per tonne of protein",
+  "label_vi": "Giá bột cá quy ra mỗi tấn đạm",
+  "value": "USD 2,625 to 3,846 per t protein",
+  "value_low": 2625,
+  "value_high": 3846,
+  "unit": "USD per t protein",
+  "as_of": "2025 to Aug 2026",
+  "context": "Our calculation at 65% protein from the World Bank series: 2025 average (USD 1,706 per t) and August 2026 (USD 2,500 per t). Soybean meal protein was about USD 880 per t.",
+  "source_ids": [
+   "FM-01",
+   "FM-02"
+  ],
+  "derived": true,
+  "evidence": "general",
+  "confidence": "High",
+  "primary_page": "ch09-economics",
+  "pages": [
+   "front-exec-summary",
+   "front-at-a-glance",
+   "ch09-economics",
+   "brief-investors",
+   "app-h-feed-market"
+  ]
+ },
+ {
+  "id": "kn-tvp-cost",
+  "label": "Indicative cost of textured soy protein",
+  "label_vi": "Giá thành ước tính của đạm đậu nành tạo cấu trúc",
+  "value": "3,700 to 10,700 VND per 100 g protein",
+  "value_low": 3700,
+  "value_high": 10700,
+  "unit": "VND per 100 g protein",
+  "as_of": "2026",
+  "context": "Our indicative 2026 cost for a 3,000 t a year extrusion line on imported soy flour or concentrate. It is a small fraction of retail meat and egg protein prices.",
+  "source_ids": [
+   "COST-01",
+   "COST-19",
+   "COST-21",
+   "COST-28"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch09-economics",
+  "pages": [
+   "front-at-a-glance",
+   "ch09-economics",
+   "brief-startups",
+   "app-i-costs"
+  ]
+ },
+ {
+  "id": "kn-retail-protein-floor",
+  "label": "Retail price of egg and chicken protein",
+  "label_vi": "Giá bán lẻ đạm từ trứng và thịt gà",
+  "value": "about 34,000 to 46,000 VND per 100 g protein",
+  "value_low": 34000,
+  "value_high": 46000,
+  "unit": "VND per 100 g protein",
+  "as_of": "Sep 2026",
+  "context": "Online grocery prices in Ho Chi Minh City on 23 September 2026. Eggs and chicken set the floor for mass-market plant-based products; lean pork is about 63,000 to 69,500 VND.",
+  "source_ids": [
+   "COST-39",
+   "COST-40",
+   "COST-41"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch09-economics",
+  "pages": [
+   "front-at-a-glance",
+   "ch09-economics",
+   "brief-startups"
+  ]
+ },
+ {
+  "id": "kn-cooling-penalty",
+  "label": "Extra cooling cost for fermentation in the tropics",
+  "label_vi": "Chi phí làm lạnh tăng thêm khi lên men ở vùng nhiệt đới",
+  "value": "USD 70 to 180 per t dry biomass",
+  "value_low": 70,
+  "value_high": 180,
+  "unit": "USD per t dry biomass",
+  "as_of": "2026",
+  "context": "Our indicative 2026 estimate for southern Vietnam, where cooling water arrives at 31 to 33 °C. It adds about 2% to 4% to fungal feed protein cost; thermotolerant strains avoid most of it.",
+  "source_ids": [
+   "COST-50",
+   "COST-51",
+   "COST-52"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch09-economics",
+  "pages": [
+   "ch09-economics",
+   "brief-startups",
+   "app-i-costs"
+  ]
+ },
+ {
+  "id": "kn-pf-titer-gap",
+  "label": "Best precision-fermentation titer vs bulk benchmark",
+  "label_vi": "Nồng độ protein lên men chính xác tốt nhất so với ngưỡng cần đạt",
+  "value": "10.1 g/L vs above 50 g/L",
+  "value_low": 10.1,
+  "value_high": 10.1,
+  "unit": "g/L",
+  "as_of": "2026",
+  "context": "The best published leghemoglobin titers (2022 to 2026) are 3.5, 7.27 and 10.1 g/L, 5 to 15 times below the 50 g/L a leading review says bulk proteins need. That benchmark is an expert assertion.",
+  "source_ids": [
+   "SCI-01",
+   "SCI-02",
+   "SCI-03",
+   "SCI-04",
+   "SCI-05"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "High",
+  "primary_page": "ch10-technology-fit",
+  "pages": [
+   "front-at-a-glance",
+   "ch10-technology-fit",
+   "brief-research",
+   "app-j-science"
+  ]
+ },
+ {
+  "id": "kn-shrimp-fishmeal-replacement",
+  "label": "Fishmeal replaced by gas-fermentation protein in shrimp",
+  "label_vi": "Tỷ lệ bột cá thay được bằng đạm lên men khí trong thức ăn tôm",
+  "value": "about 30%",
+  "value_low": 30,
+  "value_high": 30,
+  "unit": "%",
+  "as_of": "2023",
+  "context": "In whiteleg shrimp trials (2022 to 2023), bacterial protein from steel-mill off-gas replaced about 30% of fishmeal without growth loss; at 50% growth fell unless a bile acid was added.",
+  "source_ids": [
+   "SCI-23",
+   "SCI-24"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "High",
+  "primary_page": "ch10-technology-fit",
+  "pages": [
+   "ch10-technology-fit",
+   "brief-manufacturers",
+   "app-h-feed-market",
+   "app-j-science"
+  ]
+ },
+ {
+  "id": "kn-mung-diaas",
+  "label": "Protein quality score (DIAAS) of cooked mung bean",
+  "label_vi": "Điểm chất lượng đạm DIAAS của đậu xanh nấu chín",
+  "value": "86",
+  "value_low": 86,
+  "value_high": 86,
+  "unit": "score",
+  "as_of": "2020",
+  "context": "Measured in pigs on the older child and adult pattern (2020 study). Human digestibility of mung bean in children was about 20% lower. We found no Vietnamese DIAAS study.",
+  "source_ids": [
+   "SCI-40",
+   "SCI-41",
+   "SCI-42"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "High",
+  "primary_page": "ch10-technology-fit",
+  "pages": [
+   "ch10-technology-fit",
+   "brief-research",
+   "app-j-science"
+  ]
+ },
+ {
+  "id": "kn-cultivated-cost-multiple",
+  "label": "Cultivated meat cost relative to retail meat",
+  "label_vi": "Giá thành thịt nuôi cấy so với giá thịt bán lẻ",
+  "value": "7 to 15 times",
+  "value_low": 7,
+  "value_high": 15,
+  "unit": "times",
+  "as_of": "2026",
+  "context": "Our calculation: a modelled USD 37 to 51 per kg of wet cells against Vietnamese retail prices of lean pork and chicken breast in September 2026. There is no near-term production case.",
+  "source_ids": [
+   "COST-47",
+   "COST-39",
+   "COST-40"
+  ],
+  "derived": true,
+  "evidence": "general",
+  "confidence": "Medium",
+  "primary_page": "ch10-technology-fit",
+  "pages": [
+   "ch10-technology-fit",
+   "app-j-science"
+  ]
+ },
+ {
+  "id": "kn-plays-count",
+  "label": "Plays and public goods assessed",
+  "label_vi": "Số hướng đi kinh doanh và hàng hóa công được đánh giá",
+  "value": "10 plays and 6 public goods",
+  "value_low": 10,
+  "value_high": 10,
+  "unit": "count",
+  "as_of": "Sep 2026",
+  "context": "Our count from plays.csv (September 2026): ten businesses or programmes, each with conditions, kill tests, first customers and a horizon, plus six public goods that lower the cost of all of them.",
+  "source_ids": [],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch11-plays",
+  "pages": [
+   "ch11-plays"
+  ]
+ },
+ {
+  "id": "kn-top-play-balanced",
+  "label": "Leading plays under balanced weights",
+  "label_vi": "Các hướng đi dẫn đầu theo bộ trọng số cân bằng",
+  "value": "T4 3.90 and T1 3.80",
+  "value_low": 3.8,
+  "value_high": 3.9,
+  "unit": "score out of 5",
+  "as_of": "Sep 2026",
+  "context": "The cassava-starch-to-sugar hub (T4) and domestic textured plant protein (T1) lead under balanced weights in 2026; T2 and T5 follow at 3.45. Scores are our judgement, not an investment rating.",
+  "source_ids": [],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch11-plays",
+  "pages": [
+   "ch11-plays"
+  ]
+ },
+ {
+  "id": "kn-policy-options-count",
+  "label": "Policy options in the register",
+  "label_vi": "Số phương án chính sách trong danh mục",
+  "value": "33 options (24 ranked)",
+  "value_low": 33,
+  "value_high": 33,
+  "unit": "count",
+  "as_of": "Sep 2026",
+  "context": "Our count from policy_options.csv (September 2026): 33 options, of which chapter 12 ranks 24; the other nine earlier options are kept but superseded by more specific ones.",
+  "source_ids": [],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch12-policy-options",
+  "pages": [
+   "ch12-policy-options"
+  ]
+ },
+ {
+  "id": "kn-low-effort-options",
+  "label": "Ranked policy options needing low effort",
+  "label_vi": "Số phương án chính sách đã xếp hạng, dễ triển khai",
+  "value": "16 of 24 ranked options",
+  "value_low": 16,
+  "value_high": 16,
+  "unit": "count",
+  "as_of": "Sep 2026",
+  "context": "Derived from policy_options.csv: ranked options rated Low effort (a letter, guidance or list update), as of September 2026. The report text does not state this total; ranks 1 to 4 are all low effort.",
+  "source_ids": [],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch12-policy-options",
+  "pages": [
+   "ch12-policy-options"
+  ]
+ },
+ {
+  "id": "kn-feed-target-2030",
+  "label": "Industrial feed output target for 2030",
+  "label_vi": "Mục tiêu sản lượng thức ăn chăn nuôi công nghiệp năm 2030",
+  "value": "30 to 32 Mt",
+  "value_low": 30,
+  "value_high": 32,
+  "unit": "Mt",
+  "as_of": "2030 target",
+  "context": "Set by the livestock strategy (Decision 1520/2020), against about 22 Mt of livestock and poultry feed in 2025. The texts do not make clear whether the target includes aquafeed.",
+  "source_ids": [
+   "REG-54",
+   "MAC-23"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch13-outlook",
+  "pages": [
+   "front-at-a-glance",
+   "ch13-outlook",
+   "brief-policy",
+   "app-o-outlook"
+  ]
+ },
+ {
+  "id": "kn-population-2035",
+  "label": "Projected population of Vietnam",
+  "label_vi": "Dân số Việt Nam dự báo",
+  "value": "106.5 million",
+  "value_low": 106.5,
+  "value_high": 106.5,
+  "unit": "million people",
+  "as_of": "2035 projection",
+  "context": "UN medium variant. Population grows only about 5% between 2025 and 2035 and peaks around 2049, so protein demand growth will come mostly from income and diet.",
+  "source_ids": [
+   "GT-12"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch13-outlook",
+  "pages": [
+   "ch13-outlook",
+   "app-o-outlook"
+  ]
+ },
+ {
+  "id": "kn-fishmeal-soy-ratio",
+  "label": "Fishmeal to soybean meal price ratio",
+  "label_vi": "Tỷ lệ giá bột cá so với khô đậu tương",
+  "value": "6.2 (3.8 in 2024)",
+  "value_low": 6.2,
+  "value_high": 6.2,
+  "unit": "ratio",
+  "as_of": "Aug 2026",
+  "context": "From World Bank prices: USD 2,500 against USD 403 per t in August 2026. A ratio sustained above about 5 supports fishmeal replacers; one month's price may revert.",
+  "source_ids": [
+   "GT-15"
+  ],
+  "derived": true,
+  "evidence": "general",
+  "confidence": "High",
+  "primary_page": "ch13-outlook",
+  "pages": [
+   "ch13-outlook",
+   "app-h-feed-market",
+   "app-o-outlook"
+  ]
+ },
+ {
+  "id": "kn-open-questions",
+  "label": "Open questions in the register",
+  "label_vi": "Số câu hỏi còn bỏ ngỏ",
+  "value": "155",
+  "value_low": 155,
+  "value_high": 155,
+  "unit": "count",
+  "as_of": "Sep 2026",
+  "context": "Our count from open_questions.csv (edition 1.1, September 2026), including 28 added by the futures round. Each question records why it matters, the cheapest way to close it and who to ask; chapter 14 ranks the twenty that matter most.",
+  "source_ids": [],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch14-unknowns",
+  "pages": [
+   "ch14-unknowns",
+   "app-a-method",
+   "app-q-open-questions"
+  ]
+ },
+ {
+  "id": "kn-disagreements",
+  "label": "Recorded disagreements between sources",
+  "label_vi": "Số điểm bất nhất giữa các nguồn",
+  "value": "170",
+  "value_low": 170,
+  "value_high": 170,
+  "unit": "count",
+  "as_of": "Sep 2026",
+  "context": "Our count from disagreements.csv (edition 1.1, September 2026), including 28 added by the futures round. Each entry gives both claims and the position we took; we never average disagreeing numbers.",
+  "source_ids": [],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch14-unknowns",
+  "pages": [
+   "ch14-unknowns",
+   "app-a-method",
+   "app-r-disagreements"
+  ]
+ },
+ {
+  "id": "kn-sources-count",
+  "label": "Sources logged",
+  "label_vi": "Số nguồn tài liệu đã ghi nhận",
+  "value": "1,275",
+  "value_low": 1275,
+  "value_high": 1275,
+  "unit": "count",
+  "as_of": "Sep 2026 (edition 1.1)",
+  "context": "Our count from sources.csv: 599 sources from wave 1 and 207 from wave 2 (edition 1.0), plus 469 from the futures round (waves 3 to 5, edition 1.1), including press, peer-reviewed papers, company pages, statistics and legal texts. Three rows record our own calculation scripts.",
+  "source_ids": [],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "app-t-sources",
+  "pages": [
+   "app-a-method",
+   "app-t-sources",
+   "app-u-futures-method"
+  ]
+ },
+ {
+  "id": "kn-provinces-count",
+  "label": "Provincial-level units after the 2025 reform",
+  "label_vi": "Số đơn vị hành chính cấp tỉnh sau sắp xếp năm 2025",
+  "value": "34",
+  "value_low": 34,
+  "value_high": 34,
+  "unit": "count",
+  "as_of": "Jul 2025",
+  "context": "From 1 July 2025, 28 provinces and 6 centrally governed cities replaced 63 units, and the district tier was abolished. The report uses the new names throughout.",
+  "source_ids": [
+   "GT-01"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "app-p-admin-map",
+  "pages": [
+   "app-p-admin-map"
+  ]
+ },
+ {
+  "id": "kn-working-age-peak",
+  "label": "Peak working-age population",
+  "label_vi": "Dân số trong độ tuổi lao động đạt đỉnh",
+  "value": "about 72 million, around 2035 to 2040",
+  "value_low": 72,
+  "value_high": 72,
+  "unit": "million people",
+  "as_of": "2024 (UN WPP)",
+  "context": "People aged 65 and over rise from 9.5% (2025) to 20.0% (2050) of the population; the old-age dependency ratio rises from 14 to 32 per 100. UN World Population Prospects 2024, medium variant.",
+  "source_ids": [
+   "GEO-31"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch15-drivers-2050",
+  "pages": [
+   "app-x-drivers-signals",
+   "ch15-drivers-2050"
+  ],
+  "foresight_type": "projection",
+  "horizon": "2035 to 2040",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-ag-emissions-cap-2050",
+  "label": "Agricultural emissions cap, 2050",
+  "label_vi": "Mức trần phát thải nông nghiệp năm 2050",
+  "value": "56 MtCO2e",
+  "value_low": 56,
+  "value_high": 56,
+  "unit": "MtCO2e",
+  "as_of": "2022 (Decision 896)",
+  "context": "Official cap: 64 MtCO2e in 2030 and 56 MtCO2e in 2050, against a 2020 base of 104.5 MtCO2e, the NDC business-as-usual level (46% lower). Official livestock levers are feed rations, manure and biogas, not alternative protein.",
+  "source_ids": [
+   "CLM-01",
+   "CLM-08",
+   "NTS-24"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch15-drivers-2050",
+  "pages": [
+   "app-y-targets-hubs",
+   "ch15-drivers-2050"
+  ],
+  "foresight_type": "projection",
+  "horizon": "2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-delta-subsidence",
+  "label": "Mekong Delta subsidence from groundwater pumping",
+  "label_vi": "Tốc độ sụt lún do khai thác nước ngầm ở ĐBSCL",
+  "value": "about 1.1 cm a year",
+  "value_low": 1.1,
+  "value_high": 1.1,
+  "unit": "cm per year",
+  "as_of": "about 2015 (2017 study)",
+  "context": "About three times the current rate of global sea-level rise (IPCC AR6: 3.7 mm a year, 2006 to 2018); the delta sits on average about 0.8 m above sea level. Subsidence to 2100 ranges from 12 to 100 cm depending on extraction policy.",
+  "source_ids": [
+   "CLM-12",
+   "CLM-13",
+   "CLM-14",
+   "CLM-28"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch15-drivers-2050",
+  "pages": [
+   "app-x-drivers-signals",
+   "brief-international",
+   "ch15-drivers-2050"
+  ],
+  "foresight_type": "trend",
+  "horizon": "2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-maize-joint-loss-4c",
+  "label": "Chance of a joint maize failure in the four largest exporters",
+  "label_vi": "Xác suất bốn nước xuất khẩu ngô lớn nhất cùng mất mùa",
+  "value": "7% a year at 2 °C; 86% at 4 °C",
+  "value_low": 7,
+  "value_high": 86,
+  "unit": "% chance in a given year",
+  "as_of": "published model",
+  "context": "Probability that all four largest maize exporters (87% of world exports) lose more than 10% in the same year: near zero today, 7% at 2 °C of warming (around the 2040s), 86% at 4 °C. Vietnam imports about three-quarters of its maize.",
+  "source_ids": [
+   "CLM-24"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "High",
+  "primary_page": "ch15-drivers-2050",
+  "pages": [
+   "app-x-drivers-signals",
+   "brief-manufacturers",
+   "ch15-drivers-2050",
+   "front-at-a-glance"
+  ],
+  "foresight_type": "projection",
+  "horizon": "2040s (2 °C)",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-p2p-cost-vn-2050",
+  "label": "Protein from power made in Vietnam, 2050",
+  "label_vi": "Giá thành đạm từ điện sản xuất tại Việt Nam năm 2050",
+  "value": "USD 3.3 to 6.5 per kg of protein",
+  "value_low": 3.3,
+  "value_high": 6.5,
+  "unit": "USD per kg protein",
+  "as_of": "2026 inputs",
+  "context": "Our estimate for hydrogen-route protein made in Vietnam: USD 6.9 to 12.6 per kg (2030), 4.7 to 8.6 (2040), 3.3 to 6.5 (2050), against fishmeal protein at 2.6 to 3.8 and soybean-meal protein at about 0.88 per kg (2025 to 2026 prices).",
+  "source_ids": [
+   "FTG-01",
+   "FTG-19"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch16-frontier-technology",
+  "pages": [
+   "app-v-frontier-tech",
+   "brief-investors",
+   "ch16-frontier-technology",
+   "front-at-a-glance"
+  ],
+  "foresight_type": "estimate",
+  "horizon": "2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-learning-rate-fermentation",
+  "label": "Cost fall per doubling in fermentation industries",
+  "label_vi": "Mức giảm chi phí mỗi lần sản lượng tăng gấp đôi trong ngành lên men",
+  "value": "13 to 20%",
+  "value_low": 13,
+  "value_high": 20,
+  "unit": "% per doubling of output",
+  "as_of": "1975 to 2005 data",
+  "context": "US corn ethanol 13% (1983 to 2005); Brazilian cane ethanol 19 to 20% (1975 to 2005). No observed learning rate exists for any alternative protein.",
+  "source_ids": [
+   "ECF-01",
+   "ECF-02",
+   "ECF-05",
+   "ECF-09"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "Medium",
+  "primary_page": "ch16-frontier-technology",
+  "pages": [
+   "app-v-frontier-tech",
+   "ch16-frontier-technology"
+  ],
+  "foresight_type": "trend",
+  "horizon": "2030 to 2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-fungal-protein-floor",
+  "label": "Cost floor for fungal feed protein on cassava glucose",
+  "label_vi": "Mức giá sàn của đạm nấm làm thức ăn chăn nuôi từ glucose sắn",
+  "value": "about USD 1,870 per t of protein, 2.1 times soybean-meal protein",
+  "value_low": 1870,
+  "value_high": 1870,
+  "unit": "USD per t protein",
+  "as_of": "2026 input prices",
+  "context": "Even with free capital, glucose and urea set this floor, so learning alone cannot close the gap to soybean-meal protein (USD 880 per t). Our calculation (working-papers/wave3/econ_policy/ecf_calc.py) on the chapter 9 cost stack.",
+  "source_ids": [
+   "COST-01",
+   "COST-19",
+   "COST-21",
+   "COST-33",
+   "COST-43",
+   "COST-44",
+   "COST-47"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch16-frontier-technology",
+  "pages": [
+   "app-v-frontier-tech",
+   "brief-startups",
+   "ch16-frontier-technology"
+  ],
+  "foresight_type": "estimate",
+  "horizon": "2030 to 2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-p2p-energy-per-mt",
+  "label": "Power needed for 1 Mt of protein from power a year",
+  "label_vi": "Điện năng cần cho 1 triệu tấn đạm từ điện mỗi năm",
+  "value": "64 to 83 TWh (4 to 6% of planned 2050 supply)",
+  "value_low": 64,
+  "value_high": 83,
+  "unit": "TWh per year",
+  "as_of": "2030 to 2050 plant designs",
+  "context": "Also 43 to 56 GW of solar or 14 to 22 GW of offshore wind, 0.69 Mt of hydrogen (3.5 to 6.9% of the 2050 hydrogen target) and 2.95 Mt of CO2. Our calculation from a published model and Vietnam's power and hydrogen plans.",
+  "source_ids": [
+   "FTG-01",
+   "FTG-15",
+   "FTG-16"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch16-frontier-technology",
+  "pages": [
+   "app-v-frontier-tech",
+   "ch16-frontier-technology"
+  ],
+  "foresight_type": "estimate",
+  "horizon": "2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-vn-gas-protein-papers",
+  "label": "Vietnamese share of gas-fermentation protein research",
+  "label_vi": "Số công trình của Việt Nam về đạm lên men khí",
+  "value": "2 of 494 papers",
+  "value_low": 2,
+  "value_high": 2,
+  "unit": "papers",
+  "as_of": "2016 to 2026",
+  "context": "Publications on gas- or CO2-based microbial protein, 2016 to 2026: China 105, US 64, Denmark 47, Vietnam 2.",
+  "source_ids": [
+   "FTG-14",
+   "FTG-35"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch16-frontier-technology",
+  "pages": [
+   "app-v-frontier-tech",
+   "brief-research",
+   "ch16-frontier-technology"
+  ],
+  "foresight_type": "trend",
+  "horizon": "2026",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-sbm-need-2050",
+  "label": "Soybean-meal need in 2050 on trend",
+  "label_vi": "Nhu cầu khô đậu tương năm 2050 theo xu hướng",
+  "value": "10.4 Mt (+44% on 2025)",
+  "value_low": 10.4,
+  "value_high": 10.4,
+  "unit": "Mt",
+  "as_of": "2025 base",
+  "context": "Our balance model on trend diets and trend efficiency: 7.2 Mt (2025), 8.5 (2030), 10.0 (2040), 10.4 (2050), nearly all imported. Published projections stop at 2035.",
+  "source_ids": [
+   "QNT-01",
+   "MAC-04"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch17-protein-balance-2050",
+  "pages": [
+   "app-w-balance-model",
+   "brief-manufacturers",
+   "ch17-protein-balance-2050",
+   "front-at-a-glance",
+   "front-cover",
+   "front-exec-summary",
+   "front-exec-summary-vi"
+  ],
+  "foresight_type": "estimate",
+  "horizon": "2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-sbm-range-2050",
+  "label": "Soybean-meal need in 2050 across four scenarios",
+  "label_vi": "Khoảng nhu cầu khô đậu tương năm 2050 theo bốn kịch bản",
+  "value": "7.0 to 11.7 Mt",
+  "value_low": 7.0,
+  "value_high": 11.7,
+  "unit": "Mt",
+  "as_of": "2025 base",
+  "context": "S-EFF 7.0, S-ALT 8.8, S-BASE 10.4, S-HIGH 11.7 Mt. Only the efficiency scenario keeps imports at or below the 2025 level.",
+  "source_ids": [
+   "QNT-01"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch17-protein-balance-2050",
+  "pages": [
+   "app-w-balance-model",
+   "ch17-protein-balance-2050",
+   "front-at-a-glance"
+  ],
+  "foresight_type": "estimate",
+  "horizon": "2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-land-abroad-feed",
+  "label": "Farmland abroad used for Vietnam's imported feed",
+  "label_vi": "Diện tích đất ở nước ngoài phục vụ thức ăn chăn nuôi nhập khẩu của Việt Nam",
+  "value": "about 4.0 million ha (2025); 4.7 million ha (2050, trend)",
+  "value_low": 4.0,
+  "value_high": 4.7,
+  "unit": "million ha",
+  "as_of": "2025",
+  "context": "Imported soybean meal needs about 2.3 million ha (mass allocation) and imported maize 1.6 million ha: together about five times Vietnam's own maize area. Our calculation.",
+  "source_ids": [
+   "QNT-01",
+   "MAC-01"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch17-protein-balance-2050",
+  "pages": [
+   "app-w-balance-model",
+   "ch17-protein-balance-2050",
+   "front-at-a-glance"
+  ],
+  "foresight_type": "estimate",
+  "horizon": "2025, 2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-efficiency-vs-alt",
+  "label": "Efficiency against alternative protein, 2050",
+  "label_vi": "Hiệu quả thức ăn so với đạm thay thế, năm 2050",
+  "value": "3.4 Mt against 1.6 Mt of soybean meal saved",
+  "value_low": 1.6,
+  "value_high": 3.4,
+  "unit": "Mt soybean meal",
+  "as_of": "2050",
+  "context": "Against trend, feed conversion improving 1.0% a year (livestock) and 0.8% (aquaculture) instead of 0.4% and 0.3%, and soybean-meal inclusion falling 1% a year, save 3.4 Mt in 2050; replacing 10% of soybean-meal protein, 40% of fishmeal protein and 10% of meat demand with alternatives saves 1.6 Mt. The two add up.",
+  "source_ids": [
+   "QNT-01"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch17-protein-balance-2050",
+  "pages": [
+   "app-w-balance-model",
+   "brief-manufacturers",
+   "ch17-protein-balance-2050",
+   "front-at-a-glance",
+   "front-exec-summary",
+   "front-exec-summary-vi"
+  ],
+  "foresight_type": "estimate",
+  "horizon": "2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-salt-plants-2050",
+  "label": "Scale implied by the alternative-protein scenario, 2050",
+  "label_vi": "Quy mô cần có theo kịch bản đạm thay thế năm 2050",
+  "value": "about 78 times Entobel's Vietnamese capacity",
+  "value_low": 78,
+  "value_high": 78,
+  "unit": "multiples of 11 kt a year",
+  "as_of": "2050",
+  "context": "S-ALT implies about 0.86 Mt of dry microbial feed product in 2050: about 78 times the combined design capacity of Entobel's two Vietnamese insect-meal plants (11 kt a year), or 43 plants of Calysseo's 20 kt size; about 9 times by 2030. Plus 0.29 Mt of food protein ingredient. Our arithmetic.",
+  "source_ids": [
+   "QNT-01",
+   "ECO-01"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch17-protein-balance-2050",
+  "pages": [
+   "app-w-balance-model",
+   "brief-investors",
+   "ch17-protein-balance-2050"
+  ],
+  "foresight_type": "estimate",
+  "horizon": "2030, 2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-omega3-need-2050",
+  "label": "Aquafeed omega-3 need, 2050",
+  "label_vi": "Nhu cầu omega-3 trong thức ăn thủy sản năm 2050",
+  "value": "about 21 kt of EPA plus DHA (10 to 40 kt)",
+  "value_low": 10,
+  "value_high": 40,
+  "unit": "kt EPA plus DHA",
+  "as_of": "2050",
+  "context": "About 11 kt today. Vietnam's pangasius fish oil is not an omega-3 source (0.17 to 0.31% EPA plus DHA), so the need must be imported or made. Our estimate.",
+  "source_ids": [
+   "AQF-16",
+   "AQF-29"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch17-protein-balance-2050",
+  "pages": [
+   "app-z-aquafeed-feedstock-futures",
+   "brief-startups",
+   "ch17-protein-balance-2050"
+  ],
+  "foresight_type": "estimate",
+  "horizon": "2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-feed-target-livestock-2030",
+  "label": "The 2030 industrial feed target covers livestock only",
+  "label_vi": "Mục tiêu thức ăn công nghiệp năm 2030 chỉ tính thức ăn chăn nuôi",
+  "value": "30 to 32 Mt target against 26.4 Mt modelled",
+  "value_low": 26.4,
+  "value_high": 32,
+  "unit": "Mt",
+  "as_of": "2023 (Decision 1625)",
+  "context": "Decision 1625/QD-TTg sets 24 to 25 Mt of industrial livestock feed for 2025 (probably missed: about 21.5 Mt in 2024) and 30 to 32 Mt for 2030. Our model gives 26.4 Mt of livestock and poultry feed in 2030. Answers OQ-127 at Medium confidence.",
+  "source_ids": [
+   "NTS-23",
+   "REG-54",
+   "MAC-28"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch17-protein-balance-2050",
+  "pages": [
+   "app-w-balance-model",
+   "brief-policy",
+   "ch17-protein-balance-2050"
+  ],
+  "foresight_type": "estimate",
+  "horizon": "2030",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-anchoveta-2026",
+  "label": "Peruvian anchoveta, first season 2026",
+  "label_vi": "Vụ cá cơm Peru đầu năm 2026",
+  "value": "about 25% of a 1.9 Mt quota landed",
+  "value_low": 25,
+  "value_high": 25,
+  "unit": "% of quota",
+  "as_of": "2026",
+  "context": "The lowest quota in a decade, 36% below 2025; world fishmeal output fell 26% year on year in January to April 2026. NOAA gives over 90% odds of a very strong El Nino in winter 2026 to 2027.",
+  "source_ids": [
+   "HSC-28",
+   "HSC-29",
+   "HSC-30"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "Medium",
+  "primary_page": "ch18-scenarios-2050",
+  "pages": [
+   "app-x-drivers-signals",
+   "ch18-scenarios-2050"
+  ],
+  "foresight_type": "signal",
+  "horizon": "2026 to 2027",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-no-regret-plays",
+  "label": "Plays that thrive in all four 2050 worlds",
+  "label_vi": "Số hướng đi thành công trong cả bốn kịch bản 2050",
+  "value": "3 of 16, all public infrastructure",
+  "value_low": 3,
+  "value_high": 3,
+  "unit": "plays",
+  "as_of": "2026 assessment",
+  "context": "Public feed-trial capacity, a protein-quality laboratory and an open cost model and price series. Ten more plays hold in every world with conditions; two are bets; one is a research option. Our judgement.",
+  "source_ids": [
+   "VIS-35",
+   "VIS-36"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch18-scenarios-2050",
+  "pages": [
+   "ch18-scenarios-2050"
+  ],
+  "foresight_type": "estimate",
+  "horizon": "2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-vision-sbm-2050",
+  "label": "Vision: soybean-meal need in 2050",
+  "label_vi": "Tầm nhìn: nhu cầu khô đậu tương năm 2050",
+  "value": "7 to 9 Mt, against 10.4 Mt on trend",
+  "value_low": 7.0,
+  "value_high": 8.8,
+  "unit": "Mt",
+  "as_of": "vision",
+  "context": "Normative goal, not a forecast: a credible ambitious range based on the efficiency and alternative-protein scenarios and on China's and Norway's achieved pace. Holding imports at 7.2 Mt is a stretch.",
+  "source_ids": [
+   "QNT-01",
+   "VIS-19",
+   "GEO-11"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch19-vision-2050",
+  "pages": [
+   "brief-policy",
+   "ch19-vision-2050",
+   "front-at-a-glance",
+   "front-exec-summary",
+   "front-exec-summary-vi"
+  ],
+  "foresight_type": "vision",
+  "horizon": "2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-vision-microbial-share-2050",
+  "label": "Vision: microbial protein in feed, 2050",
+  "label_vi": "Tầm nhìn: tỷ lệ đạm vi sinh trong thức ăn năm 2050",
+  "value": "4 to 8% of high-protein feed protein",
+  "value_low": 4,
+  "value_high": 8,
+  "unit": "%",
+  "as_of": "vision",
+  "context": "Normative goal: about 1% by 2030, 1 to 3% by 2035, 2 to 4% by 2040. No national feed system has reached 1% novel protein; Norway was at 0.4% in 2020. The top of the range is a stretch.",
+  "source_ids": [
+   "VIS-18",
+   "VIS-20",
+   "QNT-01"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch19-vision-2050",
+  "pages": [
+   "ch19-vision-2050",
+   "front-exec-summary",
+   "front-exec-summary-vi"
+  ],
+  "foresight_type": "vision",
+  "horizon": "2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-vision-omega3-2050",
+  "label": "Vision: non-marine omega-3 in aquafeed, 2050",
+  "label_vi": "Tầm nhìn: omega-3 không từ biển trong thức ăn thủy sản năm 2050",
+  "value": "15 to 50% of EPA plus DHA",
+  "value_low": 15,
+  "value_high": 50,
+  "unit": "%",
+  "as_of": "vision",
+  "context": "Normative goal based on commercial algal and oilseed omega-3 oils; omega-3 canola oil has replaced all fish oil in low-fishmeal shrimp diets without growth loss.",
+  "source_ids": [
+   "AQF-19",
+   "AQF-23",
+   "AQF-24"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch19-vision-2050",
+  "pages": [
+   "app-z-aquafeed-feedstock-futures",
+   "ch19-vision-2050"
+  ],
+  "foresight_type": "vision",
+  "horizon": "2050",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-protein-plan-horizons",
+  "label": "Furthest horizon of any national protein plan",
+  "label_vi": "Tầm xa nhất của các kế hoạch quốc gia về đạm",
+  "value": "2035 (one press-reported exception to 2040)",
+  "value_low": 2035,
+  "value_high": 2035,
+  "unit": "year",
+  "as_of": "2026 review",
+  "context": "EU, Canada and Singapore stop at 2035; Japan at FY2030; China, Israel and the Netherlands at 2030. Japan's MIDORI (2050) and Denmark's land deal (2045) carry no protein indicator. One exception: a Japanese food-tech investment roadmap to 2040, reported only in the press (Low confidence).",
+  "source_ids": [
+   "VIS-15",
+   "VIS-08",
+   "VIS-25",
+   "VIS-13",
+   "VIS-49"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "Medium",
+  "primary_page": "ch19-vision-2050",
+  "pages": [
+   "app-y-targets-hubs",
+   "ch19-vision-2050"
+  ],
+  "foresight_type": "trend",
+  "horizon": "2035",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-no-regret-moves",
+  "label": "No-regret moves for 2026 to 2030",
+  "label_vi": "Số biện pháp không hối tiếc cho giai đoạn 2026 đến 2030",
+  "value": "9 of 21 moves",
+  "value_low": 9,
+  "value_high": 9,
+  "unit": "moves",
+  "as_of": "2026 assessment",
+  "context": "A protein and feed balance; feed efficiency and formulation; new-food and new-feed routes with deadlines; shared pilot and trial capacity; a quality laboratory and price series; residue-carbon rules; an omega-3 plan; climate-proof siting; process skills. Our judgement.",
+  "source_ids": [
+   "VIS-35",
+   "VIS-36"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch20-robust-moves",
+  "pages": [
+   "brief-international",
+   "brief-policy",
+   "ch20-robust-moves",
+   "front-at-a-glance",
+   "front-exec-summary",
+   "front-exec-summary-vi"
+  ],
+  "foresight_type": "estimate",
+  "horizon": "2030",
+  "edition": "1.1"
+ },
+ {
+  "id": "kn-capital-charge-lever",
+  "label": "Value of cheaper capital for fermentation protein",
+  "label_vi": "Giá trị của vốn rẻ hơn đối với đạm lên men",
+  "value": "12% to 9% capital charge does as much as the learning expected by 2030",
+  "value_low": 3610,
+  "value_high": 3610,
+  "unit": "USD per t protein (2030 low end)",
+  "as_of": "2026 inputs",
+  "context": "Cutting the annual capital charge from 12% to 9% lowers the 2030 low-end cost of fungal feed protein to about USD 3,610 per t of protein with no learning at all, close to the central learning case in 2030 (USD 3,557 after two doublings of output). Our calculation (ecf_calc.py) on the chapter 9 cost stack.",
+  "source_ids": [
+   "COST-01",
+   "COST-19",
+   "COST-21",
+   "COST-33",
+   "COST-43",
+   "COST-44",
+   "COST-47",
+   "RGN-01"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch20-robust-moves",
+  "pages": [
+   "brief-investors",
+   "ch20-robust-moves"
+  ],
+  "foresight_type": "estimate",
+  "horizon": "2030",
+  "edition": "1.1"
+ }
+]

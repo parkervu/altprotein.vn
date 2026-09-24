@@ -1,0 +1,51 @@
+indicator,value,unit,horizon_year,type,source_ids,evidence_label,confidence,notes
+"Grid emission factor, official latest",0.6592,t CO2 per MWh,2023,actual,COST-08 (edition 1.0),VN-direct,High,"Announced 3 Dec 2024. Unofficial estimates 0.6811 (2024), 0.6235 (2025) (edition 1.0 COST-09)."
+Blended industrial power price for a 24/7 plant at 22 kV,"1,952 (about USD 75)",VND per kWh (USD per MWh),2026,actual,COST-01; COST-03 (edition 1.0),VN-direct,High,Excludes VAT and any future capacity charge.
+Non-hydro renewable share of electricity,28 to 36,%,2030,target,FTG-15,VN-direct,High,Decision 768/QD-TTg (15 Apr 2025).
+Non-hydro renewable share of electricity,74 to 75,%,2050,target,FTG-15,VN-direct,High,Excludes hydropower. A first page read returned 67.5 to 71.5%; the verbatim quote gives 74 to 75%.
+Solar capacity,46.5 to 73.4,GW,2030,target,FTG-15,VN-direct,High,"46,459 to 73,416 MW including rooftop."
+Solar capacity,293.1 to 295.6,GW,2050,target,FTG-15,VN-direct,High,35.3 to 37.8% of domestic-demand capacity.
+Onshore wind capacity,26.1 to 38.0,GW,2030,target,FTG-15; GT-11 (edition 1.0),VN-direct,High,
+Onshore wind capacity,84.7 to 91.4,GW,2050,target,FTG-15,VN-direct,High,
+Offshore wind capacity for domestic demand,6.0 to 17.0,GW,2030 to 2035,target,FTG-15,VN-direct,High,Expected to operate in 2030 to 2035.
+Offshore wind capacity for domestic demand,113.5 to 139.1,GW,2050,target,FTG-15,VN-direct,High,
+"Offshore wind capacity to produce new energy (hydrogen, green ammonia)",15,GW,2035,target,FTG-15,VN-direct,High,Estimate stated in Decision 768; in addition to domestic-demand capacity.
+"Offshore wind capacity to produce new energy (hydrogen, green ammonia)",240,GW,2050,target,FTG-15,VN-direct,High,No legal track yet: Decree 272/2026 covers supply to the national grid only (FTG-28).
+Electricity from 240 GW new-energy offshore wind,"904 to 1,081",TWh per year,2050,estimate,FTG-15; FTG-19,VN-direct,Low,Our calculation at BNEF offshore capacity factors 43 to 51.4%.
+Battery storage capacity,96.0 to 96.1,GW,2050,target,FTG-15,VN-direct,High,
+Nuclear capacity,4.0 to 6.4,GW,2030 to 2035,target,FTG-15; GT-11 (edition 1.0),VN-direct,High,Khanh Hoa (former Ninh Thuan) sites.
+Nuclear capacity,10.5 to 14.0,GW,2050,target,FTG-15,VN-direct,High,
+Hydrogen-only power plants,15.6 to 22.6,GW,2050,target,FTG-15,VN-direct,High,Plus 18.2 to 26.1 GW LNG plants co-firing hydrogen.
+Electricity production and imports,"1,360.1 to 1,511.1",TWh,2050,target,FTG-15,VN-direct,High,Commercial electricity 2030: 500.4 to 557.8 TWh (edition 1.0 GT-11).
+Power-sector GHG emissions,197 to 199,Mt CO2e,2030,target,FTG-15,VN-direct,High,
+Power-sector GHG emissions,27,Mt CO2e,2050,target,FTG-15,VN-direct,High,
+Average grid emission factor implied by PDP8,0.35 to 0.40,t CO2 per MWh,2030,estimate,FTG-15,VN-direct,Low,197 to 199 Mt divided by 500 to 558 TWh commercial sales; an upper bound because sales are below generation.
+Average grid emission factor implied by PDP8,0.018 to 0.020,t CO2 per MWh,2050,estimate,FTG-15,VN-direct,Low,"27 Mt divided by 1,360 to 1,511 TWh. Holds only if the plan is met."
+Hydrogen production capacity from renewables or with carbon capture,100 to 500,kt per year,2030,target,FTG-16,VN-direct,High,Decision 165/QD-TTg (7 Feb 2024). No cost targets.
+Hydrogen production capacity from renewables or with carbon capture,10 to 20,Mt per year,2050,target,FTG-16,VN-direct,High,
+Green hydrogen projects in development (four Mekong projects),about 120,kt H2 per year,2025 status,signal,FTG-17,VN-direct,Medium,"Vinh Long (former Tra Vinh; former Ben Tre), Ca Mau (former Bac Lieu), Dong Thap (former Tien Giang), about 30 kt each; most in preparation."
+Tra Vinh Green Hydrogen plant,"24,000 H2; 182,500 ammonia",t per year,Planned; delayed,signal,FTG-27,VN-direct,Medium,Vinh Long (former Tra Vinh). Ground broken 30 Mar 2023; only perimeter works by May 2026.
+Utility solar LCOE,53 to 105,USD per MWh (real 2022),2023,projection,FTG-19,VN-direct,Medium,"BloombergNEF, solar capacity factor 17%."
+Utility solar LCOE,29 to 85,USD per MWh (real 2022),2030,projection,FTG-19,VN-direct,Medium,BloombergNEF.
+Utility solar LCOE,18 to 64,USD per MWh (real 2022),2050,projection,FTG-19,VN-direct,Medium,BloombergNEF.
+Onshore wind LCOE,39 to 104,USD per MWh (real 2022),2030,projection,FTG-19,VN-direct,Medium,Capacity factor 29% rising to 35% by 2050.
+Onshore wind LCOE,22 to 79,USD per MWh (real 2022),2050,projection,FTG-19,VN-direct,Medium,
+Offshore wind LCOE,121 to 218,USD per MWh (real 2022),2023,projection,FTG-19,VN-direct,Medium,Capacity factor 43% rising to 51.4% by 2050.
+Offshore wind LCOE,53 to 99,USD per MWh (real 2022),2050,projection,FTG-19,VN-direct,Medium,
+Hurdle rates for power projects,8.5 to 16,% IRR,2023,projection,FTG-19,VN-direct,Medium,Coal WACC 7.75%. We use a WACC of 9 to 11% for Vietnamese bioprocess plants (assumption).
+"Solar irradiance, south (Tay Ninh, Lam Dong (former Binh Thuan))","1,868 to 2,002",kWh per m2 per year,current,actual,FTG-18,VN-direct,Medium,"North (Ha Noi, Cao Bang) 1,500 to 1,700."
+"Levelised cost of hydrogen, PV plus PEM electrolysis, south",2.81 to 2.85,USD per kg,2026 study,projection,FTG-18,VN-direct,Low,"6% discount rate, PV USD 0.69 per W, PEM USD 1.287 per W. Optimistic for PV-only operation. North 3.76 to 3.88."
+"Levelised cost of hydrogen, Vietnam (cited in FTG-18)",3.05,USD per kg,2030,projection,FTG-18,VN-direct,Low,Secondary citation; original study not read.
+"Levelised cost of hydrogen, Vietnam (cited in FTG-18)",1.59,USD per kg,2050,projection,FTG-18,VN-direct,Low,Secondary citation; original study not read.
+"Installed electrolyser cost, China vs elsewhere","600 to 1,200 vs 2,000 to 2,600",USD per kW,2025,actual,FTG-29,general,Medium,IEA Global Hydrogen Review 2025.
+"Low-emissions hydrogen, Southeast Asia",480 (6% at FID),kt per year,2030,projection,FTG-29,VN-adjacent,Medium,"IEA, announced projects."
+Electricity to make 1 Mt of microbial protein (hydrogen route),64 to 83,TWh per year,2030 to 2050,estimate,FTG-01; FTG-15,VN-direct,Low,4.2 to 6.1% of planned 2050 supply.
+PV capacity to make 1 Mt of microbial protein,43 to 56,GW,2030 to 2050,estimate,FTG-01; FTG-19,VN-direct,Low,Capacity factor 17%; about 15 to 19% of the 2050 solar plan.
+PV land to make 1 Mt of microbial protein,394 to 743,km2,2030 to 2050,estimate,FTG-01,VN-direct,Low,PV density 75 to 109 MW per km2 (Fasihi et al.).
+Green H2 to make 1 Mt of microbial protein,0.69,Mt H2 per year,2050,estimate,FTG-01; FTG-16,VN-direct,Low,3.5 to 6.9% of the 2050 hydrogen target.
+CO2 to make 1 Mt of microbial protein,2.95,Mt CO2 per year,2050,estimate,FTG-01; FTG-20,VN-direct,Low,About 13% of Hoa Phat's 2025 Scope 1 emissions.
+Indicative cost of hydrogen-route microbial protein made in Vietnam,"6,900 to 12,600",USD per t protein,2030,estimate,FTG-01; FTG-19,VN-direct,Low,"See ftg_estimates.py. On grid power at USD 75 per MWh: 8,700 to 10,300 and about 46 t CO2 per t protein at the 2023 grid factor."
+Indicative cost of hydrogen-route microbial protein made in Vietnam,"4,700 to 8,600",USD per t protein,2040,estimate,FTG-01; FTG-19,VN-direct,Low,Non-energy costs interpolated between Fasihi 2035 and 2050.
+Indicative cost of hydrogen-route microbial protein made in Vietnam,"3,300 to 6,500",USD per t protein,2050,estimate,FTG-01; FTG-19,VN-direct,Low,"Best global sites 2,520 to 2,760 (Fasihi). Fishmeal protein 2,625 to 3,846 (2025 to Aug 2026); soybean-meal protein about 880."
+Breakeven delivered H2 price for parity with Aug 2026 fishmeal protein,0.66 to 2.87,USD per kg H2,2050,estimate,FTG-01,VN-direct,Low,"Buy-H2 case, point-source CO2, Vietnamese WACC. No positive breakeven against soybean-meal protein in any year."
+Domestic carbon market,Pilot to end 2028; full operation from 2029,n/a,2029,target,REG-59 (edition 1.0),VN-direct,Medium,Carbon prices are covered by stream ECF.

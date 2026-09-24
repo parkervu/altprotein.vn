@@ -1,62 +1,52 @@
 import { test, expect, request as apiRequest } from '@playwright/test';
-import seed from '../../seed/seed.json' with { type: 'json' };
+
 const baseURL = 'http://127.0.0.1:4321';
-test('editor can save, privately preview and publish; reseeding preserves edits', async ({
+
+test('editor can save, privately preview and publish a page; reseeding preserves edits', async ({
   page,
   request,
 }) => {
-  // A fresh CI runner also compiles the full EmDash editor on its first visit.
-  test.setTimeout(120000);
+  test.setTimeout(180000);
   const editor = await apiRequest.newContext({
     baseURL,
     extraHTTPHeaders: { Origin: baseURL, 'X-EmDash-Request': '1' },
   });
-  const setup = await editor.post('/_emdash/api/setup/dev-bypass');
-  expect(setup.ok()).toBeTruthy();
-  const slug = seed.content.chapters[0].slug;
-  const endpoint = `/_emdash/api/content/chapters/${slug}`;
+  expect((await editor.post('/_emdash/api/setup/dev-bypass')).ok()).toBeTruthy();
+  const endpoint = '/_emdash/api/content/pages/ch14-unknowns';
   const originalResponse = await editor.get(endpoint);
   expect(originalResponse.ok()).toBeTruthy();
   const original = (await originalResponse.json()).data.item;
-  const title = original.data.title + ' — local acceptance test';
+  const marker = 'Local acceptance test paragraph.';
+  const body = original.data.body.replace(/\n## /, `\n${marker}\n\n## `);
   try {
-    const saved = await editor.put(endpoint, { data: { data: { ...original.data, title } } });
+    const saved = await editor.put(endpoint, { data: { data: { ...original.data, body } } });
     expect(saved.ok(), await saved.text()).toBeTruthy();
-    await page.goto(`/chapters/${slug}`);
-    await expect(page.getByRole('heading', { level: 1 })).toHaveText(original.data.title);
+    await page.goto('/report/ch14-unknowns');
+    await expect(page.locator('.prose')).not.toContainText(marker);
     const previewResponse = await editor.post(endpoint + '/preview-url', { data: {} });
     expect(previewResponse.ok()).toBeTruthy();
-    const preview = (await previewResponse.json()).data.url;
+    const preview = (await previewResponse.json()).data.url as string;
+    expect(preview).toContain('/pages/ch14-unknowns');
     expect((await request.get(preview)).status()).toBe(403);
-    const reportPreview = await editor.post('/_emdash/api/content/report/report/preview-url', {
-      data: { pathPattern: '/' },
-    });
-    const reportUrl = (await reportPreview.json()).data.url;
-    expect((await request.get(reportUrl)).status()).toBe(403);
-    expect((await request.get('/about' + new URL(reportUrl, baseURL).search)).status()).toBe(403);
     const privatePreview = await editor.get(preview);
     expect(privatePreview.status()).toBe(200);
-    expect(await privatePreview.text()).toContain(title);
+    expect(await privatePreview.text()).toContain(marker);
     expect(privatePreview.headers()['cache-control']).toContain('no-store');
-    const published = await editor.post(endpoint + '/publish', { data: {} });
-    expect(published.ok(), await published.text()).toBeTruthy();
+    expect((await editor.post(endpoint + '/publish', { data: {} })).ok()).toBeTruthy();
     await page.reload();
-    await expect(page.getByRole('heading', { level: 1 })).toHaveText(title);
-    // EmDash's documented setup helper reapplies the seed with onConflict:skip.
+    await expect(page.locator('.prose')).toContainText(marker);
     await editor.post('/_emdash/api/setup/dev-bypass');
     await page.reload();
-    await expect(page.getByRole('heading', { level: 1 })).toHaveText(title);
-    const revisions = await editor.get(endpoint + '/revisions');
-    expect(revisions.ok()).toBeTruthy();
-    // The real admin editor must load report tables without unsupported blocks.
+    await expect(page.locator('.prose')).toContainText(marker);
+    expect((await editor.get(endpoint + '/revisions')).ok()).toBeTruthy();
     await page.context().addCookies((await editor.storageState()).cookies);
-    await page.goto(`/_emdash/admin/content/chapters/${original.id}`);
-    await expect(page.locator('body')).not.toContainText('Unknown block type');
-    const welcome = page.getByRole('button', { name: 'Get Started', exact: true });
-    await welcome.click({ timeout: 5000 }).catch(() => {});
+    await page.goto(`/_emdash/admin/content/pages/${original.id}`);
+    await page
+      .getByRole('button', { name: 'Get Started', exact: true })
+      .click({ timeout: 5000 })
+      .catch(() => {});
     await page.waitForLoadState('networkidle');
-    await expect(page.getByRole('textbox').first()).toBeVisible({ timeout: 20000 });
-    await expect(page.locator('.tiptap table').first()).toBeVisible();
+    await expect(page.locator('textarea').first()).toBeVisible({ timeout: 30000 });
   } finally {
     const restored = await editor.put(endpoint, { data: { data: original.data } });
     expect(restored.ok(), await restored.text()).toBeTruthy();

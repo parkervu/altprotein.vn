@@ -1,0 +1,45 @@
+species_group,indicator,value,unit,year,source_model_or_target,foresight_type,source_ids,evidence_label,confidence,notes
+all aquaculture,output,6116.8,kt live weight,2025,NSO official estimate,trend (measured),MAC-15,VN-direct,High,"Fish 4,035.0; shrimp 1,381.7; other 700.1"
+pangasius,output,1938.8,kt live weight,2025,NSO official estimate,trend (measured),MAC-15,VN-direct,High,31.7% of aquaculture; VASEP says pangasius area fell 2020 to 2025 (AQF-32)
+whiteleg shrimp,output,994.4,kt live weight,2025,NSO official estimate,trend (measured),MAC-15,VN-direct,High,
+black tiger shrimp,output,296.7,kt live weight,2025,NSO official estimate,trend (measured),MAC-15,VN-direct,High,"Mostly extensive, shrimp-rice and shrimp-forest"
+capture fisheries,output,3830.7,kt,2025,NSO official estimate,trend (measured),MAC-15,VN-direct,High,"Marine 3,638.6 kt"
+marine aquaculture,output,730,kt,2021,MARD figure reported in press,trend (measured),AQF-11,VN-direct,Medium,"About 85,000 ha and 9 million m3 of cages; mostly molluscs and seaweed"
+all aquaculture,output,6123.4,kt,2030,"OECD-FAO Agricultural Outlook 2026-2035 baseline (Aglink-Cosimo), base 2025",projection,AQF-02; QNT-01,VN-direct,Medium,"OECD-FAO base 5,691.7 kt in 2025 is below NSO 6,116.8 kt"
+all aquaculture,output,6826.9,kt,2035,OECD-FAO Agricultural Outlook 2026-2035 baseline,projection,AQF-02; QNT-01,VN-direct,Medium,+1.8% a year 2025 to 2035
+capture fisheries,output (implied: total fish minus aquaculture),3501.1,kt,2030,OECD-FAO Agricultural Outlook 2026-2035 baseline,projection,AQF-02,VN-direct,Low,Our subtraction of CPC_EX_AC from CPC_04; well above the 2.8 Mt official target
+capture fisheries,output (implied),3497.4,kt,2035,OECD-FAO Agricultural Outlook 2026-2035 baseline,projection,AQF-02,VN-direct,Low,Flat capture in the model
+all aquaculture,output target,7000,kt,2030,Decision 339/QD-TTg (2021) fisheries strategy,projection (official target),NTS-08; AQF-28,VN-direct,High,Total fisheries 9.8 Mt; no species targets and no 2045 volume
+capture fisheries,output target,2800,kt,2030,Decision 339/QD-TTg,projection (official target),NTS-08,VN-direct,High,About 27% below 2025 capture
+capture fisheries,"fishing vessels, maximum",83600,vessels,2030,Decision 389/QD-TTg (2024) fisheries resources plan,projection (official target),AQF-15,VN-direct,Medium,"Trawl 10.0% (about 8,360 vessels) against 20,340 trawlers in 2016 (AQF-06): about 59% fewer; labour down to about 600,000"
+marine aquaculture,output target,850,kt,2025,Decision 1664/QD-TTg (2021) marine aquaculture scheme,projection (official target),AQF-01,VN-direct,High,"280,000 ha; 10.0 million m3; offshore 100 kt"
+marine aquaculture,output target,1450,kt,2030,Decision 1664/QD-TTg,projection (official target),AQF-01,VN-direct,High,"300,000 ha; 12.0 million m3; exports USD 1.8 to 2.0 bn"
+marine finfish,output target (inshore 80 plus offshore 120),200,kt,2030,Decision 1664/QD-TTg,projection (official target),AQF-01,VN-direct,High,Fed species; the segment still mostly fed trash fish
+lobster,output target,5,kt,2030,Decision 1664/QD-TTg,projection (official target),AQF-01,VN-direct,High,2025 target 3 kt; lobster exports to China USD 845 M in 2025 (AQF-12) suggest volumes may be larger or include trade
+other crustaceans (marine),output target (inshore 75 plus offshore 20),95,kt,2030,Decision 1664/QD-TTg,projection (official target),AQF-01,VN-direct,High,
+molluscs (marine),output target (inshore 550 plus offshore 100),650,kt,2030,Decision 1664/QD-TTg,projection (official target),AQF-01,VN-direct,High,Unfed
+seaweed,output target (inshore 400 plus offshore 100),500,kt,2030,Decision 1664/QD-TTg,projection (official target),AQF-01,VN-direct,High,Unfed
+offshore aquaculture,output target,340,kt,2030,Decision 1664/QD-TTg,projection (official target),AQF-01,VN-direct,High,"30,000 ha; 3.5 million m3; marine fish 120 kt"
+marine aquaculture,share of total fisheries output,>25,%,2045,Decision 1664/QD-TTg vision,projection (official vision),AQF-01,VN-direct,Medium,Denominator read as total fisheries output; exports above USD 4 bn
+marine finfish and lobster (Khanh Hoa pilot),output target,8.7,kt,2029,Decision 231/QD-TTg (24 Jan 2025) Khanh Hoa high-tech mariculture pilot,projection (official target),AQF-13,VN-direct,Medium,"240 ha at 0 to 3 nautical miles (3,600 t) and 200 ha at 3 to 6 nautical miles (5,100 t); HDPE cages"
+shrimp (brackish),output target,1350,kt,2025,National brackish shrimp plan 2025 (as summarised by a trade site),projection (official target),AQF-27,VN-direct,Low,"1.3 to 1.4 Mt: black tiger 350 kt, whiteleg 1.05 Mt; issuing document not seen"
+ASEAN aquaculture,output,24.8,Mt,2030,"IMPACT model, business as usual (Fish to 2050 in the ASEAN region)",projection,AQF-25,VN-adjacent,Low,Extracted totals do not add up; no Vietnam country projection published
+ASEAN aquaculture,output,27.4,Mt,2050,"IMPACT model, business as usual",projection,AQF-25,VN-adjacent,Low,Implies about 0.5% a year growth 2030 to 2050
+world aquatic animals,output,214,Mt,2034,FAO SOFIA 2026 projection,projection,AQF-03,general,Medium,195 Mt in 2024 (aquaculture 103 Mt)
+world aquaculture,output,120663,kt,2035,OECD-FAO 2026-2035,projection,AQF-02,general,Medium,"105,658 kt in 2025"
+all aquaculture,"output, AQ-LOW",7.42,Mt,2050,"AQF estimate: OECD-FAO growth to 2035, then flat; marine finfish 180 kt",estimate,AQF-calc; QNT-model,VN-direct,Low,"What-if, not a forecast"
+all aquaculture,"output, AQ-BASE",6.64,Mt,2030,AQF estimate: QNT S-BASE index plus marine finfish 150 kt,estimate,AQF-calc; QNT-model,VN-direct,Low,Below the 7.0 Mt target
+all aquaculture,"output, AQ-BASE",7.91,Mt,2040,AQF estimate,estimate,AQF-calc; QNT-model,VN-direct,Low,
+all aquaculture,"output, AQ-BASE",8.86,Mt,2050,AQF estimate: QNT S-BASE (8.52 Mt) with a faster marine finfish path (450 kt),estimate,AQF-calc; QNT-model,VN-direct,Low,
+all aquaculture,"output, AQ-HIGH",11.27,Mt,2050,"AQF estimate: 7.0 Mt target in 2030, then +2.0% a year; marine finfish 1,000 kt",estimate,AQF-calc,VN-direct,Low,2015 to 2025 actual growth was about 5.7% a year
+marine finfish,"output, AQ-LOW / BASE / HIGH",180 / 450 / 1000,kt,2050,AQF estimate,estimate,AQF-calc; AQF-01,VN-direct,Low,2025 assumed 80 kt (2025 target 120 kt)
+all fed species,"compound aquafeed, AQ-BASE",7.06,Mt,2030,AQF estimate (USDA-consistent scale; x0.67 for industry scale),estimate,AQF-calc; MAC-01; MAC-06,VN-direct,Low,2025: 6.45 Mt
+all fed species,"compound aquafeed, AQ-BASE",8.64,Mt,2040,AQF estimate,estimate,AQF-calc,VN-direct,Low,
+all fed species,"compound aquafeed, AQ-LOW / BASE / HIGH",8.0 / 9.7 / 12.5,Mt,2050,AQF estimate,estimate,AQF-calc,VN-direct,Low,QNT S-BASE 9.24 Mt; difference is the marine finfish carve-out
+all fed species,"aquafeed crude protein, AQ-LOW / BASE / HIGH",2.50 / 3.10 / 4.08,Mt CP,2050,"AQF estimate; dietary CP pangasius 27%, shrimp 40%, other fish 30%, marine 45%",estimate,AQF-calc,VN-direct,Low,2025: 2.00 Mt CP; industry scale x0.67 gives 1.68 / 2.07 / 2.73
+trash-fish-fed species,direct trash-fish use (low / central / high),404 / 780 / 1604,kt wet weight,2025,AQF estimate from output x non-pellet share x wet FCR,estimate,AQF-calc; AQF-05; AQF-07; AQF-08,VN-direct,Low,"Marine finfish 408, lobster 112, mud crab and crustaceans 180, freshwater carnivores 80 (central); 10 to 42% of 2025 capture"
+trash-fish-fed species,pellets needed to replace 2025 trash-fish feeding,128 / 210 / 342,kt feed,2025,AQF estimate,estimate,AQF-calc,VN-direct,Low,54 / 88 / 144 kt CP at 42%
+trash-fish-fed species plus marine growth,"incremental pellets vs 2025, AQ-LOW / BASE / HIGH",40 / 106 / 192,kt feed,2030,AQF estimate,estimate,AQF-calc,VN-direct,Low,0.6 to 2.5% of all aquafeed; fishmeal +7 to +34 kt
+trash-fish-fed species plus marine growth,"incremental pellets vs 2025, AQ-LOW / BASE / HIGH",131 / 421 / 827,kt feed,2040,AQF estimate,estimate,AQF-calc,VN-direct,Low,CP +56 / +181 / +356 kt; fishmeal +18 / +59 / +116 kt
+trash-fish-fed species plus marine growth,"incremental pellets vs 2025, AQ-LOW / BASE / HIGH",210 / 712 / 1557,kt feed,2050,AQF estimate,estimate,AQF-calc,VN-direct,Low,2.6 / 7.3 / 12.4% of all aquafeed
+tilapia,output,225,kt,2020,Scenario study citing national data,trend (measured),AQF-26,VN-direct,Low,"From about 30,000 ha of ponds; NSO gives no 2025 tonnage (MI-030)"

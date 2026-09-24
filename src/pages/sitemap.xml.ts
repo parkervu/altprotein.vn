@@ -1,12 +1,28 @@
 import type { APIRoute } from 'astro';
-import { getChapters } from '../lib/content';
-import { chapterHref } from '../lib/report.mjs';
-import { escapeHtml } from '../lib/render.mjs';
-export const GET: APIRoute = async ({ site }) => {
-  const chapters = await getChapters();
-  const paths = ['/', '/about', ...chapters.map(chapterHref)];
+import { DATASETS } from '../lib/datasets';
+import { PAGES, localize, pagePath } from '../lib/site';
+
+export const GET: APIRoute = ({ site }) => {
+  const paths = [
+    ...PAGES.map((p) => pagePath(p.id)),
+    '/report',
+    '/briefs',
+    '/appendices',
+    '/data',
+    '/glossary',
+    '/about',
+    ...DATASETS.map((d) => `/data/${d.slug}`),
+  ];
+  const urls = paths
+    .flatMap((p) => [p, localize(p, 'vi')])
+    .map((p) => `<url><loc>${new URL(p, site).href}</loc></url>`);
   return new Response(
-    `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${paths.map((path) => `<url><loc>${escapeHtml(new URL(path, site).href)}</loc></url>`).join('')}</urlset>`,
-    { headers: { 'Content-Type': 'application/xml; charset=utf-8' } },
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.join('')}</urlset>\n`,
+    {
+      headers: {
+        'Content-Type': 'application/xml; charset=utf-8',
+        'Cache-Control': 'public, max-age=3600',
+      },
+    },
   );
 };

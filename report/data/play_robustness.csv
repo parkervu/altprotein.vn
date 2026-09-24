@@ -1,0 +1,17 @@
+play_id,play_name,score_A_regional_workshop,score_B_comfortable_price_taker,score_C_security_build_out,score_D_squeezed_importer,min_score,sum_score,robustness_class,why,foresight_type,confidence
+T1,Domestic textured plant protein,2,1,1,1,1,5,robust,Food-rule light and buyer-led; in B and D it must win on freshness and customisation against cheap Chinese product,estimate,Low
+T2,Functional microbial feed ingredients for shrimp and pangasius,2,1,2,1,1,6,robust,"Sold on function, not price, so cheap soy matters less; Chinese by-product biomass is the threat in B and D",estimate,Low
+T3,Bulk microbial protein for fishmeal replacement,0,0,2,1,0,3,bet (needs signposts),Needs fishmeal scarcity; weak if fishmeal recovers; in D competes with Chinese imports,estimate,Low
+T4,Cassava starch to fermentation sugar hub,2,1,2,1,1,6,robust,"Sugar has buyers in every scenario (MSG, lysine, regional fermenters); volume depends on domestic fermentation",estimate,Low
+T5,Shared pilot and tolling fermentation,2,1,2,1,1,6,robust,As public pilot capacity it pays in all scenarios; as a tolling business it is weak where Chinese tolling is cheaper,estimate,Low
+T6,Duckweed on aquaculture effluent for feed,1,1,2,2,1,6,robust,"Local, low-capital and not traded, so it gains most when imports are stressed; export-market feed rules are the ceiling",estimate,Low
+T7,"High-value, low-dose precision-fermentation ingredients",2,0,1,0,0,3,bet (needs signposts),Needs an open regional market and reliance approvals; Chinese makers with US clearances dominate otherwise,estimate,Low
+T8,Cultivated seafood research,1,0,1,0,0,2,option,A research option; needs open collaboration and patient money,estimate,Low
+T9,Koji and fungal foods on food-grade side streams,2,1,2,1,1,6,robust,Local substrates and taste; small capital; fewer import substitutes,estimate,Low
+T10,Mung bean and rice protein for plant drinks,1,1,2,1,1,5,robust,Competes with imported pea protein; import stress helps; mung bean supply is itself imported in part,estimate,Low
+P1,Proportionate new-food procedure,2,1,2,1,1,6,robust,Needed even to import approved ingredients; decisive in A and C,estimate,Low
+P2,Aquafeed raw-material clarity,2,1,2,2,1,7,robust,"Lowers the cost of trying any new aquafeed ingredient, domestic or imported",estimate,Low
+P3,Public feed-trial capacity,2,2,2,2,2,8,no-regret,"Carries the efficiency and formulation lever, which works in every scenario",estimate,Low
+P4,Protein-quality laboratory,2,2,2,2,2,8,no-regret,Checks imports and domestic products alike; protects against adulteration wildcards,estimate,Low
+P5,By-product atlas,1,1,2,2,1,6,robust,Most valuable when domestic carbon and protein matter; cheap to hold otherwise,estimate,Low
+P6,Open cost model and price series,2,2,2,2,2,8,no-regret,Every buyer and investor uses it to read the signposts,estimate,Low

@@ -3,33 +3,17 @@
 
 /// <reference types="emdash/locals" />
 
-import type { ContentBylineCredit, TaxonomyTerm, PortableTextBlock } from "emdash";
+import type { ContentBylineCredit, TaxonomyTerm } from "emdash";
 
-export interface Chapter {
+export interface Page {
   id: string;
   slug: string | null;
   status: string;
   title: string;
-  content?: PortableTextBlock[];
-  number: number;
-  part: number;
-  part_title: string;
-  createdAt: Date;
-  updatedAt: Date;
-  publishedAt: Date | null;
-  bylines?: ContentBylineCredit[];
-  terms?: Record<string, TaxonomyTerm[]>;
-}
-
-export interface Report {
-  id: string;
-  slug: string | null;
-  status: string;
-  title: string;
-  content?: PortableTextBlock[];
+  short_title: string;
   subtitle?: string;
-  revision_date?: string;
-  revision_label?: string;
+  summary?: string;
+  body: string;
   createdAt: Date;
   updatedAt: Date;
   publishedAt: Date | null;
@@ -39,7 +23,6 @@ export interface Report {
 
 declare module "emdash" {
   interface EmDashCollections {
-    chapters: Chapter;
-    report: Report;
+    pages: Page;
   }
 }

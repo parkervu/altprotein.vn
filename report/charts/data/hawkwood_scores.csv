@@ -1,0 +1,64 @@
+country,driver,score_0_100,driver_group,source_ids
+Vietnam,Sugar capability,26,enabling,RGN-01
+Vietnam,Construction cost,93,cost,RGN-01
+Vietnam,Utilities,97,cost,RGN-01
+Vietnam,Labour,100,cost,RGN-01
+Vietnam,Talent,26,enabling,RGN-01
+Vietnam,Business environment,30,enabling,RGN-01
+Vietnam,Regulatory readiness,0,enabling,RGN-01
+Thailand,Sugar capability,100,enabling,RGN-01
+Thailand,Construction cost,81,cost,RGN-01
+Thailand,Utilities,84,cost,RGN-01
+Thailand,Labour,99,cost,RGN-01
+Thailand,Talent,36,enabling,RGN-01
+Thailand,Business environment,74,enabling,RGN-01
+Thailand,Regulatory readiness,50,enabling,RGN-01
+Indonesia,Sugar capability,14,enabling,RGN-01
+Indonesia,Construction cost,100,cost,RGN-01
+Indonesia,Utilities,99,cost,RGN-01
+Indonesia,Labour,100,cost,RGN-01
+Indonesia,Talent,18,enabling,RGN-01
+Indonesia,Business environment,29,enabling,RGN-01
+Indonesia,Regulatory readiness,0,enabling,RGN-01
+Philippines,Sugar capability,31,enabling,RGN-01
+Philippines,Construction cost,94,cost,RGN-01
+Philippines,Utilities,75,cost,RGN-01
+Philippines,Labour,97,cost,RGN-01
+Philippines,Talent,17,enabling,RGN-01
+Philippines,Business environment,0,enabling,RGN-01
+Philippines,Regulatory readiness,0,enabling,RGN-01
+Malaysia,Sugar capability,0,enabling,RGN-01
+Malaysia,Construction cost,38,cost,RGN-01
+Malaysia,Utilities,87,cost,RGN-01
+Malaysia,Labour,93,cost,RGN-01
+Malaysia,Talent,29,enabling,RGN-01
+Malaysia,Business environment,80,enabling,RGN-01
+Malaysia,Regulatory readiness,0,enabling,RGN-01
+Australia,Sugar capability,60,enabling,RGN-01
+Australia,Construction cost,0,cost,RGN-01
+Australia,Utilities,13,cost,RGN-01
+Australia,Labour,0,cost,RGN-01
+Australia,Talent,50,enabling,RGN-01
+Australia,Business environment,79,enabling,RGN-01
+Australia,Regulatory readiness,100,enabling,RGN-01
+South Korea,Sugar capability,0,enabling,RGN-01
+South Korea,Construction cost,22,cost,RGN-01
+South Korea,Utilities,80,cost,RGN-01
+South Korea,Labour,29,cost,RGN-01
+South Korea,Talent,68,enabling,RGN-01
+South Korea,Business environment,91,enabling,RGN-01
+South Korea,Regulatory readiness,50,enabling,RGN-01
+Japan,Sugar capability,11,enabling,RGN-01
+Japan,Construction cost,5,cost,RGN-01
+Japan,Utilities,47,cost,RGN-01
+Japan,Labour,27,cost,RGN-01
+Japan,Talent,49,enabling,RGN-01
+Japan,Business environment,65,enabling,RGN-01
+Japan,Regulatory readiness,50,enabling,RGN-01
+Singapore,Sugar capability,0,enabling,RGN-01
+Singapore,Construction cost,25,cost,RGN-01
+Singapore,Utilities,27,cost,RGN-01
+Singapore,Labour,26,cost,RGN-01
+Singapore,Talent,55,enabling,RGN-01
+Singapore,Business environment,100,enabling,RGN-01
+Singapore,Regulatory readiness,100,enabling,RGN-01

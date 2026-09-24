@@ -1,0 +1,12 @@
+period,period_type,fishmeal_usd_per_t,fishmeal_usd_per_t_protein,soybean_meal_usd_per_t,soybean_meal_usd_per_t_protein,source_ids
+2020,annual mean,1433,2205,,,FM-02
+2021,annual mean,1481,2278,,,FM-02
+2022,annual mean,1596,2455,,,FM-02
+2023,annual mean,1815,2792,,,FM-01; FM-02
+2024,annual mean,1699,2614,,,FM-01
+2025,annual mean,1706,2625,366,796,FM-01
+2026 Q1,quarter,1832,2818,,,FM-01
+2026 Q2,quarter,2045,3146,,,FM-01
+2026-06,month,2145,3300,,,FM-01
+2026-07,month,2103,3235,,,FM-01
+2026-08,month,2500,3846,403,876,FM-01

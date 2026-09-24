@@ -1,0 +1,76 @@
+record_id,indicator,value,unit,year,source,type,source_ids,evidence_label,confidence,notes
+OUT-001,"Population, UN WPP 2024 medium variant",101.6,million people,2025,UN DESA World Population Prospects 2024 via Our World in Data grapher,projected (modelled),GT-12,VN-direct,Medium,"Read through OWID re-publication of WPP 2024, not the UN portal. GSO official 2025 estimate is 102.3 M (MAC-19), about 0.7 M higher than UN."
+OUT-002,"Population, UN WPP 2024 medium variant",104.25,million people,2030,UN DESA World Population Prospects 2024 via Our World in Data grapher,projected (modelled),GT-12,VN-direct,Medium,"Read through OWID re-publication of WPP 2024, not the UN portal. GSO official 2025 estimate is 102.3 M (MAC-19), about 0.7 M higher than UN."
+OUT-003,"Population, UN WPP 2024 medium variant",106.53,million people,2035,UN DESA World Population Prospects 2024 via Our World in Data grapher,projected (modelled),GT-12,VN-direct,Medium,"Read through OWID re-publication of WPP 2024, not the UN portal. GSO official 2025 estimate is 102.3 M (MAC-19), about 0.7 M higher than UN."
+OUT-004,"Population, UN WPP 2024 medium variant",108.44,million people,2040,UN DESA World Population Prospects 2024 via Our World in Data grapher,projected (modelled),GT-12,VN-direct,Medium,"Read through OWID re-publication of WPP 2024, not the UN portal. GSO official 2025 estimate is 102.3 M (MAC-19), about 0.7 M higher than UN."
+OUT-005,"Population, UN WPP 2024 medium variant",110.01,million people,2050,UN DESA World Population Prospects 2024 via Our World in Data grapher,projected (modelled),GT-12,VN-direct,Medium,"Read through OWID re-publication of WPP 2024, not the UN portal. GSO official 2025 estimate is 102.3 M (MAC-19), about 0.7 M higher than UN."
+OUT-006,"Population peak, UN WPP 2024 medium variant",110.02,million people,2049,UN WPP 2024 via OWID,projected,GT-12,VN-direct,Medium,Growth 2025-2035 about 4.9 M people (+4.9%); growth nearly flat after 2040
+OUT-007,Population growth 2025-2035 (arithmetic),4.9,%,2025-2035,Derived from UN WPP 2024,derived,GT-12,VN-direct,Medium,"Demand growth to 2035 comes mostly from income and diet change, not headcount"
+OUT-008,Aged society threshold,reached by 2035,qualitative,2035,Wikipedia Demographics of Vietnam (citing GSO),projected,GT-13,VN-direct,Low,Secondary summary; TFR 1.91 (2024) per same page
+OUT-009,Meat output implied by per-capita target x UN population,6.05-6.46,million t,2030,Decision 1520 target 58-62 kg/person x UN WPP 2030,derived,GT-12; REG-54; MAC-23,VN-direct,Medium,"Matches the 6.0-6.5 Mt carcass target in Decision 1520, so the two targets are internally consistent"
+OUT-010,Industrial feed output target,30-32,million t,2030,Decision 1520/QD-TTg,target,REG-54,VN-direct,High,"Versus about 21.5 Mt in 2024 (USDA, prior lead, unverified here): implies about 5.7-6.9%/yr growth, which is above recent trend"
+OUT-011,Implied feed growth 2024-2030 to hit target,5.7-6.9,%/yr,2024-2030,Arithmetic,derived,REG-54,VN-direct,Low,Base 21.5 Mt unverified (prior lead); treat as a check on target realism
+OUT-012,"Maize price, actual",191,USD/t,2024,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-013,"Maize price, actual",203,USD/t,2025,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-014,"Maize price, forecast",211,USD/t,2026,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,Nominal USD; April 2026 vintage; forecasts end at 2027
+OUT-015,"Maize price, forecast",214,USD/t,2027,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,No World Bank forecast beyond 2027 in this table
+OUT-016,"Soybean meal price, actual",442,USD/t,2024,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-017,"Soybean meal price, actual",366,USD/t,2025,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-018,"Soybean meal price, forecast",359,USD/t,2026,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,Nominal USD; April 2026 vintage; forecasts end at 2027
+OUT-019,"Soybean meal price, forecast",363,USD/t,2027,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,No World Bank forecast beyond 2027 in this table
+OUT-020,"Soybeans price, actual",462,USD/t,2024,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-021,"Soybeans price, actual",414,USD/t,2025,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-022,"Soybeans price, forecast",441,USD/t,2026,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,Nominal USD; April 2026 vintage; forecasts end at 2027
+OUT-023,"Soybeans price, forecast",446,USD/t,2027,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,No World Bank forecast beyond 2027 in this table
+OUT-024,"Soybean oil price, actual",1022,USD/t,2024,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-025,"Soybean oil price, actual",1140,USD/t,2025,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-026,"Soybean oil price, forecast",1233,USD/t,2026,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,Nominal USD; April 2026 vintage; forecasts end at 2027
+OUT-027,"Soybean oil price, forecast",1236,USD/t,2027,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,No World Bank forecast beyond 2027 in this table
+OUT-028,"Rice, Thai 5% price, actual",588,USD/t,2024,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-029,"Rice, Thai 5% price, actual",408,USD/t,2025,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-030,"Rice, Thai 5% price, forecast",401,USD/t,2026,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,Nominal USD; April 2026 vintage; forecasts end at 2027
+OUT-031,"Rice, Thai 5% price, forecast",413,USD/t,2027,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,No World Bank forecast beyond 2027 in this table
+OUT-032,"Palm oil price, actual",963,USD/t,2024,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-033,"Palm oil price, actual",1007,USD/t,2025,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-034,"Palm oil price, forecast",1089,USD/t,2026,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,Nominal USD; April 2026 vintage; forecasts end at 2027
+OUT-035,"Palm oil price, forecast",1096,USD/t,2027,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,No World Bank forecast beyond 2027 in this table
+OUT-036,"Crude oil, Brent price, actual",80.7,USD/bbl,2024,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-037,"Crude oil, Brent price, actual",69.0,USD/bbl,2025,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-038,"Crude oil, Brent price, forecast",86.0,USD/bbl,2026,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,Nominal USD; April 2026 vintage; forecasts end at 2027
+OUT-039,"Crude oil, Brent price, forecast",70.0,USD/bbl,2027,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,No World Bank forecast beyond 2027 in this table
+OUT-040,"Urea, E. Europe price, actual",338,USD/t,2024,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-041,"Urea, E. Europe price, actual",423,USD/t,2025,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-042,"Urea, E. Europe price, forecast",675,USD/t,2026,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,Nominal USD; April 2026 vintage; forecasts end at 2027
+OUT-043,"Urea, E. Europe price, forecast",500,USD/t,2027,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,No World Bank forecast beyond 2027 in this table
+OUT-044,"Sugar, world price, actual",0.45,USD/kg,2024,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-045,"Sugar, world price, actual",0.37,USD/kg,2025,World Bank CMO April 2026 forecast table,measured,GT-14,general,High,Nominal USD
+OUT-046,"Sugar, world price, forecast",0.35,USD/kg,2026,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,Nominal USD; April 2026 vintage; forecasts end at 2027
+OUT-047,"Sugar, world price, forecast",0.34,USD/kg,2027,World Bank CMO April 2026,forecast (modelled),GT-14,general,High,No World Bank forecast beyond 2027 in this table
+OUT-048,Fishmeal price (World Bank Pink Sheet series),1699,USD/t,2024,"World Bank Pink Sheet, 2 Sep 2026",measured,GT-15,general,High,"No fishmeal forecast in CMO table. Series definition (64-65% protein, c&f Bremen) from agent knowledge, not the page"
+OUT-049,Fishmeal price (World Bank Pink Sheet series),1706,USD/t,2025,"World Bank Pink Sheet, 2 Sep 2026",measured,GT-15,general,High,"No fishmeal forecast in CMO table. Series definition (64-65% protein, c&f Bremen) from agent knowledge, not the page"
+OUT-050,Fishmeal price (World Bank Pink Sheet series),1832,USD/t,Q1 2026,"World Bank Pink Sheet, 2 Sep 2026",measured,GT-15,general,High,"No fishmeal forecast in CMO table. Series definition (64-65% protein, c&f Bremen) from agent knowledge, not the page"
+OUT-051,Fishmeal price (World Bank Pink Sheet series),2045,USD/t,Q2 2026,"World Bank Pink Sheet, 2 Sep 2026",measured,GT-15,general,High,"No fishmeal forecast in CMO table. Series definition (64-65% protein, c&f Bremen) from agent knowledge, not the page"
+OUT-052,Fishmeal price (World Bank Pink Sheet series),2145,USD/t,Jun 2026,"World Bank Pink Sheet, 2 Sep 2026",measured,GT-15,general,High,"No fishmeal forecast in CMO table. Series definition (64-65% protein, c&f Bremen) from agent knowledge, not the page"
+OUT-053,Fishmeal price (World Bank Pink Sheet series),2103,USD/t,Jul 2026,"World Bank Pink Sheet, 2 Sep 2026",measured,GT-15,general,High,"No fishmeal forecast in CMO table. Series definition (64-65% protein, c&f Bremen) from agent knowledge, not the page"
+OUT-054,Fishmeal price (World Bank Pink Sheet series),2500,USD/t,Aug 2026,"World Bank Pink Sheet, 2 Sep 2026",measured,GT-15,general,High,"No fishmeal forecast in CMO table. Series definition (64-65% protein, c&f Bremen) from agent knowledge, not the page"
+OUT-055,Soybean meal price (World Bank Pink Sheet),442,USD/t,2024,"World Bank Pink Sheet, 2 Sep 2026",measured,GT-15,general,High,
+OUT-056,Soybean meal price (World Bank Pink Sheet),366,USD/t,2025,"World Bank Pink Sheet, 2 Sep 2026",measured,GT-15,general,High,
+OUT-057,Soybean meal price (World Bank Pink Sheet),393,USD/t,Q1 2026,"World Bank Pink Sheet, 2 Sep 2026",measured,GT-15,general,High,
+OUT-058,Soybean meal price (World Bank Pink Sheet),419,USD/t,Q2 2026,"World Bank Pink Sheet, 2 Sep 2026",measured,GT-15,general,High,
+OUT-059,Soybean meal price (World Bank Pink Sheet),403,USD/t,Aug 2026,"World Bank Pink Sheet, 2 Sep 2026",measured,GT-15,general,High,
+OUT-060,Maize price (World Bank Pink Sheet),224.0,USD/t,Aug 2026,"World Bank Pink Sheet, 2 Sep 2026",measured,GT-15,general,High,Above the CMO 2026 forecast of 211
+OUT-061,Fishmeal to soybean meal price ratio,6.2,ratio,Aug 2026,Derived from GT-15,derived,GT-15,general,High,Was 3.8 in 2024 and 4.7 in 2025; widening gap raises the value of fishmeal replacers in aquafeed
+OUT-062,Fishmeal price per tonne of crude protein (65% CP assumed),3846,USD/t protein,Aug 2026,Derived,derived,GT-15,general,Medium,"Assumes 65% CP; wave 1 used about 2,830 USD/t protein at older prices. Benchmark for SCP/insect meal break-even"
+OUT-063,Soybean meal price per tonne of crude protein (47% CP assumed),857,USD/t protein,Aug 2026,Derived,derived,GT-15,general,Medium,Assumes 47% CP
+OUT-064,World Bank Food price index,118.8,index (2010=100),2026 YTD,World Bank Pink Sheet,measured,GT-15,general,High,2024: 115.8; 2025: 109.2
+OUT-065,World Bank Fertilizer price index,188.2,index (2010=100),2026 YTD,World Bank Pink Sheet,measured,GT-15,general,High,2025: 138.7; 2026 energy and fertilizer shock (CMO April 2026: overall commodity prices +16% in 2026)
+OUT-066,Non-hydro renewable share of electricity generation (target),28-36,%,2030,Decision 768/QD-TTg (PDP8 revised),target,GT-11,VN-direct,High,
+OUT-067,Renewable share of electricity (orientation),74-75,%,2050,Decision 768/QD-TTg,target,GT-11,VN-direct,High,
+OUT-068,Commercial electricity,500.4-557.8,TWh,2030,Decision 768/QD-TTg,target,GT-11,VN-direct,High,"2050: 1,237.7-1,375.1 TWh"
+OUT-069,Solar capacity (incl. rooftop),46.5-73.4,GW,2030,Decision 768/QD-TTg,target,GT-11,VN-direct,High,Onshore wind 26.1-38.0 GW; offshore wind 6.0-17.0 GW; biomass 1.5-2.7 GW; waste-to-energy 1.4-2.1 GW; coal 31.1 GW; LNG 22.5 GW
+OUT-070,Nuclear capacity,4.0-6.4,GW,2030-2035,Decision 768/QD-TTg,target,GT-11,VN-direct,High,Ninh Thuan projects are now in Khanh Hoa province after the merger
+OUT-071,Power sector GHG emissions,197-199,Mt CO2e,2030,Decision 768/QD-TTg,target,GT-11,VN-direct,High,About 27 Mt by 2050
+OUT-072,GDP growth assumption in PDP8 revised,10.0 (2026-2030); 7.5 (2031-2050),%/yr,2026-2050,Decision 768/QD-TTg,assumption,GT-11,VN-direct,High,Aggressive assumption; electricity and demand projections scale with it
+OUT-073,"Grid investment need, sources and transmission",136.3,USD bn,2026-2030,Decision 768/QD-TTg,estimate,GT-11,VN-direct,High,
+OUT-074,E5 RON92 permitted until,31 Dec 2030,date,2030,Circular 50/2025/TT-BCT,regulation,GT-10,VN-direct,High,E10 mandatory nationwide from 1 Jun 2026
+OUT-075,Vietnam 2030 NDC (2022 update) unconditional target,878,Mt CO2e,2030,Climate Action Tracker (last updated 28 Oct 2025),target,GT-16,VN-direct,Medium,Conditional 629 Mt CO2e. NDC 3.0 (2035 target) not found; see gaps

@@ -7,18 +7,20 @@
     "seed": "seed/seed.json"
   },
   "scripts": {
-    "dev": "astro dev --host 127.0.0.1",
-    "build": "astro build",
+    "data:build": "node scripts/build-data.mjs",
+    "dev": "node scripts/build-data.mjs && astro dev --host 127.0.0.1",
+    "build": "node scripts/build-data.mjs && astro build",
     "preview": "wrangler dev --local",
-    "typecheck": "astro check",
+    "typecheck": "node scripts/build-data.mjs --quiet && astro check",
     "cf:types": "wrangler types --include-runtime=false",
-    "content:import": "node scripts/import-report.mjs",
-    "content:check": "node scripts/import-report.mjs --check",
-    "test": "node --test tests/*.test.mjs",
+    "content:seed": "node scripts/build-seed.mjs",
+    "content:check": "node scripts/build-seed.mjs --check && python3 report/tools/validate.py",
+    "test": "node scripts/build-data.mjs --quiet && tsx --test tests/*.test.ts",
     "test:e2e": "playwright test",
-    "build:production": "CLOUDFLARE_ENV=production astro build",
+    "build:production": "node scripts/build-data.mjs && CLOUDFLARE_ENV=production astro build",
     "deploy:production": "pnpm build:production && wrangler deploy --env production",
-    "setup:local": "node scripts/setup-local.mjs"
+    "setup:local": "node scripts/setup-local.mjs",
+    "charts:check": "node scripts/charts/preview.mjs && node scripts/charts/shoot.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^14.3.1",
@@ -29,6 +31,7 @@
     "emdash": "^0.38.0",
     "highlight.js": "^11.12.0",
     "lowlight": "^3.3.0",
+    "marked": "^16.4.2",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
@@ -41,11 +44,10 @@
     "@types/react-dom": "^19.3.0",
     "prettier": "^3.9.8",
     "prettier-plugin-astro": "^1.0.1",
-    "remark-gfm": "^4.0.1",
-    "remark-parse": "^11.0.0",
+    "tsx": "^4.23.15",
     "typescript": "^6.0.3",
-    "unified": "^11.0.5",
-    "wrangler": "^4.125.0"
+    "wrangler": "^4.125.0",
+    "yaml": "^2.9.1"
   },
   "packageManager": "pnpm@11.19.0",
   "engines": {

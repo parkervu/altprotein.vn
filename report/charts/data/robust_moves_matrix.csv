@@ -1,0 +1,22 @@
+move_id,move,class,A,B,C,D,pays_off_in
+RM-01,Publish a national protein and feed balance,no-regret,2,2,2,2,A; B; C; D
+RM-02,Feed-efficiency and formulation programme,no-regret,2,2,2,2,A; B; C; D
+RM-03,New-food and new-feed-ingredient routes with deadlines,no-regret,2,2,2,2,A; B; C; D
+RM-04,Shared food-grade pilot and feed-trial capacity,no-regret,2,2,2,2,A; B; C; D
+RM-05,Protein-quality laboratory and open price series,no-regret,2,2,2,2,A; B; C; D
+RM-06,Residue-carbon rules and a by-product atlas,no-regret,2,2,2,2,A; B; C; D
+RM-07,Omega-3 sourcing plan for aquafeed,no-regret,2,2,2,2,A; B; C; D
+RM-08,Climate-proof siting for new plants,no-regret,2,2,2,2,A; B; C; D
+RM-09,Process-engineering skills,no-regret,2,2,2,2,A; B; C; D
+RM-10,Reserve hub sites,option,2,0,2,1,A; C (D partly)
+RM-11,Small permanent protein-innovation fund,option,2,1,2,1,A; C (useful in all)
+RM-12,Concessional finance window for first plants,option,0,0,2,2,C; D
+RM-13,Join regional approval and statistics networks,option,2,1,2,1,A; C
+RM-14,Seed research on cultivated seafood cells and gas fermentation,option,2,0,2,0,A; C
+RM-15,Clear rules for second-hand fermentation equipment,option,1,0,2,1,C (A and D partly)
+RM-16,Bulk microbial feed-protein capacity,bet,0,0,2,1,C (D partly)
+RM-17,Power-to-protein demonstration on the Mekong shrimp coast,bet,1,0,2,0,C (A partly)
+RM-18,Contract precision-fermentation plant for export,bet,2,0,1,0,A (C partly)
+RM-19,Cellulosic sugar from rice straw,bet,1,0,2,0,C (A partly)
+RM-20,Diversified feed-protein sourcing and stocks,hedge,1,1,2,2,C; D (protects A and B against later shocks)
+RM-21,Import monitoring and equal standards for protein imports,hedge,1,2,1,2,B; D

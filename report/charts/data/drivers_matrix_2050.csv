@@ -1,0 +1,18 @@
+driver,class,impact_score,uncertainty_score,channel,horizon,source_ids,note
+Ageing; working-age peak 2035 to 2040,near-certain trend,2,1,Buyers; labour,2035 to 2050,GEO-31,"Our judgement scores, 1 (low) to 5 (high)"
+Smallholder exit and industrial livestock,near-certain trend,3,1,Buyers,2030s,GEO-15; GEO-36; GEO-47,
+Endemic African swine fever,near-certain trend,3,2,Buyers; demand swings,to the 2030s,GEO-15; GEO-17,
+Antibiotic ban in livestock,near-certain trend,2,1,Buyers (additives),2026 onwards,GEO-24,
+Agricultural emission caps,near-certain trend,2,2,Carbon,"2030, 2050",CLM-01,
+Delta subsidence and salinity,near-certain trend,3,2,Buyers; feedstock; siting,2050,CLM-13; CLM-15,
+Humid heat,near-certain trend,2,1,Cost; siting,2040,CLM-16,
+Shrinking capture fisheries,near-certain trend,3,2,Buyers (aquafeed),2030,NTS-08; AQF-15,
+Import dependence for soy and maize,near-certain trend,4,1,Imported protein,2050,MAC-04; QNT-01,
+Feed-protein import stress (axis 1),critical uncertainty,5,5,Imported protein,2030 to 2050,GEO-37; HSC-28; CLM-24,Scenario axis
+Asia's fermentation market (axis 2),critical uncertainty,5,4,Cost; buyers,2030 to 2050,HSC-13; ECF-29,Scenario axis
+Clean-power delivery,critical uncertainty,4,4,Cost; carbon,2035 to 2050,FTG-27; GEO-26,
+Trade politics,critical uncertainty,3,4,Imported protein,2026 to 2035,GEO-04; GEO-06,
+Growth path,critical uncertainty,3,3,Demand,2035 to 2050,NTS-14; GEO-33,
+Carbon pricing reach,critical uncertainty,3,4,Carbon,2030 to 2050,ECF-12; CLM-18,
+"Disease (ASF vaccines, H5N1)",critical uncertainty,3,4,Buyers; demand swings,2026 to 2035,HSC-31; GEO-43,
+Political framing and acceptance,critical uncertainty,3,3,Rules; money,2026 to 2035,VIS-15; HSC-35,

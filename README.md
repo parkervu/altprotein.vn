@@ -1,57 +1,74 @@
-# Which novel protein should Vietnam build?
+# scoping.altprotein.vn
 
-The complete English scoping report from **altprotein.vn**, prepared for **scoping.altprotein.vn**. Nineteen chapters across eight parts, a ranking dashboard, evidence filters, editable tables, and an EmDash editorial backend.
+The website for **Alternative protein in Vietnam: a supply-side scoping study** (AltProtein Vietnam, edition 1.1, September 2026). It publishes the full report package in `report/`: 57 pages (front matter, 20 chapters in five parts, six audience briefs, appendices A to Z), 92 data tables, 1,275 sources, 35 charts and the working papers.
+
+Astro and EmDash on Cloudflare Workers, with D1 (content), R2 (CMS media) and KV (editor sessions).
+
+## What the site does
+
+- **Every page** of the package, rendered from its Markdown with the report tokens: numbered citations with a per-page source list linked to Appendix T, evidence badges (`VN-direct`, `VN-adjacent`, `general` with confidence), foresight badges for Part V (with `vision` styled apart), cross-links, key-number tiles and charts. Callouts (corrections, method notes, speculative, vision) have their own styles.
+- **Charts** are drawn as inline SVG at build time from `report/charts/chart-specs.json` (no chart library), in light and dark themes, each with its data table and source line.
+- **Plays ranking** (chapter 11): presets and seven weight sliders re-rank the ten plays; each play opens its card. Without JavaScript the balanced ranking and all cards are shown.
+- **Scenario explorer** (chapter 18): a two-by-two of the 2050 worlds with each world's picture, signposts and play scores. Without JavaScript all four are shown.
+- **Audience paths**: pick an audience on the home page to get its reading path and highlight its pages everywhere.
+- **Data browser** at `/data`: all tables with the data dictionary's column descriptions; filter, sort and download. Zip downloads of all data, the working papers and the report Markdown.
+- **Search** across the full text of every page (EmDash full-text search), the glossary and the main registers; a **bilingual glossary** at `/glossary`.
+- **English or Vietnamese interface**: every page is also served under `/vi/…` with Vietnamese navigation and labels. Report text stays in English, except the Vietnamese executive summary (`/tom-tat`), the bilingual glossary and the Vietnamese key-number labels.
+- Light and dark themes, print styles, keyboard navigation, no trackers.
 
 ## Local development
 
-Use Node.js 24 and pnpm 11.19.0.
+Use Node.js 24 and pnpm 11.19.0 (Node 22.12 or later works).
 
 ```sh
 pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-In another terminal, initialize the **local** CMS and import the report:
+In another terminal, initialise the **local** CMS and import the report:
 
 ```sh
 pnpm setup:local
 ```
 
-Open [the report](http://127.0.0.1:4321) and [the local editor](http://127.0.0.1:4321/_emdash/api/auth/dev-bypass?redirect=/_emdash/admin). The helper is an upstream EmDash **development-only** endpoint; it is unavailable in production. Alternatively, complete the setup wizard at `/_emdash/admin` and select the bundled content.
+Open [the site](http://127.0.0.1:4321) and [the local editor](http://127.0.0.1:4321/_emdash/api/auth/dev-bypass?redirect=/_emdash/admin). The helper is an EmDash development-only endpoint; it does not exist in production. Local D1, R2 and sessions persist under `.wrangler/`; delete `.wrangler/state` to start again from the seed.
 
-The first server request creates the CMS schema. Importing content is a separate setup step. Existing entries are skipped on repeat setup, not replaced. Local D1, R2, and sessions persist under `.wrangler/`; keep that directory to retain edits.
+`pnpm dev`, `pnpm build` and `pnpm typecheck` first run `scripts/build-data.mjs`, which reads `report/` and writes `src/generated/` (bundled into the Worker) and `public/data/`, `public/downloads/` (static files). These outputs are not committed.
 
-Astro may launch in the background when it detects an agent. Use `pnpm exec astro dev --ignore-lock --host 127.0.0.1` for a foreground server, or `pnpm exec astro dev stop` to stop a tracked background server.
+## Where things live
+
+| Path                                 | What it is                                                                                                                                                              |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `report/`                            | The report package as delivered: content, data, charts, sources, tools, working papers, and its own `README.md` (build brief) and `STYLE.md` (writing and token rules). |
+| `seed/seed.json`                     | EmDash schema and initial content, generated from `report/content` by `pnpm content:seed`.                                                                              |
+| `scripts/build-data.mjs`             | Build-time data: page tree, key numbers, sources, glossary, plays, scenarios, data dictionary, search records, charts and zip downloads.                                |
+| `scripts/charts/`                    | The SVG chart renderer (`pnpm charts:check` renders a preview and checks every chart).                                                                                  |
+| `src/lib/markdown.ts`                | The report-token renderer.                                                                                                                                              |
+| `src/lib/site.ts`, `src/lib/i18n.ts` | Page tree, URLs, and interface text in English and Vietnamese.                                                                                                          |
+| `src/pages/`                         | Routes: `/`, `/summary`, `/tom-tat`, `/report/{id}`, `/briefs/{id}`, `/appendices/{id}`, `/data`, `/glossary`, `/search`, `/about`, and `/vi/…` for each.               |
 
 ## Editorial workflow
 
-- **Chapters** contains the complete report, in chapter-number order. Edit text, evidence labels, and tables directly in the rich-text editor, save a draft, preview, and publish.
-- **Report** contains the title, subtitle, revision metadata, reading guide, and revision notes. Its public page is `/about`.
-- Previews require an authenticated **Editor or Administrator** session, even with a valid signed URL. Public pages use published content and `private, no-store` to prevent stale revisions or cached previews.
-- Evidence labels are ordinary editable text: `[VN-direct]`, `[VN-adjacent]`, and `[general]`. The reader converts these into keyboard-accessible buttons. Only explicitly labelled paragraphs, list items, or table cells are de-emphasized when a different label is selected. Unlabelled context stays visible.
-- Chapter slugs are seeded once. Keep slugs and chapter numbers stable to preserve cross-references; create a redirect in EmDash if a slug must change. Section links use block identity (or an existing numbered section); replacing a whole heading block can change its link.
-- Native text, emphasis, links, lists, tables, and dividers are supported. The report renderer deliberately does not execute arbitrary HTML. New media/custom block types need a renderer addition before use.
-
-The supplied source is preserved verbatim in `content/report.md`. `pnpm content:import` deterministically regenerates `seed/seed.json`; it **does not synchronize over a running CMS**. After first setup, EmDash/D1 is the editorial source of truth. Export CMS content before any schema migration; do not overwrite it with a regenerated seed.
+- **Report pages** in the EmDash admin holds all 57 pages. Each has a title, a short title, a summary (used for cards and meta descriptions) and a **body in Markdown with the report tokens** exactly as in the package (see `report/STYLE.md`): `[@MAC-04]`, `{VN-direct|High}` (escaped as `{VN-direct\|High}` inside tables), `{fx:projection}`, `[[ch05-rules]]`, `{{kn:…}}`, `{{chart:…}}` and `> **Correction.** …` callouts. Save a draft, preview, then publish.
+- Previews need a signed-in Editor or Administrator. Public pages send `private, no-store`.
+- The **structure** (which pages exist, their order, part and section, navigation, audiences and reading paths) comes from `report/site-manifest.json` and the page frontmatter, and the **data** (key numbers, sources, charts, CSVs) from `report/data` and `report/charts`. Changing those is a code change: edit `report/`, run `python3 report/tools/validate.py` (needs PyYAML) and `pnpm content:check`, and deploy.
+- After first setup, EmDash (D1) is the source of truth for page text. `pnpm content:seed` regenerates the seed from `report/content`; it does **not** overwrite a running CMS.
+- The site does not change the substance of the content. Where a chart spec's note was an instruction to the builder rather than a note for readers, `src/lib/charts.ts` shows a reader-facing version; the spec is unchanged.
 
 ## Validation
 
 ```sh
-pnpm content:check
-pnpm test
+pnpm content:check     # seed matches report/content; the package validator reports 0 errors
+pnpm test              # rendering, tokens, scores, search, charts
 pnpm cf:types
 pnpm typecheck
-pnpm exec playwright install chromium
-pnpm test:e2e
+pnpm test:e2e          # every page, widgets, data browser, CMS editing (Playwright)
+pnpm charts:check      # optional: chart preview and checks
 pnpm build:production
 ```
 
-For an installed Chrome instead of Playwright Chromium, set `PLAYWRIGHT_CHANNEL=chrome` when running `pnpm test:e2e`. Browser tests operate only against `127.0.0.1:4321`, seed the local database, and restore the chapter they edit.
+For a preinstalled Chromium, set `PLAYWRIGHT_EXECUTABLE=/path/to/chromium` (or `PLAYWRIGHT_CHANNEL=chrome`). Browser tests run only against `127.0.0.1:4321` and restore the page they edit.
 
-GitHub Actions runs content checks, unit tests, type checking, browser tests, and the production build. It has read-only repository permissions and does not deploy.
+GitHub Actions runs these checks on pull requests with read-only permissions. It does not deploy.
 
-## Infrastructure
-
-Astro + EmDash 0.38 on Cloudflare Workers; D1 stores content, R2 stores CMS media, and a KV binding stores editor sessions. The supplied SVG is unchanged. Work Sans is bundled from Fontsource (including Vietnamese glyphs), so readers do not contact a font CDN.
-
-See [deployment and recovery](docs/deployment.md) and [validation record](docs/validation.md). No Cloudflare resources or DNS records are created by installation, tests, or a build. The production target has not been published by this scaffold.
+See [deployment and recovery](docs/deployment.md), including the steps to replace the first edition's content in production.

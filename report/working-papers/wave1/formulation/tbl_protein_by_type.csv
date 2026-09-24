@@ -1,0 +1,14 @@
+product_type,as_sold_form,count,median,min,max
+canned analog,ready-to-eat,2,6.79,4.5,9.08
+dried TVP/soy chunks,dry,5,64.0,53.3,66.7
+dumpling/spring roll/bun with vegetable filling,ready-to-cook,18,4.32,1.53,6.3
+frozen meat/seafood analog,ready-to-cook,5,15.0,3.03,19.0
+frozen meat/seafood analog,ready-to-eat,4,19.25,3.0,25.1
+other,ready-to-cook,2,9.0,9.0,9.0
+plant milk,beverage,14,1.6,0.7,5.0
+plant yogurt/creamer,ready-to-eat,3,1.9,1.6,2.93
+protein powder,dry,4,47.0,41.2,58.3
+ready meal,ready-to-cook,1,4.2,4.2,4.2
+ready meal,ready-to-eat,1,4.2,4.2,4.2
+tofu,ready-to-cook,5,4.98,3.8,9.3
+vegan cheese/spread,ready-to-eat,2,8.86,8.03,9.7

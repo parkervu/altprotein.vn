@@ -1,0 +1,39 @@
+record_id,commodity,market,price,unit,date,source_ids,evidence_label,confidence,notes
+CP-001,"Fishmeal, Peru 65% protein","global (CIF, World Bank series)",1580.81,USD/t,2025-01,COST-27,general,Medium,"World Bank Pink Sheet via IndexMundi. About USD 2,430 per t protein."
+CP-002,"Fishmeal, Peru 65% protein",global (CIF),1688.19,USD/t,2025-06,COST-27,general,Medium,
+CP-003,"Fishmeal, Peru 65% protein",global (CIF),1794.06,USD/t,2025-11,COST-27,general,Medium,"Prior lead said USD 1,600/t in Nov 2025 (unsourced); the World Bank series says 1,794. The lead may have been a Vietnamese domestic or lower-grade price; unverified."
+CP-004,"Fishmeal, Peru 65% protein",global (CIF),1836.55,USD/t,2026-03,COST-27,general,Medium,"Latest month in series. = about USD 2,830 per t protein. +16% vs Jan 2025."
+CP-005,"Fishmeal, Vietnamese domestic by grade (55/60/65%)",VN domestic wholesale,not found,VND/kg,2025-2026,,VN-direct,Low,"Gap. Search budget exhausted. Cheapest fix: Vietnam Feed Association, AgroMonitor weekly feed report, or quotes from Kien Giang / Ca Mau fishmeal plants."
+CP-006,"Soybean meal, Argentine 45/46%",global (CIF Rotterdam),368.00,USD/t,2025-01,COST-28,general,Medium,
+CP-007,"Soybean meal, Argentine 45/46%",global (CIF Rotterdam),335.00,USD/t,2025-07,COST-28,general,Medium,Low point of the series.
+CP-008,"Soybean meal, Argentine 45/46%",global (CIF Rotterdam),411.25,USD/t,2025-11,COST-28,general,Medium,
+CP-009,"Soybean meal, Argentine 45/46%",global (CIF Rotterdam),403.75,USD/t,2026-03,COST-28,general,Medium,= about USD 880 per t protein. VN imports mainly from Argentina/Brazil/US; VN CIF price not found.
+CP-010,"Soybean meal, VN import CIF and domestic wholesale",VN import CIF / VN domestic wholesale,not found,USD/t; VND/kg,2025-2026,COST-35,VN-direct,Low,"Gap for price. Volumes: VN SBM imports 5.7 Mt (MY2025/26 forecast), consumption 7.4 Mt (USDA GAIN VM2026-0006)."
+CP-011,"Maize (corn), US No.2 yellow",global (FOB US Gulf),214.44,USD/t,2025-01,COST-29,general,Medium,
+CP-012,"Maize (corn), US No.2 yellow",global (FOB US Gulf),212.69,USD/t,2026-03,COST-29,general,Medium,
+CP-013,"Maize (corn), all origins",VN import CIF (unit value),251,USD/t,2026-H1,COST-34,VN-direct,Medium,"Derived: 6.8 Mt for about USD 1.71 bn (customs data via press). June 2026: 258. Brazil 247, Argentina 252, India 252 (Jan-May). Volume +53% y/y."
+CP-014,"Soybeans, US",global (CIF Rotterdam),410.83,USD/t,2025-01,COST-31,general,Medium,
+CP-015,"Soybeans, US",global (CIF Rotterdam),472.50,USD/t,2026-03,COST-31,general,Medium,Raw material benchmark for tofu/soy protein.
+CP-016,"Urea, bulk",global (FOB Black Sea series),472.00,USD/t,2026-02,COST-30,general,Medium,
+CP-017,"Urea, bulk",global (FOB Black Sea series),725.63,USD/t,2026-03,COST-30,general,Medium,"+54% in one month, linked in press to Middle East conflict and oil prices. Nitrogen source for fermentation."
+CP-018,"Urea, Phu My",VN domestic wholesale,553100,VND per 50 kg bag,2026-03,COST-33,VN-direct,Medium,"= 11,062 VND/kg, about USD 425/t. Press also quotes world urea USD 674/t in March 2026 (different series from COST-30)."
+CP-019,Raw sugar (ISA),global (FOB Caribbean),0.40,USD/kg,2025-01,COST-32,general,Medium,Fermentable carbon benchmark.
+CP-020,Raw sugar (ISA),global (FOB Caribbean),0.33,USD/kg,2026-03,COST-32,general,Medium,= USD 330/t. Proxy for sugar-based carbon; VN cassava starch/glucose prices not found this wave (see FEEDSTOCK agent).
+CP-021,"Cassava native starch, cassava chips, glucose syrup, molasses, ammonium sulfate",VN domestic,not found,VND/kg,2025-2026,,VN-direct,Low,Gap. Thai Tapioca Starch Association weekly page returned errors. FEEDSTOCK agent may hold cassava prices.
+CP-022,Paddy rice IR50404,VN domestic farm-gate,5326,VND/kg,2026-03,COST-33,VN-direct,Medium,"An Giang. Milled rice 5% broken 14,000 VND/kg. Broken rice is a possible carbon source."
+CP-023,"Compound feed, market hog",VN domestic retail,360000 to 370000,VND per bag,2026-03,COST-33,VN-direct,Low,"Bag size not stated (commonly 25 kg, which would give about 14,400-14,800 VND/kg). Poultry feed 260,000-370,000 VND/bag, +2-5% since Jan 2026."
+CP-024,Live hog (liveweight),VN domestic farm-gate,65000,VND/kg,2026-04,COST-35,VN-direct,Medium,USDA GAIN VM2026-0006.
+CP-025,Soy protein isolate and other protein substances (HS 350400),VN import (unit value),9.16,USD/kg,2023,COST-36,VN-direct,Low,"Import value USD 22.18 M (reliable). Quantity 2,421 t looks imputed by UN Comtrade (identical unit value for every partner), so unit value is weak. HS 350400 mixes peptones, hydrolysates and isolates."
+CP-026,Protein concentrates and textured protein substances (HS 210610),VN import (unit value),5.90,USD/kg,2023,COST-37,VN-direct,Low,"Import value USD 33.98 M; USA 46%, China 27%. Quantity 5,763 t appears imputed. Includes nutrition premixes, so not a clean TVP price."
+CP-027,Wheat gluten (HS 110900),VN import (unit value),2.52,USD/kg,2023,COST-38,VN-direct,Low,"Import value USD 31.06 M; China 59%. Quantity 12,337 t appears imputed. Gluten is the base of Vietnamese mi can / vegetarian mock meat."
+CP-028,Pea protein isolate,VN import / global,not found,USD/kg,2025-2026,,general,Low,"Gap. Cheapest fix: UN Comtrade bulk download of 2024-2025 VN imports at HS 8-digit, or distributor quotes (e.g., Roquette, Yantai Shuangta)."
+CP-029,"Pork lean (thit nac, C.P brand, tray)","VN retail (Bach Hoa Xanh online, HCMC)",132000,VND/kg,2026-09-23,COST-39,VN-direct,Medium,"Observed promotional price (-4%). At 19-21 g protein/100 g = 62,900-69,500 VND per 100 g protein."
+CP-030,"Pork leg (thit dui, C.P)",VN retail (BHX online),115000,VND/kg,2026-09-23,COST-39,VN-direct,Medium,"At 18-20 g protein = 57,500-63,900 VND per 100 g protein."
+CP-031,"Pork belly (ba roi, C.P)",VN retail (BHX online),149000,VND/kg,2026-09-23,COST-39,VN-direct,Medium,High fat; not a protein benchmark.
+CP-032,Chicken breast fillet with skin,VN retail (BHX online),90900,VND/kg,2026-09-23,COST-40,VN-direct,Medium,"At 20-23 g protein = 39,500-45,500 VND per 100 g protein."
+CP-033,Chicken thigh meat (ma dui ga),VN retail (BHX online),79210,VND/kg,2026-09-23,COST-40,VN-direct,Medium,"At 17-19 g protein = 41,700-46,600 VND per 100 g protein."
+CP-034,Chicken eggs (box of 10),VN retail (BHX online),2400,VND per egg,2026-09-23,COST-41,VN-direct,Medium,"At 6-7 g protein per egg = 34,300-40,000 VND per 100 g protein. Native-chicken eggs 4,500 VND/egg; duck 3,200-3,300."
+CP-035,Pangasius (ca tra/basa) fillet,VN retail,not found,VND/kg,2025-2026,,VN-direct,Low,Gap. BHX fish page gave no data. Cheapest fix: VASEP raw pangasius price bulletin or a retail check.
+CP-036,White tofu (Coop Select),"VN retail (Co.opmart, HCMC, field audit)",36429,VND/kg,2026-09 (16 or 20 Sep),COST-42,VN-direct,Medium,"Field record P130. Label 9.3 g protein/100 g = 39,200 VND per 100 g protein. Other tofu SKUs 47,600 VND/kg (Ichiban momen, 8.92 g) = 53,300; label protein varies 3.8-9.3 g/100 g."
+CP-037,Dried soy chops analogue (An Nhien),"VN retail (HCMC, field audit)",326667,VND/kg,2026-09,COST-42,VN-direct,Medium,"Field record P086. Label 64 g protein/100 g = 51,000 VND per 100 g protein."
+CP-038,"Plant-based burger patty (Unconventional, imported brand)","VN retail (HCMC, field audit)",813636,VND/kg,2026-09,COST-42,VN-direct,Medium,"Field record P153. Label 15 g protein = about 542,000 VND per 100 g protein; about 10x meat."

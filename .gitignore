@@ -10,3 +10,6 @@ playwright-report/
 test-results/
 *.sqlite*
 .DS_Store
+src/generated/
+public/data/
+public/downloads/

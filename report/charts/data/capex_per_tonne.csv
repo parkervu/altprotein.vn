@@ -1,0 +1,6 @@
+case,usd_per_annual_t_low,usd_per_annual_t_high,basis,source_ids
+Parity threshold for Vietnamese fungal feed protein,6000,6000,our estimate,
+Vietnamese assumption (cost stack A),8000,20000,assumption with localisation savings,
+Bacterial SCP from off-gas (Vlaeminck 2023),16000,16000,dry product,COST-44
+Mycoprotein (Risner 2023),22800,22800,dry product,COST-43
+"Cultivated meat, perfusion (Humbird 2021)",96000,96000,wet cells,COST-47

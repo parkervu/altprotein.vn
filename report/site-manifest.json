@@ -1,0 +1,1523 @@
+{
+ "title": "Alternative protein in Vietnam: a supply-side scoping study",
+ "publisher": "AltProtein Vietnam",
+ "edition": "Edition 1.1, September 2026 (edition 1.0 plus Part V: Futures 2030 to 2050)",
+ "languages": {
+  "default": "en",
+  "available": [
+   "en",
+   "vi"
+  ],
+  "vi_pages": [
+   "front-exec-summary-vi"
+  ],
+  "bilingual_pages": [
+   "app-s-glossary"
+  ]
+ },
+ "pages": [
+  {
+   "id": "front-cover",
+   "title": "Alternative protein in Vietnam: a supply-side scoping study",
+   "short_title": "Home",
+   "section": "front",
+   "part": null,
+   "order": 1,
+   "path": "content/00-front/front-cover.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "policy",
+    "startups",
+    "manufacturers",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 2,
+   "summary": "A public, evidence-tagged scoping study of Vietnam's capacity to produce alternative proteins for food and feed, written for investors, policy makers, startups, manufacturers, research bodies and international organisations."
+  },
+  {
+   "id": "front-how-to-read",
+   "title": "How to read this report",
+   "short_title": "How to read",
+   "section": "front",
+   "part": null,
+   "order": 2,
+   "path": "content/00-front/front-how-to-read.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "policy",
+    "startups",
+    "manufacturers",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 5,
+   "summary": "What the report covers, how it is organised, what the evidence tags, confidence levels and (in Part V) foresight tags mean, and the conventions for numbers, names and corrections."
+  },
+  {
+   "id": "front-exec-summary",
+   "title": "Executive summary",
+   "short_title": "Summary",
+   "section": "front",
+   "part": null,
+   "order": 3,
+   "path": "content/00-front/front-exec-summary.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "policy",
+    "startups",
+    "manufacturers",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 12,
+   "summary": "Vietnam's case for alternative protein is a supply case: it makes animal protein at scale on imported plant protein. It is rich in carbohydrate, fermentation skills and feed buyers, and short of protein ingredients, pilot capacity, rules for new foods and venture capital. Near-term opportunities are domestic textured plant protein and functional microbial ingredients for aquafeed; the main public levers are a new-food clause in the Food Safety Law expected before the National Assembly in late 2026, two feed-list fixes and shared pilot capacity. Looking to 2050, soybean-meal need rises from 7.2 Mt to about 10.4 Mt on trend; feed efficiency cuts it about twice as much as alternative protein; and nine no-regret moves pay off in all four 2050 scenarios."
+  },
+  {
+   "id": "front-exec-summary-vi",
+   "title": "Tóm tắt báo cáo",
+   "short_title": "Tóm tắt (Tiếng Việt)",
+   "section": "front",
+   "part": null,
+   "order": 4,
+   "path": "content/00-front/front-exec-summary-vi.md",
+   "lang": "vi",
+   "audiences": [
+    "investors",
+    "policy",
+    "startups",
+    "manufacturers",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 13,
+   "summary": "Lý do Việt Nam cần protein thay thế nằm ở phía cung: Việt Nam sản xuất đạm động vật quy mô lớn nhưng dựa vào đạm thực vật nhập khẩu. Việt Nam dồi dào tinh bột, có kỹ năng lên men và nhiều người mua thức ăn chăn nuôi, nhưng thiếu nguyên liệu đạm, cơ sở thử nghiệm, quy định cho thực phẩm mới và vốn mạo hiểm. Cơ hội gần nhất là đạm thực vật tạo cấu trúc sản xuất trong nước và phụ gia vi sinh chức năng cho thức ăn thủy sản; đòn bẩy chính sách quan trọng nhất là một điều khoản về thực phẩm mới trong Luật An toàn thực phẩm sửa đổi (dự kiến trình Quốc hội cuối năm 2026), hai điều chỉnh danh mục thức ăn chăn nuôi và năng lực lên men thử nghiệm dùng chung. Nhìn tới năm 2050, nhu cầu khô đậu tương tăng từ 7,2 lên khoảng 10,4 triệu tấn nếu giữ xu hướng hiện nay; mức giảm nhờ nâng hiệu quả sử dụng thức ăn lớn gấp khoảng hai lần mức giảm nhờ protein thay thế; và chín biện pháp không hối tiếc có lợi trong cả bốn kịch bản năm 2050."
+  },
+  {
+   "id": "front-at-a-glance",
+   "title": "At a glance",
+   "short_title": "At a glance",
+   "section": "front",
+   "part": null,
+   "order": 5,
+   "path": "content/00-front/front-at-a-glance.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "policy",
+    "startups",
+    "manufacturers",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 6,
+   "summary": "The numbers that frame alternative protein in Vietnam, today and to 2050, on one page, with links to the chapters behind them."
+  },
+  {
+   "id": "ch01-why-vietnam",
+   "title": "Why Vietnam: a protein-processing economy built on imported plant protein",
+   "short_title": "Why Vietnam",
+   "section": "report",
+   "part": "I. The case",
+   "order": 1,
+   "path": "content/01-report/ch01-why-vietnam.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "policy",
+    "startups",
+    "manufacturers",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 14,
+   "summary": "Vietnam produces and exports animal protein at scale, but the plant protein that feeds it is almost entirely imported. That structural gap, not climate or consumer trends, is the strongest supply-side case for alternative protein in Vietnam."
+  },
+  {
+   "id": "ch02-asset-map",
+   "title": "What Vietnam has: raw materials and side streams",
+   "short_title": "Asset map",
+   "section": "report",
+   "part": "I. The case",
+   "order": 2,
+   "path": "content/01-report/ch02-asset-map.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "manufacturers",
+    "research",
+    "policy"
+   ],
+   "reading_time_min": 15,
+   "summary": "Vietnam is rich in fermentable carbohydrate (cassava, rice, sugar) and poor in protein-rich side streams. The carbohydrate is mostly already traded, often to China, and nobody measures the residues. The asset map points to microbial conversion of carbohydrate with added nitrogen, sited where the residues are made."
+  },
+  {
+   "id": "ch03-industrial-base",
+   "title": "The industrial base: fermentation, feed and food processing",
+   "short_title": "Industrial base",
+   "section": "report",
+   "part": "I. The case",
+   "order": 3,
+   "path": "content/01-report/ch03-industrial-base.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "manufacturers",
+    "policy",
+    "international"
+   ],
+   "reading_time_min": 13,
+   "summary": "Vietnam has large, modern feed, food and brewing industries, but its aerobic fermentation capacity is captive inside three amino-acid makers, and there is no food-grade contract fermentation, open pilot plant, protein-isolate plant or domestic textured-protein extruder. A new venture can borrow feed-mill trial capacity, frozen-food co-packers and GMP-trained people, but must bring its own process equipment or negotiate with an incumbent."
+  },
+  {
+   "id": "ch04-alt-protein-today",
+   "title": "The alternative-protein economy today",
+   "short_title": "Alt protein today",
+   "section": "report",
+   "part": "I. The case",
+   "order": 4,
+   "path": "content/01-report/ch04-alt-protein-today.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "manufacturers",
+    "policy",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 15,
+   "summary": "Vietnam's real non-animal protein economy is incumbent: soy milk, tofu and industrial đồ chay made by meat and frozen-food processors. Most of it is low in protein, and every locally made high-protein product runs on imported textured soy or wheat gluten, mostly from China. Modern plant-based brands are nearly absent. The most advanced alternative-protein market is feed, where insect meal is already sold and Chinese microbial protein is already imported."
+  },
+  {
+   "id": "ch05-rules",
+   "title": "Rules of the game: routes to market, incentives and reforms",
+   "short_title": "Rules",
+   "section": "report",
+   "part": "II. The conditions",
+   "order": 5,
+   "path": "content/01-report/ch05-rules.md",
+   "lang": "en",
+   "audiences": [
+    "policy",
+    "investors",
+    "startups",
+    "manufacturers",
+    "international"
+   ],
+   "reading_time_min": 17,
+   "summary": "Vietnam has no novel-food gate: new protein foods enter through self-declaration, but under legal uncertainty and with no way to get an ingredient positively cleared. Precision-fermented proteins probably count as GMO products. Feed is more open: insects, duckweed, algae and yeasts are already on the livestock feed list. A new Food Safety Law goes to the National Assembly in October 2026, a one-off window to add a proportionate new-food procedure."
+  },
+  {
+   "id": "ch06-knowledge-talent",
+   "title": "Knowledge, talent and shared infrastructure",
+   "short_title": "Knowledge and talent",
+   "section": "report",
+   "part": "II. The conditions",
+   "order": 6,
+   "path": "content/01-report/ch06-knowledge-talent.md",
+   "lang": "en",
+   "audiences": [
+    "research",
+    "policy",
+    "international",
+    "startups",
+    "investors"
+   ],
+   "reading_time_min": 12,
+   "summary": "Vietnam's research base sits next to alternative protein rather than inside it: strong in aquafeed trials, yeast protein expression, stem-cell culture, koji genetics and microalgae; near zero in texturisation, mycoprotein, precision fermentation and food cell lines. Its novel-food research intensity is about a quarter to a third of Thailand's. The binding gap is shared infrastructure: no open pilot fermentation, no food extrusion line and no protein-digestibility testing."
+  },
+  {
+   "id": "ch07-capital",
+   "title": "Capital",
+   "short_title": "Capital",
+   "section": "report",
+   "part": "II. The conditions",
+   "order": 7,
+   "path": "content/01-report/ch07-capital.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "policy",
+    "international"
+   ],
+   "reading_time_min": 11,
+   "summary": "Only one alternative-protein deal in Vietnam has exceeded USD 5 million: Entobel's insect-meal plant, financed by local private equity, a small development-finance ticket and a seafood exporter's offtake. Agritech venture capital in Vietnam was about USD 1 million in 2025. New state venture funds exist but are small. Globally, alternative-protein investment is at a cyclical low and has shifted towards fermentation and ingredients."
+  },
+  {
+   "id": "ch08-regional",
+   "title": "Vietnam in the region",
+   "short_title": "Region",
+   "section": "report",
+   "part": "II. The conditions",
+   "order": 8,
+   "path": "content/01-report/ch08-regional.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "policy",
+    "startups",
+    "international",
+    "manufacturers"
+   ],
+   "reading_time_min": 12,
+   "summary": "Vietnam ranks near the top in Asia on production cost and at the bottom on rules. Singapore approves, Thailand and Korea have routes but few approvals, and China builds at scale. Vietnam already supplies the region's bio-industries with cassava starch, but the starch it exports is turned into fermentation sugar in China. The regional lesson is that a published procedure with a fixed timeline matters more than cheap labour."
+  },
+  {
+   "id": "ch09-economics",
+   "title": "Economics: what it costs and what it must beat",
+   "short_title": "Economics",
+   "section": "report",
+   "part": "II. The conditions",
+   "order": 9,
+   "path": "content/01-report/ch09-economics.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "manufacturers",
+    "policy",
+    "research"
+   ],
+   "reading_time_min": 14,
+   "summary": "Power, labour, land and water are cheap in Vietnam, but they are a small share of fermentation cost; capital is most of it. On indicative numbers, fungal feed protein made in Vietnam costs USD 4,050 to 14,700 per tonne of protein, against USD 2,625 to 3,846 for fishmeal protein and about USD 880 for soybean meal protein. It can compete as a functional aquafeed ingredient, rarely as bulk protein, and never against soy. Textured plant protein costs a small fraction of the retail price of meat protein, so manufacturing cost is not what holds plant-based foods back."
+  },
+  {
+   "id": "ch10-technology-fit",
+   "title": "Technology fit: which platforms suit Vietnam",
+   "short_title": "Technology fit",
+   "section": "report",
+   "part": "III. The opportunity",
+   "order": 10,
+   "path": "content/01-report/ch10-technology-fit.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "manufacturers",
+    "research",
+    "policy",
+    "international"
+   ],
+   "reading_time_min": 13,
+   "summary": "We test ten technology families against seven Vietnamese conditions: feedstock, industrial base, science readiness, route to market, buyers, competition and capital intensity. Textured plant protein and functional microbial ingredients for aquafeed fit best today. Local legume and rice proteins, fungal foods and duckweed feed are worth proving. Precision fermentation fits only as high-value, low-dose products made under contract. Cultivated meat and seafood are research topics for this decade. Insects are a benchmark, not a recommendation."
+  },
+  {
+   "id": "ch11-plays",
+   "title": "Ten plays and six public goods",
+   "short_title": "Plays",
+   "section": "report",
+   "part": "III. The opportunity",
+   "order": 11,
+   "path": "content/01-report/ch11-plays.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "manufacturers",
+    "policy",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 18,
+   "summary": "We turn the evidence into ten concrete plays, each with what must be true, the tests that would kill it, first customers and a time horizon, and score them on seven criteria with weights that each audience can change. Domestic textured plant protein, functional microbial feed ingredients and a cassava-to-fermentation-sugar hub lead under almost every weighting. Shared pilot and tolling capacity is the enabler most of the others need. Bulk fishmeal replacement is marginal, precision fermentation fits only as contract-made niche products, and cultivated seafood is research. Six public goods would lower the cost of every play."
+  },
+  {
+   "id": "ch12-policy-options",
+   "title": "Policy options",
+   "short_title": "Policy options",
+   "section": "report",
+   "part": "III. The opportunity",
+   "order": 12,
+   "path": "content/01-report/ch12-policy-options.md",
+   "lang": "en",
+   "audiences": [
+    "policy",
+    "international",
+    "research",
+    "investors"
+   ],
+   "reading_time_min": 14,
+   "summary": "Most of what would move alternative protein forward in Vietnam is cheap: a one-line delegation clause in the Food Safety Law expected before the National Assembly in late 2026, a joint note on precision-fermented proteins, and two feed-list fixes. The expensive items are shared infrastructure: a pilot fermentation line and trial and testing capacity. We set out 33 options, rank the 24 that are current by impact, effort and timing, and name the owning agency and the instrument to amend for each."
+  },
+  {
+   "id": "ch13-outlook",
+   "title": "Outlook to 2035",
+   "short_title": "Outlook",
+   "section": "report",
+   "part": "IV. Looking ahead",
+   "order": 13,
+   "path": "content/01-report/ch13-outlook.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "policy",
+    "international",
+    "startups",
+    "manufacturers",
+    "research"
+   ],
+   "reading_time_min": 11,
+   "summary": "Almost every rule change that matters for alternative protein in Vietnam lands in 2025 to 2027, so the direction of the next decade will be visible within about 18 months. The state targets 8.5 to 10.5 Mt more industrial feed a year by 2030 than in 2024, against a flat global fishmeal supply. We sketch three plausible states for 2035 (import price-taker, feed-first domestic build-out, regulated regional hub) with the signposts that would show which is unfolding. These are scenarios, not forecasts."
+  },
+  {
+   "id": "ch14-unknowns",
+   "title": "What we do not know, and who can tell us",
+   "short_title": "Unknowns",
+   "section": "report",
+   "part": "IV. Looking ahead",
+   "order": 14,
+   "path": "content/01-report/ch14-unknowns.md",
+   "lang": "en",
+   "audiences": [
+    "research",
+    "policy",
+    "investors",
+    "startups",
+    "international",
+    "manufacturers"
+   ],
+   "reading_time_min": 8,
+   "summary": "Desk research has reached diminishing returns. The twenty unknowns that matter most can mostly be closed by a letter to a ministry, a phone call to a feed mill or a query to customs. We list them in priority order, with the play each one unblocks and who to ask. The full register holds 127 open questions and 142 recorded disagreements between sources."
+  },
+  {
+   "id": "ch15-drivers-2050",
+   "title": "Drivers to 2050: what is near-certain, what is not",
+   "short_title": "Drivers to 2050",
+   "section": "report",
+   "part": "V. Futures 2030 to 2050",
+   "order": 15,
+   "path": "content/01-report/ch15-drivers-2050.md",
+   "lang": "en",
+   "audiences": [
+    "policy",
+    "investors",
+    "international",
+    "research",
+    "manufacturers",
+    "startups"
+   ],
+   "reading_time_min": 14,
+   "summary": "Some forces acting on Vietnam's protein supply to 2050 are close to certain: an ageing workforce, fewer smallholder livestock farms, endemic pig disease, tight agricultural emission caps, a sinking and saltier Mekong Delta, and continued dependence on imported soy and maize. Others are open. Two external uncertainties matter most for alternative protein: whether feed-protein imports come under chronic stress, and whether Asia's fermentation industry stays an open market or falls under Chinese price dominance. They become the axes of the 2050 scenarios in chapter 18.",
+   "new_in_edition": "1.1"
+  },
+  {
+   "id": "ch16-frontier-technology",
+   "title": "Frontier technology: which windows open for Vietnam, and when",
+   "short_title": "Frontier technology",
+   "section": "report",
+   "part": "V. Futures 2030 to 2050",
+   "order": 16,
+   "path": "content/01-report/ch16-frontier-technology.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "research",
+    "policy",
+    "manufacturers",
+    "international"
+   ],
+   "reading_time_min": 16,
+   "summary": "The frontier technologies that could reshape protein supply by 2050 (protein from hydrogen and CO2, AI-designed strains, precision fermentation, cellulosic sugar, cultivated cells) all work in the laboratory. None has yet shown the cost fall that solar power did, and several flagship plants closed in 2025 and 2026. For Vietnam the windows open in sequence: AI-assisted feed enzymes and single-cell feed protein now to 2030, contract precision fermentation and food mycoprotein in 2030 to 2035, residue and one-carbon sugar in the 2040s, and bulk protein from power not before about 2040 to 2045, and only if five conditions align.",
+   "new_in_edition": "1.1"
+  },
+  {
+   "id": "ch17-protein-balance-2050",
+   "title": "The protein balance to 2050: how much feed protein Vietnam will need",
+   "short_title": "Protein balance 2050",
+   "section": "report",
+   "part": "V. Futures 2030 to 2050",
+   "order": 17,
+   "path": "content/01-report/ch17-protein-balance-2050.md",
+   "lang": "en",
+   "audiences": [
+    "policy",
+    "investors",
+    "manufacturers",
+    "research",
+    "international",
+    "startups"
+   ],
+   "reading_time_min": 16,
+   "summary": "On trend diets and trend efficiency, Vietnam's soybean-meal need rises from 7.2 Mt (2025) to about 10.4 Mt (2050), nearly all imported, and the country already farms about 4 million hectares abroad for feed. Across four scenarios the 2050 range is 7.0 to 11.7 Mt. Better feed conversion and lower soybean-meal inclusion cut 2050 imports about twice as much as a large alternative-protein build-out. Aquafeed is short of omega-3 more than of protein. The published baseline and official targets stop at 2030 to 2035; our 2040 and 2050 values are estimates from a reproducible model.",
+   "new_in_edition": "1.1"
+  },
+  {
+   "id": "ch18-scenarios-2050",
+   "title": "Four worlds in 2050: scenarios for Vietnam's protein supply",
+   "short_title": "Scenarios 2050",
+   "section": "report",
+   "part": "V. Futures 2030 to 2050",
+   "order": 18,
+   "path": "content/01-report/ch18-scenarios-2050.md",
+   "lang": "en",
+   "audiences": [
+    "policy",
+    "investors",
+    "international",
+    "startups",
+    "manufacturers",
+    "research"
+   ],
+   "reading_time_min": 15,
+   "summary": "We cross two external uncertainties, whether imported feed protein comes under chronic stress and whether Asia's fermentation market stays open or falls under Chinese price dominance, to give four internally consistent worlds for 2050: Regional workshop, Comfortable price-taker, Security build-out and Squeezed importer. Each extends one of the 2035 scenarios in chapter 13 and comes with signposts. Stress-testing the sixteen plays of chapter 11 against them shows that the public infrastructure plays hold in every world, most business plays hold with conditions, and two (bulk fishmeal replacement and high-value precision fermentation) are bets that need signposts. These are scenarios, not forecasts.",
+   "new_in_edition": "1.1"
+  },
+  {
+   "id": "ch19-vision-2050",
+   "title": "Vietnam 2050: a vision for a measured, efficient and diversified protein supply",
+   "short_title": "Vision 2050",
+   "section": "report",
+   "part": "V. Futures 2030 to 2050",
+   "order": 19,
+   "path": "content/01-report/ch19-vision-2050.md",
+   "lang": "en",
+   "audiences": [
+    "policy",
+    "international",
+    "investors",
+    "research",
+    "manufacturers",
+    "startups"
+   ],
+   "reading_time_min": 14,
+   "summary": "A normative vision, clearly labelled as such: by 2050 Vietnam knows its protein balance, needs about 7 to 9 Mt (7.0 to 8.8 Mt) of imported soybean meal rather than 10.4 Mt on trend, makes 4 to 8% of its high-protein feed protein from microbes grown on Vietnamese carbohydrate and residues, increasingly with clean power, sources 15 to 50% of its aquafeed omega-3 from non-marine oils, and holds a regional role in contract fermentation and aquafeed ingredients. The vision is anchored on Vietnam's own 2050 plans for power, hydrogen and emissions and on what other countries have actually achieved. Backcast milestones are tied to the five-year plans from 2026 to 2050.",
+   "new_in_edition": "1.1"
+  },
+  {
+   "id": "ch20-robust-moves",
+   "title": "Robust moves: what to do now that pays off in any 2050",
+   "short_title": "Robust moves",
+   "section": "report",
+   "part": "V. Futures 2030 to 2050",
+   "order": 20,
+   "path": "content/01-report/ch20-robust-moves.md",
+   "lang": "en",
+   "audiences": [
+    "policy",
+    "international",
+    "investors",
+    "manufacturers",
+    "startups",
+    "research"
+   ],
+   "reading_time_min": 13,
+   "summary": "Testing 21 candidate moves against the four 2050 worlds gives nine no-regret moves that pay off in all of them: a national protein and feed balance, a feed-efficiency and formulation programme, new-food and new-feed routes with deadlines, shared pilot and trial capacity, a protein-quality laboratory with an open price series, residue-carbon rules, an omega-3 sourcing plan, climate-proof siting and process-engineering skills. Six options are cheap to hold, four bets should wait for named signposts, and two hedges limit the damage of bad worlds. Most no-regret moves are public, cheap and can start in 2026 to 2028.",
+   "new_in_edition": "1.1"
+  },
+  {
+   "id": "brief-investors",
+   "title": "Brief for investors",
+   "short_title": "Investors",
+   "section": "brief",
+   "part": null,
+   "order": 1,
+   "path": "content/02-briefs/brief-investors.md",
+   "lang": "en",
+   "audiences": [
+    "investors"
+   ],
+   "reading_time_min": 8,
+   "summary": "For venture capital, impact investors, private equity and development finance. The investable near-term theses are B2B: domestic textured plant protein and functional microbial ingredients for aquafeed. Deal history is one insect-meal plant. Underwrite capital intensity and rule risk, price against Chinese imports, and plan for trade-sale exits."
+  },
+  {
+   "id": "brief-policy",
+   "title": "Brief for policy makers",
+   "short_title": "Policy makers",
+   "section": "brief",
+   "part": null,
+   "order": 2,
+   "path": "content/02-briefs/brief-policy.md",
+   "lang": "en",
+   "audiences": [
+    "policy"
+   ],
+   "reading_time_min": 8,
+   "summary": "For Vietnamese ministries, the National Assembly, provinces, and foreign governments and ASEAN bodies. The case is protein supply security and industrial value. The cheapest high-value steps are a new-food clause in the Food Safety Law expected before the National Assembly in late 2026, a note on precision-fermented proteins and two feed-list fixes. The largest gap public money can fill is shared pilot and testing capacity."
+  },
+  {
+   "id": "brief-startups",
+   "title": "Brief for startups and founders",
+   "short_title": "Startups",
+   "section": "brief",
+   "part": null,
+   "order": 3,
+   "path": "content/02-briefs/brief-startups.md",
+   "lang": "en",
+   "audiences": [
+    "startups"
+   ],
+   "reading_time_min": 9,
+   "summary": "For founders in Vietnam and the region. Start where the legal route is already clear and a named buyer exists: textured plant protein, listed feed materials, koji. Sell function or import substitution, not novelty. Build trial data before plants, borrow capacity (co-packers, feed mills, tolling), and plan fermentation scale-up in Singapore, Thailand or China until Vietnam has an open pilot line."
+  },
+  {
+   "id": "brief-manufacturers",
+   "title": "Brief for food and feed manufacturers",
+   "short_title": "Manufacturers",
+   "section": "brief",
+   "part": null,
+   "order": 4,
+   "path": "content/02-briefs/brief-manufacturers.md",
+   "lang": "en",
+   "audiences": [
+    "manufacturers"
+   ],
+   "reading_time_min": 8,
+   "summary": "For Vietnamese and multinational food, beverage and feed companies. Your protein inputs are mostly imported, your vegetarian lines already run on Chinese textured soy and gluten, and your aquafeed faces the highest fishmeal prices since at least 2020. The near-term options are to source domestic textured protein, trial functional microbial feed ingredients, and replace imported pea protein in plant drinks. You are the first customer every play needs."
+  },
+  {
+   "id": "brief-research",
+   "title": "Brief for universities and research institutes",
+   "short_title": "Research",
+   "section": "brief",
+   "part": null,
+   "order": 5,
+   "path": "content/02-briefs/brief-research.md",
+   "lang": "en",
+   "audiences": [
+    "research"
+   ],
+   "reading_time_min": 8,
+   "summary": "For Vietnamese universities, VAST, VAAS, FIRI and foreign research partners. Vietnam's research strengths sit next to alternative protein: aquafeed trials, yeast protein expression, stem-cell culture, koji genetics and microalgae. The gaps it is best placed to fill combine a Vietnamese raw material or species with a missing study. The binding constraint is shared infrastructure: pilot fermentation, food extrusion and protein-quality testing."
+  },
+  {
+   "id": "brief-international",
+   "title": "Brief for international organisations and development finance",
+   "short_title": "International",
+   "section": "brief",
+   "part": null,
+   "order": 6,
+   "path": "content/02-briefs/brief-international.md",
+   "lang": "en",
+   "audiences": [
+    "international"
+   ],
+   "reading_time_min": 8,
+   "summary": "For development agencies, DFIs, foundations, NGOs and foreign governments. Vietnam's alternative-protein frontier is held back by public goods rather than ideas: a novel-food procedure, feed-list clarity, trial and testing capacity, shared pilot fermentation and data. These are cheap relative to their effect and fit technical assistance, research grants and first-loss development finance."
+  },
+  {
+   "id": "app-a-method",
+   "title": "A. Method, evidence rules and limits",
+   "short_title": "A. Method",
+   "section": "appendix",
+   "part": null,
+   "order": 1,
+   "path": "content/03-appendices/app-a-method.md",
+   "lang": "en",
+   "audiences": [
+    "research",
+    "investors",
+    "policy",
+    "international",
+    "startups",
+    "manufacturers"
+   ],
+   "reading_time_min": 10,
+   "summary": "How the study was designed around six audiences, how two research waves and a retail audit were run, which tools were and were not available, how evidence was labelled and checked, how earlier drafts were used, and what the limits are. Section A.10 summarises the futures round added in edition 1.1; the full futures method is in Appendix U."
+  },
+  {
+   "id": "app-b-corrections",
+   "title": "B. What changed from earlier drafts",
+   "short_title": "B. Corrections",
+   "section": "appendix",
+   "part": null,
+   "order": 2,
+   "path": "content/03-appendices/app-b-corrections.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "policy",
+    "research",
+    "international",
+    "startups",
+    "manufacturers"
+   ],
+   "reading_time_min": 8,
+   "summary": "Earlier internal drafts of this project contained numbers and claims that this edition corrects. This appendix lists each one, what it was, what this edition uses, the source, and where the correction appears. Section B.5 lists the corrections that edition 1.1 makes to edition 1.0."
+  },
+  {
+   "id": "app-c-feedstocks",
+   "title": "C. Feedstock data sheets",
+   "short_title": "Feedstock data sheets",
+   "section": "appendix",
+   "part": null,
+   "order": 3,
+   "path": "content/03-appendices/app-c-feedstocks.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "manufacturers",
+    "research",
+    "policy",
+    "international"
+   ],
+   "reading_time_min": 40,
+   "summary": "One data sheet for each Vietnamese raw material and side stream that could feed an alternative-protein process: volume and how we got it, location, users, prices, composition, seasonality, competing uses, what it could become and what is still unknown."
+  },
+  {
+   "id": "app-d-retail-audit",
+   "title": "D. Retail formulation audit (Nha Trang and Ho Chi Minh City, September 2026)",
+   "short_title": "D. Retail formulation audit",
+   "section": "appendix",
+   "part": null,
+   "order": 4,
+   "path": "content/03-appendices/app-d-retail-audit.md",
+   "lang": "en",
+   "audiences": [
+    "manufacturers",
+    "startups",
+    "investors",
+    "research",
+    "policy"
+   ],
+   "reading_time_min": 35,
+   "summary": "What 186 plant-protein products on 11 Vietnamese shelves are made of, who makes them and where their protein comes from. Most of the shelf is low in protein, every protein-dense local product runs on imported soy protein or wheat gluten, and no Vietnamese textured soy protein plant was found."
+  },
+  {
+   "id": "app-e-directory",
+   "title": "E. Company and actor directory",
+   "short_title": "E. Directory",
+   "section": "appendix",
+   "part": null,
+   "order": 5,
+   "path": "content/03-appendices/app-e-directory.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "manufacturers",
+    "policy",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 30,
+   "summary": "A guided tour of the 97 companies and organisations in companies.csv, grouped by what they do, with location, scale signal, status and sources, followed by a dated timeline of Vietnamese alternative protein from 2015 to September 2026."
+  },
+  {
+   "id": "app-f-facilities",
+   "title": "F. Industrial facilities and capacity",
+   "short_title": "Facilities and capacity",
+   "section": "appendix",
+   "part": null,
+   "order": 6,
+   "path": "content/03-appendices/app-f-facilities.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "manufacturers",
+    "policy",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 30,
+   "summary": "Vietnam's fermentation, feed, soy, food-processing and starch plants: published capacities, a modelled estimate of installed fermentation volume, the 2025 to 2026 feed-industry consolidation, and what we could not find (contract fermentation, protein isolates, food-grade extrusion)."
+  },
+  {
+   "id": "app-g-regulation",
+   "title": "G. Regulatory register and routes to market",
+   "short_title": "G. Regulation",
+   "section": "appendix",
+   "part": null,
+   "order": 7,
+   "path": "content/03-appendices/app-g-regulation.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "policy",
+    "startups",
+    "manufacturers",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 50,
+   "summary": "The legal routes a new protein food or feed ingredient can take in Vietnam as of 23 September 2026: who owns what after the 2025 restructuring, food, GMO, feed and aquafeed rules, incentives, sandboxes, tariffs, a route-to-market table, foreign precedents and 25 policy options. This is not legal advice."
+  },
+  {
+   "id": "app-h-feed-market",
+   "title": "H. Feed and aquafeed market",
+   "short_title": "Feed and aquafeed market",
+   "section": "appendix",
+   "part": null,
+   "order": 8,
+   "path": "content/03-appendices/app-h-feed-market.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "manufacturers",
+    "policy",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 32,
+   "summary": "The feed-protein market a Vietnamese alternative protein would sell into: feed output and imports, aquafeed by species, fishmeal prices to August 2026, the displaceable fishmeal pool, the incumbent substitutes, trial evidence by species, buyer economics, the prices to beat and the Chinese import counterfactual."
+  },
+  {
+   "id": "app-i-costs",
+   "title": "I. Cost inputs and techno-economic benchmarks",
+   "short_title": "Costs and benchmarks",
+   "section": "appendix",
+   "part": null,
+   "order": 9,
+   "path": "content/03-appendices/app-i-costs.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "manufacturers",
+    "policy",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 32,
+   "summary": "What it costs to make protein in Vietnam: power, water, heat, labour, land, taxes and commodity prices as of 2026, retail protein prices per 100 g of protein, verified techno-economic benchmarks, a tropical cooling estimate, and two indicative cost stacks (fungal feed protein and textured soy protein) with every line's basis."
+  },
+  {
+   "id": "app-j-science",
+   "title": "J. State of the science by technology family",
+   "short_title": "J. Science",
+   "section": "appendix",
+   "part": null,
+   "order": 10,
+   "path": "content/03-appendices/app-j-science.md",
+   "lang": "en",
+   "audiences": [
+    "research",
+    "investors",
+    "startups",
+    "manufacturers",
+    "policy",
+    "international"
+   ],
+   "reading_time_min": 45,
+   "summary": "What the peer-reviewed evidence says in 2026 about each alternative-protein technology family, from plant proteins and fermentation to duckweed and cultivated seafood, with key numbers and DOIs, what each means for Vietnam, and a table of corrections to earlier claims."
+  },
+  {
+   "id": "app-k-research",
+   "title": "K. Research landscape and bibliometrics",
+   "short_title": "K. Research landscape",
+   "section": "appendix",
+   "part": null,
+   "order": 11,
+   "path": "content/03-appendices/app-k-research.md",
+   "lang": "en",
+   "audiences": [
+    "research",
+    "policy",
+    "international",
+    "investors",
+    "startups"
+   ],
+   "reading_time_min": 28,
+   "summary": "How much alternative-protein research Vietnam publishes, topic by topic and against its neighbours, which groups and institutions hold the relevant skills, who funds them, and the 11 research gaps Vietnam is well placed to fill."
+  },
+  {
+   "id": "app-l-labs-talent",
+   "title": "L. Pilot facilities, laboratories and talent",
+   "short_title": "L. Labs and talent",
+   "section": "appendix",
+   "part": null,
+   "order": 12,
+   "path": "content/03-appendices/app-l-labs-talent.md",
+   "lang": "en",
+   "audiences": [
+    "startups",
+    "investors",
+    "manufacturers",
+    "policy",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 21,
+   "summary": "Where a founder in Vietnam can pilot, test, run official feed trials, find land with incentives, hire graduates and buy equipment in 2026. No public food-grade pilot fermentation service and no amino-acid or digestibility testing service were found; the state feed-trial system was reorganised in 2025 and 2026."
+  },
+  {
+   "id": "app-m-capital",
+   "title": "M. Capital: deals, investors and funding programmes",
+   "short_title": "M. Capital",
+   "section": "appendix",
+   "part": null,
+   "order": 13,
+   "path": "content/03-appendices/app-m-capital.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "policy",
+    "international",
+    "manufacturers"
+   ],
+   "reading_time_min": 23,
+   "summary": "Every disclosed alternative-protein and adjacent agrifood deal linked to Vietnam, the size of Vietnamese venture and private equity markets, the Entobel financing template, global and regional investment trends, development finance, the new state venture funds, grants open in 2026, accelerators and exit routes."
+  },
+  {
+   "id": "app-n-regional",
+   "title": "N. Regional comparators and approvals",
+   "short_title": "N. Regional",
+   "section": "appendix",
+   "part": null,
+   "order": 14,
+   "path": "content/03-appendices/app-n-regional.md",
+   "lang": "en",
+   "audiences": [
+    "policy",
+    "investors",
+    "international",
+    "startups",
+    "manufacturers"
+   ],
+   "reading_time_min": 30,
+   "summary": "How Vietnam compares with Singapore, Thailand, Korea, China and other neighbours on novel-food rules, approvals, strategies, open pilot plants and trade, with the full GFI APAC x Hawkwood 'Where to Build' scores and our critique of them."
+  },
+  {
+   "id": "app-o-outlook",
+   "title": "O. Milestones and outlook data",
+   "short_title": "O. Outlook data",
+   "section": "appendix",
+   "part": null,
+   "order": 15,
+   "path": "content/03-appendices/app-o-outlook.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "policy",
+    "international",
+    "startups",
+    "manufacturers",
+    "research"
+   ],
+   "reading_time_min": 30,
+   "summary": "The dated calendar of laws, targets and events from 2025 to 2035, the outlook numbers behind the report's 2030 and 2035 view (population, feed targets, power, commodity prices and the fishmeal to soybean meal ratio), the three-scenario scaffold, and a tracker of signposts with sources and thresholds."
+  },
+  {
+   "id": "app-p-admin-map",
+   "title": "P. Administrative map after the 2025 reforms",
+   "short_title": "P. Admin map",
+   "section": "appendix",
+   "part": null,
+   "order": 16,
+   "path": "content/03-appendices/app-p-admin-map.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "manufacturers",
+    "policy",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 12,
+   "summary": "The 34 provincial-level units that replaced Vietnam's 63 on 1 July 2025, where the alternative-protein clusters now sit, the end of the district tier, the 2025 ministry mergers, and practical rules for reading older statistics and addresses."
+  },
+  {
+   "id": "app-q-open-questions",
+   "title": "Q. Open questions register",
+   "short_title": "Q. Open questions",
+   "section": "appendix",
+   "part": null,
+   "order": 17,
+   "path": "content/03-appendices/app-q-open-questions.md",
+   "lang": "en",
+   "audiences": [
+    "research",
+    "policy",
+    "investors",
+    "startups",
+    "manufacturers",
+    "international"
+   ],
+   "reading_time_min": 25,
+   "summary": "All 155 open questions left by the research, grouped by topic, with why each matters, the cheapest way to close it, who to ask, and its status. The twenty priorities are ranked in chapter 14."
+  },
+  {
+   "id": "app-r-disagreements",
+   "title": "R. Disagreements log",
+   "short_title": "R. Disagreements",
+   "section": "appendix",
+   "part": null,
+   "order": 18,
+   "path": "content/03-appendices/app-r-disagreements.md",
+   "lang": "en",
+   "audiences": [
+    "research",
+    "investors",
+    "policy",
+    "international",
+    "startups",
+    "manufacturers"
+   ],
+   "reading_time_min": 30,
+   "summary": "All 170 cases where sources disagree, with both claims and the position this report takes. We never average disagreeing numbers."
+  },
+  {
+   "id": "app-s-glossary",
+   "title": "S. Glossary (English and Vietnamese)",
+   "short_title": "S. Glossary",
+   "section": "appendix",
+   "part": null,
+   "order": 19,
+   "path": "content/03-appendices/app-s-glossary.md",
+   "lang": [
+    "en",
+    "vi"
+   ],
+   "audiences": [
+    "investors",
+    "policy",
+    "startups",
+    "manufacturers",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 18,
+   "summary": "172 terms used in the report, in English and Vietnamese, with short definitions in both languages, including 38 futures and foresight terms added in edition 1.1. Thuật ngữ song ngữ Anh - Việt dùng trong báo cáo."
+  },
+  {
+   "id": "app-t-sources",
+   "title": "T. Sources",
+   "short_title": "T. Sources",
+   "section": "appendix",
+   "part": null,
+   "order": 20,
+   "path": "content/03-appendices/app-t-sources.md",
+   "lang": "en",
+   "audiences": [
+    "research",
+    "investors",
+    "policy",
+    "international",
+    "startups",
+    "manufacturers"
+   ],
+   "reading_time_min": 60,
+   "summary": "All 1,275 sources behind the report (806 in edition 1.0 and 469 added by the futures round of edition 1.1), grouped by the research stream that found them. Each citation code in the text links here and to sources.csv."
+  },
+  {
+   "id": "app-u-futures-method",
+   "title": "U. Futures method: how Part V was built",
+   "short_title": "U. Futures method",
+   "section": "appendix",
+   "part": null,
+   "order": 21,
+   "path": "content/03-appendices/app-u-futures-method.md",
+   "lang": "en",
+   "audiences": [
+    "research",
+    "policy",
+    "international",
+    "investors",
+    "startups",
+    "manufacturers"
+   ],
+   "reading_time_min": 22,
+   "summary": "How the futures round behind Part V was designed, researched and checked: the ten questions it answers, the twelve research streams and their 469 sources, the foresight badges on every forward-looking claim, the two-axis scenario method, the stress test of plays and moves, the vision and backcasting method, and the limits of the work.",
+   "new_in_edition": "1.1"
+  },
+  {
+   "id": "app-v-frontier-tech",
+   "title": "V. Frontier technology: evidence, costs and windows",
+   "short_title": "V. Frontier technology",
+   "section": "appendix",
+   "part": null,
+   "order": 22,
+   "path": "content/03-appendices/app-v-frontier-tech.md",
+   "lang": "en",
+   "audiences": [
+    "investors",
+    "startups",
+    "research",
+    "policy",
+    "manufacturers",
+    "international"
+   ],
+   "reading_time_min": 32,
+   "summary": "The evidence and calculations behind chapter 16: an evidence card for each of eleven frontier routes, the energy, hydrogen, CO2 and cost arithmetic for protein from power in Vietnam, learning rates and cost paths, carbon prices and carbon cost per tonne of protein, AI and bio-design, approvals and capital, the research pipeline and the windows table. Every Vietnamese cost and window is our estimate from stated inputs, not a forecast.",
+   "new_in_edition": "1.1"
+  },
+  {
+   "id": "app-w-balance-model",
+   "title": "W. The protein and feed balance model",
+   "short_title": "W. Balance model",
+   "section": "appendix",
+   "part": null,
+   "order": 23,
+   "path": "content/03-appendices/app-w-balance-model.md",
+   "lang": "en",
+   "audiences": [
+    "research",
+    "policy",
+    "manufacturers",
+    "investors",
+    "international",
+    "startups"
+   ],
+   "reading_time_min": 25,
+   "summary": "The documentation behind chapter 17: what the protein and feed balance model covers, the published projections and targets it uses, its steps and parameters, the four scenarios, full results by scenario and year, the sensitivity test, sanity checks, a reality check against other countries, and how to rerun and extend it. Every value for 2030 to 2050 is our estimate from stated assumptions, not a forecast.",
+   "new_in_edition": "1.1"
+  },
+  {
+   "id": "app-x-drivers-signals",
+   "title": "X. Drivers, shocks, signals and wildcards to 2050",
+   "short_title": "X. Drivers and signals",
+   "section": "appendix",
+   "part": null,
+   "order": 24,
+   "path": "content/03-appendices/app-x-drivers-signals.md",
+   "lang": "en",
+   "audiences": [
+    "policy",
+    "investors",
+    "international",
+    "research",
+    "manufacturers",
+    "startups"
+   ],
+   "reading_time_min": 35,
+   "summary": "The evidence behind chapters 15 and 18: trade, disease, energy, demography and climate drivers to 2050, the choice of the two scenario axes, the 16 signposts with their September 2026 status, and full registers of 43 signals, 26 wildcards, 22 external forecasts and 17 past shocks.",
+   "new_in_edition": "1.1"
+  },
+  {
+   "id": "app-y-targets-hubs",
+   "title": "Y. Targets, benchmarks and places: the policy and spatial frame to 2050",
+   "short_title": "Y. Targets and hubs",
+   "section": "appendix",
+   "part": null,
+   "order": 25,
+   "path": "content/03-appendices/app-y-targets-hubs.md",
+   "lang": "en",
+   "audiences": [
+    "policy",
+    "international",
+    "investors",
+    "research",
+    "manufacturers",
+    "startups"
+   ],
+   "reading_time_min": 30,
+   "summary": "The evidence behind chapters 19 and 20: every official Vietnamese target relevant to protein supply from 2025 to 2050 and what the targets leave out, how protein and bioeconomy strategies abroad have fared, the map layers and six candidate hubs for a protein bioeconomy, and the full registers of the 22 normative vision milestones and the 21 robust moves.",
+   "new_in_edition": "1.1"
+  },
+  {
+   "id": "app-z-aquafeed-feedstock-futures",
+   "title": "Z. Aquafeed, marine ingredients and carbon feedstocks to 2050",
+   "short_title": "Z. Aquafeed and feedstocks 2050",
+   "section": "appendix",
+   "part": null,
+   "order": 26,
+   "path": "content/03-appendices/app-z-aquafeed-feedstock-futures.md",
+   "lang": "en",
+   "audiences": [
+    "manufacturers",
+    "investors",
+    "policy",
+    "startups",
+    "research",
+    "international"
+   ],
+   "reading_time_min": 28,
+   "summary": "The evidence behind the aquafeed and carbon-feedstock parts of chapters 16 and 17: fisheries targets, three aquaculture paths to 2050, trash-fish replacement, marine ingredients and omega-3, protein crops and climate, and whether residues, side streams and one-carbon feedstocks could supply the 1.32 Mt of glucose that the stretch scenario needs in 2050. All 2040 and 2050 values are our what-if estimates, not forecasts.",
+   "new_in_edition": "1.1"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Home",
+   "page": "front-cover"
+  },
+  {
+   "label": "Summary",
+   "children": [
+    {
+     "page": "front-exec-summary"
+    },
+    {
+     "page": "front-exec-summary-vi",
+     "lang": "vi"
+    },
+    {
+     "page": "front-at-a-glance"
+    },
+    {
+     "page": "front-how-to-read"
+    }
+   ]
+  },
+  {
+   "label": "Report",
+   "children": [
+    {
+     "label": "I. The case",
+     "children": [
+      {
+       "page": "ch01-why-vietnam"
+      },
+      {
+       "page": "ch02-asset-map"
+      },
+      {
+       "page": "ch03-industrial-base"
+      },
+      {
+       "page": "ch04-alt-protein-today"
+      }
+     ]
+    },
+    {
+     "label": "II. The conditions",
+     "children": [
+      {
+       "page": "ch05-rules"
+      },
+      {
+       "page": "ch06-knowledge-talent"
+      },
+      {
+       "page": "ch07-capital"
+      },
+      {
+       "page": "ch08-regional"
+      },
+      {
+       "page": "ch09-economics"
+      }
+     ]
+    },
+    {
+     "label": "III. The opportunity",
+     "children": [
+      {
+       "page": "ch10-technology-fit"
+      },
+      {
+       "page": "ch11-plays"
+      },
+      {
+       "page": "ch12-policy-options"
+      }
+     ]
+    },
+    {
+     "label": "IV. Looking ahead",
+     "children": [
+      {
+       "page": "ch13-outlook"
+      },
+      {
+       "page": "ch14-unknowns"
+      }
+     ]
+    },
+    {
+     "label": "V. Futures 2030 to 2050",
+     "new_in_edition": "1.1",
+     "children": [
+      {
+       "page": "ch15-drivers-2050"
+      },
+      {
+       "page": "ch16-frontier-technology"
+      },
+      {
+       "page": "ch17-protein-balance-2050"
+      },
+      {
+       "page": "ch18-scenarios-2050"
+      },
+      {
+       "page": "ch19-vision-2050"
+      },
+      {
+       "page": "ch20-robust-moves"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "For you",
+   "children": [
+    {
+     "page": "brief-investors"
+    },
+    {
+     "page": "brief-policy"
+    },
+    {
+     "page": "brief-startups"
+    },
+    {
+     "page": "brief-manufacturers"
+    },
+    {
+     "page": "brief-research"
+    },
+    {
+     "page": "brief-international"
+    }
+   ]
+  },
+  {
+   "label": "Appendices",
+   "children": [
+    {
+     "label": "Evidence (A to T)",
+     "children": [
+      {
+       "page": "app-a-method"
+      },
+      {
+       "page": "app-b-corrections"
+      },
+      {
+       "page": "app-c-feedstocks"
+      },
+      {
+       "page": "app-d-retail-audit"
+      },
+      {
+       "page": "app-e-directory"
+      },
+      {
+       "page": "app-f-facilities"
+      },
+      {
+       "page": "app-g-regulation"
+      },
+      {
+       "page": "app-h-feed-market"
+      },
+      {
+       "page": "app-i-costs"
+      },
+      {
+       "page": "app-j-science"
+      },
+      {
+       "page": "app-k-research"
+      },
+      {
+       "page": "app-l-labs-talent"
+      },
+      {
+       "page": "app-m-capital"
+      },
+      {
+       "page": "app-n-regional"
+      },
+      {
+       "page": "app-o-outlook"
+      },
+      {
+       "page": "app-p-admin-map"
+      },
+      {
+       "page": "app-q-open-questions"
+      },
+      {
+       "page": "app-r-disagreements"
+      },
+      {
+       "page": "app-s-glossary"
+      },
+      {
+       "page": "app-t-sources"
+      }
+     ]
+    },
+    {
+     "label": "Futures evidence (U to Z)",
+     "new_in_edition": "1.1",
+     "children": [
+      {
+       "page": "app-u-futures-method"
+      },
+      {
+       "page": "app-v-frontier-tech"
+      },
+      {
+       "page": "app-w-balance-model"
+      },
+      {
+       "page": "app-x-drivers-signals"
+      },
+      {
+       "page": "app-y-targets-hubs"
+      },
+      {
+       "page": "app-z-aquafeed-feedstock-futures"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Data",
+   "href": "data/",
+   "note": "Data browser over data/*.csv with data-dictionary.md"
+  }
+ ],
+ "audience_paths": {
+  "investors": [
+   "front-exec-summary",
+   "brief-investors",
+   "ch07-capital",
+   "ch09-economics",
+   "ch11-plays",
+   "ch08-regional",
+   "ch05-rules",
+   "ch13-outlook",
+   "app-m-capital",
+   "app-i-costs",
+   "app-e-directory",
+   "ch16-frontier-technology",
+   "ch18-scenarios-2050",
+   "ch20-robust-moves",
+   "app-v-frontier-tech"
+  ],
+  "policy": [
+   "front-exec-summary",
+   "brief-policy",
+   "ch01-why-vietnam",
+   "ch05-rules",
+   "ch12-policy-options",
+   "ch08-regional",
+   "ch13-outlook",
+   "app-g-regulation",
+   "app-p-admin-map",
+   "ch15-drivers-2050",
+   "ch17-protein-balance-2050",
+   "ch19-vision-2050",
+   "ch20-robust-moves",
+   "app-y-targets-hubs"
+  ],
+  "startups": [
+   "front-exec-summary",
+   "brief-startups",
+   "ch05-rules",
+   "ch10-technology-fit",
+   "ch11-plays",
+   "ch09-economics",
+   "app-c-feedstocks",
+   "app-f-facilities",
+   "app-l-labs-talent",
+   "app-m-capital",
+   "ch16-frontier-technology",
+   "ch18-scenarios-2050",
+   "app-z-aquafeed-feedstock-futures"
+  ],
+  "manufacturers": [
+   "front-exec-summary",
+   "brief-manufacturers",
+   "ch03-industrial-base",
+   "ch04-alt-protein-today",
+   "ch09-economics",
+   "ch11-plays",
+   "app-d-retail-audit",
+   "app-h-feed-market",
+   "app-e-directory",
+   "ch17-protein-balance-2050",
+   "ch18-scenarios-2050",
+   "app-w-balance-model",
+   "app-z-aquafeed-feedstock-futures"
+  ],
+  "research": [
+   "front-exec-summary",
+   "brief-research",
+   "ch06-knowledge-talent",
+   "ch10-technology-fit",
+   "ch14-unknowns",
+   "app-j-science",
+   "app-k-research",
+   "app-l-labs-talent",
+   "app-q-open-questions",
+   "ch16-frontier-technology",
+   "ch17-protein-balance-2050",
+   "app-u-futures-method",
+   "app-w-balance-model"
+  ],
+  "international": [
+   "front-exec-summary",
+   "brief-international",
+   "ch01-why-vietnam",
+   "ch08-regional",
+   "ch12-policy-options",
+   "ch07-capital",
+   "app-n-regional",
+   "app-m-capital",
+   "ch15-drivers-2050",
+   "ch19-vision-2050",
+   "ch20-robust-moves",
+   "app-x-drivers-signals",
+   "app-y-targets-hubs"
+  ],
+  "vietnamese-readers": [
+   "front-exec-summary-vi",
+   "app-s-glossary",
+   "front-at-a-glance",
+   "ch11-plays",
+   "ch12-policy-options",
+   "ch19-vision-2050",
+   "ch20-robust-moves"
+  ]
+ },
+ "audiences": {
+  "investors": "Investors (VC, impact, DFIs)",
+  "policy": "Policy makers",
+  "startups": "Startups and founders",
+  "manufacturers": "Food and feed manufacturers",
+  "research": "Universities and institutes",
+  "international": "International organisations"
+ },
+ "data": {
+  "directory": "data/",
+  "dictionary": "data/data-dictionary.md",
+  "key_numbers": "data/key-numbers.json",
+  "sources": "data/sources.csv",
+  "charts": "charts/chart-specs.json",
+  "chart_data": "charts/data/",
+  "glossary": "data/glossary.csv",
+  "plays": "data/plays.csv",
+  "play_weights": "data/play_weight_presets.csv",
+  "play_criteria": "data/play_criteria.csv",
+  "balance_model": "tools/balance_model.py",
+  "balance_assumptions": "data/balance_assumptions.csv",
+  "balance_outputs": "data/balance_outputs.csv",
+  "scenarios_2050": "data/scenarios_2050.csv",
+  "signposts_2050": "data/signposts_2050.csv",
+  "play_robustness": "data/play_robustness.csv",
+  "robust_moves": "data/robust_moves.csv",
+  "vision_milestones": "data/vision_milestones.csv",
+  "frontier_windows": "data/frontier_windows.csv"
+ },
+ "working_papers": "working-papers/",
+ "bibliography": "sources/bibliography.md",
+ "editions": [
+  {
+   "edition": "1.0",
+   "date": "2026-09",
+   "note": "First public edition: Parts I to IV, Appendices A to T."
+  },
+  {
+   "edition": "1.1",
+   "date": "2026-09",
+   "note": "Adds Part V (chapters 15 to 20) and Appendices U to Z; corrections in Appendix B, section B.5."
+  }
+ ],
+ "tokens": {
+  "foresight_tag": {
+   "regex": "\\{fx:(trend|projection|estimate|signal|wildcard|vision)\\}",
+   "legend_page": "front-how-to-read",
+   "method_page": "app-u-futures-method",
+   "vision_only_on": "ch19-vision-2050"
+  }
+ }
+}

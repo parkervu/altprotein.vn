@@ -1,0 +1,175 @@
+/* Design tokens. Light is the default; dark applies from the OS setting unless the
+   reader chose light, or when the reader chose dark. */
+:root {
+  color-scheme: light;
+  --font: 'Work Sans Variable', 'Work Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --bg: #f7f6f2;
+  --surface: #ffffff;
+  --surface-2: #f0efe9;
+  --surface-3: #e8e7e0;
+  --ink: #16211f;
+  --ink-2: #34423f;
+  --muted: #5b6763;
+  --line: #e0ded5;
+  --line-strong: #c9c7bd;
+
+  --brand: #009a8f;
+  --brand-ink: #00665e;
+  --brand-soft: #e1f3f0;
+  --brand-strong: #004d47;
+
+  --blue: #245f9e;
+  --blue-soft: #e5eef8;
+  --grey-soft: #eceae4;
+  --grey-ink: #4c5552;
+
+  --fx: #4a3aa7;
+  --fx-soft: #eeebfb;
+  --vision: #a4285f;
+  --vision-soft: #fbe8f0;
+  --warn: #8a5100;
+  --warn-soft: #fcf1dc;
+  --warn-line: #e8b460;
+
+  --focus: #00665e;
+  --shadow: 0 1px 2px rgb(22 33 31 / 6%), 0 8px 24px -12px rgb(22 33 31 / 18%);
+  --radius: 10px;
+  --radius-sm: 6px;
+
+  /* Charts (see scripts/charts) */
+  --series-1: #009a8f;
+  --series-2: #eb6834;
+  --series-3: #2a78d6;
+  --series-4: #eda100;
+  --series-5: #4a3aa7;
+  --series-6: #e87ba4;
+  --series-7: #008300;
+  --series-8: #e34948;
+  --seq-1: #d3f1ed;
+  --seq-2: #a7e3db;
+  --seq-3: #6fcfc3;
+  --seq-4: #33b5a8;
+  --seq-5: #009a8f;
+  --seq-6: #007b72;
+  --seq-7: #005d56;
+  --chart-ink: #16211f;
+  --chart-muted: #56635f;
+  --chart-grid: #e6e9e4;
+  --chart-axis: #9aa39f;
+  --chart-surface: #ffffff;
+  --chart-highlight: #009a8f;
+  --chart-dim: #c9d1cd;
+  --chart-band: rgb(0 154 143 / 14%);
+  --chart-on-dark: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --bg: #0d1413;
+    --surface: #131c1b;
+    --surface-2: #1a2423;
+    --surface-3: #22302e;
+    --ink: #e7eeec;
+    --ink-2: #c6d2ce;
+    --muted: #9aa8a4;
+    --line: #243230;
+    --line-strong: #34443f;
+    --brand: #1aa89b;
+    --brand-ink: #62d2c5;
+    --brand-soft: #102e2b;
+    --brand-strong: #a6e3da;
+    --blue: #8dbbf0;
+    --blue-soft: #16263a;
+    --grey-soft: #1f2927;
+    --grey-ink: #b8c3c0;
+    --fx: #b3a8f5;
+    --fx-soft: #221d3d;
+    --vision: #f39cc3;
+    --vision-soft: #3a1a2a;
+    --warn: #f2b865;
+    --warn-soft: #2e230f;
+    --warn-line: #8c6224;
+    --focus: #62d2c5;
+    --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 8px 24px -12px rgb(0 0 0 / 60%);
+    --series-1: #1aa89b;
+    --series-2: #d95926;
+    --series-3: #3987e5;
+    --series-4: #c98500;
+    --series-5: #9085e9;
+    --series-6: #d55181;
+    --series-7: #008300;
+    --series-8: #e66767;
+    --seq-1: #12302d;
+    --seq-2: #154540;
+    --seq-3: #1a5d56;
+    --seq-4: #1f7a70;
+    --seq-5: #1aa89b;
+    --seq-6: #58c4b8;
+    --seq-7: #a6e3da;
+    --chart-ink: #e7eeec;
+    --chart-muted: #a9b6b2;
+    --chart-grid: #26322f;
+    --chart-axis: #56635f;
+    --chart-surface: #131c1b;
+    --chart-highlight: #1aa89b;
+    --chart-dim: #34413e;
+    --chart-band: rgb(26 168 155 / 18%);
+    --chart-on-dark: #0b1413;
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0d1413;
+  --surface: #131c1b;
+  --surface-2: #1a2423;
+  --surface-3: #22302e;
+  --ink: #e7eeec;
+  --ink-2: #c6d2ce;
+  --muted: #9aa8a4;
+  --line: #243230;
+  --line-strong: #34443f;
+  --brand: #1aa89b;
+  --brand-ink: #62d2c5;
+  --brand-soft: #102e2b;
+  --brand-strong: #a6e3da;
+  --blue: #8dbbf0;
+  --blue-soft: #16263a;
+  --grey-soft: #1f2927;
+  --grey-ink: #b8c3c0;
+  --fx: #b3a8f5;
+  --fx-soft: #221d3d;
+  --vision: #f39cc3;
+  --vision-soft: #3a1a2a;
+  --warn: #f2b865;
+  --warn-soft: #2e230f;
+  --warn-line: #8c6224;
+  --focus: #62d2c5;
+  --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 8px 24px -12px rgb(0 0 0 / 60%);
+  --series-1: #1aa89b;
+  --series-2: #d95926;
+  --series-3: #3987e5;
+  --series-4: #c98500;
+  --series-5: #9085e9;
+  --series-6: #d55181;
+  --series-7: #008300;
+  --series-8: #e66767;
+  --seq-1: #12302d;
+  --seq-2: #154540;
+  --seq-3: #1a5d56;
+  --seq-4: #1f7a70;
+  --seq-5: #1aa89b;
+  --seq-6: #58c4b8;
+  --seq-7: #a6e3da;
+  --chart-ink: #e7eeec;
+  --chart-muted: #a9b6b2;
+  --chart-grid: #26322f;
+  --chart-axis: #56635f;
+  --chart-surface: #131c1b;
+  --chart-highlight: #1aa89b;
+  --chart-dim: #34413e;
+  --chart-band: rgb(26 168 155 / 18%);
+  --chart-on-dark: #0b1413;
+}

@@ -1,0 +1,40 @@
+indicator,value,unit,year,scope,source_ids,evidence_label,confidence,foresight_type,notes
+fishmeal production,5673.0,kt,2024,global,AQF-02,general,Medium,trend (model base),"OECD-FAO SDMX, area W"
+fishmeal production,5360.8,kt,2025,global,AQF-02,general,Medium,projection,Actual 2026 is lower: world output minus 26% year on year in Jan to Apr 2026 (HSC-29)
+fishmeal production,5976.7,kt,2030,global,AQF-02,general,Medium,projection,OECD-FAO 2026-2035; El Nino years modelled in 2027 and 2031
+fishmeal production,6270.5,kt,2035,global,AQF-02,general,Medium,projection,+1.6% a year 2025 to 2035
+"fish oil production (CPC 21525, label inferred)",1352.0,kt,2025,global,AQF-02,general,Medium,projection,Label inferred from magnitude and country pattern
+fish oil production (CPC 21525),1489.8,kt,2035,global,AQF-02,general,Medium,projection,
+Peru fishmeal production (modelled El Nino years),717 / 527,kt,2027 / 2031,Peru,AQF-02,general,Medium,projection,"Normal years about 1,100 kt"
+share of fishmeal from by-products,34,%,2024,global,AQF-04,general,Medium,trend (measured),IFFO
+share of fish oil from by-products,54,%,2024,global,AQF-04,general,Medium,trend (measured),IFFO
+pangasius share of by-product fishmeal,12,%,2024,global,AQF-04,VN-direct,Medium,trend (measured),Pangasius is overwhelmingly Vietnamese
+pangasius share of by-product fish oil,29,%,2024,global,AQF-04,VN-direct,Medium,trend (measured),
+uncollected processing by-products,12,Mt,2024,global,AQF-04,general,Medium,trend (measured),'almost 12 million tonnes'; Asia largest potential
+"fishmeal production, global",6.0 to 7.6,Mt,2050,global,AQF-calc; AQF-02; AQF-04,general,Low,estimate,Whole-fish meal 3.2 to 3.8 Mt (flat or down with El Nino) plus by-product meal 2.8 to 3.8 Mt
+share of fishmeal from by-products,42 to 54,%,2050,global,AQF-calc,general,Low,estimate,From 34% in 2024
+"fish oil production, global",1.4 to 1.7,Mt,2050,global,AQF-calc; AQF-02,general,Low,estimate,More of it from by-products with lower EPA plus DHA per tonne
+EPA plus DHA supply,0.8,Mt,2019,global,AQF-16,general,Medium,trend (measured),"Optimistic estimate; shortfall above 0.4 Mt, or above 1 Mt in pessimistic calculations"
+Veramaris algal oil capacity (claim),equivalent to 1.2 Mt of wild fish; about 15% of salmon EPA plus DHA demand,claim,2019,global,AQF-23; AQF-16,general,Low,signal,Company claim; oil tonnage not stated; oil has about twice the EPA plus DHA of fish oil
+fishmeal production,324.7,kt,2025,Vietnam,AQF-02,VN-direct,Medium,projection (model base),OECD-FAO
+fishmeal production,389.0,kt,2030,Vietnam,AQF-02,VN-direct,Medium,projection,
+fishmeal production,419.8,kt,2035,Vietnam,AQF-02,VN-direct,Medium,projection,
+fishmeal feed use,338.7,kt,2035,Vietnam,AQF-02; QNT-01,VN-direct,Medium,projection,QNT S-BASE 274 kt in 2035
+fishmeal exports / imports,248.9 / 167.7,kt,2035,Vietnam,AQF-02,VN-direct,Medium,projection,Net exporter by volume; imports higher grades
+fish oil production (mostly pangasius oil),190.1,kt,2025,Vietnam,AQF-02,VN-direct,Medium,projection (model base),
+fish oil production,218.6,kt,2035,Vietnam,AQF-02,VN-direct,Medium,projection,
+pangasius-derived fishmeal,225,kt,2024,Vietnam,AQF-calc; AQF-04,VN-direct,Low,estimate,World fishmeal 5.52 Mt x 34% x 12%; about 0.116 t per t of pangasius
+pangasius-derived fish oil,215,kt,2024,Vietnam,AQF-calc; AQF-04,VN-direct,Low,estimate,World fish oil 1.375 Mt x 54% x 29%
+"pangasius-derived fishmeal, AQ-LOW / BASE / HIGH",270 / 314 / 383,kt,2050,Vietnam,AQF-calc,VN-direct,Low,estimate,Scales with pangasius output
+EPA plus DHA in pangasius oil,0.17 to 0.31,% of fatty acids,2023,Vietnam,AQF-29,VN-adjacent,Medium,trend (measured),"EPA 0.07 to 0.15%, DHA 0.10 to 0.16% (Indonesian pangasius)"
+EPA plus DHA contained in Vietnam's fish oil output,0.4 to 0.6,kt,2025,Vietnam,AQF-calc; AQF-29; AQF-02,VN-direct,Low,estimate,190 kt x 0.2 to 0.3%
+fishmeal factories identified,96,plants,2017,Vietnam,AQF-06,VN-direct,Medium,trend (measured),"Documented capacity 675,366 t; 81 use 'sea fish'"
+trash fish production,933,kt,2001,Vietnam,AQF-05; AQF-06,VN-direct,Medium,trend (measured),36% of marine catch; up to 80% of trawl catch in Kien Giang (now An Giang)
+direct trash-fish feeding (low / central / high),404 / 780 / 1604,kt wet,2025,Vietnam,AQF-calc,VN-direct,Low,estimate,See aquaculture_projections.csv
+"fishmeal demand, range across QNT and OECD extension",151 to 393,kt,2050,Vietnam,QNT-model; AQF-02; AQF-calc,VN-direct,Low,estimate,QNT S-ALT/S-EFF 151; S-BASE 253; OECD 2035 value extended at +1% a year 393
+"marine finfish pellets fishmeal, AQ-LOW / BASE / HIGH",18 / 71 / 167,kt,2050,Vietnam,AQF-calc,VN-direct,Low,estimate,Fishmeal inclusion falling from 20% (2025) to 12% (2050)
+"EPA plus DHA need in aquafeed, central (range)",11.0 (4.5 to 22.0),kt,2025,Vietnam,AQF-calc; AQF-18,VN-direct,Low,estimate,"Assumed requirements: shrimp 0.5% of diet, marine fish 1.0%, freshwater 0.05 to 0.1%"
+"EPA plus DHA need in aquafeed, AQ-BASE central (range)",21.4 (10.3 to 39.8),kt,2050,Vietnam,AQF-calc,VN-direct,Low,estimate,AQ-HIGH 32.8 kt (17.2 to 58.5)
+"marine fish oil equivalent of EPA plus DHA need, AQ-BASE",85 (41 to 159),kt,2050,Vietnam,AQF-calc,VN-direct,Low,estimate,At 25% EPA plus DHA; part is supplied by residual oil in fishmeal
+credible alternative share of aquafeed EPA plus DHA,15 to 50,%,2050,Vietnam,AQF-calc; AQF-16; AQF-19; AQF-23; AQF-24,VN-direct,Low,estimate,"3.2 to 10.7 kt EPA plus DHA, about 6 to 21 kt of algal oil at 50%"
+credible novel-protein share of aquafeed crude protein,1.1 to 5.9 (1.7 to 8.9 on industry scale),%,2050,Vietnam,AQF-calc,VN-direct,Low,estimate,35 to 184 kt protein; 50 to 263 kt of product at 70% CP

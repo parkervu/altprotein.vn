@@ -1,0 +1,12 @@
+record_id,product_type,n,med_price_100g,med_price_100g_protein,min_pp,max_pp
+RAQ-001,canned analog,2,24034,321103,223704,418502
+RAQ-002,dried TVP/soy chunks,4,39000,64584,48976,85053
+RAQ-003,dumpling/spring roll/bun with vegetable filling,18,11912,368798,155556,1727642
+RAQ-004,frozen meat/seafood analog,9,19000,278667,65990,621528
+RAQ-005,other,2,40303,447812,370370,525253
+RAQ-006,plant milk,8,8716,456250,91660,1444444
+RAQ-007,plant yogurt/creamer,6,10050,534210,510526,628125
+RAQ-008,protein powder,4,168950,359537,343029,365634
+RAQ-009,ready meal,3,12500,297619,290476,383333
+RAQ-010,tofu,5,3643,66265,39171,121053
+RAQ-011,vegan cheese/spread,2,77500,875797,859107,892487

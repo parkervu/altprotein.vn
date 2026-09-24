@@ -1,0 +1,20 @@
+record_id,jurisdiction,instrument,year,price_usd_per_tco2e,type,source_ids,evidence_label,confidence,foresight_type,horizon_year,notes
+CPP-001,Vietnam,Domestic ETS pilot (Decree 119/2025; Decree 29/2026; Decision 263/QD-TTg),2025 to 2028,not published,target,REG-59; ECF-12; ECF-13,VN-direct,Medium,signal,2028,"110 facilities (34 thermal power, 25 steel, 51 cement); quota above 243 Mt (2025) and 268 Mt (2026); offsets up to 30%; first surrender 31 Dec 2027; no price, auction or floor found"
+CPP-002,Vietnam,Domestic ETS full operation,2029,not published,target,REG-59; ECF-12,VN-direct,Medium,signal,2029,"Scope beyond power, steel and cement not set; agriculture and food outside"
+CPP-003,Vietnam,World Bank CCDR recommended carbon tax path,2030,29,projection,CLM-18,VN-direct,Medium,projection,2030,"Recommendation, not policy"
+CPP-004,Vietnam,World Bank CCDR recommended carbon tax path,2040,90,projection,CLM-18,VN-direct,Medium,projection,2040,"Recommendation, not policy"
+CPP-005,EU,EU ETS auction average,2025,83,actual,ECF-15,general,High,trend,n/a,EUR 73.43
+CPP-006,EU,EU ETS secondary average,2025,84,actual,ECF-15,general,High,trend,n/a,"EUR 74.35; ETS2 postponed (reported start 2028, delayed by one year)"
+CPP-007,EU,CBAM definitive stage,2026,linked to EU ETS,target,ECF-15,general,High,signal,2026 to 2034,"Importers surrender certificates for 2.5% of embedded emissions for 2026 imports, rising as free allocation phases out; covers cement, steel, aluminium, fertilisers, electricity, hydrogen"
+CPP-008,China,National ETS secondary average,2025,9.85,actual,ECF-16,VN-adjacent,High,trend,n/a,"CNY 70.78; steel, cement, aluminium added 2024 to 2025; roadmap to absolute cap (Aug 2025)"
+CPP-009,Korea,K-ETS auction average,2025,6.99,actual,ECF-17,VN-adjacent,High,trend,n/a,"KRW 9,956; phase 4 (2026 to 2030) auctions about 11%, power rising to 50% by 2030"
+CPP-010,Korea,K-ETS secondary average,2025,6.60,actual,ECF-17,VN-adjacent,High,trend,n/a,"KRW 9,393"
+CPP-011,Japan,GX-ETS price ceiling,FY2027,28.73,target,ECF-18,VN-adjacent,High,projection,2027,"JPY 4,300; mandatory phase from 1 Apr 2026 for emitters above 100,000 t CO2 (about 300 to 400 entities)"
+CPP-012,Japan,GX-ETS price floor,FY2027,11.36,target,ECF-18,VN-adjacent,High,projection,2027,"JPY 1,700"
+CPP-013,Singapore,Carbon tax,2024 to 2025,19,actual,ECF-19,VN-adjacent,High,trend,n/a,S$25; converted at S$1 = USD 0.76 (our conversion)
+CPP-014,Singapore,Carbon tax,2026 to 2027,34,actual,ECF-19,VN-adjacent,High,trend,n/a,S$45 from 1 Jan 2026; international credits up to 5% of taxable emissions
+CPP-015,Singapore,Carbon tax,2030,38 to 61,target,ECF-19,VN-adjacent,High,projection,2030,S$50 to 80 by 2030
+CPP-016,Global,"World Bank corridor, well below 2 C",2030,63 to 127,projection,ECF-20,general,Medium,projection,2030,State and Trends of Carbon Pricing 2024
+CPP-017,Global,"World Bank corridor, 1.5 C",2030,226 to 385,projection,ECF-20,general,Medium,projection,2030,State and Trends of Carbon Pricing 2024
+CPP-018,Global,Carbon pricing coverage,2026,n/a,actual,ECF-14; ECF-20,general,High,trend,n/a,About 26% of global emissions under 41 ETSs (ICAP 2026); nearly 30% under all carbon pricing (World Bank 2026); none covers agriculture or embodied feed emissions
+CPP-019,Study bands (ECF),Sensitivity prices used in carbon_cost_per_protein.csv,2030 to 2050,25; 50; 100,projection,ECF estimate,general,Low,estimate,2030; 2040; 2050,25 brackets Singapore 2024 and Japan ceiling; 50 brackets CCDR 2030 to 2040 mid-path; 100 brackets EU 2025 and the low end of the 2 C corridor

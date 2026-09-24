@@ -1,0 +1,239 @@
+parameter,scenario,year,value,unit,basis,source_ids,confidence,notes
+population,ALL,2025,101.6,million,"projection: UN WPP 2024 medium variant, read via OWID in edition 1.0",GT-12,Medium,"UN series used for all years, including 2025, so growth rates never mix UN and GSO (GSO 2025 = 102.3 M). Same path in all scenarios."
+population,ALL,2030,104.25,million,"projection: UN WPP 2024 medium variant, read via OWID in edition 1.0",GT-12,Medium,"UN series used for all years, including 2025, so growth rates never mix UN and GSO (GSO 2025 = 102.3 M). Same path in all scenarios."
+population,ALL,2035,106.53,million,"projection: UN WPP 2024 medium variant, read via OWID in edition 1.0",GT-12,Medium,"UN series used for all years, including 2025, so growth rates never mix UN and GSO (GSO 2025 = 102.3 M). Same path in all scenarios."
+population,ALL,2040,108.44,million,"projection: UN WPP 2024 medium variant, read via OWID in edition 1.0",GT-12,Medium,"UN series used for all years, including 2025, so growth rates never mix UN and GSO (GSO 2025 = 102.3 M). Same path in all scenarios."
+population,ALL,2050,110.01,million,"projection: UN WPP 2024 medium variant, read via OWID in edition 1.0",GT-12,Medium,"UN series used for all years, including 2025, so growth rates never mix UN and GSO (GSO 2025 = 102.3 M). Same path in all scenarios."
+base_pork_lw_kt,ALL,ALL,5389.2,kt live weight,measured (official estimate) 2025,MAC-14; MAC-12,High,
+base_poultry_lw_kt,ALL,ALL,2601.9,kt live weight,measured (official estimate) 2025,MAC-14; MAC-12,High,
+base_ruminant_lw_kt,ALL,ALL,624.3,kt live weight,measured 2025: beef 499.1 + buffalo 125.2,MAC-12,Medium,
+base_eggs_bn,ALL,ALL,21.4,billion eggs,measured (official estimate) 2025,MAC-14,High,
+egg_weight_kg,ALL,ALL,0.055,kg per egg,"assumption: mix of hen, duck and quail eggs",QNT-model,Low,Only affects the split of poultry feed between meat and eggs; the 2025 poultry feed total is calibrated.
+base_milk_kt,ALL,ALL,1300,kt fresh milk,measured (official estimate) 2025,MAC-14,High,
+base_aq_pangasius_kt,ALL,ALL,1938.8,kt,measured 2025,MAC-15,High,
+base_aq_whiteleg_kt,ALL,ALL,994.4,kt,measured 2025,MAC-15,High,
+base_aq_othershrimp_kt,ALL,ALL,387.3,kt,"derived 2025: shrimp 1,381.7 minus whiteleg 994.4 (black tiger 296.7 plus other crustaceans)",MAC-15,High,
+base_aq_otherfish_kt,ALL,ALL,2096.2,kt,"derived 2025: fish 4,035.0 minus pangasius 1,938.8",MAC-15,High,
+base_aq_nonfed_kt,ALL,ALL,700.1,kt,"measured 2025: other aquaculture (molluscs, seaweed and others), treated as unfed",MAC-15,High,
+base_feed_livestock_mt,ALL,ALL,22.0,Mt,"measured (official estimate) 2025 livestock and poultry compound feed, excludes aquafeed",MAC-01; MAC-28,High,
+feed_share_pig,ALL,ALL,0.553,share,measured 2024 split applied to 2025,MAC-28,High,
+feed_share_poultry,ALL,ALL,0.409,share,measured 2024 split applied to 2025,MAC-28,High,
+feed_share_other_livestock,ALL,ALL,0.037,share,measured 2024 split applied to 2025,MAC-28,High,
+base_aquafeed_mt,ALL,ALL,6.5,Mt,estimate 2025 (USDA Post; method not disclosed),MAC-01,Medium,Unresolved against industry 3.9 to 4.8 Mt (MAC-06). USDA used because the 7.2 Mt soybean-meal feed use is also USDA. Industry value tested in sensitivity.
+base_aquafeed_mt,SENS-LOW,ALL,4.35,Mt,estimate 2025: midpoint of industry range 3.9 to 4.8 Mt,MAC-06,Low,
+base_aquafeed_mt,SENS-HIGH,ALL,6.5,Mt,same as base (one-sided test),MAC-01,Medium,
+base_sbm_feed_use_mt,ALL,ALL,7.2,Mt,estimate 2025 (USDA PSD): soybean meal fed,MAC-04; MAC-01,Medium,Imports 5.70 Mt meal plus 1.48 Mt meal crushed from imported beans. Calibration target for soybean-meal inclusion.
+base_maize_imports_mt,ALL,ALL,11.91,Mt,measured 2025 (customs),MAC-08,High,Used only as a calibration check.
+base_maize_compound_feed_mt,ALL,ALL,10.9,Mt,"estimate 2025: USDA feed-ingredient table, corn imported 9.2 plus domestic 1.7",FS-23,Medium,
+base_maize_feed_residual_mt,ALL,ALL,14.4,Mt,estimate MY2024/25 (USDA PSD): corn feed and residual use,MAC-01,Medium,The 3.5 Mt above compound-feed use is treated as on-farm (non-compound) feeding plus residual.
+base_maize_production_mt,ALL,ALL,4.1,Mt,"estimate MY2025/26 (USDA Post), 810,000 ha",MAC-01,Medium,
+base_other_meals_sbmeq_mt,ALL,ALL,2.43,Mt soybean-meal equivalent,"derived 2025: other oilseed meals 2.33 Mt (OECD protein-meal feed 9.53 minus soybean meal 7.2) at about 30% CP plus DDGS 1.55 Mt at 27% CP, converted to 46% CP",QNT-01; FS-23; MAC-04,Low,Definitions differ between OECD and USDA; order of magnitude only.
+dressing_pork,ALL,ALL,0.723,carcass per live weight,"derived: OECD-FAO 2025 pigmeat production 3,895.6 kt carcass / NSO 5,389.2 kt live",QNT-01; MAC-14,Medium,Aligns our carcass basis with OECD-FAO.
+dressing_poultry,ALL,ALL,0.7,carcass per live weight,assumption within edition 1.0 range 0.65 to 0.75,MAC-14; QNT-model,Low,"OECD-FAO poultry production (2,567 kt) is almost equal to NSO live weight (2,602 kt), so OECD may treat live weight as carcass. We do not follow that."
+dressing_ruminant,ALL,ALL,0.515,carcass per live weight,derived: OECD-FAO 2025 beef production 321.5 kt / NSO beef plus buffalo 624.3 kt,QNT-01; MAC-12,Medium,
+ssr_pork,ALL,ALL,0.961,production / consumption,"derived: OECD-FAO 2025 pigmeat production 3,895.6 / consumption 4,053.7",QNT-01,Medium,Held constant to 2050 in all scenarios.
+ssr_poultry,ALL,ALL,0.875,production / consumption,"derived: OECD-FAO 2025 poultry production 2,567.1 / consumption 2,932.7",QNT-01,Medium,Held constant to 2050 in all scenarios.
+ssr_ruminant,ALL,ALL,0.522,production / consumption,derived: OECD-FAO 2025 beef production 321.5 / consumption 615.5,QNT-01,Medium,Held constant to 2050 in all scenarios.
+ssr_pork,SENS-LOW,2040,0.911,production / consumption,sensitivity: more meat imports (10 points lower by 2050),QNT-model,Low,
+ssr_pork,SENS-HIGH,2040,0.98,production / consumption,sensitivity: full pork self-sufficiency by 2050,QNT-model,Low,
+ssr_pork,SENS-LOW,2050,0.861,production / consumption,sensitivity: more meat imports (10 points lower by 2050),QNT-model,Low,
+ssr_pork,SENS-HIGH,2050,1.0,production / consumption,sensitivity: full pork self-sufficiency by 2050,QNT-model,Low,
+ssr_poultry,SENS-LOW,2040,0.825,production / consumption,sensitivity: more meat imports (10 points lower by 2050),QNT-model,Low,
+ssr_poultry,SENS-HIGH,2040,0.895,production / consumption,sensitivity: 4 points higher by 2050,QNT-model,Low,
+ssr_poultry,SENS-LOW,2050,0.775,production / consumption,sensitivity: more meat imports (10 points lower by 2050),QNT-model,Low,
+ssr_poultry,SENS-HIGH,2050,0.915,production / consumption,sensitivity: 4 points higher by 2050,QNT-model,Low,
+protein_per_kg_meat_cwe,ALL,ALL,0.15,kg protein per kg carcass weight,assumption: carcass includes bone and fat; lean retail cuts are 18 to 21% protein,QNT-model,Low,
+sbm_cp,ALL,ALL,0.46,share,convention used in edition 1.0 (46% crude protein),FM-01,High,
+fishmeal_cp,ALL,ALL,0.65,share,convention used in edition 1.0 (65% crude protein),FM-01,High,
+soy_meal_extraction,ALL,ALL,0.78,t meal per t beans,USDA extraction rate used in the 2025 balance,MAC-04,Medium,
+pc_index_pork,S-BASE,2025,1.0,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+0.2% a year 2035 to 2050)",QNT-01,Medium,
+pc_index_pork,S-BASE,2030,1.0852,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+0.2% a year 2035 to 2050)",QNT-01,Medium,
+pc_index_pork,S-BASE,2035,1.1003,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+0.2% a year 2035 to 2050)",QNT-01,Medium,
+pc_index_pork,S-BASE,2040,1.1113,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+0.2% a year 2035 to 2050)",QNT-01,Low,
+pc_index_pork,S-BASE,2050,1.1337,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+0.2% a year 2035 to 2050)",QNT-01,Low,
+pc_index_poultry,S-BASE,2025,1.0,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+1.0% a year 2035 to 2040, +0.5% a year 2040 to 2050)",QNT-01,Medium,OECD-FAO poultry growth to 2035 (+4.2% a year per person) is fast; see saturation check in notes.
+pc_index_poultry,S-BASE,2030,1.2466,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+1.0% a year 2035 to 2040, +0.5% a year 2040 to 2050)",QNT-01,Medium,OECD-FAO poultry growth to 2035 (+4.2% a year per person) is fast; see saturation check in notes.
+pc_index_poultry,S-BASE,2035,1.5152,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+1.0% a year 2035 to 2040, +0.5% a year 2040 to 2050)",QNT-01,Medium,OECD-FAO poultry growth to 2035 (+4.2% a year per person) is fast; see saturation check in notes.
+pc_index_poultry,S-BASE,2040,1.5925,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+1.0% a year 2035 to 2040, +0.5% a year 2040 to 2050)",QNT-01,Low,OECD-FAO poultry growth to 2035 (+4.2% a year per person) is fast; see saturation check in notes.
+pc_index_poultry,S-BASE,2050,1.674,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+1.0% a year 2035 to 2040, +0.5% a year 2040 to 2050)",QNT-01,Low,OECD-FAO poultry growth to 2035 (+4.2% a year per person) is fast; see saturation check in notes.
+pc_index_ruminant,S-BASE,2025,1.0,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+1.0% a year 2035 to 2050)",QNT-01,Medium,
+pc_index_ruminant,S-BASE,2030,1.0793,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+1.0% a year 2035 to 2050)",QNT-01,Medium,
+pc_index_ruminant,S-BASE,2035,1.1518,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+1.0% a year 2035 to 2050)",QNT-01,Medium,
+pc_index_ruminant,S-BASE,2040,1.2106,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+1.0% a year 2035 to 2050)",QNT-01,Low,
+pc_index_ruminant,S-BASE,2050,1.3372,index 2025 = 1,"projection to 2035: OECD-FAO 2026-2035 baseline growth of food per capita, applied as an index to our 2025 base; after 2035 our taper (+1.0% a year 2035 to 2050)",QNT-01,Low,
+pc_index_eggs,S-BASE,2025,1.0,index 2025 = 1,"our estimate: 210.6 eggs per person in 2025 rising to 235 (2030), 260 (2040), 275 (2050); 2025 already above the Decision 1520 2030 target of 220 to 225",MAC-14; MAC-19; MAC-23; QNT-model,Low,No published egg projection found. Recent growth about 4.5% a year per person (2025).
+pc_index_eggs,S-BASE,2030,1.116,index 2025 = 1,"our estimate: 210.6 eggs per person in 2025 rising to 235 (2030), 260 (2040), 275 (2050); 2025 already above the Decision 1520 2030 target of 220 to 225",MAC-14; MAC-19; MAC-23; QNT-model,Low,No published egg projection found. Recent growth about 4.5% a year per person (2025).
+pc_index_eggs,S-BASE,2035,1.175,index 2025 = 1,"our estimate: 210.6 eggs per person in 2025 rising to 235 (2030), 260 (2040), 275 (2050); 2025 already above the Decision 1520 2030 target of 220 to 225",MAC-14; MAC-19; MAC-23; QNT-model,Low,No published egg projection found. Recent growth about 4.5% a year per person (2025).
+pc_index_eggs,S-BASE,2040,1.235,index 2025 = 1,"our estimate: 210.6 eggs per person in 2025 rising to 235 (2030), 260 (2040), 275 (2050); 2025 already above the Decision 1520 2030 target of 220 to 225",MAC-14; MAC-19; MAC-23; QNT-model,Low,No published egg projection found. Recent growth about 4.5% a year per person (2025).
+pc_index_eggs,S-BASE,2050,1.306,index 2025 = 1,"our estimate: 210.6 eggs per person in 2025 rising to 235 (2030), 260 (2040), 275 (2050); 2025 already above the Decision 1520 2030 target of 220 to 225",MAC-14; MAC-19; MAC-23; QNT-model,Low,No published egg projection found. Recent growth about 4.5% a year per person (2025).
+milk_prod_index,S-BASE,2025,1.0,index 2025 = 1,"projection to 2035: OECD-FAO milk production growth (1,341 to 2,009 kt); then +3% a year to 2040 and +2% a year to 2050 (our taper)",QNT-01,Medium,
+milk_prod_index,S-BASE,2030,1.2295,index 2025 = 1,"projection to 2035: OECD-FAO milk production growth (1,341 to 2,009 kt); then +3% a year to 2040 and +2% a year to 2050 (our taper)",QNT-01,Medium,
+milk_prod_index,S-BASE,2035,1.4984,index 2025 = 1,"projection to 2035: OECD-FAO milk production growth (1,341 to 2,009 kt); then +3% a year to 2040 and +2% a year to 2050 (our taper)",QNT-01,Medium,
+milk_prod_index,S-BASE,2040,1.7371,index 2025 = 1,"projection to 2035: OECD-FAO milk production growth (1,341 to 2,009 kt); then +3% a year to 2040 and +2% a year to 2050 (our taper)",QNT-01,Low,
+milk_prod_index,S-BASE,2050,2.1175,index 2025 = 1,"projection to 2035: OECD-FAO milk production growth (1,341 to 2,009 kt); then +3% a year to 2040 and +2% a year to 2050 (our taper)",QNT-01,Low,
+aq_index,S-BASE,2025,1.0,index 2025 = 1,"projection to 2035: OECD-FAO aquaculture growth (5,692 to 6,827 kt) applied to NSO 2025 base; then +1.0% a year (our taper)",QNT-01; MAC-15,Medium,BASE 2030 (6.58 Mt) is below the 7.0 Mt official target.
+aq_index,S-BASE,2030,1.0758,index 2025 = 1,"projection to 2035: OECD-FAO aquaculture growth (5,692 to 6,827 kt) applied to NSO 2025 base; then +1.0% a year (our taper)",QNT-01; MAC-15,Medium,BASE 2030 (6.58 Mt) is below the 7.0 Mt official target.
+aq_index,S-BASE,2035,1.1995,index 2025 = 1,"projection to 2035: OECD-FAO aquaculture growth (5,692 to 6,827 kt) applied to NSO 2025 base; then +1.0% a year (our taper)",QNT-01; MAC-15,Medium,BASE 2030 (6.58 Mt) is below the 7.0 Mt official target.
+aq_index,S-BASE,2040,1.2607,index 2025 = 1,"projection to 2035: OECD-FAO aquaculture growth (5,692 to 6,827 kt) applied to NSO 2025 base; then +1.0% a year (our taper)",QNT-01; MAC-15,Low,BASE 2030 (6.58 Mt) is below the 7.0 Mt official target.
+aq_index,S-BASE,2050,1.3926,index 2025 = 1,"projection to 2035: OECD-FAO aquaculture growth (5,692 to 6,827 kt) applied to NSO 2025 base; then +1.0% a year (our taper)",QNT-01; MAC-15,Low,BASE 2030 (6.58 Mt) is below the 7.0 Mt official target.
+aq_index,S-HIGH,2030,1.1444,index 2025 = 1,official target path: 7.0 Mt in 2030 (Decision 339/QD-TTg); then +1.5% a year to 2040 and +1.0% a year to 2050 (our extension),QNT-06; MAC-15,Low,
+aq_index,S-HIGH,2035,1.2328,index 2025 = 1,official target path: 7.0 Mt in 2030 (Decision 339/QD-TTg); then +1.5% a year to 2040 and +1.0% a year to 2050 (our extension),QNT-06; MAC-15,Low,
+aq_index,S-HIGH,2040,1.3281,index 2025 = 1,official target path: 7.0 Mt in 2030 (Decision 339/QD-TTg); then +1.5% a year to 2040 and +1.0% a year to 2050 (our extension),QNT-06; MAC-15,Low,
+aq_index,S-HIGH,2050,1.4671,index 2025 = 1,official target path: 7.0 Mt in 2030 (Decision 339/QD-TTg); then +1.5% a year to 2040 and +1.0% a year to 2050 (our extension),QNT-06; MAC-15,Low,
+aq_index,SENS-LOW,2040,1.1995,index 2025 = 1,sensitivity: no aquaculture growth after 2035,QNT-model,Low,
+aq_index,SENS-HIGH,2040,1.3571,index 2025 = 1,sensitivity: +2.5% a year after 2035,QNT-model,Low,
+aq_index,SENS-LOW,2050,1.1995,index 2025 = 1,sensitivity: no aquaculture growth after 2035,QNT-model,Low,
+aq_index,SENS-HIGH,2050,1.7372,index 2025 = 1,sensitivity: +2.5% a year after 2035,QNT-model,Low,
+pc_index_poultry,SENS-LOW,2035,1.3102,index 2025 = 1,"sensitivity: OECD-FAO growth to 2030, then +1.0% a year to 2040 and +0.5% a year to 2050",QNT-model,Low,
+pc_index_poultry,SENS-HIGH,2035,1.5152,index 2025 = 1,"sensitivity: OECD-FAO growth to 2035, then +2.5% a year to 2040 and +1.5% a year to 2050",QNT-model,Low,
+pc_index_poultry,SENS-LOW,2040,1.3771,index 2025 = 1,"sensitivity: OECD-FAO growth to 2030, then +1.0% a year to 2040 and +0.5% a year to 2050",QNT-model,Low,
+pc_index_poultry,SENS-HIGH,2040,1.7143,index 2025 = 1,"sensitivity: OECD-FAO growth to 2035, then +2.5% a year to 2040 and +1.5% a year to 2050",QNT-model,Low,
+pc_index_poultry,SENS-LOW,2050,1.4475,index 2025 = 1,"sensitivity: OECD-FAO growth to 2030, then +1.0% a year to 2040 and +0.5% a year to 2050",QNT-model,Low,
+pc_index_poultry,SENS-HIGH,2050,1.9895,index 2025 = 1,"sensitivity: OECD-FAO growth to 2035, then +2.5% a year to 2040 and +1.5% a year to 2050",QNT-model,Low,
+pc_index_pork,SENS-LOW,2040,1.0557,index 2025 = 1,sensitivity: 5% (2040) and 10% (2050) below BASE,QNT-model,Low,
+pc_index_pork,SENS-HIGH,2040,1.1669,index 2025 = 1,sensitivity: 5% (2040) and 10% (2050) above BASE,QNT-model,Low,
+pc_index_pork,SENS-LOW,2050,1.0203,index 2025 = 1,sensitivity: 5% (2040) and 10% (2050) below BASE,QNT-model,Low,
+pc_index_pork,SENS-HIGH,2050,1.2471,index 2025 = 1,sensitivity: 5% (2040) and 10% (2050) above BASE,QNT-model,Low,
+population,SENS-LOW,2040,105.19,million,"sensitivity: 3% (2040) and 5% (2050) below the UN medium variant (illustrative band, not a UN variant)",GT-12; QNT-model,Low,
+population,SENS-HIGH,2040,111.69,million,"sensitivity: 3% (2040) and 5% (2050) above the UN medium variant (illustrative band, not a UN variant)",GT-12; QNT-model,Low,
+population,SENS-LOW,2050,104.51,million,"sensitivity: 3% (2040) and 5% (2050) below the UN medium variant (illustrative band, not a UN variant)",GT-12; QNT-model,Low,
+population,SENS-HIGH,2050,115.51,million,"sensitivity: 3% (2040) and 5% (2050) above the UN medium variant (illustrative band, not a UN variant)",GT-12; QNT-model,Low,
+income_multiplier,S-HIGH,2025,1.0,multiplier on per-capita demand,"estimate: (GDP ratio HIGH/BASE) ^ elasticity; HIGH GDP path 10% a year 2026 to 2030 and 7.5% a year to 2050 (PDP8 assumption); BASE 5.7% a year to 2035 (USDA) and 4.5% a year after (our assumption); elasticity 0.30 (2030), 0.25 (2040), 0.20 (2050)",GT-11; QNT-02; QNT-model,Low,"GDP ratio HIGH/BASE: 1.22 (2030), 1.53 (2040), 2.03 (2050). Elasticity declines to reflect saturation (as in IMPACT, QNT-12); Vietnamese household elasticities not extracted."
+income_multiplier,S-HIGH,2030,1.0615,multiplier on per-capita demand,"estimate: (GDP ratio HIGH/BASE) ^ elasticity; HIGH GDP path 10% a year 2026 to 2030 and 7.5% a year to 2050 (PDP8 assumption); BASE 5.7% a year to 2035 (USDA) and 4.5% a year after (our assumption); elasticity 0.30 (2030), 0.25 (2040), 0.20 (2050)",GT-11; QNT-02; QNT-model,Low,"GDP ratio HIGH/BASE: 1.22 (2030), 1.53 (2040), 2.03 (2050). Elasticity declines to reflect saturation (as in IMPACT, QNT-12); Vietnamese household elasticities not extracted."
+income_multiplier,S-HIGH,2035,1.0811,multiplier on per-capita demand,"estimate: (GDP ratio HIGH/BASE) ^ elasticity; HIGH GDP path 10% a year 2026 to 2030 and 7.5% a year to 2050 (PDP8 assumption); BASE 5.7% a year to 2035 (USDA) and 4.5% a year after (our assumption); elasticity 0.30 (2030), 0.25 (2040), 0.20 (2050)",GT-11; QNT-02; QNT-model,Low,"GDP ratio HIGH/BASE: 1.22 (2030), 1.53 (2040), 2.03 (2050). Elasticity declines to reflect saturation (as in IMPACT, QNT-12); Vietnamese household elasticities not extracted."
+income_multiplier,S-HIGH,2040,1.1122,multiplier on per-capita demand,"estimate: (GDP ratio HIGH/BASE) ^ elasticity; HIGH GDP path 10% a year 2026 to 2030 and 7.5% a year to 2050 (PDP8 assumption); BASE 5.7% a year to 2035 (USDA) and 4.5% a year after (our assumption); elasticity 0.30 (2030), 0.25 (2040), 0.20 (2050)",GT-11; QNT-02; QNT-model,Low,"GDP ratio HIGH/BASE: 1.22 (2030), 1.53 (2040), 2.03 (2050). Elasticity declines to reflect saturation (as in IMPACT, QNT-12); Vietnamese household elasticities not extracted."
+income_multiplier,S-HIGH,2050,1.1523,multiplier on per-capita demand,"estimate: (GDP ratio HIGH/BASE) ^ elasticity; HIGH GDP path 10% a year 2026 to 2030 and 7.5% a year to 2050 (PDP8 assumption); BASE 5.7% a year to 2035 (USDA) and 4.5% a year after (our assumption); elasticity 0.30 (2030), 0.25 (2040), 0.20 (2050)",GT-11; QNT-02; QNT-model,Low,"GDP ratio HIGH/BASE: 1.22 (2030), 1.53 (2040), 2.03 (2050). Elasticity declines to reflect saturation (as in IMPACT, QNT-12); Vietnamese household elasticities not extracted."
+income_multiplier,ALL,ALL,1.0,multiplier,no income effect outside S-HIGH,QNT-model,High,
+aq_export_share_pangasius,ALL,ALL,0.9,"share of output, live-weight equivalent","our estimate from 2025 export values and typical product yields; total aquaculture exports about 3.1 Mt live weight, consistent with OECD-FAO fish exports of 4.63 Mt that also include capture and re-exports",MAC-15; MAC-01; QNT-01; QNT-model,Low,Held constant to 2050.
+aq_export_share_whiteleg,ALL,ALL,0.75,"share of output, live-weight equivalent","our estimate from 2025 export values and typical product yields; total aquaculture exports about 3.1 Mt live weight, consistent with OECD-FAO fish exports of 4.63 Mt that also include capture and re-exports",MAC-15; MAC-01; QNT-01; QNT-model,Low,Held constant to 2050.
+aq_export_share_othershrimp,ALL,ALL,0.6,"share of output, live-weight equivalent","our estimate from 2025 export values and typical product yields; total aquaculture exports about 3.1 Mt live weight, consistent with OECD-FAO fish exports of 4.63 Mt that also include capture and re-exports",MAC-15; MAC-01; QNT-01; QNT-model,Low,Held constant to 2050.
+aq_export_share_otherfish,ALL,ALL,0.1,"share of output, live-weight equivalent","our estimate from 2025 export values and typical product yields; total aquaculture exports about 3.1 Mt live weight, consistent with OECD-FAO fish exports of 4.63 Mt that also include capture and re-exports",MAC-15; MAC-01; QNT-01; QNT-model,Low,Held constant to 2050.
+aq_export_share_nonfed,ALL,ALL,0.3,"share of output, live-weight equivalent","our estimate from 2025 export values and typical product yields; total aquaculture exports about 3.1 Mt live weight, consistent with OECD-FAO fish exports of 4.63 Mt that also include capture and re-exports",MAC-15; MAC-01; QNT-01; QNT-model,Low,Held constant to 2050.
+fcr_pig,ALL,ALL,2.8,kg feed per kg live weight (whole herd),assumption: whole-herd feed conversion including sows; typical range 2.6 to 3.2,QNT-model,Low,With 12.2 Mt of pig compound feed in 2025 this implies 81% of pig feed is compound feed.
+fcr_pig,SENS-LOW,ALL,2.6,kg feed per kg live weight,sensitivity,QNT-model,Low,"Implies a higher 2025 compound share (87%), so less room for industrialisation growth."
+fcr_pig,SENS-HIGH,ALL,3.2,kg feed per kg live weight,sensitivity,QNT-model,Low,"Implies a lower 2025 compound share (71%), so more room for industrialisation growth."
+fcr_poultry_meat,ALL,ALL,2.5,kg feed per kg live weight,"assumption: blend of industrial broilers (about 1.7), coloured and native chickens and ducks (2.5 to 3.2)",QNT-model,Low,
+fcr_eggs,ALL,ALL,2.4,kg feed per kg eggs,assumption: layers 2.0 to 2.3 plus ducks,QNT-model,Low,
+fcr_pangasius,ALL,ALL,1.5,kg feed per kg fish,assumption; industry feed volumes imply 1.03 to 1.29 (edition 1.0 H3),MAC-06; QNT-model,Low,
+fcr_whiteleg,ALL,ALL,1.3,kg feed per kg shrimp,assumption within edition 1.0 sensitivity 1.2 to 1.4,MAC-06; QNT-model,Low,
+fcr_othershrimp,ALL,ALL,1.5,kg feed per kg shrimp,assumption,QNT-model,Low,
+fcr_otherfish,ALL,ALL,1.5,kg feed per kg fish,assumption,QNT-model,Low,
+compound_share_pig,S-BASE,2030,0.88,share of pig feed that is compound feed,our estimate: continued shift from household to industrial farms (2025 calibrated value about 0.81),QNT-model,Low,
+compound_share_pig,S-BASE,2035,0.91,share of pig feed that is compound feed,our estimate: continued shift from household to industrial farms (2025 calibrated value about 0.81),QNT-model,Low,
+compound_share_pig,S-BASE,2040,0.94,share of pig feed that is compound feed,our estimate: continued shift from household to industrial farms (2025 calibrated value about 0.81),QNT-model,Low,
+compound_share_pig,S-BASE,2050,0.97,share of pig feed that is compound feed,our estimate: continued shift from household to industrial farms (2025 calibrated value about 0.81),QNT-model,Low,
+compound_share_pig,SENS-LOW,2040,0.91,share,sensitivity: slower industrialisation,QNT-model,Low,
+compound_share_pig,SENS-HIGH,2040,0.97,share,sensitivity: complete industrialisation,QNT-model,Low,
+compound_share_pig,SENS-LOW,2050,0.9,share,sensitivity: slower industrialisation,QNT-model,Low,
+compound_share_pig,SENS-HIGH,2050,1.0,share,sensitivity: complete industrialisation,QNT-model,Low,
+compound_share_poultry,S-BASE,2030,0.97,share,our estimate (2025 calibrated value about 0.96),QNT-model,Low,
+compound_share_poultry,S-BASE,2035,0.975,share,our estimate (2025 calibrated value about 0.96),QNT-model,Low,
+compound_share_poultry,S-BASE,2040,0.98,share,our estimate (2025 calibrated value about 0.96),QNT-model,Low,
+compound_share_poultry,S-BASE,2050,0.98,share,our estimate (2025 calibrated value about 0.96),QNT-model,Low,
+compound_share_othershrimp,S-BASE,2025,0.3,share,"assumption: black tiger mostly extensive or semi-intensive, slowly intensifying",QNT-model,Low,
+compound_share_othershrimp,S-BASE,2030,0.35,share,"assumption: black tiger mostly extensive or semi-intensive, slowly intensifying",QNT-model,Low,
+compound_share_othershrimp,S-BASE,2035,0.4,share,"assumption: black tiger mostly extensive or semi-intensive, slowly intensifying",QNT-model,Low,
+compound_share_othershrimp,S-BASE,2040,0.45,share,"assumption: black tiger mostly extensive or semi-intensive, slowly intensifying",QNT-model,Low,
+compound_share_othershrimp,S-BASE,2050,0.5,share,"assumption: black tiger mostly extensive or semi-intensive, slowly intensifying",QNT-model,Low,
+compound_share_otherfish_2025,ALL,ALL,0.68,share,"assumption: share of other fed fish (tilapia, snakehead, carps, marine) on commercial pellets in 2025; set so the aquafeed scale factor is about 1 against the USDA 6.5 Mt",MAC-01; QNT-model,Low,All aquafeed coefficients are then scaled by one factor so the 2025 total equals base_aquafeed_mt.
+compound_share_otherfish_index,S-BASE,2025,1.0,index 2025 = 1,"our estimate: more pellet feeding of tilapia, snakehead and carps (2025 calibrated share about 0.68)",QNT-model,Low,
+compound_share_otherfish_index,S-BASE,2030,1.07,index 2025 = 1,"our estimate: more pellet feeding of tilapia, snakehead and carps (2025 calibrated share about 0.68)",QNT-model,Low,
+compound_share_otherfish_index,S-BASE,2035,1.12,index 2025 = 1,"our estimate: more pellet feeding of tilapia, snakehead and carps (2025 calibrated share about 0.68)",QNT-model,Low,
+compound_share_otherfish_index,S-BASE,2040,1.18,index 2025 = 1,"our estimate: more pellet feeding of tilapia, snakehead and carps (2025 calibrated share about 0.68)",QNT-model,Low,
+compound_share_otherfish_index,S-BASE,2050,1.25,index 2025 = 1,"our estimate: more pellet feeding of tilapia, snakehead and carps (2025 calibrated share about 0.68)",QNT-model,Low,
+fcr_improve_livestock,S-BASE,ALL,0.4,% a year,assumption: trend efficiency gain in feed per kg output,QNT-model,Low,
+fcr_improve_aqua,S-BASE,ALL,0.3,% a year,assumption: trend efficiency gain,QNT-model,Low,
+fcr_improve_livestock,S-EFF,ALL,1.0,% a year,"assumption: genetics, precision feeding, health; about 22% less feed per kg by 2050",QNT-model,Low,
+fcr_improve_aqua,S-EFF,ALL,0.8,% a year,assumption,QNT-model,Low,
+fcr_improve_livestock,SENS-LOW,ALL,0.0,% a year,sensitivity: no efficiency gain (aquaculture also 0.0),QNT-model,Low,
+fcr_improve_livestock,SENS-HIGH,ALL,1.0,% a year,sensitivity: S-EFF rate (aquaculture 0.8),QNT-model,Low,
+fcr_improve_aqua,SENS-LOW,ALL,0.0,% a year,sensitivity (paired with livestock),QNT-model,Low,
+fcr_improve_aqua,SENS-HIGH,ALL,0.8,% a year,sensitivity (paired with livestock),QNT-model,Low,
+sbm_incl_pig,ALL,ALL,0.18,share of compound feed (before calibration),assumption: typical formulation share; all groups are scaled by one factor so 2025 total equals 7.2 Mt,QNT-model; MAC-04,Low,
+sbm_incl_poultry,ALL,ALL,0.28,share of compound feed (before calibration),assumption: typical formulation share; all groups are scaled by one factor so 2025 total equals 7.2 Mt,QNT-model; MAC-04,Low,
+sbm_incl_other_livestock,ALL,ALL,0.08,share of compound feed (before calibration),assumption: typical formulation share; all groups are scaled by one factor so 2025 total equals 7.2 Mt,QNT-model; MAC-04,Low,
+sbm_incl_pangasius,ALL,ALL,0.28,share of compound feed (before calibration),assumption: typical formulation share; all groups are scaled by one factor so 2025 total equals 7.2 Mt,QNT-model; MAC-04,Low,
+sbm_incl_whiteleg,ALL,ALL,0.28,share of compound feed (before calibration),assumption: typical formulation share; all groups are scaled by one factor so 2025 total equals 7.2 Mt,QNT-model; MAC-04,Low,
+sbm_incl_othershrimp,ALL,ALL,0.25,share of compound feed (before calibration),assumption: typical formulation share; all groups are scaled by one factor so 2025 total equals 7.2 Mt,QNT-model; MAC-04,Low,
+sbm_incl_otherfish,ALL,ALL,0.25,share of compound feed (before calibration),assumption: typical formulation share; all groups are scaled by one factor so 2025 total equals 7.2 Mt,QNT-model; MAC-04,Low,
+sbm_incl_trend,S-BASE,ALL,0.0,% a year,assumption: trend diets keep soybean-meal intensity constant,QNT-model,Low,
+sbm_incl_trend,S-EFF,ALL,-1.0,% a year,"assumption: synthetic amino acids, low-protein diets, by-products; about 22% lower intensity by 2050",QNT-model,Low,
+sbm_incl_trend,SENS-LOW,ALL,-1.0,% a year,sensitivity,QNT-model,Low,
+sbm_incl_trend,SENS-HIGH,ALL,0.5,% a year,"sensitivity: more soy per tonne (e.g. higher-protein aquafeeds, less DDGS)",QNT-model,Low,
+other_meals_trend,S-BASE,ALL,0.0,% a year,assumption,QNT-model,Low,
+other_meals_trend,S-EFF,ALL,0.5,% a year,"assumption: diversified feed proteins (by-products, rapeseed, DDGS) partly replace soy",QNT-model,Low,
+fm_incl_pig,ALL,ALL,0.0005,share of compound feed,"assumption within edition 1.0 ranges (shrimp 10 to 20%, pangasius 1 to 2%; other fish blends tilapia 1 to 2% with snakehead and marine fish)",FM-05; FM-07; FM-08; QNT-model,Low,"Gives about 0.26 Mt fishmeal in 2025, between OECD-FAO apparent feed use (0.22 Mt) and the top of edition 1.0 central pool (0.245 Mt)."
+fm_incl_poultry,ALL,ALL,0.0005,share of compound feed,"assumption within edition 1.0 ranges (shrimp 10 to 20%, pangasius 1 to 2%; other fish blends tilapia 1 to 2% with snakehead and marine fish)",FM-05; FM-07; FM-08; QNT-model,Low,"Gives about 0.26 Mt fishmeal in 2025, between OECD-FAO apparent feed use (0.22 Mt) and the top of edition 1.0 central pool (0.245 Mt)."
+fm_incl_other_livestock,ALL,ALL,0.0,share of compound feed,"assumption within edition 1.0 ranges (shrimp 10 to 20%, pangasius 1 to 2%; other fish blends tilapia 1 to 2% with snakehead and marine fish)",FM-05; FM-07; FM-08; QNT-model,Low,"Gives about 0.26 Mt fishmeal in 2025, between OECD-FAO apparent feed use (0.22 Mt) and the top of edition 1.0 central pool (0.245 Mt)."
+fm_incl_pangasius,ALL,ALL,0.01,share of compound feed,"assumption within edition 1.0 ranges (shrimp 10 to 20%, pangasius 1 to 2%; other fish blends tilapia 1 to 2% with snakehead and marine fish)",FM-05; FM-07; FM-08; QNT-model,Low,"Gives about 0.26 Mt fishmeal in 2025, between OECD-FAO apparent feed use (0.22 Mt) and the top of edition 1.0 central pool (0.245 Mt)."
+fm_incl_whiteleg,ALL,ALL,0.12,share of compound feed,"assumption within edition 1.0 ranges (shrimp 10 to 20%, pangasius 1 to 2%; other fish blends tilapia 1 to 2% with snakehead and marine fish)",FM-05; FM-07; FM-08; QNT-model,Low,"Gives about 0.26 Mt fishmeal in 2025, between OECD-FAO apparent feed use (0.22 Mt) and the top of edition 1.0 central pool (0.245 Mt)."
+fm_incl_othershrimp,ALL,ALL,0.08,share of compound feed,"assumption within edition 1.0 ranges (shrimp 10 to 20%, pangasius 1 to 2%; other fish blends tilapia 1 to 2% with snakehead and marine fish)",FM-05; FM-07; FM-08; QNT-model,Low,"Gives about 0.26 Mt fishmeal in 2025, between OECD-FAO apparent feed use (0.22 Mt) and the top of edition 1.0 central pool (0.245 Mt)."
+fm_incl_otherfish,ALL,ALL,0.025,share of compound feed,"assumption within edition 1.0 ranges (shrimp 10 to 20%, pangasius 1 to 2%; other fish blends tilapia 1 to 2% with snakehead and marine fish)",FM-05; FM-07; FM-08; QNT-model,Low,"Gives about 0.26 Mt fishmeal in 2025, between OECD-FAO apparent feed use (0.22 Mt) and the top of edition 1.0 central pool (0.245 Mt)."
+fm_incl_trend,S-BASE,ALL,-1.5,% a year,"assumption: continued substitution, slower than the 1997 to 2017 fall of one-half to two-thirds",FM-05; QNT-model,Low,
+fm_incl_trend,S-EFF,ALL,-3.0,% a year,assumption: close to the historical rate of decline,FM-05; QNT-model,Low,
+maize_incl_pig,ALL,ALL,0.45,share of compound feed (before calibration),assumption; scaled so 2025 compound-feed maize equals 10.9 Mt,FS-23; QNT-model,Low,
+maize_incl_poultry,ALL,ALL,0.52,share of compound feed (before calibration),assumption; scaled so 2025 compound-feed maize equals 10.9 Mt,FS-23; QNT-model,Low,
+maize_incl_other_livestock,ALL,ALL,0.3,share of compound feed (before calibration),assumption; scaled so 2025 compound-feed maize equals 10.9 Mt,FS-23; QNT-model,Low,
+maize_incl_aqua,ALL,ALL,0.05,share of compound feed (before calibration),assumption; scaled so 2025 compound-feed maize equals 10.9 Mt,FS-23; QNT-model,Low,
+maize_fsi_other_mt,ALL,ALL,1.61,Mt,"derived 2025: supply (imports 11.91 + production 4.1) minus feed and residual 14.4; food, seed, industrial and stock change",MAC-08; MAC-01,Low,"Held constant. E10 ethanol could raise it (one ethanol plant is moving to imported maize, FS-09)."
+maize_fsi_other_mt,SENS-LOW,ALL,1.61,Mt,sensitivity: same as base (one-sided test),MAC-08; MAC-01,Low,
+maize_fsi_other_mt,SENS-HIGH,2035,3.0,Mt,"sensitivity: non-feed maize rises towards the OECD-FAO 2035 level (consumption 21.2 minus feed 16.8 = 4.4 Mt), e.g. if domestic E10 ethanol shifts to maize",QNT-01; FS-09; GT-10,Low,"OECD and USDA split feed and non-feed maize differently; this is a stress test, not a projection."
+maize_fsi_other_mt,SENS-HIGH,2040,3.7,Mt,"sensitivity: non-feed maize rises towards the OECD-FAO 2035 level (consumption 21.2 minus feed 16.8 = 4.4 Mt), e.g. if domestic E10 ethanol shifts to maize",QNT-01; FS-09; GT-10,Low,"OECD and USDA split feed and non-feed maize differently; this is a stress test, not a projection."
+maize_fsi_other_mt,SENS-HIGH,2050,4.4,Mt,"sensitivity: non-feed maize rises towards the OECD-FAO 2035 level (consumption 21.2 minus feed 16.8 = 4.4 Mt), e.g. if domestic E10 ethanol shifts to maize",QNT-01; FS-09; GT-10,Low,"OECD and USDA split feed and non-feed maize differently; this is a stress test, not a projection."
+maize_prod_growth,S-BASE,ALL,0.0,% a year,"assumption: area loss offsets yield gains (810,000 ha in 2025, down from 820,000)",MAC-01; QNT-model,Low,OECD-FAO projects +1.4% a year to 2035 (QNT-01).
+maize_prod_growth,SENS-LOW,ALL,-2.0,% a year,sensitivity: area loss and climate stress,QNT-model,Low,
+maize_prod_growth,SENS-HIGH,ALL,1.4,% a year,sensitivity: OECD-FAO 2025 to 2035 rate,QNT-01,Medium,
+soy_yield_2025,ALL,ALL,3.16,t beans per ha,"derived: OECD-FAO 2025 yields (Argentina 2.91, Brazil 3.62, United States 3.56, others 3.0) weighted by the origin of Vietnam's soy protein (meal imports mainly Argentina; beans Brazil and United States)",QNT-01; MAC-04; MAC-09,Medium,
+soy_yield_growth,ALL,ALL,0.6,% a year,"projection: OECD-FAO 2025 to 2035 soybean yield growth in the three origins, about 0.4 to 0.7% a year; extended to 2050",QNT-01,Medium,
+land_alloc_meal,ALL,ALL,0.8,share of soybean land attributed to meal,assumption: mass allocation (meal about 80% of product mass); economic allocation about 0.65; gross 1.0,QNT-model,Low,
+maize_yield_2025,ALL,ALL,7.28,t per ha,"derived: 2025 yields (Argentina 7.69, Brazil 6.11, United States 11.68, others 6.5) weighted by 2025 import origins (46.5%, 34.8%, 13%, 5.7%)",QNT-01; MAC-08; MAC-01,Medium,
+maize_yield_growth,ALL,ALL,0.3,% a year,"projection: OECD-FAO 2025 to 2035 maize yields in origin mix, extended",QNT-01,Low,
+alt_feed_sbm_share,S-ALT,2030,0.01,share of soybean-meal protein replaced by microbial protein,"what-if assumption (not a forecast); at 2026 costs microbial protein is 4.6 to 5.1 times soybean-meal protein (edition 1.0), so 10% by 2050 implies large cost falls or policy support",QNT-model; COST-43,Low,
+alt_feed_sbm_share,S-ALT,2035,0.03,share of soybean-meal protein replaced by microbial protein,"what-if assumption (not a forecast); at 2026 costs microbial protein is 4.6 to 5.1 times soybean-meal protein (edition 1.0), so 10% by 2050 implies large cost falls or policy support",QNT-model; COST-43,Low,
+alt_feed_sbm_share,S-ALT,2040,0.05,share of soybean-meal protein replaced by microbial protein,"what-if assumption (not a forecast); at 2026 costs microbial protein is 4.6 to 5.1 times soybean-meal protein (edition 1.0), so 10% by 2050 implies large cost falls or policy support",QNT-model; COST-43,Low,
+alt_feed_sbm_share,S-ALT,2050,0.1,share of soybean-meal protein replaced by microbial protein,"what-if assumption (not a forecast); at 2026 costs microbial protein is 4.6 to 5.1 times soybean-meal protein (edition 1.0), so 10% by 2050 implies large cost falls or policy support",QNT-model; COST-43,Low,
+alt_feed_sbm_share,ALL,ALL,0.0,share,no substitution outside S-ALT,QNT-model,High,
+alt_feed_sbm_share,SENS-LOW,ALL,0.0,share,used only in the S-ALT comparison row,QNT-model,Low,
+alt_feed_sbm_share,SENS-HIGH,2050,0.2,share,used only in the S-ALT comparison row,QNT-model,Low,
+alt_feed_fm_share,S-ALT,2030,0.1,share of fishmeal protein replaced by microbial protein,what-if assumption; trials replace 25 to 60% of fishmeal without growth loss (edition 1.0 H9),QNT-model; FM-08; FM-22,Low,
+alt_feed_fm_share,S-ALT,2035,0.18,share of fishmeal protein replaced by microbial protein,what-if assumption; trials replace 25 to 60% of fishmeal without growth loss (edition 1.0 H9),QNT-model; FM-08; FM-22,Low,
+alt_feed_fm_share,S-ALT,2040,0.25,share of fishmeal protein replaced by microbial protein,what-if assumption; trials replace 25 to 60% of fishmeal without growth loss (edition 1.0 H9),QNT-model; FM-08; FM-22,Low,
+alt_feed_fm_share,S-ALT,2050,0.4,share of fishmeal protein replaced by microbial protein,what-if assumption; trials replace 25 to 60% of fishmeal without growth loss (edition 1.0 H9),QNT-model; FM-08; FM-22,Low,
+alt_feed_fm_share,ALL,ALL,0.0,share,no substitution outside S-ALT,QNT-model,High,
+alt_food_meat_share,S-ALT,2030,0.01,share of meat consumption (protein basis) replaced by plant-based and fermented foods,what-if assumption (not a forecast; no consumer research in scope),QNT-model,Low,Domestic meat production falls in proportion (self-sufficiency held constant).
+alt_food_meat_share,S-ALT,2035,0.03,share of meat consumption (protein basis) replaced by plant-based and fermented foods,what-if assumption (not a forecast; no consumer research in scope),QNT-model,Low,Domestic meat production falls in proportion (self-sufficiency held constant).
+alt_food_meat_share,S-ALT,2040,0.05,share of meat consumption (protein basis) replaced by plant-based and fermented foods,what-if assumption (not a forecast; no consumer research in scope),QNT-model,Low,Domestic meat production falls in proportion (self-sufficiency held constant).
+alt_food_meat_share,S-ALT,2050,0.1,share of meat consumption (protein basis) replaced by plant-based and fermented foods,what-if assumption (not a forecast; no consumer research in scope),QNT-model,Low,Domestic meat production falls in proportion (self-sufficiency held constant).
+alt_food_meat_share,ALL,ALL,0.0,share,no substitution outside S-ALT,QNT-model,High,
+feed_route_gas_share,S-ALT,2030,0.0,share of feed microbial protein from hydrogen gas fermentation (rest sugar or starch based),what-if assumption,QNT-model,Low,
+feed_route_gas_share,S-ALT,2035,0.1,share of feed microbial protein from hydrogen gas fermentation (rest sugar or starch based),what-if assumption,QNT-model,Low,
+feed_route_gas_share,S-ALT,2040,0.3,share of feed microbial protein from hydrogen gas fermentation (rest sugar or starch based),what-if assumption,QNT-model,Low,
+feed_route_gas_share,S-ALT,2050,0.5,share of feed microbial protein from hydrogen gas fermentation (rest sugar or starch based),what-if assumption,QNT-model,Low,
+food_route_fermented_share,S-ALT,2030,0.3,share of food substitute protein from fermentation on sugar (rest plant-based from soy),what-if assumption,QNT-model,Low,
+food_route_fermented_share,S-ALT,2035,0.35,share of food substitute protein from fermentation on sugar (rest plant-based from soy),what-if assumption,QNT-model,Low,
+food_route_fermented_share,S-ALT,2040,0.4,share of food substitute protein from fermentation on sugar (rest plant-based from soy),what-if assumption,QNT-model,Low,
+food_route_fermented_share,S-ALT,2050,0.5,share of food substitute protein from fermentation on sugar (rest plant-based from soy),what-if assumption,QNT-model,Low,
+glucose_per_protein,ALL,ALL,4.0,t glucose per t protein,"derived from edition 1.0 cost stack A: 2.0 to 2.2 t glucose per t product at 45 to 55% protein; range 3.0 (bacterial, 70% CP) to 4.4",COST-43; QNT-model,Medium,
+elec_sugar_route,ALL,ALL,3.5,kWh per kg protein,"derived from edition 1.0 cost stack A electricity lines (USD 65 to 234 per t product at USD 0.075 per kWh), range 1.7 to 6.2",COST-01; QNT-model,Low,Steam not included.
+urea_per_protein_sugar,ALL,ALL,0.37,t urea per t protein,derived from edition 1.0 cost stack A (0.17 to 0.20 t urea per t product at 45 to 55% protein),COST-30; COST-33,Medium,
+elec_gas_route,ALL,ALL,41.0,kWh per kg protein,"derived: 25 kWh per kg dry biomass (Sillman et al. lower-efficiency case, electrolysis plus bioreactor) plus about 2 kWh for processing, divided by 65% protein; range 17 (9.86 kWh case, 70% protein) to 55",QNT-10; QNT-09,Low,Cross-check against FTG stream factors when available.
+h2_gas_route,ALL,ALL,0.72,kg H2 per kg protein,"derived: 25 kWh per kg biomass / 53 kWh per kg H2 = 0.47 kg H2 per kg biomass, divided by 0.65",QNT-10,Low,
+co2_gas_route,ALL,ALL,2.7,kg CO2 per kg protein,derived: 1.76 kg CO2 per kg dry biomass / 0.65,QNT-09,Medium,
+nh3_gas_route,ALL,ALL,0.17,kg NH3 per kg protein,derived: 0.112 kg NH3 per kg dry biomass / 0.65,QNT-09,Medium,
+cp_feed_sugar_product,ALL,ALL,0.55,share,"assumption: yeast, fungal or bacterial biomass on sugar",COST-43; QNT-model,Low,
+cp_feed_gas_product,ALL,ALL,0.65,share,within 55 to 75% usable protein range,QNT-09,Medium,
+cp_food_plant_ingredient,ALL,ALL,0.55,share,textured soy protein 50 to 55% protein,COST-28,Medium,
+cp_food_fermented_ingredient,ALL,ALL,0.45,share,"assumption: mycoprotein-type biomass, dry basis",QNT-model,Low,
+cp_food_finished,ALL,ALL,0.15,share,assumption: finished plant-based or fermented product at meat-like protein,QNT-model,Low,
+starch_per_glucose,ALL,ALL,0.926,t starch per t glucose,hydrolysis gain: 1.08 t glucose per t starch in practice (1.11 theoretical),QNT-model,Medium,
+roots_per_starch,ALL,ALL,4.4,t fresh roots per t starch,Thai factory material balance used in edition 1.0,FS-05,Medium,
+cassava_yield,ALL,ALL,20.5,t fresh roots per ha,"derived 2025: 10.24 Mt from 499,100 ha",FS-01,High,Held constant (climate risk offsets yield gains).
+sugar_per_glucose,ALL,ALL,0.95,t sucrose per t glucose equivalent,sucrose hydrolysis gives 1.053 t hexose per t,QNT-model,High,
+soy_per_food_protein,ALL,ALL,3.3,t soybeans per t food protein,"assumption: beans 36% protein, about 84% recovered in concentrate or textured protein",QNT-model,Low,
+grid_ef,ALL,2025,0.659,t CO2 per MWh,official 2023 grid factor (latest),COST-08; GT-11,High,"Target-derived path, not a forecast; assumes PDP8 is delivered."
+grid_ef,ALL,2030,0.38,t CO2 per MWh,derived: PDP8 power-sector emissions 197 to 199 Mt / 500.4 to 557.8 TWh commercial electricity,COST-08; GT-11,Medium,"Target-derived path, not a forecast; assumes PDP8 is delivered."
+grid_ef,ALL,2035,0.29,t CO2 per MWh,linear interpolation 2030 to 2040,COST-08; GT-11,Low,"Target-derived path, not a forecast; assumes PDP8 is delivered."
+grid_ef,ALL,2040,0.2,t CO2 per MWh,linear interpolation 2030 to 2050,COST-08; GT-11,Low,"Target-derived path, not a forecast; assumes PDP8 is delivered."
+grid_ef,ALL,2050,0.021,t CO2 per MWh,"derived: PDP8 about 27 Mt power-sector emissions / 1,237.7 to 1,375.1 TWh",COST-08; GT-11,Medium,"Target-derived path, not a forecast; assumes PDP8 is delivered."
+sbm_ci,ALL,ALL,0.85,kg CO2e per kg protein,published average for soybean meal (land-use change treatment not checked),QNT-11,Low,
+fm_ci,ALL,ALL,2.72,kg CO2e per kg protein,published average for fishmeal,QNT-11,Low,
