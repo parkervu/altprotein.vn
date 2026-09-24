@@ -1,0 +1,208 @@
+---
+import Base from '../layouts/Base.astro';
+import { t } from '../lib/i18n';
+import { searchPages, searchRecords } from '../lib/search';
+import { PAGE_BY_ID, appendixLetter, chapterNumber, href, localize } from '../lib/site';
+
+const lang = Astro.locals.lang ?? 'en';
+const s = t(lang);
+const vi = lang === 'vi';
+const q = (Astro.url.searchParams.get('q') ?? '').slice(0, 120).trim();
+const kind = Astro.url.searchParams.get('kind') ?? '';
+const pages = q ? await searchPages(q) : [];
+const records = q ? searchRecords(q) : [];
+const kinds = [...new Set(records.map((r) => r.kind))];
+const shownRecords = kind && kind !== 'page' ? records.filter((r) => r.kind === kind) : records;
+const showPages = !kind || kind === 'page';
+const total = pages.length + records.length;
+const kicker = (id: string) => {
+  const p = PAGE_BY_ID.get(id)!;
+  if (p.section === 'report') return `${vi ? 'Chương' : 'Chapter'} ${chapterNumber(id)}`;
+  if (p.section === 'appendix') return `${vi ? 'Phụ lục' : 'Appendix'} ${appendixLetter(id)}`;
+  if (p.section === 'brief') return vi ? 'Bản tóm lược' : 'Brief';
+  return vi ? 'Trang đầu' : 'Front matter';
+};
+const link = (k: string) => {
+  const u = new URLSearchParams({ q });
+  if (k) u.set('kind', k);
+  return `?${u}`;
+};
+---
+
+<Base title={q ? `${s.search}: ${q}` : s.search} section="search" noindex={Boolean(q)}>
+  <div class="frame search-page">
+    <header class="index-head">
+      <h1>{s.searchHeading}</h1>
+      <form role="search" method="get" action={localize('/search', lang)} class="big-search">
+        <label class="visually-hidden" for="q-main">{s.search}</label>
+        <input id="q-main" name="q" type="search" value={q} placeholder={s.searchPlaceholder} autofocus={!q} />
+        <button class="btn btn-primary" type="submit">{s.search}</button>
+      </form>
+      <p class="hint">{s.searchHint}</p>
+    </header>
+    {
+      q && (
+        <p class="result-count" role="status">
+          {total ? s.searchResults(total, q) : s.searchNone(q)}
+        </p>
+      )
+    }
+    {
+      q && total > 0 && (
+        <nav class="kind-filter" aria-label={vi ? 'Lọc theo loại' : 'Filter by type'}>
+          <a href={link('')} aria-current={!kind ? 'true' : undefined}>
+            {vi ? 'Tất cả' : 'All'} <span>{total}</span>
+          </a>
+          {pages.length > 0 && (
+            <a href={link('page')} aria-current={kind === 'page' ? 'true' : undefined}>
+              {s.kinds.page} <span>{pages.length}</span>
+            </a>
+          )}
+          {kinds.map((k) => (
+            <a href={link(k)} aria-current={kind === k ? 'true' : undefined}>
+              {s.kinds[k] ?? k} <span>{records.filter((r) => r.kind === k).length}</span>
+            </a>
+          ))}
+        </nav>
+      )
+    }
+    <ol class="results">
+      {
+        showPages &&
+          pages.map((r) => {
+            const p = PAGE_BY_ID.get(r.id)!;
+            return (
+              <li>
+                <a href={href(r.id, lang)} lang={p.lang !== lang ? p.lang : undefined}>
+                  <span class="r-kind">{kicker(r.id)}</span>
+                  <span class="r-title">{p.heading}</span>
+                  {r.snippet ? <span class="r-text" set:html={r.snippet} /> : <span class="r-text">{p.summary}</span>}
+                </a>
+              </li>
+            );
+          })
+      }
+      {
+        shownRecords.map((r) => (
+          <li>
+            <a href={localize(r.href, lang)}>
+              <span class="r-kind">
+                {s.kinds[r.kind] ?? r.kind} · {r.id}
+              </span>
+              <span class="r-title" lang="en">
+                {r.title}
+                {r.title_vi && (
+                  <span class="r-vi" lang="vi">
+                    {' '}
+                    · {r.title_vi}
+                  </span>
+                )}
+              </span>
+              {r.text && <span class="r-text" lang="en">{r.text}</span>}
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+    <div style="height:64px"></div>
+  </div>
+</Base>
+
+<style>
+  .big-search {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 10px;
+  }
+  .big-search input {
+    flex: 1;
+    min-width: 0;
+    font-size: 1.1rem;
+    padding: 12px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+  }
+  .hint {
+    font-size: 0.9rem !important;
+    color: var(--muted) !important;
+  }
+  .result-count {
+    font-weight: 600;
+    margin: 12px 0;
+  }
+  .kind-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+  .kind-filter a {
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    padding: 5px 12px;
+    font-size: 0.86rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--surface);
+  }
+  .kind-filter a span {
+    color: var(--muted);
+    margin-left: 4px;
+  }
+  .kind-filter a[aria-current] {
+    background: var(--ink);
+    color: var(--bg);
+  }
+  .kind-filter a[aria-current] span {
+    color: inherit;
+    opacity: 0.7;
+  }
+  .results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 52rem;
+    display: grid;
+    gap: 8px;
+  }
+  .results a {
+    display: grid;
+    gap: 3px;
+    padding: 14px 18px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .results a:hover {
+    border-color: var(--brand);
+  }
+  .r-kind {
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 650;
+    color: var(--brand-ink);
+  }
+  .r-title {
+    font-weight: 620;
+    font-size: 1.05rem;
+  }
+  .r-vi {
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .r-text {
+    font-size: 0.9rem;
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+  .r-text :global(mark) {
+    background: color-mix(in srgb, var(--series-4) 35%, transparent);
+    color: inherit;
+    border-radius: 2px;
+    padding: 0 1px;
+  }
+</style>

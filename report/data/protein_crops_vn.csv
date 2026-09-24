@@ -1,0 +1,30 @@
+record_id,crop,indicator,value,unit,year,source_ids,evidence_label,confidence,notes
+PCV-001,soybean,harvested area,205,thousand ha,2010,AQF-20,VN-direct,Medium,Historical peak per VnEconomy
+PCV-002,soybean,harvested area,36.8,thousand ha,2021,AQF-20,VN-direct,Medium,
+PCV-003,soybean,harvested area,under 20,thousand ha,2024,AQF-20,VN-direct,Low,Press forecast; conflicts with OECD-FAO 39 kha
+PCV-004,soybean,harvested area,39.0,thousand ha,2025,AQF-02,VN-direct,Medium,OECD-FAO baseline
+PCV-005,soybean,harvested area (projection),39.3,thousand ha,2030,AQF-02,VN-direct,Medium,OECD-FAO projection
+PCV-006,soybean,harvested area (projection),38.9,thousand ha,2035,AQF-02,VN-direct,Medium,OECD-FAO projection
+PCV-007,soybean,yield,1.28,t per ha,2025,AQF-02,VN-direct,Medium,OECD-FAO; VnEconomy gives 1.62 current and 1.49 in 2017
+PCV-008,soybean,yield (projection),1.15,t per ha,2035,AQF-02,VN-direct,Medium,OECD-FAO projects a decline
+PCV-009,soybean,production,50,kt,2025,AQF-02; MAC-04,VN-direct,Medium,USDA 42 kt
+PCV-010,soybean,production (projection),44.9,kt,2035,AQF-02,VN-direct,Medium,
+PCV-011,soybean,imports,2600,kt,2025,AQF-02; MAC-09,VN-direct,High,Customs 2.61 Mt
+PCV-012,soybean,imports (projection),3114.7,kt,2035,AQF-02,VN-direct,Medium,Plus soybean meal imports 5.7 Mt (2025)
+PCV-013,soybean,domestic vs imported price,"25,000 to 30,000 vs 13,000 to 15,000",VND per kg,2024,AQF-20,VN-direct,Medium,"Domestic beans go to food (tofu, soymilk), not feed"
+PCV-014,soybean,food use,540,kt,2025,MAC-04,VN-direct,Medium,Domestic output covers under 10% of food use alone
+PCV-015,soybean,GE events approved for food and feed,15,events,2025,AQF-21,VN-direct,High,Import use only
+PCV-016,soybean,GE field-test applications submitted,0,applications,2025,AQF-21,VN-direct,High,Field testing is permitted but no one has applied
+PCV-017,soybean,genome-edited high-protein lines,greenhouse biosafety evaluation,status,2025,AQF-21,VN-direct,Medium,Research stage
+PCV-018,all crops,Decree 43/2026/ND-CP: gene-edited organisms without foreign DNA outside GMO rules,notification process,status,2026,AQF-22,VN-direct,Medium,Also halves food and feed approval time (90 to 45 working days) for events cleared in five OECD or G20 countries; first rules for GM microorganisms in contained use
+PCV-019,maize,GE events approved for food and feed,16,events,2025,AQF-21,VN-direct,High,
+PCV-020,maize,GE hybrids approved for cultivation,31,hybrids,2025,AQF-21,VN-direct,High,16 in 2014 to 2016; 30 by Oct 2024; one in Feb 2025
+PCV-021,maize,GE share of feed-maize area,50,%,2024,AQF-21,VN-direct,Medium,"About half; above 100,000 ha first reached in 2020"
+PCV-022,maize,harvested area,875,thousand ha,2025,AQF-02,VN-direct,Medium,OECD-FAO; 894 (2030) and 889 (2035)
+PCV-023,maize,yield,4.91,t per ha,2025,AQF-02,VN-direct,Medium,"5.28 (2030), 5.54 (2035) projected"
+PCV-024,canola,GE events approved for food and feed,6,events,2025,AQF-21,VN-direct,High,Relevant to omega-3 canola oil imports (DHA canola)
+PCV-025,rice land,planned release by 2030,654,thousand ha,2030,NTS-15,VN-direct,Medium,Decision 1177/QD-TTg; destination not planned (NGF covers yields per ha)
+PCV-026,soybean,proposed winter soybean on Red River Delta double-rice land,300,thousand ha,2024,AQF-20,VN-direct,Low,"Proposal for 600,000 t; not an adopted plan"
+PCV-027,soybean,what-if: 100 kha at 2.0 t per ha,200,kt beans,2050,AQF-calc; QNT-model,VN-direct,Low,1.5% of S-BASE 2050 bean-equivalent need (13.3 Mt); 2.2% of S-EFF
+PCV-028,soybean,what-if: 300 kha at 2.5 t per ha,750,kt beans,2050,AQF-calc; QNT-model,VN-direct,Low,5.6% of S-BASE need; would first displace food-soy imports (540 kt)
+PCV-029,duckweed and azolla,traditional use as fodder and green manure,centuries,status,1985,AQF-30; AQF-31,VN-direct,Medium,One indexed Vietnamese duckweed-protein paper against 39 for Thailand (HSC-01); no current area data

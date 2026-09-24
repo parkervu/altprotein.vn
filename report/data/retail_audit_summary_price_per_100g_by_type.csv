@@ -1,0 +1,13 @@
+record_id,product_type,count,median,min,max
+RAP-001,canned analog,7,30811,10067,38000
+RAP-002,dried TVP/soy chunks,5,32667,32667,50000
+RAP-003,dumpling/spring roll/bun with vegetable filling,35,11425,5580,70833
+RAP-004,frozen meat/seafood analog,18,15180,8360,99444
+RAP-005,other,4,40303,33094,90600
+RAP-006,plant milk,23,9375,2292,17556
+RAP-007,plant yogurt/creamer,7,10050,9700,15311
+RAP-008,protein powder,4,168950,150641,199986
+RAP-009,ready meal,6,13540,12200,16100
+RAP-010,snack/jerky,5,131600,131600,131600
+RAP-011,tofu,5,3643,3300,4758
+RAP-012,vegan cheese/spread,9,83333,42760,172345

@@ -1,0 +1,14 @@
+record_id,product_type,as_sold_form,count,median,min,max
+RAN-001,canned analog,ready-to-eat,2,6.79,4.5,9.08
+RAN-002,dried TVP/soy chunks,dry,5,64,53.3,66.7
+RAN-003,dumpling/spring roll/bun with vegetable filling,ready-to-cook,18,4.32,1.53,6.3
+RAN-004,frozen meat/seafood analog,ready-to-cook,5,15,3.03,19
+RAN-005,frozen meat/seafood analog,ready-to-eat,4,19.25,3,25.1
+RAN-006,other,ready-to-cook,2,9,9,9
+RAN-007,plant milk,beverage,14,1.6,0.7,5
+RAN-008,plant yogurt/creamer,ready-to-eat,3,1.9,1.6,2.93
+RAN-009,protein powder,dry,4,47,41.2,58.3
+RAN-010,ready meal,ready-to-cook,1,4.2,4.2,4.2
+RAN-011,ready meal,ready-to-eat,1,4.2,4.2,4.2
+RAN-012,tofu,ready-to-cook,5,4.98,3.8,9.3
+RAN-013,vegan cheese/spread,ready-to-eat,2,8.86,8.03,9.7

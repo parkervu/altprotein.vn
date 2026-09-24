@@ -1,0 +1,33 @@
+record_id,stream,market_location,price,unit,date,basis,source_ids,evidence_label,confidence,notes
+FSP-001,Cassava fresh root (30% starch),Tay Ninh,3000-3500,VND/kg,2026-04-09,factory-gate purchase,FS-11,VN-direct,Medium,"Up 1,000-1,500 VND/kg (~75%) vs Apr 2025"
+FSP-002,Cassava fresh root (30% starch),Dak Lak,3000-3498,VND/kg,2026-04-09,factory-gate purchase,FS-11,VN-direct,Medium,"Apr 2025: 1,800-1,998"
+FSP-003,Cassava fresh root (30% starch),Quang Ngai,3099-3300,VND/kg,2026-04-09,factory-gate purchase,FS-11,VN-direct,Medium,
+FSP-004,Cassava fresh root (30% starch),Gia Lai,3399-3549,VND/kg,2026-04-09,factory-gate purchase,FS-11,VN-direct,Medium,"Apr 2025: 1,800-1,950"
+FSP-005,Cassava fresh root (bulk),Northern region,2400-2700,VND/kg,2026-04-09,factory-gate purchase,FS-11,VN-direct,Medium,"Apr 2025: 1,350-1,650"
+FSP-006,Cassava fresh root,National range,2850-3550,VND/kg,2026-03-31,factory-gate purchase,FS-12,VN-direct,Medium,End of Q1 2026
+FSP-007,Cassava starch (native),Domestic,12500-13200,VND/kg,2026-03-31,factory-gate/wholesale,FS-12,VN-direct,Medium,
+FSP-008,Cassava starch (native),FOB Ho Chi Minh City,520-540,USD/t,2026-04-09,export FOB,FS-11,VN-direct,Medium,Up USD 145-155/t vs Apr 2025
+FSP-009,Cassava starch (native),FOB Ho Chi Minh City,405-415,USD/t,2026-01,export FOB,FS-01,VN-direct,Medium,
+FSP-010,Cassava chips (dried),Domestic,5800-6200,VND/kg,2026-03-31,wholesale,FS-12,VN-direct,Medium,
+FSP-011,Cassava chips (dried),FOB Quy Nhon (to Korea),315,USD/t,2026-04-09,export FOB,FS-11,VN-direct,Medium,Quy Nhon now in Gia Lai (former Binh Dinh)
+FSP-012,Cassava chips (dried),FOB Quy Nhon (to China),260,USD/t,2026-04-09,export FOB,FS-11,VN-direct,Medium,
+FSP-013,Cassava chips (dried),FOB Quy Nhon,~235,USD/t,2026-01,export FOB,FS-01,VN-direct,Medium,
+FSP-014,Cassava pulp,Tay Ninh (Dinh Khue factory),~1700 (implied),VND/kg,2024-12,factory-gate,FS-03,VN-direct,Low,"DERIVED: 6 bn VND annual pulp revenue / 3,500 t pulp. Product form (wet, pressed or dried) not stated; if dried, this is cheap relative to cassava chips"
+FSP-015,Cassava pulp (wet),"Southeast (Dong Nai, Tay Ninh, Binh Phuoc)",200,VND/kg,2005,factory-gate,FS-16,VN-direct,Low,21 years old; shown only as a floor reference
+FSP-016,Cassava pulp (dried),Southeast,800-1000,VND/kg,2005,factory-gate,FS-16,VN-direct,Low,21 years old
+FSP-017,"Other crop by-products (cassava, pumpkin, cane tops)",National cattle-feed reference,2000-5000,VND/kg,2026-07,retail/farm delivered,FS-30,VN-direct,Low,Blog reference table; mixed products
+FSP-018,Rice bran (full-fat),An Giang,7300-7650,VND/kg,2026-09-19,wholesale (mill/trader),FS-26,VN-direct,Medium,Daily market report
+FSP-019,Rice bran,National cattle-feed reference,6500-8500,VND/kg,2026-07,retail/farm delivered,FS-30,VN-direct,Low,
+FSP-020,Rice bran,Domestic,~0.38,USD/kg,2022,wholesale,FS-28,VN-direct,Low,Trade magazine; older than 12 months
+FSP-021,"Broken rice (fragrant, grade 3-4)",An Giang,8500-8600,VND/kg,2026-09-19,wholesale (mill/trader),FS-26,VN-direct,Medium,
+FSP-022,Broken rice (100% broken),Vietnam export,368-372,USD/t,2026-09-19,export FOB,FS-26,VN-direct,Medium,
+FSP-023,Rice (5% broken),Vietnam export,440-445,USD/t,2026-09-19,export FOB,FS-26,VN-direct,Medium,Context for broken-rice discount
+FSP-024,"Paddy (fresh, IR 50404 / OM varieties)",An Giang,5700-6200,VND/kg,2026-09-19,farm-gate,FS-26,VN-direct,Medium,Context
+FSP-025,Refined sugar,Domestic average,~16505,VND/kg,2026-06,wholesale,FS-31,VN-direct,Medium,"3-year low; regional prices 19,600-27,300 VND/kg"
+FSP-026,Molasses,Retail (35-kg can),~9970,VND/kg,2023-12,retail,FS-36,VN-direct,Low,Retail environmental-microbe supply price; bulk mill-gate price not found; older than 12 months
+FSP-027,Brewer's spent grain (fresh),Hanoi,6000-6500,VND/kg,2026-03,retail,FS-42,VN-direct,Low,Single retailer page; high for a ~80%-moisture product; verify with brewery tender prices
+FSP-028,Brewer's spent grain (dried/processed),Hanoi,~5500,VND/kg,2026-03,retail,FS-42,VN-direct,Low,"Reported lower than fresh, which is implausible on a dry-matter basis"
+FSP-029,Maize (ground),National cattle-feed reference,6000-8000,VND/kg,2026-07,retail/farm delivered,FS-30,VN-direct,Low,
+FSP-030,Soybean meal,National cattle-feed reference,9000-11000,VND/kg,2026-07,retail/farm delivered,FS-30,VN-direct,Low,Benchmark protein price
+FSP-031,Cassava fresh root (benchmark),Thailand,3.35-3.55,THB/kg,2026-03,factory-gate purchase,FS-12,VN-adjacent,Medium,Regional benchmark
+FSP-032,Cassava starch (benchmark),Thailand,15.60,THB/kg,2026-03,factory-gate/wholesale,FS-12,VN-adjacent,Medium,Regional benchmark

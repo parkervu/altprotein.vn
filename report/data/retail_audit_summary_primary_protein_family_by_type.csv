@@ -1,0 +1,17 @@
+record_id,primary_family,canned_analog,dried_tvp_soy_chunks,dumpling_spring_roll_bun_with_vegetable_filling,frozen_meat_seafood_analog,other,plant_milk,plant_yogurt_creamer,protein_powder,ready_meal,snack_jerky,tofu,vegan_cheese_spread,total
+RAF-001,cashew,0,0,0,0,0,0,0,0,0,0,0,7,7
+RAF-002,chickpea,0,0,0,0,2,0,0,0,0,0,0,1,3
+RAF-003,hemp,0,0,0,0,0,0,0,2,0,0,0,0,2
+RAF-004,mung bean,0,0,19,0,0,0,0,0,0,0,0,0,19
+RAF-005,mushroom,0,0,1,1,0,0,0,0,0,5,0,0,7
+RAF-006,none,0,0,1,0,1,0,0,0,0,0,0,1,3
+RAF-007,oat,0,0,0,0,0,16,3,0,0,0,0,0,19
+RAF-008,other,0,0,1,0,0,0,0,0,0,0,0,0,1
+RAF-009,other nuts,0,0,0,0,2,14,1,0,0,0,0,0,17
+RAF-010,pea protein,0,0,0,0,0,2,3,2,0,0,0,0,7
+RAF-011,rice/corn,0,0,1,0,2,2,0,0,3,0,0,0,8
+RAF-012,soy protein/TVP/SPC/SPI,8,7,7,4,0,0,1,0,1,0,0,0,28
+RAF-013,soybean/tofu/soy milk,1,0,1,2,0,14,0,0,0,0,8,0,26
+RAF-014,unknown,0,0,7,8,0,3,0,0,0,0,0,0,18
+RAF-015,wheat flour (dough/wrapper),0,0,9,0,2,0,0,0,2,0,0,0,13
+RAF-016,wheat gluten,0,1,0,6,0,0,0,0,1,0,0,0,8

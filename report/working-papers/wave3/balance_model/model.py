@@ -1,0 +1,453 @@
+#!/usr/bin/env python3
+"""
+AltProtein Vietnam, wave 3 (futures 2030 to 2050), stream QNT.
+Transparent protein and feed balance model for Vietnam.
+
+Run:   python model.py
+Reads: assumptions.csv (same folder)
+Writes: outputs.csv and sensitivity.csv (same folder)
+
+Every number the model uses comes from assumptions.csv. Nothing is fetched from the web.
+All outputs for 2030 to 2050 are our estimates (foresight type: estimate), built from stated
+assumptions. They are what-if scenario results, not forecasts, and carry no probabilities.
+
+Method in brief (full explanation in balance_model.md):
+ 1. Demand (macro input only). Per-person consumption of pork, poultry and ruminant meat
+    (carcass weight), eggs and milk production follow index paths from the OECD-FAO
+    Agricultural Outlook 2026-2035 baseline to 2035, then our taper to 2050. The 2025 level
+    is calibrated from official 2025 production, dressing yields and self-sufficiency ratios.
+    S-HIGH multiplies per-person demand by an income multiplier.
+ 2. Domestic production = consumption x self-sufficiency ratio (meat), converted to live weight.
+    Aquaculture follows its own index; an explicit export share per species group splits
+    output into exports and domestic use.
+ 3. Compound feed = output x biological feed conversion ratio (FCR) x share of feed that is
+    compound feed x efficiency factor. 2025 compound shares for pigs and poultry, the other
+    livestock coefficient and the aquafeed scale factor are calibrated so that 2025 feed equals
+    the official 22 Mt livestock and poultry feed and the USDA 6.5 Mt aquafeed.
+ 4. Soybean meal (SBM) = sum over species of feed x inclusion rate x one calibration factor that
+    reproduces the 7.2 Mt fed in 2025. Fishmeal and maize work the same way (maize calibrated to
+    10.9 Mt in compound feed; non-compound maize shrinks with backyard pig feeding).
+ 5. Import need: SBM import need equals SBM demand (domestic beans are negligible and go mostly to
+    food). Maize import need = total maize use minus domestic production.
+ 6. S-ALT = S-BASE plus substitution: a share of meat consumption replaced by plant-based and
+    fermented foods; a share of SBM protein and of fishmeal protein replaced by microbial protein.
+    The model reports the protein, product, feedstock, energy, land and emissions implied.
+ 7. Sensitivity: S-BASE is re-run with low and high values (rows tagged SENS-LOW and SENS-HIGH in
+    assumptions.csv) and the change in 2050 SBM import need is ranked (tornado table).
+"""
+import csv
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ASSUMPTIONS = os.path.join(HERE, "assumptions.csv")
+OUTPUTS = os.path.join(HERE, "outputs.csv")
+SENSITIVITY = os.path.join(HERE, "sensitivity.csv")
+
+YEARS = [2025, 2030, 2035, 2040, 2050]
+SCENARIOS = ["S-BASE", "S-HIGH", "S-EFF", "S-ALT"]
+PARENT = {"S-HIGH": "S-BASE", "S-EFF": "S-BASE", "S-ALT": "S-BASE"}
+
+AQ_SPECIES = ["pangasius", "whiteleg", "othershrimp", "otherfish", "nonfed"]
+FED_AQ = ["pangasius", "whiteleg", "othershrimp", "otherfish"]
+LIVESTOCK_GROUPS = ["pig", "poultry", "other_livestock"]
+
+
+class Params:
+    """Looks up parameter values by (name, scenario, year) with inheritance and interpolation.
+
+    Lookup order: an override tag (sensitivity runs), the scenario, its parent (S-BASE), then ALL.
+    Within one scenario tag: exact year, else linear interpolation between the nearest listed
+    years, else the ALL value. If none applies, the next tag in the chain is tried.
+    """
+
+    def __init__(self, path, overrides=None):
+        self.data = {}
+        with open(path, newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                key = (row["parameter"], row["scenario"])
+                year = row["year"] if row["year"] == "ALL" else int(row["year"])
+                self.data.setdefault(key, {})[year] = float(row["value"])
+        self.overrides = overrides or {}
+
+    def _lookup(self, name, tag, year):
+        d = self.data.get((name, tag))
+        if not d:
+            return None
+        if year in d:
+            return d[year]
+        nums = sorted(k for k in d if k != "ALL")
+        if nums and nums[0] <= year <= nums[-1]:
+            lo = max(k for k in nums if k <= year)
+            hi = min(k for k in nums if k >= year)
+            if lo == hi:
+                return d[lo]
+            return d[lo] + (d[hi] - d[lo]) * (year - lo) / (hi - lo)
+        if "ALL" in d:
+            return d["ALL"]
+        return None
+
+    def get(self, name, scen, year):
+        chain = []
+        if name in self.overrides:
+            chain.append(self.overrides[name])
+        chain.append(scen)
+        s = scen
+        while s in PARENT:
+            s = PARENT[s]
+            chain.append(s)
+        chain.append("ALL")
+        for tag in chain:
+            v = self._lookup(name, tag, year)
+            if v is not None:
+                return v
+        raise KeyError(f"No value for {name} / {scen} / {year}")
+
+
+def run(P, scen, base_results=None):
+    """Returns {year: {indicator: (value, unit)}} for one scenario."""
+    g = lambda name, year: P.get(name, scen, year)
+    out = {}
+
+    # ---------- 2025 calibration ----------
+    pop25 = g("population", 2025)
+    pork_lw25 = g("base_pork_lw_kt", 2025)
+    poul_lw25 = g("base_poultry_lw_kt", 2025)
+    rum_lw25 = g("base_ruminant_lw_kt", 2025)
+    eggs25 = g("base_eggs_bn", 2025)
+    egg_w = g("egg_weight_kg", 2025)
+    milk25 = g("base_milk_kt", 2025)
+
+    pc25 = {
+        "pork": pork_lw25 * g("dressing_pork", 2025) / g("ssr_pork", 2025) / pop25,
+        "poultry": poul_lw25 * g("dressing_poultry", 2025) / g("ssr_poultry", 2025) / pop25,
+        "ruminant": rum_lw25 * g("dressing_ruminant", 2025) / g("ssr_ruminant", 2025) / pop25,
+    }
+    pc_eggs25 = eggs25 * 1000.0 / pop25  # eggs per person
+
+    feed_lv25 = g("base_feed_livestock_mt", 2025)
+    pig_feed25 = feed_lv25 * g("feed_share_pig", 2025)
+    poul_feed25 = feed_lv25 * g("feed_share_poultry", 2025)
+    oth_feed25 = feed_lv25 * g("feed_share_other_livestock", 2025)
+    fcr_pig = g("fcr_pig", 2025)
+    fcr_pm = g("fcr_poultry_meat", 2025)
+    fcr_egg = g("fcr_eggs", 2025)
+    share_pig25 = pig_feed25 / (pork_lw25 / 1000.0 * fcr_pig)
+    share_poul25 = poul_feed25 / (poul_lw25 / 1000.0 * fcr_pm + eggs25 * egg_w * fcr_egg)
+    coef_other = oth_feed25 / ((rum_lw25 + milk25) / 1000.0)
+
+    aq25 = {sp: g(f"base_aq_{sp}_kt", 2025) for sp in AQ_SPECIES}
+    fcr_aq = {sp: g(f"fcr_{sp}", 2025) for sp in FED_AQ}
+    share_of25 = g("compound_share_otherfish_2025", 2025)
+
+    def aq_share(sp, year):
+        if sp in ("pangasius", "whiteleg"):
+            return 1.0
+        if sp == "othershrimp":
+            return min(1.0, g("compound_share_othershrimp", year))
+        return min(1.0, share_of25 * g("compound_share_otherfish_index", year))
+
+    raw_aq25 = sum(aq25[sp] / 1000.0 * fcr_aq[sp] * aq_share(sp, 2025) for sp in FED_AQ)
+    k_aq = g("base_aquafeed_mt", 2025) / raw_aq25
+
+    feed25 = {"pig": pig_feed25, "poultry": poul_feed25, "other_livestock": oth_feed25}
+    for sp in FED_AQ:
+        feed25[sp] = aq25[sp] / 1000.0 * fcr_aq[sp] * aq_share(sp, 2025) * k_aq
+    feed_total25 = sum(feed25.values())
+
+    sbm_raw25 = sum(feed25[k] * g(f"sbm_incl_{k}", 2025) for k in feed25)
+    sbm_cal = g("base_sbm_feed_use_mt", 2025) / sbm_raw25
+    maize_incl = lambda k: g("maize_incl_aqua", 2025) if k in FED_AQ else g(f"maize_incl_{k}", 2025)
+    maize_raw25 = sum(feed25[k] * maize_incl(k) for k in feed25)
+    maize_cal = g("base_maize_compound_feed_mt", 2025) / maize_raw25
+    noncomp_pig25 = pork_lw25 / 1000.0 * fcr_pig * (1 - share_pig25)
+    maize_noncomp25 = g("base_maize_feed_residual_mt", 2025) - g("base_maize_compound_feed_mt", 2025)
+
+    sbm_cp = g("sbm_cp", 2025)
+    fm_cp = g("fishmeal_cp", 2025)
+    extraction = g("soy_meal_extraction", 2025)
+
+    for t in YEARS:
+        n = t - 2025
+        r = {}
+
+        def put(name, value, unit):
+            r[name] = (value, unit)
+
+        pop = g("population", t)
+        inc = g("income_multiplier", t)
+        alt_food = g("alt_food_meat_share", t)
+        put("population", pop, "million")
+
+        # ---------- demand (macro input) and production ----------
+        prod_lw = {}
+        cons_pre = {}
+        cons_post = {}
+        for m, idx_name, ssr_name, dr_name in [
+            ("pork", "pc_index_pork", "ssr_pork", "dressing_pork"),
+            ("poultry", "pc_index_poultry", "ssr_poultry", "dressing_poultry"),
+            ("ruminant", "pc_index_ruminant", "ssr_ruminant", "dressing_ruminant"),
+        ]:
+            pc = pc25[m] * g(idx_name, t) * inc
+            put(f"pc_{m}_demand_kg_cwe", pc, "kg per person, carcass weight")
+            cons_pre[m] = pc * pop  # kt carcass weight
+            cons_post[m] = cons_pre[m] * (1 - alt_food)
+            prod_cwe = cons_post[m] * g(ssr_name, t)
+            prod_lw[m] = prod_cwe / g(dr_name, t)
+            put(f"prod_{m}_kt_lw", prod_lw[m], "kt live weight")
+            put(f"prod_{m}_kt_cwe", prod_cwe, "kt carcass weight")
+        pc_meat = sum(pc25[m] * inc * g(i, t) for m, i in [("pork", "pc_index_pork"), ("poultry", "pc_index_poultry"), ("ruminant", "pc_index_ruminant")])
+        put("pc_meat_demand_kg_cwe", pc_meat, "kg per person, carcass weight")
+        put("meat_consumption_animal_kt_cwe", sum(cons_post.values()), "kt carcass weight (after S-ALT substitution)")
+        put("meat_production_kt_cwe", sum(r[f"prod_{m}_kt_cwe"][0] for m in cons_pre), "kt carcass weight")
+
+        pc_eggs = pc_eggs25 * g("pc_index_eggs", t) * inc
+        eggs_bn = pc_eggs * pop / 1000.0
+        put("pc_eggs_number", pc_eggs, "eggs per person")
+        put("prod_eggs_bn", eggs_bn, "billion eggs")
+        milk = milk25 * g("milk_prod_index", t) * inc
+        put("prod_milk_kt", milk, "kt fresh milk")
+        put("pc_milk_domestic_kg", milk / pop, "kg domestic fresh milk per person")
+
+        aq_idx = g("aq_index", t)
+        aq = {sp: aq25[sp] * aq_idx for sp in AQ_SPECIES}
+        aq_total = sum(aq.values())
+        aq_exp = sum(aq[sp] * g(f"aq_export_share_{sp}", t) for sp in AQ_SPECIES)
+        for sp in AQ_SPECIES:
+            put(f"prod_aq_{sp}_kt", aq[sp], "kt live weight")
+        put("prod_aquaculture_kt", aq_total, "kt live weight")
+        put("aquaculture_exports_kt_lwe", aq_exp, "kt live-weight equivalent")
+        put("aquaculture_export_share", aq_exp / aq_total, "share")
+        put("pc_farmed_aquatic_domestic_kg", (aq_total - aq_exp) / pop, "kg live weight per person")
+
+        # ---------- feed ----------
+        f_l = (1 - g("fcr_improve_livestock", t) / 100.0) ** n
+        f_a = (1 - g("fcr_improve_aqua", t) / 100.0) ** n
+        if t == 2025:
+            sh_pig, sh_poul = share_pig25, share_poul25
+        else:
+            sh_pig = min(1.0, max(share_pig25, g("compound_share_pig", t)))
+            sh_poul = min(1.0, max(share_poul25, g("compound_share_poultry", t)))
+        feed = {
+            "pig": prod_lw["pork"] / 1000.0 * fcr_pig * f_l * sh_pig,
+            "poultry": (prod_lw["poultry"] / 1000.0 * fcr_pm + eggs_bn * egg_w * fcr_egg) * f_l * sh_poul,
+            "other_livestock": coef_other * (prod_lw["ruminant"] + milk) / 1000.0 * f_l,
+        }
+        for sp in FED_AQ:
+            feed[sp] = aq[sp] / 1000.0 * fcr_aq[sp] * aq_share(sp, t) * k_aq * f_a
+        feed_lv = sum(feed[k] for k in LIVESTOCK_GROUPS)
+        feed_aq = sum(feed[sp] for sp in FED_AQ)
+        for k, v in feed.items():
+            put(f"feed_{k}_mt", v, "Mt compound feed")
+        put("feed_livestock_mt", feed_lv, "Mt compound feed (pigs, poultry, other livestock)")
+        put("feed_aquafeed_mt", feed_aq, "Mt compound feed")
+        put("feed_total_mt", feed_lv + feed_aq, "Mt compound feed")
+        put("compound_share_pig", sh_pig, "share")
+
+        # ---------- protein meals ----------
+        sbm_trend = (1 + g("sbm_incl_trend", t) / 100.0) ** n
+        sbm_pre = sum(feed[k] * g(f"sbm_incl_{k}", t) for k in feed) * sbm_cal * sbm_trend
+        x = g("alt_feed_sbm_share", t)
+        sbm = sbm_pre * (1 - x)
+        fm_trend = (1 + g("fm_incl_trend", t) / 100.0) ** n
+        fm_pre = sum(feed[k] * g(f"fm_incl_{k}", t) for k in feed) * fm_trend
+        y = g("alt_feed_fm_share", t)
+        fm = fm_pre * (1 - y)
+        other = g("base_other_meals_sbmeq_mt", t) * ((feed_lv + feed_aq) / feed_total25) * (1 + g("other_meals_trend", t) / 100.0) ** n
+        put("sbm_demand_mt", sbm, "Mt soybean meal")
+        put("sbm_import_need_mt", sbm, "Mt soybean meal (as meal, or as beans crushed in Vietnam)")
+        put("sbm_import_need_bean_eq_mt", sbm / extraction, "Mt soybeans equivalent")
+        put("fishmeal_demand_kt", fm * 1000.0, "kt fishmeal")
+        put("other_meals_sbmeq_mt", other, "Mt soybean-meal equivalent")
+        put("protein_meal_demand_sbmeq_mt", sbm + other + fm * fm_cp / sbm_cp, "Mt soybean-meal equivalent (46% CP)")
+        put("sbm_intensity_kg_per_t_feed", sbm / (feed_lv + feed_aq) * 1000.0, "kg soybean meal per t compound feed")
+
+        # ---------- maize ----------
+        maize_comp = sum(feed[k] * maize_incl(k) for k in feed) * maize_cal
+        noncomp_pig = prod_lw["pork"] / 1000.0 * fcr_pig * f_l * (1 - sh_pig)
+        maize_noncomp = maize_noncomp25 * (noncomp_pig / noncomp_pig25 if noncomp_pig25 > 0 else 0.0)
+        maize_use = maize_comp + maize_noncomp + g("maize_fsi_other_mt", t)
+        maize_prod = g("base_maize_production_mt", t) * (1 + g("maize_prod_growth", t) / 100.0) ** n
+        maize_imp = max(0.0, maize_use - maize_prod)
+        put("maize_compound_feed_mt", maize_comp, "Mt maize")
+        put("maize_total_use_mt", maize_use, "Mt maize")
+        put("maize_production_mt", maize_prod, "Mt maize")
+        put("maize_import_need_mt", maize_imp, "Mt maize")
+
+        # ---------- land abroad ----------
+        soy_yield = g("soy_yield_2025", t) * (1 + g("soy_yield_growth", t) / 100.0) ** n
+        land_per_t_sbm = g("land_alloc_meal", t) / (soy_yield * extraction)  # ha per t meal
+        maize_yield = g("maize_yield_2025", t) * (1 + g("maize_yield_growth", t) / 100.0) ** n
+        put("soy_land_abroad_mha", sbm * land_per_t_sbm, "million ha (mass allocation to meal)")
+        put("maize_land_abroad_mha", maize_imp / maize_yield, "million ha")
+
+        # ---------- alternative protein volumes (non-zero only when shares are set, i.e. S-ALT) ----------
+        mp_sbm = sbm_pre * x * sbm_cp  # Mt protein
+        mp_fm = fm_pre * y * fm_cp
+        mp_feed = mp_sbm + mp_fm
+        gas = g("feed_route_gas_share", t) if mp_feed > 0 else 0.0
+        mp_gas = mp_feed * gas
+        mp_sugar_feed = mp_feed - mp_gas
+        food_prot = sum(cons_pre[m] * alt_food for m in cons_pre) * g("protein_per_kg_meat_cwe", t) / 1000.0  # Mt protein
+        h = g("food_route_fermented_share", t) if food_prot > 0 else 0.0
+        food_ferm = food_prot * h
+        food_plant = food_prot - food_ferm
+        glucose = (mp_sugar_feed + food_ferm) * g("glucose_per_protein", t)
+        starch = glucose * g("starch_per_glucose", t)
+        roots = starch * g("roots_per_starch", t)
+        elec = (mp_sugar_feed + food_ferm) * g("elec_sugar_route", t) + mp_gas * g("elec_gas_route", t)
+        soy_food = food_plant * g("soy_per_food_protein", t)
+        put("alt_feed_protein_kt", mp_feed * 1000.0, "kt protein (microbial, feed)")
+        put("alt_feed_protein_from_sbm_kt", mp_sbm * 1000.0, "kt protein replacing soybean meal")
+        put("alt_feed_protein_from_fishmeal_kt", mp_fm * 1000.0, "kt protein replacing fishmeal")
+        put("alt_feed_product_kt", (mp_sugar_feed / g("cp_feed_sugar_product", t) + mp_gas / g("cp_feed_gas_product", t)) * 1000.0, "kt dry product")
+        put("alt_food_protein_kt", food_prot * 1000.0, "kt protein (plant-based plus fermented food)")
+        put("alt_food_ingredient_kt", (food_plant / g("cp_food_plant_ingredient", t) + food_ferm / g("cp_food_fermented_ingredient", t)) * 1000.0, "kt dry protein ingredient")
+        put("alt_food_finished_product_kt", food_prot / g("cp_food_finished", t) * 1000.0, "kt finished product at 15% protein")
+        put("alt_glucose_kt", glucose * 1000.0, "kt glucose equivalent (sugar route, feed plus food)")
+        put("alt_cassava_starch_kt_if_all_cassava", starch * 1000.0, "kt cassava starch (if all glucose from cassava)")
+        put("alt_cassava_roots_kt_if_all_cassava", roots * 1000.0, "kt fresh cassava roots (if all glucose from cassava)")
+        put("alt_cassava_land_kha_if_all_cassava", roots / g("cassava_yield", t) * 1000.0, "thousand ha")
+        put("alt_sugar_kt_if_all_sugar", glucose * g("sugar_per_glucose", t) * 1000.0, "kt sucrose (alternative to cassava, not additional)")
+        put("alt_electricity_twh", elec, "TWh a year")
+        put("alt_hydrogen_kt", mp_gas * g("h2_gas_route", t) * 1000.0, "kt H2 a year")
+        put("alt_co2_feedstock_kt", mp_gas * g("co2_gas_route", t) * 1000.0, "kt CO2 used as feedstock")
+        put("alt_nitrogen_urea_eq_kt", (mp_sugar_feed + food_ferm) * g("urea_per_protein_sugar", t) * 1000.0, "kt urea (sugar route)")
+        put("alt_nitrogen_nh3_kt", mp_gas * g("nh3_gas_route", t) * 1000.0, "kt NH3 (gas route)")
+        put("alt_soybeans_for_plant_food_kt", soy_food * 1000.0, "kt soybeans (imported, for plant-based food)")
+        put("alt_electricity_co2_mt", elec * g("grid_ef", t), "Mt CO2 at the PDP8-derived grid factor")
+
+        if base_results is not None:
+            b = base_results[t]
+            sbm_avoided = b["sbm_import_need_mt"][0] - sbm
+            via_feed = sbm_pre * x
+            via_food = sbm_avoided - via_feed
+            food_soy_land = soy_food * g("land_alloc_meal", t) / soy_yield
+            gross_land = sbm_avoided * land_per_t_sbm
+            put("sbm_import_avoided_mt", sbm_avoided, "Mt soybean meal vs S-BASE")
+            put("sbm_import_avoided_via_feed_mt", via_feed, "Mt (microbial protein in feed)")
+            put("sbm_import_avoided_via_food_mt", via_food, "Mt (less meat produced)")
+            put("sbm_import_avoided_pct", sbm_avoided / b["sbm_import_need_mt"][0] * 100.0, "% of S-BASE need")
+            put("fishmeal_avoided_kt", b["fishmeal_demand_kt"][0] - fm * 1000.0, "kt vs S-BASE")
+            put("maize_import_avoided_mt", b["maize_import_need_mt"][0] - maize_imp, "Mt vs S-BASE")
+            put("soy_land_avoided_gross_kha", gross_land * 1000.0, "thousand ha abroad")
+            put("soy_land_for_plant_food_kha", food_soy_land * 1000.0, "thousand ha abroad")
+            put("soy_land_avoided_net_kha", (gross_land - food_soy_land) * 1000.0, "thousand ha abroad")
+            put("sbm_emissions_avoided_mt_co2e", sbm_avoided * sbm_cp * g("sbm_ci", t), "Mt CO2e (published average, land-use change not checked)")
+            put("fishmeal_emissions_avoided_mt_co2e", (b["fishmeal_demand_kt"][0] / 1000.0 - fm) * fm_cp * g("fm_ci", t), "Mt CO2e")
+
+        out[t] = r
+    return out
+
+
+def fmt(v):
+    if abs(v) >= 100:
+        return round(v, 1)
+    if abs(v) >= 1:
+        return round(v, 3)
+    return round(v, 4)
+
+
+def write_outputs(results):
+    with open(OUTPUTS, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["scenario", "year", "indicator", "value", "unit", "foresight_type", "evidence_label", "confidence", "source_ids", "notes"])
+        for scen in SCENARIOS:
+            for t in YEARS:
+                for ind, (v, unit) in results[scen][t].items():
+                    if scen != "S-ALT" and ind.startswith("alt_"):
+                        continue
+                    if t == 2025:
+                        ft, conf, note = "calibration (2025 base)", "Medium", "Calibrated to 2025 anchors; identical in all scenarios."
+                    else:
+                        ft, conf, note = "estimate", "Low", f"Our estimate for horizon year {t}; scenario, not forecast."
+                    w.writerow([scen, t, ind, fmt(v), unit, ft, "VN-direct", conf, "QNT model (assumptions.csv)", note])
+
+
+SENS_SPECS = [
+    ("Poultry demand per person after 2030", ["pc_index_poultry"]),
+    ("Pork demand per person after 2035", ["pc_index_pork"]),
+    ("Feed-efficiency gain (FCR) rate, livestock and aquaculture", ["fcr_improve_livestock", "fcr_improve_aqua"]),
+    ("Soybean-meal inclusion trend", ["sbm_incl_trend"]),
+    ("Aquaculture growth after 2035", ["aq_index"]),
+    ("Pig compound-feed share (industrialisation) by 2050", ["compound_share_pig"]),
+    ("Meat self-sufficiency, pork and poultry", ["ssr_pork", "ssr_poultry"]),
+    ("2025 aquafeed volume (industry 4.35 Mt vs USDA 6.5 Mt)", ["base_aquafeed_mt"]),
+    ("Population 2050 (illustrative plus or minus 5%)", ["population"]),
+    ("Pig whole-herd FCR, which sets the 2025 compound share", ["fcr_pig"]),
+    ("Domestic maize production growth", ["maize_prod_growth"]),
+    ("Non-feed maize use (E10 ethanol stress test)", ["maize_fsi_other_mt"]),
+]
+
+
+def describe(P, params, tag):
+    vals = []
+    for p in params:
+        d = P.data.get((p, tag), {})
+        if d:
+            parts = [f"{k}: {v:g}" for k, v in sorted(d.items(), key=lambda kv: (kv[0] == "ALL", kv[0] if kv[0] != "ALL" else 0))]
+            vals.append(f"{p} ({'; '.join(parts)})")
+    return " | ".join(vals)
+
+
+def sensitivity(base):
+    b_sbm = base[2050]["sbm_import_need_mt"][0]
+    b_mz = base[2050]["maize_import_need_mt"][0]
+    rows = []
+    P0 = Params(ASSUMPTIONS)
+    for label, params in SENS_SPECS:
+        res = {}
+        for tag in ("SENS-LOW", "SENS-HIGH"):
+            P = Params(ASSUMPTIONS, overrides={p: tag for p in params})
+            res[tag] = run(P, "S-BASE")[2050]
+        lo_s, hi_s = res["SENS-LOW"]["sbm_import_need_mt"][0], res["SENS-HIGH"]["sbm_import_need_mt"][0]
+        lo_m, hi_m = res["SENS-LOW"]["maize_import_need_mt"][0], res["SENS-HIGH"]["maize_import_need_mt"][0]
+        rows.append([label, "S-BASE", describe(P0, params, "SENS-LOW"), describe(P0, params, "SENS-HIGH"),
+                     round(lo_s, 3), round(b_sbm, 3), round(hi_s, 3), round(abs(hi_s - lo_s), 3),
+                     round(lo_m, 3), round(b_mz, 3), round(hi_m, 3), round(abs(hi_m - lo_m), 3)])
+    rows.sort(key=lambda r: -r[7])
+    for i, r in enumerate(rows, 1):
+        r.insert(0, i)
+    # comparison row: microbial substitution in S-ALT
+    P_lo = Params(ASSUMPTIONS, overrides={"alt_feed_sbm_share": "SENS-LOW"})
+    P_hi = Params(ASSUMPTIONS, overrides={"alt_feed_sbm_share": "SENS-HIGH"})
+    a_lo = run(P_lo, "S-ALT")[2050]
+    a_hi = run(P_hi, "S-ALT")[2050]
+    a_mid = run(Params(ASSUMPTIONS), "S-ALT")[2050]
+    rows.append(["n/a (comparison)", "Microbial share of soybean-meal protein in S-ALT (0% vs 20% by 2050; S-ALT central 10%)", "S-ALT",
+                 "alt_feed_sbm_share 0", "alt_feed_sbm_share 0.20 in 2050",
+                 round(a_lo["sbm_import_need_mt"][0], 3), round(a_mid["sbm_import_need_mt"][0], 3), round(a_hi["sbm_import_need_mt"][0], 3),
+                 round(abs(a_hi["sbm_import_need_mt"][0] - a_lo["sbm_import_need_mt"][0]), 3),
+                 round(a_lo["maize_import_need_mt"][0], 3), round(a_mid["maize_import_need_mt"][0], 3), round(a_hi["maize_import_need_mt"][0], 3),
+                 round(abs(a_hi["maize_import_need_mt"][0] - a_lo["maize_import_need_mt"][0]), 3)])
+    with open(SENSITIVITY, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["rank", "assumption_varied", "scenario", "low_case", "high_case",
+                    "sbm_import_2050_low_mt", "sbm_import_2050_central_mt", "sbm_import_2050_high_mt", "sbm_swing_mt",
+                    "maize_import_2050_low_mt", "maize_import_2050_central_mt", "maize_import_2050_high_mt", "maize_swing_mt",
+                    "horizon_year", "foresight_type", "evidence_label", "confidence", "source_ids", "notes"])
+        for r in rows:
+            w.writerow(r + [2050, "estimate", "VN-direct", "Low", "QNT model (assumptions.csv, SENS-LOW and SENS-HIGH rows)",
+                            "One assumption (or paired set) varied at a time, all else at S-BASE (or S-ALT for the comparison row)."])
+    return rows
+
+
+def main():
+    P = Params(ASSUMPTIONS)
+    results = {"S-BASE": run(P, "S-BASE")}
+    for s in SCENARIOS[1:]:
+        results[s] = run(P, s, base_results=results["S-BASE"] if s == "S-ALT" else None)
+    write_outputs(results)
+    rows = sensitivity(results["S-BASE"])
+    # console summary
+    print("Scenario  Year  Feed_total_Mt  SBM_import_Mt  Maize_import_Mt  Fishmeal_kt  Soy_land_Mha")
+    for s in SCENARIOS:
+        for t in YEARS:
+            r = results[s][t]
+            print(f"{s:7} {t}  {r['feed_total_mt'][0]:8.2f}  {r['sbm_import_need_mt'][0]:8.2f}  {r['maize_import_need_mt'][0]:8.2f}  {r['fishmeal_demand_kt'][0]:8.0f}  {r['soy_land_abroad_mha'][0]:6.2f}")
+    print("\nTornado (2050 SBM import need, S-BASE):")
+    for r in rows:
+        print(r[0], r[1], r[5], r[7], "swing", r[8])
+
+
+if __name__ == "__main__":
+    main()

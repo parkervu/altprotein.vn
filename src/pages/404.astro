@@ -1,14 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
-Astro.response.status = 404;
+import NotFound from '../components/NotFound.astro';
 ---
 
-<Base title="Page not found" noindex>
-  <section class="empty-state">
-    <p class="eyebrow">404 / Not found</p>
-    <h1>Let’s return to the evidence.</h1>
-    <a class="button primary" href="/">
-      Report overview →
-    </a>
-  </section>
+<Base title="Not found" noindex>
+  <NotFound />
 </Base>

@@ -1,0 +1,10 @@
+rank,assumption_varied,sbm_2050_low_case_mt,sbm_2050_central_mt,sbm_2050_high_case_mt,swing_mt
+1,Soybean-meal inclusion trend,8.091,10.403,11.784,3.693
+2,"Feed-efficiency gain (FCR) rate, livestock and aquaculture",11.424,10.403,9.004,2.42
+3,Aquaculture growth after 2035,10.024,10.403,11.077,1.053
+4,Poultry demand per person after 2030,9.966,10.403,11.011,1.046
+5,"Meat self-sufficiency, pork and poultry",9.697,10.403,10.681,0.984
+6,Population 2050 (illustrative plus or minus 5%),10.023,10.403,10.782,0.758
+7,"Pig whole-herd FCR, which sets the 2025 compound share",10.172,10.403,10.864,0.692
+8,Pork demand per person after 2035,10.08,10.403,10.725,0.646
+9,Pig compound-feed share (industrialisation) by 2050,10.17,10.403,10.502,0.333

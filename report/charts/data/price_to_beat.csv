@@ -1,0 +1,5 @@
+item,kind,usd_per_t_protein_low,usd_per_t_protein_high,note,source_ids
+Soybean meal protein,benchmark,796,876,"2025 average to Aug 2026, 46% crude protein",FM-01
+Fishmeal protein,benchmark,2625,3846,"2025 average to Aug 2026, 65% crude protein",FM-01
+Realised price for a Vietnamese feed SCP (70 to 90% of fishmeal-protein parity),working assumption,1838,3461,our assumption,FM-01
+Indicative Vietnamese fungal feed protein,cost,4050,14700,indicative cost stack A,COST-01; COST-19; COST-21; COST-33; COST-43; COST-44; COST-47

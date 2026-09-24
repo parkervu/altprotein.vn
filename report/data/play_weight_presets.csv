@@ -1,0 +1,8 @@
+preset_id,label,market_pull,vietnam_advantage,technical_readiness,route_clarity,capital_efficiency,defensibility,public_value,rationale
+balanced,Balanced,15,15,15,15,15,10,15,Equal weight except defensibility
+investors,Investors,25,10,15,10,20,15,5,"Revenue, capital efficiency and defensibility first"
+policy,Policy makers,10,20,10,5,10,10,35,Public value and national advantage first
+startups,Startups,20,10,20,20,20,5,5,"Speed to first revenue: buyers, readiness, route and capital"
+manufacturers,F&B and feed manufacturers,30,10,25,15,10,5,5,Buyer need and technical readiness first
+research,Research bodies,10,25,10,10,5,5,35,National advantage and public value first
+international,International bodies and DFIs,10,20,15,10,10,5,30,"Public value and national advantage, with readiness"

@@ -1,0 +1,7 @@
+ingredient,imports_2025_mt,import_share_pct_low,import_share_pct_high,share_note,main_origins,source_ids
+Soy protein (beans and meal),,99,99,about 99% of soy protein in feed; domestic crush uses imported beans,"Argentina, Brazil, United States",MAC-04
+Soybeans,2.61,98.4,98.4,share of domestic supply imported,"Brazil 45.8%, United States 43.6%",MAC-04; MAC-09
+Soybean meal,5.70,79,79,share of meal supply imported,Mostly Argentina (origin shares not re-checked),MAC-04
+Maize,11.91,74,74,about 74% of supply imported,"Argentina 46.5%, Brazil 34.8%, United States about 13%",MAC-08; MAC-01
+Wheat (all uses),5.45,100,100,no domestic production,"Australia, Brazil, United States",MAC-10
+DDGS,1.5,100,100,no domestic production,United States 72%,MAC-01

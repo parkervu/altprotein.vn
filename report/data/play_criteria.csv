@@ -1,0 +1,8 @@
+criterion_id,field,label,definition,score_1_means,score_5_means
+C1,market_pull,Market pull,Named buyers with a present need and a willingness to pay,No identifiable buyer or need,Several named buyers already buying the imported or incumbent equivalent
+C2,vietnam_advantage,Vietnam advantage,"A Vietnam-specific edge in feedstock, industry, buyers or know-how over neighbours",Any neighbour does it as well or better,"A clear, hard-to-copy Vietnamese edge"
+C3,technical_readiness,Technical readiness,"Proven at commercial scale somewhere, and skills available in Vietnam",Laboratory stage with major unknowns,Commercial elsewhere and skills present in Vietnam
+C4,route_clarity,Route to market,A legal route to sell within 1 to 2 years under current Vietnamese rules,No route exists,Ordinary food or listed feed rules apply
+C5,capital_efficiency,Capital efficiency,"Capital needed for a first commercial step, relative to what Vietnamese and regional capital can fund",Tens to hundreds of USD millions before revenue,First revenue for under a few USD millions or via tolling
+C6,defensibility,Defensibility,Ability to hold a position against imports and incumbents,Commodity with cheaper imports,"Function, logistics or IP that imports cannot easily match"
+C7,public_value,Public value,"Contribution to feed and food security, trade balance, jobs and national capability",Little wider benefit,Large contribution to protein security or national capability

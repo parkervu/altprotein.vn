@@ -1,0 +1,6 @@
+flow,product,hs_code,year,value_usd_m,volume_kt,reporter,source_ids
+"Vietnam exports, world",Cassava starch,1108.14,2023,1063,2150,Vietnam,RGN-53
+China imports from Vietnam,Cassava starch,1108.14,2024,757,1560,China,RGN-51
+China imports from Vietnam,Modified starch,3505.10,2024,114,179,China,RGN-54
+China imports from Vietnam,Dried cassava,0714.10,2024,104,412,China,RGN-52
+China imports from Vietnam,Glucose syrup,1702.30,2024,0.16,0.175,China,RGN-55

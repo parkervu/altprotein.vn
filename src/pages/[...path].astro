@@ -1,0 +1,68 @@
+---
+import Base from '../layouts/Base.astro';
+import PageView from '../components/PageView.astro';
+import NotFound from '../components/NotFound.astro';
+import { loadPage, mayPreview, renderPage } from '../lib/content';
+import { PAGE_BY_ID, pageIdForPath, localize } from '../lib/site';
+
+const lang = Astro.locals.lang ?? 'en';
+const path = `/${Astro.params.path ?? ''}`;
+
+// Links from the first edition of the site.
+if (/^\/chapters(\/|$)/.test(path)) return Astro.redirect(localize('/report', lang), 301);
+
+const id = pageIdForPath(path);
+if (Astro.url.searchParams.has('_preview') && !mayPreview(Astro.locals.user))
+  return new Response('Editor sign-in is required for previews.', {
+    status: 403,
+    headers: { 'Cache-Control': 'private, no-store' },
+  });
+
+const meta = id ? PAGE_BY_ID.get(id) : undefined;
+let loaded: Awaited<ReturnType<typeof loadPage>> | null = null;
+if (meta) {
+  try {
+    loaded = await loadPage(meta.id);
+  } catch (error) {
+    console.error(error);
+    return new Response('The report is temporarily unavailable. Please try again.', { status: 503 });
+  }
+}
+const entry = loaded?.entry;
+if (!entry) Astro.response.status = 404;
+const data = entry?.data;
+const rendered =
+  meta && data
+    ? renderPage(meta.id, data.body ?? '', lang, String(data.updatedAt ?? ''), Boolean(loaded?.isPreview))
+    : null;
+const section =
+  meta?.section === 'report'
+    ? 'report'
+    : meta?.section === 'brief'
+      ? 'briefs'
+      : meta?.section === 'appendix'
+        ? 'appendices'
+        : meta?.id.startsWith('front-exec')
+          ? 'summary'
+          : undefined;
+---
+
+{
+  meta && data && rendered ? (
+    <Base
+      title={data.short_title && meta.section === 'front' ? data.title : data.title}
+      description={data.summary ?? meta.summary}
+      content={{ collection: 'pages', id: entry!.id, slug: meta.id }}
+      noindex={loaded?.isPreview}
+      current={meta.id}
+      section={section}
+      pageClass={`page-${meta.section} page-${meta.id}`}
+    >
+      <PageView meta={meta} title={data.title} summary={data.summary} rendered={rendered} isPreview={loaded?.isPreview} />
+    </Base>
+  ) : (
+    <Base title="Not found" noindex>
+      <NotFound />
+    </Base>
+  )
+}

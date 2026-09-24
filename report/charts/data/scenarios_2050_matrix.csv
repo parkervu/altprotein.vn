@@ -1,0 +1,5 @@
+scenario_id,name,import_stress,fermentation_market,x,y,grows_from_2035,sbm_2050_mt_indicative,microbial_share_2050_indicative,one_line
+SC-A,Regional workshop,benign,open,0,1,Scenario 3,7.0 to 10.4,1 to 2%,"Cheap imports, open region: Vietnam specialises in contract fermentation and functional ingredients"
+SC-B,Comfortable price-taker,benign,Chinese price dominance,0,0,Scenario 1,10.4 to 11.7,1% or less,Cheap soy and cheap Chinese products leave little room for domestic production
+SC-C,Security build-out,chronic,open,1,1,"Scenario 2, then 3",7.0 to 8.8,4 to 8%,"Dear imports and regional co-operation make residues, aquafeed buyers and clean power a base"
+SC-D,Squeezed importer,chronic,Chinese price dominance,1,0,Scenario 1 under stress,7.0 to 10.4,1 to 3% domestic,Stressed imports and Chinese scale: efficiency and local niches carry the load

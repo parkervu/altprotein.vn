@@ -1,0 +1,17 @@
+formulation_archetype,archetype,n_sku,n_products,count,median,min,max,count_ppp,median_ppp,min_ppp,max_ppp
+A0,not a protein product / insufficient data,24,19,,,,,,,,
+A1,starch-and-vegetable filled wrapper (<5 g),38,26,14.0,3.9499999999999997,1.53,5.7,17.0,368548.0,155556.0,1727642.0
+A10,tofu (3.8-9.3 g),8,8,5.0,4.98,3.8,9.3,5.0,66265.0,39171.0,121053.0
+A11,"cultured/set nut, coconut or pea-oat product",14,10,5.0,2.93,1.6,9.7,8.0,572862.0,510526.0,892487.0
+A12,imported premium SPC/SPI analog (15-16 g),2,2,2.0,15.5,15.0,16.0,2.0,581976.0,542424.0,621528.0
+A13,"legume patty or spread (chickpea, 9 g)",3,3,2.0,9.0,9.0,9.0,2.0,447811.5,370370.0,525253.0
+A14,protein powder (41-58 g),4,4,4.0,47.0,41.2,58.3,4.0,359537.0,343029.0,365634.0
+A15,rice-based ready meal (about 4 g),3,2,1.0,4.2,4.2,4.2,1.0,383333.0,383333.0,383333.0
+A2,"wheat-dough bun / wheat-wrapper dimsum (5-7 g, wheat-led)",11,7,5.0,5.74,5.0,6.3,3.0,262500.0,173055.0,572674.0
+A3,hydrated TVP/gluten analog (12-25 g),10,10,5.0,19.0,12.0,25.1,4.0,111584.5,65990.0,175000.0
+A4,gel/emulsion seafood analog (about 3 g),4,3,2.0,3.0149999999999997,3.0,3.03,3.0,288449.0,278667.0,471947.0
+A5,dry TVP/gluten slices and chunks (53-67 g as sold),8,8,5.0,64.0,53.3,66.7,4.0,64583.5,48976.0,85053.0
+A6,canned soy luncheon/stew (4.5-9 g),9,7,2.0,6.79,4.5,9.08,2.0,321103.0,223704.0,418502.0
+A7,soy beverage (1.3-2.5 g),14,14,6.0,2.25,1.3,2.5,3.0,91667.0,91660.0,877778.0
+A8,pea-protein-fortified plant milk (5 g),2,2,2.0,5.0,5.0,5.0,2.0,174305.5,161111.0,187500.0
+A9,cereal/nut beverage (<1.5 g),32,24,6.0,1.05,0.7,1.1,3.0,890909.0,725000.0,1444444.0

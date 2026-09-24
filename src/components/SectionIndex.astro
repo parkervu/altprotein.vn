@@ -1,0 +1,82 @@
+---
+import { label, t } from '../lib/i18n';
+import { PAGES, PARTS, SITE, appendixLetter, chapterNumber, href, type PageMeta } from '../lib/site';
+
+interface Props {
+  kind: 'report' | 'brief' | 'appendix';
+}
+const { kind } = Astro.props;
+const lang = Astro.locals.lang ?? 'en';
+const s = t(lang);
+const vi = lang === 'vi';
+const pages = PAGES.filter((p) => p.section === kind);
+const groups: { id: string; title: string; isNew: boolean; pages: PageMeta[] }[] =
+  kind === 'report'
+    ? PARTS.map((part) => ({
+        id: `part-${part.split('.')[0].toLowerCase()}`,
+        title: label(part, lang),
+        isNew: part.startsWith('V.'),
+        pages: pages.filter((p) => p.part === part),
+      }))
+    : kind === 'appendix'
+      ? [
+          { id: 'evidence', title: s.appendicesEvidence, isNew: false, pages: pages.filter((p) => !p.new_in) },
+          { id: 'futures', title: s.appendicesFutures, isNew: true, pages: pages.filter((p) => p.new_in) },
+        ]
+      : [{ id: 'briefs', title: '', isNew: false, pages }];
+const heading = { report: s.report, brief: s.briefsHeading, appendix: s.appendicesHeading }[kind];
+const intro = {
+  report: vi
+    ? 'Hai mươi chương trong năm phần: các phát hiện ở tầm vĩ mô. Phần V (chương 15 đến 20) mới có trong ấn bản 1.1. Nội dung báo cáo bằng tiếng Anh.'
+    : 'Twenty chapters in five parts: the macro findings. Part V (chapters 15 to 20) is new in edition 1.1.',
+  brief: vi
+    ? 'Sáu bản tóm lược, mỗi bản cho một nhóm độc giả: điều gì quan trọng với bạn và nên đọc tiếp ở đâu.'
+    : 'Six short briefs, one per audience: what matters to you, and where to read next.',
+  appendix: vi
+    ? 'Các phát hiện chi tiết: phiếu dữ liệu, danh bạ, sổ đăng ký, mô hình và nguồn. Phụ lục U đến Z mới có trong ấn bản 1.1.'
+    : 'The micro findings: data sheets, directories, registers, models and sources. Appendices U to Z are new in edition 1.1.',
+}[kind];
+const kicker = (p: PageMeta) =>
+  kind === 'report'
+    ? `${vi ? 'Chương' : 'Chapter'} ${chapterNumber(p.id)}`
+    : kind === 'appendix'
+      ? `${vi ? 'Phụ lục' : 'Appendix'} ${appendixLetter(p.id)}`
+      : vi
+        ? 'Bản tóm lược'
+        : 'Brief';
+---
+
+<div class="frame">
+  <header class="index-head">
+    <h1>{heading}</h1>
+    <p>{intro}</p>
+  </header>
+  {
+    groups.map((g) => (
+      <section class="part-block" id={g.id} aria-labelledby={g.title ? `${g.id}-h` : undefined}>
+        {g.title && (
+          <h2 id={`${g.id}-h`}>
+            {g.title}
+            {g.isNew && <span class="new-pill">{s.newIn11}</span>}
+          </h2>
+        )}
+        <div class="card-grid">
+          {g.pages.map((p) => (
+            <a class="card" href={href(p.id, lang)} data-aud={p.audiences.join(' ')}>
+              <span class="card-kicker">
+                {kicker(p)}
+                <span class="for-you">{s.forAudience}</span>
+              </span>
+              <span class="card-title" lang={vi ? 'en' : undefined}>
+                {p.heading.replace(/^(\d+|[A-Z])\. /, '')}
+              </span>
+              <span class="card-text" lang={vi ? 'en' : undefined}>{p.summary}</span>
+              <span class="card-meta">{p.reading_time_min && s.minRead(p.reading_time_min)}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))
+  }
+  <div style="height:64px"></div>
+</div>

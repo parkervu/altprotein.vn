@@ -1,0 +1,133 @@
+record_id,topic,year,count,complete_set,source_ids,evidence_label,confidence,notes
+BT-001,T01 Plant-based meat / meat analogue,2015,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-002,T01 Plant-based meat / meat analogue,2016,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-003,T01 Plant-based meat / meat analogue,2017,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-004,T01 Plant-based meat / meat analogue,2018,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-005,T01 Plant-based meat / meat analogue,2019,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-006,T01 Plant-based meat / meat analogue,2020,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-007,T01 Plant-based meat / meat analogue,2021,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-008,T01 Plant-based meat / meat analogue,2022,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-009,T01 Plant-based meat / meat analogue,2023,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-010,T01 Plant-based meat / meat analogue,2024,2,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-011,T01 Plant-based meat / meat analogue,2025,3,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-012,T01 Plant-based meat / meat analogue,2026,2,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-013,T02 Textured / extruded protein,2015,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-014,T02 Textured / extruded protein,2016,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-015,T02 Textured / extruded protein,2017,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-016,T02 Textured / extruded protein,2018,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-017,T02 Textured / extruded protein,2019,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-018,T02 Textured / extruded protein,2020,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-019,T02 Textured / extruded protein,2021,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-020,T02 Textured / extruded protein,2022,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-021,T02 Textured / extruded protein,2023,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-022,T02 Textured / extruded protein,2024,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-023,T02 Textured / extruded protein,2025,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-024,T02 Textured / extruded protein,2026,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-025,T04 Rice protein,2015,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-026,T04 Rice protein,2016,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-027,T04 Rice protein,2017,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-028,T04 Rice protein,2018,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-029,T04 Rice protein,2019,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-030,T04 Rice protein,2020,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-031,T04 Rice protein,2021,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-032,T04 Rice protein,2022,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-033,T04 Rice protein,2023,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-034,T04 Rice protein,2024,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-035,T04 Rice protein,2025,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-036,T04 Rice protein,2026,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-037,T05 Soy protein isolate / concentrate,2015,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-038,T05 Soy protein isolate / concentrate,2016,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-039,T05 Soy protein isolate / concentrate,2017,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-040,T05 Soy protein isolate / concentrate,2018,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-041,T05 Soy protein isolate / concentrate,2019,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-042,T05 Soy protein isolate / concentrate,2020,2,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-043,T05 Soy protein isolate / concentrate,2021,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-044,T05 Soy protein isolate / concentrate,2022,2,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-045,T05 Soy protein isolate / concentrate,2023,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-046,T05 Soy protein isolate / concentrate,2024,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-047,T05 Soy protein isolate / concentrate,2025,2,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-048,T05 Soy protein isolate / concentrate,2026,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-049,T07 Single cell protein,2015,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-050,T07 Single cell protein,2016,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-051,T07 Single cell protein,2017,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-052,T07 Single cell protein,2018,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-053,T07 Single cell protein,2019,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-054,T07 Single cell protein,2020,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-055,T07 Single cell protein,2021,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-056,T07 Single cell protein,2022,2,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-057,T07 Single cell protein,2023,2,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-058,T07 Single cell protein,2024,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-059,T07 Single cell protein,2025,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-060,T07 Single cell protein,2026,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-061,T09 Tempeh OR mycoprotein,2015,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-062,T09 Tempeh OR mycoprotein,2016,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-063,T09 Tempeh OR mycoprotein,2017,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-064,T09 Tempeh OR mycoprotein,2018,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-065,T09 Tempeh OR mycoprotein,2019,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-066,T09 Tempeh OR mycoprotein,2020,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-067,T09 Tempeh OR mycoprotein,2021,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-068,T09 Tempeh OR mycoprotein,2022,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-069,T09 Tempeh OR mycoprotein,2023,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-070,T09 Tempeh OR mycoprotein,2024,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-071,T09 Tempeh OR mycoprotein,2025,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-072,T09 Tempeh OR mycoprotein,2026,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-073,T12 Cultivated meat,2015,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-074,T12 Cultivated meat,2016,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-075,T12 Cultivated meat,2017,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-076,T12 Cultivated meat,2018,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-077,T12 Cultivated meat,2019,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-078,T12 Cultivated meat,2020,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-079,T12 Cultivated meat,2021,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-080,T12 Cultivated meat,2022,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-081,T12 Cultivated meat,2023,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-082,T12 Cultivated meat,2024,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-083,T12 Cultivated meat,2025,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-084,T12 Cultivated meat,2026,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-085,T15 Microalgae protein,2015,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-086,T15 Microalgae protein,2016,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-087,T15 Microalgae protein,2017,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-088,T15 Microalgae protein,2018,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-089,T15 Microalgae protein,2019,2,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-090,T15 Microalgae protein,2020,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-091,T15 Microalgae protein,2021,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-092,T15 Microalgae protein,2022,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-093,T15 Microalgae protein,2023,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-094,T15 Microalgae protein,2024,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-095,T15 Microalgae protein,2025,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-096,T15 Microalgae protein,2026,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-097,T16 Seaweed protein,2015,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-098,T16 Seaweed protein,2016,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-099,T16 Seaweed protein,2017,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-100,T16 Seaweed protein,2018,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-101,T16 Seaweed protein,2019,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-102,T16 Seaweed protein,2020,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-103,T16 Seaweed protein,2021,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-104,T16 Seaweed protein,2022,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-105,T16 Seaweed protein,2023,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-106,T16 Seaweed protein,2024,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-107,T16 Seaweed protein,2025,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-108,T16 Seaweed protein,2026,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-109,T19 Fishmeal replacement,2015,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-110,T19 Fishmeal replacement,2016,2,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-111,T19 Fishmeal replacement,2017,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-112,T19 Fishmeal replacement,2018,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-113,T19 Fishmeal replacement,2019,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-114,T19 Fishmeal replacement,2020,2,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-115,T19 Fishmeal replacement,2021,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-116,T19 Fishmeal replacement,2022,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-117,T19 Fishmeal replacement,2023,3,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-118,T19 Fishmeal replacement,2024,0,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-119,T19 Fishmeal replacement,2025,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-120,T19 Fishmeal replacement,2026,1,yes (all records listed and read),BIB-01,VN-direct,Medium,Raw OpenAIRE records incl. false positives; see biblio_counts.csv notes
+BT-121,"UNION of complete sets above (deduplicated by DOI, n=42)",2015,0,yes,BIB-01,VN-direct,Medium,"Excludes large sets (Pichia 25, A. oryzae 23, duckweed 23, BSF 34, spirulina 87, 'alternative protein' 20) whose year split was not retrievable"
+BT-122,"UNION of complete sets above (deduplicated by DOI, n=42)",2016,3,yes,BIB-01,VN-direct,Medium,"Excludes large sets (Pichia 25, A. oryzae 23, duckweed 23, BSF 34, spirulina 87, 'alternative protein' 20) whose year split was not retrievable"
+BT-123,"UNION of complete sets above (deduplicated by DOI, n=42)",2017,0,yes,BIB-01,VN-direct,Medium,"Excludes large sets (Pichia 25, A. oryzae 23, duckweed 23, BSF 34, spirulina 87, 'alternative protein' 20) whose year split was not retrievable"
+BT-124,"UNION of complete sets above (deduplicated by DOI, n=42)",2018,2,yes,BIB-01,VN-direct,Medium,"Excludes large sets (Pichia 25, A. oryzae 23, duckweed 23, BSF 34, spirulina 87, 'alternative protein' 20) whose year split was not retrievable"
+BT-125,"UNION of complete sets above (deduplicated by DOI, n=42)",2019,2,yes,BIB-01,VN-direct,Medium,"Excludes large sets (Pichia 25, A. oryzae 23, duckweed 23, BSF 34, spirulina 87, 'alternative protein' 20) whose year split was not retrievable"
+BT-126,"UNION of complete sets above (deduplicated by DOI, n=42)",2020,4,yes,BIB-01,VN-direct,Medium,"Excludes large sets (Pichia 25, A. oryzae 23, duckweed 23, BSF 34, spirulina 87, 'alternative protein' 20) whose year split was not retrievable"
+BT-127,"UNION of complete sets above (deduplicated by DOI, n=42)",2021,5,yes,BIB-01,VN-direct,Medium,"Excludes large sets (Pichia 25, A. oryzae 23, duckweed 23, BSF 34, spirulina 87, 'alternative protein' 20) whose year split was not retrievable"
+BT-128,"UNION of complete sets above (deduplicated by DOI, n=42)",2022,5,yes,BIB-01,VN-direct,Medium,"Excludes large sets (Pichia 25, A. oryzae 23, duckweed 23, BSF 34, spirulina 87, 'alternative protein' 20) whose year split was not retrievable"
+BT-129,"UNION of complete sets above (deduplicated by DOI, n=42)",2023,6,yes,BIB-01,VN-direct,Medium,"Excludes large sets (Pichia 25, A. oryzae 23, duckweed 23, BSF 34, spirulina 87, 'alternative protein' 20) whose year split was not retrievable"
+BT-130,"UNION of complete sets above (deduplicated by DOI, n=42)",2024,5,yes,BIB-01,VN-direct,Medium,"Excludes large sets (Pichia 25, A. oryzae 23, duckweed 23, BSF 34, spirulina 87, 'alternative protein' 20) whose year split was not retrievable"
+BT-131,"UNION of complete sets above (deduplicated by DOI, n=42)",2025,6,yes,BIB-01,VN-direct,Medium,"Excludes large sets (Pichia 25, A. oryzae 23, duckweed 23, BSF 34, spirulina 87, 'alternative protein' 20) whose year split was not retrievable"
+BT-132,"UNION of complete sets above (deduplicated by DOI, n=42)",2026,4,yes,BIB-01,VN-direct,Medium,"Excludes large sets (Pichia 25, A. oryzae 23, duckweed 23, BSF 34, spirulina 87, 'alternative protein' 20) whose year split was not retrievable"

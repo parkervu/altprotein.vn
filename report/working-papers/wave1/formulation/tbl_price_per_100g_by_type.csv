@@ -1,0 +1,13 @@
+product_type,count,median,min,max
+canned analog,7,30811.0,10067.0,38000.0
+dried TVP/soy chunks,5,32667.0,32667.0,50000.0
+dumpling/spring roll/bun with vegetable filling,35,11425.0,5580.0,70833.0
+frozen meat/seafood analog,18,15180.0,8360.0,99444.0
+other,4,40303.0,33094.0,90600.0
+plant milk,23,9375.0,2292.0,17556.0
+plant yogurt/creamer,7,10050.0,9700.0,15311.0
+protein powder,4,168950.0,150641.0,199986.0
+ready meal,6,13540.0,12200.0,16100.0
+snack/jerky,5,131600.0,131600.0,131600.0
+tofu,5,3643.0,3300.0,4758.0
+vegan cheese/spread,9,83333.0,42760.0,172345.0
