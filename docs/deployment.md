@@ -22,39 +22,26 @@ pnpm build:production
 
 `build:production` regenerates `src/generated/`, `public/data/` and `public/downloads/` from `report/`, then builds with the production bindings. Inspect `dist/server/wrangler.json` before deploying: it must name `altprotein-scoping` and the production D1 and R2 resources.
 
-## 2. Replace the first edition in production (one time)
+## 2. Automatic deploys (Workers Builds)
 
-Edition 1.1 replaces the first site's `report` and `chapters` collections with a single `pages` collection. EmDash applies a seed only when a site is first set up, so the cleanest replacement is a **new, empty D1 database**; the old one stays untouched as a backup and a rollback path.
+Workers Builds is connected to this repository. A push to `main` builds with `pnpm build` and deploys with `wrangler deploy`; other branches get preview versions.
 
-> **Workers Builds is connected to this repository.** Merging to `main` deploys to production. The new database must therefore be bound in `wrangler.jsonc` **in the same pull request, before it is merged**; otherwise the edition 1.1 code would start against the old database, which has no `pages` collection.
+`pnpm build` (`scripts/build.mjs`) selects the `production` environment of `wrangler.jsonc` when Workers Builds builds `main` (`WORKERS_CI=1` and `WORKERS_CI_BRANCH=main`), so production deploys bind the production D1, R2 and KV. Preview branches and local builds keep the default bindings (`altprotein-scoping-local` and `altprotein-scoping-media-local`), so code under review never touches production data. Setting `CLOUDFLARE_ENV` explicitly overrides this. If the Workers Builds build command is changed from `pnpm build` (or `npm run build`), keep this behaviour, or set the deploy command to `pnpm deploy:production`.
 
-1. **Back up the current database** somewhere private (outside Git and outside `public/`):
+## 3. Replacement of the first edition (done on 24 September 2026)
 
-   ```sh
-   pnpm exec wrangler d1 export altprotein-scoping --remote --env production --output <private-path>/altprotein-scoping-edition-1.sql
-   ```
+Edition 1.1 replaced the first site's `report` and `chapters` collections with one `pages` collection, on a new database:
 
-2. **Create the new database** and note its id:
+- Production `DB` is `altprotein-scoping-v2` (`0d53e2ec-79d3-4fd9-8638-ceb2cae66f86`, APAC).
+- The edition 1 database `altprotein-scoping` (`24951da1-734d-45c8-91ca-8a72934de162`) is unchanged and kept as a backup. An SQL export is in the private R2 bucket at `backups/d1-altprotein-scoping-edition-1-2026-09-24.sql`.
+- The content was imported with EmDash's setup endpoint (bundled content included). The first attempt stopped after 51 of 57 pages; rerunning it is safe because existing entries are skipped, and the second run created the remaining 6.
+- The administrator registers a passkey in the setup wizard at `/_emdash/admin`.
 
-   ```sh
-   pnpm exec wrangler d1 create altprotein-scoping-v2
-   ```
-
-3. In `wrangler.jsonc`, under `env.production.d1_databases`, set `database_name` to `altprotein-scoping-v2` and `database_id` to the new id, on the edition 1.1 branch. Run `pnpm cf:types`, commit, and let CI pass.
-
-4. **Merge** (Workers Builds deploys), or deploy by hand with `pnpm deploy:production`. On the first request EmDash creates its schema in the new database.
-
-5. **Run the setup wizard** at `https://scoping.altprotein.vn/_emdash/admin` straight away. Choose to include the bundled content (this is the full report, 57 pages, not placeholder content) and create the administrator. Passkeys are stored in the database, so the administrator registers a passkey again, on the production domain. Until setup is done, report pages show the not-found page (the home, data and glossary pages still load). Invite other editors from the admin.
-
-6. **Check:** the admin lists 57 published Report pages; `/`, `/summary`, `/tom-tat`, `/report/ch11-plays` (sliders re-rank the plays), `/report/ch18-scenarios-2050` (scenario explorer), `/data/companies`, `/search?q=cassava`, `/glossary`, `/vi` and `/sitemap.xml` load; `/chapters/anything` redirects to `/report`; an anonymous request with `?_preview=x` gets 403; saving a draft leaves the public page unchanged until Publish.
-
-7. Keep the old database for as long as you want a rollback path, then delete it with `wrangler d1 delete altprotein-scoping`.
+To repeat this on a fresh database: export the current one, `wrangler d1 create <name> --location apac`, set its name and id under `env.production.d1_databases`, merge (or `pnpm deploy:production`), then complete the setup wizard straight away, including the bundled content. Until an administrator exists, the first visitor to the wizard can claim that role. Check: the admin lists 57 published Report pages; `/`, `/summary`, `/tom-tat`, `/report/ch11-plays`, `/report/ch18-scenarios-2050`, `/data/companies`, `/search?q=cassava`, `/glossary`, `/vi` and `/sitemap.xml` load; `/chapters/anything` redirects to `/report`; an anonymous `?_preview=x` request gets 403.
 
 **Rollback:** point `DB` back at the old database id and deploy the previous release (the commit before edition 1.1) with `wrangler rollback` or a redeploy. Do not point the edition 1.1 code at the old database: its schema has no `pages` collection.
 
-**If you must keep the same database** (for example to keep the existing D1 id), export it as in step 1, then delete the old `report` and `chapters` collections in the admin, create the `pages` collection with the fields in `seed/seed.json`, and import the pages with EmDash's seed tooling or the admin. This is slower and easier to get wrong than steps 2 to 5.
-
-## 3. Subsequent deploys
+## 4. Subsequent deploys
 
 - Build from the lockfile, run CI, and deploy the same reviewed build (`pnpm deploy:production`). Deploying never overwrites page text edited in the CMS.
 - Changes to data, charts, key numbers, sources or the page structure are made in `report/` and ship with a deploy. Changes to page text are made in the CMS. If the same page text changes in `report/content` too, copy it into the CMS by hand (or on a fresh setup the seed carries it).
