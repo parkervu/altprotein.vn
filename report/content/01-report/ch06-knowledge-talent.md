@@ -3,26 +3,26 @@ id: ch06-knowledge-talent
 title: "Knowledge, talent and shared infrastructure"
 short_title: "Knowledge and talent"
 section: report
-part: "II. The conditions"
+part: "II. Supply: what Vietnam can make"
 order: 6
 summary: "Vietnam's research base sits next to alternative protein rather than inside it: strong in aquafeed trials, yeast protein expression, stem-cell culture, koji genetics and microalgae; near zero in texturisation, mycoprotein, precision fermentation and food cell lines. Its novel-food research intensity is about a quarter to a third of Thailand's. The binding gap is shared infrastructure: no open pilot fermentation, no food extrusion line and no protein-digestibility testing."
 audiences: [research, policy, international, startups, investors]
-reading_time_min: 12
+reading_time_min: 7
 key_numbers: [kn-novel-food-research-intensity, kn-ctu-places]
 related_data: [publications.csv, biblio_counts.csv, institutions.csv, research_funding.csv, pilot_labs.csv, talent.csv]
-related_pages: [app-k-research, app-l-labs-talent, app-j-science, ch12-policy-options]
+related_pages: [app-s7-research, app-s8-labs-talent, app-s13-science, ch27-policy-options]
 charts: [chart-research-benchmark]
 ---
 
 # 6. Knowledge, talent and shared infrastructure
 
-**In one paragraph.** Vietnam is not starting from zero in the sciences that feed alternative protein, but it is starting from almost zero in the technologies that turn them into food. Its universities and institutes publish fish and shrimp feeding trials at regional levels, express proteins (including growth factors used in cultivated-meat media) in yeast, culture human stem cells in serum-free media, engineer the koji mould, and grow microalgae. They publish almost nothing on texturisation, mycoprotein, precision-fermented food proteins or food-grade fish cell lines, and Vietnam's research intensity on novel foods is about a quarter to a third of Thailand's (a quarter on OpenAIRE; about 31% on a broader OpenAlex basket added in edition 1.1 [@HSC-01] {VN-direct|Medium}). The binding constraint is not ideas but shared infrastructure: we found no open pilot fermentation facility, no food extrusion line and no laboratory offering the amino-acid and digestibility tests a protein-quality claim or a novel-food dossier needs.
+**In one paragraph.** Vietnam is not starting from zero in the sciences that feed alternative protein, but it is starting from almost zero in the technologies that turn them into food. Its universities and institutes publish fish and shrimp feeding trials at regional levels, express proteins (including growth factors used in cultivated-meat media) in yeast, culture human stem cells in serum-free media, engineer the koji mould, and grow microalgae. They publish almost nothing on texturisation, mycoprotein, precision-fermented food proteins or food-grade fish cell lines, and Vietnam's research intensity on novel foods is about a quarter to a third of Thailand's (a quarter on OpenAIRE; about 31% on a broader OpenAlex basket [@HSC-01] {VN-direct|Medium}). The binding constraint is not ideas but shared infrastructure: we found no open pilot fermentation facility, no food extrusion line and no laboratory offering the amino-acid and digestibility tests a protein-quality claim or a novel-food dossier needs.
 
 ---
 
 ## 6.1 Research output: small in novel food, regional-level in feed
 
-We counted Vietnam-affiliated publications from 2015 to September 2026 in the OpenAIRE scholarly database and compared them with Southeast Asian peers (OpenAlex was rate-limited; method in [[app-k-research]]). All counts are lower bounds and include some off-topic records.
+We counted Vietnam-affiliated publications from 2015 to September 2026 in the OpenAIRE scholarly database and compared them with Southeast Asian peers (OpenAlex was rate-limited; method in [[app-s7-research]]). All counts are lower bounds and include some off-topic records.
 
 | Topic (2015 to Sept 2026) | Vietnam | Thailand | Malaysia | Philippines | Singapore |
 |---|---|---|---|---|---|
@@ -52,7 +52,7 @@ Two further assets are specific and under-used:
 
 ## 6.3 Research gaps Vietnam is well placed to fill
 
-Each of these combines a Vietnamese raw material, species or skill with an absence of published work (detail in [[app-k-research]]):
+Each of these combines a Vietnamese raw material, species or skill with an absence of published work (detail in [[app-s7-research]]):
 
 1. Food-grade adaptation of striped catfish (*tra*) and shrimp cells. Continuous striped-catfish lines exist in India, but they are serum-dependent virology lines, and no true continuous shrimp line exists (the "PmLyO-Sf9" line is part insect) [@SCI-10; @SCI-12] {general|High}.
 2. Low-cost *Pichia*-made growth factors tested on fish cells.
@@ -88,8 +88,8 @@ Degrees in food technology, biotechnology and aquaculture are offered across a d
 ## 6.7 What this means
 
 - **Researchers:** the fastest route to a visible track record is to point existing tools at food protein: *Pichia* for a food protein, *A. oryzae* biomass on cassava residue, spirulina protein extraction, duckweed protein from the national collection, a DIAAS dataset. Publish in indexed journals with DOIs; much applied Vietnamese work is invisible abroad.
-- **Policy makers:** three pieces of shared kit would unlock most gaps: a food-grade pilot fermentation train (about 50 to 3,000 litres with downstream processing), a pilot extrusion line, and amino-acid and digestibility methods added to an accredited laboratory's scope. A directed call on "protein from Vietnamese side streams and species" would turn scattered groups into a network ([[ch12-policy-options]]).
+- **Policy makers:** three pieces of shared kit would unlock most gaps: a food-grade pilot fermentation train (about 50 to 3,000 litres with downstream processing), a pilot extrusion line, and amino-acid and digestibility methods added to an accredited laboratory's scope. A directed call on "protein from Vietnamese side streams and species" would turn scattered groups into a network ([[ch27-policy-options]]).
 - **Investors and startups:** credible trial partners exist for feed (Can Tho, Nha Trang, the state aquafeed centre) and for side-stream protein (HUST); ask founders for their trial data. Do not assume any Vietnamese partner owns an extruder or a 100-litre-plus food-grade fermenter until confirmed.
 - **International bodies:** Vietnam has had no GFI research grant; the most fundable public goods are a food-grade catfish or shrimp cell-line adaptation project, a Vietnamese protein-quality database and duckweed germplasm protein screening.
 
-**Related:** [[app-k-research]], [[app-l-labs-talent]], [[app-j-science]].
+**Related:** [[app-s7-research]], [[app-s8-labs-talent]], [[app-s13-science]].

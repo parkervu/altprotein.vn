@@ -11,7 +11,8 @@ import {
   localize,
   neighbours,
   chapterNumber,
-  appendixLetter,
+  appendixCode,
+  ROLE,
   type PageMeta,
 } from '../lib/site';
 
@@ -29,7 +30,7 @@ const vi = lang === 'vi';
 const contentLang = meta.lang;
 const { prev, next } = neighbours(meta.id);
 const chapter = chapterNumber(meta.id);
-const letter = appendixLetter(meta.id);
+const letter = appendixCode(meta.id);
 const sectionCrumb = {
   front: null,
   report: { label: s.report, href: localize('/report', lang) },
@@ -54,23 +55,52 @@ const dataFiles = meta.related_data
     ),
   )
   .filter(Boolean) as { file: string; slug: string }[];
+// Point readers to the counterpart in their language, where the page's language differs.
+const COUNTERPART: Record<string, string> = {
+  [ROLE.summaryVi]: ROLE.summary,
+  [ROLE.prologueVi]: ROLE.prologue,
+  [ROLE.summary]: ROLE.summaryVi,
+  [ROLE.prologue]: ROLE.prologueVi,
+};
 const langNote =
   contentLang !== lang
     ? contentLang === 'vi'
       ? {
           text: 'This page is in Vietnamese.',
-          link: href('front-exec-summary', lang),
-          linkText: 'Read the English summary',
+          link: href(COUNTERPART[meta.id] ?? ROLE.summary, lang),
+          linkText:
+            COUNTERPART[meta.id] === ROLE.prologue
+              ? 'Read the English prologue'
+              : 'Read the English summary',
         }
       : vi
         ? {
             text: 'Nội dung trang này bằng tiếng Anh.',
-            link: href('front-exec-summary-vi', lang),
-            linkText: 'Đọc bản tóm tắt tiếng Việt',
+            link: href(COUNTERPART[meta.id] ?? ROLE.summaryVi, lang),
+            linkText:
+              COUNTERPART[meta.id] === ROLE.prologueVi
+                ? 'Đọc lời mở đầu tiếng Việt'
+                : 'Đọc bản tóm tắt tiếng Việt',
           }
         : null
     : null;
-const isVision = meta.id === 'ch19-vision-2050';
+const isVision = meta.id === ROLE.vision;
+// The four registers are best used as filterable tables.
+const REGISTER_VIEWS: Record<string, { en: string; vi: string; href: string }> = {
+  [ROLE.openQuestions]: {
+    en: 'Filter the open questions',
+    vi: 'Lọc các câu hỏi mở',
+    href: '/data/open-questions',
+  },
+  [ROLE.disagreements]: {
+    en: 'Filter the disagreements',
+    vi: 'Lọc các điểm bất đồng',
+    href: '/data/disagreements',
+  },
+  [ROLE.glossary]: { en: 'Search the glossary', vi: 'Tìm trong bảng thuật ngữ', href: '/glossary' },
+  [ROLE.sources]: { en: 'Filter the sources', vi: 'Lọc các nguồn', href: '/data/sources' },
+};
+const registerView = REGISTER_VIEWS[meta.id];
 ---
 
 <div class="frame">
@@ -96,10 +126,9 @@ const isVision = meta.id === 'ch19-vision-2050';
         )}
       </ol>
       <header class="page-head">
-        {(eyebrow || meta.new_in || isVision) && (
+        {(eyebrow || isVision) && (
           <p class="eyebrow" lang={lang !== contentLang ? lang : undefined}>
             {eyebrow && <span>{eyebrow}</span>}
-            {meta.new_in && <span class="new-pill">{s.newIn11}</span>}
             {isVision && (
               <span class="fx" data-fx="vision">
                 <span>{s.visionNotForecast}</span>
@@ -120,7 +149,7 @@ const isVision = meta.id === 'ch19-vision-2050';
               ))}
             </span>
           )}
-          <a href={href('front-how-to-read', lang, 'evidence-tags')}>{s.evidenceLegend}</a>
+          <a href={href(ROLE.howToRead, lang, 'evidence-tags')}>{s.evidenceLegend}</a>
           <button class="btn-ghost no-print" type="button" data-print>
             {s.print}
           </button>
@@ -153,7 +182,7 @@ const isVision = meta.id === 'ch19-vision-2050';
           </ol>
         </details>
       )}
-      {meta.id === 'app-a-method' && (
+      {meta.id === ROLE.method && (
         <aside class="callout callout-note no-print" lang={lang}>
           <p>
             <strong>{s.downloads}.</strong>{' '}
@@ -167,11 +196,11 @@ const isVision = meta.id === 'ch19-vision-2050';
           </p>
         </aside>
       )}
-      {meta.id === 'app-s-glossary' && (
+      {registerView && (
         <aside class="callout callout-note no-print" lang={lang}>
           <p>
-            <strong>{vi ? 'Tìm nhanh.' : 'Quick search.'}</strong>{' '}
-            <a href={localize('/glossary', lang)}>{s.glossaryFilter}</a>
+            <strong>{vi ? 'Dạng bảng.' : 'As a table.'}</strong>{' '}
+            <a href={localize(registerView.href, lang)}>{vi ? registerView.vi : registerView.en}</a>
           </p>
         </aside>
       )}
@@ -189,14 +218,14 @@ const isVision = meta.id === 'ch19-vision-2050';
                       {p.section === 'report'
                         ? `${vi ? 'Chương' : 'Chapter'} ${chapterNumber(p.id)}`
                         : p.section === 'appendix'
-                          ? `${vi ? 'Phụ lục' : 'Appendix'} ${appendixLetter(p.id)}`
+                          ? `${vi ? 'Phụ lục' : 'Appendix'} ${appendixCode(p.id)}`
                           : p.section === 'brief'
                             ? vi
                               ? 'Bản tóm lược'
                               : 'Brief'
                             : ''}
                     </small>
-                    {p.short_title.replace(/^[A-Z]\. /, '')}
+                    {p.short_title.replace(/^[A-Z]\d*\. /, '')}
                   </a>
                 </li>
               ))}
@@ -244,7 +273,7 @@ const isVision = meta.id === 'ch19-vision-2050';
           ))}
         </ol>
         <div class="toc-tools">
-          <a href={href('front-how-to-read', lang, 'evidence-tags')}>{s.evidenceLegend}</a>
+          <a href={href(ROLE.howToRead, lang, 'evidence-tags')}>{s.evidenceLegend}</a>
           {rendered.citations.length > 0 && <a href="#sources-cited">{s.sourcesCited}</a>}
           <button type="button" data-print>
             {s.print}

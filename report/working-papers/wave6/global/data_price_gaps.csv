@@ -1,0 +1,15 @@
+country,product,comparator,price_ratio_or_premium,year,basis,source_ids,evidence_label,confidence,demand_evidence_type,notes
+United States,plant-based meat,conventional meat,+65% per lb,2022,sales-weighted retail average (NIQ),GLB-03,general,High,revealed,
+United States,plant-based meat,conventional meat,+77% per lb,2023,sales-weighted retail average (NIQ),GLB-03,general,High,revealed,Gap widened while sales fell
+United States,plant-based meat,conventional beef,about 2 times,2025,retail average (SPINS),GLB-01,general,High,revealed,Gap narrowed slightly as beef prices rose
+Germany,plant-based meat,animal meat,+45% per kg (EUR 14.09 vs 9.68),2024,sales-weighted (Circana),GLB-09,general,High,revealed,Private label 38% cheaper than branded plant-based meat
+Germany,meat substitutes,conventional meat,at parity,2023 to 2024,unweighted shelf sample,GLB-15,general,Medium,revealed,Conflicts with sales-weighted figure; see disagreements
+Netherlands,plant-based meat,animal meat,+46% per kg (2022) to +35% (2024),2022 to 2024,sales-weighted (Circana),GLB-10,general,High,revealed,Despite parity pledges on private label
+France,plant-based meat,animal meat,+25% per kg,2025,Circana,GLB-08,general,Medium,revealed,Only big market with strong volume growth in 2025
+"Six European countries (FR, DE, IT, NL, ES, UK)",meat substitutes,conventional meat,+24% to +115% (except Germany),2023 to 2024,"unweighted shelf sample, about 2,600 substitutes",GLB-15,general,Medium,revealed,Milk substitutes +35% to +58%
+United Kingdom,plant-based milk,dairy milk,about two thirds more per litre,year to Jan 2025,Circana,GLB-11,general,High,revealed,
+Thailand,meat and seafood substitutes (736 THB per kg),"chicken 94, pork 179, beef 348 THB per kg","about 8 times chicken, 4 times pork, 2 times beef",2024,Euromonitor average prices,GLB-53,VN-adjacent,Medium,revealed,Source says about 40% above processed meat but its own figures (430 THB) imply 71%
+Taiwan,Beyond burger; OmniPork mince,conventional burger meat; fresh pork,about 5 times; about 3 times,2019,shelf prices reported by press,GLB-58,VN-adjacent,Low,revealed,
+China,plant-based burger patties on Tmall,conventional patties,about 3 times,about 2023,online shelf prices,GLB-50,VN-adjacent,Low,revealed,
+Southeast Asia (6 markets),plant-based meat,conventional meat,+35% average,2024,"survey report, method not stated",GLB-48,VN-adjacent,Low,inferred,
+Vietnam (context from supply study),"imported plant-based meat analogues (VND 542,000 to 622,000 per 100 g protein)","eggs and chicken breast (VND 34,000 to 46,000 per 100 g protein)",about 12 to 18 times per gram of protein (our derivation),2026,"retail audit, 11 stores, per 100 g protein",FORM-01,VN-direct,Medium,revealed,"Per protein, not per kg, so not strictly comparable with rows above; tofu VND 66,000 and TVP or gluten analogues VND 112,000 per 100 g protein"

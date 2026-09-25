@@ -1,6 +1,6 @@
 # Bibliography
 
-1,275 sources cited in the research behind "Alternative protein in Vietnam: a supply-side scoping study" (AltProtein Vietnam, edition 1.1, September 2026): 806 from edition 1.0 (waves 1 and 2, accessed 23 September 2026) and 469 from the futures round of edition 1.1 (waves 3 to 5, accessed 23 to 24 September 2026). Grouped by source type, then by the research agent's ID prefix. Citations are given as recorded in the research notes. The machine-readable list is `sources.csv` (same folder) and `data/sources.csv`.
+2,384 sources cited in the research behind "Alternative protein in Vietnam: a supply-side scoping study" (AltProtein Vietnam, edition 1.4, September 2026): 806 from edition 1.0 (waves 1 and 2, accessed 23 September 2026), 469 from the futures round of edition 1.1 (waves 3 to 5, accessed 23 to 24 September 2026), 451 from the demand round of edition 1.2 (wave 6, accessed 24 September 2026), 577 from the actor check and expansion waves of edition 1.3 (waves 7 to 9, accessed 24 to 25 September 2026) and 81 from the prologue research of edition 1.4 (wave 10, accessed 25 September 2026); the last three rounds are listed at the end. Grouped by source type, then by the research agent's ID prefix. Citations are given as recorded in the research notes. The machine-readable list is `sources.csv` (same folder) and `data/sources.csv`.
 
 ID prefixes: MAC = protein economy and feed (wave 1); FS = feedstocks (wave 1); IND = industrial capacity (wave 1); ECO = ecosystem (wave 1); REG = regulation (wave 1); RD = research capacity (wave 1); CAP = capital (wave 1); RGN = regional position (wave 1); COST = costs (wave 1); FORM = formulation and retail audit (wave 1); SCI = state of the science (wave 2); REG2 = regulation, second pass (wave 2); FM = feed market (wave 2); GT = geography, ministries and outlook (wave 2); VCO = company verification (wave 2); INF = infrastructure and talent (wave 2); BIB = bibliometrics (wave 2); FTG = frontier technology: gas fermentation and power-to-protein (wave 3); FTB = frontier technology: biology and AI (wave 3); CLM = climate (wave 3); QNT = protein and feed balance model (wave 3); GEO = geopolitics, trade and macro drivers (wave 3); ECF = economics and policy futures (wave 3); HSC = horizon scan and bibliometrics (wave 3); NTS = national targets (wave 3); NGF = next-generation feedstocks (wave 4); AQF = aquaculture and aquafeed futures (wave 4); HUB = spatial hubs (wave 4); VIS = vision benchmarks and foresight practice (wave 5).
 
@@ -1546,7 +1546,7 @@ ID prefixes: MAC = protein economy and feed (wave 1); FS = feedstocks (wave 1); 
 
 ### RD
 
-- **RD-01.** scite.ai literature database. 30 searches run by the RND agent on 2026-09-23 (query log in Appendix A). Bibliographic database of peer-reviewed and preprint records. Supports all bibliometric counts and paper-level findings.
+- **RD-01.** scite.ai literature database. 30 searches run by the RND agent on 2026-09-23 (query log in working-papers/wave1/rnd/m6-rnd-capacity.md, Appendix A). Bibliographic database of peer-reviewed and preprint records. Supports all bibliometric counts and paper-level findings.
 - **RD-12.** Scite acknowledgement analysis. Queries "NAFOSTED ... AND (protein OR fermentation ...)" (255 records) and "VINIF ... AND (protein OR food ...)" (2,704 records), 2026-09-23. Bibliographic. Supports funder prevalence.
 
 ### CAP
@@ -1794,3 +1794,1193 @@ ID prefixes: MAC = protein economy and feed (wave 1); FS = feedstocks (wave 1); 
 - **VIS-42.** Institute of Technology Assessment, Austrian Academy of Sciences. Habilitation thesis "Sustainable Technology: Studies on User Innovation, Social Learning and Innovation Networks." 2016. doi:10.1553/ita-pa-mo-10-1 . Cites the novel protein food case as successful follow-up (via Quist and Vergragt 2006). Type: academic thesis.
 - **VIS-47.** Tô Văn Trường. "Quy hoạch 100 năm: Giữ quyền lựa chọn cho tương lai." IASVN, 14 Aug 2026. https://iasvn.org/quy-hoach-100-nam-giu-quyen-lua-chon-cho-tuong-lai . Three-layer long-range planning. Type: expert commentary (government research institute site).
 - **VIS-48.** National Food Strategy (independent review for England). Website and "The Plan." July 2021. https://www.nationalfoodstrategy.org/ . Numbers not extracted. Type: independent review.
+
+## Demand round (edition 1.2)
+
+ID prefixes: DIE = protein diet and prices; CHY = chay and plant eating; CON = consumers and plant-based products; NOV = frontier categories; CHN = channels and institutions; BUY = business buyers; EXP = export demand; GLB = global and Asian benchmarks. All wave 6.
+
+
+### advocacy (33)
+
+- **CHY-63.** Humane World for Animals (formerly Humane Society International). Viet Nam programme page. Accessed 24 September 2026. https://www.humaneworld.org/viet-nam/en
+- **CON-01.** GFI APAC and The Good Growth Co. (2024). Decoding demand: the appetite for alternative proteins in Southeast Asia (landing page; full report and regional summary behind a download form). Authors per citing papers: Jennifer Morton, Divya Gandhi, Ella Wong. https://gfi-apac.org/decoding-demand-the-appetite-for-alternative-proteins-in-southeast-asia/
+- **CON-02.** GFI APAC (Feb 2024). New data reveals surprising market opportunities for plant-based meat in Southeast Asia (article with 13 chart images from the survey, n=5,971; per-country n; Vietnam columns). https://gfi-apac.org/new-data-reveals-surprising-market-opportunities-for-plant-based-meat-in-southeast-asia/
+- **CON-03.** Cant, M. (19 Feb 2026). Consumer insights on plant-based meat in Southeast Asia (summary of GFI APAC and Good Growth 2024). Faunalytics. https://faunalytics.org/consumer-insights-on-plant-based-meat-in-southeast-asia/
+- **CON-05.** Tsen, A., Manandhar-Richardson, T., Troy, A. and Thompkins, A. (2025). How to message plant-based diets and products in Southeast Asia: a social media analysis. Faunalytics, Good Growth, Mercy For Animals. Summary 28 May 2025 https://faunalytics.org/plant-based-messaging-in-southeast-asia/ ; full report https://osf.io/9mshd
+- **CON-25.** GFI APAC (Mar 2025). 2024 Year in Review. https://gfi-apac.org/wp-content/uploads/2025/03/GFI-APAC-2024-Year-in-Review-Final.pdf
+- **EXP-02.** The Good Food Institute. U.S. retail market insights for the plant-based industry. GFI, published 22 Jul 2026. https://gfi.org/marketresearch/
+- **EXP-03.** The Good Food Institute. State of the Industry: Plant-based meat, seafood, eggs, dairy, and ingredients. GFI resource page, updated 5 May 2026. https://gfi.org/resource/plant-based-meat-eggs-and-dairy-state-of-the-industry/
+- **EXP-05.** GFI Europe. Plant-based retail sales in six European countries, 2023 to 2025 (European plant-based sales data). Published 10 Jun 2025, last modified 15 Jun 2026. https://gfieurope.org/european-plant-based-sales-data/
+- **EXP-10.** The Good Food Institute. Analyzing plant-based meat and seafood sales. GFI resource page (Euromonitor data), accessed 24 Sep 2026. https://gfi.org/resource/analyzing-plant-based-meat-and-seafood-sales/
+- **EXP-11.** GFI APAC. GFI APAC's 2025 Report Card + 6 Things to Watch in 2026. Jan 2026. https://gfi-apac.org/gfi-apacs-2025-report-card-6-things-to-watch-in-2026/
+- **EXP-25.** Holst, A. Timeline: What's going on with the EU labelling restrictions for plant-based foods? GFI Europe, published 11 Sep 2026 (modified 15 Sep 2026). https://gfieurope.org/blog/timeline-whats-going-on-with-the-eu-labelling-restrictions-for-plant-based-foods/
+- **EXP-33.** UK Soy Manifesto. Home page and signatory progress, accessed 24 Sep 2026. https://www.uksoymanifesto.uk/
+- **EXP-51.** GFI APAC. Industry web page, accessed 24 Sep 2026. https://gfi-apac.org/industry/
+- **GLB-01.** Good Food Institute (2026). U.S. retail market data for the plant-based industry (SPINS data, 52 weeks ending 30 November 2025). https://gfi.org/marketresearch/
+- **GLB-02.** Good Food Institute (2022, March). 2021 U.S. retail market insights: Plant-based foods. https://gfi.org/wp-content/uploads/2022/03/2021-U.S.-retail-market-insights_Plant-based-foods-GFI.pdf
+- **GLB-03.** Good Food Institute (2024, November). Plant-based meat in U.S. retail: Pricing and promotion insights and recommendations (fact sheet; NIQ price and promotion model). https://gfi.org/wp-content/uploads/2024/12/Plant-based-meat-in-U.S.-retail-Pricing-and-promotion-insights-and-recommendations.pdf
+- **GLB-04.** Good Food Institute (2023, 11 April). 2023 outlook: The state of the plant-based meat category. https://gfi.org/blog/2023-outlook-the-state-of-the-plant-based-meat-category/
+- **GLB-05.** Good Food Institute (2026). Analyzing plant-based meat and seafood sales. https://gfi.org/resource/analyzing-plant-based-meat-and-seafood-sales/
+- **GLB-06.** Good Food Institute (2026). State of the Industry: Plant-based meat, seafood, eggs, dairy, and ingredients (resource page for the report covering 2025). https://gfi.org/resource/plant-based-meat-eggs-and-dairy-state-of-the-industry/
+- **GLB-08.** GFI Europe (2026). European plant-based sales data (Circana retail data 2024 to 2025, NIQ Homescan). https://gfieurope.org/european-plant-based-sales-data/
+- **GLB-09.** GFI Europe (2025, June). Germany plant-based food retail market insights: 2022 to 2024. https://gfieurope.org/wp-content/uploads/2025/06/Germany-plant-based-food-retail-market-insights-2022-2024.pdf
+- **GLB-10.** GFI Europe (2025, June). The Netherlands plant-based food retail market insights: 2022 to 2024. https://gfieurope.org/wp-content/uploads/2025/06/Netherlands-plant-based-food-retail-market-insights-2022-2024.pdf
+- **GLB-11.** GFI Europe (2025, June). UK plant-based food retail market insights: 2022 to January 2025. https://gfieurope.org/wp-content/uploads/2025/06/UK-plant-based-food-retail-market-insights-2022-2024.pdf
+- **GLB-48.** GFI APAC (2024). New data reveals surprising market opportunities for plant-based meat in Southeast Asia (survey with The Good Growth Co.). https://gfi-apac.org/new-data-reveals-surprising-market-opportunities-for-plant-based-meat-in-southeast-asia/
+- **GLB-49.** GFI APAC (2026). Korea overtakes Singapore as APAC's cultivated meat startup epicentre, plus four other takeaways from GFI's new reports. https://gfi-apac.org/korea-overtakes-singapore-as-apacs-cultivated-meat-startup-epicentre/
+- **GLB-53.** Madre Brava (2025, 8 October). A succulent alternative protein opportunity for Thai meat producers (analysis of Euromonitor Staple Foods 2025). https://www.madrebrava.org/latest/a-succulent-alternative-protein-opportunity-for-thai-meat-producers
+- **GLB-54.** Madre Brava (2023, December). Two-thirds of Thais want to reduce meat consumption and replace it with alternative and/or conventional plant-based proteins, for a healthier lifestyle. https://www.madrebrava.org/latest/two-thirds-of-thais-want-to-reduce-meat-consumption-and-replace-it-with-alternative-and-or-conventional-plant-based-proteins-for
+- **GLB-60.** Good Food Institute (2024). 2023 State of the Industry Report: Cultivated meat and seafood. https://gfi.org/wp-content/uploads/2024/08/State-of-the-Industry-Report-Cultivated-meat-and-seafood.pdf
+- **GLB-63.** Good Food Institute (2026, updated 5 May). Fermentation: State of the Industry report (resource page). https://gfi.org/resource/fermentation-state-of-the-industry-report/
+- **NOV-35.** The Good Food Institute Asia Pacific and The Good Growth Co. (2024). Decoding demand: the appetite for alternative proteins in Southeast Asia. Report landing page and press release. https://gfi-apac.org/decoding-demand-the-appetite-for-alternative-proteins-in-southeast-asia/ and https://gfi-apac.org/new-data-reveals-surprising-market-opportunities-for-plant-based-meat-in-southeast-asia/
+- **NOV-36.** Faunalytics (2024). Consumer insights on plant-based meat in Southeast Asia (summary of GFI APAC and Good Growth Co. 2024). https://faunalytics.org/consumer-insights-on-plant-based-meat-in-southeast-asia/
+- **NOV-37.** GFI APAC (2025). Meat enhanced with plant proteins outperforms conventional version in A*STAR study. November 2025. https://gfi-apac.org/breaking-meat-enhanced-with-plant-proteins-outperforms-conventional-version-in-astar-study/
+
+### company (35)
+
+- **BUY-04.** VISSAN (Vietnam Livestock Technology JSC). Bao cao thuong nien 2025 (Annual Report 2025), bilingual PDF, 153 pages, published 2026. https://www.vissan.com.vn/images/2026/7._cbtt_bctn_2025_website.pdf
+- **BUY-05.** Vissanmart (VISSAN online shop). Product pages in categories Xuc xich tiet trung, Gio cac loai, Do hop and Thit nguoi (118 SKUs, 84 with published ingredient lists), read 24 Sep 2026. https://vissanmart.com/thuc-pham-che-bien.html
+- **BUY-06.** VISSAN. VISSAN to chuc Dai hoi dong co dong thuong nien nam 2025 (news), 2025. https://www.vissan.com.vn/tin-tuc/hoat-dong-truyen-thong/vissan-to-chuc-dai-hoi-dong-co-dong-thuong-nien-nam-2025.html
+- **BUY-16.** Vinamilk. Sua hat Cao dam it duong: Den 9g dam trong 180ml sua (product page), accessed 24 Sep 2026. https://www.vinamilk.com.vn/vi/products/sua-hat-cao-dam-vinamilk?pack=240ml
+- **BUY-22.** Acecook Vietnam. Product pages (Mi Hao Hao, Tui 5 goi mi De Nhat huong vi thit bam, Mi ly Modern, Pho De Nhat, Mi Hoanh Thanh), accessed 24 Sep 2026. https://acecookvietnam.vn/product/
+- **BUY-26.** Ajinomoto Vietnam. Product pages (San pham: hat nem Aji-ngon Nam, frozen gyoza and karaage, Ketovie medical food), accessed 24 Sep 2026. https://www.ajinomoto.com.vn/vi/san-pham
+- **BUY-35.** Brenntag Vietnam. Company website (Food and Nutrition focus industry; HCMC address). https://www.brenntag.com/en-vn/
+- **BUY-36.** Hoa Chat Da Nang (VMC Group). Gluten lua mi Xinrui (Trung Quoc) bao 25kg gia tot (product page), accessed 24 Sep 2026. https://hoachatdanang.vn/san-pham/gluten-lua-mi-xinrui-trung-quoc-bao-25kg-gia-tot/
+- **BUY-37.** TDGIMEX. Vital wheat gluten, gluten lua mi, bot mi can (product page), accessed 24 Sep 2026. https://tdgimex.com/vital-wheat-gluten-gluten-lua-mi-bot-mi-can/
+- **CHN-27.** Paujar Group. "Pizza 4P's vegetarian menu: nourish the earth, feed the soul." 26 Jul 2025. https://paujar-group.com.vn/en/pizza-4ps-vegetarian-menu/
+- **CHY-32.** Loving Hut Vietnam. Vegan and vegetarian fast food restaurant locations. Accessed 24 September 2026. https://lovinghut.com/vn/
+- **CHY-36.** HumVentures. Am thuc chay hien dai. August 2018. https://humventures.vn/en/am-thuc-chay-hien-dai-2/
+- **CHY-44.** VinWonders. Diem danh top 15 quan chay Nha Trang hut khach nhat. 11 December 2025. https://vinwonders.com/vi/wonderpedia/news/diem-danh-top-15-quan-chay-nha-trang-hut-khach-nhat/
+- **CHY-47.** Vinasoy. Company website. Accessed 24 September 2026. https://vinasoy.com/
+- **CHY-58.** SGS Vietnam. V-Label for vegan and vegetarian products. Accessed 24 September 2026. https://www.sgs.com/en-vn/services/v-label-for-vegan-and-vegetarian-products
+- **CHY-67.** Au Lac. Tim hieu ve dong thuc pham chay dong goi hien nay. Company website, accessed 24 September 2026. https://aulac-vegan.com/en/find-out-about-todays-line-of-packaged-vegetarian-foods/
+- **DIE-15.** Bach Hoa Xanh (online). Fish, shrimp, squid category (ca-tom-muc-ech). https://www.bachhoaxanh.com/ca-tom-muc-ech (accessed 2026-09-24).
+- **DIE-16.** Bach Hoa Xanh (online). Beef category (thit-bo). https://www.bachhoaxanh.com/thit-bo (accessed 2026-09-24).
+- **DIE-17.** Bach Hoa Xanh (online). Nut and soy milk category (sua-tu-hat). https://www.bachhoaxanh.com/sua-tu-hat (accessed 2026-09-24).
+- **DIE-18.** Bach Hoa Xanh (online). Fresh milk category (sua-tuoi). https://www.bachhoaxanh.com/sua-tuoi (accessed 2026-09-24).
+- **DIE-19.** Co.op Online (Saigon Co.op). Fish category. https://cooponline.vn/c/ca (accessed 2026-09-24).
+- **DIE-20.** Co.op Online. Dau xanh khong vo Xuan Hong 500 g. https://cooponline.vn/dau-xanh-khong-vo-500g--s250104314 (accessed 2026-09-24).
+- **DIE-21.** Co.op Online. Dau phong Xuan Hong 500 g. https://cooponline.vn/dau-phong-500g--s250104304 (accessed 2026-09-24).
+- **DIE-22.** Co.op Online. Dau nanh Xuan Hong 500 g. https://cooponline.vn/dau-nanh-500g--s250104321 (accessed 2026-09-24).
+- **DIE-23.** WinMart (online). Dau phu tuoi Lang Mo hop 400 g. https://winmart.vn/products/lang-mo-dau-phu-tuoi-hop-400g--s10006085 (accessed 2026-09-24).
+- **DIE-24.** Co.op Online. Sua dau nanh Fami 6 hop x 200 ml. https://cooponline.vn/sua-dau-nanh-fami-6-hop-x-200ml--s250107935 (accessed 2026-09-24).
+- **EXP-37.** Weee! (US online Asian grocer). Search results for vegetarian vietnamese and chay and product pages (3 Mien vegetarian net rolls; Saigon Gourmet vegan chicken jerky; Co Ba Mien Tay vegetarian soup; Happy Elephant vegetarian bao; Cholimex vegetarian oyster sauce; Acecook Hao Hao vegetarian noodles; Bong Mai fermented tofu; Quoc Viet vegetarian pho bases), accessed 24 Sep 2026. https://www.weee.com/en/search?keyword=vegetarian+vietnamese
+- **EXP-38.** Au Lac Vegan Food Trade and Manufacture Co., Ltd. About us. Company website, accessed 24 Sep 2026. https://aulac-vegan.com/en/about-us/
+- **EXP-49.** Vinh Hoan Corporation. Website pages: home page; VINH Wellness: Single-sourced collagen peptides and gelatin; Vinh Hoan's Two Newest Products Retailers Won't Want to Miss (9 Apr 2026); What we're bringing to Thaifex Anuga 2026 (29 Apr 2026). https://www.vinhhoan.com/
+- **EXP-52.** NR Instant Produce PCL (NRF). Corporate home page, accessed 24 Sep 2026. https://www.nrinstant.com/en/home
+- **GLB-14.** Schwarz Group (2025, 11 September). Price parity and protein strategy at the companies of Schwarz Group. https://gruppe.schwarz/en/content/story-price-parity-and-protein-strategy
+- **NOV-50.** Monde Nissin Corporation (2025). 2024 Annual Report (SEC Form 17-A with annexes), 15 April 2025. https://mondenissin.com/wp-content/uploads/2025/04/Monde-Nissin-Corporation_2024-Annual-Report-17A-with-Annexes_15April2025-1.pdf
+- **NOV-56.** Vissan (2026). Xuc xich Dinh Duong Heo 35 g, 5 sticks per pack, product page. https://vissanmart.com/hanoi/xuc-xich-dinh-duong-heo-goi-175g.html
+- **NOV-57.** Vissan (2026). Gio lua 500 g, product page. https://vissanmart.com/gio-lua-500g.html
+- **NOV-58.** The Gioi Sua (2026). Sua hat oc cho TH true NUT 180 ml, product page. https://thegioisua.com/sua-hat-oc-cho-th-true-nut-180ml
+
+### database (23)
+
+- **BUY-01.** UN Comtrade Database, public API (comtradeapi.un.org/public/v1/preview/C/A/HS), Vietnam-reported annual imports from World (reporter 704, partner 0, motCode 0, customsCode C00) for HS 350400, 210610, 110900, 040410, 040490, 350110, 350190, 350220, 350211, 350219, 040811, 040891 and 350300, 2019 to 2025. Queried by AltProtein Vietnam on 24 Sep 2026. https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=704&partnerCode=0&flowCode=M
+- **BUY-02.** UN Comtrade Database, public API, partner-reported (mirror) exports to Vietnam (all reporters, partner 704, flow X, motCode 0, customsCode C00) for the same HS codes, 2019 to 2025. Queried 24 Sep 2026. https://comtradeapi.un.org/public/v1/preview/C/A/HS?partnerCode=704&flowCode=X
+- **BUY-07.** Volza. Soy Protein Isolate imports in Vietnam (shipment data summary and sample rows), data current to Sep 2026. https://www.volza.com/p/soy-protein-isolate/import/import-in-vietnam/
+- **BUY-08.** Volza. Soy Protein Isolate buyers in Vietnam (buyer list with shipment counts). https://www.volza.com/p/soy-protein-isolate/buyers/buyers-in-vietnam/
+- **BUY-09.** Volza. Pea Protein imports in Vietnam (summary and sample shipments), data current to 1 Jan 2026. https://www.volza.com/p/pea-protein/import/import-in-vietnam/
+- **CHY-03.** Statista. Vietnam: frequency of plant-based food consumption 2024 (source Rakuten Insight, 8 to 29 February 2024, n=2,757). https://www.statista.com/statistics/1073092/vietnam-frequency-of-plant-based-food-consumption/
+- **CHY-04.** Statista. Share of plant-based food consumers in Vietnam 2024 (source Rakuten Insight, 8 to 29 February 2024, n=3,206). https://www.statista.com/statistics/1072890/vietnam-plant-based-food-consumers
+- **CHY-05.** Statista. Vietnam: reasons against plant-based food 2024 (source Rakuten Insight, n=332 non-consumers). https://www.statista.com/statistics/1073090/vietnam-reasons-against-plant-based-food/
+- **CHY-31.** Foody.vn. Dia diem An chay tai [city] listing pages (Ho Chi Minh City, Hanoi, Da Nang, Hue and 19 other former provinces). Accessed 24 September 2026. https://www.foody.vn/ho-chi-minh/an-chay
+- **CHY-33.** PasGo. Chay Garden Vegetarian Buffet and Tea House Thao Dien, buffet price listing. Accessed 24 September 2026. https://pasgo.vn/nha-hang/chay-garden-vegetarian-buffet-and-tea-house-thao-dien-4847
+- **CON-37.** Google Trends (extracted by AltProtein Vietnam, 24 Sep 2026). Monthly interest, Vietnam, 1 Jan 2019 to Sep 2026, via trends.google.com explore and widgetdata endpoints, locale vi. Comparison sets listed in data_google_trends.csv. https://trends.google.com/trends/explore?geo=VN
+- **DIE-07.** FAO. FAOSTAT Food Balance Sheets (2010 onward methodology), bulk file FoodBalanceSheets_E_Asia.zip, data to 2023, file date 14 October 2025. https://bulks-faostat.fao.org/production/FoodBalanceSheets_E_Asia.zip
+- **DIE-08.** FAO. FAOSTAT Food Balance Sheets, historic (old methodology, 1961 to 2013), bulk file FoodBalanceSheetsHistoric_E_Asia.zip, file date 5 February 2024. https://bulks-faostat.fao.org/production/FoodBalanceSheetsHistoric_E_Asia.zip
+- **DIE-09.** World Bank. World Development Indicators, GDP per capita, PPP (constant 2021 international $), NY.GDP.PCAP.PP.KD, API, last updated 13 July 2026. https://api.worldbank.org/v2/country/VNM;CHN;KOR;THA;MYS;JPN;PHL;IDN/indicator/NY.GDP.PCAP.PP.KD?format=json
+- **DIE-10.** USDA Foreign Agricultural Service. Production, Supply and Distribution (PSD) Online, livestock and poultry bulk file psd_livestock_csv.zip, April 2026 release. https://apps.fas.usda.gov/psdonline/downloads/psd_livestock_csv.zip
+- **DIE-25.** FAO. FAOSTAT Producer Prices, bulk file Prices_E_Asia.zip (annual, LCU per tonne), accessed 2026-09-24. https://bulks-faostat.fao.org/production/Prices_E_Asia.zip
+- **DIE-35.** World Bank. Poverty and Inequality Platform (PIP) API, Vietnam, poverty lines USD 3, 8.30, 12 and 20 per day, VHLSS consumption, accessed 2026-09-24. https://api.worldbank.org/pip/v1/pip?country=VNM&year=all&povline=12
+- **DIE-36.** World Bank. Population estimates and projections (source 40, UN WPP 2024 medium variant): SP.POP.TOTL, SP.POP.65UP.TO.ZS; and WDI SP.URB.TOTL.IN.ZS. API accessed 2026-09-24. https://api.worldbank.org/v2/country/VNM/indicator/SP.POP.TOTL?source=40&format=json
+- **EXP-23.** European Commission, DG TAXUD. TARIC measure information for goods of Vietnamese origin (area VN), reference date 24 Sep 2026, codes 2106102090, 2106909800 series, 2106909200 series, 2202991100 to 2202991900 series, 0801320000, 2008191200 series, 2008199300 series, 1108140000, 3504009000 series, 1902209100 series, 2103100000. https://ec.europa.eu/taxation_customs/dds2/taric/measures.jsp?Lang=en&SimDate=20260924&Area=VN&Taric=2106102000
+- **EXP-24.** UK Department for Business and Trade and HMRC. UK Integrated Online Tariff (Trade Tariff API v2), commodities 2106102020, 2106102040, 2106102090, 2106909285, 2106909830, 2202991199, 2202991599, 2202991999, 2008191280, 2008199280, 1902209920, 1902301020, 2103100000, 1602509590. https://www.trade-tariff.service.gov.uk/api/v2/commodities/2106102090
+- **EXP-39.** United Nations Statistics Division. UN Comtrade database, public preview API, reporter Vietnam (704), exports, 2023, HS codes 030617, 071239, 080111, 080119, 080132, 100630, 110290, 110814, 160529, 190230, 190590, 200390, 200819, 210210, 210220, 210390, 210610, 210690, 220299, 230120, 230990, 292241, 292242, 350400, queried 24 Sep 2026. https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=704&period=2023&cmdCode=210610&flowCode=X
+- **EXP-40.** United Nations Statistics Division. UN Comtrade database, public preview API: HS 210610 exports 2024 by China (156), Thailand (764), Malaysia (458), Indonesia (360); HS 210610 imports 2024 by partner for the US (842) and the EU (97, extra-EU), queried 24 Sep 2026. https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=842&period=2024&cmdCode=210610&flowCode=M
+- **GLB-46.** StockAnalysis.com (2026). Beyond Meat (BYND) revenue history, fiscal years 2018 to 2025. https://stockanalysis.com/stocks/bynd/revenue/
+
+### gov/statistics (39)
+
+- **CHN-01.** USDA FAS GAIN (Nguyen, M.). Vietnam: Retail Foods Annual, report VM2025-0034. 19 Nov 2025. https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Retail+Foods+Annual_Ho+Chi+Minh+City_Vietnam_VM2025-0034.pdf
+- **CHN-02.** USDA FAS GAIN (Nguyen, M.). Vietnam: Retail Foods Annual, report VM2024-0032. 8 Oct 2024. https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Retail+Foods+Annual_Ho+Chi+Minh+City_Vietnam_VM2024-0032.pdf
+- **CHN-03.** USDA FAS GAIN (Nguyen, M.). Vietnam: Food Service - Hotel Restaurant Institutional Annual, report VM2025-0052. 30 Dec 2025. https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Food+Service+-+Hotel+Restaurant+Institutional+Annual_Ho+Chi+Minh+City_Vietnam_VM2025-0052.pdf
+- **CHN-04.** USDA FAS GAIN (Nguyen, M.). Vietnam: Food Service - Hotel Restaurant Institutional Annual, report VM2024-0038. 18 Dec 2024. https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Food+Service+-+Hotel+Restaurant+Institutional+Annual_Ho+Chi+Minh+City_Vietnam_VM2024-0038.pdf
+- **CHN-05.** USDA FAS GAIN (Vo, K.). Vietnam: Exporter Guide Annual, report VM2025-0024. 3 Jul 2025. https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Exporter+Guide+Annual_Hanoi_Vietnam_VM2025-0024.pdf
+- **CHN-29.** Xay dung chinh sach, Government of Viet Nam portal. "Cac muc ho tro bua an ban tru cho hoc sinh tieu hoc tren dia ban Ha Noi." 11 Jul 2025. https://xaydungchinhsach.chinhphu.vn/cac-muc-ho-tro-bua-an-ban-tru-cho-hoc-sinh-tieu-hoc-tren-dia-ban-ha-noi-119250710150824998.htm
+- **CHN-30.** Bao Chinh phu. "Tang cuong bao dam an toan, chat luong bua an ban tru trong cac co so giao duc" (Cong dien 64/CD-TTg). 13 Sep 2026. https://baochinhphu.vn/tang-cuong-bao-dam-an-toan-chat-luong-bua-an-ban-tru-trong-cac-co-so-giao-duc-10226091312502155.htm
+- **CHN-33.** Prime Minister of Viet Nam. Quyet dinh 1340/QD-TTg phe duyet Chuong trinh Sua hoc duong cai thien tinh trang dinh duong gop phan nang cao tam voc tre em mau giao va tieu hoc den nam 2020. 8 Jul 2016. https://vanban.chinhphu.vn/default.aspx?pageid=27160&docid=185450 (text: https://luatvietnam.vn/y-te/quyet-dinh-1340-qd-ttg-thu-tuong-chinh-phu-106698-d1.html)
+- **CHN-45.** National Statistics Office (NSO). "Khach quoc te den Viet Nam 8 thang dat gan 16 trieu luot nguoi, huong toi muc tieu 25 trieu khach nam 2026." 8 Sep 2026. https://www.nso.gov.vn/tin-tuc-thong-ke/2026/09/khach-quoc-te-den-viet-nam-8-thang-dat-gan-16-trieu-luot-nguoi-huong-toi-muc-tieu-25-trieu-khach-nam-2026/
+- **CHN-47.** Ministry of Culture, Sports and Tourism. "Khanh Hoa don 16,4 trieu luot khach du lich trong nam 2025." 25 Dec 2025. https://bvhttdl.gov.vn/khanh-hoa-don-164-trieu-luot-khach-du-lich-trong-nam-2025-20251225091707833.htm
+- **CHN-49.** Vietnam National Authority of Tourism, statistics portal. "Khanh Hoa tang toc thu hut khach quoc te." 7 Nov 2025. https://thongke.tourism.vn/index.php/news/items/332
+- **CHY-28.** Trung tam Bao chi TP.HCM. Thi truong ngay le Vu Lan: thuc pham chay 'duoc mua' kinh doanh. 29 August 2020. https://ttbc-hcm.gov.vn/thi-truong-ngay-le-vu-lan-thuc-pham-chay-duoc-mua-kinh-doanh-13218.html
+- **CHY-45.** USDA Foreign Agricultural Service. Vietnam: Oilseeds and Products Annual. GAIN report VM2026-0006, 15 April 2026. https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Oilseeds+and+Products+Annual_Hanoi_Vietnam_VM2026-0006.pdf
+- **CHY-49.** So Van hoa va The thao Ha Noi. Dau phu lang Chai Vong La. 22 August 2020. https://sovhtt.hanoi.gov.vn/dau-phu-lang-chai-vong-la/
+- **CHY-57.** VietQ. TCVN 13625:2023 thuc day minh bach trong ghi nhan thuc pham chay. 2023 or 2024. https://vietq.vn/tcvn-136252023-thuc-day-minh-bach-trong-ghi-nhan-thuc-pham-chay-d242730.html
+- **DIE-04.** National Institute of Nutrition (Vien Dinh duong). Nhung diem cap nhat ve nhu cau dinh duong khuyen nghi cho nguoi Viet Nam. 2026. https://viendinhduong.vn/vi/article/tin-tuc/6a70094d06fb0c475f0ac123
+- **DIE-05.** General Statistics Office / National Statistics Office of Viet Nam (Cuc Thong ke). Ket qua Khao sat muc song dan cu Viet Nam nam 2024 (Results of the Viet Nam Household Living Standards Survey 2024). Statistical Publishing House; posted 31 March 2026. https://www.nso.gov.vn/wp-content/uploads/2026/03/Sach-Khao-sat-muc-song-dan-cu-2024.pdf
+- **DIE-06.** National Statistics Office of Viet Nam. Thong cao bao chi ket qua Khao sat muc song dan cu nam 2024. May 2025. https://www.nso.gov.vn/tin-tuc-thong-ke/2025/05/thong-cao-bao-chi-ket-qua-khao-sat-muc-song-dan-cu-nam-2024/
+- **DIE-11.** OECD and FAO. OECD-FAO Agricultural Outlook 2026-2035, SDMX dataflow OECD.TAD.ATM DSD_AGR@DF_OUTLOOK_2026_2035 version 1.1, measure FO_PC (food use per person). https://sdmx.oecd.org/public/rest/data/OECD.TAD.ATM,DSD_AGR@DF_OUTLOOK_2026_2035,1.1/VNM+CHN+KOR+JPN+THA+MYS+PHL+IDN.A.CPC_EX_PK+CPC_EX_PT+CPC_EX_BV+CPC_EX_SH+CPC_04.FO_PC..?startPeriod=2010&endPeriod=2035
+- **DIE-12.** National Institute of Nutrition (Nguyen Cong Khan, Ha Thi Anh Dao et al., eds). Bang thanh phan thuc pham Viet Nam (Vietnamese Food Composition Table). Medical Publishing House, Hanoi, 2007. PDF hosted by FAO INFOODS: https://www.fao.org/fileadmin/templates/food_composition/documents/pdf/VTN_FCT_2007.pdf
+- **DIE-28.** World Health Organization. Global Health Observatory OData API: NCD_BMI_25A, NCD_BMI_30A, NCD_HYP_PREVALENCE_A, NCD_DIABETES_PREVALENCE_AGESTD (NCD-RisC), NUTSTUNTINGPREV, NUTOVERWEIGHTPREV (UNICEF/WHO/World Bank JME), NCD_BMI_PLUS2C. https://ghoapi.azureedge.net/api/ (accessed 2026-09-24).
+- **DIE-37.** IMF. World Economic Outlook DataMapper API, PPPPC (GDP per capita, current prices, PPP international dollars). https://www.imf.org/external/datamapper/api/v1/PPPPC/TWN/VNM/KOR/JPN/CHN/THA/MYS (accessed 2026-09-24).
+- **DIE-38.** National Institute of Nutrition. Nguoi Viet 'bo com, an nhieu thit' tu day minh vao mat can doi dinh duong. 21 November 2025. https://viendinhduong.vn/vi/professional-activities/tin-tuc-su-kien-hoi-thao-khoa-hoc/nguoi-viet-bo-com-an-nhieu-thit-tu-day-minh-vao-mat-can-doi-dinh-duong-6923d148fcd6ed4ca806f9c4
+- **EXP-07.** Satake, A. and Sasatani, D. Gradually Evolving Market for Plant-Based Meat Substitutes in Japan. USDA FAS GAIN report JA2023-0061, 7 Aug 2023. https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Gradually+Evolving+Market+for+Plant-Based+Meat+Substitutes+in+Japan_Tokyo_Japan_JA2023-0061.pdf
+- **EXP-14.** Trade Policy and Strategy Office (TPSO), Thai Ministry of Commerce. พาณิชย์หนุน Plant-Based ไทย บุกตลาดโลก (Commerce backs Thai plant-based to global markets). 20 Aug 2025. https://www.tpso.go.th/news/2508-0000000017
+- **EXP-22.** Office of the United States Trade Representative. Notice of Actions in Section 301 Investigations of Acts, Policies, and Practices of Various Economies Related to the Failure of Each Economy to Impose and Effectively Enforce a Prohibition on the Importation of Goods Produced with Forced Labor. Dockets USTR-2026-0265 and 0266, signed 23 Jul 2026. https://ustr.gov/sites/default/files/files/Press/Releases/2026/FLIP%20301%20Investigation%20Final%20Action%20FRN%207-23-26%20FINAL.pdf
+- **EXP-26.** EUR-Lex. Judgment of the Court (Seventh Chamber) of 14 June 2017, Verband Sozialer Wettbewerb eV v TofuTown.com GmbH, Case C-422/16, CELEX 62016CJ0422. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62016CJ0422
+- **EXP-27.** European Commission, DG Environment. Regulation on deforestation-free products. Web page, accessed 24 Sep 2026. https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en
+- **EXP-28.** European Commission, DG Environment. Commission updates product scope and tools to support EUDR. 13 Jul 2026. https://environment.ec.europa.eu/news/commission-updates-product-scope-and-tools-support-eudr-2026-07-13_en
+- **EXP-34.** Singapore Food Agency. Novel food web page, last updated 27 Aug 2026. https://www.sfa.gov.sg/food-information/novel-food
+- **EXP-36.** Australian Bureau of Statistics. Australia's Population by Country of Birth (latest release, reference date 30 June 2025). https://www.abs.gov.au/statistics/people/population/australias-population-country-birth/latest-release
+- **EXP-41.** Japan Customs. Japan's Tariff Schedule (Statistical Code for Import) as of April 1, 2026, chapters 20, 21 and 22. https://www.customs.go.jp/english/tariff/2026_04_01/data/e_21.htm
+- **EXP-42.** General Statistics Office (NSO) of Vietnam. Xuất khẩu nông sản: Thực trạng và triển vọng năm 2025 (Agricultural exports: status and outlook 2025). 10 Nov 2025. https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2025/11/xuat-khau-nong-san-thuc-trang-va-trien-vong-nam-2025/
+- **EXP-45.** US Food and Drug Administration. Generally Recognized as Safe (GRAS). Web page, updated 10 Aug 2026. https://www.fda.gov/food/food-ingredients-packaging/generally-recognized-safe-gras
+- **EXP-46.** European Commission, DG SANTE. Novel food. Web page, accessed 24 Sep 2026. https://food.ec.europa.eu/food-safety/novel-food_en
+- **EXP-47.** European Commission, DG Trade. EU trade relations with Thailand. Web page, accessed 24 Sep 2026. https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/thailand_en
+- **EXP-48.** European Commission, DG Trade. EU trade relations with Indonesia. Web page, accessed 24 Sep 2026. https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/indonesia_en
+- **GLB-52.** USDA Foreign Agricultural Service (2021, 1 September). Plant-Based Food and Beverage Market in Thailand. GAIN Report TH2021-0061. https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Plant-Based+Food+and+Beverage+Market+in+Thailand_Bangkok_Thailand_08-29-2021.pdf
+- **NOV-69.** Bao Chinh phu (2019). Thit nhan tao: xu huong gay tranh cai. 15 October 2019, updated 27 June 2021. https://baochinhphu.vn/thit-nhan-tao-xu-huong-gay-tranh-cai-102262641.htm
+
+### market-research (15)
+
+- **CHN-06.** Q&Me (Asia Plus Inc.). Vietnam retail store (Modern Trade) trend 2025. Store enumeration as of March 2025, desktop research. https://sinhvien.dinhtienminh.net/wp-content/uploads/2025/05/viet_nam_retail_store_modern_trade_trend_2025.pdf (report page https://qandme.net/en/report/viet-nam-retail-store-modern-trade-trend-2025.html)
+- **CHN-18.** B&Company. "Fresh meat in Vietnam: Market characteristics and consumer trend." 24 Jun 2025. https://b-company.jp/fresh-meat-in-vietnam-market-characteristics-and-consumer-trend/
+- **CHY-01.** W&S Market Research (via Vinaresearch). Bao cao nghien cuu thi truong: Xu huong an chay cua nguoi Viet Nam. August 2012. https://vinaresearch.net/public/news/563-Xu_huong_an_chay_cua_nguoi_Viet_Nam.vnrs
+- **CHY-02.** Rakuten Insight. Plant-based food alternatives: future or present? Survey report, fieldwork 12 to 30 November 2021. https://insight.rakuten.com/wordpress/wp-content/uploads/Report_Plant_based_food.pdf
+- **CHY-66.** Q&Me. Vietnam cooking survey: what 6,000 dinner photos tell us. April 2023. https://qandme.net/en/report/vietnam-cooking-survey-what-6000-dinner-photo-tells-us.html
+- **CHY-69.** Q&Me. What new foods have Vietnamese consumers tried or cooked recently? 22 July 2026. https://qandme.net/en/report/what-new-foods-have-vietnamese-consumers-tried-or-cooked-recently.html
+- **CON-06.** Rakuten Insight (2022). Plant-based food alternatives: future or present? Survey November 2021, 124,100 respondents in 12 APAC markets plus 5,900 US; Vietnam n=4,018. https://insight.rakuten.com/wordpress/wp-content/uploads/Report_Plant_based_food.pdf
+- **CON-07.** Rakuten Insight (June 2025). Plant-based food alternatives (2024 to 2025 comparison). 78,816 respondents in 12 APAC markets; Vietnam n=1,942. https://insight.rakuten.com/wordpress/wp-content/uploads/2025_Report-Plant-based-food.pdf
+- **CON-18.** Decision Lab (undated, post-pandemic). COVID-19: young Vietnamese top motivation for healthy eating. https://www.decisionlab.co/blog/covid-19-young-vietnamese-top-motivation-for-healthy-eating
+- **CON-19.** Q&Me (undated). What new foods have Vietnamese consumers tried or cooked recently? https://qandme.net/en/report/what-new-foods-have-vietnamese-consumers-tried-or-cooked-recently.html
+- **CON-30.** Euromonitor International (Sep 2025). Plant-based dairy in Vietnam (report listing and summary via Research and Markets). https://www.researchandmarkets.com/reports/5739027/plant-based-dairy-in-vietnam
+- **CON-31.** VIRAC (21 Jul 2020). Nut milk market development trends in the future. https://viracresearch.com/nut-milk-market-development-trends-in-the-future/
+- **EXP-06.** Yano Research Institute. Alternative protein global market survey (2025) press release no. 3920. 17 Nov 2025. https://www.yano.co.jp/press/press.php/003920
+- **GLB-43.** Bloomberg Intelligence (2021, 11 August). Plant-based foods market to hit $162 billion in next decade, projects Bloomberg Intelligence (press announcement). https://www.bloomberg.com/company/press/plant-based-foods-market-to-hit-162-billion-in-next-decade-projects-bloomberg-intelligence
+- **GLB-47.** Euromonitor International (2023, 30 November). Plant-based in Asia Pacific: what's next? https://www.euromonitor.com/article/plant-based-in-asia-pacific-whats-next
+
+### other (41)
+
+- **BUY-03.** World Instant Noodles Association (WINA). Demand Rankings table, unit million servings, 2021 to 2025, updated 6 Aug 2026; and Global Demand TOP 15 page (Vietnam flavour notes). https://instantnoodles.org/en/noodles/demand/table/ ; https://instantnoodles.org/en/noodles/demand/ranking/
+- **BUY-32.** Informa Markets. Fi Vietnam 2026 event website (13 to 15 May 2026, SECC, Ho Chi Minh City; next edition 17 to 19 May 2028). https://www.figlobal.com/vietnam/
+- **BUY-33.** Informa Markets. Fi Vietnam 2026 Exhibitor List as of 9 May 2026 (PDF, image-based; transcribed by OCR by AltProtein Vietnam). https://figlobal.com/media/7d44e7ef/FiV26-Exhibitor-List-as-of-9-May-9d3e9f6603b6f470b951062adc7d4694.pdf
+- **BUY-34.** ProPak Vietnam (Informa Markets / Chan Chao). Event website (ProPak Vietnam 2027, 10 to 12 Mar 2027; ProPak Hanoi 13 to 15 Oct 2026). https://www.propakvietnam.com/
+- **BUY-44.** Vietnam Association of Food Science and Technology (Hoi KHCN luong thuc thuc pham Viet Nam, VAFoST). Website, accessed 24 Sep 2026. https://vafost.org.vn/
+- **CHN-40.** LuatVietnam. "Chinh thuc: Tien an giua ca, an trua vuot qua 1,2 trieu dong/nguoi lao dong/thang moi tinh vao thu nhap chiu thue TNCN." 3 Jul 2026. https://luatvietnam.vn/thue-phi-le-phi/tien-an-giua-ca-an-trua-vuot-qua-12-trieu-dong-nguoi-lao-dong-thang-moi-tinh-vao-thu-nhap-chiu-thue-tncn-565-108017-article.html
+- **CHN-46.** Day Trips Vietnam. "Vietnam's record 21.2M tourist arrivals in 2025, explained." 2026. https://daytripsvietnam.com/research/vietnam-2025-international-arrivals-record/
+- **CHY-06.** Pew Research Center. Religion and Spirituality in East Asian Societies. 17 June 2024. Vietnam fieldwork 2 June to 17 September 2023, face-to-face CAPI, n=2,255. https://www.pewresearch.org/wp-content/uploads/sites/20/2024/06/PR_2024.06.17_religion-in-east-asia_report.pdf
+- **CHY-13.** B-Company. Vegetarian Vietnamese food: consumer trends and market opportunities in Vietnam's F&B sector. 2025. https://b-company.jp/vegetarian-vietnamese-food-consumer-trends-and-market-opportunities-in-vietnams-fb-sector/
+- **CHY-14.** B-Company. Ho Chi Minh City becomes the capital of vegetarians: plant-based trends quietly spreading. 2024 or 2025. https://b-company.jp/ho-chi-minh-city-becomes-the-capital-of-vegetarians-plant-based-trends-quietly-spreading/
+- **CHY-35.** MICHELIN Guide. 5 vegetarian menus in Ho Chi Minh City. 22 May 2024. https://guide.michelin.com/kr/en/article/dining-out/5-vegetarian-menus-michelin-ho-chi-minh-city
+- **CHY-46.** U.S. Soybean Export Council. Updated 2025 Asia Soy Food Report analyzes market potential. 2025. https://ussec.org/news/updated-2025-asia-soy-food-report-analyzes-market-potential/
+- **CHY-52.** Giac Ngo Online, To Tu van. Kieng ngu vi tan (hanh, he, toi, nen, kieu) co the hoa giai tam san? 1 March 2022. https://giacngo.vn/kieng-ngu-vi-tan-hanh-he-toi-nen-kieu-co-the-hoa-giai-tam-san-post40227.html
+- **CHY-53.** Phat Phap Ung Dung. Co nen dat ten mon chay gia man hay khong? 22 April 2019 (quoting Thich Thanh Huan, Central Sangha Office I). https://phatphapungdung.com/co-nen-dat-ten-mon-chay-gia-man-hay-khong-140656.html
+- **CHY-54.** Duong Lu Dien. Van de thuc pham chay gia man duoi mot goc nhin tu Phat giao. Phatgiao.org.vn, 11 September 2020. https://phatgiao.org.vn/van-de-thuc-pham-chay-gia-man-duoi-mot-goc-nhin-tu-phat-giao-d43606.html
+- **CHY-56.** Thanh Tam. An trung ga co phai la an chay khong? Phatgiao.org.vn, 3 December 2018. https://phatgiao.org.vn/an-trung-ga-co-phai-la-an-chay-khong-d32683.html
+- **CHY-62.** Jovel Chan. The slow rise of veganism in Vietnam (interview with Scott Green, founder of Song Thuan Chay). Undated blog post. https://jovelchan.com/blog/the-slow-rise-of-veganism-in-vietnam
+- **CON-24.** Wong, Y.X., Tan, H.R. and Du, J. (2025). Sensory evaluation and consumer perception of dairy-plant hybrid meat analogs in Singapore. SSRN 5270005. https://doi.org/10.2139/ssrn.5270005
+- **CON-26.** Mirae Asset Securities Vietnam (17 Nov 2025). Báo cáo ngắn: CTCP Đường Quảng Ngãi (QNS). https://masvn.com/api/attachment/file/1763352005624-QNS_Companynote_MAS17.11.2025.pdf
+- **CON-38.** B-Company (undated, about 2025 to 2026). Vegetarian Vietnamese food: consumer trends and market opportunities in Vietnam's F&B sector. https://b-company.jp/vegetarian-vietnamese-food-consumer-trends-and-market-opportunities-in-vietnams-fb-sector/
+- **EXP-18.** MP Logistics. Vietnam: Cashew Exports Hit Record $5.2 Billion in 2025. 28 Jan 2026. https://mplogistics.vn/2026/01/28/vietnam-cashew-exports-hit-record-5-2-billion-in-2025/
+- **EXP-20.** Thompson Hine SmarTrade. President Trump Issues Executive Order Exempting Various Agricultural Products from the Reciprocal Tariff Regime. Nov 2025. https://www.thompsonhinesmartrade.com/2025/11/president-trump-issues-executive-order-exempting-various-agricultural-products-from-the-reciprocal-tariff-regime/
+- **EXP-21.** Skadden, Arps, Slate, Meagher and Flom. US Trade Court Strikes Down Section 122 Tariffs, but Ruling's Fate Is Uncertain and Practical Impact Is Limited. 20 May 2026. https://www.skadden.com/insights/publications/2026/05/us-trade-court-strikes-down-section-122-tariffs
+- **EXP-29.** Aquaculture Stewardship Council. ASC Feed Standard, version 1.1 (ASC-STD-002), issued 1 May 2025. https://programme-centre.asc-aqua.org/app/uploads/2025/04/ASC-STD-002-ASC-Feed-Standard-V1.1-May-2025.pdf
+- **EXP-30.** Aquaculture Stewardship Council. Feed Standard web page, accessed 24 Sep 2026. https://asc-aqua.org/our-standards/feed-standard/
+- **EXP-31.** VASEP. August 2026 seafood exports: growth slows, momentum continues to pivot to Asia. 15 Sep 2026. https://seafood.vasep.com.vn/total-seafood-trade/news/august-2026-seafood-exports-growth-slows-momentum-continues-to-pivot-to-asia-38177.html
+- **EXP-32.** VASEP. VASEP and ASC update new standards, address practical challenges for seafood businesses. 22 to 23 Sep 2026. https://seafood.vasep.com.vn/why-buy-seafood/certifications/asc/vasep-and-asc-update-new-standards-address-practical-challenges-for-seafood-businesses-38280.html
+- **EXP-35.** Pew Research Center. Vietnamese in the U.S. Fact Sheet. 1 May 2025. https://www.pewresearch.org/social-trends/fact-sheet/asian-americans-vietnamese-in-the-u-s/
+- **GLB-12.** Green Protein Alliance and ProVeg Netherlands (2026, March). The Protein Tracker: National Supermarket Protein Split 2025. https://eiweet.nl/wp-content/uploads/2026/03/2026_March_The-Protein-Tracker-Dutch-national-retail-protein-split-2025-Green-Protein-Alliance-ProVeg-Netherlands-1.pdf
+- **GLB-13.** Rethink Priorities (c. 2024). Protein transition strategy: Lidl Germany's quantifiable approach to sustainable retail (plant-based diet shift initiative case studies). https://rethinkpriorities.org/research-area/plant-based-diet-shift-initiative-case-studies-german-retailer-transitions/
+- **GLB-21.** Liu, Z., and Ansink, E. (2024). Price elasticities of meat, fish and plant-based meat substitutes: Evidence from store-level Dutch supermarket scanner data. Tinbergen Institute Discussion Paper TI 2024-046. https://ideas.repec.org/p/tin/wpaper/20240046.html
+- **GLB-22.** Freitas-Groff, Z., Meyer, C., and Woolley, T. (2024, 5 October). Why are fewer grocery shoppers buying meat? Declining grocery sales, prices, and cultural change. Working paper. https://zachfreitasgroff.b-cdn.net/Meat_Change.pdf
+- **GLB-32.** Peacock, J. (2024). Price-, taste-, and convenience-competitive plant-based meat would not currently replace meat (journal version). OSF Preprints. https://doi.org/10.31219/osf.io/dy76n
+- **GLB-42.** Boston Consulting Group and Blue Horizon (2021, March). Food for thought: The protein transformation. https://www.bcg.com/publications/2021/the-benefits-of-plant-based-meats (see also https://bluehorizon.com/insight/food-for-thought-the-protein-transformation/)
+- **GLB-45.** Gerhardt, C., Donnan, D., et al., A.T. Kearney (2019). How will cultured meat and meat alternatives disrupt the agricultural and food industry? https://www.kearney.com/documents/291362523/291366549/How+Will+Cultured+Meat+and+Meat+Alternatives+Disrupt+the+Agricultural+and+Food+Industry.pdf
+- **GLB-57.** Su, M.-Y., and Yang, F.-A. (2023, 21 April). Marketing strategy of plant-based meat alternatives in Taiwan. FFTC Agricultural Policy Platform. https://ap.fftc.org.tw/article/3321
+- **GLB-61.** Wikipedia (2026). Eat Just. https://en.wikipedia.org/wiki/Eat_Just
+- **GLB-62.** Wikipedia (2026). Cultured meat. https://en.wikipedia.org/wiki/Cultured_meat
+- **GLB-65.** Threads post by @poethero (2025). 2025 Taiwan vegetarian industry overview and trends. https://www.threads.com/@poethero/post/DJpy549zFru
+- **GLB-66.** China-Britain Business Council Focus (n.d.). How big is China's market for plant-based foods? https://focus.cbbc.org/how-big-is-chinas-market-for-plant-based-foods/
+- **NOV-61.** Wikisua (2025). Review sua YokoGold co tot khong (mentions Nutifood GrowPLUS+ Colostrum Lactoferrin 0+). https://wikisua.com/sua-yoko-gold-co-tot-khong/
+
+### peer-reviewed (89)
+
+- **BUY-39.** Akesowan A. (2008). Effect of soy protein isolate on quality of light pork sausages containing konjac flour. African Journal of Biotechnology 7(24). https://doi.org/10.4314/ajb.v7i24.59642
+- **BUY-40.** Brishti F.H., Zarei M., Muhammad K., Ismail-Fitry M.R., Shukri R. et al. (2017). Evaluation of the functional properties of mung bean protein isolate for development of textured vegetable protein. Universiti Putra Malaysia Institutional Repository. http://psasir.upm.edu.my/id/eprint/58365/1/%2834%29.pdf
+- **BUY-41.** Tarahi M., Abdolalizadeh L., Hedayati S. (2024). Mung bean protein isolate: Extraction, structure, physicochemical properties, modifications, and food applications. Food Chemistry, article 138626. https://doi.org/10.1016/j.foodchem.2024.138626
+- **BUY-42.** Li Z., Regenstein J.M., Zhou L., Wang Z. (2022). Soy protein isolates: A review of their composition, aggregation, and gelation. Comprehensive Reviews in Food Science and Food Safety. https://doi.org/10.1111/1541-4337.12925
+- **BUY-43.** Muguruma M., Tsuruoka K., Katayama K., Erwanto Y., Kawahara S. et al. (2003). Soybean and milk proteins modified by transglutaminase improves chicken sausage texture even at reduced levels of phosphate. Meat Science. https://doi.org/10.1016/s0309-1740(02)00070-0
+- **BUY-47.** Kudre T.G., Benjakul S., Kishimura H. (2013). Comparative study on chemical compositions and properties of protein isolates from mung bean, black bean and bambara groundnut. Journal of the Science of Food and Agriculture. https://doi.org/10.1002/jsfa.6052
+- **CHN-19.** Nguyen Thi Thuy, M., Dorny, P., Lebailly, P., et al. (2020). Mapping the pork value chain in Vietnam: a systematic review. Tropical Animal Health and Production 52: 2799-2808. https://doi.org/10.1007/s11250-020-02338-y
+- **CHN-20.** Pham Van Hung, Nguyen Thi Duong Nga, Bui Van Quang, et al. (2022). Characterizing beef consumption behaviors of households in Dien Bien Province, Vietnam. Vietnam Journal of Agricultural Sciences 5(3). https://doi.org/10.31817/vjas.2022.5.3.08
+- **CHN-21.** Ha-Duong, M. (2021). Subjective satisfaction and objective electricity poverty reduction in Vietnam, 2008-2018. Fulbright Review of Economics and Policy 1(1): 43-60. https://doi.org/10.1108/frep-03-2021-0022
+- **CHN-53.** Saldanha, L. and Krishnaswamy, S. (2024). Vegetarianism, traditional practices, and belief systems in India. Nutrition Today 59(4): 142-148. https://doi.org/10.1097/nt.0000000000000690
+- **CHN-54.** Valdes, M., Conklin, A., Veenstra, G., et al. (2021). Plant-based dietary practices in Canada: examining definitions, prevalence and correlates of animal source food exclusions using nationally representative data from the 2015 Canadian Community Health Survey-Nutrition. Public Health Nutrition 24(5): 777-786. https://doi.org/10.1017/s1368980020003444
+- **CHN-55.** Dawe, D., Briones, R., Hassan, N., et al. (2019). Trends in food prepared outside the home in some Asian countries. World Food Policy 5(1): 16-23. https://doi.org/10.1002/wfp2.12001
+- **CHN-56.** Hoang, K.T., Ignowski, L., Mai, P.T., et al. (2025). Tracking a decade of food system transformation in Vietnam's Mekong Delta: production, consumption, and nutrition. Frontiers in Sustainable Food Systems 9. https://doi.org/10.3389/fsufs.2025.1687849 (correction: https://doi.org/10.3389/fsufs.2026.1786681)
+- **CHN-58.** Le, T.T.H., Langley, S.J., Dunham, J.G., et al. (2022). Food safety knowledge, needed and trusted information of pork consumers in different retail types in Northern Vietnam. Frontiers in Sustainable Food Systems 6. https://doi.org/10.3389/fsufs.2022.1063927
+- **CHY-09.** Nguyen T.L., Do H.T., Lam T.H., et al. A novel model to predict plant-based food choice: empirical study in Southern Vietnam. Sustainability 12(9):3847, 2020. https://doi.org/10.3390/su12093847
+- **CHY-10.** Nguyen T.Q.N., Nguyen V.N., Nguyen M.D. The transformation of traditional Buddhist vegetarianism into a modern lifestyle trend: exploring the intention to adopt a periodic vegetarian diet. Veredas do Direito 22(6):e223884, 2025. https://doi.org/10.18623/rvd.v22.n6.3884
+- **CHY-11.** Tran T.N.N., Le K.H., N H.L., D N.T.H., Phan D.B.V. Human sustainability through dietary transitions: evidence from urban students' shift toward vegetarian practices in Ho Chi Minh City. Journal of People, Plants, and Environment 29(S2):259, 2026. https://doi.org/10.11628/ksppe.2026.29.s2.259
+- **CHY-12.** Markoni E., Ha T.M., Gotze F., et al. Healthy or environmentally friendly? Meat consumption practices of green consumers in Vietnam and Switzerland. Sustainability 15(15):11488, 2023. https://doi.org/10.3390/su151511488
+- **CHY-61.** Vu Thi Thanh Tram, Ho Viet The, Ngo Thi Kim Anh, et al. Buoc dau xay dung bo KIT phat hien su lan tap DNA mot so loai thit trong thuc pham chay. Tap chi Khoa hoc Dai hoc Can Tho 56(6), 2020. https://ctujsvn.ctu.edu.vn/index.php/ctujsvn/article/view/3740
+- **CON-08.** Delley, M., Ha, T.M., Götze, F., Markoni, E., Ngo, M.H., Nguyen, A.D., Bui, T.L., Le, N.T., Pham, B.D. and Brunner, T.A. (2024). Understanding and tackling meat reduction in different cultural contexts: a segmentation study of Swiss and Vietnamese consumers. Frontiers in Psychology 15:1286579. https://doi.org/10.3389/fpsyg.2024.1286579
+- **CON-09.** Ha, T.M., Ngo, M.H., Delley, M., Götze, F., Bui, L.T.K., Le, N.T., Markoni, E., Nguyen, A.D., Pham, B.D. and Brunner, T.A. (2024). Socio-behavioural factors influencing meat intake and meat reduction intention in Vietnam and Switzerland. Meat Science 215:109530. https://doi.org/10.1016/j.meatsci.2024.109530
+- **CON-10.** Markoni, E., Ha, T.M., Götze, F., Häberli, I., Ngo, M.H. and others (2023). Healthy or environmentally friendly? Meat consumption practices of green consumers in Vietnam and Switzerland. Sustainability 15(15):11488. https://doi.org/10.3390/su151511488
+- **CON-11.** Nguyen, T.L., Do, H.T., Lam, T.H., Doan, M.Q. and Phan, N.S. (2020). A novel model to predict plant-based food choice: empirical study in Southern Vietnam. Sustainability 12(9):3847. https://doi.org/10.3390/su12093847
+- **CON-12.** Nguyen, M.Q., Nguyen, T.N.M., Nguyen, T.C., Vu, H.S., Luong, T.H. and others (2025). Exploring factors influencing the willingness to try novel alternative protein products in Hanoi. JST: Engineering and Technology for Sustainable Development 35(5):69-77 (HUST). https://doi.org/10.51316/jst.186.etsd.2025.35.5.9
+- **CON-13.** Ly, B.N. and Ly, T.C. (2025). Understanding the behavioral drivers of plant-based food consumption intention among urban youth: evidence from Hanoi, Vietnam. International Journal of Social Sciences and English Literature 9(10):6-12. https://doi.org/10.55220/2576-683x.v9.596
+- **CON-14.** Tran, T.N.N. (2024). The environmental perception and vegetarian motivation of people in Ho Chi Minh City, Vietnam. IOP Conference Series: Earth and Environmental Science 1403:012008. https://doi.org/10.1088/1755-1315/1403/1/012008
+- **CON-15.** Tran, T.N.N., Le, K.H., Nguyen, H.L., Duong, N.T.H. and Phan, D.B.V. (2026). Human sustainability through dietary transitions: evidence from urban students' shift toward vegetarian practices in Ho Chi Minh City. Journal of People, Plants, and Environment 29(S2):259-271. https://doi.org/10.11628/ksppe.2026.29.s2.259
+- **CON-16.** Nguyen, T.Q.N., Nguyen, V.N. and Nguyen, M.D. (2025). The transformation of traditional Buddhist vegetarianism into a modern lifestyle trend: exploring the intention to adopt a periodic vegetarian diet. Veredas do Direito 22(6):e223884. https://doi.org/10.18623/rvd.v22.n6.3884
+- **CON-17.** Mai, L.H. (Mai Lý Hiển) (15 Jul 2026). Ảnh hưởng của nhận thức bền vững đến hành vi tiêu dùng ẩm thực chay của Gen Z: trường hợp Hum Vegetarian. Tạp chí Kinh tế Tài chính (research section). https://nghiencuu.tapchikinhtetaichinh.vn/anh-huong-cua-nhan-thuc-ben-vung-den-hanh-vi-tieu-dung-am-thuc-chay-cua-gen-z-truong-hop-hum-vegetarian-161739.html
+- **CON-21.** Chia, A., Shou, Y., Wong, N.M.Y., Cameron-Smith, D., Sim, X., van Dam, R.M. and Chong, M.F.-F. (2024). Complexity of consumer acceptance to alternative protein foods in a multiethnic Asian population. Food Quality and Preference 114:105102. https://doi.org/10.1016/j.foodqual.2024.105102
+- **CON-22.** Nguyen, A.L.H., Siralertmukul, S., Sittiketgorn, S., Soontrunnarudrungsri, A. and Suwonsichon, S. (2026). Characterizing sensory drivers of acceptance, purchase intent, and emotional responses to plant-based milk alternatives in chilled sweetened coffee among Thai consumers. Foods 15(15):2583. https://doi.org/10.3390/foods15152583
+- **CON-23.** Jiang, X., Chen, X. and Wu, L. (2024). Chinese consumers' valuation for prepared plant-based meat products: does environmental information matter? Journal of Food Science 89(9):5823-5840. https://doi.org/10.1111/1750-3841.17279
+- **CON-39.** Ha, T.M., Shakur, S. and Pham, K.H. (2019). Consumer concern about food safety in Hanoi, Vietnam. Food Control 98:238-244. https://doi.org/10.1016/j.foodcont.2018.11.031
+- **DIE-13.** Guimaraes C.F.M., Marsico E.T., Monteiro M.L.G., et al. (2015). The chemical quality of frozen Vietnamese Pangasius hypophthalmus fillets. Food Science & Nutrition 4(3):398-408. https://doi.org/10.1002/fsn3.302
+- **DIE-14.** Manthey-Karl M., Lehmann I., Ostermeyer U., et al. (2016). Natural chemical composition of commercial fish species: characterisation of pangasius, wild and farmed turbot and barramundi. Foods 5(3):58. https://doi.org/10.3390/foods5030058
+- **DIE-29.** Vuong H., Pannell D.J., Schilizzi S., Burton M.P. (2024). Vietnamese consumers' willingness to pay for improved food safety for vegetables and pork. Australian Journal of Agricultural and Resource Economics. https://doi.org/10.1111/1467-8489.12577
+- **DIE-30.** Ngo H.H.T., Dang-Xuan S., Malqvist M., et al. (2023). Impact of perception and assessment of consumers on willingness to pay for upgraded fresh pork: an experimental study in Vietnam. Frontiers in Sustainable Food Systems 7:1055877. https://doi.org/10.3389/fsufs.2023.1055877
+- **DIE-31.** Le T.T.-H., Langley S.J., Dunham J.G., Dang-Xuan S., Unger F., et al. (2022). Food safety knowledge, needed and trusted information of pork consumers in different retail types in Northern Vietnam. Frontiers in Sustainable Food Systems 6:1063927. https://doi.org/10.3389/fsufs.2022.1063927
+- **DIE-32.** Hoang Thu Nga, Tran Thi Quynh Anh, Vuong Thi Ho Ngoc, et al. (2024). Gia tri dinh duong khau phan nguoi truong thanh o quan Cau Giay, huyen Gia Lam, Ha Noi va huyen Vu Thu, tinh Thai Binh nam 2022. Tap chi Y hoc Du phong 34(2):27-33. https://doi.org/10.51403/0868-2836/2024/1619
+- **DIE-33.** Vu L.H., Nguyen A.N. (2025). The nutrition transition in Vietnam: evidence from national household survey data 2012-2020. Critical Public Health 36(1). https://doi.org/10.1080/09581596.2025.2598702
+- **DIE-34.** Harris J., Nguyen P.H., Tran L.M., et al. (2020). Nutrition transition in Vietnam: changing food supply, food prices, household expenditure, diet and nutrition outcomes. Food Security. https://doi.org/10.1007/s12571-020-01096-x
+- **GLB-15.** Siegrist, A., Green, A., Michel, F., and Mathys, A. (2024). Comparing the nutritional value and prices of meat and milk substitutes with their animal-based benchmarks across six European countries. Food Research International, 115213. https://doi.org/10.1016/j.foodres.2024.115213
+- **GLB-16.** Zhao, S., Wang, L., Hu, W., and Zheng, Y. (2023). Meet the meatless: Demand for new generation plant-based meat alternatives. Applied Economic Perspectives and Policy, 45(1), 4 to 21 (online 2022). https://doi.org/10.1002/aepp.13232
+- **GLB-17.** Cuffey, J., Chenarides, L., Li, W., and Zhao, S. (2023). Consumer spending patterns for plant-based meat alternatives. Applied Economic Perspectives and Policy (online 2022). https://doi.org/10.1002/aepp.13280
+- **GLB-18.** Chenarides, L., Cuffey, J., Li, W., Zhao, S., and Adamo, B. (2024). Consumer spending on plant-based meat alternatives. Choices, 39(3). https://www.choicesmagazine.org/UserFiles/file/cmsarticle_923.pdf
+- **GLB-19.** Neuhofer, Z.T., and Lusk, J.L. (2022). Most plant-based meat alternative buyers also buy meat: an analysis of household demographics, habit formation, and buying behavior among meat alternative buyers. Scientific Reports. https://doi.org/10.1038/s41598-022-16996-5
+- **GLB-20.** Nouve, Y., Zheng, Y., Zhao, S., Kaiser, H.M., and Dong, D. (2025). Disaggregated substitution patterns between plant-based and animal meats: Evidence from U.S. household purchases. Applied Economic Perspectives and Policy. https://doi.org/10.1002/aepp.70028
+- **GLB-23.** Dogbe, W., Wang, Y., and Revoredo-Giha, C. (2024). Nutritional implications of substituting plant-based proteins for meat: evidence from home scan data. Agricultural and Food Economics, 12. https://doi.org/10.1186/s40100-024-00324-8
+- **GLB-24.** Tonsor, G.T., Lusk, J.L., and Schroeder, T.C. (2022). Market potential of new plant-based protein alternatives: Insights from four US consumer experiments. Applied Economic Perspectives and Policy. https://doi.org/10.1002/aepp.13253
+- **GLB-25.** Jähn, S., Guhl, D., and Erhard, A. (2024). Substitution patterns and price response for plant-based meat alternatives. Proceedings of the National Academy of Sciences. https://doi.org/10.1073/pnas.2319016121
+- **GLB-26.** Caputo, V., Lusk, J.L., and Blaustein-Rejto, D. (2025). Plant-based versus conventional meat in food away from home settings: Substitution, complementarity, and market impacts. Agricultural Economics. https://doi.org/10.1111/agec.70002
+- **GLB-27.** Lusk, J.L., Blaustein-Rejto, D., Shah, S., and Tonsor, G.T. (2022). Impact of plant-based meat alternatives on cattle inventories and greenhouse gas emissions. Environmental Research Letters. https://doi.org/10.1088/1748-9326/ac4fda
+- **GLB-28.** Slade, P. (2023). Does plant-based milk reduce sales of dairy milk? Evidence from the almond milk craze. Agricultural and Resource Economics Review. https://doi.org/10.1017/age.2022.22
+- **GLB-29.** Stewart, H., Kuchler, F., Cessna, J., and Hahn, W. (2020). Are plant-based analogues replacing cow's milk in the American diet? Journal of Agricultural and Applied Economics. https://doi.org/10.1017/aae.2020.16
+- **GLB-30.** Caputo, V., Sogari, G., and Van Loo, E.J. (2023). Do plant-based and blend meat alternatives taste like meat? A combined sensory and choice experiment study. Applied Economic Perspectives and Policy, 45(1), 86 to 105 (online 2022). https://doi.org/10.1002/aepp.13247
+- **GLB-31.** Carlsson, F., Kataria, M., and Lampi, E. (2021). How much does it take? Willingness to switch to meat substitutes. Ecological Economics. https://doi.org/10.1016/j.ecolecon.2021.107329
+- **GLB-33.** Trewern, J., Chenoweth, J., Christie, I., and Halevy, S. (2022). Does promoting plant-based products in Veganuary lead to increased sales, and a reduction in meat sales? A natural experiment in a supermarket setting. Public Health Nutrition, 25(11), 3204 to 3214. https://doi.org/10.1017/S1368980022001914
+- **GLB-34.** van der Vliet, N., Stuber, J.M., Raghoebar, S., Roordink, E.M., van der Swaluw, K., et al. (2024). Nudging plant-based alternatives to meat and dairy in a real-life online supermarket: A randomized controlled trial. Appetite. https://doi.org/10.1016/j.appet.2024.107278
+- **GLB-35.** Garnett, E.E., Balmford, A., Sandbrook, C., Pilling, M.A., and Marteau, T.M. (2019). Impact of increasing vegetarian availability on meal selection and sales in cafeterias. PNAS, 116(42), 20923 to 20929. https://doi.org/10.1073/pnas.1907207116
+- **GLB-36.** Pechey, R., Bateman, P., Cook, B., et al. (2022). Impact of increasing the relative availability of meat-free options on food selection: two natural field experiments and an online randomised trial. International Journal of Behavioral Nutrition and Physical Activity, 19. https://doi.org/10.1186/s12966-021-01239-z
+- **GLB-37.** Hansen, P.G., Schilling, M., and Malthesen, M.S. (2021). Nudging healthy and sustainable food choices: three randomized controlled field experiments using a vegetarian lunch-default as a normative signal. Journal of Public Health, 43(2), 392 to 397. https://doi.org/10.1093/pubmed/fdz154
+- **GLB-38.** Boronowsky, R.D., Zhang, A.W., Stecher, C., Presley, K., Mathur, M.B., Cleveland, D.A., et al. (2022). Plant-based default nudges effectively increase the sustainability of catered meals on college campuses: Three randomized controlled trials. Frontiers in Sustainable Food Systems, 6, 1001157. https://doi.org/10.3389/fsufs.2022.1001157
+- **GLB-39.** Green, S.A., Smith, B., and Mathur, M.B. (2025). Meaningfully reducing consumption of meat and animal products is an unsolved problem: A meta-analysis. Appetite, 108233. https://doi.org/10.1016/j.appet.2025.108233
+- **GLB-40.** Alae-Carew, C., Green, R., Stewart, C., Cook, B., Dangour, A.D., et al. (2022). The role of plant-based alternative foods in sustainable and healthy food systems: Consumption trends in the UK. Science of the Total Environment, 151041. https://doi.org/10.1016/j.scitotenv.2021.151041
+- **GLB-41.** Wang, L., Li, W., and Zheng, Y. (2024). Does the advertising of plant-based burgers attract meat consumers? The influence of new product advertising on consumer responses. Agribusiness, 40(3), 680 to 698. https://doi.org/10.1002/agr.21916
+- **GLB-51.** Chung, J.Y., Bryant, C.J., and Asher, K.E. (2022). Plant-based meats in China: a cross-sectional study of attitudes and behaviours. Journal of Human Nutrition and Dietetics. https://doi.org/10.1111/jhn.13092
+- **GLB-64.** Dahmani, J., Nicklaus, S., Grenier, J.-M., and Marty, L. (2022). Nutritional quality and greenhouse gas emissions of vegetarian and non-vegetarian primary school meals: A case study in Dijon, France. Frontiers in Nutrition. https://doi.org/10.3389/fnut.2022.997144
+- **NOV-01.** Lin M.-T., Conroy D., Fahn H., Gan C. (2026). Segmenting Asian consumer values in novel food technologies and their association with acceptance of cell cultured foods. Discover Food. https://doi.org/10.1007/s44187-026-01163-w
+- **NOV-02.** Nguyen M.Q., Nguyen T.N.M., Nguyen T.C., Vu H.S., Luong T.H. (2025). Exploring factors influencing the willingness to try novel alternative protein products in Hanoi. Engineering and Technology for Sustainable Development 35(5): 69 to 77. https://doi.org/10.51316/jst.186.etsd.2025.35.5.9
+- **NOV-03.** Nghiem-Phu B. (2023). A segmentation of the expected future in vitro meat market: a study in Vietnam. Food Research 7(4): 184 to 193. https://doi.org/10.26656/fr.2017.7(4).935
+- **NOV-04.** Ngo T.T.A., Phan T.Y.N., Le T.N.T. (2024). Impacts of knowledge and trust on consumer perceptions and purchase intentions towards genetically modified foods. PLoS ONE 19(10): e0311257. https://doi.org/10.1371/journal.pone.0311257
+- **NOV-05.** Ngo T.T.A., Le T.N.T., Phan T.Y.N. (2026). How knowledge influences the purchase intention of generation Z toward genetically modified foods. Journal of Agriculture and Food Research 26: 102694. https://doi.org/10.1016/j.jafr.2026.102694
+- **NOV-06.** Nguyen T.H., Ben Taieb S., Moritaka M., Fukuda S. (2024). Consumer acceptance and valuation of quality-improved food products derived by genome editing technology: a case study of rice in Vietnam. Agribusiness 42(1): 29 to 50. https://doi.org/10.1002/agr.21929
+- **NOV-07.** Nguyen T.H., Ben Taieb S., Moritaka M., Fukuda S. (2022). Implicit and explicit attitudes toward foods derived from genome editing and genetic modification technologies under different information treatments. Journal of Food Products Marketing 28(1): 1 to 30. https://doi.org/10.1080/10454446.2022.2037487
+- **NOV-08.** Tong Y.D., Khuu D., Truong D.T., Nguyen P.D., Pham N. (2021). Consumer responses towards non-GM food: evidence from experimental auctions in Vietnam. International Journal of Food and Agricultural Economics 9(4): 297 onwards. https://doi.org/10.22004/ag.econ.316274
+- **NOV-09.** Brookes G., Dinh T.X. (2020). The impact of using genetically modified (GM) corn/maize in Vietnam: results of the first farm-level survey. GM Crops and Food 12(1): 71 to 83. https://doi.org/10.1080/21645698.2020.1816800
+- **NOV-27.** Liang Y., Lee D. (2022). Recent progress of cultivated meat in Asia. Food Materials Research 2: 1 to 8. https://doi.org/10.48130/fmr-2022-0012
+- **NOV-28.** Bryant C., Szejda K., Parekh N., Deshpande V., Tse B. (2019). A survey of consumer perceptions of plant-based and clean meat in the USA, India, and China. Frontiers in Sustainable Food Systems 3: 11. https://doi.org/10.3389/fsufs.2019.00011
+- **NOV-29.** Yang M., Min S., Nguyen T.T., Qing P. (2024). Promoting artificial meat to improve food security and reduce resource-environment pressure: is it practicable in China? Frontiers in Sustainable Food Systems 8: 1488747. https://doi.org/10.3389/fsufs.2024.1488747
+- **NOV-30.** Takeda K., Yazawa A., Yamaguchi Y., Koizumi N., Shineha R. (2022). Comparison of public attitudes toward five alternative proteins in Japan. Food Quality and Preference 105: 104787. https://doi.org/10.1016/j.foodqual.2022.104787
+- **NOV-31.** Chia A., Shou Y., Wong N.M.Y., Cameron-Smith D., Sim X., van Dam R.M., Chong M.F.-F. (2024). Complexity of consumer acceptance to alternative protein foods in a multiethnic Asian population. Food Quality and Preference 114: 105102. https://doi.org/10.1016/j.foodqual.2024.105102
+- **NOV-32.** Chong M., Leung A.K.-Y., Fernandez T.M., Ng S.T. (2023). Effects of framing, nomenclature, and aversion to tampering with nature on consumer acceptance of cultivated meat in Singapore. Journal of Environmental Psychology 91: 102140. https://doi.org/10.1016/j.jenvp.2023.102140
+- **NOV-34.** Zollman Thomas O., Chong M., Leung A.K.-Y., Fernandez T.M., Ng S.T. (2023). Not getting laid: consumer acceptance of precision fermentation made egg. Frontiers in Sustainable Food Systems 7: 1209533. https://doi.org/10.3389/fsufs.2023.1209533
+- **NOV-52.** Abdul Hathi M.F., Ramli N. (2026). Halal certification of cultivated meat in Singapore: developing the Halal Governance and Regulatory Readiness Assessment (HGRRA) framework. Malaysian Journal of Syariah and Law 14(1): 297 to 311. https://doi.org/10.33102/mjsl.vol14no1.1699
+- **NOV-54.** Ho S.S., Wijaya S.A., Ou M. (2024). Examining Muslims' opinions toward cultured meat in Singapore: the influence of presumed media influence and halal consciousness. Science Communication. https://doi.org/10.1177/10755470231225684
+- **NOV-55.** Kwon J., Park Y. (2023). Buddhist perspectives on cultivated meat. Nature Food 4: 346 to 347. https://doi.org/10.1038/s43016-023-00744-7
+- **NOV-78.** Do T.T.H., Le L. (2025). Developing the mushroom production industry in Vietnam in the context of a circular economy. International Journal of Social Science and Economic Research 10(5). https://doi.org/10.46609/ijsser.2025.v10i05.019
+- **NOV-79.** Pham V.H., Nguyen T.D.N., Nguyen T.P.G., Duong N.H., Nguyen-Viet H., Dang-Xuan S., Randolph D., Unger F. (2026). Consumers' knowledge, attitudes, practices, and trust on food safety in pork value chains in Vietnam. Vietnam Journal of Agricultural Sciences 9(1): 2856 to 2868. https://doi.org/10.31817/vjas.2026.9.1.07
+- **NOV-82.** Siegrist M., Hartmann C. (2020). Perceived naturalness, disgust, trust and food neophobia as predictors of cultured meat acceptance in ten countries. Appetite 155: 104814. https://doi.org/10.1016/j.appet.2020.104814
+
+### press (176)
+
+- **BUY-10.** CafeF. Loi nhuan 2025 gap gan 25 lan: Masan MEATLife buoc vao chu ky tang truong moi. 5 Feb 2026. https://cafef.vn/loi-nhuan-2025-gap-gan-25-lan-masan-meatlife-buoc-vao-chu-ky-tang-truong-moi-188260205131444831.chn
+- **BUY-11.** CafeF. Masan bao lai sau thue ky luc nam 2025, gap 1,6 lan cung ky. 28 Jan 2026. https://cafef.vn/masan-bao-lai-sau-thue-ky-luc-nam-2025-gap-16-lan-cung-ky-loi-nhuan-wincommerce-masan-meatlife-tang-hang-chuc-lan-188260128102543522.chn
+- **BUY-12.** CafeF. 6 thang dau 2026, doanh thu Masan Consumer dat 15.637 ty dong, tang 13,6% so voi cung ky. 27 Jul 2026. https://cafef.vn/6-thang-dau-2026-doanh-thu-masan-consumer-dat-15637-ty-dong-tang-136-so-voi-cung-ky-188260727095213932.chn
+- **BUY-13.** CafeF. BVSC: Xuc xich Ponnie '88% thit' va Heo cao boi dong gop lon nhat vao 1.400 ty mang thit che bien cho Masan 9T2022. 29 Dec 2022. https://cafef.vn/bvsc-xuc-xich-ponnie-88-thit-va-heo-cao-boi-dong-gop-lon-nhat-vao-1400-ty-mang-thit-che-bien-cho-masan-9t2022-20221229074553613.chn
+- **BUY-14.** CafeF. Doanh thu tang 69% nho co them cong ty xuc xich, Masan MeatLife van lo 179 ty dong. 28 Jul 2023. https://cafef.vn/danh-thu-tang-69-nho-co-them-cong-ty-xuc-xich-masan-meatlife-van-lo-179-ty-dong-188230728101949092.chn
+- **BUY-15.** CafeF. Vinamilk lai ky luc gan 3.200 ty dong, cong ty con tai Campuchia tang truong ba chu so. 25 Jul 2026. https://cafef.vn/vinamilk-lai-ky-luc-gan-3200-ty-dong-cong-ty-con-tai-campuchia-tang-truong-ba-chu-so-188260725000510889.chn
+- **BUY-17.** CafeF. Vinasoy tien phong dinh duong thuc vat voi dong sua hat danh rieng cho tre em. 17 Dec 2025. https://cafef.vn/vinasoy-tien-phong-dinh-duong-thuc-vat-voi-dong-sua-hat-danh-rieng-cho-tre-em-188251216205208304.chn
+- **BUY-18.** CafeF. Tu chiec may xay sinh to den 915 ty dong dong gop vao ngan sach nha nuoc: Hanh trinh dang kinh ngac cua Nutifood. 3 Sep 2026. https://cafef.vn/tu-chiec-may-xay-sinh-to-den-915-ty-dong-dong-gop-vao-ngan-sach-nha-nuoc-hanh-trinh-dang-kinh-ngac-cua-nutifood-188260903194957218.chn
+- **BUY-19.** CafeF. Nutifood va Benh vien Quan Y 175 hop tac phat trien cac giai phap dinh duong. 22 Jun 2026. https://cafef.vn/nutifood-va-benh-vien-quan-y-175-hop-tac-phat-trien-cac-giai-phap-dinh-duong-188260622114138486.chn
+- **BUY-20.** CafeF. Do hop Ha Long thua lo ky luc trong quy 2. 6 Aug 2026. https://cafef.vn/do-hop-ha-long-thua-lo-ky-luc-trong-quy-2-188260806142811967.chn
+- **BUY-21.** CafeF. Acecook Viet Nam xay nha may 200 trieu USD tai Vinh Long. 3 Apr 2026. https://cafef.vn/acecook-viet-nam-xay-nha-may-200-trieu-usd-tai-vinh-long-188260403200548154.chn
+- **BUY-23.** CafeF. Cong ty trung noi tieng Ba Huan no thue hon 30 ty dong. 8 Sep 2026. https://cafef.vn/cong-ty-trung-noi-tieng-ba-huan-no-thue-hon-30-ty-dong-18826090819465105.chn
+- **BUY-24.** CafeF. KIDO chinh thuc ban nuoc mam va hat nem, nhay vao nganh gia vi hon 1,5 ty USD. 25 Dec 2023. https://cafef.vn/kido-chinh-thuc-ban-nuoc-mam-va-hat-nem-nhay-vao-nganh-gia-vi-hon-15-ty-usd-cung-cac-dai-gia-masan-unilever-nestle-ajinomoto-18823122510534847.chn
+- **BUY-25.** CafeF. Trong luc Cong ty me chuyen huong sang san xuat ban dan, Ajinomoto Viet Nam van kiem nghin ty loi nhuan tu bot ngot, hat nem. 3 Dec 2022. https://cafef.vn/trong-luc-cong-ty-me-chuyen-huong-sang-san-xuat-ban-dan-ajinomoto-viet-nam-van-kiem-nghin-ty-loi-nhuan-tu-bot-ngot-hat-nem-2022120307253637.chn
+- **BUY-27.** CafeF. Cholimex Food khanh thanh nha may che bien thuc pham thu hai tai Ben Luc. 12 Apr 2025. https://cafef.vn/cholimex-food-khanh-thanh-nha-may-che-bien-thuc-pham-thu-hai-tai-ben-luc-188250412154715282.chn
+- **BUY-28.** CafeF. Giup bua an hang trieu gia dinh them dam da, Masan va Cholimex Food thu ve ca chuc nghin ty moi nam tu tuong ot, nuoc mam. 13 Jun 2022. https://cafef.vn/giup-bua-an-hang-trieu-gia-dinh-them-dam-da-masan-va-cholimex-food-thu-ve-ca-chuc-nghin-ty-moi-nam-tu-tuong-ot-nuoc-mam-20220613023311849.chn
+- **BUY-29.** CafeF. 20 nam gia to Pho tang gap 6, gia chiec banh Chocopie chi tang gap 2: chuyen lam an kiem gan 8.800 ty tai Viet Nam cua Orion Vina. 14 Apr 2024. https://cafef.vn/20-nam-gia-to-pho-tang-gap-6-gia-chiec-banh-chocopie-chi-tang-gap-2-va-nang-them-chuyen-lam-an-kiem-gan-8800-ty-tai-viet-nam-cua-orion-vina-188240414073258812.chn
+- **BUY-30.** CafeF. Tap doan che bien thit hang dau Brazil rot 100 trieu USD xay 2 nha may o Hai Phong va Tp.HCM. 9 Aug 2025. https://cafef.vn/tap-doan-che-bien-thit-hang-dau-brazil-rot-100-trieu-usd-xay-2-nha-may-o-hai-phong-va-tphcm-188250808225439955.chn
+- **BUY-31.** CafeF. C.P. Viet Nam va nang luc chuan hoa toan chuoi thuc pham che bien. 28 May 2026. https://cafef.vn/cp-viet-nam-va-nang-luc-chuan-hoa-toan-chuoi-thuc-pham-che-bien-188260528204041126.chn
+- **BUY-38.** CafeF. Ky vong ban thit thuc vat dat doanh so 60 ty/nam, startup 'thit thuc vat' huy dong duoc 4 ty tu Shark Louis va Shark Lien. 14 Jun 2021. https://cafef.vn/ky-vong-ban-thit-thuc-vat-dat-doanh-so-60-ty-nam-startup-thuc-pham-chay-huy-dong-duoc-4-ty-tu-shark-louis-va-shark-lien-20210614183221728.chn
+- **BUY-45.** CafeF. Bat ngo ket qua kiem nghiem lo sua hat Sure Gold Nutri Queen, doanh nghiep bi xu phat. 14 Jul 2026. https://cafef.vn/bat-ngo-ket-qua-kiem-nghiem-lo-sua-hat-sure-gold-nutri-queen-doanh-nghiep-bi-xu-phat-188260714074426971.chn
+- **BUY-46.** CafeF. Tap doan che bien thit lon nhat the gioi muon bien Viet Nam thanh trung tam san xuat toan cau. 7 Jul 2025. https://cafef.vn/tap-doan-che-bien-thit-lon-nhat-the-gioi-muon-bien-viet-nam-thanh-trung-tam-san-xuat-toan-cau-188250707174047779.chn
+- **CHN-07.** The Investor. "Vietnam's convenience store boom shifts beyond major cities as chains race for scale." 21 May 2026. https://theinvestor.vn/vietnams-convenience-store-boom-shifts-beyond-major-cities-as-chains-race-for-scale-d19128.html
+- **CHN-08.** CafeF. "Mang luoi cua hang 24h: Circle K ap dao voi quy mo gap doi GS25, 7-Eleven cong FamilyMart cung moi bang nua." 7 Dec 2025. https://cafef.vn/mang-luoi-cua-hang-24h-circle-k-ap-dao-voi-quy-mo-gap-doi-gs25-7-eleven-cong-familymart-cung-moi-bang-nua-188251207105559594.chn
+- **CHN-09.** The Investor. "Vietnam's retail grocery chain Bach Hoa Xanh reaches record store count." 24 Jun 2025. https://theinvestor.vn/vietnams-retail-grocery-chain-bach-hoa-xanh-reaches-record-store-count-d16113.html
+- **CHN-10.** Tin nhanh chung khoan. "MWG lap ky luc doanh thu 2025, chuoi The Gioi Di Dong va Dien May Xanh tang truong 18%." 23 Jan 2026. https://www.tinnhanhchungkhoan.vn/mwg-lap-ky-luc-doanh-thu-2025-chuoi-the-gioi-di-dong-va-dien-may-xanh-tang-truong-18-post384225.html
+- **CHN-11.** CafeF. "Qua nhanh: Bach Hoa Xanh can moc 1.000 cua hang mo moi tu dau 2026, hoan thanh som KPI." 28 Aug 2026. https://cafef.vn/qua-nhanh-bach-hoa-xanh-can-moc-1000-cua-hang-mo-moi-tu-dau-2026-hoan-thanh-som-kpi-188260827223232059.chn
+- **CHN-12.** Nhip song kinh doanh. "Bach Hoa Xanh tang toc: Doanh thu 8 thang vuot 40.000 ty dong, mo moi hon 1.000 cua hang." 14 Sep 2026. https://nhipsongkinhdoanh.vn/bach-hoa-xanh-tang-toc--doanh-thu-8-thang-vuot-40-000-ty-dong--mo-moi-hon-1-000-cua-hang-32888.htm
+- **CHN-13.** CafeF. "Cuoc dua cua cac minimart: Bach Hoa Xanh nam 54% thi phan ve gia tri, ap dao WinCommerce, Central Retail, Saigon Co.op." 31 Dec 2024. https://cafef.vn/cuoc-dua-cua-cac-minimart-bach-hoa-xanh-nam-54-thi-phan-ve-gia-tri-ap-dao-wincommerce-central-retail-saigon-coop-188241231140321657.chn
+- **CHN-14.** VnExpress. "WinCommerce thu gan 39.000 ty dong trong 2025." 23 Jan 2026. https://vnexpress.net/wincommerce-thu-gan-39-000-ty-dong-trong-2025-5009194.html
+- **CHN-15.** BNews (VNA). "WinCommerce buoc vao chu ky phat trien moi." 21 Aug 2026. https://bnews.vn/wincommerce-buoc-vao-chu-ky-phat-trien-moi/433668.html
+- **CHN-16.** BNews (VNA). "WinCommerce dat doanh thu gan 19.000 ty dong." 16 Jun 2026. https://bnews.vn/wincommerce-dat-doanh-thu-gan-19-000-ty-dong/425259.html
+- **CHN-17.** CafeF. "Nguoi Viet an gan 4 trieu tan thit heo, thi truong khong lo nam trong tay ai?" 7 Jun 2025. https://cafef.vn/nguoi-viet-an-gan-4-trieu-tan-thit-heo-thi-truong-khong-lo-nam-trong-tay-ai-188250607073715582.chn
+- **CHN-22.** Doanhnhanplus. "Thuc don chay tai KFC danh cho nhung tin do an chay." 28 Jul 2018. https://doanhnhanplus.vn/thuc-don-chay-tai-kfc-352427.html
+- **CHN-23.** LiveKindly. "KFC launches 2 vegan chicken meals across all Vietnam locations." 2018. https://www.livekindly.com/kfc-vegan-chicken-meals-vietnam/
+- **CHN-24.** VnExpress. "Burger Zero Meat - burger patty thuan rau cu cua Lotteria." 25 Jul 2025. https://vnexpress.net/burger-zero-meat-burger-patty-thuan-rau-cu-cua-lotteria-4917764.html
+- **CHN-25.** CafeF. "Lotteria ra mat Burger Zero Meat - Trai nghiem xanh moi nhung van giu tron vi ngon." 25 Jul 2025. https://cafef.vn/lotteria-ra-mat-burger-zero-meat-trai-nghiem-xanh-moi-nhung-van-giu-tron-vi-ngon-188250725200903068.chn
+- **CHN-26.** Green Queen. "Burger King launches plant-based Whoppers across Asia with v2food and The Vegetarian Butcher." 14 Jan 2021. https://www.greenqueen.com.hk/burger-king-launches-plant-based-whoppers-across-asia-with-v2food-the-vegetarian-butcher/
+- **CHN-28.** Soha. "Vi sao Ha Noi de xuat tang muc tran tien an ban tru tu 35.000 len 50.000 dong?" 23 Sep 2026. https://soha.vn/vi-sao-ha-noi-de-xuat-tang-muc-tran-tien-an-ban-tru-tu-35000-len-50000-dong-198260923140032463.htm
+- **CHN-31.** VnExpress. "Nom nop lo bua an ban tru cua hoc sinh." 18 Sep 2026. https://vnexpress.net/nom-nop-lo-bua-an-ban-tru-cua-hoc-sinh-5121422.html
+- **CHN-32.** Bao Soc Trang. "Quoc hoi thong nhat ho tro bua an trua cho hoc sinh tieu hoc va THCS cac xa bien gioi tu nam hoc 2025 - 2026." 27 Jun 2025. https://baosoctrang.org.vn/giao-duc-dao-tao/202506/quoc-hoi-thong-nhat-ho-tro-bua-an-trua-cho-hoc-sinh-tieu-hoc-va-thcs-cac-xa-bien-gioi-tu-nam-hoc-2025-2026-41b64d7/
+- **CHN-34.** Tuoi Tre. "Vinamilk trung thau hon 3.828 ti dong chuong trinh sua hoc duong." 29 Nov 2018. https://tuoitre.vn/vinamilk-trung-thau-hon-3828-ti-dong-chuong-trinh-sua-hoc-duong-20181129152843926.htm
+- **CHN-35.** CafeF. "Vu thit lon dich vao truong hoc: Thay gi ve thi truong suat an ty USD tai Viet Nam?" 1 Apr 2026. https://cafef.vn/vu-thit-lon-dich-vao-truong-hoc-thay-gi-ve-thi-truong-suat-an-ty-usd-tai-viet-nam-188260401164041012.chn
+- **CHN-36.** Dan Tri. "Vu 300 tan thit lon benh: 26 truong cong lap, loat bep an mam non lien quan." 7 Apr 2026. https://dantri.com.vn/giao-duc/vu-300-tan-thit-lon-benh-26-truong-cong-lap-loat-bep-an-mam-non-lien-quan-20260406231808720.htm
+- **CHN-37.** Cong Thuong. "4,15 trieu lao dong dang lam viec tai cac khu cong nghiep, khu kinh te." 11 Mar 2024. https://congthuong.vn/415-trieu-lao-dong-dang-lam-viec-tai-cac-khu-cong-nghiep-khu-kinh-te-307948.html
+- **CHN-38.** Lao dong doan the. "Tu suat an 'no' den suat an 'du chat'." 15 Sep 2026. https://laodongdoanthe.vn/tu-suat-an-no-den-suat-an-du-chat-117990.html
+- **CHN-39.** Bao Hai Phong. "Nang chat bua an ca, giu suc khoe nguoi lao dong." 16 Aug 2026. https://baohaiphong.vn/nang-chat-bua-an-ca-giu-suc-khoe-nguoi-lao-dong-550584.html
+- **CHN-41.** Saigon Times (republished by Tuoi Tre). "Suat an cong nghiep: Thi truong 'nhay cam' tai Viet Nam." 3 Dec 2024. https://tuoitre.vn/saigontimes/suat-an-cong-nghiep-thi-truong-nhay-cam-tai-viet-nam-1061010527.htm
+- **CHN-42.** Cong Thuong. "Thi truong suat an cong nghiep: 'Mo vang' dang an minh." 19 Sep 2019. https://congthuong.vn/thi-truong-suat-an-cong-nghiep-mo-vang-dang-an-minh-125428.html
+- **CHN-43.** VietnamPlus. "International arrivals to Vietnam hit new record in 2025, up over 20%." 6 Jan 2026. https://en.vietnamplus.vn/international-arrivals-to-vietnam-hit-new-record-in-2025-up-over-20-post335449.vnp
+- **CHN-44.** Viet Nam News. "Viet Nam's international tourism sees best year in 2025, with arrivals hitting over 21 million." Jan 2026. https://vietnamnews.vn/society/1743207/viet-nam-s-international-tourism-sees-best-year-in-2025-with-arrivals-hitting-over-21-million.html
+- **CHN-48.** Bao Khanh Hoa. "Du lich but pha tu dau nam." 6 Mar 2026. https://baokhanhhoa.vn/du-lich/202603/du-lichbut-phatu-dau-nam-d7b5c4d/
+- **CHN-50.** Soha. "Nha Trang - thu phu du lich bien don khach Nga voi nhieu trai nghiem hap dan nam 2026." 6 Sep 2026. https://soha.vn/duoc-vi-nhu-thu-phu-don-khach-nga-lon-nhat-ca-nuoc-thanh-pho-nay-co-gi-ma-khach-quoc-te-san-sang-o-ca-tuan-198260906144855233.htm
+- **CHN-51.** VietnamPlus. "Tu Nga, An Do den chau Au: Ban do khach quoc te cua Viet Nam dang thay doi." 3 Sep 2026. https://www.vietnamplus.vn/tu-nga-an-do-den-chau-au-ban-do-khach-quoc-te-cua-viet-nam-dang-thay-doi-post1134005.vnp
+- **CHN-52.** Thanh Nien. "Khach Nga va An do bo, tong khach quoc te toi Viet Nam but toc ngoan muc." 3 Sep 2026. https://thanhnien.vn/khach-nga-va-an-do-bo-tong-khach-quoc-te-toi-viet-nam-but-toc-ngoan-muc-185260903152808977.htm
+- **CHN-57.** CafeF. "Bai kiem tra cua Highlands Coffee va The Coffee House." 12 Jan 2026. https://cafef.vn/bai-kiem-tra-cua-highlands-coffee-va-the-coffee-house-188260112060855177.chn
+- **CHY-07.** Giac Ngo Online. Sach trang cong bo Viet Nam co 26,5 trieu tin do ton giao, trong do Phat giao hon 14 trieu nguoi (reporting the Government Committee for Religious Affairs White Paper). 9 March 2023. https://giacngo.vn/sach-trang-cong-bo-viet-nam-co-265-trieu-tin-do-ton-giao-trong-do-phat-giao-hon-14-trieu-nguoi-post66060.html
+- **CHY-08.** The Vietnamese Magazine. Vietnam officially announces national decline in the number of Buddhist followers. February 2021 (reporting 2019 Population and Housing Census). https://thevietnamese.org/2021/02/vietnam-officially-announces-national-decline-in-the-number-of-buddhist-followers-shocking-its-buddhist-sangha/
+- **CHY-15.** VTV. An chay dang vuot ra ngoai cau chuyen am thuc. 12 December 2024. https://vtv.vn/doi-song/an-chay-dang-vuot-ra-ngoai-cau-chuyen-am-thuc-20241212142926002.htm
+- **CHY-16.** VnExpress. Doanh so cac cua hang thuc pham chay tang gap doi mua Vu Lan. 18 August 2024. https://vnexpress.net/doanh-so-cac-cua-hang-thuc-pham-chay-tang-gap-doi-mua-vu-lan-4782792.html
+- **CHY-17.** Bao Dau Tu. Doanh nghiep thuc pham chay tang truong manh mua Vu Lan. 18 August 2024. https://baodautu.vn/doanh-nghiep-thuc-pham-chay-tang-truong-manh-mua-vu-lan-d222641.html
+- **CHY-18.** VnEconomy. Tang manh suc mua thuc pham chay tai cho Viet. 4 September 2025. https://vneconomy.vn/tang-manh-suc-mua-thuc-pham-chay-tai-cho-viet.htm
+- **CHY-19.** Bao Tin Tuc (VNA). Thi truong mua Vu Lan: suc mua tang nhe, hang hoa phong phu. 24 August 2026. https://baotintuc.vn/thi-truong-tien-te/thi-truong-mua-vu-lan-suc-mua-tang-nhe-hang-hoa-phong-phu-20260824164157763.htm
+- **CHY-20.** Bao Cong Thuong. Mua Vu Lan, thi truong hang hoa va do chay tang nhiet. 22 August 2026. https://congthuong.vn/mua-vu-lan-thi-truong-hang-hoa-va-do-chay-tang-nhiet-470048.html
+- **CHY-21.** Bao Hai Phong. Xu huong than trong hon trong lua chon thuc pham mua Vu Lan 2026. 26 August 2026. https://baohaiphong.vn/xu-huong-than-trong-hon-trong-lua-chon-thuc-pham-mua-vu-lan-2026-551612.html
+- **CHY-22.** Tien Phong. Thi truong ram thang Bay: do chay lam san dat nhu tom tuoi. 27 August 2026. https://tienphong.vn/thi-truong-ram-thang-bay-do-chay-lam-san-dat-nhu-tom-tuoi-post1871599.tpo
+- **CHY-23.** Tien Phong. Do chay 'ba khong' tran cho. 23 August 2026. https://tienphong.vn/do-chay-ba-khong-tran-cho-post1870278.tpo
+- **CHY-24.** VietnamPlus. Vu Lan market sees strong demand for vegetarian offerings, online services. 25 August 2026. https://en.vietnamplus.vn/vu-lan-market-sees-strong-demand-for-vegetarian-offerings-online-services-post350736.vnp
+- **CHY-25.** Vietnam.vn. The vegetarian food market is bustling in January. 27 February 2026. https://www.vietnam.vn/en/thi-truong-thuc-pham-chay-thang-gieng-soi-dong
+- **CHY-26.** Nguoi Dua Tin. TP.HCM: nhon nhip thi truong thuc pham chay thang Vu Lan. 7 August 2024. https://www.nguoiduatin.vn/tphcm-nhon-nhip-thi-truong-thuc-pham-chay-thang-vu-lan-204240806143353227.htm
+- **CHY-27.** Bao Can Tho. Thi truong thuc pham chay soi dong mua Vu Lan. 24 August 2026. https://baocantho.com.vn/thi-truong-thuc-pham-chay-soi-dong-mua-vu-lan-a213429.html
+- **CHY-29.** SGGP. VISSAN ra mat bo doi san pham chay tien loi. 27 August 2026. https://www.sggp.org.vn/vissan-ra-mat-bo-doi-san-pham-chay-tien-loi-post869057.html
+- **CHY-30.** Bao Cong Thuong. Vissan dat muc tieu tang truong, day manh dau tu chien luoc nam 2026. 23 April 2026. https://congthuong.vn/vissan-dat-muc-tieu-tang-truong-day-manh-dau-tu-chien-luoc-nam-2026-453581.html
+- **CHY-34.** Time Out Vietnam. Chay Garden review. 16 June 2025. https://www.timeout.com/vietnam/restaurants/chay-garden
+- **CHY-37.** Thanh Nien. Vi sao nhieu nha hang an chay noi tieng o TP.HCM gia dat hon nha hang man? 15 August 2022. https://thanhnien.vn/vi-sao-nhieu-nha-hang-an-chay-noi-tieng-o-tphcm-gia-dat-hon-nha-hang-man-1851487238.htm
+- **CHY-38.** Thanh Nien. Tien thue mat bang tang 5 lan, quan com chay 'thang may' o TP.HCM van ban 15.000 dong/phan. 25 August 2026. https://thanhnien.vn/tien-thue-mat-bang-tang-5-lan-quan-com-chay-thang-may-o-tphcm-van-ban-15000-dong-phan-185260823220035319.htm
+- **CHY-39.** Thanh Nien. Quan chay trong hem nho o Quang Tri: bun mam nem, mi Quang chi 20.000 dong. 28 August 2026. https://thanhnien.vn/quan-chay-trong-hem-nho-o-quang-tri-bun-mam-nem-mi-quang-chi-20000-dong-185260822151242726.htm
+- **CHY-40.** Thanh Nien. Nhieu quan an giu gia com 35.000 dong o TP.HCM. 7 May 2026. https://thanhnien.vn/nhieu-quan-an-giu-gia-com-35000-dong-o-tphcm-tang-nua-khach-kho-xoay-xo-185260506174013174.htm
+- **CHY-41.** Tuoi Tre. Xa dan com sinh vien 20.000 dong, tien an dua theo gia com van phong. 6 April 2025. https://tuoitre.vn/xa-dan-com-sinh-vien-20-000-dong-tien-an-dua-theo-gia-com-van-phong-20250324225549888.htm
+- **CHY-42.** Ngoi Sao (VnExpress). 4 quan chay gia binh dan khu trung tam. 4 August 2024. https://ngoisao.vnexpress.net/4-quan-chay-gia-binh-dan-khu-trung-tam-4776580.html
+- **CHY-43.** Tuoi Tre. An chay cho nhe da, an chay vi... them rau. 24 August 2022. https://tuoitre.vn/an-chay-cho-nhe-da-an-chay-vi-them-rau-20220823141444242.htm
+- **CHY-48.** Nong nghiep Viet Nam. Hau het dau phu, tao pho deu lam tu dau tuong GMO. 10 May 2017. https://nongnghiepmoitruong.vn/hau-het-dau-phu-tao-pho-deu-lam-tu-dau-tuong-gmo-d193323.html
+- **CHY-50.** VnExpress. Nghe dau phu lang Mo 2.000 nam tai Ha Noi. 29 July 2025. https://vnexpress.net/nghe-dau-phu-lang-mo-2-000-nam-tai-ha-noi-4919685.html
+- **CHY-51.** Viet Nam News. Mushroom industry facing a growth block. 10 November 2025. https://vietnamnews.vn/economy/1729186/mushroom-industry-facing-a-growth-block.html
+- **CHY-55.** Dan Tri. Tranh luan an chay gia man, chuyen gia noi gi? 23 August 2022. https://dantri.com.vn/doi-song/tranh-luan-an-chay-gia-man-chuyen-gia-noi-gi-20220823205927952.htm
+- **CHY-59.** Thuong hieu va Cong luan. Phu Yen: xu phat va tieu huy 1 tan cha chay khong ro nguon goc. 18 May 2025. https://thuonghieucongluan.com.vn/phu-yen-xu-phat-va-tieu-huy-1-tan-cha-chay-khong-ro-nguon-goc-a263702.html
+- **CHY-60.** Thuong hieu va Cong luan. Dong Thap: phat hien 500 kg thuc pham chay khong co nhan phu bang tieng Viet. 7 June 2022. https://thuonghieucongluan.com.vn/dong-thap-phat-hien-500-kg-thuc-pham-chay-khong-co-nhan-phu-bang-tieng-viet-a173345.html
+- **CHY-64.** Viet Nam News. Choosing vegetarian. 24 May 2026. https://vietnamnews.vn/life-style/1781966/choosing-vegetarian.html
+- **CHY-65.** Bao Quang Ninh. An chay: xu huong thinh hanh trong gioi tre. 26 March 2023. https://baoquangninh.vn/an-chay-xu-huong-thinh-hanh-trong-gioi-tre-3232126.html
+- **CHY-68.** Asian Agribiz. Viet startup pioneers plant-based products with fewer additives. 16 February 2024. https://www.asian-agribiz.com/2024/02/16/viet-startup-pioneers-plant-based-products-with-fewer-additives/
+- **CON-04.** vegconomist (7 Feb 2024). Report finds surprising attitudes to plant-based meat in Southeast Asia. https://vegconomist.com/food-and-beverage/meat-and-fish-alternatives/report-attitudes-to-plant-based-meat-southeast-asia/
+- **CON-20.** CafeF (3 Jan 2022). 55% người Việt Nam được khảo sát đang ăn chay: cảnh báo 1 nguy cơ rất phổ biến. https://cafef.vn/55-nguoi-viet-nam-duoc-khao-sat-dang-an-chay-canh-bao-1-nguy-co-rat-pho-bien-2022010311375475.chn
+- **CON-27.** Tạp chí Công Thương (6 May 2025). Mảng sữa dẫn dắt tăng trưởng, Đường Quảng Ngãi (QNS) nắm hơn 8.000 tỷ đồng tiền mặt. https://tapchicongthuong.vn/mang-sua-dan-dat-tang-truong--duong-quang-ngai--qns--nam-hon-8-000-ty-dong-tien-mat-140128.htm
+- **CON-28.** Vietstock (Mar 2026). Ngành sữa 2025: khi lợi nhuận nghiêng về một phía. https://vietstock.vn/2026/03/nganh-sua-2025-khi-loi-nhuan-nghieng-ve-mot-phia-737-1408413.htm
+- **CON-29.** Báo Pháp Luật, Doanh nhân (28 Jan 2026). Áp lực chi phí gia tăng, Đường Quảng Ngãi (QNS) báo lãi sau thuế quý IV/2025 đi lùi. https://doanhnhan.baophapluat.vn/ap-luc-chi-phi-gia-tang-duong-quang-ngai-qns-bao-lai-sau-thue-quy-iv-2025-di-lui.html
+- **CON-32.** Vietnam.vn (26 May 2023). Thị trường sữa hạt nhiều dư địa phát triển. https://www.vietnam.vn/thi-truong-sua-hat-nhieu-du-dia-phat-trien
+- **CON-33.** VietnamPlus (28 Jun 2024). TH tăng trưởng CRP cao nhất trong top 5 thương hiệu sữa, sản phẩm thay thế sữa (Kantar Worldpanel Brand Footprint 2024). https://www.vietnamplus.vn/th-tang-truong-crp-cao-nhat-trong-top-5-thuong-hieu-sua-san-pham-thay-the-sua-post961907.vnp
+- **CON-34.** MarketingAI (11 Mar 2025). [Kantar] Xu hướng FMCG 2025 tại thị trường Việt Nam. https://marketingai.vn/xu-huong-fmcg-2025-khuyen-mai-tiem-an-hieu-ung-tang-truong-ao-lan-song-trading-down-gia-tang-194250311121730173.htm
+- **CON-35.** Market Times (17 Aug 2023). OatSide: hãng sữa hạt 2 năm tuổi xâm chiếm gần 100 quán cà phê Việt, doanh thu 17,4 triệu USD. https://markettimes.vn/oatside-hang-sua-hat-2-nam-tuoi-xam-chiem-gan-100-quan-ca-phe-viet-doanh-thu-17-4-trieu-usd-dat-gap-doi-sua-bo-van-duoc-la-viet-arabica-ua-chuong-37066.html
+- **CON-36.** VietnamFinance (7 Apr 2026). Oatside Việt Nam và cú trượt truyền thông: chiêu marketing phản tác dụng của startup triệu USD. https://vietnamfinance.vn/oatside-viet-nam-va-cu-truot-truyen-thong-chieu-marketing-phan-tac-dung-cua-startup-trieu-usd-d142713.html
+- **DIE-01.** Dan Tri (Dan Sinh). Cong bo ket qua Tong dieu tra dinh duong toan quoc 2019-2020: Viet Nam dang doi mat voi ganh nang gap ba ve dinh duong. 17 April 2021. https://dansinh.dantri.com.vn/dien-dan-dan-sinh/cong-bo-ket-qua-tong-dieu-tra-dinh-duong-toan-quoc-2019-2020-viet-nam-dang-doi-mat-voi-ganh-nang-gap-ba-ve-dinh-duong-20210417015900000.htm
+- **DIE-02.** VietnamNet. Cong bo ket qua tong dieu tra dinh duong toan quoc. April 2021. https://vietnamnet.vn/vn/suc-khoe/cong-bo-ket-qua-tong-dieu-tra-dinh-duong-toan-quoc-728009.html
+- **DIE-03.** VietnamNet (English). Meat consumption in VN is almost double the recommended amount. 4 April 2021. https://vietnamnet.vn/en/meat-consumption-in-vn-is-almost-double-the-recommended-amount-724190.html
+- **DIE-26.** Bao Lao Cai. Gia lon hoi hom nay 24/9/2026: 4 dia phuong giu muc 60.000 dong/kg. 24 September 2026. https://baolaocai.vn/gia-lon-hoi-hom-nay-2492026-4-dia-phuong-giu-muc-60000-dongkg-post910177.html
+- **DIE-27.** Nguoi Quan Sat. Gia lon hoi lap dinh moi, nguoi tieu dung tim thuc pham thay the. 27 February 2025. https://nguoiquansat.vn/gia-lon-hoi-lap-dinh-moi-nguoi-tieu-dung-tim-thuc-pham-thay-the-201634.html
+- **EXP-01.** Mridul, A. Global Plant-Based Food Sales Grew by 3% in 2025: GFI Report. Green Queen, 21 Apr 2026 (updated 23 Apr 2026). https://www.greenqueen.com.hk/gfi-state-of-the-industry-report-2025-2026-plant-based-sales/
+- **EXP-04.** vegconomist. GFI's 2026 State of the Industry Reports Detail Mixed Year for Alternative Proteins Across All Three Sectors. 22 Apr 2026. https://vegconomist.com/studies-numbers/gfis-2026-state-of-industry-reports-detail-mixed-year-alternative-proteins-across-three-sectors/
+- **EXP-08.** Kim Min-ju. 대체육 대전환, 어디까지 왔나…'300억원 규모' 파이 싸움 격화 (Alternative meat: KRW 30 billion market). Maeil Ilbo, 17 Jan 2024. https://www.m-i.kr/news/articleView.html?idxno=1085136
+- **EXP-09.** 식품저널 foodnews. 올해 대체육 시장 212억 규모…전년보다 28.3% 성장 (Alternative meat market KRW 21.2bn this year). 15 Dec 2022. https://www.foodnews.co.kr/news/articleView.html?idxno=100147
+- **EXP-12.** The Nation (Thailand). Thailand on track to become global leader in future food, say experts. 12 to 13 May 2025. https://www.nationthailand.com/blogs/business/trade/40049897
+- **EXP-13.** The Nation (Thailand). Thailand ranked the world's 12th future food exporter. 25 Jul 2024. https://www.nationthailand.com/news/general/40039983
+- **EXP-15.** MGR Online. โปรตีนทางเลือก โตรับเทรนด์สุขภาพ ตลาดส่งออกรุ่งยอดพุ่งกว่า 5 พันล้าน (Alternative protein export market above THB 5 billion). 6 Apr 2024. https://mgronline.com/daily/detail/9670000030170
+- **EXP-16.** VnEconomy. Xuất khẩu nông lâm thủy sản 2025 kỷ lục hơn 70 tỷ USD (Agro-forestry-fishery exports 2025 record above USD 70 billion). 17 Feb 2026. https://vneconomy.vn/xuat-khau-nong-lam-thuy-san-lap-ky-luc-tao-da-but-pha-nam-2026.htm
+- **EXP-17.** Produce Report. China Overtakes US as Top Importer of Vietnamese Cashews. 4 Sep 2025. https://www.producereport.com/article/china-overtakes-us-top-importer-vietnamese-cashews
+- **EXP-19.** Nhan Dan Online. Vietnamese cashew nuts: From raw exports to plant-based milk opportunities in US. 14 Dec 2025. https://en.nhandan.vn/vietnamese-cashew-nuts-from-raw-exports-to-plant-based-milk-opportunities-in-us-post156744.html
+- **EXP-43.** VnEconomy. Xuất khẩu nông lâm thủy sản vượt 64 tỷ USD, nhiều mặt hàng chủ lực lập kỷ lục mới (11-month 2025 exports). 4 Dec 2025. https://vneconomy.vn/xuat-khau-nong-lam-thuy-san-vuot-64-ty-usd-nhieu-mat-hang-chu-luc-lap-ky-luc-moi.htm
+- **EXP-44.** AgFunderNews. Plant-based meat by numbers: Grim reading for the US retail market, brighter spots in foodservice and globally. 16 May 2025. https://agfundernews.com/plant-based-meat-by-numbers-grim-reading-for-the-us-retail-market-brighter-spots-in-foodservice-and-globally
+- **EXP-50.** The Asset. Vinh Hoan strikes insect protein deal with Entobel. 23 Feb 2024. https://www.theasset.com/article-esg/50986/vinh-hoan-strikes-insect-protein-deal-with-entobel
+- **GLB-07.** Green Queen (2026). Global plant-based food sales grew by 3% in 2025: GFI report. https://www.greenqueen.com.hk/gfi-state-of-the-industry-report-2025-2026-plant-based-sales/
+- **GLB-44.** CNBC (2019, 23 May). Alternative meat to become $140 billion industry in a decade, Barclays predicts. https://www.cnbc.com/2019/05/23/alternative-meat-to-become-140-billion-industry-barclays-says.html
+- **GLB-50.** Sixth Tone (2023, 6 June). China's plant-based meat industry falters after initial hype. https://www.sixthtone.com/news/1013054
+- **GLB-55.** Kenko Sangyo Shimbun, Shokuhin to Kaihatsu (2025, February). 2024 soy milk production 410,712 kL; unadjusted soy milk at a record high (citing the Japan Soymilk Association). https://www.kenko-media.com/food_devlp/8084/
+- **GLB-56.** Food Diversity.today (2026, 6 May). Why did the alternative meat market not grow? The US slowdown and Japan's structure. https://fooddiversity.today/article_202496.html
+- **GLB-58.** CommonWealth Magazine (2019, 25 December). Unwrapping the secret behind the multi-million dollar faux meat industry. https://english.cw.com.tw/article/article.action?id=2628
+- **GLB-59.** Green Queen (2020, 7 February). Taiwan's Bafang Yunji is selling 1 million Omnipork dumplings a week across almost 1,000 locations. https://www.greenqueen.com.hk/taiwans-bafang-yunji-is-selling-1-million-omnipork-dumplings-a-week-across-1000-locations/
+- **NOV-10.** Green Queen (2024). Good Meat: Eat Just debuts cultivated chicken in Singapore retail. 16 May 2024. https://www.greenqueen.com.hk/eat-just-good-meat-cultivated-chicken-retail-hubers-butchery-singapore/
+- **NOV-11.** FoodNavigator (2024). Hard cell? Expert opinions clash over GOOD Meat's 3% cultivated chicken launch in Singapore. 21 May 2024. https://www.foodnavigator.com/Article/2024/05/21/expert-opinions-clash-over-good-meat-s-3-cultivated-chicken-launch-in-singapore/
+- **NOV-12.** Just Food (2024). Eat Just explains Singapore production pause. 6 March 2024, modified 15 May 2024. https://www.just-food.com/news/eat-just-explains-singapore-production-pause/
+- **NOV-13.** Just Food (2025). The countries that have approved lab-grown meat. 19 June 2025, updated 23 December 2025. https://www.just-food.com/features/protein-pioneers-the-countries-which-have-approved-cultivated-meat/
+- **NOV-14.** FoodNavigator (2025). Vow eyes APAC growth with cultured quail candles and cocktails. 14 August 2025. https://www.foodnavigator.com/Article/2025/08/14/vow-eyes-apac-growth-with-cultured-quail/
+- **NOV-15.** Green Queen (2025). In Australia, you can now cook Vow's lab-grown meat at home. 30 October 2025. https://www.greenqueen.com.hk/vow-cultured-quail-lab-grown-cultivated-meat-australia-forged/
+- **NOV-16.** Green Queen (2026). Australia's Vow appoints new CEO amid expansion beyond cultivated meat. 23 June 2026. https://www.greenqueen.com.hk/vow-australia-ceo-layoffs-lab-grown-cultivated-meat-startup-cultured-quail/
+- **NOV-17.** Green Queen (2026). Aleph Farms secures Singapore approval for cultivated beef, targets 2027 restaurant launch. 4 August 2026. https://www.greenqueen.com.hk/aleph-farms-lab-grown-meat-cultivated-beef-singapore-approval-launch/
+- **NOV-18.** FoodNavigator (2026). Cultivated beef steak to hit Singapore food scene with historic approval. 4 August 2026. https://www.foodnavigator.com/Article/2026/08/04/cultivated-beef-steak-to-hit-singapore-food-scene-with-historic-approval/
+- **NOV-19.** Green Queen (2026). Exclusive: Aleph Farms's cultivated meat matches beef in consumer taste tests. 26 March 2026. https://www.greenqueen.com.hk/aleph-farms-cultivated-meat-lab-grown-beef-steak-taste-test/
+- **NOV-20.** Green Queen (2026). Parima gets Singapore approval to sell lab-grown duck under Gourmey brand. 15 April 2026. https://www.greenqueen.com.hk/parima-lab-grown-meat-cultivated-duck-gourmey-singapore-approval/
+- **NOV-21.** Green Queen (2026). Singapore Food Agency publishes list of approved novel foods. 20 April 2026. https://www.greenqueen.com.hk/singapore-food-agency-sfa-list-of-approved-novel-foods/
+- **NOV-22.** Green Queen (2025). Singapore replaces '30 by 30' policy with new food security plan, alongside $32M future food investment. 6 November 2025. https://www.greenqueen.com.hk/singapore-30-by-30-cultivated-meat-food-security-policy/
+- **NOV-23.** Green Queen (2026). Friends and Family Pet Food launches cultivated meat for cats and dogs in Singapore. April 2026. https://www.greenqueen.com.hk/friends-and-family-pet-food-co-lab-grown-cultivated-meat-singapore-cats-dogs/
+- **NOV-24.** Green Queen (2025). Umami Bioworks gets EU registration to sell two cultivated fish products for pet food. 2 September 2025. https://www.greenqueen.com.hk/umami-bioworks-lab-grown-meat-fish-eu-approval-pet-food/
+- **NOV-25.** FoodNavigator (2026). South Korea moves closer to cell-cultured food regulations. 15 July 2026. https://www.foodnavigator.com/Article/2026/07/15/south-korea-moves-closer-to-cell-cultured-food-regulations/
+- **NOV-26.** Green Queen (2024). Israel's Aleph Farms partners with Thailand's first cultivated meat manufacturing facility. 21 February 2024. https://www.greenqueen.com.hk/aleph-farms-southeast-asia-thailand-cultivated-meat-facility/
+- **NOV-33.** Green Queen (2023). In Singapore, call it 'cultivated' meat, not 'clean' or 'cell-based'. 27 September 2023. https://www.greenqueen.com.hk/singapore-consumer-survey-cultivated-meat-cultured-clean-cell-based-lab-grown-nomenclature/
+- **NOV-38.** Green Queen (2025). For Singapore's meat-eaters, blended proteins are way more inviting than plant-based alternatives. 4 November 2025. https://www.greenqueen.com.hk/blended-meat-balanced-proteins-hybrid-singapore-plant-based/
+- **NOV-39.** vegconomist (2025). Study: blended proteins could appeal to Asian consumers who are uninterested in fully plant-based meat. 4 November 2025. https://vegconomist.com/studies-numbers/study-blended-proteins-appeal-asian-consumers-uninterested-fully-plant-based-meat/
+- **NOV-40.** FoodNavigator (2026). Animal-plant mince key to revive APAC alt-protein push: NECTAR study. 8 April 2026. https://www.foodnavigator.com/Article/2026/04/08/animal-plant-mince-key-to-alt-protein-push-in-apac/
+- **NOV-41.** Green Queen (2026). Ginga Foods expands Japan's blended meat space with 'half-and-half' sausages. 13 August 2026. https://www.greenqueen.com.hk/ginga-foods-japan-blended-hybrid-sausage-mama-next-meats/
+- **NOV-42.** vegconomist (2023). Changing Bio launches China's first range of microbial protein dairy alternatives. 26 May 2023, updated 17 August 2023. https://vegconomist.com/fermentation/changing-bio-china-microbial-protein-alt-dairy/
+- **NOV-43.** Green Queen (2022). Perfect Day's precision fermentation animal-free milk comes to Asia in an industry first. 29 November 2022. https://www.greenqueen.com.hk/perfect-day-precision-fermentation-animal-free-milk-singapore/
+- **NOV-44.** AgFunderNews (2025). Perfect Day says Gujarat facility on track for 2026 start, 2027 ramp-up for recombinant whey protein. 15 December 2025. https://agfundernews.com/perfect-day-says-gujarat-facility-on-track-for-2026-start-2027-ramp-up-for-recombinant-whey-protein
+- **NOV-45.** Green Queen (2024). Australia's All G gains regulatory approval for animal-free lactoferrin in China. 26 November 2024. https://www.greenqueen.com.hk/all-g-foods-precision-fermentation-lactoferrin-china-approval/
+- **NOV-46.** FoodNavigator (2026). Precision-fermented lactoferrin moves into mainstream nutrition. 8 July 2026. https://www.foodnavigator.com/Article/2026/07/08/precision-fermented-lactoferrin-moves-into-mainstream-nutrition/
+- **NOV-47.** Green Queen (2026). Amai Proteins cleared to sell precision-fermented sugar alternative in Singapore. 25 May 2026. https://www.greenqueen.com.hk/amai-sweet-proteins-sweelin-precision-fermentation-singapore-sugar/
+- **NOV-48.** Green Queen (2026). China's Bestzyme unveils automated smart production line for sweet proteins. 23 September 2026. https://www.greenqueen.com.hk/bestzyme-sweet-protein-mellia-brazzein-jinan-facility-production-line/
+- **NOV-49.** Green Queen (2025). 'Turning point': Fushine Bio obtains China's first regulatory approval of mycoprotein. 4 December 2025. https://www.greenqueen.com.hk/fushine-bio-funext-protein-china-mycoprotein-regulatory-approval/
+- **NOV-51.** Green Queen (2026). Quorn shows signs of recovery in the UK's faltering meat alternative market. 19 August 2026. https://www.greenqueen.com.hk/quorn-marlow-foods-monde-nissin-cauldron-sales-protein-bites-revenue/
+- **NOV-53.** Green Queen (2025). Cultivated meat can be halal, declares Malaysia's Islamic authority. 11 December 2025. https://www.greenqueen.com.hk/lab-grown-meat-cultivated-halal-muslims-malaysia-islamic-jakim/
+- **NOV-59.** VnExpress (2026). VitaDairy gioi thieu ColosBaby Lactoferrin 3+ voi cong thuc mien dich da thanh phan. 7 May 2026 (sponsored content). https://vnexpress.net/vitadairy-gioi-thieu-colosbaby-lactoferrin-3-voi-cong-thuc-mien-dich-da-thanh-phan-5071035.html
+- **NOV-60.** VnExpress (2026). Ly do Morinaga dau tu nha may Lactoferrin cong suat hang dau the gioi. 27 May 2026 (sponsored content). https://vnexpress.net/ly-do-morinaga-dau-tu-nha-may-lactoferrin-cong-suat-hang-dau-the-gioi-5078925.html
+- **NOV-62.** Thanh Nien (2025). Chon sua cho tre: khong chi can duong chat ma con phai khong chua chat gay hai. 21 August 2025 (service information, sponsored). https://thanhnien.vn/chon-sua-cho-tre-khong-chi-can-duong-chat-ma-con-phai-khong-chua-chat-gay-hai-185250820152156236.htm
+- **NOV-63.** VnExpress (2024). Ly do Veyo sua hat len men tu nhien thu hut nguoi dung. 11 October 2024 (sponsored by Vinasoy). https://vnexpress.net/ly-do-veyo-sua-hat-len-men-tu-nhien-thu-hut-nguoi-dung-4800985.html
+- **NOV-64.** VnExpress (2026). Dau hieu canh bao khong nen an thuc pham len men. 30 March 2026. https://vnexpress.net/dau-hieu-canh-bao-khong-nen-an-thuc-pham-len-men-5056199.html
+- **NOV-65.** VnExpress (2024). 'Toi so do chay gia man vi mot lang nam bon thia gia vi'. 19 August 2024 (reader opinion). https://vnexpress.net/toi-so-do-chay-gia-man-vi-mot-lang-nam-bon-thia-gia-vi-4783074.html
+- **NOV-66.** VnExpress (2022). Viet Nam nghien cuu lam thit nhan tao tu te bao goc. 10 December 2022. https://vnexpress.net/viet-nam-nghien-cuu-lam-thit-nhan-tao-tu-te-bao-goc-4546517.html
+- **NOV-67.** VietnamPlus (2023). Thit nuoi cay tung buoc vuot qua rao can de den tay nguoi tieu dung. 22 June 2023. https://www.vietnamplus.vn/thit-nuoi-cay-tung-buoc-vuot-qua-rao-can-de-den-tay-nguoi-tieu-dung-post869625.vnp
+- **NOV-68.** Tuoi Tre (2023). Thit nhan tao lieu co the thay the duoc thit truyen thong tren ban an? 5 December 2023. https://tuoitre.vn/thit-nhan-tao-lieu-co-the-thay-the-duoc-thit-truyen-thong-tren-ban-an-20231205140245702.htm
+- **NOV-70.** VnEconomy (2024). Thit trong phong thi nghiem: phan doi hay phat trien? 10 April 2024. https://vneconomy.vn/thit-trong-phong-thi-nghiem-phan-doi-hay-phat-trien.htm
+- **NOV-71.** CafeF (2023). 'Con ac mong' cua cac cong ty thit nhan tao ... moi thang chi ban duoc 4 lang, su dung loai te bao co the gay ung thu. 15 December 2023. https://cafef.vn/con-ac-mong-cua-cac-cong-ty-thit-nhan-tao-tinh-san-xuat-20000kg-thit-nam-nhung-moi-thang-chi-ban-duoc-4-lang-su-dung-loai-te-bao-co-the-gay-ung-thu-188231215143604841.chn
+- **NOV-72.** Thanh Nien (2026). Cong an TP.HCM triet pha co so san xuat 65 tan thit bo gia, chua hoa chat. 11 May 2026. https://thanhnien.vn/cong-an-tp-hcm-triet-pha-co-so-san-xuat-65-tan-thit-bo-gia-chua-hoa-chat-185260511194716209.htm
+- **NOV-73.** Thanh Nien (2025). Chu trang trai ga 'khoc rong' vi tin don trung gia, Hiep hoi Gia cam Viet Nam len tieng. 19 May 2025. https://thanhnien.vn/chu-trang-trai-ga-khoc-rong-vi-tin-don-trung-gia-hiep-hoi-gia-cam-viet-nam-len-tieng-185250519135410339.htm
+- **NOV-74.** CafeF (2021). Vinh Hoan 'bat tay' CJ va Baemin rot von vao startup thit tom nhan tao tai Singapore. 21 July 2021. https://cafef.vn/vinh-hoan-bat-tay-cj-va-baemin-rot-von-vao-startup-thit-tom-nhan-tao-tai-singapore-huong-den-cong-nghiep-protein-thay-the-20210721162534319.chn
+- **NOV-75.** Green Queen (2021). Avant Meats forms strategic partnership with Vietnam seafood giant to bring cultivated fish to market. 25 January 2021. https://www.greenqueen.com.hk/avant-meats-forms-strategic-partnership-with-vietnam-seafood-giant-to-bring-cultivated-fish-to-market/
+- **NOV-76.** Green Queen (2022). Shiok Meats partners with Vietnam's largest shrimp producer on cultivated seafood R&D. 28 July 2022. https://www.greenqueen.com.hk/shiok-meats-minh-phu-cultivated-shrimp/
+- **NOV-77.** Asian Agribiz (2024). Viet startup pioneers plant-based products with fewer additives. 16 February 2024. https://www.asian-agribiz.com/2024/02/16/viet-startup-pioneers-plant-based-products-with-fewer-additives/
+- **NOV-80.** Green Queen (2026). 'Lab-grown'? 'Cell-cultured'? New research shows the best way to describe cultivated meat. 20 February 2026. https://www.greenqueen.com.hk/lab-grown-cell-cultured-cultivated-meat-definition-survey/
+- **NOV-81.** Thanh Nien (2023). Y cam san xuat, mua ban thit duoc nuoi cay trong phong thi nghiem. 17 November 2023. https://thanhnien.vn/y-cam-san-xuat-mua-ban-thit-duoc-nuoi-cay-trong-phong-thi-nghiem-185231117094047055.htm
+
+## Actor check and expansion waves (edition 1.3)
+
+ID prefixes: AFN, AIS, AIB, APR = actor check (funders; investors and startups; incumbents; policy, research and international); PMR = public meals; FTR = fiscal and tariff rules; FUF = funder units; CPC = commitments and competitors; TIC = textured protein economics; BRD = base rates (all wave 7); LBL = labels and standards; FBA = feed buyers; XBA = export buyers; NQR = nutrition quality; ECR = e-commerce; HXE = hybrid economics (all wave 8); TRU = fillers and trust; UPL = upland and canteen plates; MKT = marketplaces; ORG = rules of origin (all wave 9).
+
+
+### company (152)
+
+- **AFN-01.** Coefficient Giving. Request for Proposals: Alternative Protein R&D. Page updated 9 September 2026.
+- **AFN-40.** Accor. Accor Group Good Food Policy. November 2024.
+- **AFN-46.** Bua an hoc duong project website (Ajinomoto Vietnam, National Institute of Nutrition, Ministry of Education and Training). Page updated 25 September 2026.
+- **AIB-01.** Vinamilk (Vietnam Dairy Products JSC). Báo cáo thường niên 2025 (Annual Report 2025), PDF, digitally signed 19 Mar 2026.
+- **AIB-05.** Công ty CP Đường Quảng Ngãi (QNS). Báo cáo của Hội đồng Quản trị tại ĐHĐCĐ thường niên năm 2026 (Board report to the 2026 AGM), 11 Mar 2026.
+- **AIB-06.** Công ty CP Đường Quảng Ngãi (QNS). Báo cáo thường niên 2025 (Annual Report 2025), Mar 2026.
+- **AIB-10.** Nutifood eShop (Ngôi nhà dinh dưỡng). Thực phẩm bổ sung sữa hạt công thức Värna Life pha sẵn (hộp combi 200 ml), product page.
+- **AIB-11.** Masan Group. Masan MEATLife: As the Operating Platform Matures, a New Growth Cycle Emerges. 3 Feb 2026.
+- **AIB-12.** Masan Group. Đại Kết Nối cho chu kỳ tăng trưởng mới (Masan AGM 2026: The Great Connectivity). 24 Apr 2026.
+- **AIB-14.** VISSAN. VISSAN tổ chức Đại hội đồng cổ đông thường niên 2026. 23 Apr 2026.
+- **AIB-19.** Charoen Pokphand Foods PCL. 56-1 One Report 2025 (English), Mar 2026.
+- **AIB-20.** Sài Gòn Food JSC. Về SGFood (About SGFood), company page.
+- **AIB-22.** Nestlé Việt Nam. Phát triển bền vững (sustainability page).
+- **AIB-24.** Ajinomoto Vietnam. Dự án 'Bữa ăn học đường' giúp nâng cao chất lượng cho bữa ăn học đường tại Việt Nam. Undated company page (data to Nov 2022).
+- **AIB-30.** Co.op Online. Há cảo chay Co.op Select 415g, product page.
+- **AIB-32.** AEON Vietnam. Topvalu (private brands) page.
+- **AIB-36.** Haseca. Haseca, công ty suất ăn công nghiệp hàng đầu tại Việt Nam với hơn 200.000 suất ăn mỗi ngày. 20 Feb 2025.
+- **AIB-37.** Haseca. Suất ăn công nghiệp cho nhà máy cần lưu ý gì? Undated blog.
+- **AIB-38.** Sodexo USA. Sustainable Eating for People and Planet (corporate responsibility page).
+- **AIS-07.** Temasek. Transcript: Temasek Review 2025 Media Briefing. 9 Jul 2025.
+- **AIS-08.** Temasek. Temasek establishes the Asia Sustainable Foods Platform to accelerate the commercialisation of sustainable foods in Asia. 15 Nov 2021.
+- **AIS-11.** Big Idea Ventures. Home page. Accessed 25 Sep 2026.
+- **AIS-14.** Openspace. Openspace continues to invest in agritech with Nutrition Technologies. 19 Sep 2022.
+- **AIS-19.** Mekong Capital. Home page and Entobel investment page. Accessed 25 Sep 2026.
+- **AIS-24.** Charoen Pokphand Foods. CP Foods taps into future trends with food tech solutions. 21 Jul 2022.
+- **AIS-25.** Kamereo. Product listings for Meat Zero chay products (Heo Xay Chay Meat Zero 1kg; Heo Quay Chay Meat Zero 200g; plus minced 220 g and 1 kg, roast 1 kg, chay bologna 90 g and 500 g). Accessed 25 Sep 2026.
+- **AIS-26.** Kamereo. About Kamereo. Accessed 25 Sep 2026.
+- **AIS-28.** PR Newswire. TiNDLE Foods pivots business model to focus on private label products. 20 Nov 2025.
+- **AIS-32.** AgFunder. Portfolio: Green Rebel. Accessed 25 Sep 2026.
+- **AIS-33.** Growthwell Foods. About Us. Accessed 25 Sep 2026.
+- **AIS-38.** Asia Ingredients Group (ACC). ACC and Angel Yeast introduce Yeast Protein, a sustainable protein solution for the food industry. 26 May 2025.
+- **AIS-42.** Kashew Cheese. Wholesale plant-based cheese: partner with Kashew Cheese Vietnam. Accessed 25 Sep 2026.
+- **AIS-43.** Ong Tempeh. Gioi thieu (About). Accessed 25 Sep 2026.
+- **APR-41.** Ajinomoto Group. Vietnam: School Meal Project (sustainability page). Accessed 25 Sep 2026.
+- **CPC-01.** Marriott International. Sustainability and Social Impact Goals 2026 to 2030 (PDF uploaded December 2025). Accessed 25 September 2026.
+- **CPC-02.** Marriott International. Animal Welfare Position Statement (PDF uploaded May 2019). Accessed 25 September 2026.
+- **CPC-03.** IHG Hotels and Resorts. Policies and position statements page, section 'Cage Free Eggs'. Accessed 25 September 2026.
+- **CPC-04.** IHG Hotels and Resorts. Responsible Business Report 2024 (interactive PDF). Accessed 25 September 2026.
+- **CPC-05.** Hilton. Responsible Sourcing Goals (Travel with Purpose web page). Accessed 25 September 2026.
+- **CPC-06.** Hyatt. World of Care page. Accessed 25 September 2026.
+- **CPC-07.** Minor International PCL. Sustainability Report 2025. Accessed 25 September 2026.
+- **CPC-08.** Sodexo. Integrated Report Fiscal 2025. Accessed 25 September 2026.
+- **CPC-09.** Unilever. Unilever to sell The Vegetarian Butcher to Vivera. Press release, 20 March 2025. Accessed 25 September 2026.
+- **CPC-11.** Pizza 4P's. Sustainability page and Sustainability Report 2025 landing page. Accessed 25 September 2026.
+- **CPC-12.** Kamereo. Product pages read through their embedded page data (price, stock, origin, category, units-sold counter, description) for plant and comparator products: Suon mieng chay Panko 1 kg and carton of 10; Cha gio Vissan chay 500 g; tofu SKUs (Ichiban, Fuji San, Beany, Vi Nguyen, loose white tofu); fresh tofu skin; CP and JAPFA frozen minced pork; CP frozen pork shoulder; CP eggs 61 g; CP chicken breast fillet. Also the embedded data of the eight Meat Zero pages listed under AIS-25. Accessed 25 September 2026.
+- **CPC-13.** Kamereo. Sitemap (product URLs). Accessed 25 September 2026.
+- **CPC-14.** MM Mega Market Vietnam. Online shop sitemap. Accessed 25 September 2026.
+- **CPC-15.** Co.op Online (Saigon Co.op). Product pages (structured product data) for Co.op Select chay and tofu private-label SKUs: ha cao chay 415 g, sui cao chay 530 g, cha gio chay 400 g, mi sui cao chay 200 g, banh cuon chay 290 g, mi chay 300 g, and seven tofu SKUs. Accessed 25 September 2026.
+- **CPC-16.** Co.op Online. Sitemap of the 'Nhan hang Co.op' (Co.op brands) collection. Accessed 25 September 2026.
+- **CPC-17.** Saigon Co.op. Lien he chao hang (supplier product pitch) page. Accessed 25 September 2026.
+- **CPC-18.** Saigon Co.op. Supplier portal home page (nhacungcap.saigonco-op.vn). Accessed 25 September 2026.
+- **CPC-19.** WinMart (WinCommerce). Online category page 'Thuc pham chay' and item search results for 'chay', 'dau phu', 'dau hu', 'WinMart' and 'thuan chay' at store WM VMM HNI Times City (store code 1535, the site default), returned by the public search service the website uses. Accessed 25 September 2026.
+- **CPC-20.** AEON eShop Vietnam. Search results for 'chay', 'topvalu' and 'topvalu chay'. Accessed 25 September 2026.
+- **CPC-21.** Asia Ingredients Group (AIG). Yeast protein: A next-generation protein solution for sustainable food innovation. 18 June 2025. Accessed 25 September 2026.
+- **CPC-22.** Asia Ingredients Group (AIG). Product sitemaps and 'Proteins' product category page. Accessed 25 September 2026.
+- **CPC-23.** Brenntag Vietnam. Food and Nutrition industry page. Accessed 25 September 2026.
+- **CPC-24.** Growthwell Foods. Home page. Accessed 25 September 2026.
+- **ECR-06.** Kamereo. Product pages read through their embedded page data (price incl. VAT, stock, origin, category, cumulative totalSold counter, description) for 142 plant-milk, dairy-milk, tofu, chay and processed-meat SKUs selected from the sitemap (CPC-13), fetched 10 seconds apart. Accessed 25 September 2026.
+- **ECR-07.** AVAKids (Mobile World Group). Category pages Sua tuoi (page 1) and Sua hat, read through the fetch tool. Accessed 25 September 2026.
+- **ECR-08.** WheyShop. Product sitemap (146 URLs) and product pages. Accessed 25 September 2026.
+- **ECR-09.** Co.op Online (Saigon Co.op). Sitemaps (collection products, milk collection: 1,007 URLs) and product pages for Fami soy milk (bich 200 ml; 36 x 200 ml) and Vinamilk Super Nut (4 x 180 ml), structured data. Accessed 25 September 2026.
+- **ECR-10.** Bach Hoa Xanh (Mobile World Group). Home page, Sua cho ca nha collection and Sua tuoi category page, read through the fetch tool; search page (robots.txt). Accessed 25 September 2026.
+- **ECR-16.** Brand and retailer web shops checked for sales counters: Vissanmart, An Nhien Food, Ong Tempeh, Vinasoy, Nam An Market, TH truemart (sua hat collection), Nutifood (ngoinhadinhduong.com), Kingfoodmart, WinMart soy-milk category, Vinamilk Giac Mo Sua Viet (403), Au Lac Vegan (connection reset). Accessed 25 September 2026.
+- **FBA-07.** Nutreco. Impact Report 2025.
+- **FBA-08.** Skretting. How does Skretting define novel ingredients? Web page. Accessed 25 September 2026.
+- **FBA-09.** BioMar Group. Global Sustainability Report 2024.
+- **FBA-10.** BioMar. Sustainability web page. Accessed 25 September 2026.
+- **FBA-11.** Charoen Pokphand Foods. Sustainability Report 2025.
+- **FBA-12.** De Heus Animal Nutrition. Nourishing Future Generations: Sustainability report 2025.
+- **FBA-13.** Grobest. Sustainability Report 2024 (released 30 March 2026).
+- **FBA-14.** Tongwei Co. 2025 Environmental, Social and Governance Report and Sustainability Report (Chinese). May 2026.
+- **FBA-15.** Vinh Hoan Corporation. Reviewed interim consolidated financial statements for the six months ended 30 June 2026 (English).
+- **FBA-16.** Cargill Vietnam. Company website. Accessed 25 September 2026.
+- **FBA-21.** Phileo by Lesaffre. Aquaculture web page. Accessed 25 September 2026.
+- **FBA-23.** Minh Phu Seafood Corporation. Company home page. Accessed 25 September 2026.
+- **FBA-24.** BioMar Group. Interim Report for Q2 2026 (first half 2026).
+- **FTR-16.** QNS. Vinasoy product self-declarations listing pages: VNS sản phẩm công bố năm 2025, năm 2026, and Veyo sản phẩm sữa hạt.
+- **FTR-17.** QNS. Bản tự công bố sản phẩm số 08NS/QNS/2025: Sữa đậu nành Fami Nguyên Chất Ít Đường, 10 Feb 2025 (with label artwork and test reports).
+- **FTR-18.** QNS. Bản tự công bố sản phẩm 10NS: Sữa đậu nành Fami Nguyên Chất, 2025.
+- **FTR-19.** QNS. Bản tự công bố sản phẩm 12NS: Sữa đậu nành Fami Canxi, 20 Feb 2025.
+- **FTR-20.** QNS. Bản tự công bố sản phẩm số 13NS/QNS/2025: Sữa đậu nành Fami Canxi Ít Đường, 20 Feb 2025.
+- **FTR-21.** QNS. Bản tự công bố sản phẩm 18NS: Fami Nguyên Chất vị Đường đen, 2025.
+- **FTR-22.** QNS. Bản tự công bố sản phẩm 18NS: Fami Nguyên Chất vị Đường đen, 30 Jun 2026 re-declaration.
+- **FTR-23.** QNS. Bản tự công bố sản phẩm 29: Sữa đậu nành Fami Green Soy rất ít đường, 20 Jan 2025.
+- **FTR-24.** QNS. Bản tự công bố sản phẩm 28: Sữa đậu nành Fami Green Soy không bổ sung đường, 20 Jan 2025.
+- **FTR-25.** QNS. Bản tự công bố sản phẩm 06NS: Sữa đậu nành Fami Go vị đậu đỏ nếp cẩm, 10 Feb 2025.
+- **FTR-26.** QNS. Bản tự công bố sản phẩm 31: Thực phẩm bổ sung Veyo Sữa hạt yến mạch, 20 Jan 2025.
+- **FTR-27.** QNS. Bản tự công bố sản phẩm 32: Thực phẩm bổ sung Veyo Sữa hạt 5 loại cao cấp, 20 Jan 2025.
+- **FTR-28.** QNS. Bản tự công bố sản phẩm 37NS: Veyo Sữa hạt Smarty yến mạch óc chó vị sữa, 16 Jun 2025.
+- **FTR-29.** QNS. Bản tự công bố sản phẩm 33: Veyo sữa hạt lên men tự nhiên vị nguyên bản ít đường, 10 Jun 2026 re-declaration.
+- **FTR-30.** Oatly. Oat Drink Barista Edition 1L, UK product page.
+- **HXE-11.** VissanMart online shop. Thit heo VietGAP category, pages 1 and 2 (retail prices of fresh pork cuts and skin).
+- **LBL-25.** VitaDairy. ColosBaby Lactoferrin, product page with nutrition tables. Accessed 25 Sep 2026.
+- **MKT-03.** Lazada Vietnam. Search listing pages and the listing data each page requests (catalog ajax=true, page 1) for 21 queries, read in a logged-out desktop browser tab about 4 seconds apart. Accessed 25 September 2026.
+- **MKT-04.** Lazada Vietnam. Product pages read logged out: GoldSoy khong duong 12 x 1 L (i304116929), Sua Hat Cao Dam it duong 24 x 180 ml (i2656628019), Vinamilk dau nanh hat oc cho 48 hop (i304122784), Suon non chay Tam Phat 1 kg (i1373157709), AFIT vegan protein 1 kg (i3076777438), ON Gold Standard 5 lb (i2019564464). Accessed 25 September 2026.
+- **MKT-05.** Tiki. Search pages and the search data each page requests (api/v2/products, limit 40) for 17 queries, read in a logged-out desktop browser tab. Accessed 25 September 2026.
+- **MKT-06.** Tiki. Product records (api/v2/products/{id}) for GoldSoy khong duong 12 x 1 L (21969658), Cao Dam it duong 24 x 180 ml (278424813), 9 loai hat it duong 24 x 180 ml (176103097), Vinamilk dau nanh hat oc cho (21196433), Fami nguyen chat (12629696), Fami Canxi Plus (193210912). Accessed 25 September 2026.
+- **ORG-13.** Cholimex Food JSC. He thong quan tri chat luong (Quality management system), company page. Accessed 25 Sep 2026.
+- **ORG-14.** GN Foods JSC. Home page (accreditations). Accessed 25 Sep 2026.
+- **PMR-18.** Công ty TNHH MTV Suất ăn công nghiệp Tú Anh for Trường Tiểu học Lạc Hồng (TP.HCM). Thực đơn 14 to 25 Sep 2026.
+- **PMR-23.** Công ty TNHH Chế biến Xuất ăn Hoa Sữa for Trường Tiểu học Gia Thụy (Hà Nội). Thực đơn tuần 2 và tuần 3 tháng 9/2026.
+- **PMR-24.** Công ty TNHH Chế biến Xuất ăn Hoa Sữa for Trường Tiểu học Ngọc Lâm (Hà Nội). Thực đơn tuần 02 và tuần 03 tháng 9/2026.
+- **PMR-34.** Haseca. Menu mẫu suất ăn công nghiệp cho từng ngành: giải pháp thực tế từ Haseca. 28 Mar 2026.
+- **TIC-01.** Made-in-China.com. Textured Soy Protein Machine: product search results (12 listings). Accessed 25 Sep 2026.
+- **TIC-02.** Jinan Sunward Machinery Co., Ltd. Turnkey twin-screw textured soy protein TSP and TVP project processing line (product listing). Accessed 25 Sep 2026.
+- **TIC-03.** Jinan Saibainuo Extrusion Machinery Co., Ltd. TVP TSP fiber artificial vegetable meat production plant (product listing). Accessed 25 Sep 2026.
+- **TIC-04.** Shandong Light M and E Co., Ltd. Extrusion textured soy protein equipment (product listing). Accessed 25 Sep 2026.
+- **TIC-05.** Jinan Dayi Extrusion Machinery Co., Ltd. Textured soy protein extruder nuggets chunks mince making machine (product listing). Accessed 25 Sep 2026.
+- **TIC-06.** Jinan Sunpring Machinery and Equipment Co., Ltd. Automatic soya chunks TVP textured soy vegetable protein nuggets extruder line (product listing). Accessed 25 Sep 2026.
+- **TIC-07.** Shandong Joyang Machinery Co., Ltd. TVP TSP textured vegetable soy protein soya chunks nuggets minces making machine (product listing). Accessed 25 Sep 2026.
+- **TIC-08.** Jinan Chenyang Technology Co., Ltd. High configuration textured soybean protein machine (product listing). Accessed 25 Sep 2026.
+- **TIC-09.** Shandong Arrow Machinery Co., Ltd. High-efficiency soya meat analogue extruder machine (product listing). Accessed 25 Sep 2026.
+- **TIC-10.** Shandong Joyang Machinery Co., Ltd. Complete plant-based meat production line TVP TSP making machine (product listing). Accessed 25 Sep 2026.
+- **TIC-11.** Jinan Saibainuo Machinery Co., Ltd. Company showroom and profile on Made-in-China.com. Accessed 25 Sep 2026.
+- **TIC-22.** Made-in-China.com. Defatted Soy Flour: product search results. Accessed 25 Sep 2026.
+- **TIC-23.** Made-in-China.com. Plant Based Meat Machine: product search results. Accessed 25 Sep 2026.
+- **TRU-25.** Bach Hoa Xanh. Mi khoai tay Omachi xot bo ham ly 114g (co cay thit that), product page. Accessed 25 September 2026.
+- **TRU-26.** Bach Hoa Xanh. Xuc xich category page and Xuxifarm product pages (xuc-xich-vi-bo-ham-dau-nanh-xuxifarm-cay-198g; xuc-xich-be-khoe-heo-ham-hat-sen-xuxifarm-goi-200g). Accessed 25 September 2026.
+- **TRU-32.** Tripmap Marketplace. Xuc xich ga nam huong Eatclean 500g, product page, accessed 25 September 2026; and Google snippets for beFood (My Healthy Corner, Hanoi) and community Facebook posts.
+- **UPL-27.** Công ty TNHH MTV Suất Ăn Công Nghiệp Hoàng Kim. Thực đơn (sample trays by price tier: VND 20,000, 23,000 school, 25,000). Pages created 23 to 25 Feb 2024, modified 2025.
+- **UPL-28.** Công ty TNHH Suất Ăn Công Nghiệp Việt Đài. Menu thực đơn cơm công nhân ngon 7 ngày trong tuần: 20k-25k-30k. 3 Nov 2023.
+- **UPL-29.** Công ty TNHH Thiên Phúc Hiếu. Thực đơn suất ăn công nghiệp 17k, 18k, 20k, 22k, 25k, 30k, 35k, 40k, 50k and 7-day page. Feb 2025.
+- **UPL-30.** Phú Mỹ Gold. Suất ăn công nghiệp 30k: thực đơn 30 ngày (weeks 1 to 3 read). 2023.
+- **UPL-31.** Phú Mỹ Gold. Bữa chay trong suất ăn công nghiệp tại Phú Mỹ Bà Rịa. 2023.
+- **UPL-32.** Haseca. Thực đơn suất ăn công nghiệp theo tuần, tháng: cách lập chuẩn nhất. 11 Dec 2025.
+- **UPL-33.** Hải Nam Catering. Bảng định lượng suất ăn công nghiệp: minh bạch và chuẩn xác. 7 Jan 2026.
+- **XBA-01.** Ahold Delhaize. Annual Report 2025: Sustainability statements (PDF). 2026.
+- **XBA-02.** Lidl Nederland. Eiwittransitie (protein transition) web page. Accessed 25 Sep 2026.
+- **XBA-03.** Lidl Nederland. Gezondheid bevorderen web page. Accessed 25 Sep 2026.
+- **XBA-04.** Lidl Nederland. Inkoopbeleid bewuste voeding (purchasing policy on conscious nutrition), PDF. Accessed 25 Sep 2026.
+- **XBA-05.** Lidl GB. Healthy and sustainable diets web page. Accessed 25 Sep 2026.
+- **XBA-06.** Lidl GB. Human rights: transparency page and 'Tier one food, fruit and vegetables suppliers' list as of 1 April 2026 (PDF, consenting suppliers only). Accessed 25 Sep 2026.
+- **XBA-07.** Lidl. Supplier list: Food, delivery dates 1 January to 31 December 2025 (PDF, linked from the Lidl GB list as 'Lidl International's supplier list'). Accessed 25 Sep 2026.
+- **XBA-08.** J Sainsbury plc. Plan for Better databook 2025/26 (xlsx), sheet 'Healthy and Sustainable Diets'. Accessed 25 Sep 2026.
+- **XBA-09.** J Sainsbury plc. Plan for Better Report 2025/26 (PDF). Accessed 25 Sep 2026.
+- **XBA-10.** J Sainsbury plc. Modern Slavery Statement 2025/26 (PDF). Accessed 25 Sep 2026.
+- **XBA-11.** Carrefour. 2025 Universal Registration Document (PDF, 27 March 2026). Accessed 25 Sep 2026.
+- **XBA-15.** ALDI SUD Group. Healthy nutrition focus area web page. Accessed 25 Sep 2026 through a summarising fetch tool.
+- **XBA-16.** Marks and Spencer. Interactive Supplier Map web page. Accessed 25 Sep 2026.
+- **XBA-17.** Otsuka Foods. 生産終了製品 (discontinued products) page. Accessed 25 Sep 2026.
+- **XBA-18.** Fuji Oil Holdings. Integrated Report 2025 (PDF). Accessed 25 Sep 2026.
+- **XBA-19.** Fuji Oil Holdings. Major group companies web page. Accessed 25 Sep 2026.
+- **XBA-20.** CJ CheilJedang. CJ제일제당 베트남 키즈나 공장 준공… K-푸드 글로벌 영토확장 전초기지 세웠다 (Vietnam Kizuna plant completed). CJ Newsroom press release, 28 Feb 2022.
+- **XBA-21.** CJ CheilJedang. CJ제일제당 '플랜테이블', 국내외 소비자 사로잡았다… 수출 30개국 확대 (PlanTable exports to 30 countries). CJ Newsroom, 28 Nov 2022.
+- **XBA-22.** CJ CheilJedang. 미국을 넘어, 이제 유럽이다!… CJ제일제당, 식품사업 유럽 영토확장 본격화 (Europe strategy). CJ Newsroom, 5 Jul 2022.
+- **XBA-23.** CJ CheilJedang. CJ제일제당, 유럽(헝가리)∙미국 식품 신규 생산기지 구축 (new plants in Hungary and the US). CJ Newsroom, 21 Nov 2024.
+- **XBA-24.** CJ CheilJedang. CJ제일제당, 플랜테이블 제품군 확대…식물성 식품 시장 견인 본격 나섰다 (PlanTable range expanded). CJ Newsroom, 29 Nov 2023.
+- **XBA-25.** Coles Supermarkets. Product search results and product pages with country-of-origin statements: Mr Chen's Prawn Hargow 12 pieces 300 g; Bibigo Mandu Vegetable Dumplings 280 g; Bibigo Kimchi Dumplings 280 g; Vegie Delights Plant Based Hot Dogs and Vegie Roast. Accessed 25 Sep 2026.
+- **XBA-31.** Marukome. Daizu Labo (大豆のお肉) brand and product pages. Accessed 25 Sep 2026.
+- **XBA-32.** Daesang Corporation. Corporate website (affiliates list). Accessed 25 Sep 2026.
+- **XBA-33.** CJ CheilJedang. Business: Food (English page). Accessed 25 Sep 2026.
+- **XBA-34.** Tesco PLC. Sitemap (reporting hub entries: textile factories supplying Tesco; palm oil and soy transparency mapping 2021; ESG methodologies 2024 to 2026). Accessed 25 Sep 2026.
+
+### gov/statistics (107)
+
+- **AFN-33.** School Meals Coalition. Members page. Accessed 25 September 2026.
+- **AFN-47.** Scaling Up Nutrition. Viet Nam reduces child stunting to 18.2% with increased nutrition investment. Undated news page.
+- **AIB-39.** Bộ Y tế (Ministry of Health). Quyết định số 3958/QĐ-BYT ngày 25/12/2025 ban hành Hướng dẫn dinh dưỡng đối với bữa ăn học đường. PDF hosted by the National Institute of Nutrition.
+- **AIB-40.** USDA Foreign Agricultural Service. Food Processing Ingredients Annual, Hanoi, Vietnam, report VM2026-0004. Apr 2026.
+- **AIB-41.** Báo Chính phủ. Tăng cường bảo đảm an toàn, chất lượng bữa ăn bán trú trong các cơ sở giáo dục (Công điện 64/CĐ-TTg). 13 Sep 2026.
+- **AIB-43.** Sở Công Thương Quảng Bình. Giải pháp nâng cao chất lượng bữa ăn ca của người lao động theo Kết luận số 03/KL-TLĐ của Tổng Liên đoàn Lao động Việt Nam.
+- **AIB-44.** Bệnh viện Bệnh Nhiệt đới (Hospital for Tropical Diseases, HCMC). Mời báo giá dự toán gói thầu Cung cấp suất ăn qua miệng cho người bệnh năm 2025. 25 Mar 2025.
+- **AIS-20.** IFC. Sustainable insect-based protein: IFC invests in ProNuvo to boost the circular economy in Latin America and the Caribbean. 19 Jun 2024.
+- **AIS-22.** ADB Ventures. Home page. Accessed 25 Sep 2026.
+- **APR-01.** Prime Minister of Viet Nam. Quyet dinh 02/QD-TTg phe duyet Chien luoc quoc gia ve dinh duong giai doan 2021-2030 va tam nhin den nam 2045. 5 Jan 2022. Full text read via LuatVietnam.
+- **APR-02.** Prime Minister of Viet Nam. Quyet dinh 300/QD-TTg phe duyet Ke hoach hanh dong quoc gia chuyen doi he thong luong thuc thuc pham minh bach, trach nhiem va ben vung o Viet Nam den nam 2030. 28 Mar 2023.
+- **APR-03.** Bao Chinh phu. Hanh dong chuyen doi he thong luong thuc thuc pham minh bach, trach nhiem va ben vung. 28 Mar 2023.
+- **APR-04.** Ministry of Health (Bo Y te). Quyet dinh 3958/QD-BYT ban hanh Huong dan dinh duong doi voi bua an hoc duong. 25 Dec 2025 (PDF posted on the NIN website 26 May 2026).
+- **APR-05.** Politburo (Bo Chinh tri). Nghi quyet 72-NQ/TW ve mot so giai phap dot pha, tang cuong bao ve, cham soc va nang cao suc khoe nhan dan. 9 Sep 2025. Full text on the Government portal.
+- **APR-06.** Politburo. Nghi quyet 71-NQ/TW ve dot pha phat trien giao duc va dao tao. 22 Aug 2025. Full text on the Government portal.
+- **APR-09.** Bao Chinh phu. Ho tro bua an trua cho hoc sinh tieu hoc, THCS o cac xa bien gioi (Nghi dinh 339/2025/ND-CP). 26 Dec 2025.
+- **APR-10.** Prime Minister. Quyet dinh 1520/QD-TTg phe duyet Chien luoc phat trien chan nuoi giai doan 2021-2030, tam nhin 2045. 6 Oct 2020.
+- **APR-11.** Prime Minister. Quyet dinh 309/QD-TTg phe duyet Chien luoc phat trien nganh sua giai doan den nam 2030, tam nhin den nam 2045 (effective 23 Feb 2026). Text on the Government portal.
+- **APR-14.** Ministry of Science and Technology portal. Luat Phong benh 2026: Chuyen manh tu chua benh sang chu dong phong benh. 5 Aug 2026.
+- **APR-15.** National Assembly. Luat Phong benh so 114/2025/QH15. Adopted 10 Dec 2025, in force 1 Jul 2026. Read via LuatVietnam through the fetch tool.
+- **APR-16.** Ministry of Health. Quyet dinh 1982/QD-BYT ban hanh Huong dan chuyen mon cac bien phap thuc hien dinh duong trong phong benh. 1 Jul 2026. Text via LuatVietnam.
+- **APR-17.** Ministry of Health. Muoi loi khuyen dinh duong hop ly den nam 2030 (Quyet dinh 3594/QD-BYT, 29 Nov 2024). NIN web page posted 2 Jun 2025.
+- **APR-21.** WHO Viet Nam. Historic moment for Viet Nam: WHO urges lawmakers to vote for higher tobacco, alcohol and sugary drink taxes. News release, 13 Jun 2025.
+- **APR-22.** Ministry of Finance, policy Q&A portal. Question 158420 on the scope of Law 66/2025/QH15 (Special Consumption Tax). Undated page.
+- **APR-27.** UNICEF Executive Board. Viet Nam country programme document 2027-2031 (E/ICEF/2026/P/L.13, 6 Jul 2026), for the second regular session, 1 to 4 Sep 2026.
+- **APR-28.** World Bank. Recipe for a Livable Planet: Achieving Net Zero Emissions in the Agrifood System. Press release, 6 May 2024.
+- **APR-29.** World Bank. Project Information Document: Low Methane Agricultural Transformation in East Asia (P504625), incl. Viet Nam TCAF One Million Hectare High Quality Low-Carbon Rice. 2024.
+- **APR-32.** European Commission, DG International Partnerships. Global Gateway in Vietnam: Commissioner Sikela promotes European investment with new focus on transport. 25 Mar 2026.
+- **APR-33.** European Commission, DG International Partnerships. Vietnam country page. Accessed 25 Sep 2026.
+- **APR-34.** USDA FAS GAIN. Vietnam: Food Processing Ingredients Annual, report VM2026-0004. 6 Apr 2026.
+- **APR-35.** ACIAR. Annual Operational Plan 2023-24: Vietnam. Read through the fetch tool.
+- **APR-44.** UNICEF Viet Nam and World Bank. World Bank, UNICEF call for solid steps to address child undernutrition in Viet Nam. 12 Sep 2019.
+- **FTR-01.** National Assembly. Luật Thuế tiêu thụ đặc biệt số 66/2025/QH15, 14 Jun 2025, in force 1 Jan 2026. Text on Thư Viện Pháp Luật.
+- **FTR-02.** Government. Nghị định 360/2025/NĐ-CP hướng dẫn Luật Thuế tiêu thụ đặc biệt, 31 Dec 2025, in force 1 Jan 2026.
+- **FTR-03.** Ministry of Finance. Thông tư 158/2025/TT-BTC hướng dẫn Nghị định 360/2025/NĐ-CP, 31 Dec 2025.
+- **FTR-04.** Ministry of Finance. Thông tư 136/2026/TT-BTC sửa đổi khoản 2 Điều 3 Thông tư 158/2025/TT-BTC, 14 Sep 2026, in force 15 Sep 2026.
+- **FTR-05.** Tiêu chuẩn quốc gia TCVN 12828:2019 Nước giải khát (Water-based beverages). Summary page on Thư Viện Pháp Luật; scope and definition 3.1 also quoted verbatim in the tax office answer read under APR-22.
+- **FTR-06.** Tiêu chuẩn quốc gia TCVN 12443:2018 Sữa đậu nành (Soybean milk). Summary page on Thư Viện Pháp Luật.
+- **FTR-07.** Tiêu chuẩn quốc gia TCVN 11216:2015 Sữa và sản phẩm sữa: Thuật ngữ và định nghĩa. Summary page on Thư Viện Pháp Luật.
+- **FTR-08.** Ministry of Health. Thông tư 35/2010/TT-BYT ban hành QCVN 6-2:2010/BYT Quy chuẩn kỹ thuật quốc gia đối với các sản phẩm đồ uống không cồn, 2 Jun 2010.
+- **FTR-09.** Ministry of Finance. Công văn 17380/BTC-CST về giảm thuế GTGT đối với mặt hàng nước giải khát có đường, 7 Nov 2025, replying to the Vietnam Beer Alcohol Beverage Association and a US business council (named as the US-ASEAN Business Council and as AmCham ASEAN in two readings of the page).
+- **FTR-10.** Thuế tỉnh Đồng Nai. Công văn 1751/DON-QLDN1 về chính sách thuế GTGT, 29 Jan 2026, to International Food JSC.
+- **FTR-11.** Thuế thành phố Cần Thơ. Công văn 2846/CTH-QLDN1 về chính sách thuế tiêu thụ đặc biệt, 20 Apr 2026, to Suntory PepsiCo Vietnam (Can Tho branch).
+- **FTR-12.** General Department of Customs. Công văn 46146/CHQ-NVTHQ thực hiện Luật 66/2025/QH15, 31 Dec 2025, to regional customs offices.
+- **FTR-31.** Prime Minister. Quyết định 309/QĐ-TTg phê duyệt Chiến lược phát triển ngành sữa giai đoạn đến năm 2030, tầm nhìn đến năm 2045, 23 Feb 2026. Full text on Thư Viện Pháp Luật.
+- **FTR-33.** Government. Nghị định 118/2022/NĐ-CP về Biểu thuế nhập khẩu ưu đãi đặc biệt của Việt Nam để thực hiện Hiệp định Thương mại hàng hóa ASEAN, Trung Quốc giai đoạn 2022 đến 2027, 30 Dec 2022.
+- **FTR-34.** Government. Nghị định 144/2024/NĐ-CP sửa đổi Nghị định 26/2023/NĐ-CP, 1 Nov 2024.
+- **FTR-35.** Government. Nghị định 108/2025/NĐ-CP sửa đổi Nghị định 26/2023/NĐ-CP, 19 May 2025.
+- **FTR-36.** Government. Nghị định 72/2026/NĐ-CP sửa đổi mức thuế suất thuế nhập khẩu ưu đãi đối với xăng dầu và nguyên liệu, 9 Mar 2026.
+- **FTR-37.** Government. Nghị định 174/2025/NĐ-CP quy định chính sách giảm thuế giá trị gia tăng theo Nghị quyết 204/2025/QH15, 30 Jun 2025.
+- **FUF-04.** MacLeod, M., Gerber, P., Mottet, A., Tempio, G., Falcucci, A., Opio, C., Vellinga, T., Henderson, B. and Steinfeld, H. (2013). Greenhouse gas emissions from pig and chicken supply chains: a global life cycle assessment. FAO, Rome.
+- **FUF-05.** Opio, C., Gerber, P., Mottet, A., Falcucci, A., Tempio, G., MacLeod, M., Vellinga, T., Henderson, B. and Steinfeld, H. (2013). Greenhouse gas emissions from ruminant supply chains: a global life cycle assessment. FAO, Rome.
+- **HXE-10.** Electronic Code of Federal Regulations. 7 CFR Part 210, Appendix A: Alternate foods for meals, alternate protein products.
+- **HXE-14.** thuvienphapluat.vn search listing: Quyet dinh 3974/QD-BKHCN nam 2017 cong bo tieu chuan quoc gia Thit va san pham thit (includes TCVN 8157:2017 and TCVN 8158:2017).
+- **LBL-01.** Ministry of Health. Thông tư 29/2023/TT-BYT hướng dẫn nội dung, cách ghi thành phần dinh dưỡng, giá trị dinh dưỡng trên nhãn thực phẩm, 30 Dec 2023. Text on Thư Viện Pháp Luật.
+- **LBL-02.** Ministry of Health. Thông tư 30/2026/TT-BYT hướng dẫn nội dung, cách ghi thành phần dinh dưỡng, giá trị dinh dưỡng trên nhãn thực phẩm, 9 Jul 2026, in force 10 Jul 2026. Text on Thư Viện Pháp Luật.
+- **LBL-03.** Ministry of Science and Technology. Tiêu chuẩn quốc gia TCVN 14429:2025 Hướng dẫn sử dụng công bố dinh dưỡng và công bố khuyến cáo về sức khỏe. Page on Thư Viện Pháp Luật.
+- **LBL-04.** Ministry of Science and Technology. Tiêu chuẩn quốc gia TCVN 7088:2025 Hướng dẫn ghi nhãn dinh dưỡng. Page on Thư Viện Pháp Luật.
+- **LBL-05.** Ministry of Health. Thông tư 43/2014/TT-BYT quy định về quản lý thực phẩm chức năng, in force 24 Nov 2014. Text on Thư Viện Pháp Luật.
+- **LBL-06.** Government. Nghị định 43/2017/NĐ-CP về nhãn hàng hóa, 14 Apr 2017, in force 1 Jun 2017. Text on Thư Viện Pháp Luật.
+- **LBL-07.** Government. Nghị định 37/2026/NĐ-CP hướng dẫn Luật Chất lượng sản phẩm, hàng hóa, 23 Jan 2026, in force on issue. Text on Thư Viện Pháp Luật.
+- **LBL-08.** Customs of Viet Nam. Công văn 11816/CHQ-GSQL hướng dẫn các quy định mới liên quan đến ghi nhãn hàng hóa theo Nghị định 37/2026/NĐ-CP, 12 Feb 2026.
+- **LBL-10.** Ministry of Agriculture and Rural Development and Ministry of Science and Technology. Thông tư liên tịch 45/2015/TTLT-BNNPTNT-BKHCN hướng dẫn ghi nhãn đối với thực phẩm biến đổi gen bao gói sẵn, 23 Nov 2015, in force 8 Jan 2016.
+- **LBL-11.** Ministry of Science and Technology. Tiêu chuẩn quốc gia TCVN 7049:2020 Thịt chế biến đã qua xử lý nhiệt. Page on Thư Viện Pháp Luật.
+- **LBL-12.** Ministry of Science and Technology. Tiêu chuẩn quốc gia TCVN 7048:2020 Thịt hộp. Page on Thư Viện Pháp Luật.
+- **LBL-13.** Ministry of Science and Technology. Tiêu chuẩn quốc gia TCVN 7050:2020 Thịt chế biến không qua xử lý nhiệt. Page on Thư Viện Pháp Luật.
+- **LBL-14.** Ministry of Science and Technology. Tiêu chuẩn quốc gia TCVN 14416:2025 (ISO 23722:2021) Thịt và sản phẩm thịt: Từ vựng. Page on Thư Viện Pháp Luật.
+- **LBL-15.** Ministry of Science and Technology. Tiêu chuẩn quốc gia TCVN 13625:2023 (ISO 23662:2021) Định nghĩa và tiêu chí kỹ thuật đối với thực phẩm, thành phần thực phẩm phù hợp cho người ăn chay hoặc người ăn thuần chay và để ghi nhãn, công bố. Page on Thư Viện Pháp Luật.
+- **LBL-16.** Ministry of Industry and Trade. QCVN 28:2026/BCT Quy chuẩn kỹ thuật quốc gia đối với các sản phẩm sữa dạng lỏng. Page on Thư Viện Pháp Luật.
+- **LBL-17.** Ministry of Industry and Trade. Thông tư 09/2026/TT-BCT ban hành Quy chuẩn kỹ thuật quốc gia đối với các sản phẩm sữa dạng lỏng, 26 Feb 2026, in force 1 Sep 2026.
+- **LBL-18.** National Assembly. Luật sửa đổi, bổ sung một số điều của Luật Quảng cáo số 75/2025/QH15, 16 Jun 2025, in force 1 Jan 2026. Text on Thư Viện Pháp Luật.
+- **LBL-19.** Government. Nghị định 342/2025/NĐ-CP hướng dẫn Luật Quảng cáo, 26 Dec 2025, in force 15 Feb 2026. Text on Thư Viện Pháp Luật.
+- **LBL-20.** Bac Ninh Provincial People's Committee. Quyết định 585/QĐ-UBND phê duyệt Đề án Ứng dụng công nghệ sinh học xây dựng và phát triển ngành công nghiệp sinh học tỉnh Bắc Ninh đến năm 2030, tầm nhìn đến năm 2045, 30 Dec 2025.
+- **LBL-22.** Ministry of Agriculture and Rural Development. Thông báo 2512/TB-BNN-VP kết luận của Thứ trưởng Phùng Đức Tiến về quản lý chất lượng vật tư nông nghiệp, 5 May 2021.
+- **LBL-23.** Báo Chính phủ. Đồng loạt kiểm tra thực phẩm chay, 7 Sep 2020.
+- **LBL-27.** Government. Nghị định 115/2018/NĐ-CP quy định xử phạt vi phạm hành chính về an toàn thực phẩm, 4 Sep 2018, amended by Nghị định 124/2021/NĐ-CP. Text on Thư Viện Pháp Luật.
+- **NQR-01.** Vien Dinh duong (National Institute of Nutrition). Tra cuu nhu cau dinh duong (online lookup of recommended nutrient intakes), queried through the page's own endpoint /api/fe/nutrition-needs/getNutritionNeedsTable for ages 6 to 7, 8 to 9 and 10 to 11 on 25 Sep 2026.
+- **NQR-02.** Government of Viet Nam. Nghi dinh 09/2016/ND-CP quy dinh ve tang cuong vi chat dinh duong vao thuc pham. 28 Jan 2016, in force 15 Mar 2016. Via Thu Vien Phap Luat.
+- **NQR-03.** Van phong Chinh phu. Thong bao 503/TB-VPCP ket luan cua Pho Thu tuong Le Thanh Long tai cuoc hop ve Du thao Nghi dinh sua doi Nghi dinh 09/2016/ND-CP. 22 Sep 2025.
+- **NQR-04.** Government of Viet Nam. Nghi dinh 15/2018/ND-CP quy dinh chi tiet thi hanh mot so dieu cua Luat An toan thuc pham. 2 Feb 2018. Via Thu Vien Phap Luat.
+- **ORG-01.** European Union and Socialist Republic of Viet Nam. Free Trade Agreement between the European Union and the Socialist Republic of Viet Nam. Official Journal L 186, 12 June 2020. Protocol 1 (origin): Articles 1 and 5; Annex I introductory notes 3.3, 3.5 and 4.2; Annex II rules for chapters 11, 12, 16, 19, 20, 21 and 23. Full text read from the Publications Office repository because EUR-Lex declined to display a 25.4 MB document. Accessed 25 Sep 2026.
+- **ORG-02.** European Commission, DG Trade. Access2Markets tariff service (api/tariffs/get), origin Viet Nam, destination Germany, codes 19022010, 19022030, 1902209120, 1902209190, 1902209920, 1902209990, 1902301020, 1902309020, 1905902010, 2004909810, 2004909860, 2004909880, 2106102020, 2106102090, 2106909815, 2106909860, 1602499000, 1602323090, 1602501090, 1604209090. Accessed 25 Sep 2026.
+- **ORG-03.** UK Department for Business and Trade and HMRC. UK Trade Tariff API v2, commodities 1902201099, 1902203099, 1902209190, 1902209990, 1902309020, 1905902010, 2004909880, 2106102090, 2106909830, 2106909869, 1602495000, 1602499000, and geographical area 2051 (CPTPP All Members). Accessed 25 Sep 2026.
+- **ORG-04.** UK Department for Business and Trade and HMRC. UK Trade Tariff API v2, rules_of_origin_schemes for 190590, 200490, 160249 and 190230, country VN: UK-Viet Nam Origin Reference Document v1.1 (28 Dec 2021) Article 5 and Annex II; CPTPP Origin Reference Document v1.1 (30 Sep 2024). Accessed 25 Sep 2026.
+- **ORG-05.** Japan Customs. Japan's Tariff Schedule (Statistical Code for Import) as of April 1, 2026, chapter 19. Accessed 25 Sep 2026.
+- **ORG-06.** RCEP Secretariat. RCEP Product-Specific Rules in HS 2022 (1 January 2023), document R01. Accessed 25 Sep 2026.
+- **ORG-07.** Canada Border Services Agency. Customs Tariff 2026, chapters 19 and 21 (HTML). Accessed 25 Sep 2026.
+- **ORG-09.** United States International Trade Commission. Harmonized Tariff Schedule REST search, 1902.20.00. Accessed 25 Sep 2026.
+- **ORG-10.** European Commission. Commission Implementing Regulation (EU) 2021/404 laying down the lists of third countries authorised for the entry into the Union of animals, germinal products and products of animal origin, Annex XV (meat products from ungulates, poultry and game birds), text as adopted (24 March 2021). Accessed 25 Sep 2026.
+- **ORG-11.** European Commission. Commission Implementing Regulation (EU) 2021/405 laying down the lists of third countries authorised for the entry into the Union of certain products of animal origin, Annexes VIII and IX, text as adopted (24 March 2021). Accessed 25 Sep 2026.
+- **ORG-15.** European Central Bank. Euro foreign exchange reference rates (EXR), daily USD, GBP and JPY against EUR, 24 Sep 2026. Accessed 25 Sep 2026.
+- **PMR-01.** Thủ tướng Chính phủ. Quyết định số 973/QĐ-TTg ngày 01/6/2026 phê duyệt Chương trình Sức khỏe học đường giai đoạn 2026-2035 (signed PDF, 15 pages, via Thư Viện Pháp Luật).
+- **PMR-02.** Thủ tướng Chính phủ. Chỉ thị 33/CT-TTg ngày 14/8/2026 về tăng cường bảo đảm an toàn thực phẩm trong cơ sở giáo dục (Thư Viện Pháp Luật).
+- **PMR-03.** Bộ Giáo dục và Đào tạo. Quyết định 2195/QĐ-BGDĐT ngày 10/8/2022 phê duyệt Hướng dẫn công tác tổ chức bữa ăn học đường kết hợp tăng cường hoạt động thể lực cho trẻ em, học sinh trong các cơ sở giáo dục mầm non và tiểu học.
+- **PMR-04.** Sở GD&ĐT Hà Nội. Sở GDĐT tập huấn công tác tổ chức bữa ăn bán trú cho hơn 600 hiệu trưởng trường mầm non, tiểu học. 13 Sep 2026.
+- **PMR-05.** UBND phường Bồ Đề. Thông báo số 979/TB-UBND ngày 26/8/2026 kết quả lựa chọn và phân công đơn vị cung cấp thực phẩm, nguyên liệu thực phẩm, suất ăn phục vụ bữa ăn bán trú năm học 2026-2027 (posted by Ngoc Lam Primary).
+- **PMR-06.** Trường Tiểu học Ngọc Lâm. Thông báo số 04/TB-THNL ngày 30/8/2026 về việc tổ chức bữa ăn bán trú cho học sinh theo Nghị quyết số 84/2026/NQ-HĐND.
+- **PMR-07.** Trường Tiểu học Chu Văn An (Hải Phòng). Thư mời báo giá số 01/TM-THCVA gói thầu cung cấp dịch vụ suất ăn năm học 2026-2027. 21 Aug 2026.
+- **PMR-08.** Trường Tiểu học An Phú Tây. Công văn số 40/THAPT nhu cầu mua sắm dịch vụ cung cấp suất ăn bán trú, nước uống năm học 2026-2027. 17 Sep 2026.
+- **PMR-09.** Trường Tiểu học Trần Văn Ơn. Công khai hình ảnh suất ăn và nguồn cung ứng thực phẩm tuần 02 (14/9/2026 - 18/9/2026).
+- **PMR-32.** Trường Tiểu học Võ Thị Sáu (TP.HCM). Thông báo 79/TB-VTS bảng chi tiết thu các khoản thu tháng 4/2026.
+- **PMR-33.** Trường Tiểu học Lý Tự Trọng (TP.HCM). Thông báo thu các khoản thu tháng 3/2026.
+- **TIC-18.** General Department of Customs. Thong bao 4816/TB-TCHQ ket qua xac dinh truoc ma so doi voi SUPRO MAX 5013IP, 4 Oct 2024 (via Thu Vien Phap Luat). Accessed 25 Sep 2026.
+- **TRU-02.** CDC Quang Ninh (republishing Dan Tri). Cach nhan biet gio cha an toan ngay Tet. 9 February 2015.
+- **TRU-24.** QUATEST 3. QUATEST 3 trien khai phuong phap phat hien DNA dong vat trong san pham hoac nguyen lieu thuc pham va thuc an chan nuoi. 4 February 2025.
+- **UPL-21.** Báo Chính phủ. Hỗ trợ tiền ăn, gạo, đồ dùng cá nhân cho học sinh trường phổ thông nội trú (Nghị định 188/2026/NĐ-CP ngày 27/5/2026). 28 May 2026.
+- **XBA-30.** UK Department for Business and Trade and HMRC. UK Trade Tariff API v2, rules_of_origin_schemes for commodities 190220, 210690, 210610 and 110100, country VN (UK-Vietnam FTA and UK-CPTPP). Accessed 25 Sep 2026.
+
+### press (105)
+
+- **AFN-09.** vegconomist. GFI Research Grant Program will provide up to $3.5MM for alternative protein projects in two key areas. 27 March 2025.
+- **AFN-14.** vegconomist. Malnutrition data frames India roundtable on building alt-protein into state feeding schemes. 3 August 2026.
+- **AFN-17.** FoodNavigator. Million-dollar sustainable protein grant aims to fast-track market entry. 19 January 2026.
+- **AFN-38.** Green Queen. Sustainability NGO gets 175+ food companies in Asia to commit to responsible sourcing (Lever Foundation). 14 February 2025.
+- **AFN-39.** Green Queen. Exclusive: Lever Foundation expands plant-based policy work to India and Thailand. 3 July 2026 (updated 9 July 2026).
+- **AFN-41.** Travel Daily News Asia. Accor expands in Vietnam with new Mercure Nha Trang opening. 16 October 2024.
+- **AFN-43.** Tempo. Spesialis gizi ingatkan Makan Bergizi Gratis utamakan protein hewani (nutrition specialist urges free nutritious meals to prioritise animal protein). January 2025.
+- **AFN-45.** Suc khoe va Doi song. Nhan rong mo hinh bua an hoc duong: mat xich quan trong trong Chuong trinh Suc khoe hoc duong 2026-2035. 25 June 2026.
+- **AIB-02.** CafeF. Vinamilk lên kế hoạch doanh thu 2026 cao kỷ lục, trả cổ tức tối thiểu 50% lợi nhuận. 1 Apr 2026.
+- **AIB-03.** Thanh Niên. Vinamilk Green Farm Cao Đạm: Giải pháp dinh dưỡng giúp chăm sóc sức khỏe chủ động. 31 Oct 2025.
+- **AIB-04.** Mekong ASEAN. Sojitz khai trương nhà máy chế biến thịt bò mát 10.000 tấn tại Tam Đảo. 18 Dec 2024.
+- **AIB-07.** Dân trí. Vinasoy mở rộng phát triển dinh dưỡng thực vật. 8 May 2026.
+- **AIB-08.** Giáo dục Việt Nam. 30 trường, 1 triệu hộp sữa: tiếp nối hành trình mang dưỡng chất lành đến những mầm xanh tương lai. 18 Sep 2026.
+- **AIB-09.** Nhà Đầu Tư. Tập đoàn TH: Tiên phong những xu hướng dinh dưỡng lành mạnh. 19 Feb 2025.
+- **AIB-13.** CafeF. ĐHĐCĐ Masan 2026: CEO Danny Le cho rằng cổ phiếu MSN đang bị định giá thấp hơn 60% giá trị thực. 24 Apr 2026.
+- **AIB-15.** Doanh nhân (Báo Pháp luật TP.HCM). ĐHĐCĐ Vissan (VSN) 2026: Chấp nhận giảm biên lợi nhuận để bình ổn giá, dồn lực cho hai dự án lớn. 23 Apr 2026.
+- **AIB-16.** Sài Gòn Giải Phóng. VISSAN ra mắt bộ đôi sản phẩm chay tiện lợi. 27 Aug 2026.
+- **AIB-17.** The Investor (Korea Herald). CJ CheilJedang to expand plant-based sales to W200b by 2025. 19 Jul 2022.
+- **AIB-18.** Tuổi Trẻ. ACECOOK Việt Nam công bố chiến lược đổi mới. 5 Jul 2025.
+- **AIB-21.** Vietstock. Cholimex nói gì về kế hoạch bán 'con gà đẻ trứng vàng' Cholimex Food? Apr 2026.
+- **AIB-23.** Food Ingredients First. Nestlé's GLP-1 strategy reframes food formulation around nutrient density. 20 Aug 2026.
+- **AIB-25.** CafeF. Ngành thức ăn nhẹ tại Việt Nam: Khi thương hiệu lắng nghe để phát triển. 21 Jul 2025.
+- **AIB-26.** Doanh nhân (Báo Pháp luật TP.HCM). ĐHĐCĐ Thế Giới Di Động (MWG) 2026: Mục tiêu lợi nhuận kỷ lục 9.200 tỷ, 'bạo chi' 3.000 tỷ trả cổ tức và tham vọng IPO Bách Hóa Xanh. 18 Apr 2026.
+- **AIB-27.** Pháp luật và Sức khỏe (Sức khỏe & Đời sống). Công thức để Chủ tịch Nguyễn Đức Tài 'nhân bản' chuỗi Bách Hóa Xanh: Đổi từ chợ hiện đại sang siêu thị mini; tăng rau, thịt cá có thương hiệu. 24 Aug 2024.
+- **AIB-28.** Thanh Niên. Saigon Co.op thêm giá trị cho giỏ hàng Việt từ hàng nhãn riêng. 25 Sep 2026.
+- **AIB-29.** Sài Gòn Giải Phóng. Hàng nhãn riêng Co.op hút khách nhờ tối ưu chi phí. 11 Sep 2026.
+- **AIB-31.** Inside Retail Asia. Central Retail bets big on Vietnam with 30 new stores planned. 6 Mar 2026.
+- **AIB-33.** VietnamPlus. Aeon mở rộng mạnh mẽ tại Việt Nam đến năm 2030. 7 Jul 2026.
+- **AIB-34.** VCCI. LOTTE Mart chuyển hướng chiến lược, nhắm tới các đô thị công nghiệp Việt Nam. 22 Aug 2026.
+- **AIB-35.** Saigon Times, republished by Tuổi Trẻ. Suất ăn công nghiệp: Thị trường 'nhạy cảm' tại Việt Nam. 3 Dec 2024.
+- **AIB-42.** Giáo dục Việt Nam. Sở GD&ĐT TPHCM: Cơ sở giáo dục phải công khai hàng ngày thông tin liên quan suất ăn của học sinh. 18 Sep 2026.
+- **AIS-01.** FoodNavigator. Alternative protein funding diverges as investors prioritize scale and bankability. 18 Feb 2026.
+- **AIS-04.** AgFunderNews. Data snapshot: APAC alt protein investment trends, transitioning from CPG to picks and shovels. 16 Nov 2023.
+- **AIS-09.** Green Queen. Nurasa opens FTIC future food and alt-protein hub in Singapore. 3 May 2024, updated 30 Jul 2025.
+- **AIS-12.** AgFunderNews. Better Bite Ventures navigates evolving alt protein landscape (video interview). 15 Nov 2023.
+- **AIS-13.** AgFunderNews. Asia became the 'world's factory' for manufacturing. It'll do the same for alt-protein, says Better Bite VC. 24 Feb 2022.
+- **AIS-16.** VIR. VinaCapital Ventures invests in South Korea's INNOHAS. 2 Jul 2024.
+- **AIS-17.** Doanh nhan va Phap luat. VinaCapital tham gia van hanh Quy Dau tu mao hiem TP. HCM (VinaCapital to operate the Ho Chi Minh City venture fund). 20 Apr 2026.
+- **AIS-18.** Thanh Nien. Quy dau tu mao hiem TP.HCM tiep nhan 50 de xuat, giai ngan tu quy 4/2026 (HCMC venture fund receives 50 proposals, disburses from Q4 2026). 25 Aug 2026.
+- **AIS-21.** The Fish Site. Insect meal: can the sector still deliver on its 2030 promise? 18 Dec 2025.
+- **AIS-23.** SeafoodSource. Thai Union unveils plan to double earnings by 2030. 13 Nov 2024.
+- **AIS-27.** Asia Business Daily. CJ CheilJedang partners with Vietnam's top retail network to target consumers with 'CJ Zone'. 27 Apr 2026.
+- **AIS-29.** AgFunderNews. From record Series A to market reset: where TiNDLE Foods, and plant-based meat, go next. 16 Jul 2025.
+- **AIS-30.** Protein Production Technology International. Green Rebel Foods secured US$12.5 million as Indonesia's first plant-based meat startup scaled regionally. 6 Feb 2026.
+- **AIS-31.** DealStreetAsia. Indonesia's Green Rebel Foods bags $10.5m from existing backers. 21 Jan 2026.
+- **AIS-34.** Protein Production Technology International. Singapore cell-cultivated seafood firm Avant Proteins winds up local operations. Feb 2026.
+- **AIS-35.** PetfoodIndustry. Umami Bioworks, Friends & Family Pet Food launch cultivated seafood for pets. 3 Sep 2025.
+- **AIS-36.** SeafoodSource. Umami Bioworks launches marine-based skincare partnership; Bayou Best Foods expands in US. 23 Jan 2026.
+- **AIS-37.** Green Queen. Australia's Vow appoints new CEO amid expansion beyond cultivated meat. 23 Jun 2026.
+- **AIS-40.** Bao Cong Thuong. Startup: Thich ung de ton tai (Startups: adapt to survive). 21 Feb 2022.
+- **AIS-41.** Dien dan Doanh nghiep. Startup 'thit thuc vat' duoc dau tu 4 ty cho 49% co phan (Plant-meat startup gets VND 4 billion for 49%). 18 Jun 2021.
+- **AIS-44.** Sayson, I. Philippines' top noodle maker downsizes loss-making alternative meats business. Forbes, 25 Nov 2024.
+- **AIS-45.** AgFunderNews. Beyond Meat to lay off 6% of its workforce and suspend operations in China. 26 Feb 2025.
+- **AIS-46.** AgFunderNews. Singapore-based startup Meatiply raises $3.75m to expand cultivated meat, functional ingredients platform. 6 Dec 2023.
+- **AIS-47.** AgFunderNews. Funding dip for alt protein fermentation signals shift from promise to proof, say GFI. Apr 2026.
+- **AIS-48.** Manila Bulletin. Monde Nissin profits dip in 2025 but show signs of recovery. 26 Mar 2026.
+- **APR-07.** Dan Tri. Chu tich Quoc hoi: Sua luat, thuc pham den tay nguoi dan co an toan khong? 24 Sep 2026.
+- **APR-08.** VnExpress. Giao do an truc tuyen se phai dap ung dieu kien an toan. 24 Sep 2026.
+- **APR-12.** Suc khoe va Doi song. Thu tuong phe duyet Chuong trinh Suc khoe hoc duong giai doan 2026-2035 (Quyet dinh 973/QD-TTg ngay 1/6/2026). Jun 2026.
+- **APR-13.** Suc khoe va Doi song. Chuan hoa dinh duong hoc duong toan quoc. 16 May 2026.
+- **APR-19.** Tuoi Tre. Danh thue tieu thu dac biet voi nuoc giai khat co duong, xang, dieu hoa cong suat tu 24.000 BTU. 14 Jun 2025.
+- **APR-25.** Viet Nam News. Viet Nam promotes green, low-emission food system through innovation, cooperation. 9 Jan 2026.
+- **APR-31.** Devex. How ADB plans to invest $40B in food systems by 2030. 7 May 2025.
+- **APR-42.** Tuoi Tre. Dua kien thuc dinh duong khoa hoc den gan hon voi cong dong. 10 Sep 2026.
+- **APR-43.** Thanh Nien. Truoc them luat phong benh 2026: Dinh duong thuc vat gop phan song khoe chu dong. 20 Jun 2026 (labelled 'Thong tin dich vu', sponsored).
+- **APR-45.** Thanh Nien Viet. Tao luong xanh thao go vuong mac ban tru, siet an toan thuc pham hoc duong. 24 Sep 2026.
+- **BRD-08.** Green Queen. Search listing for Karana (6 items, Oct 2019 to Apr 2023) and article: Karana announces global expansion for sustainable jackfruit meat, 18 Apr 2023 (updated 4 Jun 2025).
+- **BRD-09.** Green Queen. Search listing for Float Foods (7 items, Nov 2020 to Jan 2023).
+- **BRD-10.** Green Queen. Malaysia's Phuture embarks on ambitious expansion by leveraging chicken supply disruption. 20 Jun 2022; plus search listing (3 items, 2019 to 2022).
+- **BRD-11.** Green Queen. Search listing for Growthwell (items 2020 to 2023).
+- **BRD-12.** Green Queen. Search listing for Sophie's Bionutrients (5 items, Apr 2021 to Sep 2022).
+- **BRD-13.** Green Queen. Search listing for Next Meats (5 items, Apr 2021 to Jun 2022).
+- **BRD-14.** Green Queen. Search listing for TiNDLE launches: Singapore's Next Gen launches Tindle plant-based chicken at restaurants islandwide (18 Mar 2021); Hong Kong (23 Jun 2021); UK (20 Apr 2022).
+- **BRD-15.** vegconomist. Search listing for OmniFoods (2023 to 2024); and Green Queen, OMNI unveils lion's mane mushroom steak and dessert baos at Expo West, 12 Mar 2024.
+- **BRD-16.** Green Queen. Search listing for Meatiply (2 items: Oct 2022; 6 Dec 2023 USD 3.75 million seed).
+- **BRD-17.** Green Queen. Search listing for Eat Just and GOOD Meat (May 2021 USD 170 million raise; Dec 2021; Mar 2023 FDA clearance).
+- **BRD-18.** VnExpress. Site search for VMEAT, 25 Sep 2026.
+- **TRU-01.** VietNamNet (reprinted from Tuoi tre & Doi song). Do chay gia man doc hai tran ve tu Dai Loan. 9 February 2015.
+- **TRU-03.** Lao Dong (L.V.). Gio cha 'tu cung' de doi pho gia thit lon qua cao. 18 December 2019.
+- **TRU-04.** VnExpress (Hong Chau, Thanh Thu). Tran lan do chay khong nhan mac. About 2 September 2020.
+- **TRU-05.** VnExpress (Thuy Quynh). Hai thuc pham hay tron han the can canh giac. 24 November 2024.
+- **TRU-06.** Dan Tri. Vu gio cha chua han the o Ha Noi: Cua hang van mo cua, co khach mua. 20 January 2026.
+- **TRU-08.** Dan Tri. Cha bong don... bot mi, hoa chat. 21 October 2015.
+- **TRU-09.** Dan Tri. Hai vo chong 'ho bien' thit heo thanh bo vien. 29 April 2018.
+- **TRU-10.** Dan Tri (Bao Anh). Thit lon lam tu dau nanh, vao nha hang coi chung dinh 'cu lua'. 12 May 2020.
+- **TRU-11.** Dan Tri. Thit nhan tao khong the thay duoc 'thit that' o Viet Nam. 12 May 2020.
+- **TRU-12.** Dan Tri (Ban doc). 'Hoa phep' thit bo gia tai TPHCM: Khong co thit bo nao gia 118.000 dong/kg. 25 December 2025.
+- **TRU-13.** Dan Tri. An thit 'gia' co lam tang nguy co dot quy? 10 July 2024.
+- **TRU-14.** Dan Tri. Dong Nai kiem tra cac co so san xuat, kinh doanh thuc pham chay. 31 August 2020.
+- **TRU-15.** Dan Tri. Canh bao nguy hai tu phu gia trong thuc pham chay gia man. 6 September 2020.
+- **TRU-16.** Dan Tri. Phat hien hon 6.500 kg cha don chay su dung han the. 26 January 2022.
+- **TRU-17.** Dan Tri. Bat mot co so san xuat thuc pham chay su dung chat cam. 5 February 2020.
+- **TRU-18.** Dan Tri. An Giang: Bat giu 3 tan cha don chay khong dam bao an toan thuc pham. 22 April 2021.
+- **TRU-19.** Dan Tri (Dien dan). 'Nhat chem' cua Vinastas vao nganh nghe nuoc mam truyen thong. 23 October 2016.
+- **TRU-20.** Dan Tri. Hang loat duong day thuc pham ban quy mo lon bi phanh phui. 1 April 2026.
+- **TRU-21.** Dan Tri. Vu suat an toan 'top mo': Phu huynh loay hoay di kiem nghiem mau thuc an. 24 September 2026.
+- **TRU-23.** Dan Tri (sponsored, Vinasoy with the National Institute of Nutrition). Can bang luong dam thuc vat trong che do an giup giam benh man tinh khong lay. 9 August 2023.
+- **UPL-20.** Báo Gia Lai. Hỗ trợ tiền ăn 936 ngàn đồng/tháng cho học sinh bán trú (Nghị định 66/2025/NĐ-CP). 17 Mar 2025.
+- **UPL-22.** Báo Nông nghiệp và Môi trường. Gần 420.000 học sinh biên giới sắp có bữa trưa miễn phí. 9 Sep 2025.
+- **UPL-23.** Dân trí. Những bữa cơm bán trú 17.000 đồng của học sinh vùng cao. 16 Oct 2025.
+- **UPL-24.** Người Lao Động (via Tuổi Trẻ). Vụ bữa ăn bán trú của học sinh bị cắt xén: Bắt một cựu hiệu trưởng. 23 Oct 2024.
+- **UPL-25.** VnExpress. Cải thiện bữa ăn cho hàng trăm học sinh vùng cao. 26 Sep 2025.
+- **UPL-34.** Công đoàn Việt Nam. Chăm lo từ bữa ăn ca để xây dựng quan hệ lao động hài hòa. 18 Jun 2026.
+- **UPL-35.** Lao động và Đoàn thể. Xây dựng, phát hành các thực đơn mẫu về bữa ăn ca cho NLĐ. 23 Sep 2022.
+- **UPL-36.** Cuộc sống an toàn (Lao động và Đoàn thể). Nguyên tắc xây dựng thực đơn và tiêu chí của bữa ăn ca. Undated.
+
+### other (80)
+
+- **AFN-02.** Coefficient Giving. Farm Animal Welfare fund page. Accessed 25 September 2026.
+- **AFN-03.** Coefficient Giving. Alternatives to Animal Products (focus area page). Accessed 25 September 2026.
+- **AFN-04.** Conrad, C. (Nova Vista Foundation). $10M RFP for Alt Protein Policy and Market-Shaping. EA Forum, 7 August 2026. Read through the ea.greaterwrong.com mirror because the forum returned HTTP 403.
+- **AFN-05.** Nova Vista Foundation. RFP: Protein Innovation (published Google Doc, linked from AFN-04). Accessed 25 September 2026.
+- **AFN-06.** The Navigation Fund. Farm animal welfare grants page. Accessed 25 September 2026.
+- **AFN-07.** Winslow, J. (Humane and Sustainable Food Lab, Stanford). Research report: modern alternative proteins did not replace meat purchases in restaurants. EA Forum, 26 August 2026 (read through ea.greaterwrong.com mirror).
+- **AFN-15.** Bezos Earth Fund. Bezos Centre for Sustainable Protein opens at the National University of Singapore. 5 September 2024.
+- **AFN-16.** National University of Singapore, Bezos Centre for Sustainable Protein. Research areas page. Accessed 25 September 2026.
+- **AFN-31.** Founders Pledge. Climate Fund impact page. Accessed 25 September 2026.
+- **AFN-32.** The Rockefeller Foundation. School Meals initiative page. Accessed 25 September 2026.
+- **AFN-48.** ProVeg Incubator. Home page. Accessed 25 September 2026.
+- **AFN-49.** GAIN (Global Alliance for Improved Nutrition). Workforce Nutrition programme page. Accessed 25 September 2026.
+- **AIB-45.** Pháp luật Quân sự. Thông tư số 96/2025/TT-BQP quy định tiêu chuẩn, định lượng ăn và mức tiền ăn cơ bản bộ binh. Aug 2025.
+- **APR-23.** CGIAR Initiative on Sustainable Healthy Diets (SHiFT). Where food systems transformation in Viet Nam stands today: report back from SHiFT stocktaking session. 31 Jan 2025.
+- **APR-24.** CGIAR Better Diets and Nutrition (BDN). BDN's contribution to the 2026 Asia-Pacific Food Systems Progress Review. 2026.
+- **APR-30.** ILRI. Viet Nam outlines food safety priorities for 2026 to 2030 under One Health framework. 12 Dec 2025.
+- **APR-37.** GAIN. Workforce Nutrition programme page and Countries page. Accessed 25 Sep 2026.
+- **APR-38.** School Meals Coalition. Members page. Accessed 25 Sep 2026.
+- **APR-39.** School Meals Coalition. Southeast Asia School Meals Coalition Summit, Siem Reap, 18 to 20 Nov 2024.
+- **APR-40.** World Food Programme. Country page for Viet Nam (https://www.wfp.org/countries/viet-nam) returned 'Page not found' on 25 Sep 2026.
+- **BRD-01.** Global Diet Quality Project. Diet Quality Questionnaire (DQQ) Viet Nam, English and Vietnamese versions v2, adapted 2021. PDF files in the country resource folder linked from dietquality.org/countries/vnm.
+- **BRD-02.** Global Diet Quality Project. Diet Quality Questionnaire (DQQ) Food Group Classification Guide. Undated PDF.
+- **BRD-03.** Gallup and Global Diet Quality Project. Country Data Set Details DQQ, data collected 2021 to 2024. PDF, 8 pages.
+- **BRD-07.** lunardate 0.3.0, Python package for Chinese lunisolar calendar conversion (PyPI). Used for the Gregorian dates of lunar 1/1 (Tet) and lunar 7/15 (Vu Lan), 2019 to 2026.
+- **BRD-19.** Company website checks, 25 Sep 2026: floatfoods.com (live, footer dated 2021), meatiply.com (live, undated), goodmeat.co (live), innohas.com, tindle.com, growthwellfoods.com, greenrebelfoods.com, umamibioworks.com, eatvow.com, ongtempeh.com, kashewcheese.com (live); omnifoods.co, greenmonday.org, karanafoods.com, vmeat.vn, isitmeat.com, phuturefoods.com and emmay.vn did not respond through our proxy.
+- **ECR-11.** Shopee Vietnam. Nut-milk category page and robots.txt. Accessed 25 September 2026.
+- **ECR-12.** Lazada Vietnam. Catalogue search (q=sua hat) and brand store page. Accessed 25 September 2026.
+- **ECR-13.** Tiki. Search (q=sua hat), Bach hoa online category (c4384) and home page. Accessed 25 September 2026.
+- **ECR-14.** TikTok Shop Vietnam. Shop landing page. Accessed 25 September 2026.
+- **ECR-15.** Sendo. Home page. Accessed 25 September 2026.
+- **FBA-01.** Aquaculture Stewardship Council. ASC Feed Standard, version 1.2 (ASC-STD-002). Released 19 December 2025, effective 2 February 2026.
+- **FBA-02.** Aquaculture Stewardship Council. ASC Farm Standard programme page (v1.0.1A2). Accessed 25 September 2026.
+- **FBA-03.** Aquaculture Stewardship Council. ASC Farm Standard v1.0.1A2, standard text web page, criterion 1.4. Accessed 25 September 2026.
+- **FBA-05.** Global Seafood Alliance. BAP Feed Mill Standard, Issue 3.3, with Amendment 1 effective 5 August 2026.
+- **FBA-06.** GLOBALG.A.P. Compound Feed Manufacturing (CFM) solution page. Accessed 25 September 2026.
+- **FUF-08.** Bongiovanni, R., Tuninetti, L., Cavagnaro, M.R. and others (2026). Life Cycle Assessment and Carbon Footprint of Feed-Grade Soy Protein Concentrate for Environmentally Improved Animal Nutrition. Preprints.org, April 2026.
+- **HXE-13.** Nguyen Thi Cha, Ho Phu Ha, Nguyen Tien Thanh (2025). Study on the application of nanochitin for salt reduction in Vietnamese pork paste (Gio Lua). International Journal of Innovative Science and Research Technology.
+- **MKT-01.** Shopee Vietnam. Search page (keyword sữa hạt) and a Vinamilk Cao Dam product page, opened in a logged-out desktop browser tab; Shopee Mall landing page. Accessed 25 September 2026.
+- **MKT-02.** TikTok Shop Vietnam. Shop landing page in a logged-out desktop browser tab. Accessed 25 September 2026.
+- **MKT-07.** Google Search. Results page for site:shopee.vn sữa hạt cao đạm Vinamilk, in the browser. Accessed 25 September 2026.
+- **MKT-08.** Bing. Results page for the same site-restricted query. Accessed 25 September 2026.
+- **ORG-16.** IFS Management GmbH. IFS home page and certificate database entry point. Accessed 25 Sep 2026.
+- **PMR-10.** Trường Tiểu học Nguyễn Bỉnh Khiêm (TP.HCM). Thực đơn bán trú tuần 2, 3, 4 năm học 2026-2027.
+- **PMR-11.** Trường Tiểu học Trần Hưng Đạo (TP.HCM). Thực đơn tuần 02 và tuần 03 năm học 2026-2027.
+- **PMR-12.** Trường Tiểu học Phú Lâm (TP.HCM). Thực đơn tuần 2 và tuần 3 (14 to 25 Sep 2026).
+- **PMR-13.** Trường Tiểu học Chu Văn An (TP.HCM). Thực đơn tuần 2 và tuần 3 (14 to 25 Sep 2026).
+- **PMR-14.** Trường Tiểu học Hòa Bình (TP.HCM). Thực đơn tuần 1 và tuần 2 năm học 2026-2027.
+- **PMR-15.** Trường Tiểu học An Phú Tây (TP.HCM). Thực đơn bán trú tuần từ 21/09/2026 đến 25/09/2026.
+- **PMR-16.** Trường Tiểu học Võ Thị Sáu (TP.HCM). Thực đơn tuần 14 to 18 Sep and 21 Sep to 2 Oct 2026.
+- **PMR-17.** Trường Tiểu học Lương Thế Vinh (TP.HCM). Thực đơn bán trú tuần 02 và 03 (14 to 25 Sep 2026).
+- **PMR-19.** Trường Tiểu học Lý Tự Trọng (TP.HCM). Thực đơn bán trú 14 to 25 Sep 2026.
+- **PMR-20.** Trường Tiểu học Nguyễn Khuyến (TP.HCM). Thực đơn tuần 2 và tuần 3 năm học 2026-2027 (xlsx).
+- **PMR-21.** Trường Tiểu học Trần Văn Ơn (TP.HCM). Thực đơn bán trú tuần 02 và 03 (14 to 25 Sep 2026).
+- **PMR-22.** Trường Tiểu học Long Biên (Hà Nội). Thực đơn và định lượng suất ăn bán trú tuần 2 và tuần 3 năm học 2026-2027.
+- **PMR-25.** Trường Tiểu học Quang Trung (Hà Nội). Thực đơn bán trú tuần 2 và tuần 3 tháng 5/2026.
+- **PMR-26.** Trường Tiểu học Nguyễn Trãi (Hà Nội) with Công ty CP thực phẩm Ngôi Sao Xanh. Thực đơn bán trú and Thông tin dinh dưỡng của thực đơn, March to May 2026.
+- **PMR-27.** Trường Tiểu học Mỹ Đình 2 (Hà Nội). Thực đơn bán trú tháng 4/2026 (caterer Quang Anh Chu).
+- **PMR-28.** Trường Tiểu học Nguyễn Văn Trỗi (Hải Phòng). Thực đơn bán trú tuần 2 và tuần 3 (14 to 25 Sep 2026).
+- **PMR-29.** Trường Tiểu học Nguyễn Du (Hải Phòng). Thực đơn tuần 04 tháng 9 năm 2026.
+- **PMR-30.** Trường Tiểu học Lê Văn Tám (Hải Phòng). Thực đơn ăn bán trú tuần 1 và tuần 3 tháng 9 năm 2026.
+- **PMR-31.** Trường Tiểu học Cát Bi (Hải Phòng). Thực đơn suất ăn học sinh tuần 2 và tuần 3 (14 to 25 Sep 2026).
+- **TIC-17.** Shanghai Shipping Exchange. SCFI current index data (JSON endpoint of the SCFI page), 24 Sep 2026. Accessed 25 Sep 2026.
+- **UPL-01.** Trường PTDT bán trú THCS Mường Nhé. Thực đơn ăn bán trú tuần 3 tháng 9/2026 (21 to 30 Sep 2026), with cost sheet. Posted 18 Sep 2026.
+- **UPL-02.** Trường PTDT bán trú THCS Mường Nhé. Thực đơn ăn bán trú tuần 1 and tuần 2 tháng 9/2026 (6 to 20 Sep 2026). Posted 6 and 12 Sep 2026.
+- **UPL-03.** Trường PTDT bán trú THCS Mường Nhé. Thực đơn ăn HS bán trú tuần 4 tháng 3/2026 (23 to 31 Mar 2026) and tuần 3 tháng 5/2026 (18 to 23 May 2026).
+- **UPL-04.** Trường PTDT bán trú THCS Mường Nhé. Thực đơn ăn trưa theo NĐ 339/2025 tuần 3 tháng 9/2026 (21 to 30 Sep 2026), with public cost sheet. Posted 18 Sep 2026.
+- **UPL-05.** Trường PTDTBT Tiểu học số 2 Na Tông. Thực đơn ăn bán trú tháng 3 năm học 2025 - 2026 (1 to 31 Mar 2026).
+- **UPL-06.** Trường PTDTBT Tiểu học Mường Anh. Thực đơn bán trú từ ngày 11-16 tháng 01 năm 2026.
+- **UPL-07.** Trường PTDTBT TH Leng Su Sìn. Bảng thực đơn tuần trong tháng của học sinh bán trú (255 HS), 20 to 30 Jan 2026, with cost sheet.
+- **UPL-08.** Trường PTDTBT TH Leng Su Sìn. Bảng thực đơn tuần của học sinh Dự án Nuôi em (143 em), 20 to 30 Jan 2026, with cost sheet.
+- **UPL-09.** Trường PTDTBT THCS Leng Su Sìn. Bảng thực đơn tuần 26 của học sinh bán trú (219 học sinh), 2 to 7 Mar 2026, with cost sheet.
+- **UPL-10.** Trường PTDTBT TH và THCS Sen Thượng. Thực đơn ăn tháng 01/2026 của học sinh bán trú (67 em), with cost sheet.
+- **UPL-11.** Trường PTDTBT TH&THCS Tả Ngảo. Thông báo công khai thực đơn, giá thành thực phẩm tuần 02 từ ngày 07/9/2026 đến 13/9/2026.
+- **UPL-12.** Trường PTDTBT Tiểu học Hồng Thu. Thực đơn nuôi ăn bán trú, 1 to 28 Feb 2026 (229 học sinh).
+- **UPL-13.** Trường PTDTBT THCS Nậm Hăn. Thực đơn bán trú tháng 04 năm 2026.
+- **UPL-14.** Trường PTDTBT Tiểu học và THCS Mường Do. Bảng thực đơn tuần 02 and tuần 03 tháng 04 năm 2026.
+- **UPL-15.** Trường Phổ thông Dân tộc Nội trú tỉnh Cao Bằng. Thực đơn phục vụ bếp ăn tập thể học sinh tuần 22 (12 to 18 Jan 2026) and tuần 24 (26 Jan to 1 Feb 2026).
+- **UPL-16.** Trường PTDTNT THPT Măng Đen. Thực đơn món ăn trong tuần (7 to 13 and 14 to 20 Sep 2026).
+- **UPL-17.** Trường Phổ thông DTNT THPT Nà Hỳ. Thực đơn ăn từ ngày 14/9 đến 20/9/2026 (khẩu phần ăn 27.500đ/bữa/học sinh).
+- **UPL-26.** Trường PTDTBT Tiểu học và THCS Long Môn. Thông báo nhu cầu hợp đồng cấp dưỡng và cung cấp thực phẩm năm học 2026-2027. 31 Jul 2026.
+
+### peer-reviewed (47)
+
+- **AFN-42.** Kim, S.-Y. and Kim, M. (2025). Nutritional quality evaluation of plant-based elementary school meals in Seoul. Nutrition Research and Practice 19(3): 453.
+- **APR-18.** Tee ES, Pedro MRA, Therakomen V, et al. Food-based dietary guidelines in Southeast Asian countries: a comparison and update. Malaysian Journal of Nutrition 2026; 32(2).
+- **APR-26.** Even B, Truong TTT, Thai HTM, Pham HTM, Nguyen DT, Bui ATV, Bene C. Unpacking food environment policy landscapes for healthier diets in emerging countries: the case of Viet Nam. Frontiers in Public Health 2025; 13.
+- **FUF-06.** Heller, M.C., Walchale, A., Heard, B.R., Hoey, L., Khoury, C.K., de Haan, S., Burra, D.D., Duong, T.T., Osiemo, J., Trinh, H.T. and Jones, A.D. (2020). Environmental analyses to inform transitions to sustainable diets in developing countries: case studies for Vietnam and Kenya. International Journal of Life Cycle Assessment 25(7): 1183 to 1196 (online 29 June 2019).
+- **FUF-09.** Le Dang Quynh Nhu, Le Thi Tuyet, Le Minh Quang and others (2025). Assessing the Carbon Footprint and Environmental Impacts of Pork Production: A Case Study in Binh Phuoc, Vietnam Using Life Cycle Assessment. IOP Conference Series: Earth and Environmental Science 1540: 012011.
+- **HXE-01.** Pham T.H., Nguyen V.V.T., Nguyen H.D., Nguyen T.T.H. (2021). Identifying the drivers of liking for texture attributes of Vietnamese sausage. Science and Technology Development Journal: Engineering and Technology 4(2).
+- **HXE-02.** Nguyen H.T., Tang M.N., Doan D.P., Le V.V.M. (2018). Substitution of peanut protein for soy protein as a non-meat binder in emulsion-type sausage production. Science and Technology Development Journal 20(K7), pp. 41 to 49.
+- **HXE-03.** Le M.H., Tran T.L., Tran T.N. (2024). Nghien cuu che bien gio lua su dung phu gia co nguon goc tu nhien va bo sung vi chat. Tap chi Dinh duong va Thuc pham 20(4).
+- **HXE-04.** Rentfrow G.K., Brewer M.S., Weingartner K.E., McKeith F.K. (2004). Sensory characteristics of beef and pork processed meats containing nonsolvent extracted texturized soy protein. Journal of Muscle Foods 15(4), pp. 225 to 234.
+- **HXE-05.** Moazzam M., Ali S.M., Khan M.A., et al. (2025). Impact of soy protein concentrate and storage on the safety, quality and shelf stability of beef patties. Food Science and Nutrition 14(1), e71327.
+- **HXE-06.** Li X., Qi X., Deng J.-C., et al. (2025). Characterization of Fusarium venenatum mycoprotein-based Harbin red sausages. Foods 14(4), 556.
+- **HXE-07.** Fu Q., Yang J., Lv L., Shen T., Peng Y., Zhang W. (2023). Effects of replacing chicken breast meat with Agaricus bisporus mushrooms on the qualities of emulsion-type sausages. LWT 184, 114983.
+- **HXE-08.** Yeung C.K., Huang S.C. (2017). Effects of food proteins on sensory and physico-chemical properties of emulsified pork meatballs. Journal of Food and Nutrition Research 6(1), pp. 8 to 12.
+- **HXE-09.** Baune M.-C., Broucke K., Ebert S., et al. (2023). Meat hybrids: an assessment of sensorial aspects, consumer acceptance, and nutritional properties. Frontiers in Nutrition 10, 1101479.
+- **HXE-12.** Grasso S., Jaworska S. (2020). Part meat and part plant: are hybrid meat products fad or future? Foods 9(12), 1888.
+- **NQR-05.** van den Berg LA, Mes JJ, Mensink M, et al. Protein quality of soy and the effect of processing: a quantitative review. Frontiers in Nutrition 2022; 9:1004754.
+- **NQR-06.** Oh J, Park N, Kim BG. Determination of digestible indispensable amino acid scores for plant proteins and skim milk powder measured in pigs. Animals 2025; 15(5):650.
+- **NQR-07.** Fanelli NS, Martins JCFR, Stein HH. Pork cuts, hams, and sausages have digestible indispensable amino acid scores (DIAAS) close to or over 100. JSFA Reports 2024; 4(9):326-335.
+- **NQR-08.** Fanelli NS, Martins JCFR, Stein HH. The digestible indispensable amino acid score (DIAAS) in eggs and egg-containing breakfast meals is greater than in toast breads or hash browns served without eggs. Journal of Nutritional Science 2024; 13.
+- **NQR-09.** Herrmann M, Mehner E, Egger L, et al. A comparative nutritional life cycle assessment of processed and unprocessed soy-based meat and milk alternatives including protein quality adjustment. Frontiers in Sustainable Food Systems 2024; 8:1413802.
+- **NQR-10.** Khamzaeva N, Hieronimus B, Kunz C, et al. Plant-based vs. pork sausages: protein nutritional quality and antioxidant potential in the bioaccessible fraction. Foods 2025; 14(24):4271.
+- **NQR-11.** Bailey HM, Stein HH. Can the digestible indispensable amino acid score methodology decrease protein malnutrition? Animal Frontiers 2019; 9(4):18.
+- **NQR-12.** Fanelli NS, Bailey HM, Thompson TW, Delmore R, Nair MN, Stein HH. Digestible indispensable amino acid score (DIAAS) is greater in animal-based burgers than in plant-based burgers if determined in pigs. European Journal of Nutrition 2022; 61(1):461-475.
+- **NQR-13.** Hernandez MS, Coyle K, Siebecker MG, et al. Nutritional profiling of plant-based meat alternatives and ground beef. Journal of Food Science 2024; 89(12):9230-9242.
+- **NQR-14.** Derbyshire EJ. Food-based dietary guidelines and protein quality definitions: time to move forward and encompass mycoprotein? Foods 2022; 11(5):647.
+- **NQR-15.** Mathai JK, Liu Y, Stein HH. Values for digestible indispensable amino acid scores (DIAAS) for some dairy and plant proteins may better describe protein quality than values calculated using the concept for protein digestibility-corrected amino acid scores (PDCAAS). British Journal of Nutrition 2017.
+- **NQR-16.** Hurrell RF. Influence of vegetable protein sources on trace element and mineral bioavailability. Journal of Nutrition 2003; 133(9):2973S-2977S.
+- **NQR-17.** Erdman JW. Oilseed phytates: nutritional implications. Journal of the American Oil Chemists Society 1979.
+- **NQR-18.** Raboy V, Dickinson DB. Effect of phosphorus and zinc nutrition on soybean seed phytic acid and zinc. Plant Physiology 1984; 75(4):1094.
+- **NQR-19.** Ishiguro T, Ono T, Nakasato K. The localization of phytate in tofu curd formation and effects of phytate on tofu texture. Journal of Food Science 2008.
+- **NQR-20.** Gibson RS, Raboy V, King JC. Implications of phytate in plant-based foods for iron and zinc bioavailability, setting dietary requirements, and formulating programs and policies. Nutrition Reviews 2018; 76(11):793-804.
+- **NQR-21.** Rosado JL. Zinc and copper: proposed fortification levels and recommended zinc compounds. Journal of Nutrition 2003; 133(9):2985S-2989S.
+- **NQR-22.** Nga TT, Winichagoon P, Dijkhuizen MA, Khan NC, Wasantwisut E, Furr H, Wieringa FT. Multi-micronutrient-fortified biscuits decreased prevalence of anemia and improved micronutrient status and effectiveness of deworming in rural Vietnamese school children. Journal of Nutrition 2009; 139(5):1013-1021.
+- **NQR-23.** Pinkaew S, Winichagoon P, Hurrell RF, Wegmuller R. Extruded rice grains fortified with zinc, iron, and vitamin A increase zinc status of Thai school children when incorporated into a school lunch program. Journal of Nutrition 2013; 143(3):362-368.
+- **NQR-24.** Winichagoon P, McKenzie JE, Chavasit V, et al. A multimicronutrient-fortified seasoning powder enhances the hemoglobin, zinc, and iodine status of primary school children in North East Thailand: a randomized controlled trial of efficacy. Journal of Nutrition 2006; 136(6):1617-1623.
+- **NQR-25.** Lien DTK, Nhung BT, Khan NC, Hop LT, Nga NTQ, Hung NT, Kiers JL, Yamamoto S, te Biesebeke R. Impact of milk consumption on performance and health of primary school children in rural Vietnam. 2009; 18(3):326-334. PMID 19786380.
+- **NQR-26.** Zhao R, Gan Q, Hu Z, et al. Changes in fitness of rural primary school students from southwest China after two-year's nutrition intervention. Nutrients 2021; 13(10):3544.
+- **NQR-27.** Murayama N, Magami M, Akter S, et al. A pilot school meal program using local foods with soybean in rural Bangladesh: effects on the nutritional status of children. Food and Nutrition Sciences 2018; 9(4):290-313.
+- **NQR-28.** Krebs NF, Mazariegos M, Chomba E, et al. Randomized controlled trial of meat compared with multimicronutrient-fortified cereal in infants and toddlers with high stunting rates in diverse settings. American Journal of Clinical Nutrition 2012; 96(4):840-847.
+- **NQR-29.** Tang M, Sheng X, Krebs NF, Hambidge KM. Meat as complementary food for older breastfed infants and toddlers: a randomized, controlled trial in rural China. Food and Nutrition Bulletin 2014; 35(4 Suppl 3):S188-S192.
+- **NQR-30.** Skau JKH, Touch B, Chamnan C, et al. Effects of animal source food and micronutrient fortification in complementary food products on body composition, iron status, and linear growth: a randomized trial in Cambodia. American Journal of Clinical Nutrition 2015; 101(4):742-751.
+- **NQR-31.** Manary M, Wegner D, Maleta K. Protein quality malnutrition. Frontiers in Nutrition 2024; 11:1428810.
+- **NQR-32.** Reynaud Y, Buffiere C, Cohade B, et al. True ileal amino acid digestibility and digestible indispensable amino acid scores (DIAASs) of plant-based protein foods. Food Chemistry 2021; 338:128020.
+- **TIC-20.** Onwulata, C. I., and McAloon, A. J. (2011). Cost estimates of twin-screw extruded products: texturized whey protein snacks and corn-soy blend used for emergency feeding. Journal of Food Processing and Preservation 35(5): 665-676.
+- **TIC-21.** Thuy, D. T., Khiem, C. T., Ngoc, H. B., Phuong, P. L. D., Thiep, V. V., and Nguyet, N. T. M. (2026). Enhancing structural and sensory properties of HMMA using Thai jackfruit fiber: a sustainable by-product application. Journal of Food Measurement and Characterization 20(5): 8785-8797.
+- **UPL-18.** Trương Thị Thùy Dương, Trần Thị Hồng Vân, Trần Thị Huyền Trang, Nguyễn Thị Thanh Tâm (2021). Khẩu phần ăn của học sinh dân tộc thiểu số tại hai trường phổ thông dân tộc nội trú trung học cơ sở tỉnh Yên Bái. Tạp chí Y học Việt Nam 504(2): 178 to 182.
+- **UPL-19.** Truong Thi Thuy Duong, Tran Thi Hong Van, Tran Thi Huyen Trang, Nguyen Thi Thanh Tam (2021). The dietary intake of ethnic minority students at two ethnic boarding junior secondary schools in Thai Nguyen province. Tạp chí Y học Cộng đồng 62(6).
+
+### database (42)
+
+- **AFN-21.** FAIRR Initiative. Coller FAIRR Protein Producer Index: Vietnam Dairy Products JSC (2024 assessment). Accessed 25 September 2026.
+- **AFN-44.** Thu Vien Phap Luat. Chuong trinh Suc khoe hoc duong giai doan 2026-2035 theo Quyet dinh 973/QD-TTg (School Health Programme 2026 to 2035 under Decision 973/QĐ-TTg of 1 June 2026). Accessed 25 September 2026.
+- **APR-36.** Global Diet Quality Project (GAIN, Harvard, Gallup). Viet Nam: Diet Quality Questionnaire indicators, data collected 13 Dec 2021 to 12 Jan 2022. DQQ Results Dataset 2021-2024, Harvard Dataverse.
+- **BRD-04.** Global Diet Quality Project. Viet Nam indicator data file (dqq-vnm-data.csv) and Viet Nam country page. Accessed 25 Sep 2026.
+- **BRD-05.** UN Comtrade Database, public API (comtradeapi.un.org/public/v1/preview/C/M/HS), monthly exports reported by China (reporter 156) to Viet Nam (704), World (0) and Thailand (764), HS 350400, 210610, 110900 and 230990, January 2019 to December 2024. Queried 25 Sep 2026.
+- **BRD-06.** UN Comtrade Database, public API, monthly imports reported by Viet Nam (reporter 704) from World (0) and China (156), HS 350400, 210610, 110900 and 230990, January 2019 to December 2023. Queried 25 Sep 2026.
+- **FBA-04.** Aquaculture Stewardship Council. Find a Feed Mill register, all records, queried through the site search (collection v_Find_FeedMill) on 25 September 2026.
+- **FBA-17.** UN Comtrade public API. Partner-reported exports to Viet Nam of HS 210220 (inactive yeasts; other dead single-cell micro-organisms), annual 2019 to 2025, all modes, by reporter. Queried 25 September 2026.
+- **FBA-18.** UN Comtrade public API. Viet Nam-reported imports of HS 2102 (210210, 210220, 210230), annual 2019 to 2023, and 210220 by partner 2023. Queried 25 September 2026.
+- **FBA-19.** UN Comtrade public API. Partner-reported imports from Viet Nam of HS 210220, 2024 and 2025. Queried 25 September 2026.
+- **FBA-20.** UN Comtrade public API. Partner-reported exports to Viet Nam of HS 230120 (fishmeal), annual 2024 and 2025 and monthly January to August 2026. Queried 25 September 2026.
+- **FBA-22.** OpenAlex. Query: works 2019 to 2026 with a Viet Nam-affiliated author whose title or abstract combines shrimp, whiteleg shrimp, pangasius or striped catfish with single-cell protein, yeast, yeast culture, bacterial meal, microbial protein or beta-glucan. Run 25 September 2026.
+- **FTR-13.** Thư Viện Pháp Luật official-letter (Công văn) searches for "sữa đậu nành" and "nước giải khát hàm lượng đường", run 25 Sep 2026.
+- **FTR-32.** Ministry of Industry and Trade. Vietnam National Trade Repository (VNTR), tariff information and FTA schedules by HS code (search pages and api/v1/commodity/tariff), queried 25 Sep 2026 for 07133190, 11090000, 12081000, 21022010, 21022090, 21021000, 21061000, 21069019, 21069099, 22029920, 22029950, 22029990, 23040010, 23040090, 35040000.
+- **FTR-38.** UN Comtrade public API: Viet Nam-reported imports from China (CIF) and China-reported exports to Viet Nam (FOB), HS 110900, 210610, 350400, 2023. Queried 25 Sep 2026.
+- **FUF-03.** FAO. FAOSTAT Crops and livestock products (QCL), bulk file Production_Crops_Livestock_E_Asia (file dated 23 December 2025). Viet Nam rows for meat of pig, chickens, ducks, cattle, buffalo and goat, 2022 to 2024.
+- **FUF-07.** Our World in Data. Greenhouse gas emissions per 100 grams of protein (dataset from Poore, J. and Nemecek, T. (2018). Reducing food's environmental impacts through producers and consumers. Science 360(6392): 987 to 992; erratum 2019). Data downloaded 25 September 2026.
+- **FUF-10.** FAO. FAOSTAT Emissions intensities (EI), bulk file Environment_Emissions_intensities_E_Asia. Viet Nam rows, 2021 to 2023.
+- **LBL-09.** Thư Viện Pháp Luật exact-phrase searches, run 25 Sep 2026, for "bắt buộc phải ghi định lượng", "được sử dụng làm tên hay một phần của tên hàng hóa", "không được làm hiểu sai lệch về bản chất" and "biến đổi gen bên cạnh tên".
+- **LBL-21.** Thư Viện Pháp Luật searches run 25 Sep 2026: legal texts for "thịt nuôi cấy", "thịt thực vật", "protein thay thế", "thực phẩm chay"; standards (type 39) for "thịt nuôi cấy", "sữa hạt", "sử dụng thuật ngữ về sữa", "thịt chế biến", "thịt hộp"; legal texts for QCVN on processed meat and for 2025 to 2026 label decrees.
+- **LBL-24.** Báo Chính phủ site search for "thực phẩm chay" and "đồ chay", run 25 Sep 2026.
+- **LBL-26.** OpenAlex OQL query, run 25 Sep 2026: works where title/abstract has ((vegetarian or chay or vegan) and (DNA or PCR or adulteration or mislabel*) and (Vietnam or Viet Nam or Vietnamese)).
+- **ORG-08.** World Bank. World Integrated Trade Solution (WITS) TRAINS API, reported MFN applied tariffs, HS 190220, 190230, 190590, 210610, 210690, 200490, 160249, reporters Japan, Korea, Canada, Australia, United Kingdom, Viet Nam, year 2023. Accessed 25 Sep 2026.
+- **ORG-12.** Open Food Facts. Product records (API v2) 00885584 (Marks and Spencer prawn and mangetout gyoza), 7613269260028 and 7613269260035 (Migros Anna's Best dim sum), 9349673004030 (Mr Chen's gluten free vegetable gyoza), and search-service queries for Viet Nam origin or GS1 prefix 893 with dumpling, gyoza, wonton and spring roll terms. Accessed 25 Sep 2026.
+- **TIC-12.** UN Comtrade Database, public API preview. China-reported exports to Vietnam (reporter 156, partner 704, flow X, motCode 0, customsCode C00), HS 120810, 230400, 210610, 110900, 350400, annual 2023, 2024, 2025. Queried by AltProtein Vietnam 25 Sep 2026.
+- **TIC-13.** UN Comtrade Database, public API preview. Exports to World of HS 120810 (soya bean flour and meal) reported by Argentina, Brazil, China, Netherlands, India and the United States, 2024 and 2025. Queried 25 Sep 2026.
+- **TIC-14.** UN Comtrade Database, public API preview. China-reported exports of HS 210610 and 110900 to World, Vietnam, Thailand, Malaysia, Indonesia, Philippines, Korea, Japan and the United States, 2025. Queried 25 Sep 2026.
+- **TIC-15.** UN Comtrade Database, public API preview. Partner-reported exports to Vietnam (partner 704, all reporters) of HS 120810 and 230400, 2024 and 2025. Queried 25 Sep 2026.
+- **TIC-16.** UN Comtrade Database, public API preview. Vietnam-reported imports by partner (reporter 704, flow M) of HS 120810, 230400, 210610 and 110900, 2023; no Vietnam report for 2024 or 2025. Queried 25 Sep 2026.
+- **TIC-19.** Thu Vien Phap Luat. Internal search results for protein dau nanh, dam thuc vat and textured, 25 Sep 2026.
+- **TRU-07.** Dan Tri site search for 'giò chả hàn the', run 25 September 2026.
+- **TRU-22.** Dan Tri site searches run 25 September 2026 (first result page read for each).
+- **TRU-27.** Google web search result snippets (browser), run 25 September 2026: seller claims about fillers. Queries: 'giò độn bột'; '"giò lụa" "độn bột"'; '"độn đạm đậu nành"'; '"xúc xích" "độn" đậu nành bột'.
+- **TRU-28.** Google web search result snippets (browser), run 25 September 2026: additive and soy-protein supplier pages.
+- **TRU-29.** Google web and news search result snippets (browser), run 25 September 2026: advice and warning pages on choosing giò chả and chay.
+- **TRU-30.** Google web search result snippets (browser), run 25 September 2026: social-media posts on meat in chay.
+- **TRU-31.** Google News result snippets (browser), run 25 September 2026: processed-meat and chay enforcement stories.
+- **XBA-26.** Open Food Facts. Product records (API v2): 00398572 (Plant Pioneers battered fishless fillets, Sainsbury's); 10500016965473600129 (Menyū katsu curry vegetable steamed buns, Waitrose); 0877971001752 (Royal Asia vegetable spring rolls with edamame, Costco); 8936093330798 (An Nhien vegan roasted pork); and An Nhien, Au Lac and Mr Chen's records with Vietnamese GS1 prefixes. Accessed 25 Sep 2026.
+- **XBA-27.** Open Food Facts search service (search-a-licious), queries code:893* (4,514 records; 3,878 with 13-digit codes) and origins_tags:"en:vietnam" (640 records; 49 with vegan or vegetarian labels). Accessed 25 Sep 2026.
+- **XBA-28.** United Nations Statistics Division. UN Comtrade public preview API: partner-reported imports, 2024 and 2025, reporters Japan (392), Korea (410), UK (826), Germany (276), Netherlands (528), France (251), US (842), Australia (36), EU27 extra (97); partners Vietnam (704), Thailand (764), China (156); HS 190220, 210610, 210690, 350400; customs code C00, mode 0. Accessed 25 Sep 2026.
+- **XBA-29.** United Nations Statistics Division. UN Comtrade public preview API: Vietnam (704) exports of HS 190220 by partner, 2023. Accessed 25 Sep 2026.
+- **XBA-35.** BRCGS. BRCGS Directory (public directory of certified sites), web application. Accessed 25 Sep 2026.
+
+### advocacy (36)
+
+- **AFN-08.** The Good Food Institute. Alternative protein research grants 2026 (Research Grant Program page). Accessed 25 September 2026.
+- **AFN-10.** The Good Food Institute. State of the Industry: plant-based meat, seafood, eggs, dairy and ingredients (resource page). Updated 5 May 2026.
+- **AFN-11.** GFI APAC. GFI APAC's 2025 Report Card + 6 Things to Watch in 2026. January 2026.
+- **AFN-12.** GFI APAC. Team page. Accessed 25 September 2026.
+- **AFN-13.** GFI APAC. Temasek-backed firm upgrades Singapore's conventional meat with plant proteins. 4 September 2025.
+- **AFN-18.** Asia Research and Engagement. The Asia Protein Buyers 100 (APB 100) Report 2026 (web page, infographic and full report PDF). 19 February 2026.
+- **AFN-19.** Asia Research and Engagement. Asia Protein Transition Platform page. Accessed 25 September 2026.
+- **AFN-20.** FAIRR Initiative. Protein Diversification engagement: overview. Accessed 25 September 2026.
+- **AFN-22.** Humane World for Animals. Viet Nam programme page. Accessed 25 September 2026.
+- **AFN-23.** Block, K. and Amundson, S. Giving thanks for progress for farmed animals all over the world. Humane World for Animals blog, 26 November 2025.
+- **AFN-24.** Humane World for Animals. How Forward Food is shifting menus toward plants. 27 March 2026.
+- **AFN-25.** Animal Charity Evaluators. Recommended charities (2025 list). Accessed 25 September 2026.
+- **AFN-26.** Animal Charity Evaluators. Sinergia Animal charity review (2025).
+- **AFN-27.** Animal Charity Evaluators. Good Food Fund charity review (2025).
+- **AFN-28.** Animal Charity Evaluators. Announcing our latest Movement Grants disbursement. July 2025.
+- **AFN-29.** Animal Alliance Asia. ReRoot Asia Fund page (2026 round). Accessed 25 September 2026.
+- **AFN-30.** Giving Green. Top climate change nonprofit recommendations (2025 to 2026). Accessed 25 September 2026.
+- **AFN-34.** WWF. Planet-Based Diets Retailer Methodology. November 2025 (PDF created 6 November 2025).
+- **AFN-35.** WWF-Viet Nam. Home page. Accessed 25 September 2026.
+- **AFN-36.** Dharma Voices for Animals. Vietnam Project page. Accessed 25 September 2026.
+- **AFN-37.** Vietnam Animal Welfare Watch. Home page. Accessed 25 September 2026.
+- **AFN-50.** GFI APAC. Food policy page. Accessed 25 September 2026.
+- **AIS-05.** Huling, R. Korea overtakes Singapore as APAC's cultivated meat startup epicentre, plus four other takeaways from GFI's new reports. GFI APAC, 21 Apr 2026.
+- **AIS-06.** GFI APAC. GFI APAC's 2025 Report Card + 6 Things to Watch in 2026. Jan 2026.
+- **AIS-10.** GFI APAC. Temasek-backed firm upgrades Singapore's conventional meat with plant proteins. Sep 2025.
+- **AIS-39.** Women Entrepreneurs Finance Initiative (We-Fi). Pioneering sustainable agri-tech and plant-based proteins from Vietnam. 15 Dec 2025, updated 5 Jan 2026.
+- **APR-20.** Global Health Advocacy Incubator. Vietnam introduces country's first sugar-sweetened beverage tax. 9 Jul 2025.
+- **CPC-10.** Lever Foundation. Home page. Accessed 25 September 2026.
+- **CPC-25.** Vietnam Animal Welfare Watch. Cage-Free Eggs page and site posts feed. Accessed 25 September 2026.
+- **FTR-14.** Vietnam Beer Alcohol Beverage Association. Các hiệp hội góp ý Thuế TTĐB cần phù hợp để đảm bảo mục tiêu tăng trưởng kinh tế, 9 Mar 2025.
+- **FTR-15.** Vietnam Beer Alcohol Beverage Association. Báo cáo đánh giá tác động kinh tế của dự thảo thuế tiêu thụ đặc biệt đối với nước giải khát có đường, 25 Mar 2025.
+- **FUF-01.** Animal Charity Evaluators. Movement Grants: Call for Applications and Introducing Our New Grants Manager. Blog post, 24 September 2026.
+- **FUF-02.** Animal Charity Evaluators. Movement Grants: Apply for funding (application guidelines). Accessed 25 September 2026.
+- **XBA-12.** Questionmark. Superlist Environment Europe 2026, edition 1, January 2026 (report PDF). Accessed 25 Sep 2026.
+- **XBA-13.** Questionmark. Superlist Environment Europe 2026: background data (xlsx), sheet 'Protein Transition'. Accessed 25 Sep 2026.
+- **XBA-14.** Questionmark. Superlist Environment the Netherlands 2025 (report PDF, December 2025). Accessed 25 Sep 2026.
+
+### market-research (8)
+
+- **AIS-02.** AgFunder. AgFunder Global AgriFoodTech Investment Report 2026 (landing page). 30 Mar 2026.
+- **AIS-03.** AgFunder. Research index page. Accessed 25 Sep 2026.
+- **AIS-15.** VPCA. Vietnam Innovation & Private Capital Report 2026 (Do Ventures, NIC and VPCA). 2026.
+- **ECR-01.** Metric.vn (3 Apr 2026). Thi truong Sua nuoc Viet Nam qua lang kinh san TMDT Shopee: Quy mo, xu huong va co hoi tang truong 2026. Metric blog.
+- **ECR-02.** Metric.vn (29 Jul 2026). Metric: Bao cao thuong mai dien tu Viet Nam 6 thang dau nam 2026 duoi goc nhin cac san. Metric blog.
+- **ECR-03.** Metric.vn (28 Jan 2026). Metric chinh thuc cong bo Bao cao Thuong mai Dien tu Viet Nam 2025. Metric blog.
+- **ECR-04.** Metric.vn. Blog listing pages 1 to 8 (80 posts) and E-report library page. Accessed 25 September 2026.
+- **ECR-05.** YouNet Media. Market report category (bao-cao-thi-truong, pages 1 to 4) and WordPress site search for sua hat, sua dau nanh, thuc vat, chay, protein. Accessed 25 September 2026.
+
+## Prologue research (edition 1.4)
+
+ID prefixes: PRA = what alternative protein is; PRB = arguments for and against; PRC = international landscape. All wave 10.
+
+
+### gov/statistics (26)
+
+- **PRA-01.** EFSA NDA Panel. Scientific Opinion on Dietary Reference Values for protein. EFSA Journal 10(2):2557, 9 Feb 2012. https://www.efsa.europa.eu/en/efsajournal/pub/2557 . Supports: role of dietary protein; adult population reference intake 0.83 g/kg body weight per day. Type: regulator.
+- **PRA-02.** FAO. Dietary protein quality evaluation in human nutrition: report of an FAO Expert Consultation. FAO Food and Nutrition Paper 92. Rome, 2013. https://www.fao.org/ag/humannutrition/35978-02317b979a686a57aa4593304ffc17f06.pdf . Supports: DIAAS recommended to replace PDCAAS; PDCAAS truncation at 100%; list of nine indispensable amino acids (Table 5). Type: intergovernmental.
+- **PRA-07.** US Code of Federal Regulations, 21 CFR 184.1685 Chymosin (eCFR, current). https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-184/subpart-B/section-184.1685 . Supports: chymosin preparations from E. coli K-12, Kluyveromyces marxianus and Aspergillus niger affirmed as GRAS; source note 55 FR 10935, 23 March 1990. Type: regulator.
+- **PRA-11.** US FDA. Agency response letter, GRAS Notice No. GRN 000737 (soy leghemoglobin preparation from Pichia pastoris; notifier Impossible Foods). 23 July 2018. https://www.fda.gov/media/116243/download . Supports: FDA no questions letter; use up to 0.8% soy leghemoglobin protein in ground beef analogues. Type: regulator.
+- **PRA-14.** US FDA. Agency response letter, GRAS Notice No. GRN 000863 (beta-lactoglobulin produced by Trichoderma reesei; notifier Perfect Day). 25 March 2020. https://www.fda.gov/media/136751/download . Supports: FDA no questions letter for a precision-fermented milk protein. Type: regulator.
+- **PRB-02.** Our World in Data. Land use per 100 grams of protein (dataset from Poore and Nemecek 2018, Science). Grapher CSV https://ourworldindata.org/grapher/land-use-protein-poore.csv . Supports: global mean land use (m2 x year) per 100 g protein by food. Type: statistics (peer-reviewed data, re-published).
+- **PRB-04.** FAO (2025). OECD-FAO Agricultural Outlook 2025-2034: Emerging economies will drive growth in animal-source food consumption and production. News release, 15 July 2025. Supports: +6% per capita calories from livestock and fish (world), +24% (lower-middle-income); meat, dairy and eggs output +17%; 143 kcal in low-income countries; 33% of cereals to feed by 2034; India and Southeast Asia 39% of consumption growth. Type: intergovernmental.
+- **PRB-05.** OECD and FAO (2025). OECD-FAO Agricultural Outlook 2025-2034, Executive summary (PDF). Supports: total consumption of agricultural and fish commodities +13% by 2034; nearly all growth in low- and middle-income countries; 143 kcal of animal foods in low-income countries; direct agricultural GHG +6%. Type: intergovernmental.
+- **PRB-06.** OECD and FAO (2026). OECD-FAO Agricultural Outlook 2026-2035. Publication page, 29 June 2026. Supports: global production +13% over ten years; direct agricultural GHG +6%. Type: intergovernmental.
+- **PRB-07.** FAO (2023). New FAO report maps pathways towards lower livestock emissions. News release, 8 Dec 2023, on 'Pathways towards lower emissions: a global assessment of the greenhouse gas emissions and mitigation options from livestock agrifood systems'. Supports: 6.2 Gt CO2e in 2015, about 12% of anthropogenic GHG; cattle 3.8 Gt (62%); +20% demand for terrestrial animal products by 2050; nearly 9.1 Gt by 2050 without action. Type: intergovernmental.
+- **PRB-08.** Gerber, P.J. et al. (2013). Tackling climate change through livestock: a global assessment of emissions and mitigation opportunities. FAO, Rome. Supports: 7.1 Gt CO2e a year, 14.5% of human-induced GHG; reference year 2005; cattle 4.6 Gt (65%). Type: intergovernmental.
+- **PRB-13.** UNEP and ILRI (2020). Press release for 'Preventing the next pandemic: zoonotic diseases and how to break the chain of transmission', 8 July 2020, as posted by the UN in Indonesia. Supports: seven drivers including increased demand for animal protein and unsustainable intensive farming; about two million deaths a year from neglected zoonoses; over USD 100 billion losses in two decades. Type: intergovernmental.
+- **PRB-14.** WHO. Cancer: Carcinogenicity of the consumption of red meat and processed meat. Questions and answers (on the IARC Monographs evaluation of October 2015). Supports: processed meat Group 1, red meat Group 2A; +18% colorectal cancer per 50 g processed meat a day; +17% per 100 g red meat if causal; hazard not risk; meat can be part of a healthy diet. Type: intergovernmental.
+- **PRB-15.** Our World in Data, based on FAOSTAT Production (QCL). Animals slaughtered for meat, World, 1961 to 2024. CSV https://ourworldindata.org/grapher/animals-slaughtered-for-meat.csv?country=~OWID_WRL . Supports: 2024 world counts for chickens (78.53 billion), ducks (4.23 billion), pigs (1.49 billion), sheep, goats, turkeys, cattle. Type: statistics (FAO, re-published).
+- **PRB-17.** FAO. Animal Production (web page). Supports: livestock about 40% of agricultural output in developed countries and 20% in developing; livelihoods of at least 1.3 billion people; 34% of global food protein supply from livestock. Type: intergovernmental.
+- **PRB-18.** UN News (2023). FAO makes case for meat, eggs and milk as 'essential source of nutrients'. 25 April 2023. Report on FAO (2023) 'Contribution of terrestrial animal source food to healthy diets for improved nutrition and health outcomes'. Supports: nutrients supplied by animal-source foods; 372 million preschool children and 1.2 billion women lacking key micronutrients; caution on processed red meat. Type: intergovernmental (UN news service).
+- **PRB-25.** Executive Order 14081 of 12 September 2022. Advancing Biotechnology and Biomanufacturing Innovation for a Sustainable, Safe, and Secure American Bioeconomy. Federal Register, 15 Sep 2022. Supports: US National Biotechnology and Biomanufacturing Initiative; bioeconomy definition; USDA assessment of biotech for food and agriculture. Type: gov.
+- **PRB-27.** FAO (2011). Major gains in efficiency of livestock systems needed. News release, 14 Dec 2011, on World Livestock 2011: Livestock in food security. Supports: meat consumption +73% and dairy +58% by 2050. Type: intergovernmental.
+- **PRC-16.** CSG Midwest. 'Though not yet on grocery shelves, lab-grown meat is focus of new laws and legislation.' Updated 4 May 2026. https://csgmidwest.org/2026/05/04/though-not-yet-on-grocery-shelves-lab-grown-meat-is-focus-of-new-laws-and-legislation/
+- **PRC-17.** National Agricultural Law Center. 'Food Law in the States - 2026 Update.' 5 May 2026. https://nationalaglawcenter.org/food-law-in-the-states-2026-update/
+- **PRC-18.** Gazzetta Ufficiale della Repubblica Italiana. Legge 1 dicembre 2023, n. 172. GU Serie Generale n. 281, 1 Dec 2023. https://www.gazzettaufficiale.it/eli/id/2023/12/01/23G00188/sg
+- **PRC-23.** Nationaal Groeifonds. 'Cellulaire Agricultuur' project page. https://www.nationaalgroeifonds.nl/overzicht-lopende-projecten/thema-landbouw-voedsel-en-land-en-watergebruik/cellulaire-agricultuur
+- **PRC-25.** UK Research and Innovation. 'National alternative protein innovation centre launches.' 28 Aug 2024. https://www.ukri.org/news/national-alternative-protein-innovation-centre-launches/
+- **PRC-28.** Federal Register. 'Additional Rescissions of Harmful Executive Orders and Actions.' 90 FR 13037, 20 Mar 2025. https://www.federalregister.gov/documents/2025/03/20/2025-04866/additional-rescissions-of-harmful-executive-orders-and-actions
+- **PRC-29.** CPC Central Committee and State Council. 中共中央 国务院关于进一步深化农村改革 扎实推进乡村全面振兴的意见 (2025 No. 1 Central Document), dated 1 Jan 2025, released 23 Feb 2025. Full text via 12371.gov.cn. https://m.12371.gov.cn/content/2025-02/23/content_484970.html
+- **PRC-30.** Chinese Academy of Sciences. '我国首次实现从一氧化碳到蛋白质的合成' (China achieves protein synthesis from carbon monoxide for the first time). 1 Nov 2021. https://www.cas.cn/kj/202111/t20211101_4811816.shtml
+
+### peer-reviewed (23)
+
+- **PRA-03.** Derbyshire E, Theobald H, Wall BT, et al. Food for our future: the nutritional science behind the sustainable fungal protein, mycoprotein. A symposium review. Journal of Nutritional Science 12 (2023). https://doi.org/10.1017/jns.2023.29 . Supports: Quorn launched 1985; sold in twenty countries; authorised by UK MAFF by 1984; fermenter feed of glucose, ammonia and salts. Type: peer-reviewed (symposium review).
+- **PRA-04.** Cheriaparambil R, Grossmann L. Properties and cultivation of Fusarium spp. to produce mycoprotein as an alternative protein source. Sustainable Food Proteins 3(1) (2025). https://doi.org/10.1002/sfp2.70002 . Supports: F. venenatum approved for human consumption in the UK in 1981; sale under Quorn from 1985; first product a savoury pie. Type: peer-reviewed review.
+- **PRA-05.** Amara AAAF, El-Baky NA. Fungi as a source of edible proteins and animal feed. Journal of Fungi 9(1):73 (2023). https://doi.org/10.3390/jof9010073 . Supports: freshly harvested mycoprotein about 12% protein (wet weight); Quorn launched 1985 in the UK. Type: peer-reviewed review.
+- **PRA-06.** Finnigan TJA, Wall BT, Wilde PJ, Stephens FB, Taylor SL, Freedman MR. Mycoprotein: the future of nutritious nonmeat protein, a symposium review. Current Developments in Nutrition 3(6):nzz021 (2019). https://doi.org/10.1093/cdn/nzz021 . Supports: mycoprotein sold as Quorn in 17 countries (2019). Type: peer-reviewed (symposium review).
+- **PRA-08.** Nicosia FD, Puglisi I, Pino A, et al. Plant milk-clotting enzymes for cheesemaking. Foods 11(6):871 (2022). https://doi.org/10.3390/foods11060871 . Supports: fermentation-produced chymosin used for about 70% (US) and 90% (UK) of cheese; cheese the first FDA-recognised food made with recombinant DNA. Type: peer-reviewed review.
+- **PRA-09.** Akishev Z, Aktayeva S, Kiribayeva A, et al. Obtaining of recombinant camel chymosin and testing its milk-clotting activity on cow, goat, ewe, camel and mare milk. Biology 11(11):1545 (2022). https://doi.org/10.3390/biology11111545 . Supports: calf chymosin the first recombinant enzyme approved by FDA; more than 90% of rennet produced by fermentation. Type: peer-reviewed.
+- **PRA-10.** Sanchez-Garcia L, Martin L, Mangues R, et al. Recombinant pharmaceuticals from microbial cells: a 2015 update. Microbial Cell Factories 15:33 (2016). https://doi.org/10.1186/s12934-016-0437-3 . Supports: Humulin, recombinant human insulin made in E. coli, first biopharmaceutical approved by FDA, in 1982. Type: peer-reviewed review.
+- **PRA-15.** Verbeke W, Marcu A, Rutsaert P, et al. Would you eat cultured meat? Consumers' reactions and attitude formation in Belgium, Portugal and the United Kingdom. Meat Science 102:49-58 (2015). https://doi.org/10.1016/j.meatsci.2014.11.013 . Supports: first cultured hamburger tasting in London, August 2013. Type: peer-reviewed.
+- **PRA-16.** Post MJ, Levenberg S, Kaplan DL, et al. Scientific, sustainability and regulatory challenges of cultured meat. Nature Food 1:403-415 (2020). https://doi.org/10.1038/s43016-020-0112-z . Supports: how cultivated meat is made (cell expansion from about 10^4 to 10^13 cells per tonne, bioreactors, media, scaffolds). Type: peer-reviewed review.
+- **PRA-18.** Garcia-Encinas JP, Ruiz-Cruz S, Juarez J, et al. Proteins from microalgae: nutritional, functional and bioactive properties. Foods 14(6):921 (2025). https://doi.org/10.3390/foods14060921 . Supports: Arthrospira platensis (spirulina) and Chlorella vulgaris contain 50 to 70% protein on a dry weight basis; digestibility 70 to 90%. Type: peer-reviewed review.
+- **PRA-19.** Suhartanti PD, Handajani S, Nandariyah. Physical characteristics of the seeds of soybean (Glycine max) varieties and the effect of fermentation time on the chemical characteristics of tempeh. Cell Biology and Development 3(1):13-18 (2019). https://doi.org/10.13057/cellbioldev/v030103 . Supports: tempeh protein 16.65 to 25.19% across six Indonesian soybean varieties and three fermentation times. Type: peer-reviewed.
+- **PRA-22.** Falowo BA, Hosu YS, Idamokoro EM. Perspectives of meat eaters on the consumption of cultured beef (in vitro production) from the Eastern Cape of South Africa. Frontiers in Sustainable Food Systems 6:924396 (2022). https://doi.org/10.3389/fsufs.2022.924396 . Supports: first cultured beef burger presented on 5 August 2013 in London. Type: peer-reviewed.
+- **PRB-01.** Poore, J. and Nemecek, T. (2018). Reducing food's environmental impacts through producers and consumers. Science 360(6392): 987 to 992. Erratum 2019 (doi:10.1126/science.aaw9908). Accepted manuscript read at Oxford University Research Archive. Supports: 83% of farmland, 37% of protein, 18% of calories; 76% land and 49% GHG reduction without animal products; 90th percentile beef 105 kg CO2e and 370 m2 per 100 g protein. Type: peer-reviewed.
+- **PRB-09.** Crippa, M. et al. (2021). Food systems are responsible for a third of global anthropogenic GHG emissions. Nature Food 2: 198 to 209. Supports: 18 Gt CO2e in 2015, 34% of total GHG; 71% from agriculture and land use and land-use change; series 1990 to 2015. Type: peer-reviewed.
+- **PRB-10.** Cassidy, E.S., West, P.C., Gerber, J.S. and Foley, J.A. (2013). Redefining agricultural yields: from tonnes to people nourished per hectare. Environmental Research Letters 8(3): 034015. Supports: 36% of crop calories to feed, 12% of feed calories return as food; 70% more calories and 4 billion people if all crops went to direct food use. Type: peer-reviewed.
+- **PRB-11.** Mottet, A. et al. (2017). Livestock: On our plates or eating at our table? A new analysis of the feed/food debate. Global Food Security 14: 1 to 8. Supports: 86% of livestock feed intake not edible by humans; 6 billion t feed dry matter including one third of cereals; 2.8 kg (ruminant) and 3.2 kg (monogastric) human-edible feed per kg boneless meat; 2.5 billion ha. Type: peer-reviewed.
+- **PRB-12.** Jones, K.E. et al. (2008). Global trends in emerging infectious diseases. Nature 451(7181): 990 to 993. Supports: 335 EID events 1940 to 2004; 60.3% zoonotic; 71.8% of zoonotic events from wildlife. Type: peer-reviewed.
+- **PRB-19.** Rauber, F. et al. (2024). Implications of food ultra-processing on cardiovascular risk considering plant origin foods: an analysis of the UK Biobank cohort. The Lancet Regional Health Europe 43: 100948. Supports: n = 118,397; per 10% of energy, plant-sourced non-UPF HR 0.87 and plant-sourced UPF HR 1.12 for CVD mortality. Type: peer-reviewed.
+- **PRB-20.** Crimarco, A. et al. (2020). A randomized crossover trial on the effect of plant-based compared with animal-based meat on trimethylamine-N-oxide and cardiovascular disease risk factors in generally healthy adults: SWAP-MEAT. American Journal of Clinical Nutrition 112(5): 1188 to 1199. Supports: n = 36; LDL 109.9 vs 120.7 mg/dL; lower TMAO with an order effect. Type: peer-reviewed.
+- **PRB-21.** Harnack, L., Reese, M.M. and Johnson, A.J. (2022). Are plant-based meat alternative products healthier than the animal meats they mimic? Nutrition Today 57(4): 195 to 199. Supports: less protein, zinc and vitamin B12, high sodium; more fibre, less saturated fat, comparable iron. Type: peer-reviewed (narrative review).
+- **PRB-22.** Zhang, Q. et al. (2023). Nutritional assessment of plant-based meat products available on Hong Kong market: a cross-sectional survey. Nutrients 15(17): 3684. Supports: 274 PBM vs 151 meat products; PBM lower in energy, fat, saturated fat, protein and salt; most medium to high in fat and sugar by front-of-pack criteria. Type: peer-reviewed.
+- **PRB-23.** Lynch, J. and Pierrehumbert, R. (2019). Climate impacts of cultured meat and beef cattle. Frontiers in Sustainable Food Systems 3: 5. Supports: cultured meat emissions mostly CO2 and cumulative; 'not prima facie climatically superior'; high-energy case about 90 EJ, 22.9% of 2015 world energy. Type: peer-reviewed.
+- **PRB-24.** Sinke, P. et al. (2023). Ex-ante life cycle assessment of commercial-scale cultivated meat production in 2030. International Journal of Life Cycle Assessment 28(3): 234 to 254. Correction 2023 (doi:10.1007/s11367-023-02183-9). Supports: with renewable energy, carbon footprint lower than beef and pork, comparable to chicken; much lower land use. Type: peer-reviewed.
+
+### press (15)
+
+- **PRB-26.** Global Times (2022). China maps out measures to develop $3.28 trillion bioeconomy by 2025. 10 May 2022. On the NDRC 14th Five-Year Plan for bioeconomy development. Supports: 22 trillion yuan bioeconomy output target by 2025; research on new food like artificial protein. Type: press (state-owned).
+- **PRC-03.** Green Queen. 'GFI: Plant-Based, Cultivated Meat Funding Underestimated.' 17 Apr 2024. https://www.greenqueen.com.hk/gfi-state-of-the-industry-report-2023/
+- **PRC-04.** FSR Magazine. 'Report: Record \$5 Billion Invested in Alt Proteins in 2021.' 2 Mar 2022. https://www.fsrmagazine.com/industry-news/report-record-5-billion-invested-alt-proteins-2021/
+- **PRC-05.** Cultivated X. 'GFI's 2026 State of the Industry Reports Detail Mixed Year for Alternative Proteins Across All Three Sectors.' 2026. https://cultivated-x.com/studies-numbers/gfis-2026-state-of-industry-reports-detail-mixed-year-alternative-proteins-across-three-sectors/
+- **PRC-11.** EIT Food. 'GOURMEY files the first EU novel food submission for cultured meat.' 29 Jul 2024. https://www.eitfood.eu/news/gourmey-files-the-first-eu-novel-food-submission-for-cultured-meat
+- **PRC-13.** FoodNavigator. 'Inside the success of the cell-cultivated sandbox.' 17 Jun 2025. https://www.foodnavigator.com/Article/2025/06/17/is-novel-food-sandbox-working-in-uk/
+- **PRC-14.** Food Manufacture. 'World's first cultivated meat dog treat goes on sale at Pets at Home.' 7 Feb 2025. https://www.foodmanufacture.co.uk/Article/2025/02/06/meatly-and-the-pack-launch-pet-treats-made-from-lab-grown-meat-into-pets-at-home/
+- **PRC-19.** Just Food. 'Hungary bans cultivated meat.' 21 Nov 2025. https://www.just-food.com/news/hungary-bans-cultivated-meat/
+- **PRC-20.** Green Queen. 'EU Bans 31 Meat Names on Plant-Based Products, But Veggie Burger Saved.' 5 Mar 2026. https://www.greenqueen.com.hk/eu-veggie-burger-ban-plant-based-meat-names-vegan-labelling/
+- **PRC-21.** Food Ingredients First. 'EU veggie burger fight returns as MEPs seek wider naming ban.' 27 Aug 2026. https://www.foodingredientsfirst.com/news/eu-plant-based-burger-ban.html
+- **PRC-24.** TU Delft. 'National Growth Fund finances Cellular Agriculture.' 15 Apr 2022. https://www.tudelft.nl/en/2022/tnw/national-growth-fund-finances-cellular-agriculture
+- **PRC-26.** Imperial College London. 'Imperial co-launches UK centre for tasty, affordable meat alternatives.' Aug 2024. https://www.imperial.ac.uk/news/255699/imperial-co-launches-uk-centre-tasty-affordable/
+- **PRC-27.** Imperial College London. 'Bezos Centre for Sustainable Protein launches at Imperial with \$30m funding.' 24 Jun 2024. https://www.imperial.ac.uk/news/254353/bezos-centre-sustainable-protein-launches-imperial/
+- **PRC-31.** Asia Food Journal. 'String Bio achieves GRAS status for novel microbial protein ingredient, PRO-DG.' 30 Jul 2024. https://asiafoodjournal.com/string-bio-achieves-gras-status-for-novel-microbial-protein-ingredient-pro-dg/
+- **PRC-32.** The Fish Site. 'String Bio's feed ingredient gets the nod from BioMar.' 13 Sep 2022. https://thefishsite.com/articles/string-bios-feed-ingredient-gets-the-nod-from-biomar
+
+### company (9)
+
+- **PRA-12.** Impossible Foods. The debut of the world's most anticipated burger (news release). 25 July 2016. https://impossiblefoods.com/media/news-releases/2016/07/momofuku-nishi-launch . Supports: Impossible Burger introduced 27 July 2016 at Momofuku Nishi, New York; key ingredients. Type: company.
+- **PRA-13.** Beyond Meat. The brand new Beyond Burger launches at grocery stores nationwide (news release). 27 April 2021. https://investors.beyondmeat.com/news-releases/news-release-details/brand-new-beyond-burgerr-launches-grocery-stores-nationwide . Supports: Beyond Burger introduced in 2016 and sold in the meat case. Type: company.
+- **PRC-06.** Beyond Meat, Inc. 'Beyond Meat Reports Fourth Quarter and Full Year 2025 Financial Results.' GlobeNewswire, 31 Mar 2026. https://www.globenewswire.com/news-release/2026/03/31/3266122/0/en/beyond-meat-reports-fourth-quarter-and-full-year-2025-financial-results.html
+- **PRC-07.** Beyond Meat, Inc. Form 8-K, event date 15 Oct 2025 (early settlement of exchange offer). SEC EDGAR. https://www.sec.gov/Archives/edgar/data/1655210/000119312525240364/d60690d8k.htm
+- **PRC-08.** Beyond Meat, Inc. 'Beyond Meat Announces Pricing of Initial Public Offering.' GlobeNewswire, 1 May 2019. https://www.globenewswire.com/news-release/2019/05/01/1813979/0/en/Beyond-Meat-Announces-Pricing-of-Initial-Public-Offering.html
+- **PRC-09.** Impossible Foods. 'The debut of the world's most anticipated burger.' News release, Redwood City, 26 Jul 2016. https://impossiblefoods.com/media/news-releases/2016/07/momofuku-nishi-launch
+- **PRC-10.** Oatly Group AB. 'Oatly Reports Fourth Quarter and Full Year 2025 Financial Results.' GlobeNewswire, 11 Feb 2026. https://www.globenewswire.com/news-release/2026/02/11/3236134/0/en/oatly-reports-fourth-quarter-and-full-year-2025-financial-results.html
+- **PRC-12.** Mosa Meat. 'Submitting our first EU market authorisation request.' Company blog, January 2025. https://mosameat.com/blog/submitting-our-first-eu-market-authorisation-request
+- **PRC-15.** Aleph Farms. 'Aleph Farms Submits Application to Swiss Regulators, Marking the First-ever Submission for Cultivated Meat in Europe.' 26 Jul 2023. https://aleph-farms.com/journals/aleph-farms-submits-application-to-swiss-regulators-marking-the-first-ever-submission-for-cultivated-meat-in-europe/
+
+### advocacy (5)
+
+- **PRA-17.** Good Food Institute. New studies show that cultivated meat offers massive climate benefits (press release on CE Delft life-cycle and techno-economic assessments). 9 March 2021. https://gfi.org/press/new-studies-further-the-case-for-cultivated-meat-over-conventional-meat-in-the-race-to-net-zero-emissions/ . Supports: modelled cultivated meat production cost of USD 5.66/kg by 2030 in the lowest-cost scenario, 10,000 t/yr plant. Type: advocacy.
+- **PRB-16.** fishcount.org.uk. Fish count estimates. Supports: 1.1 to 2.2 trillion wild fish caught a year on average in 2000 to 2019; 124 billion farmed fish killed in 2019 (range 78 to 171 billion); 250 to 600 billion farmed crustaceans in 2017. Type: advocacy (animal welfare).
+- **PRC-01.** Good Food Institute. 'Total investments' summary table (image) on the Alternative protein investment page, updated 4 Aug 2026. https://gfi.org/wp-content/uploads/2026/08/Q2_2026_total_investments.png
+- **PRC-02.** Good Food Institute. 2024 State of the Industry report: Plant-based meat, seafood, eggs, dairy, and ingredients. PDF created June 2025. https://gfi.org/wp-content/uploads/2025/06/State-of-the-Industry-Plant-based-meat-seafood-eggs-dairy-and-ingredients-GFI.pdf
+- **PRC-22.** European Vegetarian Union. 'European Parliament to vote on veggie burger ban for the third time.' 26 Aug 2026. https://www.euroveg.eu/veggie-burger-ban-third-time/
+
+### other (3)
+
+- **PRA-20.** Fraanje W, Garnett T. Soy: food, feed, and land use change. Foodsource: building blocks. Food Climate Research Network (TABLE), University of Oxford, 2020. https://www.tabledebates.org/building-blocks/soy-food-feed-and-land-use-change . Supports: 87% of global soy output crushed into oil and cake; 99% of soy cake used as animal feed; 6% of soy used directly as human food (USDA data, 2018 to 2019). Type: reference explainer from a university research network.
+- **PRA-21.** Ritchie H. Drivers of deforestation (soy section). Our World in Data. https://ourworldindata.org/drivers-of-deforestation . Supports: more than three-quarters (77%) of global soy is fed to livestock for meat and dairy production (2018, USDA via Fraanje and Garnett 2020). Type: encyclopedia.
+- **PRB-03.** Ritchie, H. (2020). Less meat is nearly always better than sustainable meat, to reduce your carbon footprint. Our World in Data, 4 Feb 2020. Supports: global median GHG per 100 g protein (beef 25 kg CO2e), 10th percentile lamb 12 and beef 9, highest-impact peas 0.8, nuts 2.4, tofu 3.5. Type: data publication (secondary).

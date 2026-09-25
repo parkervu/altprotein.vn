@@ -1,0 +1,9 @@
+label,value,unit,as_of,context,source_ids,evidence,confidence,demand_evidence_type
+US plant-based meat share of total meat dollar sales,0.7,percent,2025,Half its 2021 level (1.4%); 1.4% of packaged meat; USD 1.0 billion,GLB-01; GLB-02,general,High,revealed
+US households buying plant-based meat in a year,11,percent,2025,"Down from 19 to 20% in 2021 while repeat rates stayed near 60 to 64%: the loss is in trial, not loyalty",GLB-01; GLB-02,general,High,revealed
+Highest observed plant-based meat share of pre-packaged meat volume (mature European markets),3.1 to 4.1,percent,2024,"Germany 3.1%, Netherlands 4.1% (falling from 4.6%) after about a decade of heavy retail support",GLB-09; GLB-10,general,High,revealed
+Own-price elasticity of plant-based meat (US scanner data),-0.8 to -1.6,elasticity,2017 to 2023,"Demand is price elastic, but a 10% plant-based price cut is modelled to cut US cattle output only about 0.15%",GLB-16; GLB-03; GLB-27,general,High,revealed
+Dutch supermarket plant share of protein sold,42.6,percent,2025,"Flat since 2023 (42.0%, 42.7%) despite sector targets and price parity pledges; 50% goal for 2025 missed",GLB-12,general,High,revealed
+Kearney 2019 forecast vs actual: plant-based meat share of global meat market in 2025,10 forecast vs about 0.55 actual,percent,2025,Retail plant-based meat and seafood USD 6.6 billion vs Kearney's USD 120 billion; our derivation,GLB-45; GLB-05,general,Medium,inferred
+Thai meat substitutes price vs chicken,8,times per kg,2024,736 THB per kg vs 94 for chicken; 4 times pork; volume still grew about 30% 2021 to 2024 from a tiny base,GLB-53,VN-adjacent,Medium,revealed
+Vegetarian share of meals when doubling vegetarian options in cafeterias,+41 to +79,percent increase in vegetarian sales,2017,"Cambridge cafeterias, 94,644 meals, no rebound at other mealtimes; strongest institutional evidence found",GLB-35,general,High,tested

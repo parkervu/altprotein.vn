@@ -1,6 +1,6 @@
 ---
 import { label, type Lang } from '../lib/i18n';
-import { SITE, PAGE_BY_ID, href, chapterNumber, appendixLetter, type NavItem } from '../lib/site';
+import { SITE, PAGE_BY_ID, href, chapterNumber, appendixCode, type NavItem } from '../lib/site';
 interface Props {
   lang: Lang;
   current?: string;
@@ -14,31 +14,29 @@ const containsCurrent = (item: NavItem): boolean =>
 const num = (id: string) => {
   const n = chapterNumber(id);
   if (n !== null) return String(n);
-  return appendixLetter(id) ?? '';
+  return appendixCode(id) ?? '';
 };
-const newTitle = lang === 'vi' ? 'Mới trong ấn bản 1.1' : 'New in edition 1.1';
-const newText = lang === 'vi' ? 'Mới' : 'New';
 ---
 
 <nav class="tree" aria-label={lang === 'vi' ? 'Mục lục báo cáo' : 'Report contents'}>
   <ul>
     {groups.map((group) => (
       <li class="group">
-        <details open={!current || containsCurrent(group) || group.label === 'Summary'}>
+        <details
+          open={
+            !current ||
+            containsCurrent(group) ||
+            group.label === 'Summary' ||
+            group.label === 'Start here'
+          }
+        >
           <summary>{label(group.label!, lang)}</summary>
           <ul>
             {group.children!.map((item) =>
               item.children ? (
                 <li class="subgroup">
                   <details open={containsCurrent(item) || (!current && group.label === 'Report')}>
-                    <summary>
-                      {label(item.label!, lang)}
-                      {item.new_in_edition && (
-                        <span class="new-pill" title={newTitle}>
-                          {newText}
-                        </span>
-                      )}
-                    </summary>
+                    <summary>{label(item.label!, lang)}</summary>
                     <ul>
                       {item.children.map((leaf) => {
                         const page = PAGE_BY_ID.get(leaf.page!)!;
@@ -51,7 +49,7 @@ const newText = lang === 'vi' ? 'Mới' : 'New';
                               lang={page.lang !== lang ? page.lang : undefined}
                             >
                               <span class="num">{num(page.id)}</span>
-                              <span>{page.short_title.replace(/^[A-Z]\. /, '')}</span>
+                              <span>{page.short_title.replace(/^[A-Z]\d*\. /, '')}</span>
                               <span class="for-you-dot" aria-hidden="true" />
                             </a>
                           </li>

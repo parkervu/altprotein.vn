@@ -41,7 +41,11 @@ To repeat this on a fresh database: export the current one, `wrangler d1 create 
 
 **Rollback:** point `DB` back at the old database id and deploy the previous release (the commit before edition 1.1) with `wrangler rollback` or a redeploy. Do not point the edition 1.1 code at the old database: its schema has no `pages` collection.
 
-## 4. Subsequent deploys
+## 4. Content updates from a new package
+
+Deploying never changes page text in the CMS. After deploying a new package, run `scripts/sync-content.mjs` as described in the README (plan first, then `--apply`), with an EmDash API token created by an administrator. Moving from edition 1.1 (57 pages) to v0.6 (81 pages) creates 66 pages, updates 15 and moves the 42 pages whose ids changed to the trash; their old URLs redirect (`src/lib/redirects.ts`).
+
+## 5. Subsequent deploys
 
 - Build from the lockfile, run CI, and deploy the same reviewed build (`pnpm deploy:production`). Deploying never overwrites page text edited in the CMS.
 - Changes to data, charts, key numbers, sources or the page structure are made in `report/` and ship with a deploy. Changes to page text are made in the CMS. If the same page text changes in `report/content` too, copy it into the CMS by hand (or on a fresh setup the seed carries it).

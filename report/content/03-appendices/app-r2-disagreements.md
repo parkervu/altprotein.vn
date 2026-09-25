@@ -1,0 +1,580 @@
+---
+id: app-r2-disagreements
+title: "R2. Disagreements log"
+short_title: "R2. Disagreements"
+section: appendix
+order: 82
+summary: "All 352 cases where sources disagree, with both claims and the position this report takes. We never average disagreeing numbers."
+audiences: [research, investors, policy, international, startups, manufacturers]
+reading_time_min: 87
+key_numbers: [kn-disagreements]
+related_data: [disagreements.csv]
+related_pages: [app-m4-actor-check-waves, app-m5-changelog, app-m1-method, ch30-unknowns, app-r1-open-questions, app-f4-balance-model, app-m2-futures-method, app-m3-demand-method]
+charts: []
+---
+
+# R2. Disagreements log
+
+When two credible sources give different values or facts, we record both and state the position we take, with reasons. We do not average them. This page is generated from `disagreements.csv`, grouped by the research stream that found each disagreement. Where an earlier draft of this project was simply wrong, the correction is listed in [[app-m5-changelog]] instead. The disagreements that most affect the conclusions are summarised in [[ch30-unknowns]]. Version 0.2 adds the disagreements found in the futures round (DG-143 onwards), grouped under "Futures 2030 to 2050"; the model-related ones are discussed in [[app-f4-balance-model]]. Version 0.4 adds the disagreements found by the actor check and expansion waves 7 to 9 (DG-260 to DG-352; see [[app-m4-actor-check-waves]]). Version 0.3 adds the disagreements found in the demand round (DG-171 onwards), grouped by research stream under "Demand side".
+
+
+## Protein economy and feed (14)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-001 | Aquafeed volume 2025 | 6.5 Mt (USDA Post, [@MAC-01]) | 3.9 to 4.8 Mt (industry via ACAP, [@MAC-06]); 3.3 to 3.85 Mt (capacity x utilisation, same article) | Report both. The ACAP species split is more transparent. Neither closes with NSO output at plausible FCRs. Do not use a single number. <br>*Same or related disagreement: DG-120.* |
+| DG-002 | Shrimp output 2025 | 1,291 kt whiteleg plus black tiger (NSO, [@MAC-15]) | "Nearly 800,000 tonnes" supported by 920 kt of feed (industry, [@MAC-06]) | Use NSO for output. Flag that feed-based and statistical estimates diverge by about 40%. |
+| DG-003 | Whiteleg shrimp 2025 | 994.4 kt (NSO fisheries release) | 944.4 kt (NSO highlights page) | 994.4 kt: 9-month 719.7 + Q4 274.7 = 994.4. |
+| DG-004 | Pig herd trend 2025 | +0.6% to 31.4 M (Livestock Department, [@MAC-12]) | Herd "fell sharply" from Q3 2025 (NSO, [@MAC-13]) | Unresolved. Possibly different reference dates. Cite both. |
+| DG-005 | Pigs culled for ASF 2025 | 1.2 M (USDA) | 1.3 M (Livestock Department) | Report 1.2 to 1.3 M. |
+| DG-006 | Share of feed raw materials imported | More than 65% (Vietnam Report 2025; VietDVM) | 85%, about 17 Mt/yr (Livestock Department 2024, via VnEconomy); 70% to 80% (review 2024) | Definitions differ (volume vs value; with or without domestic rice bran and cassava). Prefer ingredient-specific figures: corn 74%, soy protein about 99%, wheat and DDGS 100%. |
+| DG-007 | Corn imports 2024 | 12.52 Mt (customs, USDA) | 10 Mt (Livestock Department feed-ingredient figure, [@MAC-28]) | 12.52 Mt is total imports. The lower figure is probably feed-industry-only imports. |
+| DG-008 | Wheat imports 2024 | 5.5 Mt (USDA) | about 5.74 Mt (derived from customs growth rates) | Minor. Use 5.5 to 5.7 Mt. |
+| DG-009 | Corn feed use | 14.4 Mt feed and residual (USDA PSD MY2024/25) | 9.2 Mt corn in industrial feed (USDA Table 2, CY2025) | Different scope (PSD includes on-farm feed and residual). Use 9.2 Mt for compound feed and 14.4 Mt for total feed use. |
+| DG-010 | Soybean meal origins 2025 | Argentina 69% (our reading of the table) | Brazil 69% (first automated summary) | Argentina, pending a direct PDF check. |
+| DG-011 | Population 2025 | 102.3 M (NSO) | 101.9 M (USDA) | Use NSO. <br>*Same or related disagreement: DG-125.* |
+| DG-012 | GDP per person 2025 | USD 5,026 (NSO) | USD 5,048 (USDA) | Use NSO. |
+| DG-013 | Fisheries 2024 | 9,547 kt preliminary (NSO Feb 2025) | about 9,658 kt implied by 2025 growth rate | NSO revised 2024 upward. Use the revised figure for growth calculations. |
+| DG-014 | Fishmeal pool | 350 to 450 kt (prior draft) | about 80 to 270 kt (this note) | Prior figure not supported by sourced inputs. <br>*Same or related disagreement: DG-117.* |
+
+## Feed market (7)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-115 | Fishmeal price, Nov 2025 | UPV executive: USD 1,600/t ([@FM-04]) | World Bank Peru 65% CIF: USD 1,794/t ([@FM-02]) | Both can be right. The UPV figure is probably a lower grade or Indian origin (India supplied 49% of Vietnam's import value in 2023). Use the World Bank series as the benchmark; say which grade when quoting. <br>*Same or related disagreement: DG-084, DG-116, DG-126, DG-127.* |
+| DG-116 | Latest fishmeal price | Wave 1: USD 1,837/t (Mar 2026) ([@COST-27]) | Pink Sheet: USD 2,500/t (Aug 2026) ([@FM-01]) | Not a conflict; wave 1 is superseded. Use August 2026 as latest and the 2025 average as the base case. <br>*Same or related disagreement: DG-084, DG-115, DG-126, DG-127.* |
+| DG-117 | Displaceable pool | Prior drafts: 350 to 450 kt | Macro: 80 to 270 kt; this note: 79 to 290 kt sourced, 116 to 244 kt central | Use 120 to 245 kt as central. 350 to 450 kt requires unsourced snakehead and marine rates. <br>*Same or related disagreement: DG-014.* |
+| DG-118 | Shrimp fishmeal inclusion | 6% projected for 2025 (Salin et al. via [@MAC-41]) | 20% to 25% in recent Chinese trial control diets ([@FM-33], [@FM-34]) | Both are indirect. Projection is not measurement; trial controls are not market surveys. Central 10% to 20%. One call to a Vietnamese shrimp feed mill would settle it. |
+| DG-119 | Vietnam fishmeal tonnage | WITS: 139 kt imported, 227 kt exported (2023) | Uniform unit values imply imputation | Quote values, not tonnes. <br>*Same or related disagreement: DG-089.* |
+| DG-120 | Aquafeed volume | USDA 6.5 Mt (2025) | Industry 3.9 to 4.8 Mt ([@MAC-06]) | Unresolved (macro agent's position stands). The pool uses industry species volumes. <br>*Same or related disagreement: DG-001.* |
+| DG-121 | Feed share of cost | Shrimp: 50% to 60% ([@FM-10], 2026) | Pangasius: 70% to 90% ([@MAC-42], 2007 to 2011 studies) | Different species and years; not a conflict. Pangasius figure is dated. |
+
+## Feedstocks (13)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-015 | Starch factory count | ~100 industrial (MOIT, 2021; [@FS-04]) | ~120 in 27 provinces (ACC, 2023; [@FS-02]); 150+ (VCA, Oct 2025; [@FS-07]) | Unresolved. Likely different size thresholds and new builds. Use "120 to 150" and cite both. |
+| DG-016 | Cassava pulp volume | ~4 Mt/yr; 10 to 15% of roots "= 3.8 to 5.4 Mt" ([@FS-17]). That arithmetic implies 38 to 54 Mt roots, so it is internally wrong | 1.7 to 2.1 Mt wet (prior draft, uncited) | Ours: ~6.2 Mt wet (range 4 to 8), about 1.3 Mt DM, 2025, from the Thai material balance. The 1.7 to 2.1 Mt figure is rejected as too low for wet pulp. |
+| DG-017 | Pulp ratio per t roots | 10 to 15% ([@FS-18]); 20 to 30% ([@FS-20]) | 40 to 60% wet ([@FS-04], [@FS-16]); 57% wet ([@FS-05]/06) | Different moisture bases. Adopt 0.57 t wet (80% moisture) or 0.12 t DM per t roots. |
+| DG-018 | Pulp protein | 0.2% ([@FS-16], wet basis) | 1.5 to 2.6% DM ([@FS-18], [@FS-19], [@FS-20]) | Consistent once moisture is accounted for. Use DM figures. |
+| DG-019 | Cassava chip exports 2025 | 967,460 t in 10 months ([@FS-13]) | 955,670 t in 11 months ([@FS-01]) | Cannot both be chips-only. Probably different product definitions (all raw cassava vs dried chips). Not averaged. Use [@FS-01] for chips, flag. |
+| DG-020 | Cassava area/output | 499,100 ha, 10.24 Mt (2025; [@FS-01]) | ~517,000 ha, ~10.5 Mt ([@FS-08], published Aug 2026) | [@FS-08] repeats 2024 figures. Use [@FS-01] for 2025. |
+| DG-021 | Ethanol plants | "6 ethanol plants" ([@FS-08]) | 3 operating, 830 m3/day ([@FS-09]) | Both true: 6 built, 3 operating in mid-2026. |
+| DG-022 | Paddy | 43.5 Mt (NSO, CY2025) | 42.96 Mt (USDA MY2024/25); prior draft 43.12 Mt | Different periods. Use NSO for calendar 2025. |
+| DG-023 | Maize | 4.4 Mt (NSO, 2025) | 4.1 Mt (USDA, MY2025/26) | Different periods and methods. Show both. |
+| DG-024 | Rice bran volume | ~4.35 Mt (derived, 10%) | ~5 Mt ([@FS-28], claim) | Use derived 4.35 Mt. It is consistent with USDA use plus exports of about 4 Mt. |
+| DG-025 | Bran + broken in feed | 730 kt (prior draft, citing an earlier USDA report) | 2.8 Mt local supply CY2025 (USDA VM2026-0012) | Use the current USDA table. The 730 kt figure is probably a different table (imports) or outdated. |
+| DG-026 | BSG price | 6,000 to 6,500 VND/kg fresh ([@FS-42]) | Dry rice bran 7,300 to 7,650 VND/kg ([@FS-26]) | The BSG quote is implausibly high per kg of DM. Treat as retail and Low. |
+| DG-027 | Molasses ethanol at QNS | 60 M L/yr, target 2026 ([@FS-35], 2024) | An Khe ethanol plant 200 m3/day, Q1 2028 ([@FS-09], 2026) | Probably the same project, delayed. Use the 2026 government source. |
+
+## Industrial capacity (9)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-028 | Fuel ethanol total capacity | About 600,000 m3/yr, 6 plants (prior lead) | 450,000 m3/yr ([@IND-19], September 2025); 41,000 m3/month, about 492,000/yr ([@IND-18], March 2026); 480,000 m3/yr with 7 plants ([@IND-20], July 2026) | Use 450,000 to 490,000 m3/yr. The 600,000 figure probably assumed 6 plants of 100 million L each, but actual nameplates range from 72 to 125 million L and some are much smaller. |
+| DG-029 | E10 start date | Nationwide from 1 January 2026 ([@IND-19]) | From 1 June 2026 under Circular 50/2025/TT-BCT ([@IND-22]) | Not in this agent's scope. Passed to the regulation agent. The later source cites a specific circular, so it is more likely right. <br>*Same or related disagreement: DG-122.* |
+| DG-030 | C.P. Vietnam plant count | 9 plants ([@IND-47], 2023) | 21 plants ([@IND-43], 2026) | Both may be right on different bases (feed mills only vs all facilities). Record both. Verify with C.P. |
+| DG-031 | Vinasoy market share | About 80% of soy milk (company, 2025, [@IND-48]) | 84.2% (2017, [@IND-49]); over 90% of boxed soy milk (2022, [@IND-50]) | Segment definitions differ. Use "about 80% of soy milk" as the conservative figure. <br>*Same or related disagreement: DG-041.* |
+| DG-032 | VNVC plant investment | VND 2,000 bn ([@IND-31], May 2025) | VND 2,500 bn ([@IND-32], July 2026) | Probably a revised budget. Use the later figure with its date. |
+| DG-033 | Daesang plant locations | Bac Giang MSG plant, Thai Nguyen starch ([@IND-13], Korean press) | Viet Tri (Phu Tho) MSG plant, Tay Ninh starch ([@IND-11], Daesang Vietnam) | Trust the company page. The Korean press translation is garbled, so its 35,000 t/yr figure is also Low confidence. |
+| DG-034 | Dong Nai status | Vedan website gives addresses as "Dong Nai City" ([@IND-01]) | Wikipedia snapshot: Dong Nai remains a province after merging with Binh Phuoc ([@IND-66]) | We use "Dong Nai". The status should be checked by the regulation or ecosystem agent. |
+| DG-035 | Carlsberg Phu Bai investment | VND 3,406 bn, about USD 169 million ([@IND-27]) | About USD 90 million ([@IND-28]) | Different scopes or phases. Capacity (600 million L/yr) agrees across both. |
+| DG-036 | De Heus and CJ feed | De Heus has 17 plants from buying CJ Feed & Care in early 2026 ([@IND-43]) | No second source | Unverified. Low confidence. Ask De Heus or CJ. <br>*Same or related disagreement: DG-129.* |
+
+## Companies and ecosystem (9)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-037 | Entobel funding | USD 33 m Series B (company PR, 2023; [@ECO-01], [@ECO-06]) | Series B USD 30 m (Mekong USD 25 m + Dragon USD 5 m) plus IFC USD 2.5 m = USD 32.5 m project cost (IFC disclosure; [@ECO-03]) | Use IFC's breakdown (primary DFI document). "USD 33 m" is rounded and includes IFC. Prior lead "about USD 36 m" not supported. One trade article's "about USD 10 m from IFC" is wrong ([@ECO-04] paraphrase). <br>*Same or related disagreement: DG-062, DG-063.* |
+| DG-038 | Entobel capacity | "12x since 2022" ([@ECO-02]) | 1,000 + 10,000 = 11,000 t/yr design ([@ECO-03]) | Consistent within rounding. All are design capacity, not output. |
+| DG-039 | Cricket One volume | More than 100 million crickets/month (2020) | About 100 t fresh/month at full capacity (Feb 2023); about 150 t live/month (Oct 2024); 1,000 t/yr processing (Oct 2023) | Units differ and all are company claims. Use "1,000 t/yr processing capacity (2023, claimed)" as the scale anchor. |
+| DG-040 | Vinh Hao spirulina area | 5,000 m2 (prior lead) | More than 12,000 m2 (company page, undated) | Prefer the company figure as more recent, but it is unaudited. Output figure (17 t/yr) is from 2013. |
+| DG-041 | Vinasoy share | 82.7% (Dec 2014, [@ECO-42]) | About 80% (2024, [@ECO-41]) | Not a conflict: stable share over time. Both company-sourced. <br>*Same or related disagreement: DG-031.* |
+| DG-042 | Bewina | Imports Taiwan and US brands, founder Ho Thanh Nhien ([@ECO-17]) | Sells "Romania" products ([@ECO-19]) | Possibly both (the Romanian brand Verdino plus others). Low confidence. |
+| DG-043 | Market size | About VND 1,000 bn (2022, [@ECO-17], [@ECO-19]) | USD 500 m "within several years" ([@ECO-18]); USD 500 m by 2025 ([@ECO-15]) | Reject both for decisions: no traceable method. |
+| DG-044 | "Xuan Hong" | Industrial do chay maker (prior lead) | Cassava starch processor, Tay Ninh ([@ECO-39]) | The lead is probably wrong; another Xuan Hong may exist but was not found. |
+| DG-045 | TH true NUT as plant-based | Sold in the plant-milk aisle | Contains fresh cow's milk ([@ECO-40], [@ECO-45]) | Classify as hybrid. |
+
+## Company verification (6)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-128 | De Heus Vinh Long marine mill capacity | 84,000 t/yr (wave-1 trade press) | 168,000 t/yr (De Heus global release, 22 Jul 2026; [@VCO-10]) | Use 168,000 t/yr as the company-stated design capacity. 84,000 may be phase 1. Unresolved. |
+| DG-129 | CJ deal scope | "De Heus has 17 plants from CJ" (wave 1, implied Vietnam) | 17 mills across five countries ([@VCO-07], [@VCO-08]) | Claim B. Vietnam mill count unknown. <br>*Same or related disagreement: DG-036.* |
+| DG-130 | Vedan GA capacity | 36,000 t/yr (1995; used in wave 1) | 180,000 t/yr (2004; [@VCO-03]) | Claim B is the later nameplate. Neither is confirmed current. |
+| DG-131 | VISSAN founding year | 1970 (company homepage, [@ECO-32]) | 1974 (Vietstock, [@VCO-13]) | Not material. Keep the company figure. |
+| DG-132 | De Heus in Vietnam | "Since 2009" ([@VCO-08]) | "18+ years" ([@VCO-09], 2026, i.e. about 2008) | Rounding. Not material. |
+| DG-133 | Pham Gia Phat registration | Brand founded late 2014; tax code 0312857463 fits a 2014 HCMC registration | Page states 28 May 2019 | The 2019 date is probably a change of registration. Low. |
+
+## Retail audit and formulation (14)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-090 | CJ acquisition of Cầu Tre | Collector notes: CJ bought Cầu Tre in 2006 ([@FORM-01]) | Analyst recollection: CJ CheilJedang took a majority stake in 2016 | Unresolved. Lean to 2016 (Low). Not verified this wave; web search budget exhausted. |
+| DG-091 | Ông Chà Và / NOSA canned soy meat origin | Nha Trang OSINT: made in China, imported ([@FORM-01]) | HCMC log row: Vietnam (local) ([@FORM-01]) | Unresolved. Brand owner may be Vietnamese with contract manufacture in China. Check "Xuất xứ" on the can. |
+| DG-092 | 137 Degrees origin | Nha Trang rows: Vietnam (local) | HCMC rows: imported; brand site is Simple Foods (believed Thailand) ([@FORM-38]) | Imported (Thailand), Medium-Low. |
+| DG-093 | Veyo ownership | One log row: Nutifood | QNS site lists VEYO as its nut-milk brand ([@FORM-33]) | Vinasoy/QNS, High. |
+| DG-094 | An Nhiên dried-slice prices | Field log online reference: VND 49,000/150 g | AEON eShop 23 Sep 2026: VND 60,000 to 65,000/150 g ([@FORM-19]) | Both recorded. Calculations use the field value; with AEON prices, price per 100 g protein is 22 to 33% higher (still the cheapest non-tofu protein). |
+| DG-095 | An Nhiên gà viên chay recipe | Label: soy protein concentrate, from Serbia ([@FORM-01]) | Retailer listing: SPI, corn starch, wheat fiber, soybean oil ([@FORM-18]) | Prefer the photographed label; listing may be an older or different recipe. |
+| DG-096 | Vissan bò nấu đậu chay | Nha Trang (brand site): vegan beef slices 55%, white beans 17% | HCMC label photo: slices 30%, beans 20% | Prefer the HCMC label (primary, current). Possible reformulation. |
+| DG-097 | Cầu Tre chả giò bánh rế chay đặc biệt | Nha Trang listing: contains tàu hũ ky | CJ site 2026: mung bean only, no tofu skin ([@FORM-22]) | Prefer CJ site as current; possible reformulation away from soy. |
+| DG-098 | HS 2106.10 China to Vietnam, 2023 tonnage | Vietnam-reported 1,551 t ([@FORM-02]) | China-reported 7,957 t ([@FORM-05]) | China figure. Vietnam-side quantities are imputed (uniform unit value). Values agree more closely (USD 9.1 million vs 12.6 million). <br>*Same or related disagreement: DG-075.* |
+| DG-099 | Wheat gluten imports 2023 | Vietnam-reported 12,337 t total, 7,314 t from China ([@FORM-03]) | China-reported 10,338 t to Vietnam ([@FORM-07]) | China figure for China tonnage; total imports are probably above 12,000 t. |
+| DG-100 | Soybean imports | Prior lead: about 3.2 Mt | USDA GAIN VM2025-0011: 2.5 Mt MY2024/25, 2.8 Mt MY2025/26 ([@FORM-09]) | Not averaged. Different marketing years and report editions; GAIN VM2025-0011 used here. Macro agent should reconcile. |
+| DG-101 | Thoại An đậu hũ hải sản chay 500 g price | Co.opmart Nha Trang: VND 71,500 | Co.opmart Nguyễn Kiệm: VND 43,700 | One read is probably wrong; the HCMC tag is a clear read. |
+| DG-102 | Same-SKU price spread across stores | bibigo Healthy Mandu Chay 300 g: VND 43,000 (promotion) to 56,700; Vissan chả giò chay: VND 44,900 to 60,000 | n/a | Real price variation plus low-confidence reads. Do not use single-store prices as market prices. |
+| DG-103 | Chay cheaper than meat | Field notes: 17 to 38% cheaper | This analysis: only the Vissan pair (-38%) is high confidence; others -52% to +19% on low-confidence reads | Directionally supported for spring rolls; not established across categories. |
+
+## Regulation (14)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-046 | Status of Decree 15/2018 | thuvienphapluat compendium page lists it as "expired 16/4/2026" ([@REG-17], via extraction) | Resolution 15/2026/NQ-CP says Decree 15/2018 "continues to have effect" until the new law and decree ([@REG-06], government press) | Decree 15/2018 applies. Government resolution text beats a database status tag. |
+| DG-047 | Status of Resolution 66.13/2026 | thuvienphapluat page extraction: "in effect" until replaced, no later than 28 Feb 2027 ([@REG-07]) | Resolution 15/2026 suspends it with Decree 46/2026 ([@REG-06]; Nhân Dân headline) | Suspended. |
+| DG-048 | Decree 46/2026: replace or amend Decree 15/2018 | Several sources say "replaces" ([@REG-03], [@REG-04]) | thuvienphapluat title fragment says "sửa đổi" (amends) | Designed as a replacement. Moot while suspended. |
+| DG-049 | GMO certificate timelines | USDA: 45 working days (5-country route) and 90 (standard) ([@REG-19]) | thuvienphapluat Q&A: 5 + 17 + 5 = 27 and 5 + 67 + 5 = 77 working days of agency steps ([@REG-23]) | Both may be right: the USDA figure likely includes the 20-day public comment. Use 27/77 for agency steps and about 45/90 end to end. |
+| DG-050 | Refined GM products excluded | USDA and ISAAA: explicitly excluded ([@REG-19], [@REG-20]) | Decree text extraction: no explicit exclusion visible ([@REG-18]) | Excluded in effect, through the definition (no GM DNA or protein). Precision-fermented proteins are not excluded. |
+| DG-051 | Feed trial article and duration | Prior lead: Decree 13/2020 Art 11 requires a trial; 12 to 18 months | Art 11 is factory assessment; trials are Law Art 37 and Circular 94/2025 Ch. III; agency time about 40 working days, trial length case by case | Prior lead wrong on the article. Duration undocumented; our estimate is 6 to 18 months. |
+| DG-052 | Feed "5 working days" recognition | Decree 32/2026 extraction mentions 5 working days for recognition under Art 31 ([@REG-35]) | Art 31 of Decree 13/2020 covers livestock waste-treatment products, not feed | The 5-day figure is not a feed figure. Use Circular 94/2025 (15 + 5). |
+| DG-053 | Decree 182/2024 thresholds | Prior lead: VND 12,000 bn / 20,000 bn; 3,000 bn R&D | Primary text: same, plus 1,000 bn within 3 years for R&D, and a semiconductor/AI tier | Confirmed. |
+| DG-054 | Carbon inventory scope | Decree 119/2025 extraction: agriculture and food processing not in mandatory inventory | Background: inventory facility lists (Decision 13/2024/QĐ-TTg) may include some large facilities across sectors | Unresolved. Pilot quotas are clearly limited to power, steel and cement. |
+| DG-055 | ISAAA authority name | ISAAA says MARD handles notifications | MARD no longer exists; MAE since 1 Mar 2025 | MAE. |
+| DG-111 | Who issues the closed-production GMO certificate | Decree 43/2026 Art 37a: MAE issues, re-issues, revokes ([@REG2-11]) | Decision 375/QĐ-BNNMT extract places the procedure in a provincial-level section ([@REG2-12]) | MAE, per the decree. The listing may reflect delegation or an extraction error. Ask MAE |
+| DG-112 | Aquafeed trial trigger | Fisheries Law Art 35(1): trial for any raw material not on the list ([@REG2-02]) | Appendix II lists no raw materials at all, yet conventional feeds are sold without trials ([@REG2-01]) | The law is literally broader than practice. Unresolved; treat as a risk for new ingredients |
+| DG-113 | Draft law product declaration | Wave 1: MOH 2025 submission proposed three risk tiers (low, medium, high) ([@REG-16]) | July 2026 press describes two groups: register or declare applied standard, and no declaration ([@REG2-05], [@REG2-06]) | The July 2026 description is later and is used here. The tiers may survive inside the "declare" group |
+| DG-114 | Soybean meal MFN before March 2025 | Extract: "1 to 2%" for 2304.00.29 ([@REG2-21]) | Wave 1 prior leads did not give a rate | Minor. The 2025 rate of 0% is what matters |
+
+## Research and talent (11)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-056 | Vietnamese studies on RNA reduction, mycotoxin testing and amino-acid digestibility | Prior drafts ([@RD-13]): "No Vietnamese study has reported RNA reduction protocols, mycotoxin testing or amino acid digestibility" | HUST 2018 nucleic acid reduction in spent-yeast hydrolysate ([@RD-31]); aflatoxin in 38 *tương* samples, 2025 ([@RD-61]); in vitro digestibility of rice DDG protein 77.1%, 2025 ([@RD-23]) | Prior claim is too strong. Correct version: such methods exist in Vietnam for yeast, traditional soy and rice DDG, but not for any novel fungal or bacterial biomass, and no DIAAS/PDCAAS study was found |
+| DG-057 | Number of Vietnamese fishmeal-replacement papers (Scite affiliation filter vs term search) | Scite affiliation filter: 3 Vietnamese fishmeal-replacement papers | Term search: at least 10 Vietnamese fishmeal/SBM replacement papers | Use the higher, manually screened count, and label all counts as lower bounds. The affiliation metadata is incomplete <br>*Same or related disagreement: DG-140.* |
+| DG-058 | Outcome of the FiBL duckweed project with Binca Seafoods | Prior lead: FiBL duckweed project with Binca Seafoods (2019), "outcome unpublished" | Scite: 9 Stadtlander duckweed records, none from Vietnam ([@RD-59]) | Consistent. The outcome is still unpublished in indexed literature. Ask FiBL directly |
+| DG-059 | Southeast Asian grantees on the GFI grants page | GFI grants page shows no Southeast Asian grantee ([@RD-03]) | The page may be paginated or filtered | "No Vietnam grantee found" is held at Medium confidence, not High |
+| DG-060 | Effective date of Law 93/2025/QH15 | Law 93/2025/QH15 effective date: not shown on the fetched page ([@RD-08]) | Widely reported as 1 October 2025 (agent knowledge) | Record the issue date (27 June 2025) as verified and the effective date as unverified |
+| DG-061 | FIRI Pichia enzyme-expression capability | Prior lead: FIRI does Pichia enzyme expression | FIRI site confirms an Enzyme and Protein Technology department but not Pichia work. Pichia outputs found are from VNU-HCM US and IBT VAST | Treat FIRI Pichia capability as unconfirmed |
+| DG-138 | Plant-based meat papers with a VN author | 2 papers (Scite, [@RD-01]) | 9 raw, about 6 on-topic (OpenAIRE) | Use "about 6 (2015 to 2026), including 2 reviews". Both sources are lower bounds. |
+| DG-139 | VN work on extrusion or texturisation | "None" | 1 VN-tagged extrudate texture study, 2025 (10.1093/ijfood/vvae080); VN affiliation not verified | Soften to "at most one study found". Verify the affiliation. |
+| DG-140 | VN fishmeal-replacement papers | About 20 by term search (Scite) | 10 (OpenAIRE country tag) | Keep about 20 as the better floor. OpenAIRE's country tagging misses Vietnamese journals and some affiliations. <br>*Same or related disagreement: DG-057.* |
+| DG-141 | Scite versus OpenAIRE for country counts | Scite used in wave 1 | Scite gave Thailand 1 cultivated-meat paper, OpenAIRE gave 49 | Do not use Scite affiliation counts for benchmarking. |
+| DG-142 | Most-cited VN plant-based meat paper | Not reported | 10.1007/s00217-021-03810-1 (240 citations) is VN-tagged | Treat it as a probable false positive until the affiliation is checked. |
+
+## Infrastructure and talent (4)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-134 | CTU 2026 total quota | 11,850 (CTU official table, [@INF-15]) | "About 12,000, up about 1,400 on 2025" (tuyensinh247 aggregator, [@INF-16]) | Use 11,850 from the primary source. The aggregator probably rounded or used a draft plan |
+| DG-135 | HCMC Biotechnology Center role | Wave 1: "claimed pilot-scale fermentation and incubation services" ([@RD-01], Low) | Its own service pages list agri and aqua transfers and lab design only ([@INF-05]) | No published pilot fermentation service. Keep as a lead to verify by phone |
+| DG-136 | Hoa Lac managing body and location | Wave 1 and common knowledge: park in Thach That, managed by MOST | Board office in Ha Dong ward under a Hanoi board for hi-tech and industrial parks ([@INF-25]) | The office address is not the park site. Management appears to have moved to Hanoi. Transfer date not verified |
+| DG-137 | Hoa Lac area | Common figure about 1,586 ha (agent knowledge) | Listed zones sum to 941.79 ha without the education zone ([@INF-25]) | Report the zone figures. Treat the total as unverified |
+
+## Science (7)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-104 | Growth-factor share of media cost | Up to 95% of serum-free medium cost ([@SCI-15], current prices) | USD 3 to 4/kg wet cells at 100 kt/yr ([@SCI-14], scaled prices) | Both valid; report both with their price assumptions. |
+| DG-105 | Karimi A. oryzae biomass | 118.5 g DM/L as printed ([@SCI-18]) | Mass balance on 21 g/L COD | Treat as per litre of undiluted vinasse (about 5.9 g/L broth). |
+| DG-106 | Karimi medium COD | 21 g/L stated for 5% vinasse | 835 g/L x 5% = 42 g/L | Internal inconsistency in the paper; unresolved. |
+| DG-107 | Mycoprotein RNA target | "about 2%" of DW ([@SCI-20]) | "less than 1% to be considered safe" ([@SCI-21]) | Use [@SCI-20] (primary study text); [@SCI-21] is a secondary review. |
+| DG-108 | Wolffia EU status | Safety not established, 2021 ([@SCI-28]) | Authorised by Reg. (EU) 2022/2223 ([@SCI-31], review) | Unresolved; check EUR-Lex / Union list. |
+| DG-109 | Duckweed productivity | ~30 t DM/ha/yr average ([@SCI-36]) | up to 100 t DM/ha/yr ([@SCI-37]) | Use 10 to 30 for planning; 100 is an extrapolated ceiling. |
+| DG-110 | Mung bean protein quality | Pig DIAAS 86 (older pattern) ([@SCI-41]) | Human ileal digestibility about 20% lower than pigs ([@SCI-42]) | Prefer human data for food claims. |
+
+## Capital (9)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-062 | Entobel total raised | ~USD 36M (prior lead, no source) | USD 33M Series B (Entobel, [@CAP-08]); USD 32.5M project cost (IFC via EWS, [@CAP-04]); USD 30M (Mekong/The Investor, [@CAP-01], [@CAP-02]) | USD 32.5M to 33M = USD 30M (Mekong + Dragon) + USD 2.5M (IFC). Earlier rounds undisclosed. Reject USD 36M. <br>*Same or related disagreement: DG-037, DG-063.* |
+| DG-063 | IFC ticket in Entobel | ~USD 10M (Petfood Industry, [@CAP-07]); USD 10M equity proposed (IFC 45769, [@CAP-03]) | USD 2.5M (IFC 46903, [@CAP-04]) | USD 2.5M. The USD 10M proposal (January 2022) predates the final round, and the company's USD 33M total leaves room for only about USD 3M from IFC. <br>*Same or related disagreement: DG-062, DG-037.* |
+| DG-064 | Vietnam VC deal count 2024 | 118 (2025 report, [@CAP-20]) | 122 (2026 report, per TNGlobal, [@CAP-22]) | Use 122 (later revision); totals unchanged at USD 398M. |
+| DG-065 | Climate tech VC 2024 | USD 23M in 10 deals (Do Ventures, [@CAP-20]) | ~USD 98M to 100M in 55 deals (CT-FE 2025, [@CAP-25], [@CAP-26]) | Definitional. CT-FE counts Techcoop (USD 70M including debt) as climate; Do Ventures counts it as agriculture. Always name the source. |
+| DG-066 | Techcoop year | Announced 28 February 2025 ([@CAP-19]) | Counted in 2024 data ([@CAP-20]) | Probably closed in late 2024 and announced in 2025. Year-on-year agritech swings (USD 74M to USD 1M) reflect this one deal. |
+| DG-067 | GFI H1 2026 total | USD 359M ([@CAP-51], first sentence) | USD 197M "in H1 2026" ([@CAP-51], later sentence) | H1 = USD 359M; USD 197M is almost certainly Q2 2026 (the Q2 pillar figures add up to USD 198M). |
+| DG-068 | Coefficient Giving RFP size | "up to $10 million" (fund page, [@CAP-56]) | "up to $30 million across two rounds" (RFP page, [@CAP-57]) | USD 30M (the RFP page is specific and was updated when Round 2 was added in July 2026). |
+| DG-069 | Shiok Meats round | "Series B ~USD 18M" (VN press, [@CAP-16], [@CAP-17]) | not checked against primary | Unresolved; Low confidence. |
+| DG-070 | Vietnam VC 2026 YTD | USD 13.7M to March (Tracxn, [@CAP-27]) | >USD 273.78M (StartupBlink via blog, [@CAP-28]) | No position. Wait for the NIC/Do Ventures mid-year data. |
+
+## Regional position (12)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-071 | Aleph Farms Singapore approval date | 22 Jul 2026 (SFA list, [@RGN-04]) | 4 Aug 2026 (press, [@RGN-29], [@RGN-30], [@RGN-31]) | SFA date is the approval; 4 Aug is the announcement |
+| DG-072 | Aleph Farms Thailand filing | 5 Dec 2024 (company release, [@RGN-32]) | 2025 (GFI India, [@RGN-17]) | Company release |
+| DG-073 | Malaysia framework | No novel food framework, score 0 (Hawkwood, [@RGN-01]) | Novel food provision exists (Reg. 3A, GFI State of Play, [@RGN-19]) | A general provision exists, but there is no fermentation or cultivated guidance. Hawkwood's 0 overstates the gap. Not verified at source (FSQD site unreachable) |
+| DG-074 | Solein category | "Precision fermentation" (Green Queen, [@RGN-06]) | Bacterial protein powder from *Xanthobacter* (SFA, [@RGN-04]) | Biomass (gas fermentation) |
+| DG-075 | Vietnam protein-ingredient import tonnage | 2,421 t (3504) and 5,763 t (2106.10) in 2023, Vietnam-reported via WITS | China alone shipped 10,028 t (3504) and 7,957 t (2106.10) to Vietnam in 2023 | Vietnam weights are WITS estimates (uniform unit value). Use China's mirror for tonnage. Values also differ (VN USD 10.1 M vs CN USD 16.3 M for 3504 from China); cause unknown (classification, valuation, timing) <br>*Same or related disagreement: DG-098.* |
+| DG-076 | Hawkwood cost structure | Representative model: feedstock 10% (biomass) and 18% (PF) of cost | Text: feedstock ~35-65% (biomass) and ~30-45% (PF) across other TEAs | Both printed in the same report. For Vietnam, the point stands either way: labour and utilities are a minor share |
+| DG-077 | Angel Yeast expansion | 20,000 t planned (GFI China report, [@RGN-24]) | 30,000+ t (GFI article, [@RGN-25]) | Unresolved; record both |
+| DG-078 | Vow ANZ approval | 7 Apr 2025 ([@RGN-18]) | June 2025 ([@RGN-20]) | Approval by FSANZ in April; in force about June |
+| DG-079 | Singapore funding | S$144 M (2019 programme, [@RGN-22]) | S$165 M "Food Story 2.0" ([@RGN-19]); S$42 M for 11 projects ([@RGN-09]) | Different programmes and calls, not a conflict; do not add them |
+| DG-080 | China's share of world fermentation capacity | "70%" (widely repeated) | GFI China report author: source "hard to locate and verify" ([@RGN-24]) | Do not use the 70% figure |
+| DG-081 | Hawkwood scores for other countries | First machine read: Indonesia sugar 100, Australia sugar 0 | Verbatim Figure 18 read: Indonesia 14, Australia 60 | Verbatim read used; it matches the text (Australia 'strong sugar'; Indonesia a large importer) |
+| DG-082 | Vietnam sugar in Hawkwood | Imports 110 kt, exports 0; "region's highest sugar yield per hectare" 2024 | Not cross-checked against USDA Vietnam Sugar Annual | Treat as unverified; feedstock agent to check |
+
+## Costs (7)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-083 | Minimum wage 2026 | Prior lead: 4.96 M VND (Region I) | Decree 293/2025: 5.31 M VND from 1 Jan 2026 | Use 5.31 M. 4.96 M was the 2024 to 2025 level. |
+| DG-084 | Fishmeal price, Nov 2025 | Prior lead: USD 1,600/t (unsourced) | World Bank Peru 65% CIF: USD 1,794/t | Use the World Bank figure for 65% CIF. The lead may be a lower-grade or domestic price; unverified. <br>*Same or related disagreement: DG-115, DG-116, DG-126, DG-127.* |
+| DG-085 | Blended 22 kV EVN price | Consultancy example: about 2,128 VND/kWh | My calculation from the tariff and the April 2026 windows: 1,952 VND/kWh for 24/7 load | Both can be right for different load profiles (the consultancy may assume more peak-hour use). For continuous plants use 1,952. The claimed DPPA saving shrinks if the baseline is 1,952. |
+| DG-086 | World urea, March 2026 | CafeF: USD 674/t | World Bank series: USD 726/t | Different series and origins. Record both; the direction (a sharp rise) agrees. |
+| DG-087 | Capex per m3 of fermentation | Vlaeminck: about USD 51,000/m3 | Risner: about USD 350,000/m3 | Not averaged. They reflect different designs, grades and estimation methods. Use equipment-level estimates. |
+| DG-088 | Cooling "offsets" the power advantage (prior draft) | Prior draft implied a large offset | My estimate: USD 70 to 180/t, about 2 to 4% of feed-SCP cost | Partly true, but the offset is modest and avoidable with thermotolerant strains. |
+| DG-089 | Comtrade unit values for protein ingredients | 2.52 to 9.16 USD/kg | Identical unit values across all partners suggest imputed quantities | Values are usable; unit values are Low confidence. <br>*Same or related disagreement: DG-119.* |
+
+## Geography, institutions and outlook (6)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-122 | E10 nationwide date | 1 January 2026 (brief) | 1 June 2026 (Circular 50/2025 text; [@FS-10] press) | 1 June 2026. 1 January 2026 is the circular's effective date. [@GT-10] read directly. <br>*Same or related disagreement: DG-029.* |
+| DG-123 | Long An | Merged into HCMC (brief option) | Merged into Tay Ninh (Resolution 202 Art 1(18)) | Tay Ninh, with its capital in former Long An. |
+| DG-124 | Number of municipalities | Wikipedia summary said "8 municipalities" (fetch-model summary) | Resolution 202 and the Wikipedia table list 6 | 6 cities, 28 provinces. The "8" is a summarisation artefact. |
+| DG-125 | Vietnam population 2025 | UN WPP 2024: 101.6 M | GSO 2025 estimate: 102.3 M ([@MAC-19]) | Use GSO for 2025 facts and UN for projections, and note the gap of about 0.7 M. Do not mix the two in growth rates. <br>*Same or related disagreement: DG-011.* |
+| DG-126 | Fishmeal price level | Prior leads: USD 1,600/t (November 2025) and 1,825 later | WB series: Q4 2025 average 1,796; August 2026 2,500 | WB series ([@GT-15]) for benchmarks. The different origins (Peru FOB vs c&f Europe vs Vietnam delivered) explain part of the gap. <br>*Same or related disagreement: DG-084, DG-115, DG-116, DG-127.* |
+| DG-127 | Pink Sheet month labels | First extraction put 2,045 as the June fishmeal price | Second, verbatim extraction: 2,045 = Q2 2026 average; June 2,145; July 2,103; August 2,500 | Second extraction used. <br>*Same or related disagreement: DG-084, DG-115, DG-116, DG-126.* |
+
+## Futures 2030 to 2050 (28)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-143 | Gas-route electricity per kg of protein | 41 kWh per kg (balance model; lower-efficiency published case, [@QNT-10], [@QNT-11]) | About 69 kWh per kg (2030 plant design, [@FTG-01]) | Keep 41 in the model and report the 69 kWh case: break-even grid intensity about 12 g instead of 21 g CO2 per kWh; S-ALT 2050 electricity about 19 TWh instead of 11.7. The conclusion (dedicated clean power is a precondition) holds either way. <br>*Version 0.2 (futures round).* |
+| DG-144 | Maize imports, 2035 | 13.9 Mt (balance model) | 16.6 Mt (OECD-FAO, [@QNT-01]) | Report both. OECD-FAO has 4.4 Mt of non-feed use by 2035 against our 1.6 Mt, and rising domestic output. <br>*Version 0.2 (futures round).* |
+| DG-145 | Fishmeal feed use, 2035 | 274 kt (balance model) | 339 kt (OECD-FAO, [@QNT-01]) | Report both. Our inclusion rates fall 1.5% a year; OECD-FAO use rises. <br>*Version 0.2 (futures round).* |
+| DG-146 | Meat output against the 2030 target | About 6.0 Mt carcass weight in 2025 on NSO data ([@MAC-14]), already inside the 2030 range | Target 6.0 to 6.5 Mt for 2030 (Decision 1520, [@REG-54]) | Report both. Either the target is conservative or NSO live weights run high. <br>*Version 0.2 (futures round).* |
+| DG-147 | Soybean-meal supply, MY2026/27 | About 9 Mt of meal supply implied by USDA import forecasts ([@QNT-07]) | 7.8 Mt of feed use (USDA Post, [@MAC-04]); 7.7 Mt in the model | Logged. USDA imports imply stock building, exports or higher use than its own feed forecast. <br>*Version 0.2 (futures round).* |
+| DG-148 | Maize imports, MY2026/27 | 15 Mt (USDA Post, [@MAC-01]) | About 12.3 Mt (model, 2027 interpolation) | Report both; the model is calibrated on 2025 customs imports (11.9 Mt). <br>*Version 0.2 (futures round).* |
+| DG-149 | Alternative-protein research intensity against Thailand | 0.37 against 1.58 plant-based or cultivated meat records per 10,000 publications, about 23% (OpenAIRE, v0.1, [@BIB-01]) | 4.1 against 13.4 core-basket works per 10,000 national publications, 2015 to 2025, about 31% (OpenAlex, [@HSC-01]) | Say "about a quarter to a third of Thailand's". <br>*Version 0.2 (futures round).* |
+| DG-150 | Rice land, 2030 | 3.56 Mha, keep stable (Decision 1748) | 3,252.63 thousand ha (Decision 1177, [@NTS-15]) | Use Decision 1177: later, and it adjusts the national land plan. <br>*Version 0.2 (futures round).* |
+| DG-151 | Renewables in primary energy, 2030 | 15 to 20% (green growth strategy, Decision 1658) | 25 to 30% (Resolution 70, [@NTS-19]) | Use Resolution 70: later and higher-ranking. <br>*Version 0.2 (futures round).* |
+| DG-152 | GDP per person, 2050 | USD 27,000 to 32,000 (Resolution 81, [@NTS-13]) | About USD 38,000 (Resolution 252, [@NTS-14]) | Use Resolution 252, which amends Resolution 81. <br>*Version 0.2 (futures round).* |
+| DG-153 | Power-sector emissions cap, 2030 | 197 to 199 MtCO2e (Decision 768, [@GT-11]) | At most 170 MtCO2e (Decision 458, press summary) | Unresolved; Decision 768 used in calculations. <br>*Version 0.2 (futures round).* |
+| DG-154 | Mekong hydrogen project sizes | About 30 kt of H2 a year each ([@FTG-17]) | 24, 24, 70 and 5.3 kt ([@HUB-04]) | Totals agree (about 120 to 123 kt); use [@HUB-04]. <br>*Version 0.2 (futures round).* |
+| DG-155 | Ca Mau farmed shrimp, 2025 | 594,851 t ([@HUB-15]) | 577,000 t ([@HUB-17]) | Use 594,851 t; the gap is 3%. <br>*Version 0.2 (futures round).* |
+| DG-156 | Capture fisheries, 2030 | 2.8 Mt target (Decision 339, [@NTS-08]) | 3.50 Mt (OECD-FAO, [@AQF-02]) | Report both; OECD-FAO does not model the fleet cut. <br>*Version 0.2 (futures round).* |
+| DG-157 | Domestic soybean area and yield | Under 20 thousand ha; 1.62 t per ha ([@AQF-20]) | 39 thousand ha; 1.28 t per ha (OECD-FAO, [@AQF-02]) | Area 20 to 39 thousand ha; yield unresolved. <br>*Version 0.2 (futures round).* |
+| DG-158 | Vietnamese fishmeal output | 325 kt (OECD-FAO, 2025, [@AQF-02]) | About 500 kt a year, 2005 to 2016 (secondary, [@AQF-06]) | Use OECD-FAO; the 500 kt may include fish powder. <br>*Version 0.2 (futures round).* |
+| DG-159 | Marine finfish feed conversion on trash fish | 2 to 2.5 ([@AQF-10]) | Grouper 5.9, wet weight ([@AQF-05]) | Use 5 to 8 on a wet-weight basis. <br>*Version 0.2 (futures round).* |
+| DG-160 | Marine feed volume, 2025 | 18 kt (our base, aquaculture paths) | 80 to 100 kt (industry, [@MAC-06]; Appendix S6) | Unresolved; open question logged. It affects species-level marine-feed estimates, not the national soybean-meal total. <br>*Version 0.2 (futures round).* |
+| DG-161 | Approved GE events for food and feed | 60 in total ([@AQF-21]) | 52 when summed by crop in the same summary | Report 60 as stated; breakdown incomplete. <br>*Version 0.2 (futures round).* |
+| DG-162 | Khanh Hoa offshore mariculture pilot area | 440 ha (Decision 231, [@AQF-13]) | Phases in the same summary add up to 240 ha | Report 440 ha as the headline and flag the gap. <br>*Version 0.2 (futures round).* |
+| DG-163 | National rice straw | About 52 to 54 Mt a year at a straw-to-grain ratio of 1.19 ([@NGF-01]; [@HUB-27]) | About 97 Mt at a ratio of 2.2 ([@NGF-09]) | Use the 1.19 ratio. <br>*Version 0.2 (futures round).* |
+| DG-164 | Cellulosic sugar cost | USD 342 to 467 per t (mature-plant models, [@NGF-06], [@NGF-07]) | USD 1,320 per t (lab-optimised Indian bagasse process, [@NGF-08]) | Report both; first-of-a-kind plants cost far more per tonne of capacity. <br>*Version 0.2 (futures round).* |
+| DG-165 | Carbon footprint of Argentine soybean meal | 0.72 t CO2e per t ([@ECF-22]) | 4.09 t CO2e per t with country-level land-use change ([@ECF-23]) | Report both; the accounting method acts as the carbon price. <br>*Version 0.2 (futures round).* |
+| DG-166 | Cultivated-meat volume forecasts | Consultancy forecasts: 35% of "meat" by 2040 (Kearney, 2019); 1.5 Mt by 2030 (McKinsey, 2021) ([@HSC-21] to [@HSC-23]) | Expert panel: 54% chance world output stays below 100,000 t a year through 2051 ([@HSC-18]) | Use the probabilistic panel; only 9 of 84 resolved timeline predictions made before 2021 were right ([@HSC-19]). <br>*Version 0.2 (futures round).* |
+| DG-167 | US tariff changes on Vietnam, 2025 to 2026 | "Four regimes in 16 months" ([@GEO-02] to [@GEO-05]) | The 46% rate was announced but never applied; three rates were applied: 20%, 10% and 12.5% ([@GEO-48]) | Say "changed four times in 16 months, with three different rates applied". <br>*Version 0.2 (futures round).* |
+| DG-168 | African swine fever counts | 952 to 3,029 outbreaks a year (2020 to 2024) | 2019 counted by communes (8,553 of 10,614), not outbreaks ([@GEO-15]) | Report outbreaks for 2020 to 2024 only; describe 2019 separately. <br>*Version 0.2 (futures round).* |
+| DG-169 | Value of cheaper capital for fermentation protein | "Worth a decade of learning" (early ECF draft) | Script output: USD 3,613 per t with no learning at a 9% charge, close to the central learning case in 2030 (USD 3,557), not 2040 (USD 3,176) | Say "does as much as the learning expected by 2030". <br>*Version 0.2 (futures round).* |
+| DG-170 | Methane target base year, 2050 | 40% below 2020 by 2050 | 40% below 2030 by 2050 (NTS reading of Decision 896) | Read the 2050 base as 2030 (Medium); open question logged. <br>*Version 0.2 (futures round).* |
+
+## Demand side, v0.3 (89)
+
+### Diet and prices (15)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-171 | Meat eaten per person, level (supply vs intake) | FAOSTAT food supply: 60.5 kg of meat per person in 2023, carcass weight, plus 7.0 kg offal (DIE-07) | NIN General Nutrition Survey: 136.4 g per person per day in 2020, about 49.8 kg a year as eaten (DIE-01; DIE-02) | Use NIN for intake and nutrition claims, FAO for international comparison and trends. Do not average. |
+| DG-172 | Meat eaten per person, household survey vs nutrition survey | VHLSS: 2.60 kg per person per month for home use in 2024, 31.2 kg a year (DIE-05) | NIN: 136.4 g per day, 49.8 kg a year (2020) (DIE-01) | Treat VHLSS as home consumption only. The difference is roughly the meat eaten away from home plus basis differences. |
+| DG-173 | Meat per person, OECD-FAO vs FAOSTAT | OECD-FAO: 45.5 kg per person in 2023 (pork, poultry, beef, sheep) (DIE-11) | FAOSTAT: 60.5 kg per person in 2023 (all meat) (DIE-07) | Both usable within their own series. OECD-FAO for projections, FAOSTAT for levels and neighbours. |
+| DG-174 | Eggs eaten per person | FAOSTAT: 3.96 kg per person in 2023, roughly 66 to 72 eggs (our conversion at 55 to 60 g) (DIE-07) | NSO production of 21.4 billion eggs in 2025 implies about 211 eggs per person (our division; supply study MI-010); VHLSS home use is 61 eggs a year (DIE-05) | Prefer VHLSS for household consumption (61 eggs at home). Flag FAO egg supply as probably too low. |
+| DG-175 | Milk supply per person | FAOSTAT: 53.9 kg per person in 2021 | FAOSTAT: 37.4 kg per person in 2023 (same series) (DIE-07) | Do not read the fall as a real drop in dairy consumption. |
+| DG-176 | FAOSTAT series break | Historic food balance sheet: Vietnam meat supply 51.5 kg per person in 2010 (DIE-08) | New food balance sheet: 41.0 kg per person in 2010 (DIE-07) | Use the new series from 2010 and the historic series only before 2010, and never join them without a note. |
+| DG-177 | Protein content of tofu | Vietnamese Food Composition Table: 10.9 g protein per 100 g (DIE-12) | Retail labels in the supply study audit: 3.8 to 9.3 g per 100 g (FORM-01) | Report both. Use the FCT for the standard comparison and flag that some commercial tofu is much wetter. |
+| DG-178 | Protein content of pangasius fillet | Commercial frozen fillets 12.5 to 15.7 g per 100 g (DIE-13) | Untreated fillets 18 g or more (DIE-14) | Use 15 g central with a 12.5 to 18 g range. |
+| DG-179 | Peak live hog price, 2020 | Press: the 2020 peak reached about 100,000 VND per kg live weight (DIE-27, press, secondary) | FAOSTAT producer price: annual average 78,138 VND per kg in 2020 (DIE-25) | Both can be true (monthly peak vs annual average). Use the FAO annual figure for comparisons. |
+| DG-180 | Is protein intake adequate? | Average intake is about 73 to 80 g per person per day (DIE-32; derived from DIE-01), 1.5 times the 50 g label reference (DIE-04) | 35.5% of adults in the Hanoi and Thai Binh study were below the recommended protein intake (DIE-32) | Adequate on average for adults; do not claim a general protein gap. Undernutrition is concentrated in children in poorer, mountainous areas. |
+| DG-181 | Willingness to pay for safer pork | Discrete choice experiment: 70% premium for certified-abattoir pork, up to 102% for hormone- and drug-free pork (DIE-29) | Incentive-compatible auction: 20% premium for pork from upgraded shops (DIE-30) | Plan on the auction figure (about 20%) as the realistic ceiling for a safety premium in fresh protein. |
+| DG-182 | Meat intake reported at the survey launch | 136.4 g per person per day (DIE-01; DIE-02) | 134 g per person per day (DIE-03) | Use 136.4 g, reported by two outlets with the full launch data. |
+| DG-183 | Beef per person in OECD-FAO history | OECD-FAO: 8.3 kg (2015) and 7.1 kg (2019) (DIE-11) | OECD-FAO: 3.6 kg (2020); FAOSTAT 2.7 to 3.9 kg over 2015 to 2020 (DIE-07) | Use FAOSTAT for beef history; use OECD-FAO beef only from 2020 on. |
+| DG-184 | Fish eaten at home | VHLSS: 1.50 kg per person per month (2020) falling to 1.13 kg (2022) in every region (DIE-05) | FAOSTAT fish supply flat at 40 to 41 kg per person over 2020 to 2023 (DIE-07) | Treat the VHLSS drop as a possible questionnaire change until NSO explains it. |
+| DG-185 | Overweight in children under 5 | NIN General Nutrition Survey: 7.4% (2020) (DIE-03) | UNICEF/WHO/World Bank modelled estimate: 8.0% (2020), 10.5% (2024) (DIE-28) | Use the survey value for 2020 and the modelled series for the trend. |
+
+### Chay (10)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-186 | Number of Buddhists | 2019 census: 4.6 million Buddhists (CHY-08) | 2023 White Paper: more than 14 million registered Buddhists (CHY-07); Pew 2023: 38% of adults identify as Buddhist (CHY-06) | Use Pew 38% for self-identification; none measures chay practice |
+| DG-187 | Vu Lan 2026 demand | Hanoi sellers: volume 2 to 3 times normal (CHY-20) | Hai Phong restaurant: orders down 20 to 30% on 2025 (CHY-21); Ho Chi Minh City: buying 'slightly up' (CHY-19) | Both true: the seasonal multiple held, but year-on-year volume softened as costs rose |
+| DG-188 | Direction of chay taste: mock meat versus natural | Ho Chi Minh City 2024: mock meats were best sellers (CHY-26); periodic eaters prefer processed chay (CHY-09) | Hanoi 2026: buyers prefer mushrooms, lotus, beans, vegetables over industrial chay (CHY-20; CHY-21) | Treat as regional plus segment difference: southern periodic mass market buys mock meat; northern and strict buyers lean natural |
+| DG-189 | Tofu consumption volume | USSEC: tofu 11% of 286,000 t soy food in 2023, about 31,500 t (CHY-46) | Craft village evidence: Hong Ha commune alone processes 20 to 30 t beans a day (CHY-48); Vong La over 80% of households at 150 kg beans a day (CHY-49) | Prefer USDA 550,000 t soybean food use as the anchor; treat USSEC tofu figure as industrial tofu only |
+| DG-190 | Foody chay listing counts | B-Company: 2,737 stores in 51 provinces, May 2024 (CHY-14) | Our read: at least 3,275 in 23 former provinces, September 2026 (CHY-31) | Use our direct read with caveats; do not infer outlet growth |
+| DG-191 | Buddhist view of mock meat | Thich Thanh Huan and Thich Minh Thanh: acceptable skilful means that reduces killing (CHY-53; CHY-55) | Duong Lu Dien: mock meat damages compassion and keeps attachment to meat (CHY-54) | Permissive on balance; no binding Sangha ruling found |
+| DG-192 | Whether the five pungent plants rule applies to chay eaters | Giac Ngo advisory: binds Bodhisattva precept holders, not lay lunar-day observers (CHY-52) | Academic paper: Buddhist vegetarian diet excludes the five pungent plants (CHY-10) | Follow Giac Ngo for lay practice; mainstream products already use alliums (FORM-01) |
+| DG-193 | Rakuten 2024 weekly consumption share | B-Company article 1: 45% several times a week (CHY-13) | B-Company article 2: 44% several times a week (CHY-14) | Use neither as verified; underlying Statista values are paywalled; 2021 value is 44% (CHY-02) |
+| DG-194 | Chay price versus meat | Street chay and supermarket đồ chay are cheaper than meat (CHY-38; FORM-01) | Famous chay restaurants are more expensive than meat restaurants (CHY-37) | Both true by segment: mass chay below meat, premium chay above |
+| DG-195 | Vietnamese vegetarian share of population | VTV and VnEconomy: about 10% (CHY-15; CHY-18) | Rakuten 2021: 10% 'only consume plant-based food' in an online panel (CHY-02); no probability survey exists | Reject the 10% population claim; treat Rakuten as a panel figure |
+
+### Consumers (12)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-196 | What the GFI 5% to 63% figure means | GFI SOTIR 2023 and 10-charts page: share who would eat plant-based meat rises from 5% who eat it regularly now to 63% who would eat it always (15%) or often (48%) if all concerns were resolved (ECO-23; ECO-24) | GFI press release Feb 2024: if cost and other challenges are resolved, three-quarters of Southeast Asian consumers say they would regularly consume plant-based meat (CON-02) | Use 63% always or often, as charted with n=5,971. The three-quarters wording seems to count a broader group and is not shown in any chart we could read |
+| DG-197 | Vinasoy share of soy milk | About 80% of soy milk (brief context, ECO-41, press from QNS filings, 2024) | 90.6% of branded soy milk in 2024, up 1 point (Bao Viet Securities via CON-27; Mirae Asset CON-26) | Use 90.6% of branded (packaged) soy milk for 2024; treat 80% as an older or broader-base figure |
+| DG-198 | How many Vietnamese have tried plant-based products | Rakuten Insight 2025: 92% have tried plant-based alternatives (CON-07) | GFI 2023: 42% have ever tried plant-based meat (CON-02) | Both hold: Rakuten counts any plant-based alternative (89% of triers had plant milk); GFI counts plant-based meat only. Use GFI for meat analogues |
+| DG-199 | Regular consumption | Rakuten 2025: 43% consume plant-based alternatives several times a week (CON-07) | GFI 2023: 3% eat plant-based meat one or more times a week (CON-02) | Both hold; different categories. For product design use GFI for meat analogues and Rakuten for plant milk |
+| DG-200 | Awareness of novel alternative protein among Hanoi youth | Nguyen M.Q. et al. 2025 text: 84% aware but not used (CON-12); RD-32 reports the same 84% | Same paper: 202 of 288 respondents (70%) were aware but had not used | Use 70% if anything, rated Low; the identical 84% in two samples suggests reuse |
+| DG-201 | Plant-based dairy trend in 2023 | Euromonitor: plant-based dairy retail value fell strongly in 2023 (CON-30) | Google Trends: search interest in sữa hạt peaked in 2023 (index 82 against 44 in 2022) (CON-37) | Prefer Euromonitor for sales; search interest is not sales and is driven by home nut-milk machines |
+| DG-202 | Who the early adopters are by age | GFI 2023: 18 to 24 year olds are the least aware; about two-thirds of Enthusiasts are over 35 (CON-02) | Vietnamese academic studies focus on 18 to 25 students and report high willingness (CON-12; CON-13; RD-32) | Prefer GFI: target 25 to 44 urban earners; student intentions are cheap talk with low incomes |
+| DG-203 | Income and meat reduction | GFI 2023: plant-based meat Expanders tend to be higher income; Rejectors lower (ECO-23) | Delley et al. 2024: Vietnamese proactive meat reducers skew to the two lowest income bands (CON-08) | Both hold: premium plant-based meat skews rich; meat reduction for health or money skews poorer and will use cheap chay and tofu, not premium analogues |
+| DG-204 | Role of environmental concern | Nguyen M.Q. et al. 2025: environmental and sustainability concern raises attitude to novel protein (CON-12) | Ly and Ly 2025: environmental concern has a small negative effect on intention (CON-13); Rakuten: environment ranks 6th of 7 reasons in Vietnam (CON-07) | Treat environment as a weak and unstable driver in Vietnam; lead with health, safety and value |
+| DG-205 | Role of religion | Nguyen T.L. et al. 2020 (spirituality) and Nguyen T.Q.N. et al. 2025 (religious values) find positive effects; Rakuten: 35% cite following a vegetarian diet (CON-11; CON-16; CON-07) | Ly and Ly 2025: religious beliefs not significant among Hanoi students (CON-13) | Religion drives chay and periodic vegetarian demand among the general population, less so among students choosing modern products |
+| DG-206 | Share of Vietnamese who eat vegetarian | Unnamed 2019 survey in CafeF: 55% eat chay (CON-20) | Delley et al. 2024: 4% of urban meat eaters call themselves flexitarian (CON-08) | Reject the 55% (no source; arithmetic does not reconcile). The 4% excludes non-meat eaters and is urban only |
+| DG-207 | Size of Vietnam plant-based markets | Press and consultancy figures: VND 1,000 billion plant-based meat (ECO-17), USD 500 million (ECO-18), USD 112 million vegan food 2025 (IMARC via CON-38) | Revealed evidence: no Mintel launches 2022 to Q2 2023 (ECO-23); one imported analogue brand in 186 audited SKUs (FORM-01) | Do not use the market-size claims; no method is traceable |
+
+### Frontier categories (9)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-208 | Chinese consumer acceptance of cultivated meat | 59.3 percent of an urban online sample were very or extremely likely to buy clean meat (2018 fieldwork; NOV-28) | In a 2020 discrete choice experiment in five cities, willingness to pay for cultivated meat was below farm-raised meat, and below plant-based meat (NOV-29) | Prefer the choice experiment for pricing and demand design; treat the 59.3 percent as an upper bound on stated openness |
+| DG-209 | Purchase intent for blended products in the 2025 Singapore blind test | 22 percent would buy blended versus 16 percent plant-based (vegconomist, NOV-39) | 58 percent would likely buy blended versus 38 percent plant-based and 95 percent conventional (Green Queen, NOV-38) | Use the ratio (blends 1.4 to 1.5 times plant-based) and the gap to conventional meat, not either level |
+| DG-210 | How blends compare with conventional meat on liking | Best blends matched or beat conventional (a 30 to 50 percent plant chicken mince beat 100 percent chicken; others within 0.5 points on a 7-point scale) (NOV-37, NOV-38) | On average animal meat was liked by more tasters: 60 percent versus 37 percent for blends (NOV-40); or 81 percent versus 59 percent for blends and 44 percent for plant-based (NOV-38); animal protein ranks top, blends second, plant-based last | Both are true: the best blends reach parity, the average blend does not. Design to the best-blend standard |
+| DG-211 | Share of young Hanoi respondents aware of but not using novel alternative proteins (NOV-02) | 84 percent, as stated in the text | 202 of 288 respondents, which is 70 percent | Use 70 percent, computed from the reported counts |
+| DG-212 | Vietnam edible mushroom production | About 250,000 t per year and US$25 to 30 million exports (citing SGGP 2019, in NOV-78) | About 24,780 t in 2021, forecast 26,620 t in 2026 (citing Reportlinker, in NOV-78) | No position; both are secondary and cited in the same paper |
+| DG-213 | What GOOD Meat 3 is | A cultivated meat product, 'exceptional in taste', sales to exceed prior years (company, NOV-10) | With 97 percent plant ingredients it is effectively a plant-based product (Monash University professor, NOV-11) | Treat it as a hybrid plant product with a small cultivated ingredient; its sales say little about demand for cultivated meat as such |
+| DG-214 | Vow's scale | More than 5000 kg per week production and 35,000 litres capacity (company, NOV-16) | About 25,000 dishes served in 16 months in Singapore and staff cuts of 30 percent in 2025 (NOV-14, NOV-16) | Capacity is not demand; we rely on dishes served and restaurant counts |
+| DG-215 | Stated share of Southeast Asians who would regularly eat plant-based meat if barriers were removed (Decoding Demand) | About 63 percent, from 5 percent now (project document citing ECO-24) | 'Three-quarters' would regularly consume; 50 percent often plus 15 percent always (GFI APAC press release, NOV-35) | Report 'about two-thirds would often or always choose it', flag as a hypothetical stated measure |
+| DG-216 | Openness of Vietnamese consumers to cultivated meat | Vietnam is where the most open segment is concentrated (five-country study, NOV-01) | Only about a quarter of young Vietnamese are 'optimists' about in vitro meat (NOV-03) | Not a contradiction: Vietnam can be relatively open compared with Japan or Korea while most individuals are not optimists. Use both |
+
+### Channels and institutions (13)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-217 | Modern trade share of food retail | USDA GAIN 2024 (CHN-02): modern trade 15% of retail value in 2023 (bar chart, Euromonitor) | USDA GAIN 2025 (CHN-01): modern retail 13% in 2024 (pie excludes food and drink specialists) | Use 13% (2024) for supermarkets, hypermarkets and convenience; the 15% includes specialists. Like-for-like the share rose from 12% (2023) to 13% (2024) |
+| DG-218 | Modern trade share in 2025 | WinCommerce CEO (CHN-15): 12% to 14% of grocery, 2024 to 2025 | Euromonitor via USDA (CHN-01): 13% in 2024 | Report both; treat 14% for 2025 as a company claim (Low) |
+| DG-219 | Foodservice market size 2024 | USDA HRI 2025 (CHN-03): USD 26.6 billion (Euromonitor) | USDA Retail 2025 (CHN-01): Food Service-HRI USD 27.3 billion | Prefer USD 26.6 billion from the dedicated HRI report |
+| DG-220 | Number of foodservice outlets | Euromonitor via CHN-03: over 323,000 outlets in 2024 | iPOS via CHN-04: 304,700 operators in mid-2024 after 30,000 closures; over 50,000 more closed in H1 2025 (CHN-03) | Report both; different definitions (outlets vs operators) and dates |
+| DG-221 | KFC store count | USDA HRI 2024 (CHN-04): over 200 stores | Q&Me enumeration March 2025 (CHN-06): 172 | Prefer 172 (store enumeration) |
+| DG-222 | Circle K store count | Q&Me March 2025 (CHN-06): 499 | SHS via CafeF, Nov 2025 (CHN-08): about 447 | Report both; cannot tell whether closures or method explain the gap |
+| DG-223 | Share of fresh meat through traditional channels | Euromonitor via B&Company (CHN-18): around 80% of fresh meat market | Systematic review (CHN-19): over 95% of pork retailers sell at wet markets | Both hold: one is value share, the other a share of retailers. Use about 80% of value as the working figure (Low) |
+| DG-224 | Industrial catering market size | Saigon Times 2024 (CHN-41) and B&Company via CafeF 2026 (CHN-35): about USD 2 billion a year | Cong Thuong 2019 (CHN-42): about VND 1,000 billion a day (about USD 14 billion a year) | Use USD 2 billion; reject the 2019 figure |
+| DG-225 | Caterer margins | Saigon Times (CHN-41): margins 20% to 35% after commissions | Same source: food is 60% to 80% of meal value | Downgrade the margin claim to Low |
+| DG-226 | Bach Hoa Xanh store forecast | Vietcap via CafeF, Dec 2024 (CHN-13): over 2,100 stores by end-2026 | Actual: 2,180 in May 2025 (CHN-09); 3,612 in Aug 2026 (CHN-12) | Use actuals; the forecast is superseded |
+| DG-227 | US arrivals Jan to Aug 2026 | VietnamPlus (CHN-51): USA 887,000, up 20.4% | NSO (CHN-45): Americas 887,400, up 20.7% | Use NSO; the VietnamPlus label is likely wrong |
+| DG-228 | Date of Decision 1340/QD-TTg | Official portal (CHN-33): 8 July 2016 | Tool summary of LuatVietnam page: 8 August 2016 | Use 8 July 2016 |
+| DG-229 | Canteen meal price level | Cong Thuong 2019 (CHN-42): VND 15,000 to 20,000 | Hai Phong 2026 (CHN-39): VND 25,000 to 35,000; Saigon Times 2024 (CHN-41): VND 29,000 standard | Use 2026 figures; the gap is inflation and upgrading, not a contradiction |
+
+### Business buyers (8)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-230 | HS 3504 imports from China, 2023 | Vietnam reports imports from China of about USD 10.1 million [RGN-45] and from all partners USD 22.18 million CIF with imputed quantity [BUY-01] | China reports exports to Vietnam of USD 16.31 million and 10,028 t (all partners report USD 32.08 million FOB) [BUY-02] | Prefer partner-reported data for China tonnage and values because Vietnam's quantities are imputed; report both |
+| DG-231 | HS 2106.10 imports, 2023 | Vietnam-reported USD 33.98 million CIF [BUY-01] | Partner-reported USD 40.33 million FOB [BUY-02] | Report both; use partner data for trend to 2025 because Vietnam has not reported 2024 or 2025 |
+| DG-232 | Wheat gluten tonnage, 2023 | Vietnam-reported 12,337 t (imputed) [BUY-01] | Partner-reported 16,664 t (China 10,338 t) [BUY-02] | Prefer partner-reported tonnage |
+| DG-233 | Tariff classification of soy protein isolate | Supply study: SPI is often classified in HS 3504 (tariff table note) | Commercial shipment samples declare SPI under HS 2106.10.00 (2025) [BUY-07] | Treat SPI as split across both codes; do not read either code as 'SPI' |
+| DG-234 | Next Fi Vietnam edition | USDA recommends the 'Food Ingredients Trade Show (May 2027)' [MAC-31] | Organiser site lists the next Fi Vietnam as 17 to 19 May 2028 [BUY-32] | Use the organiser date for Fi Vietnam; USDA may mean another show |
+| DG-235 | Vissan 2025 processed food volume | 2025 plan: 21,460 t [BUY-04] | 2025 actual: 18,547 t; 2026 plan 20,350 t [BUY-04] | Use actual 18,547 t for 2025 and treat 20,350 t as a target |
+| DG-236 | Egg white powder unit value | India to Vietnam 2023: USD 11.51/kg [BUY-02] | India to Vietnam 2025: USD 5.90/kg [BUY-02] | Use 2025 as the current benchmark; note volatility |
+| DG-237 | Caseinates and casein derivatives (HS 3501.90), 2023 | Vietnam-reported imports USD 27.83 million CIF [BUY-01] | Partner-reported exports to Vietnam USD 9.87 million FOB [BUY-02] | Report both; do not use either as a caseinate demand figure until declarations are checked |
+
+### Export (8)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-238 | Global plant-based meat and seafood retail sales, 2025 | USD 6.6 billion (GFI resource page and GFI Euromonitor analysis; EXP-03, EXP-10) | USD 6.8 billion (vegconomist summary of the same GFI report; EXP-04) | Use USD 6.6 billion |
+| DG-239 | US plant-based milk retail sales, 2025 | USD 2.7 billion, down 2% (GFI US retail insights; EXP-02) | USD 2.5 billion, down 2% (Green Queen summary; EXP-01) | Use USD 2.7 billion |
+| DG-240 | Korea alternative meat market size | Euromonitor: KRW 21.2 billion in 2022, forecast KRW 32.1 billion in 2025 (EXP-09) | aT: about KRW 25.2 billion in 2023, forecast KRW 29.5 billion in 2025 (EXP-08) | Report both; both place the market at roughly KRW 20 to 30 billion (under USD 25 million) |
+| DG-241 | Vietnam exports of HS 2106.10 to the US | Vietnam-reported: USD 0.14 million to the US in 2023 (EXP-39) | US-reported: USD 1.45 million imports from Vietnam in 2024 (EXP-40) | Report both; the US mirror figure better reflects what reaches US shelves |
+| DG-242 | Scope of the EU restriction on meat names | vegconomist: 'EU banned meat terminology for alternative protein products (March 2026)' (EXP-04) | GFI Europe: 32 specific terms restricted from 19 August 2026; burger, sausage and nuggets still allowed; new amendments pending (EXP-25) | Use GFI Europe's detailed account |
+| DG-243 | Thailand alternative protein exports | MGR Online (TPSO): THB 4.5 billion in 2021, projected THB 5.67 billion in 2024 (EXP-15) | The Nation (Thai Future Food Trade Association): THB 384 million in January 2025 alone, about THB 4.6 billion a year if sustained (EXP-12) | Report both as an order of magnitude (about THB 4.5 to 5.7 billion a year); low confidence |
+| DG-244 | Six-country European plant-based sales volume change, 2024 to 2025 | Automated summary of GFI Europe page: down 1.7% (total 1,600.4 million kg in 2024) | Our sum of GFI Europe's country table: 1,500.4 to 1,572.8 million kg, up 4.8% (EXP-05) | Use up 4.8% |
+| DG-245 | US tariff status of Vietnamese cashews | Nhan Dan: 'US removed import tariffs November 14, 2025' on cashews (EXP-19) | Law-firm summary of the 14 November 2025 order lists coffee, tea, tropical fruit and juices, cocoa, spices, bananas, oranges, tomatoes and beef, not nuts explicitly (EXP-20); USTR's July 2026 Section 301 notice explicitly exempts cashews (EXP-22) | Cashews are exempt from the July 2026 Section 301 tariff (primary source); the November 2025 status is not needed for current decisions |
+
+### Global benchmarks (13)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-246 | Price parity in Germany | Plant-based meat was 45% more expensive per kg than animal meat in 2024 (sales-weighted Circana, GLB-09) | Meat substitutes had reached price parity in German supermarkets (unweighted shelf sample, GLB-15) | Use the sales-weighted premium (+45%) for demand modelling; parity applies to the cheapest private-label items, not to what people actually buy on average |
+| DG-247 | Price parity in the Netherlands | A basket of the cheapest plant-based versions of 12 products was cheaper than the animal basket in most Dutch supermarkets (ProVeg, cited in GLB-10) | Plant-based meat averaged 35% more per kg than animal meat in 2024 (Circana, GLB-10) | Prefer the sales-weighted average for sizing; note that even where cheap parity options exist, volume fell |
+| DG-248 | Sign of plant-based meat own-price elasticity | US scanner studies find negative, elastic demand: -0.84 to -1.55 (GLB-16) and -1.23 for plant-based beef (GLB-03) | Dutch store-level scanner study finds a positive own-price elasticity of +1.52 (GLB-21) | Use -0.8 to -1.6 as the working range; treat the Dutch positive sign as an artefact of rapid variety and quality growth in 2015 to 2018, as its authors suggest |
+| DG-249 | Is plant-based meat a substitute or complement for meat? | Substitute for chicken, turkey, fish (GLB-16); plant-based beef patties substitute for beef patties (GLB-20) | Complement for beef and pork (GLB-16); complement for beef, poultry and fish in the Netherlands (GLB-21); cross-price effects small (GLB-24; GLB-26) | No firm sign; assume cross-price effects on meat are small and do not assume one-for-one displacement |
+| DG-250 | US plant-based meat household penetration in 2021 | 19% of households bought plant-based meat in 2021 (GLB-02) | The 2025 release gives a 2021 high of 20% (GLB-01) | Quote 19 to 20% for the 2021 peak and use the current release (20% to 11%) for the trend because both ends share one method |
+| DG-251 | US natural-channel share of plant-based meat | 14% of natural-channel meat dollar sales in 2021 (GLB-02) | About 3% in 2025 (GLB-01) | Do not interpret as a collapse; channel definitions probably changed. Not used in headline findings |
+| DG-252 | Effect of Lidl Germany's price parity | Vegan sales rose more than 30% in six months after October 2023 parity (company claim, GLB-13; GLB-14) | German plant-based meat market volume rose 6.2% in 2024 and fell 1.7% in 2025 (GLB-09; GLB-08) | Price parity by one retailer may mainly shift share between retailers; the national category did not take off |
+| DG-253 | Stated versus revealed demand in Southeast Asia | 76% of interested consumers say they would buy plant-based meat at price parity (GLB-48, stated) | In the Netherlands, widespread private-label parity coincided with falling plant-based meat volumes and a flat protein split (GLB-10; GLB-12; GLB-08, revealed) | Weight revealed evidence; treat stated parity intent as an upper bound for trial, not repeat purchase |
+| DG-254 | Stated versus revealed demand in China | 60.1% of an age and gender matched online sample said they had eaten plant-based meat (GLB-51) | Beyond Meat sold under 600 units a month on Tmall and several startups closed by 2023 (GLB-50) | Stated trial figures from online panels overstate the market; use revealed evidence |
+| DG-255 | Blind-taste 'parity' of blended products | In blind tastings, US consumers favoured a 70% beef and 30% mushroom blend over plant-based alternatives (GLB-30) | When told the ingredients, demand for the blend fell (GLB-30); Dutch hybrid products are too small to move the protein split (GLB-12) | Hybrids can win on taste but should not be sold on a 'less meat' message alone |
+| DG-256 | Thai meat substitute premium over processed meat | 'Around 40% more' (GLB-53 text) | 736 vs 430 THB per kg, which is 71% more (GLB-53 figures) | Report the THB figures and the 71% arithmetic; flag the source's rounding |
+| DG-257 | Vegetarian default effect size | Defaults move vegetarian choice from 2 to 12% to 86 to 89% (GLB-37) and triple plant-based choice (GLB-38) | Randomised trials with at least one day of follow-up show a pooled effect of SMD 0.07 across all meat-reduction interventions (GLB-39) | Defaults reliably change the meal served; lasting net reduction in meat eaten is not shown. Size institutional channels by meals served, not by diet change |
+| DG-258 | Long-range market forecasts | Alternative proteins 10% of meat by 2025 (GLB-45), USD 140 billion by 2029 (GLB-44), USD 162 billion plant-based by 2030 (GLB-43), 11% of protein by 2035 (GLB-42) | Global plant-based meat and seafood retail USD 6.6 billion in 2025, about 0.5% of meat value (GLB-05) | Do not use these forecasts as base cases; label Part III scenarios as exploratory and anchor them on observed ceilings |
+
+### Cross-stream (1)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-259 | GFI APAC survey: Vietnam sample frame | Online panel in Hanoi and Ho Chi Minh City (CONSUMER stream, from chart images and CON-03) | Ho Chi Minh City as the Vietnam sample (NOVEL stream, from the press release and NOV-36) | Faunalytics describes the frame as capital-city regions plus Ho Chi Minh City; we describe the Vietnam sample as the Hanoi region and Ho Chi Minh City (Medium). |
+
+## Actor check and expansion waves, v0.4 (93)
+
+### Public meals (wave 7) (7)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-260 | Is there an animal-share target in school meals? | Part III: school meals are guided by a target to raise animal protein above 40% of protein (Decision 1340/QĐ-TTg) [CHN-33] | Actor check: current guidance (Decision 3958/QĐ-BYT) has no animal share [AIB-39; APR-04] | Both partly right: national guidance has no animal share and the 1340 targets ended in 2020, but the MOET, Ajinomoto and NIN menu software prints an animal-protein standard of at least 48%, which 9 of 25 published days miss [PMR-26] |
+| DG-261 | Content of Decision 973/QĐ-TTg | Press: the programme scales a MOET, NIN and TH Group model with 400 standard menus and one carton of fresh milk a day [AFN-45] | Decision text: scale up the school meal model with menus meeting the preschool programme and MOH guidance; no company, menu count or milk named [PMR-01] | Attribute the menu count and milk to the press report, not to the decision |
+| DG-262 | Date of Hanoi Resolution 84/2026/NQ-HĐND | Bo De ward Notice 979/TB-UBND: 9 July 2025 [PMR-05] | Ngoc Lam school Notice 04/TB-THNL: 15 July 2026 [PMR-06] | Use 2026 (the number series and the school year point to 2026); the day is uncertain |
+| DG-263 | Year of MOET Decision 2195/QĐ-BGDĐT | Ngoc Lam school notice: 10 August 2025 [PMR-06] | Legal database: 10 August 2022 [PMR-03] | Use 2022 |
+| DG-264 | Share of daily energy in a primary school lunch | Decision 3958/QĐ-BYT: 30 to 40% [AIB-39]; menu software 532.5 to 710 kcal [PMR-26] | Hai Phong school tender: 35 to 40%, 560 to 720 kcal [PMR-07] | Report both; local tenders can be tighter than national guidance |
+| DG-265 | Union shift-meal floors (Conclusion 03/KL-TLĐ) | VND 20,000 (self-organised) or 25,000 (hired caterer) in regions I and II; VND 18,000 or 22,000 in regions III and IV [AIB-43] | Re-read of the same page: VND 20,000 and above (regions I and II) and VND 18,000 and above (regions III and IV) [AIB-43, re-read] | Keep the 20,000 and 18,000 floors as confirmed; treat the hired-caterer floors as unconfirmed |
+| DG-266 | Protein in pangasius fillet | Part III ladder: 15 g per 100 g (literature on commercial fillets) [DIE-13; DIE-14] | Decision 3958 food table: 9.7 g per 100 g [AIB-39] | Report both; menu software built on the lower value shows low protein and low animal share on fish days |
+
+### Fiscal and tariff rules (wave 7) (6)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-267 | Duty on Chinese protein ingredients (2106.10, 3504, 1109) | Part III ch16.2, app-d5 row 1, BSG-001 and TPP-01: MFN duties of 5%, 3% and 10% apply, "so domestic makers get little protection" (REG2-20; REG2-23) | MOIT VNTR schedules: 0% under ACFTA and RCEP-China in every year 2024 to 2027, and 0% under ATIGA and AKFTA (FTR-32; FTR-33) | Claim B for Chinese, ASEAN and Korean origin with a certificate of origin; claim A only for non-FTA origins such as the United States |
+| DG-268 | Duty on imported single-cell protein (2102.20) | app-s9 S9.18 and app-s6: about 7%, "a small edge for local SCP producers over imported SCP" (REG2-23) | VNTR: 0% under ACFTA, ATIGA and RCEP (FTR-32) | Claim B for Chinese and ASEAN product |
+| DG-269 | Where the excise exclusions for milk, juices and water come from | APR-19 (Tuoi Tre): the law excludes milk and dairy products, liquid nutrition foods, mineral water and juices | FTR-01 and FTR-02: the law and decree state only the TCVN reference and the 5 g threshold; the exclusions are the scope of TCVN 12828:2019 (FTR-05; APR-22) | Claim B |
+| DG-270 | Status of sweetened soy milk under the excise | Plain reading: soy milk fits the TCVN 12828:2019 definition, is not "milk" under TCVN 11216:2015, and is declared and classified as a non-alcoholic beverage, so it is taxable above 5 g (FTR-05; FTR-07; FTR-08; FTR-17; FTR-32) | Soy milk has its own national standard (TCVN 12443:2018) drafted by the nutrition committee, and fortified variants are declared as supplemented food, which could support the "liquid food for nutritional purposes" exclusion (FTR-06; FTR-20) | Unresolved; we treat it as a probable tax and a risk, not a fact |
+| DG-271 | MFN rates in VNTR versus the decrees | VNTR MFN column: almonds 0802.12.90 at 10%; 2304.00.29 and 2304.00.90 at 2% (FTR-32) | Decree 73/2025/ND-CP: almonds 5% and soybean meal 0% from 31 March 2025 (REG2-21) | Claim B (decree text) |
+| DG-272 | Carbohydrate of Fami Nguyên Chất Ít Đường | Retail audit SKU-146: 6.5 g per 100 ml carbohydrate (FORM-01) | Label in self-declaration 08NS/QNS/2025: carbohydrate 6.7 g, total sugar 6.5 g (FTR-17) | Claim B (label) |
+
+### Funder units and fit (wave 7) (7)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-273 | Emission intensity of meat: boundary | GLEAM life-cycle intensities for E and SE Asia (2005): pork 6.15, broilers 5.18, mixed beef 54.5 kg CO2e per kg carcass (FUF-04; FUF-05) | FAOSTAT farm-gate intensities for Viet Nam (2023): pig 1.62, chicken 0.90, cattle 40.0, buffalo 65.0 kg CO2e per kg meat (FUF-10) | GLEAM used: funders compare life-cycle footprints, and feed is most of the pork and poultry footprint. FAOSTAT kept as a boundary check. |
+| DG-274 | Emission intensity of meat: carcass or protein basis | GLEAM per kg carcass with the package's 0.15 kg protein per kg carcass gives about 9.9 kg CO2e per kg carcass for the 2035 mix (FUF-04; FUF-05; DMA-001) | Poore and Nemecek global means per kg protein (pig 76, poultry 57, beef herd 499) give about 1.6 times more for the same displaced protein (FUF-07) | GLEAM on the package's carcass basis is the central value; Poore and Nemecek sets the high bound. |
+| DG-275 | Emission intensity of meat: regional or global literature | GLEAM regional values for E and SE Asia, higher because of lower productivity and soy land-use change (FUF-04; FUF-05) | Heller et al. apply global LCA-literature averages to Vietnam: beef 33 kg CO2e per kg boneless, 6 times pork and 9.8 times poultry; regional factors raise diet totals by 14 to 22% (FUF-06) | Regional GLEAM values used; they model the production systems Vietnam has. |
+| DG-276 | Animals spared per institutional meal | ACE's estimate for Sinergia Animal (Argentina, Colombia, Indonesia, 2023): 134,000 animals for 998,000 meals, about 0.134 animals per meal (AFN-26) | Our Vietnamese estimate: about 0.020 animals per meal at the national meat mix, 0.0016 for a pork dish and 0.055 for a chicken dish (our calculation, FUF-03) | Both kept. ACE's rate should not be applied to Vietnam; the gap comes from Vietnam's pork-heavy mix and probably from fish and species weighting in ACE's expert estimate. |
+| DG-277 | Poultry carcass basis | Package balance model: 1,821 kt poultry carcass produced in 2025 (NSO live weight x 0.70), implying about 2.2 kg per bird on FAOSTAT head counts (BLA-031) | FAOSTAT 2024: chicken plus duck meat 1,424 kt, 1.83 kg per chicken (FUF-03) | FAOSTAT per-bird yields used with their 2022 to 2024 range (1.83 to 2.36 kg); flagged for the balance model. |
+| DG-278 | Is textured soy 'innovative protein' for market-shaping funders? | The funder actor paper reads Nova Vista's procurement lever as a possible route for domestic textured protein (AFN-Q04) | Nova Vista's RFP defines innovative proteins as 'primarily plant-based meat, fermentation-derived protein, and cultivated meat' and excludes whole-food plant-based work (AFN-05) | Classed partial: textured soy is a plant-based meat ingredient but not named; only the funder can settle it (open question). |
+| DG-279 | Footprint of the replacing protein | Feed-grade soy protein concentrate 0.61 to 0.85 kg CO2e per kg, about 0.9 to 1.3 per kg protein (FUF-08, preprint) | Tofu 19.75 kg CO2e per kg protein; other pulses 8.36 (FUF-07) | Other pulses used as a labelled central proxy; the range spans both. |
+
+### Commitments and competitors (wave 7) (7)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-280 | Share of Asia Protein Buyers 100 companies offering plant-protein products | APB 100 report (February 2026): 48 of 100 companies provide plant-protein products, up from 33% in the prior edition (AFN-18) | ARE Protein Transition page: '33% of companies now offer some form of a plant-protein' (AFN-19) | 48 of 100 (2026 report) |
+| DG-281 | Number of CP Meat Zero SKUs listed on Kamereo | Seven SKUs (AIS-25) | Eight SKUs: minced 220 g and 1 kg, roast 200 g and 1 kg, bologna 90 g and 500 g, spicy bologna 90 g and 500 g (CPC-12; CPC-13) | Eight |
+| DG-282 | Sodexo's plant-based or low-carbon menu target | US page: '33% of our planned menu offerings plant-based' by 2025, scope not stated (AIB-38) | Group Integrated Report FY2025: 70% of main dishes labelled low-carbon by 2030, no plant-based share target (CPC-08) | Use the group report for the global commitment; neither applies to Vietnam, where Sodexo's operation is unconfirmed |
+| DG-283 | IHG plant-based menu target | Lever Foundation via Green Queen: IHG Greater China 30% plant-based menus by 2025 (AFN-38) | IHG Responsible Business Report 2024 states no plant-based target (CPC-04) | Treat as a regional target reported by a third party, not confirmed by IHG; outside Vietnam in any case |
+| DG-284 | Size of Saigon Co.op's private-label range | More than 2,500 private-label SKUs (AIB-28) | 1,665 product URLs in Co.op Online's private-label collection (CPC-16) | More than 2,500 for the programme |
+| DG-285 | Protein content of tofu used for conversions | Kamereo's generic tofu table: 8 g per 100 g (CPC-12) | Food composition table: 10.9 g (DIE-12); shelf labels 3.8 to 9.3 g (FORM-01) | Label value where the same SKU was audited; otherwise FCT 10.9 g with the 8 g result shown in notes |
+| DG-286 | Meat Zero minced price per kg by pack size | 1 kg pack: VND 244,000 per kg (CPC-12) | 220 g pack: VND 177,277 per kg (CPC-12) | Report both as a range (VND 175,000 to 378,000 per kg across SKUs) |
+
+### Textured protein economics (wave 7) (9)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-287 | Extrusion equipment cost for a 1 t/h line | Supply chapters (app-s12 S12.16, plays.csv T1): equipment USD 1.5 to 4.0 M, an assumption with no verified quote | Chinese marketplace listings: USD 11,000 to 100,000 per set for 0.5 to 1.5 t/h dry TVP lines with dryer (TIC-02; TIC-03; TIC-07; TIC-10) | Use a Chinese-equipped installed capex of USD 0.28 to 1.38 M (our build-up) as the base case and keep USD 2.0 to 5.6 M for a European-grade line as a sensitivity; do not average |
+| DG-288 | Output of a 1 t/h line | app-s12 S12.16 and ch09.4: 3,000 t a year on one 1 t/h line | ch18.6: each 1 t/h line needs about 7,000 t a year | State hours: 3,000 t is 37.5% of 8,000 h; 7,000 t is about 88%; use 4,000 to 7,200 t (50 to 90%) |
+| DG-289 | TPP-01 price per kg of protein | TPP-01: USD 1.24 per kg FOB plus freight and 5% duty is about USD 1.9 per kg of protein | Arithmetic: 1.24 / 0.65 = 1.91 is the FOB value only; landed 1.29 to 1.38 per kg at the 0% duty that applies (1.35 to 1.44 at 5%) gives 1.98 to 2.12 per kg of protein at 65% (2.34 to 2.50 at 55%) | Correct TPP-01 to the landed range |
+| DG-290 | Price of food-grade defatted soy flour | Supply chapters: USD 550 per t (soybean meal USD 404 plus about USD 150 food premium) | UN Comtrade 2025: China soybean meal to Vietnam USD 604 per t FOB (grade unknown); India and Netherlands soy flour USD 783 to 896 per t FOB (TIC-12; TIC-13) | Use USD 627 to 925 per t delivered; the supply chapters' low end looks low |
+| DG-291 | Freight margin from mirror data | Gluten 2023: Vietnam CIF import value from China is 1.03 times China FOB export value | HS 2106.10 2023: Vietnam CIF value from China is 0.72 times China FOB value | Do not infer freight from 2106.10 mirror data; assume 3 to 8% freight and insurance |
+| DG-292 | Growth of the imports T1 would replace | ch25.3: plant-protein imports from China nearly tripled (18,375 t in 2019 to 53,976 t in 2025, three HS codes) | China-origin HS 2106.10 grew from 6,615 t to 10,201 t (54%); the tripling is mostly HS 3504 at about USD 1 per kg, likely feed | Cite 2106.10 growth for T1; keep the three-code figure for the whole ingredient pool |
+| DG-293 | Pool a soy extrusion line can serve | ch18.2 R1: about 40,000 t of food plant-protein ingredient imports (2106.10, 3504 and 1109) | Textured-type 2106.10 from China, India and Serbia: 12,832 t in 2025 (all uses); gluten and isolates need other plants | Size T1 on about 12,800 t; keep 40,000 t for route R1 as a whole |
+| DG-294 | Location of the freeze-alignment TEA | app-s12 S12.11: plant-based meat by freeze alignment (Thailand) | Publisher page: 100 t a year plant modelled with Japanese wages; TCI USD 1.76 to 2.48 M; minimum selling price USD 1.18 per 100 g | Treat it as a Japanese-site model; not comparable with extrusion |
+| DG-295 | Processing spread of textured protein over flour | China 2025: textured protein USD 1,237 per t against soybean meal USD 604 per t to Vietnam, a spread of about USD 630 (TIC-12) | India 2025: textured protein to Vietnam USD 980 per t against soy flour exports at USD 783 to 802 per t, a spread of about USD 180 to 200 (BUY-02; TIC-13) | Unresolved; the grades probably differ; the Chinese spread is the one a Vietnamese line competes inside |
+
+### Base rates (wave 7) (6)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-296 | Viet Nam DQQ fieldwork dates | dietquality.org country page and APR-36 notes: 13 Dec 2021 to 12 Jan 2022 | DQQ data file and Gallup methods table: 13 Nov to 12 Dec 2021 (BRD-03; BRD-04) | 13 Nov to 12 Dec 2021 |
+| DG-297 | Chay-day and vegetarian prevalence | About 10% of Vietnamese are vegetarian (CHY-15, rejected in ch12.1); 10% eat only plant-based food (Rakuten online panel, CHY-02) | 7.9% (5.3 to 11.0%) of adults ate no meat, poultry or fish on the previous day in a national probability sample (APR-36) | DQQ; the 10% claims are not credible as behaviour |
+| DG-298 | Whether any probability survey asks about diet | DMA-024 note: no probability survey asks about diet | The DQQ (Gallup World Poll, probability sample) asks previous-day food groups in Viet Nam (BRD-03) | No probability survey asks about chay; one asks about diet |
+| DG-299 | HS 3504 imports from China, Oct to Dec 2023 | China reports exports to Viet Nam of USD 7.42 million (6,283 t) under 3504 (BRD-05) | Viet Nam reports imports from China under 3504 of USD 2.83 million (BRD-06) | Both are records of different declarations; use China-reported tonnage with a food-share caveat |
+| DG-300 | Part III advice to founders | Win a first business customer before building a consumer brand (front-exec-summary; ch25.6) | Firm outcomes: no-brand B2B or OEM firms operating 2 of 6; restaurant-first brands 5 of 12; shop-first brands 4 of 5 (data_firm_base_rates.csv) | Keep the direction, reword the advice, label the ingredient route untested |
+| DG-301 | Growthwell funding | Trade-press headlines: USD 8 million (2020) and USD 22 million Series A (2021) (BRD-11) | No company figure retrieved | Record headline amounts, Low |
+
+### Labels and standards (wave 8) (6)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-302 | Status of Decree 43/2017/ND-CP on goods labels | Thư Viện Pháp Luật search listing shows Decree 43/2017 as in force (still cited as the label decree in package app-s9 S9.7) [LBL-06; REG-26] | Customs letter 11816/CHQ-GSQL (12 Feb 2026) states that Decree 37/2026/ND-CP replaces Decree 43/2017 and Decree 111/2021; Circular 30/2026/TT-BYT cross-refers to Decree 37/2026 Art 49 [LBL-08; LBL-02] | Decree 37/2026 is the current label decree; the rules cited here carry over (exact-phrase matches, LBL-09) |
+| DG-303 | Nutrition-label circular in force | Package app-s9 S9.7 and instruments list cite Circular 29/2023/TT-BYT [REG-17] | Circular 30/2026/TT-BYT replaced it from 10 Jul 2026 [LBL-02] | Circular 30/2026 applies; core duties unchanged |
+| DG-304 | Label terms covered by TCVN 13625:2023 | First extract lists sản phẩm chay, sản phẩm thuần chay, phù hợp cho người ăn chay and phù hợp cho người ăn thuần chay [LBL-15] | Second extract lists only the phù hợp cho forms [LBL-15]; VietQ article lists sản phẩm chay among the terms [CHY-57] | Treat sản phẩm chay as covered (two of three reads) |
+| DG-305 | Meaning of chay | TCVN 13625:2023 vegetarian allows egg, milk and honey [LBL-15] | Buddhist strict chay avoids egg and, for precept holders, the five pungent plants; strict buyers need egg-free and allium-free products [CHY-52; ch12.4] | Two meanings exist; use the TCVN 13625 vegan criteria as the test for an unqualified chay claim and require a qualifier where egg or milk is used |
+| DG-306 | Reach of the GMO label for precision-fermented proteins | Package ch14.2: purified precision-fermented proteins probably count as GMO products and their likely buyers face a clash with non-GMO brand promises [REG-18; NOV-62] | Decree 15/2018 Art 10 and Joint Circular 45/2015 Art 1 apply the label only above 5% of ingredients and not where gene and gene product are undetectable; lactoferrin is 0.08% of a formula [REG-02; LBL-10; LBL-25] | Follow the rule text: the mandatory label reaches high-inclusion uses only; the clash is with voluntary claims |
+| DG-307 | Date of the VietQ article on TCVN 13625 (CHY-57) | Package sources give 2023 or 2024 (date field 2024) [CHY-57] | The page read on 25 Sep 2026 shows 24/06/2026 [CHY-57] | Keep the package date; the page date may be an update date |
+
+### Feed buyers (wave 8) (6)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-308 | Number of Vietnamese feed mills in the ASC programme | VASEP report of 22 Sep 2026: 20 mills in the programme, 13 certified (EXP-32) | ASC Find a Feed Mill register queried 25 Sep 2026: 23 records, 15 certified, 6 in initial audit, 1 not awarded, 1 incomplete (FBA-04) | Use the register, with its date; the difference is probably timing (Viet Uc and Proconco certified in July and August 2026, Nam Viet in August) or counting method |
+| DG-309 | Tonnage of Vietnam's HS 2102.20 imports | Vietnam-reported 2023: USD 9.65 million, 1,934 t (net weight flagged as estimated by Comtrade) (FBA-18) | Partner-reported 2023: USD 10.44 million, 9,605 t (FBA-17) | Use partner-reported tonnage; Vietnam-reported weights are imputed with one unit value for all partners; report both values |
+| DG-310 | Price of fishmeal to Vietnamese mills | World Bank Peru 65% protein, CIF: USD 1,706 per t (2025), 2,500 per t (August 2026) (FM-01) | Partner-reported FOB exports to Vietnam, all grades: USD 1,163 per t (2025), 1,622 per t (January to July 2026, partial) (FBA-20) | Keep the World Bank series as the international benchmark and add the mirror series as what Vietnam pays; do not average |
+| DG-311 | Largest shrimp-feed maker in Vietnam | Package: Sheng Long (Haid) is the largest shrimp feed maker (650,000 t a year complex) (FAC-054; IND-46) | Grobest 2024 report: "retained market leadership in Vietnam" (FBA-13) | Neither verified; keep the package view on capacity and record Grobest's claim as a company statement |
+| DG-312 | Whether Cargill still makes aquafeed in Vietnam | Package: Cargill exited aquafeed in May 2025, closing its Dong Thap and Long An aquafeed plants (FAC-058; IND-47, Low) | Cargill Vietnam website (25 Sep 2026) lists aquatic feed among its solutions (FBA-16) | Keep the exit as Low confidence; the website may be generic; ask Cargill |
+| DG-313 | Which ASC Feed Standard text ch17 relies on | ch17.5 cites the v1.1 text (EXP-29, May 2025) | ASC states v1.1 never took effect and v1.2 (19 Dec 2025) has been mandatory since 2 Feb 2026 (EXP-30; FBA-01) | Cite v1.2; the cut-off date and GHG rules are unchanged, and v1.2 adds the eligible-volume rule for soy and palm and a medium-risk exception to 2 Feb 2029 |
+
+### Export buyers (wave 8) (6)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-314 | Vietnam's stuffed-pasta exports to Australia | Vietnam-reported exports to Australia: USD 27.9 million, 6,542 t (2023) (XBA-29) | Australia-reported imports from Vietnam: USD 12.2 million, 2,062 t (2024) and USD 10.6 million (2025) (XBA-28) | Use partner-reported figures for destination flows and Vietnam-reported figures for totals |
+| DG-315 | Aldi Sud's 56.4% plant-based figure | ALDI SUD group page (as summarised): plant-based products are 56.4% of the product range (XBA-15) | Questionmark: 56.4% plant-based food in total sales volume by the WWF method (XBA-12) | Sales volume (WWF method), as Questionmark cites the method |
+| DG-316 | Two protein-split metrics in the Netherlands | Lidl NL, Eiweet or Protein Tracker method: 43.1% plant (2024) (XBA-02) | Lidl NL, WWF method, protein-rich foods excluding dairy: 25.84% plant (2024) (XBA-02) | Report both with their method; never compare shares across methods |
+| DG-317 | Albert Heijn and Ahold Delhaize targets | Albert Heijn: 60% plant protein by 2030 (Protein Tracker, about 78% of volume) (XBA-13) | Ahold Delhaize European brands: at least 50% plant-based food sales by 2030; 45% reached in 2025 (XBA-01) | Both stand; they differ in scope (one brand against all European brands) and method |
+| DG-318 | Where Europe-bound Vietnamese wrapped foods come from | Package ch17.6 and TPP-08: EU and UK retailers' private label through Vietnamese co-packers is the best-evidenced route (package) | Supplier lists: Lidl's 751 food suppliers and Lidl GB's 390 national suppliers are all in Europe or elsewhere outside Asia; Asian products arrive through EU importers; Vietnam-origin items found on UK shelves are sold under brands owned by others (XBA-06; XBA-07; XBA-26) | The route exists but is intermediated: the first buyer is the importer or brand owner, not the retailer |
+| DG-319 | CJ's use of Vietnam to supply Western retail | CJ (2022): the Kizuna plant exports dumplings and rolls to the EU and Australia and is ready to list in their retail channels (XBA-20) | CJ (2024): a Hungarian plant will supply bibigo dumplings to Europe from H2 2026; bibigo vegetable dumplings at Coles are made in Australia (XBA-23; XBA-25) | Vietnam's role in CJ's Western supply is partial and may shrink for Europe (inferred) |
+
+### Nutrition quality (wave 8) (6)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-320 | DIAAS of tofu | 63.7 plus or minus 11.7 on the 0.5 to 3 year pattern, in vivo, two datasets; PDCAAS 78.9 (NQR-05) | 98 on the older-child pattern and 84 on the young-child pattern, in vitro INFOGEST (NQR-09) | Use both ends (64 to 98) for cost adjustment and do not average; the older-child value applies to schoolchildren but rests on an in vitro method |
+| DG-321 | Protein in hen eggs | 12.96 g per 100 g (Decision 3958 Appendix 7, APR-04) | 14.8 g per 100 g (FCT 2007 code 9001, DIE-12; used in the package price ladder) | Use 12.96 g for zinc per gram of protein (the value menu software uses) and keep the package price ladder unchanged |
+| DG-322 | Protein a school lunch should supply, age 6 to 7 | 15.3 to 31.4 g: 30 to 40% of 1,570 kcal at 13 to 20% of energy from protein (Decision 3958 rule, APR-04; our calculation) | 9.6 to 12.8 g: 30 to 40% of the 32 g a day in the NIN 2026 lookup (NQR-01) | Use the RNI share for adequacy and note that the energy-share rule makes software menus protein-heavy |
+| DG-323 | School feeding and height | A soybean school meal added 0.5 cm in 8 months in Bangladesh (NQR-27); school milk improved height-for-age in rural Vietnam (NQR-25) | Daily milk and egg for two years did not change height in rural China (NQR-26) | Treat height gains at school age as small and uncertain; the stronger designs show none |
+| DG-324 | Mung bean protein quality | Pig DIAAS 86 (SCI-41) | Human ileal digestibility in children about 20% lower (SCI-42) | Use 69 to 86 (our calculation for the low end) |
+| DG-325 | Zinc and iron values in the 2026 recommended intakes | Decision 3958 cites the 2016 RNI for zinc and iron by age (APR-04) | The NIN online lookup, updated in March 2026 after Decision 116/QD-VDD, shows identical zinc and iron values (NQR-01) | Treat the values as current until Decision 116 is read |
+
+### E-commerce (wave 8) (4)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-326 | Size and growth of food e-commerce | About 1% of food retail value in 2024, growing 29% (Euromonitor via USDA, CHN-01) | Grocery and food on four marketplaces VND 19.55 trillion in H1 2026, up 151% on H1 2025; about 2.7% of the 2024 food retail base if doubled for the year (ECR-02; our calculation) | Both stand: different years and scopes. Use CHN-01 for 2024 and Metric for 2026, with the caveat that Metric does not publish its category definition or method |
+| DG-327 | Whether protein content now sells plant milk | Rising searches for high-protein nut milk and Vinamilk's Sua Hat Cao Dam are the first sign that protein content sells in this aisle (ch13; CON-37; BUY-16) | On Kamereo the protein-claimed GoldSoy Giau Dam soy milk sold 2,609 units against 5,758 and 5,828 for unclaimed unsweetened soy milks priced higher (ECR-06) | Keep the ch13 statement for consumer search and one product; add that the kitchen channel does not show it |
+| DG-328 | Weight of Kamereo loose white tofu | Piece weight not stated, so no price per kg (wave 7, CPC-12) | The product description gives Size: 70 g per piece (ECR-06) | Use 70 g: VND 84,857 per kg and about VND 77,900 per 100 g of protein on the FCT value (our calculation) |
+| DG-329 | Retail price of Orgain Organic Protein 920 g | VND 1,385,900 at a premium store in Thao Dien (FORM-01, P171) | VND 1,150,000 at WheyShop (ECR-08) | Both are real shelf prices; the premium-store figure is the top of the range |
+
+### Hybrid economics (wave 8) (5)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-330 | Price benchmark for a meat extender | TPP-03 and ch14.4: the extender only has to cost the processor less than the lean meat it replaces | TPP-06, ch16.7 and ch16.8: price fungal biomass against egg white and dairy proteins, never against soy | Both are partly right, for different jobs. Lean is a ceiling that never binds. The binder job (1 to 3% of recipe) is priced against egg and milk protein; the extension job (10 to 30% of lean) against hydrated soy, about USD 2.5 to 2.7 per kg of protein |
+| DG-331 | How much meat a plant or fungal protein can replace | TPP-03: 20 to 30% replacement, up to 50%; Singapore blind test: chicken mince with 30 to 50% plant protein beat 100% chicken (NOV-37; NOV-40) | US frankfurter and sausage study: practical lean replacement below 30% (HXE-04); UK hybrids above 30% often failed (HXE-09; HXE-12); soy lowered acceptance of emulsified pork meatballs (HXE-08) | For pork products: 10 to 20% in fine emulsions, up to 30% in coarse mince; 50% supported only in one coarse chicken mince test |
+| DG-332 | What a processor pays for lean pork | TPP-03 uses retail lean at about VND 132,000 per kg (COST-39) | Carcass-equivalent floor of 1.38 times live (about VND 81,000 at September 2026 prices); processors buy trimmings, not retail trays | Model processor lean at 1.8 times live (about VND 105,000 at September 2026 prices), with 1.5 and 2.2 as bounds |
+| DG-333 | Where soy sits in Vissan lines | ch14.4 and ch16.3: added proteins sit mostly in value lines and cut meat cost | Label prices: soy appears in the DHA nutrition sausage that has more lean (58% against 55%) and a higher price; the cheapest gio lua (VND 124,200 per kg) lists chicken and starch, not soy | Soy is used for binding and protein in value and nutrition lines; the cheapest lines cut cost mainly with chicken, skin, starch and water |
+| DG-334 | Whether extension is a hedge against pork price swings | brief-manufacturers and ch11: an extender hedges pork price swings | Model: 20% extension removes about a sixth of a recipe exposure to the 2019 to 2020 pork shock; the saving exists at every price | Treat extension as a standing cost saving; the hedge effect is small |
+
+### Fillers and trust (wave 9) (5)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-335 | How often meat is found in Vietnamese chay | Can Tho University kit paper: there have been many cases of meat detected in vegetarian foods through process failure or mixing [CHY-61] | Press and enforcement record 2015 to 2026: no confirmed case; one 2021 seizure on suspicion with no published result [TRU-18; TRU-22; LBL-23; LBL-24] | Frequency is unmeasured; treat fake chay as a latent rumour and screen for it cheaply within DMV-07 |
+| DG-336 | Whether soy protein is a positive or a negative | Health media and suppliers: soy is 'boneless meat', 25 g a day recommended, a functional meat ingredient [TRU-22; TRU-23; TRU-28] | Artisan sellers: 'no soy protein filler' as a quality claim [TRU-27] | Both hold in different contexts: soy is positive as a food and neutral when listed in industrial sausages; negative when hidden, cost-driven or in products sold on purity |
+| DG-337 | Taiwanese fake-chay figures relayed in Vietnam | VietNamNet 2015: 70% (15 of 21) of Taiwanese imitation-meat samples contained animal products [TRU-01] | Same article: Taiwan FDA found labelled packs mostly compliant and 4 of 15 loose samples with pork or chicken [TRU-01] | Do not use either figure for Vietnam; they show only that the story circulated |
+| DG-338 | First fine-emulsion format for the TPP-03 test | W8-L6: one fine emulsion, giò lụa or xúc xích, plus one coarse format | This line: industrial xúc xích, not giò lụa, because giò lụa's public quality test is the absence of starch and 2019 extension was read as cheating [TRU-02; TRU-03; TRU-27] | Xúc xích first; giò lụa only after a label test |
+| DG-339 | Whether mixed-protein meat products carry a label penalty | Part III ch14.4: mixed-protein products from the largest processors sell at mass scale without a label penalty [BUY-05] | 2019: starch extension of market giò cost sellers customers and was called dishonest [TRU-03] | Both hold: the penalty falls on hidden cost-cutting in artisan channels, not on listed soy in branded lines |
+
+### Upland and canteen plates (wave 9) (5)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-340 | Do upland border-commune and boarding lunches lack animal food, creating a zinc gap? | W8-L4: border-commune lunches can afford protein but need zinc; a lunch with little animal protein doubles the zinc a kitchen must serve; TPP-11 targets Decree 339 kitchens [APR-09; APR-04] | This line: 0 of 124 upland lunches were animal-free; Decree 339 lunches at one border school bought 107 to 179 g of raw pork a pupil; weighed boarding diets in Yen Bai met zinc at 131 to 157% [UPL-04; UPL-01 to UPL-17; UPL-18] | Where menus are published, lunch zinc is met; the gap W8-L4 describes applies only to a dish that removes all meat, which kitchens do not serve. Keep W8-L4's zinc bands as the rule for any such product. |
+| DG-341 | How much animal protein do poor upland children get? | Part III ch11.2: too little high-quality protein at very low cost in poor upland districts; stunting above 30% in the worst provinces [DIE-01; DIE-03] | Boarding school plates are meat-heavy: pork led 74% of lunches and dinners in 13 schools [UPL-01 to UPL-17] | Both can hold: ch11.2 concerns under-fives and home diets, which this line does not measure; boarders eat most weekday meals at school |
+| DG-342 | Animals spared per canteen meal replaced | W7-L3: about 0.020 at the national dish mix; about 1,090 animals per tonne of protein [FUF-03] | Observed caterer menus: 0.015 (0.010 to 0.029); about 745 animals per tonne, because pork and beef take more and poultry less of the meat-led dishes [UPL-27 to UPL-32] | Give both as a range; sample menus are marketing and mostly southern |
+| DG-343 | Are upland meals thin or rich? | Press and charity reports: rations cut at Hoang Thu Pho 1 (2022 to 2023); menus had two dishes before a VND 10,000 top-up; pupils skipped breakfast [UPL-24; UPL-25] | Published menus and cost sheets: two main dishes and meat at almost every lunch and dinner [UPL-01 to UPL-17] | Both: published menus describe the better-run schools and the plan; press describes failures and pre-2025 budgets. The Decree 66 increase (VND 936,000 a month) predates all coded weeks. |
+| DG-344 | Which product is TPP-11? | W8-L4: zinc-fortified soy protein dish base for public meals | W8-L2: functional microbial feed ingredient for shrimp and pangasius | Renumber one of them when the package is edited; this line refers to W8-L4's profile |
+
+### Marketplaces (wave 9) (4)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-345 | Scale of plant milk against dairy milk | Kitchens: plant milks about 4.1% of milk litres on Kamereo; top plant SKU about 3% of the top dairy SKU (ECR-06) | Consumer marketplaces: top plant SKU 60% (Lazada) and 79% (Tiki) of the top dairy SKU by litres (MKT-03; MKT-05) | Both stand: different buyers. Households buy domestic nut and soy milks near dairy scale; cafes and restaurants buy dairy and a little imported oat |
+| DG-346 | Plant against whey protein powder | Plant powders are 2 of 25 powders and 1.7% of counters at WheyShop (ECR-08) | On Lazada, 7 plant powder listings show 7,294 sales against 5,455 for 6 whey listings; the top plant listing is Vietnamese-made (MKT-03) | Both stand; neither is representative. WheyShop counters are shop-set; Lazada rows are built from targeted queries |
+| DG-347 | Which soy milk brand leads online | Tiki: Vinasoy Fami leads (27,855 cases for one SKU; Vinamilk soy milks at most 558) (MKT-05) | Lazada: Vinamilk leads (14,800 cases of walnut soy milk; Vinasoy Store at most 1,600) (MKT-03) | Both stand: platform-specific distribution; Metric's Shopee data (ECR-01) give Vinamilk 53.6% of liquid milk |
+| DG-348 | Whether e-commerce is only an incumbents' channel | Wave 8: official brand stores take 84.7% of liquid-milk sales on Shopee, so e-commerce is an incumbents' channel, not a cheap launch route for a new brand (ECR-01; W8-L5) | On Lazada, 99% of dry chay piece sales and 81% of frozen and chilled chay sales in our rows go through small specialist shops without official badges (MKT-03) | Both stand: incumbents' channel for milks and processed meat; small-maker channel for chay dry goods |
+
+### Rules of origin (wave 9) (4)
+
+| ID | Topic | Claim A | Claim B | Position taken |
+|---|---|---|---|---|
+| DG-349 | Whether more than 10% imported textured soy breaks EU and UK origin for chay food preparations | Wave 8 L3 (reading of XBA-30): more than 10% by weight of imported 2106 material makes a 2106.90 product non-originating | EVFTA Protocol 1 Article 5(3)(a) (ORG-01) and the identical UK text: the tolerance is 10% of the weight of the product or ex-works price; on a value basis imported textured soy up to about 32 to 46% of weight passes (our calculation) | The text allows weight or value; we treat the weight limit as the conservative case and the value reading as likely but unconfirmed |
+| DG-350 | Whether the recipe condition binds for UK buyers | Wave 8 L3: UKVFTA caps imported flour in dumplings at 20% and blocks chay preparations with more than 10% imported textured soy | UK Trade Tariff (ORG-03; ORG-04): Vietnamese goods can claim UK-CPTPP, which needs only a change of chapter for 1902 (0% duty) and a change of subheading for 2106.90 (1.6% in 2026) | For the UK the constraint is avoidable: at most a 1.6 point gap on chay preparations in 2026, none on dumplings |
+| DG-351 | Wheat flour share in the Marks and Spencer prawn gyoza | Open Food Facts estimated ingredient share: wheat flour about 8% (model estimate) | Pack label: flour share not printed; tiger prawns 37% of the gyoza | We use only printed percentages; the estimate is not evidence |
+| DG-352 | Unit value of Vietnamese stuffed pasta used to size the duty at stake | Viet Nam-reported FOB, world, 2023: USD 4.27 per kg (XBA-29, our calculation) | Partner-reported CIF, 2025: EU27 USD 5.87, Japan 6.09, Korea 7.25, UK 8.44 per kg (XBA-28, our calculation) | Give the range; not averaged |

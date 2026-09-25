@@ -1,0 +1,7 @@
+alternative,cost_vnd_per_kg_as_used,protein_g_per_100g,lean_trim_vnd_per_kg_median,saving_vnd_per_kg_lean_replaced,saving_relative_to_textured_soy,source_ids,evidence_label,confidence,demand_evidence_type,notes
+"Chinese textured soy, hydrated to 18% protein",12776,18.0,105436,92660,1.0,TIC-12; BUY-02; FTR-32,VN-direct,Low,inferred,our calculation; median 2019 to 2024 hog price; lean trimming 1.8 x live
+"Chinese soy isolate, hydrated to 18% protein",11544,18.0,105436,93892,1.01,BUY-07; FTR-32,VN-direct,Low,inferred,our calculation; median 2019 to 2024 hog price; lean trimming 1.8 x live
+"Chicken thigh meat (priced at the retail ratio to lean pork, 79,210 / 132,000)",63270,20.3,105436,42166,0.46,COST-40; COST-39,VN-direct,Low,inferred,assumes processor prices keep the retail ratio; median 2019 to 2024 hog price; lean trimming 1.8 x live
+"Pork skin (priced at the Vissan retail ratio to lean leg, 57,000 / 160,000)",37562,not measured,105436,67874,0.73,HXE-11,VN-direct,Low,inferred,assumes processor prices keep the retail ratio; skin protein is mostly collagen; median 2019 to 2024 hog price; lean trimming 1.8 x live
+"Cassava starch gel, 1 part starch to 4 parts water",2570,0.0,105436,102866,1.11,FS-12,VN-direct,Low,inferred,adds no protein; binding limits apply; median 2019 to 2024 hog price; lean trimming 1.8 x live
+"Fungal biomass at egg white parity, hydrated to 18% protein",34320,18.0,105436,71116,0.77,BUY-02,VN-direct,Low,inferred,our calculation; median 2019 to 2024 hog price; lean trimming 1.8 x live

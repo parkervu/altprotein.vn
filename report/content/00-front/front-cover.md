@@ -2,16 +2,17 @@
 id: front-cover
 title: "Alternative protein in Vietnam: a supply-side scoping study"
 short_title: "Home"
-subtitle: "What Vietnam could make, from what, under which rules, at what cost, and who could do it"
+subtitle: "What Vietnam could make, from what, under which rules, at what cost, who could do it, and who would buy it"
 section: front
 order: 1
-edition: "Edition 1.1, September 2026 (adds Part V: Futures 2030 to 2050)"
+version: "0.6"
+status: "Draft for review, not for citation"
 publisher: "AltProtein Vietnam"
-summary: "A public, evidence-tagged scoping study of Vietnam's capacity to produce alternative proteins for food and feed, written for investors, policy makers, startups, manufacturers, research bodies and international organisations."
+summary: "A draft, evidence-tagged scoping study of Vietnam's capacity to produce alternative proteins for food and feed, and of the demand that would pull them, written for investors, policy makers, startups, manufacturers, research bodies and international organisations."
 audiences: [investors, policy, startups, manufacturers, research, international]
-reading_time_min: 2
-key_numbers: [kn-soy-protein-import, kn-fishmeal-aug-2026, kn-cassava-pulp, kn-food-law-window, kn-sbm-need-2050]
-related_pages: [front-exec-summary, front-exec-summary-vi, front-how-to-read, front-at-a-glance, ch18-scenarios-2050, ch19-vision-2050]
+reading_time_min: 3
+key_numbers: [kn-actor-check, kn-soy-protein-import, kn-fishmeal-aug-2026, kn-cassava-pulp, kn-food-law-window, kn-sbm-need-2050, kn-analogue-price-gap, kn-china-plant-protein-tonnage]
+related_pages: [front-two-minute, front-prologue, front-prologue-vi, front-exec-summary, front-exec-summary-vi, front-at-a-glance, front-how-to-read, front-faq, ch29-actor-check, ch23-scenarios-2050, ch18-demand-sizing, ch25-demand-to-frontier]
 charts: []
 ---
 
@@ -19,38 +20,39 @@ charts: []
 
 ## A supply-side scoping study
 
-**AltProtein Vietnam · Edition 1.1 · September 2026**
+**AltProtein Vietnam · Draft v0.6 · September 2026**
 
-Vietnam turns imported plant protein into pork, poultry, eggs, fish and shrimp at a scale few countries match. This study asks what Vietnam could make at home instead: from which raw materials, with which equipment, under which rules, at what cost, and with whose money and skills. It covers food and feed, from textured plant protein to fermentation and cultivated meat, and is written for the people who could move the field forward. Edition 1.1 adds Part V, which looks to 2050: the drivers, the frontier technologies, the protein balance, four scenarios, one clearly labelled vision and the moves that pay off in any of them.
+> **Draft for review.** This is version 0.6, a working draft shared for review. It is not for citation and may change before the public launch, which will be version 1.0.
 
-{{kn:kn-soy-protein-import}} {{kn:kn-fishmeal-aug-2026}} {{kn:kn-cassava-pulp}} {{kn:kn-food-law-window}} {{kn:kn-sbm-need-2050}}
+Vietnam turns imported plant protein into pork, poultry, eggs, fish and shrimp at a scale few countries match. This study asks what Vietnam could make at home instead: from which raw materials, with which equipment, under which rules, at what cost, and with whose money and skills. It covers food and feed, from textured plant protein to fermentation and cultivated meat. It also asks who would buy new protein and at what price, looks ahead to 2035 and 2050, and ends with what each type of actor could do. It is written for the people who could move the field forward.
+
+{{kn:kn-actor-check}} {{kn:kn-soy-protein-import}} {{kn:kn-fishmeal-aug-2026}} {{kn:kn-cassava-pulp}} {{kn:kn-food-law-window}} {{kn:kn-sbm-need-2050}} {{kn:kn-analogue-price-gap}} {{kn:kn-china-plant-protein-tonnage}}
 
 ### Start here
 
-- **Short on time:** [[front-exec-summary]] (English, 12 minutes) · [[front-exec-summary-vi]] (Tiếng Việt, 13 phút) · [[front-at-a-glance]]
-- **Looking to 2050:** [[ch18-scenarios-2050]] (four worlds) · [[ch19-vision-2050]] (a labelled vision) · [[ch20-robust-moves]] (what to do now)
-- **Investors:** [[brief-investors]]
-- **Policy makers:** [[brief-policy]]
-- **Startups:** [[brief-startups]]
-- **Food and feed manufacturers:** [[brief-manufacturers]]
-- **Universities and institutes:** [[brief-research]]
-- **International organisations and development finance:** [[brief-international]]
-- **How to read the evidence tags:** [[front-how-to-read]]
+- **Two minutes:** [[front-two-minute]]
+- **New to alternative protein:** [[front-prologue]] (English, 17 minutes) · [[front-prologue-vi]] (Tiếng Việt, 16 phút)
+- **The findings:** [[front-exec-summary]] (English, 15 minutes) · [[front-exec-summary-vi]] (Tiếng Việt, 17 phút) · [[front-at-a-glance]]
+- **Questions people ask:** [[front-faq]]
+- **What to do:** [[ch25-demand-to-frontier]] (product targets) · [[ch26-plays]] (ten plays) · [[ch27-policy-options]] (policy options) · [[ch28-robust-moves]] (moves that pay off in any 2050)
+- **For your role:** [[brief-investors]] · [[brief-policy]] · [[brief-startups]] · [[brief-manufacturers]] · [[brief-research]] · [[brief-international]]
+- **How to read the evidence tags and codes:** [[front-how-to-read]]
 
 ### What is inside
 
-| Part | Chapters |
-|---|---|
-| I. The case | [[ch01-why-vietnam]] · [[ch02-asset-map]] · [[ch03-industrial-base]] · [[ch04-alt-protein-today]] |
-| II. The conditions | [[ch05-rules]] · [[ch06-knowledge-talent]] · [[ch07-capital]] · [[ch08-regional]] · [[ch09-economics]] |
-| III. The opportunity | [[ch10-technology-fit]] · [[ch11-plays]] · [[ch12-policy-options]] |
-| IV. Looking ahead | [[ch13-outlook]] · [[ch14-unknowns]] |
-| V. Futures 2030 to 2050 (new in edition 1.1) | [[ch15-drivers-2050]] · [[ch16-frontier-technology]] · [[ch17-protein-balance-2050]] · [[ch18-scenarios-2050]] · [[ch19-vision-2050]] · [[ch20-robust-moves]] |
-| Appendices A to T | Method, corrections, feedstocks, retail audit, company directory, facilities, regulation, feed market, costs, science, research, labs and talent, capital, region, outlook, administrative map, open questions, disagreements, glossary, sources |
-| Appendices U to Z (new in edition 1.1) | Futures method, frontier technology, the balance model, drivers and signals, targets and hubs, aquafeed and feedstock futures |
+| Part | What it answers | Chapters |
+|---|---|---|
+| I. Context | Why Vietnam, what exists today, and where Vietnam stands in the region | [[ch01-why-vietnam]] · [[ch02-alt-protein-today]] · [[ch03-regional]] |
+| II. Supply | What Vietnam could make, from what, under which rules, with whose money, at what cost, technology by technology | [[ch04-asset-map]] · [[ch05-industrial-base]] · [[ch06-knowledge-talent]] · [[ch07-rules]] · [[ch08-capital]] · [[ch09-economics]] · [[ch10-technology-fit]] |
+| III. Demand | Who eats, pays for and buys protein in Vietnam and abroad, and how much new protein that could pull | [[ch11-protein-diet]] · [[ch12-chay-baseline]] · [[ch13-consumers]] · [[ch14-frontier-demand]] · [[ch15-channels]] · [[ch16-business-buyers]] · [[ch17-export-demand]] · [[ch18-demand-sizing]] |
+| IV. Futures | The outlook to 2035, and the drivers, technologies, protein balance, scenarios and a labelled vision for 2050 | [[ch19-outlook-2035]] · [[ch20-drivers-2050]] · [[ch21-frontier-technology]] · [[ch22-protein-balance-2050]] · [[ch23-scenarios-2050]] · [[ch24-vision-2050]] |
+| V. What to do | Product targets, plays, policy options, robust moves, what named actors asked, and what nobody has measured yet | [[ch25-demand-to-frontier]] · [[ch26-plays]] · [[ch27-policy-options]] · [[ch28-robust-moves]] · [[ch29-actor-check]] · [[ch30-unknowns]] |
+| Appendices M1 to M5 | Method and record: how the report was built, and the changelog | [[app-m1-method]] to [[app-m5-changelog]] |
+| Appendices S1 to S13 | Context and supply evidence | [[app-s1-directory]] to [[app-s13-science]] |
+| Appendices D1 to D8 | Demand evidence and the demand model | [[app-d1-diet-chay-prices]] to [[app-d8-demand-model]] |
+| Appendices F1 to F6 | Futures evidence and the balance model | [[app-f1-outlook]] to [[app-f6-aquafeed-feedstock-futures]] |
+| Appendices R1 to R4 | Registers: open questions, disagreements, glossary, sources | [[app-r1-open-questions]] · [[app-r2-disagreements]] · [[app-r3-glossary]] · [[app-r4-sources]] |
 
-Every claim is tagged with the kind of evidence behind it and a confidence level, and every number links to its source. Forward-looking claims in Part V also carry a foresight tag (trend, projection, estimate, signal, wildcard or vision). The underlying data (92 tables, including 1,275 sources, 97 companies, 82 facilities, 186 audited retail products and a reproducible protein and feed balance model) are published with the report.
+Every claim is tagged with the kind of evidence behind it and a confidence level, and every number links to its source. Forward-looking claims also carry a foresight tag (trend, projection, estimate, signal, wildcard or vision), and demand claims a demand evidence tag (stated, revealed, tested or inferred). The underlying data (184 tables, including 2,384 sources, 97 companies, 82 facilities, 186 audited retail products, a reproducible protein and feed balance model and a reproducible demand model) are published with the report.
 
-*Suggested citation:* AltProtein Vietnam (2026). *Alternative protein in Vietnam: a supply-side scoping study.* Edition 1.1 (first public edition with Part V: Futures 2030 to 2050), September 2026.
-
-*This is scoping research. It is not investment, legal or engineering advice. Scope: supply side, food and feed. Insect protein appears as an incumbent benchmark, not a recommendation.*
+*Draft for review, not for citation. This is scoping research. It is not investment, legal or engineering advice. Scope: supply side, food and feed, with demand as a design input. Insect protein appears as an incumbent benchmark, not a recommendation.*

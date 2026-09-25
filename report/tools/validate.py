@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the content folder: citations, tags, links, embeds, frontmatter, tables, dashes.
+"""Validate the content folder: citations, tags (evidence, foresight, demand evidence), links, embeds, frontmatter, tables, dashes.
 
 Run from the folder root:  python3 tools/validate.py
 Exit code 0 when no errors (warnings may remain).
@@ -25,6 +25,8 @@ EMB = re.compile(r'\{\{(kn|chart):([a-z0-9-]+)\}\}')
 DASH = re.compile('[—–]')
 FX = re.compile(r'\{fx:([a-z]+)\}')
 FX_OK = {'trend', 'projection', 'estimate', 'signal', 'wildcard', 'vision'}
+DX = re.compile(r'\{dx:([a-z]+)\}')
+DX_OK = {'stated', 'revealed', 'tested', 'inferred'}
 CODE = re.compile(r'`[^`]*`')
 
 pages = {}
@@ -64,18 +66,28 @@ for pid, (f, fm, s, body) in pages.items():
             for m in TAG.finditer(line):
                 if m.group(2) == '|':
                     errors.append(f'{f}:{n}: unescaped tag pipe inside table: {m.group(0)}')
-    # foresight tags (edition 1.1): valid type; vision only in the vision chapter; Part V pages must use them
+    # foresight tags: valid type; vision only in the vision chapter; the 2050 futures chapters (Part IV) must use them
     nofx = CODE.sub('', body)
     for m in FX.finditer(nofx):
         if m.group(1) not in FX_OK:
             errors.append(f'{f}: unknown foresight tag {m.group(0)}')
-        elif m.group(1) == 'vision' and pid != 'ch19-vision-2050':
-            errors.append(f'{f}: {{fx:vision}} used outside ch19-vision-2050')
+        elif m.group(1) == 'vision' and pid != 'ch24-vision-2050':
+            errors.append(f'{f}: {{fx:vision}} used outside ch24-vision-2050')
     for m in re.finditer(r'\{fx[^}]*\}', nofx):
         if not FX.fullmatch(m.group(0)):
             errors.append(f'{f}: malformed foresight tag {m.group(0)}')
-    if str(fm.get('part', '')).startswith('V.') and not FX.search(nofx):
-        warnings.append(f'{f}: Part V page without foresight tags')
+    FUTURES_2050 = {'ch20-drivers-2050', 'ch21-frontier-technology', 'ch22-protein-balance-2050', 'ch23-scenarios-2050', 'ch24-vision-2050', 'ch28-robust-moves'}
+    if pid in FUTURES_2050 and not FX.search(nofx):
+        warnings.append(f'{f}: futures page without foresight tags')
+    # demand evidence tags: valid type; demand pages (Part III) should use them
+    for m in DX.finditer(nofx):
+        if m.group(1) not in DX_OK:
+            errors.append(f'{f}: unknown demand evidence tag {m.group(0)}')
+    for m in re.finditer(r'\{dx[^}]*\}', nofx):
+        if not DX.fullmatch(m.group(0)):
+            errors.append(f'{f}: malformed demand evidence tag {m.group(0)}')
+    if (str(fm.get('part', '')).startswith('III.') or pid in ('ch25-demand-to-frontier', 'ch29-actor-check')) and not DX.search(nofx):
+        warnings.append(f'{f}: demand page without demand evidence tags')
     # links
     for m in LINK.finditer(s):
         if m.group(1) not in pages:

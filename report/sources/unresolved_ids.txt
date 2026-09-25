@@ -6,3 +6,5 @@
 
 # Not checked: ID-like tokens with prefixes that are not source prefixes (USDA GAIN report numbers, IFC project numbers, protein names, etc.):
 # C40-43, C51-55, COVID-19, FGF-2, FY2025-26, IFC-45769, IFC-46903, L-15, NRFC-078, OR-1, PA-1, RIA1-3, VM2025-0011, VM2025-0015, VM2026-0004, VM2026-0006, VM2026-0012, VM2026-0013, VM2026-0030, Y-1084, Y-11430
+
+# Edition 1.2 (demand round, wave 6): every source ID cited in working-papers/wave6 and in the Part VI pages resolves to sources.csv. Unresolved: 0.

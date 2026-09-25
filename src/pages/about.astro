@@ -1,12 +1,11 @@
 ---
 import Base from '../layouts/Base.astro';
 import { t } from '../lib/i18n';
-import { SITE, href, localize } from '../lib/site';
+import { ROLE, SITE, appendixCode, href, localize } from '../lib/site';
 const lang = Astro.locals.lang ?? 'en';
 const s = t(lang);
 const vi = lang === 'vi';
-const citation =
-  'AltProtein Vietnam (2026). Alternative protein in Vietnam: a supply-side scoping study. Edition 1.1 (first public edition with Part V: Futures 2030 to 2050), September 2026.';
+const code = (id: string) => `${vi ? 'Phụ lục' : 'Appendix'} ${appendixCode(id)}`;
 ---
 
 <Base title={s.about} section="about">
@@ -15,28 +14,43 @@ const citation =
       <header class="index-head">
         <p class="eyebrow">{SITE.publisher}</p>
         <h1>{s.about}</h1>
-        <p lang={vi ? 'vi' : 'en'}>
+        <p>
           {vi
-            ? 'Một nghiên cứu công khai, có gắn nhãn bằng chứng, về năng lực sản xuất protein thay thế cho thực phẩm và thức ăn chăn nuôi của Việt Nam.'
-            : "A public, evidence-tagged scoping study of Vietnam's capacity to produce alternative proteins for food and feed."}
+            ? 'Một nghiên cứu có gắn nhãn bằng chứng về năng lực sản xuất protein thay thế cho thực phẩm và thức ăn chăn nuôi của Việt Nam, và về những ai sẽ mua.'
+            : "An evidence-tagged scoping study of Vietnam's capacity to produce alternative proteins for food and feed, and of who would buy them."}
         </p>
       </header>
       <div class="prose">
+        <aside class="callout callout-draft">
+          <p>
+            <strong>{vi ? SITE.draft_notice.vi : SITE.draft_notice.en}</strong>{' '}
+            {vi
+              ? 'Phiên bản 1.0 sẽ là bản công bố chính thức; cách trích dẫn sẽ được xác định khi đó.'
+              : 'Version 1.0 will be the public launch; the citation format will be set then.'}
+          </p>
+        </aside>
         {vi ? (
           <>
             <h2 id="scope">Phạm vi</h2>
             <p>
               Phía cung (nguyên liệu, quy trình, sản xuất, quy định, vốn, khoa học), cho cả thực
-              phẩm và thức ăn chăn nuôi, hiện nay và, trong Phần V, đến năm 2050. Phần V dùng phương
+              phẩm và thức ăn chăn nuôi, hiện nay và đến năm 2050. Phần về tương lai dùng phương
               pháp dự báo chiến lược: các kịch bản có dấu hiệu báo trước và một tầm nhìn chuẩn tắc
-              được ghi rõ. Không phần nào là dự báo; nhu cầu chỉ được dùng như một đầu vào vĩ mô.
-              Thịt nuôi cấy được xem xét đầy đủ. Côn trùng chỉ là mốc so sánh, không phải hướng đi
-              được khuyến nghị.
+              được ghi rõ; không phần nào là dự báo. Thịt nuôi cấy được xem xét đầy đủ. Côn trùng
+              chỉ là mốc so sánh, không phải hướng đi được khuyến nghị.
+            </p>
+            <p>
+              Phần về phía cầu coi nhu cầu là đầu vào cho thiết kế: hộ gia đình, bếp ăn, doanh
+              nghiệp thực phẩm và người mua nước ngoài ăn gì, trả bao nhiêu và mua gì. Quy mô nhu
+              cầu chỉ được ước lượng dưới dạng kịch bản có ghi nhãn; nghiên cứu không đưa ra dự báo
+              quy mô thị trường và không phải kế hoạch tiếp thị. Các kết luận đã được đối chiếu với
+              những gì 80 nhà tài trợ, nhà đầu tư, startup, doanh nghiệp, cơ quan quản lý và nhà
+              nghiên cứu thực sự quyết định, chi trả và hỏi.
             </p>
             <p>
               Cách tiếp cận trung lập, lấy an ninh thực phẩm và thức ăn chăn nuôi, giá trị công
-              nghiệp và thương mại làm trọng tâm; phúc lợi động vật và môi trường được nêu là động
-              lực của một số bên. Nghiên cứu này không phải là tư vấn đầu tư, pháp lý hay kỹ thuật.
+              nghiệp và thương mại làm trọng tâm. Nghiên cứu này không phải là tư vấn đầu tư, pháp
+              lý hay kỹ thuật.
             </p>
           </>
         ) : (
@@ -44,10 +58,18 @@ const citation =
             <h2 id="scope">Scope and framing</h2>
             <p>
               The supply side (raw materials, processes, manufacturing, rules, capital and science),
-              for food and feed, today and, in Part V, to 2050. Part V uses foresight: scenarios
-              with signposts and one clearly labelled normative vision. None of it is a forecast,
-              and demand enters only as a macro input. Cultivated meat is fully scoped. Insect
-              protein appears as an incumbent and benchmark, not as a recommended play.
+              for food and feed, today and to 2050. The futures part uses foresight: scenarios with
+              signposts and one clearly labelled normative vision; none of it is a forecast.
+              Cultivated meat is fully scoped. Insect protein appears as an incumbent and benchmark,
+              not as a recommended play.
+            </p>
+            <p>
+              The demand part treats demand as a design input: what households, kitchens, food
+              makers and foreign buyers eat, pay and buy, and what that asks of anyone making new
+              protein. It sizes demand routes as labelled scenarios, gives no market-size forecast
+              and is not a marketing plan. The conclusions were checked against what 80 named
+              funders, investors, startups, incumbents, regulators and researchers decide, pay for
+              and ask.
             </p>
             <p>
               The framing is neutral and led by food and feed security, industrial value and trade;
@@ -90,8 +112,8 @@ const citation =
         </p>
         <p>
           {vi
-            ? 'Các nhận định hướng tới tương lai trong Phần V có thêm nhãn dự báo:'
-            : 'Forward-looking claims in Part V also carry a foresight badge:'}
+            ? 'Các nhận định hướng tới tương lai có thêm nhãn dự báo:'
+            : 'Forward-looking claims also carry a foresight badge:'}
         </p>
         <p class="legend-row">
           {['trend', 'projection', 'estimate', 'signal', 'wildcard'].map((f) => (
@@ -104,42 +126,50 @@ const citation =
           </span>
         </p>
         <p>
-          <a href={href('front-how-to-read', lang)}>
+          {vi
+            ? 'Các nhận định về nhu cầu có thêm nhãn cho loại bằng chứng về nhu cầu:'
+            : 'Demand claims also carry a badge for the kind of demand evidence:'}
+        </p>
+        <p class="legend-row">
+          {['stated', 'revealed', 'tested', 'inferred'].map((d) => (
+            <span class="dx" data-dx={d}>
+              <span>{d}</span>
+            </span>
+          ))}
+        </p>
+        <p>
+          <a href={href(ROLE.howToRead, lang)}>
             {vi
-              ? 'Giải thích đầy đủ trong “Cách đọc báo cáo”'
-              : 'The full explanation is in How to read this report'}
+              ? 'Giải thích đầy đủ, kèm bảng mã và tên kịch bản'
+              : 'The full explanation, with the table of codes and scenario names'}
           </a>
           {' · '}
-          <a href={href('app-a-method', lang)}>
-            {vi ? 'Phương pháp (Phụ lục A)' : 'Method (Appendix A)'}
+          <a href={href(ROLE.method, lang)}>
+            {vi ? 'Phương pháp' : 'Method'} ({code(ROLE.method)})
           </a>
           {' · '}
-          <a href={href('app-u-futures-method', lang)}>
-            {vi ? 'Phương pháp dự báo (Phụ lục U)' : 'Futures method (Appendix U)'}
+          <a href={href(ROLE.futuresMethod, lang)}>
+            {vi ? 'Phương pháp dự báo' : 'Futures method'} ({code(ROLE.futuresMethod)})
+          </a>
+          {' · '}
+          <a href={href(ROLE.demandMethod, lang)}>
+            {vi ? 'Phương pháp về phía cầu' : 'Demand method'} ({code(ROLE.demandMethod)})
           </a>
         </p>
-        <h2 id="editions">{vi ? 'Các ấn bản' : 'Editions'}</h2>
+        <h2 id="versions">{vi ? 'Các phiên bản' : 'Versions'}</h2>
         <ul>
-          {SITE.editions.map((e) => (
+          {SITE.versions.map((v) => (
             <li>
-              <strong>
-                {vi ? 'Ấn bản' : 'Edition'} {e.edition}
-              </strong>{' '}
-              ({e.date}): <span lang="en">{e.note}</span>
+              <strong>v{v.version}</strong> ({v.date}): <span lang="en">{v.note}</span>
             </li>
           ))}
         </ul>
         <p>
-          <a href={href('app-b-corrections', lang)}>
-            {vi
-              ? 'Các thay đổi và đính chính (Phụ lục B)'
-              : 'What changed and corrections (Appendix B)'}
+          <a href={href(ROLE.changelog, lang)}>
+            {vi ? 'Nhật ký thay đổi và đính chính' : 'Changelog and corrections'} (
+            {code(ROLE.changelog)})
           </a>
         </p>
-        <h2 id="cite">{s.cite}</h2>
-        <blockquote lang="en">
-          <p>{citation}</p>
-        </blockquote>
         <h2 id="data">{s.downloads}</h2>
         <ul>
           <li>
@@ -164,8 +194,8 @@ const citation =
         <h2 id="site">{vi ? 'Về trang web' : 'About this website'}</h2>
         <p>
           {vi
-            ? 'Nội dung báo cáo bằng tiếng Anh, có bản tóm tắt tiếng Việt và bảng thuật ngữ song ngữ. Giao diện có thể xem bằng tiếng Anh hoặc tiếng Việt. Trang web không dùng công cụ theo dõi. Biểu đồ được dựng sẵn dưới dạng SVG và mỗi biểu đồ có bảng số liệu đi kèm.'
-            : 'The report is in English, with a Vietnamese executive summary and a bilingual glossary; the interface can be switched between English and Vietnamese. The site uses no trackers. Charts are drawn as inline SVG at build time, and each has its data table.'}
+            ? 'Nội dung báo cáo bằng tiếng Anh, có lời mở đầu, bản tóm tắt tiếng Việt và bảng thuật ngữ song ngữ. Giao diện có thể xem bằng tiếng Anh hoặc tiếng Việt. Trang web không dùng công cụ theo dõi. Biểu đồ được dựng sẵn dưới dạng SVG và mỗi biểu đồ có bảng số liệu đi kèm.'
+            : 'The report is in English, with a Vietnamese prologue, a Vietnamese executive summary and a bilingual glossary; the interface can be switched between English and Vietnamese. The site uses no trackers. Charts are drawn as inline SVG at build time, and each has its data table.'}
         </p>
       </div>
     </div>

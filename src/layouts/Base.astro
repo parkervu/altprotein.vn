@@ -16,7 +16,7 @@ interface Props {
   noindex?: boolean;
   current?: string;
   /** Top navigation item to mark as current. */
-  section?: 'summary' | 'report' | 'briefs' | 'appendices' | 'data' | 'search' | 'about';
+  section?: 'summary' | 'start' | 'report' | 'briefs' | 'appendices' | 'data' | 'search' | 'about';
   pageClass?: string;
 }
 const {
@@ -57,12 +57,18 @@ const nav = [
     label: s.summary,
     href: localize(lang === 'vi' ? '/tom-tat' : '/summary', lang),
   },
+  {
+    key: 'start',
+    label: s.startHere,
+    href: localize(lang === 'vi' ? '/loi-mo-dau' : '/prologue', lang),
+  },
   { key: 'report', label: s.report, href: localize('/report', lang) },
   { key: 'briefs', label: s.forYou, href: localize('/briefs', lang) },
   { key: 'appendices', label: s.appendices, href: localize('/appendices', lang) },
   { key: 'data', label: s.data, href: localize('/data', lang) },
 ];
 const searchAction = localize('/search', lang);
+const draftNotice = lang === 'vi' ? SITE.draft_notice.vi : SITE.draft_notice.en;
 ---
 
 <!doctype html>
@@ -104,7 +110,7 @@ const searchAction = localize('/search', lang);
     </a>
     <EmDashBodyStart page={page} />
     <div class="draft-banner" role="note">
-      <strong>{s.draftLabel}.</strong>
+      <strong>{draftNotice}</strong>
       {s.draftNotice}
     </div>
     <header class="site-header">
@@ -279,6 +285,11 @@ const searchAction = localize('/search', lang);
           <h2>{s.report}</h2>
           <ul>
             <li>
+              <a href={localize('/two-minutes', lang)}>
+                {lang === 'vi' ? 'Báo cáo trong hai phút' : 'The report in two minutes'}
+              </a>
+            </li>
+            <li>
               <a href={localize('/summary', lang)}>
                 {lang === 'vi' ? 'Tóm tắt (tiếng Anh)' : 'Executive summary'}
               </a>
@@ -335,7 +346,9 @@ const searchAction = localize('/search', lang);
               </a>
             </li>
             <li>
-              <a href={localize('/about', lang) + '#cite'}>{s.cite}</a>
+              <a href={localize('/faq', lang)}>
+                {lang === 'vi' ? 'Câu hỏi thường gặp' : 'Questions people ask'}
+              </a>
             </li>
             <li>
               <a href="/_emdash/admin" rel="nofollow">
@@ -346,9 +359,8 @@ const searchAction = localize('/search', lang);
         </div>
       </div>
       <div class="footer-base">
-        <span>
-          {SITE.publisher} ·{' '}
-          {lang === 'vi' ? 'Ấn bản 1.1, tháng 9 năm 2026' : 'Edition 1.1, September 2026'}
+        <span class="footer-draft">
+          {SITE.publisher} · <strong>{draftNotice}</strong>
         </span>
         <span>{s.notAdvice}</span>
       </div>

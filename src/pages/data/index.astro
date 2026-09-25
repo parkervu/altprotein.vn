@@ -7,18 +7,11 @@ const lang = Astro.locals.lang ?? 'en';
 const s = t(lang);
 const vi = lang === 'vi';
 const featured = DATASETS.filter((d) => d.featured);
-const core = DATASETS.filter((d) => d.group === 'data' && !d.new_in);
-const futures = DATASETS.filter((d) => d.group === 'data' && d.new_in);
+const reportData = DATASETS.filter((d) => d.group === 'data');
 const chart = DATASETS.filter((d) => d.group === 'chart');
 const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
-const groups: { id: string; title: string; list: Dataset[]; isNew?: boolean }[] = [
-  { id: 'core', title: vi ? 'Dữ liệu ấn bản 1.0' : 'Edition 1.0 tables', list: core },
-  {
-    id: 'futures',
-    title: vi ? 'Dữ liệu về tương lai (ấn bản 1.1)' : 'Futures tables (edition 1.1)',
-    list: futures,
-    isNew: true,
-  },
+const groups: { id: string; title: string; list: Dataset[] }[] = [
+  { id: 'report-data', title: vi ? 'Dữ liệu của báo cáo' : 'Report data', list: reportData },
   { id: 'charts', title: s.dataChart, list: chart },
 ];
 ---
@@ -47,7 +40,6 @@ const groups: { id: string; title: string; list: Dataset[]; isNew?: boolean }[] 
           <a class="card always" href={localize(`/data/${d.slug}`, lang)}>
             <span class="card-kicker">
               <code>{d.file}</code>
-              {d.new_in && <span class="new-pill">{s.new}</span>}
             </span>
             <span class="card-text" lang={vi ? 'en' : undefined}>
               {d.purpose}
@@ -61,9 +53,7 @@ const groups: { id: string; title: string; list: Dataset[]; isNew?: boolean }[] 
     </section>
     {groups.map((g) => (
       <section class="part-block" id={g.id} aria-labelledby={`${g.id}-h`}>
-        <h2 id={`${g.id}-h`}>
-          {g.title} {g.isNew && <span class="new-pill">{s.newIn11}</span>}
-        </h2>
+        <h2 id={`${g.id}-h`}>{g.title}</h2>
         <div class="table-wrap">
           <table class="data-index">
             <thead>

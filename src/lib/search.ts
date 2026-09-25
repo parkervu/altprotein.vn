@@ -52,6 +52,7 @@ export function cleanSnippet(snippet: string): string {
     .replace(/\[@[^\]]*\]/g, '')
     .replace(/\{(VN-direct|VN-adjacent|general)\\?\|(High|Medium|Low)\}/g, '')
     .replace(/\{fx:[a-z]+\}/g, '')
+    .replace(/\{dx:[a-z]+\}/g, '')
     .replace(/\{\{(kn|chart):[a-z0-9-]+\}\}/g, '')
     .replace(
       /\[\[([a-z0-9-]+)(#[a-z0-9-]+)?\]\]/g,

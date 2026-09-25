@@ -1,0 +1,30 @@
+record_id,product_name_vi,category,meat_word_in_name,named_meat_percentage_declared,declared_named_meat_share_pct,named_ingredient_as_declared,lists_soy_protein,lists_milk_protein,source_ids,evidence_label,confidence,demand_evidence_type,notes
+VLA-014,Xúc xích tiệt trùng Bò 18g/cây_5 cây/gói,sterilised sausage,bò,yes,55,Nạc bò,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-015,Xúc xích Dinh Dưỡng DHA Bò 35g/cây_5 cây/gói,sterilised sausage,bò,yes,58,Nạc bò,yes,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-018,Xúc xích tiệt trùng Heo 18g/cây_5 cây/gói,sterilised sausage,heo,yes,55,Nạc heo,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-019,Xúc xích Dinh Dưỡng DHA Heo 35g/cây_5 cây/gói,sterilised sausage,heo,yes,58,Nạc heo,yes,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-032,Chả bò hương vị Đà Nẵng 500g,gio and cha (meat loaf and paste),bò,yes,65,Nạc đùi bò Úc,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-033,Giò bò 500g,gio and cha (meat loaf and paste),bò,yes,60,Nạc bò,yes,yes,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-049,Pate Gan 3 Bông Mai 150g  (MUA 2 NHẬN 3),"canned meat, fish and pate",gan,no,,,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed). No percentage printed for the named meat in the excerpt read.
+VLA-057,Thịt gà xốt mayonnaise 85g,"canned meat, fish and pate","gà, thịt",yes,20.3,thịt gà,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed). Sauce is 50%; chicken share is not in the excerpt read.
+VLA-059,Patê thịt bò 3 Bông Mai 150g,"canned meat, fish and pate","bò, thịt",yes,32,Nạc bò,yes,yes,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-060,Patê thịt heo 3 Bông Mai 150g,"canned meat, fish and pate","heo, thịt",yes,27,Nạc heo,yes,yes,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-062,Patê gan Hảo vị 150g,"canned meat, fish and pate",gan,yes,20,Gan heo,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed). Liver pate: the named ingredient is liver.
+VLA-064,Cá kho thịt 3 Bông Mai 150g,"canned meat, fish and pate",thịt,yes,25,thịt heo,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-065,Gà hầm 150g,"canned meat, fish and pate",gà,yes,55,Thịt gà,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-066,BÒ HẦM VISSAN 150G,"canned meat, fish and pate",bò,yes,55,Nạc bò,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-067,Bò 2 lát 3 Bông Mai 150g,"canned meat, fish and pate",bò,yes,34,Nạc bò,yes,yes,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-068,Heo 2 lát 3 Bông Mai 150g,"canned meat, fish and pate",heo,yes,34,Nạc heo,yes,yes,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-069,Heo hầm 3 Bông Mai 150g,"canned meat, fish and pate",heo,yes,50,Nạc heo,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-070,HEO HẦM VISSAN 150G,"canned meat, fish and pate",heo,yes,55,Nạc heo,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-071,PATE THỊT HEO VISSAN 170G,"canned meat, fish and pate","heo, thịt",yes,55,Nạc heo,yes,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-072,PATE GAN HEO VISSAN 170G,"canned meat, fish and pate","gan, heo",yes,30,Gan heo,yes,yes,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed). Liver pate: the named ingredient is liver.
+VLA-074,Bò xay 170g,"canned meat, fish and pate",bò,yes,55,Nạc bò,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-075,BÒ 2 LÁT VISSAN 170G,"canned meat, fish and pate",bò,yes,55,Nạc bò,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-076,Patê thịt bò đặc biệt 170g,"canned meat, fish and pate","bò, thịt",yes,55,Nạc bò,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-082,Bò kho 200g,"canned meat, fish and pate",bò,yes,55,Nạc bò,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-083,Bò nấu đậu 280g,"canned meat, fish and pate",bò,yes,50,Nạc bò,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).
+VLA-089,MỠ HEO BẾP VIỆT 300G (MUA 1 NHẬN 2),cold cuts and chilled sausage,heo,yes,98,Mỡ heo,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,"Unique formulation (duplicate pack sizes removed). Pork fat product, not a processed meat; excluded from the lean-share range."
+VLA-098,Giò heo xông khói 500g,cold cuts and chilled sausage,heo,yes,85,Giò heo rút xương,no,no,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed). Smoked boned pork hock (a whole-muscle product); excluded from the lean-share range.
+VLA-099,PATE GAN FOIE 150g,cold cuts and chilled sausage,gan,yes,18,Gan heo,yes,yes,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed). Liver pate: the named ingredient is liver.
+VLA-116,Dồi thịt heo 500g,cold cuts and chilled sausage,"heo, thịt",yes,55,Nạc heo,yes,yes,BUY-05; LBL-06; LBL-09,VN-direct,High,revealed,Unique formulation (duplicate pack sizes removed).

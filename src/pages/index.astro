@@ -11,10 +11,11 @@ import {
   PAGE_BY_ID,
   PARTS,
   SITE,
-  appendixLetter,
+  appendixCode,
   chapterNumber,
   href,
   localize,
+  ROLE,
 } from '../lib/site';
 
 const lang = Astro.locals.lang ?? 'en';
@@ -23,7 +24,7 @@ const vi = lang === 'vi';
 
 let cover: Awaited<ReturnType<typeof loadPage>>['entry'] = null;
 try {
-  cover = (await loadPage('front-cover')).entry;
+  cover = (await loadPage(ROLE.cover)).entry;
 } catch (error) {
   console.error(error);
 }
@@ -56,29 +57,31 @@ const heroSource = vi
       .filter((l) => l.includes('{{kn:'))
       .join('\n')
   : introBody;
-const hero = renderPage('front-cover', heroSource, lang, `hero-${version}`, false);
+const hero = renderPage(ROLE.cover, heroSource, lang, `hero-${version}`, false);
 const heroHtml = hero.html;
-const closingHtml = renderPage('front-cover', closing, lang, `closing-${version}`, false).html;
+const closingHtml = renderPage(ROLE.cover, closing, lang, `closing-${version}`, false).html;
 
-const viSummary = PAGE_BY_ID.get('front-exec-summary-vi')!;
-const enSummary = PAGE_BY_ID.get('front-exec-summary')!;
+const viSummary = PAGE_BY_ID.get(ROLE.summaryVi)!;
+const enSummary = PAGE_BY_ID.get(ROLE.summary)!;
 const chapters = PAGES.filter((p) => p.section === 'report');
 const briefs = PAGES.filter((p) => p.section === 'brief');
 const appendices = PAGES.filter((p) => p.section === 'appendix');
 const partNote: Record<string, string> = {
-  'I. The case': vi ? 'Vì sao là Việt Nam và Việt Nam có gì' : 'Why Vietnam, and what it has',
-  'II. The conditions': vi
-    ? 'Quy định, nhân lực, vốn, khu vực và chi phí'
-    : 'Rules, talent, capital, the region and costs',
-  'III. The opportunity': vi
-    ? 'Công nghệ, mười hướng đi và chính sách'
-    : 'Technologies, ten plays and policy options',
-  'IV. Looking ahead': vi
-    ? 'Triển vọng đến 2035 và những điều chưa biết'
-    : 'Outlook to 2035 and the unknowns',
-  'V. Futures 2030 to 2050': vi
-    ? 'Động lực, cân bằng protein, kịch bản và tầm nhìn'
-    : 'Drivers, the protein balance, scenarios and a vision',
+  'I. Context': vi
+    ? 'Vì sao là Việt Nam, protein thay thế hôm nay và vị thế trong khu vực'
+    : 'Why Vietnam, alternative protein today, and the region',
+  'II. Supply: what Vietnam can make': vi
+    ? 'Nguyên liệu, công nghiệp, quy định, nhân lực, vốn, chi phí và công nghệ'
+    : 'Raw materials, industry, rules, talent, capital, costs and technologies',
+  'III. Demand: who would buy it': vi
+    ? 'Bữa ăn, đồ chay, người tiêu dùng, kênh bán, người mua doanh nghiệp và xuất khẩu'
+    : 'Diets, chay, consumers, channels, business buyers and export',
+  'IV. Futures: 2035 and 2050': vi
+    ? 'Triển vọng 2035, động lực, cân bằng protein, kịch bản và tầm nhìn'
+    : 'Outlook to 2035, drivers, the protein balance, scenarios and a vision',
+  'V. What to do': vi
+    ? 'Mục tiêu sản phẩm, mười hướng đi, chính sách và bước đi hiệu quả trong mọi kịch bản'
+    : 'Product targets, ten plays, policy options and moves that pay off in any 2050',
 };
 const count = (file: string) =>
   (datasets as { file: string; rows: number }[]).find((d) => d.file === file)?.rows ?? 0;
@@ -102,7 +105,7 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
 <Base
   title={cover?.data.title ?? SITE.title}
   description={vi ? viSummary.summary : (cover?.data.summary ?? SITE.title)}
-  content={cover ? { collection: 'pages', id: cover.id, slug: 'front-cover' } : undefined}
+  content={cover ? { collection: 'pages', id: cover.id, slug: ROLE.cover } : undefined}
   current="front-cover"
   pageClass="page-home"
 >
@@ -112,10 +115,11 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
         <p class="eyebrow">
           <span>{SITE.publisher}</span>
           <span>·</span>
-          <span>{vi ? 'Ấn bản 1.1, tháng 9/2026' : 'Edition 1.1, September 2026'}</span>
-          <a class="new-pill" href={localize('/report', lang) + '#part-v'}>
-            {vi ? 'Mới: Phần V, Tương lai 2030 đến 2050' : 'New: Part V, Futures 2030 to 2050'}
-          </a>
+          <span>
+            {vi
+              ? `Bản thảo ${SITE.version}, tháng 9/2026`
+              : `Draft ${SITE.version}, September 2026`}
+          </span>
         </p>
         {vi ? (
           <h1 lang="vi">
@@ -137,21 +141,21 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
         <div class="hero-cta">
           {vi ? (
             <>
-              <a class="btn btn-primary" href={href('front-exec-summary-vi', lang)} lang="vi">
+              <a class="btn btn-primary" href={href(ROLE.summaryVi, lang)} lang="vi">
                 {s.readSummaryVi} <span aria-hidden="true">→</span>
               </a>
-              <a class="btn btn-secondary" href={href('front-exec-summary', lang)}>
+              <a class="btn btn-secondary" href={href(ROLE.summary, lang)}>
                 {s.readSummary}
               </a>
             </>
           ) : (
             <>
-              <a class="btn btn-primary" href={href('front-exec-summary', lang)}>
+              <a class="btn btn-primary" href={href(ROLE.summary, lang)}>
                 {s.readSummary} <span class="btn-meta">{enSummary.reading_time_min} min</span>
               </a>
               <a
                 class="btn btn-secondary"
-                href={href('front-exec-summary-vi', lang)}
+                href={href(ROLE.summaryVi, lang)}
                 lang="vi"
                 hreflang="vi"
               >
@@ -159,8 +163,15 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
               </a>
             </>
           )}
-          <a class="btn btn-secondary" href={href('front-at-a-glance', lang)}>
-            {vi ? 'Tổng quan nhanh' : 'At a glance'}
+          <a class="btn btn-secondary" href={href(ROLE.twoMinute, lang)}>
+            {vi ? 'Đọc trong hai phút' : 'In two minutes'}
+          </a>
+          <a
+            class="btn btn-secondary"
+            href={href(vi ? ROLE.prologueVi : ROLE.prologue, lang)}
+            lang={vi ? 'vi' : undefined}
+          >
+            {vi ? 'Lời mở đầu cho người mới' : 'New to alternative protein?'}
           </a>
         </div>
       </div>
@@ -202,12 +213,12 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
         <div class="aud-path" data-audience-none>
           <ol class="path-list path-default">
             {[
-              'front-exec-summary',
-              'front-at-a-glance',
-              'ch11-plays',
-              'ch12-policy-options',
-              'ch18-scenarios-2050',
-              'ch20-robust-moves',
+              ROLE.twoMinute,
+              ROLE.summary,
+              ROLE.atAGlance,
+              ROLE.productTargets,
+              ROLE.plays,
+              ROLE.robustMoves,
             ].map((id, i) => {
               const p = PAGE_BY_ID.get(id)!;
               return (
@@ -239,10 +250,7 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
                   <li>
                     <a href={href(id, lang)} lang={p.lang !== lang ? p.lang : undefined}>
                       <span class="path-n">{i + 1}</span>
-                      <span class="path-t">
-                        {p.short_title}
-                        {p.new_in && <span class="new-pill">{s.new}</span>}
-                      </span>
+                      <span class="path-t">{p.short_title}</span>
                       <span class="path-s">{p.summary}</span>
                     </a>
                   </li>
@@ -262,8 +270,8 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
           <h2 id="parts-h">{s.partsHeading}</h2>
           <p>
             {vi
-              ? 'Hai mươi chương, từ luận cứ đến những bước đi hiệu quả trong mọi kịch bản năm 2050. Nội dung báo cáo bằng tiếng Anh.'
-              : 'Twenty chapters, from the case for Vietnam to the moves that pay off in any 2050.'}
+              ? 'Ba mươi chương: bối cảnh, phía cung, phía cầu, tương lai đến 2050 và những việc nên làm. Nội dung báo cáo bằng tiếng Anh.'
+              : 'Thirty chapters: the context, what Vietnam can make, who would buy it, the futures to 2050, and what to do.'}
           </p>
         </div>
         <a class="btn btn-secondary" href={localize('/report', lang)}>
@@ -273,16 +281,12 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
       <div class="parts-grid">
         {PARTS.map((part) => {
           const list = chapters.filter((c) => c.part === part);
-          const isNew = part.startsWith('V.');
           return (
-            <div class={`part-card${isNew ? ' is-new' : ''}`}>
+            <div class="part-card">
               <p class="part-num">
                 {vi ? 'Phần' : 'Part'} {part.split('.')[0]}
               </p>
-              <h3>
-                {label(part, lang).replace(/^[IV]+\. /, '')}
-                {isNew && <span class="new-pill">{s.newIn11}</span>}
-              </h3>
+              <h3>{label(part, lang).replace(/^[IV]+\. /, '')}</h3>
               <p class="part-note">{partNote[part]}</p>
               <ol>
                 {list.map((c) => (
@@ -360,9 +364,8 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
               data-aud={a.audiences.join(' ')}
               lang={vi ? 'en' : undefined}
             >
-              <span class="app-letter">{appendixLetter(a.id)}</span>
-              <span>{a.short_title.replace(/^[A-Z]\. /, '')}</span>
-              {a.new_in && <span class="new-pill">{s.new}</span>}
+              <span class="app-letter">{appendixCode(a.id)}</span>
+              <span>{a.short_title.replace(/^[A-Z]\d*\. /, '')}</span>
             </a>
           </li>
         ))}
@@ -409,7 +412,7 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
     </div>
   </section>
 
-  <section class="section closing" aria-label={s.cite}>
+  <section class="section closing" aria-label={s.about}>
     <div class="frame">
       <div class="prose closing-notes" lang={vi ? 'en' : undefined} set:html={closingHtml} />
       <SourcesList ids={hero.citations} lang={lang} />
@@ -478,10 +481,16 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
     display: contents;
   }
   .hero-body :global(> p) {
+    grid-column: 1 / -1;
+    max-width: 60rem;
     font-size: 1.02rem;
     color: var(--ink-2);
     margin: 0;
     align-self: center;
+  }
+  .hero-body :global(> .callout) {
+    margin: 0;
+    align-self: start;
   }
   .hero-body :global(.kn-grid) {
     grid-column: 1 / -1;
@@ -589,10 +598,7 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
     border-radius: var(--radius);
     padding: 20px 18px 16px;
   }
-  .part-card.is-new {
-    border-color: color-mix(in srgb, var(--fx) 45%, var(--line));
-    background: linear-gradient(180deg, var(--fx-soft), var(--surface) 55%);
-  }
+
   .part-num {
     font-size: 0.74rem;
     font-weight: 650;
@@ -601,9 +607,7 @@ const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
     color: var(--brand-ink);
     margin: 0 0 4px;
   }
-  .is-new .part-num {
-    color: var(--fx);
-  }
+
   .part-card h3 {
     font-size: 1.18rem;
     margin: 0 0 4px;

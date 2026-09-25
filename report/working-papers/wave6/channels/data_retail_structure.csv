@@ -1,0 +1,59 @@
+metric,value,unit,year,scope,source_ids,evidence_label,confidence,demand_evidence_type,notes
+food_retail_sales,55.5,USD billion,2024,"Vietnam, all food retail",CHN-01,VN-direct,Medium,revealed,Euromonitor via USDA GAIN; up 1% on 2023
+share_traditional_small_local_grocers,83,percent of food retail value,2024,Vietnam,CHN-01,VN-direct,Medium,revealed,Small local grocers and wet markets; Euromonitor
+share_supermarkets,9,percent of food retail value,2024,Vietnam,CHN-01,VN-direct,Medium,revealed,Euromonitor
+share_hypermarkets,3,percent of food retail value,2024,Vietnam,CHN-01,VN-direct,Medium,revealed,Euromonitor
+share_food_drink_specialists,3,percent of food retail value,2024,Vietnam,CHN-01,VN-direct,Medium,revealed,Euromonitor; counted inside modern trade in the 2024 GAIN bar chart but not in the 2025 text
+share_convenience,1,percent of food retail value,2024,Vietnam,CHN-01,VN-direct,Medium,revealed,Euromonitor
+share_food_ecommerce,1,percent of food retail value,2024,Vietnam,CHN-01,VN-direct,Medium,revealed,Euromonitor; grew 29% in 2024
+growth_supermarkets,13,percent year on year,2024,Vietnam,CHN-01,VN-direct,Medium,revealed,Euromonitor
+modern_trade_share_company_view,14,percent of grocery,2025,Vietnam,CHN-15,VN-direct,Low,revealed,"WinCommerce CEO: 12% (2024) to 14% (2025); company statement, no method"
+food_retail_outlets,665000,outlets,2023,Vietnam,CHN-02,VN-direct,Medium,revealed,"Euromonitor; over 650,000 traditional"
+modern_trade_outlets,15000,outlets,2023,Vietnam,CHN-02,VN-direct,Low,revealed,"Printed as 15,0000 in source; read as 15,000"
+retail_sales_traditional,46399,USD million,2023,Vietnam,CHN-02,VN-direct,Medium,revealed,Euromonitor
+retail_sales_modern,8270,USD million,2023,Vietnam,CHN-02,VN-direct,Medium,revealed,Euromonitor; includes food and drink specialists
+retail_sales_ecommerce,316,USD million,2023,Vietnam,CHN-02,VN-direct,Medium,revealed,Euromonitor
+wet_markets_and_household_groceries_share,80,"percent of retail revenue, lower bound",2024,Vietnam,CHN-05,VN-direct,Medium,revealed,'over 80 percent'
+bach_hoa_xanh_stores,3612,stores,2026-08,Vietnam,CHN-12,VN-direct,Medium,revealed,"3,563 on 27 Aug 2026 (CHN-11)"
+bach_hoa_xanh_new_stores,789,stores opened,2025,Vietnam,CHN-10,VN-direct,Medium,revealed,plan was 600; about 50% in Central Vietnam
+bach_hoa_xanh_revenue,46900,VND billion,2025,Vietnam,CHN-10,VN-direct,Medium,revealed,"up 14%; about USD 1.8 bn at 26,000 VND per USD (our calculation)"
+bach_hoa_xanh_revenue_jan_aug,40100,VND billion,2026,Vietnam,CHN-12,VN-direct,Medium,revealed,up nearly 32%
+bach_hoa_xanh_online_revenue,2300,VND billion,2025,Vietnam,CHN-10,VN-direct,Medium,revealed,nearly 5% of BHX revenue; up 150%
+bach_hoa_xanh_fresh_share_of_sales,40,percent of sales,2024-Q3,Vietnam,CHN-13,VN-direct,Low,revealed,Vietcap via CafeF
+bach_hoa_xanh_minimart_value_share,54,percent of minimart value,2024,Vietnam,CHN-13,VN-direct,Low,revealed,Vietcap via CafeF
+wincommerce_stores,5141,stores,2026-H1,Vietnam,CHN-15,VN-direct,Medium,revealed,"WinMart, WinMart+, WiN"
+wincommerce_stores_end_2025,4592,stores,2025,Vietnam,CHN-14,VN-direct,Medium,revealed,"764 opened in 2025, about 80% rural WinMart+"
+wincommerce_revenue,39000,VND billion,2025,Vietnam,CHN-14,VN-direct,Medium,revealed,up 18%; about USD 1.5 bn (our calculation)
+wincommerce_revenue_h1,23000,VND billion,2026,Vietnam,CHN-15,VN-direct,Medium,revealed,about 30% growth
+wincommerce_target_stores_2030,15000,stores,2030,Vietnam,CHN-15,VN-direct,Low,inferred,"company target; 6,200+ in 2026"
+winmart_plus_stores,3692,stores,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,Q&Me enumeration
+coop_food_stores,579,stores,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,Q&Me
+coopmart_stores,128,stores,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,Q&Me
+winmart_supermarkets,136,stores,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,Q&Me
+kingfood_mart_stores,96,stores,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,Q&Me
+go_big_c_stores,39,stores,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,Q&Me; Central Retail
+tops_market_stores,9,stores,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,Q&Me
+mm_mega_market_stores,21,stores,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,Q&Me
+aeon_maxvalu_stores,23,stores,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,Q&Me
+aeon_citimart_stores,13,stores,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,Q&Me
+aeon_malls,8,malls,2025-09,Vietnam,CHN-01,VN-direct,Medium,revealed,eighth mall opened Sept 2025 in Tan An
+lotte_mart_stores,15,stores,2025,Vietnam,CHN-01,VN-direct,Medium,revealed,
+emart_stores,3,stores,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,2024 plan: 20 new stores in five years (CHN-02)
+satrafoods_stores,226,stores,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,
+circle_k_stores,499,stores,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,SHS gives about 447 in Nov 2025 (CHN-08); disagreement
+gs25_stores,318,stores,2026,Vietnam,CHN-07,VN-direct,Medium,revealed,up 82 (about 35%)
+familymart_stores,172,stores,2026,Vietnam,CHN-07,VN-direct,Medium,revealed,up about 23%
+seven_eleven_stores,148,stores,2026,Vietnam,CHN-07,VN-direct,Medium,revealed,up about 14%; northern entry June 2025
+ministop_stores,197,stores,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,
+convenience_and_minimart_outlets_enumerated,7806,outlets,2025-03,"Vietnam, chains enumerated",CHN-06,VN-direct,Medium,revealed,"HCMC 2,483; Hanoi 1,382; others 3,941"
+convenience_and_minimart_outlets_enumerated,9671,outlets,2026,"Vietnam, chains enumerated",CHN-07,VN-direct,Medium,revealed,"up 23.89%; others 4,933; HCMC 3,062; Hanoi 1,676; reported as forecast but matches enumeration growth"
+supermarket_outlets_enumerated,615,outlets,2025-03,"Vietnam, chains enumerated",CHN-06,VN-direct,Medium,revealed,
+stores_reached_by_bhx_plus_wincommerce_listing,8753,stores,2026-08,Vietnam,CHN-12; CHN-15,VN-direct,Medium,inferred,"our calculation: 3,612 + 5,141"
+fresh_meat_traditional_share,80,percent of fresh meat market,not stated,Vietnam,CHN-18,VN-direct,Low,revealed,Euromonitor via B&Company; premium traceable about 10%
+pork_retailers_at_wet_markets,95,"percent of pork retailers, lower bound",2018 study,"Vietnam, study areas",CHN-19,VN-direct,Medium,revealed,Unger et al. 2018 via systematic review
+beef_buyers_preferring_wet_markets,90,"percent of respondents, approx",2022 study,Dien Bien province,CHN-20,VN-direct,Medium,stated,Kinh and Thai households; rural north
+cp_vietnam_fresh_shops,1000,"shops, lower bound",2025,Vietnam,CHN-17,VN-direct,Low,revealed,"C.P. Fresh Shop, Fresh Mart, Five Star"
+households_using_refrigerator,59.0,percent of households,2014,Vietnam,CHN-21,VN-direct,Low,revealed,GSO 2015 via Ha-Duong 2021; refrigerators not freezers; dated
+food_delivery_spending,1.4,USD billion,2023,Vietnam,CHN-04,VN-direct,Low,revealed,Momentum Works via GAIN; up 30%
+prefer_cook_at_home,62,percent of surveyed consumers,2024-Q1,Vietnam,CHN-02,VN-direct,Low,stated,NielsenIQ via GAIN; sample not reported
+middle_class_share,17,percent of population,2024,Vietnam,CHN-05,VN-direct,Low,inferred,MOLISA via GAIN; projected 26% in 2026

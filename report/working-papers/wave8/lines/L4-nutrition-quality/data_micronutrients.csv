@@ -1,0 +1,20 @@
+record_id,food,protein_g_per_100g,iron_mg_per_100g,zinc_mg_per_100g,vitamin_b12_ug_per_100g,sodium_mg_per_100g,zinc_mg_per_100g_protein,iron_mg_per_100g_protein,bioavailability_note,source_ids,evidence_label,confidence,demand_evidence_type,notes
+NQR-MN01,"Rice, ordinary polished (gao te may)",7.9,1.3,1.5,0,5,18.99,16.46,Polished rice is low in phytate (NQR-23); 110 g raw rice gives 1.65 mg zinc,APR-04; DIE-12; NQR-23,VN-direct,High,,Composition from Decision 3958 Appendix 7 (APR-04); B12 and sodium from FCT 2007 (DIE-12).
+NQR-MN02,"Pork, lean (thit lon nac)",19.0,0.96,2.5,0.84,76,13.16,5.05,Haem iron; zinc absorption good with animal protein (APR-04 Appendix 5),APR-04; DIE-12,VN-direct,High,,
+NQR-MN03,"Pork, medium fat (thit lon nua nac nua mo)",16.5,1.5,1.91,,,11.58,9.09,As lean pork,APR-04,VN-direct,High,,
+NQR-MN04,"Chicken, local (thit ga ta)",20.3,1.5,1.5,0.31,70,7.39,7.39,As lean pork,APR-04; DIE-12,VN-direct,High,,B12 and sodium are FCT 2007 values for average chicken meat.
+NQR-MN05,"Chicken, industrial thigh",18.0,0.75,1.63,,,9.06,4.17,As lean pork,APR-04,VN-direct,High,,
+NQR-MN06,"Chicken, industrial breast",22.86,0.69,1.0,,,4.37,3.02,As lean pork,APR-04,VN-direct,High,,
+NQR-MN07,Hen egg (trung ga ta),12.96,2.7,0.9,1.29,158,6.94,20.83,Non-haem iron; zinc counted with animal foods (APR-04 Appendix 5),APR-04; DIE-12,VN-direct,High,,FCT 2007 gives 14.8 g protein per 100 g (see disagreements.csv); B12 and sodium from FCT 2007.
+NQR-MN08,"Cow milk, fresh",3.9,0.1,0.4,0.44,,10.26,2.56,Animal,APR-04; DIE-12,VN-direct,High,,"FCT 2007 prints 380 mg sodium per 100 g for fresh milk, which looks like an error; not used."
+NQR-MN09,"Beef, lean loin",23.07,1.63,4.05,,,17.56,7.07,Animal,APR-04,VN-direct,High,,
+NQR-MN10,Pangasius fillet,9.7,0.2,0.26,,,2.68,2.06,"Animal, but low in zinc",APR-04,VN-direct,Medium,,Software composition value; retail fillets carry added water (DIE-13).
+NQR-MN11,Gio lua (pork roll),16.9,0.87,2.41,,,14.26,5.15,Animal,APR-04,VN-direct,High,,
+NQR-MN12,Tofu (dau phu),10.9,2.2,0.8,0,7,7.34,20.18,"Most soymilk phytate goes into the curd (NQR-19); soy phytate to zinc molar ratio about 34 (range 9 to 43), above the 15 threshold for low absorption",APR-04; DIE-12; NQR-19; NQR-17; NQR-18,VN-direct,Medium,,"Composition VN-direct High; phytate inference general, Low."
+NQR-MN13,"Soy milk, home style (100 g beans per litre)",3.1,1.2,0.44,0,55,14.19,38.71,Soy phytate as above,APR-04; DIE-12,VN-direct,High,,"Packaged Fami soy milk labels 1.9 g protein per 100 ml (FORM-01), so per-serving values are lower."
+NQR-MN14,"Soybean, dry",34.0,11.0,3.8,0,2,11.18,32.35,Phytate 0.42 to 1.92% of dry weight across phosphorus supply (NQR-18); about 1.5% for whole oilseeds (NQR-17),APR-04; DIE-12; NQR-17; NQR-18,VN-direct,Medium,,"Phytate to zinc molar ratio 9.4 to 43.0, 33.6 at 1.5% (our calculation); phytate to iron molar ratio about 9.9 at 1.5% against a target below 1 for iron-fortified foods (NQR-16)."
+NQR-MN15,Defatted soy flour (proxy for textured soy),49.0,7.6,2.46,0,20,5.02,15.51,Soy phytate; textured soy is extruded defatted soy flour,DIE-12; NQR-16,VN-direct,Medium,,"FCT 2007 code 3021 (zinc from secondary data, code 3). No Vietnamese composition entry for textured soy."
+NQR-MN16,"Mung bean, dry",23.4,4.8,1.1,0,6,4.70,20.51,Legume phytate,APR-04; DIE-12,VN-direct,High,,
+NQR-MN17,"Frozen meat and seafood analogues, retail audit (n = 8)",17.4 (median),,,,596.5 (median; 470 to 740),,,Not measured; B12 and zinc fortification not labelled,FORM-01,VN-direct,Medium,revealed,A portion giving 20 g of protein (about 115 g) carries about 686 mg sodium (540 to 851) (our calculation).
+NQR-MN18,"Dried textured soy chunks, retail audit (n = 5)",64.0 (median),,,,640 (median; 0 to 818),,,,FORM-01,VN-direct,Medium,revealed,Unflavoured chunks carry almost no sodium; seasoned ones up to 818 mg per 100 g dry.
+NQR-MN19,"Tofu, retail audit (n = 5)","4.98 (median, label)",,,,12.3 (median; 4.4 to 32),,,,FORM-01,VN-direct,Medium,revealed,Label protein is below the FCT value of 10.9 g (DPP-016 disagreement in the package).

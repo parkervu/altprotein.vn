@@ -1,11 +1,11 @@
 record_id,indicator,value,unit,horizon_year,type,source_ids,evidence_label,confidence,notes
-VEI-001,"Grid emission factor, official latest",0.6592,t CO2 per MWh,2023,actual,COST-08 (edition 1.0),VN-direct,High,"Announced 3 Dec 2024. Unofficial estimates 0.6811 (2024), 0.6235 (2025) (edition 1.0 COST-09)."
-VEI-002,Blended industrial power price for a 24/7 plant at 22 kV,"1,952 (about USD 75)",VND per kWh (USD per MWh),2026,actual,COST-01; COST-03 (edition 1.0),VN-direct,High,Excludes VAT and any future capacity charge.
+VEI-001,"Grid emission factor, official latest",0.6592,t CO2 per MWh,2023,actual,COST-08 (v0.1),VN-direct,High,"Announced 3 Dec 2024. Unofficial estimates 0.6811 (2024), 0.6235 (2025) (v0.1 COST-09)."
+VEI-002,Blended industrial power price for a 24/7 plant at 22 kV,"1,952 (about USD 75)",VND per kWh (USD per MWh),2026,actual,COST-01; COST-03 (v0.1),VN-direct,High,Excludes VAT and any future capacity charge.
 VEI-003,Non-hydro renewable share of electricity,28 to 36,%,2030,target,FTG-15,VN-direct,High,Decision 768/QD-TTg (15 Apr 2025).
 VEI-004,Non-hydro renewable share of electricity,74 to 75,%,2050,target,FTG-15,VN-direct,High,Excludes hydropower. A first page read returned 67.5 to 71.5%; the verbatim quote gives 74 to 75%.
 VEI-005,Solar capacity,46.5 to 73.4,GW,2030,target,FTG-15,VN-direct,High,"46,459 to 73,416 MW including rooftop."
 VEI-006,Solar capacity,293.1 to 295.6,GW,2050,target,FTG-15,VN-direct,High,35.3 to 37.8% of domestic-demand capacity.
-VEI-007,Onshore wind capacity,26.1 to 38.0,GW,2030,target,FTG-15; GT-11 (edition 1.0),VN-direct,High,
+VEI-007,Onshore wind capacity,26.1 to 38.0,GW,2030,target,FTG-15; GT-11 (v0.1),VN-direct,High,
 VEI-008,Onshore wind capacity,84.7 to 91.4,GW,2050,target,FTG-15,VN-direct,High,
 VEI-009,Offshore wind capacity for domestic demand,6.0 to 17.0,GW,2030 to 2035,target,FTG-15,VN-direct,High,Expected to operate in 2030 to 2035.
 VEI-010,Offshore wind capacity for domestic demand,113.5 to 139.1,GW,2050,target,FTG-15,VN-direct,High,
@@ -13,10 +13,10 @@ VEI-011,"Offshore wind capacity to produce new energy (hydrogen, green ammonia)"
 VEI-012,"Offshore wind capacity to produce new energy (hydrogen, green ammonia)",240,GW,2050,target,FTG-15,VN-direct,High,No legal track yet: Decree 272/2026 covers supply to the national grid only (FTG-28).
 VEI-013,Electricity from 240 GW new-energy offshore wind,"904 to 1,081",TWh per year,2050,estimate,FTG-15; FTG-19,VN-direct,Low,Our calculation at BNEF offshore capacity factors 43 to 51.4%.
 VEI-014,Battery storage capacity,96.0 to 96.1,GW,2050,target,FTG-15,VN-direct,High,
-VEI-015,Nuclear capacity,4.0 to 6.4,GW,2030 to 2035,target,FTG-15; GT-11 (edition 1.0),VN-direct,High,Khanh Hoa (former Ninh Thuan) sites.
+VEI-015,Nuclear capacity,4.0 to 6.4,GW,2030 to 2035,target,FTG-15; GT-11 (v0.1),VN-direct,High,Khanh Hoa (former Ninh Thuan) sites.
 VEI-016,Nuclear capacity,10.5 to 14.0,GW,2050,target,FTG-15,VN-direct,High,
 VEI-017,Hydrogen-only power plants,15.6 to 22.6,GW,2050,target,FTG-15,VN-direct,High,Plus 18.2 to 26.1 GW LNG plants co-firing hydrogen.
-VEI-018,Electricity production and imports,"1,360.1 to 1,511.1",TWh,2050,target,FTG-15,VN-direct,High,Commercial electricity 2030: 500.4 to 557.8 TWh (edition 1.0 GT-11).
+VEI-018,Electricity production and imports,"1,360.1 to 1,511.1",TWh,2050,target,FTG-15,VN-direct,High,Commercial electricity 2030: 500.4 to 557.8 TWh (v0.1 GT-11).
 VEI-019,Power-sector GHG emissions,197 to 199,Mt CO2e,2030,target,FTG-15,VN-direct,High,
 VEI-020,Power-sector GHG emissions,27,Mt CO2e,2050,target,FTG-15,VN-direct,High,
 VEI-021,Average grid emission factor implied by PDP8,0.35 to 0.40,t CO2 per MWh,2030,estimate,FTG-15,VN-direct,Low,197 to 199 Mt divided by 500 to 558 TWh commercial sales; an upper bound because sales are below generation.
@@ -48,4 +48,4 @@ VEI-046,Indicative cost of hydrogen-route microbial protein made in Vietnam,"6,9
 VEI-047,Indicative cost of hydrogen-route microbial protein made in Vietnam,"4,700 to 8,600",USD per t protein,2040,estimate,FTG-01; FTG-19,VN-direct,Low,Non-energy costs interpolated between Fasihi 2035 and 2050.
 VEI-048,Indicative cost of hydrogen-route microbial protein made in Vietnam,"3,300 to 6,500",USD per t protein,2050,estimate,FTG-01; FTG-19,VN-direct,Low,"Best global sites 2,520 to 2,760 (Fasihi). Fishmeal protein 2,625 to 3,846 (2025 to Aug 2026); soybean-meal protein about 880."
 VEI-049,Breakeven delivered H2 price for parity with Aug 2026 fishmeal protein,0.66 to 2.87,USD per kg H2,2050,estimate,FTG-01,VN-direct,Low,"Buy-H2 case, point-source CO2, Vietnamese WACC. No positive breakeven against soybean-meal protein in any year."
-VEI-050,Domestic carbon market,Pilot to end 2028; full operation from 2029,n/a,2029,target,REG-59 (edition 1.0),VN-direct,Medium,Carbon prices are covered by stream ECF.
+VEI-050,Domestic carbon market,Pilot to end 2028; full operation from 2029,n/a,2029,target,REG-59 (v0.1),VN-direct,Medium,Carbon prices are covered by stream ECF.

@@ -1,0 +1,26 @@
+record_id,retailer,country,metric,method,year,value,unit,target_value,target_year,progress_note,source_ids,evidence_label,confidence,demand_evidence_type,notes
+PSP-01,Lidl Nederland,Netherlands,plant share of protein sales,"Eiweet (all foods, fixed range)",2023,42.7,%,60,2030,Interim target 50% in 2025,XBA-02,general,High,revealed,Restated upward after data improvement.
+PSP-02,Lidl Nederland,Netherlands,plant share of protein sales,"Eiweet (all foods, fixed range)",2024,43.1,%,60,2030,Up 0.4 points; about 2.8 points a year needed (our calculation),XBA-02,general,High,revealed,
+PSP-03,Lidl Nederland,Netherlands,plant share of protein-rich foods excluding dairy,WWF,2023,25.46,%,35,2030,,XBA-02,general,High,revealed,
+PSP-04,Lidl Nederland,Netherlands,plant share of protein-rich foods excluding dairy,WWF,2024,25.84,%,35,2030,Up 0.38 points against 1.53 a year needed (Lidl's own figure),XBA-02,general,High,revealed,
+PSP-05,Lidl Nederland,Netherlands,plant dairy share of dairy sales,WWF,2024,3.31,%,10,2030,7% in 2023 under the earlier method (butter and margarine then counted as dairy); target cut from 15% to 10%,XBA-02,general,High,revealed,
+PSP-06,Ahold Delhaize European brands,Netherlands; Belgium; Central and South-East Europe,plant-based share of protein sales,"Product-level protein weight, own and national brands",2025,45,%,50,2030,About 1 point a year needed (our calculation),XBA-01,general,High,revealed,Albert Heijn's own target is 60% by 2030 (Protein Tracker).
+PSP-07,Albert Heijn; Jumbo; Aldi Nederland; Dirk; Plus,Netherlands,plant share of protein sales,Protein Tracker (GPA and ProVeg),2024,not extracted,%,60,2030,All six Dutch chains target 50% in 2025 and 60% in 2030; shares 'changed little since 2023',XBA-13; XBA-14,general,Medium,revealed,Values shown only in a chart in the retrieved report.
+PSP-08,Lidl Germany,Germany,plant-based food share of total volume,WWF (all food groups),2024,55.3,%,20% increase by 2030 (Lidl International),2030,2023 all-food baseline not published,XBA-12,general,Medium,revealed,
+PSP-09,Lidl Germany,Germany,plant share of protein-rich foods,WWF,2024,11,%,20,2030,,XBA-12,general,Medium,revealed,
+PSP-10,Lidl Germany,Germany,plant dairy share,WWF,2024,6,%,10,2030,,XBA-12,general,Medium,revealed,
+PSP-11,Aldi Sud,Germany,plant-based food share of total volume,WWF (all food groups),2024,56.4,%,none,n/a,Baseline year,XBA-12; XBA-15,general,Medium,revealed,See disagreements on metric description.
+PSP-12,Aldi Sud,Germany,plant share of protein-rich foods,WWF,2024,13,%,none,n/a,,XBA-12,general,Medium,revealed,
+PSP-13,Aldi Sud,Germany,plant dairy share,WWF,2024,5,%,none,n/a,,XBA-12,general,Medium,revealed,
+PSP-14,Rewe,Germany,plant-based food share of total volume,WWF (all food groups),2024,54,%,60,2035,Baseline year,XBA-12; XBA-13,general,Medium,revealed,
+PSP-15,Kaufland,Germany,plant share of protein-rich foods,WWF,2023,8,%,none,n/a,Dairy alternatives 10%; not updated for 2024,XBA-12,general,Medium,revealed,
+PSP-16,Sainsbury's,United Kingdom,plant share of protein sales,WWF basket (Eatwell protein group),2022/23,14,%,none,n/a,,XBA-08,general,High,revealed,
+PSP-17,Sainsbury's,United Kingdom,plant share of protein sales,WWF basket (Eatwell protein group),2023/24,13,%,none,n/a,Restated after data review,XBA-08,general,High,revealed,
+PSP-18,Sainsbury's,United Kingdom,plant share of protein sales,WWF basket (Eatwell protein group),2024/25,13,%,none,n/a,,XBA-08,general,High,revealed,
+PSP-19,Sainsbury's,United Kingdom,plant share of protein sales,WWF basket (Eatwell protein group),2025/26,13,%,none,n/a,Flat for three years,XBA-08,general,High,revealed,Dairy alternatives 7% of dairy (8% in 2022/23); plain pulses 3.8% of sales tonnage.
+PSP-20,Tesco,United Kingdom,plant share of protein-rich foods,WWF,2024/25,9,%,none (goal: plant-based meat alternatives sales up 300% by 2025),2025,Progress on the 300% goal not retrieved,XBA-12,general,Medium,revealed,Dairy alternatives 7%.
+PSP-21,Lidl GB,United Kingdom,plant share of protein sales (tonnage),"Lidl GB definition (legumes, nuts, seeds, vegan alternatives)",n/a,not published on page,%,25,2030,,XBA-05,general,High,stated,
+PSP-22,Aldi UK,United Kingdom,plant-based share of high-protein sales,Aldi definition,2020,17,%,none found,n/a,,XBA-15,general,Medium,revealed,Read through a summarising fetch tool.
+PSP-23,Aldi UK,United Kingdom,plant-based share of high-protein sales,Aldi definition,2024,21,%,none found,n/a,Stated as 'up to 21%',XBA-15,general,Medium,revealed,
+PSP-24,Carrefour,Group Europe,sales of plant-based alternatives,Sales value; excludes legumes,2024,621,EUR million,"1,000 (raised from 650 by 2026)",2030,,XBA-11,general,High,revealed,
+PSP-25,Carrefour,Group Europe,sales of plant-based alternatives,Sales value; excludes legumes,2025,664,EUR million,"1,000",2030,Up 6.9%; about 8.5% a year needed to 2030 (our calculation),XBA-11,general,High,revealed,

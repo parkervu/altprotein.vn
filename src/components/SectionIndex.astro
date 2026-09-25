@@ -1,10 +1,12 @@
 ---
 import { label, t } from '../lib/i18n';
 import {
+  APPENDIX_GROUPS,
   PAGES,
+  PAGE_BY_ID,
   PARTS,
-  SITE,
-  appendixLetter,
+  appendixCode,
+  partId,
   chapterNumber,
   href,
   type PageMeta,
@@ -18,47 +20,37 @@ const lang = Astro.locals.lang ?? 'en';
 const s = t(lang);
 const vi = lang === 'vi';
 const pages = PAGES.filter((p) => p.section === kind);
-const groups: { id: string; title: string; isNew: boolean; pages: PageMeta[] }[] =
+const groups: { id: string; title: string; pages: PageMeta[] }[] =
   kind === 'report'
     ? PARTS.map((part) => ({
-        id: `part-${part.split('.')[0].toLowerCase()}`,
+        id: partId(part),
         title: label(part, lang),
-        isNew: part.startsWith('V.'),
         pages: pages.filter((p) => p.part === part),
       }))
     : kind === 'appendix'
-      ? [
-          {
-            id: 'evidence',
-            title: s.appendicesEvidence,
-            isNew: false,
-            pages: pages.filter((p) => !p.new_in),
-          },
-          {
-            id: 'futures',
-            title: s.appendicesFutures,
-            isNew: true,
-            pages: pages.filter((p) => p.new_in),
-          },
-        ]
-      : [{ id: 'briefs', title: '', isNew: false, pages }];
+      ? APPENDIX_GROUPS.map((g) => ({
+          id: `group-${g.id}`,
+          title: label(g.label, lang),
+          pages: g.pages.map((id) => PAGE_BY_ID.get(id)!).filter(Boolean),
+        }))
+      : [{ id: 'briefs', title: '', pages }];
 const heading = { report: s.report, brief: s.briefsHeading, appendix: s.appendicesHeading }[kind];
 const intro = {
   report: vi
-    ? 'Hai mươi chương trong năm phần: các phát hiện ở tầm vĩ mô. Phần V (chương 15 đến 20) mới có trong ấn bản 1.1. Nội dung báo cáo bằng tiếng Anh.'
-    : 'Twenty chapters in five parts: the macro findings. Part V (chapters 15 to 20) is new in edition 1.1.',
+    ? 'Ba mươi chương trong năm phần: bối cảnh, phía cung, phía cầu, tương lai và những việc nên làm. Nội dung báo cáo bằng tiếng Anh.'
+    : 'Thirty chapters in five parts: the context, the supply side, the demand side, the futures to 2050, and what to do.',
   brief: vi
     ? 'Sáu bản tóm lược, mỗi bản cho một nhóm độc giả: điều gì quan trọng với bạn và nên đọc tiếp ở đâu.'
     : 'Six short briefs, one per audience: what matters to you, and where to read next.',
   appendix: vi
-    ? 'Các phát hiện chi tiết: phiếu dữ liệu, danh bạ, sổ đăng ký, mô hình và nguồn. Phụ lục U đến Z mới có trong ấn bản 1.1.'
-    : 'The micro findings: data sheets, directories, registers, models and sources. Appendices U to Z are new in edition 1.1.',
+    ? 'Bằng chứng chi tiết theo chủ đề: phương pháp và hồ sơ (M), bối cảnh và phía cung (S), phía cầu (D), tương lai (F) và các sổ đăng ký (R).'
+    : 'The detailed evidence by theme: method and record (M), context and supply (S), demand (D), futures (F) and registers (R).',
 }[kind];
 const kicker = (p: PageMeta) =>
   kind === 'report'
     ? `${vi ? 'Chương' : 'Chapter'} ${chapterNumber(p.id)}`
     : kind === 'appendix'
-      ? `${vi ? 'Phụ lục' : 'Appendix'} ${appendixLetter(p.id)}`
+      ? `${vi ? 'Phụ lục' : 'Appendix'} ${appendixCode(p.id)}`
       : vi
         ? 'Bản tóm lược'
         : 'Brief';
@@ -71,12 +63,7 @@ const kicker = (p: PageMeta) =>
   </header>
   {groups.map((g) => (
     <section class="part-block" id={g.id} aria-labelledby={g.title ? `${g.id}-h` : undefined}>
-      {g.title && (
-        <h2 id={`${g.id}-h`}>
-          {g.title}
-          {g.isNew && <span class="new-pill">{s.newIn11}</span>}
-        </h2>
-      )}
+      {g.title && <h2 id={`${g.id}-h`}>{g.title}</h2>}
       <div class="card-grid">
         {g.pages.map((p) => (
           <a class="card" href={href(p.id, lang)} data-aud={p.audiences.join(' ')}>
@@ -85,7 +72,7 @@ const kicker = (p: PageMeta) =>
               <span class="for-you">{s.forAudience}</span>
             </span>
             <span class="card-title" lang={vi ? 'en' : undefined}>
-              {p.heading.replace(/^(\d+|[A-Z])\. /, '')}
+              {p.heading.replace(/^(\d+|[A-Z]\d*)\. /, '')}
             </span>
             <span class="card-text" lang={vi ? 'en' : undefined}>
               {p.summary}

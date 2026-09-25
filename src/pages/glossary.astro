@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import glossaryJson from '../generated/glossary.json';
 import { t } from '../lib/i18n';
-import { href } from '../lib/site';
+import { ROLE, appendixCode, href } from '../lib/site';
 
 type Term = Record<string, string>;
 const lang = Astro.locals.lang ?? 'en';
@@ -24,7 +24,10 @@ const fold = (x: string) => x.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,
       </h1>
       <p>
         {s.glossaryIntro}{' '}
-        <a href={href('app-s-glossary', lang)}>{vi ? 'Phụ lục S' : 'Appendix S'}</a> ·{' '}
+        <a href={href(ROLE.glossary, lang)}>
+          {vi ? 'Phụ lục' : 'Appendix'} {appendixCode(ROLE.glossary)}
+        </a>{' '}
+        ·{' '}
         <a href="/data/glossary.csv" download>
           glossary.csv
         </a>

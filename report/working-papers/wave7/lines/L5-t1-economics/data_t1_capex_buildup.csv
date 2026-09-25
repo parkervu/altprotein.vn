@@ -1,0 +1,22 @@
+line_t_per_h,item,usd_low,usd_high,basis,type,source_ids,evidence_label,confidence,demand_evidence_type,notes
+1.0,"Extrusion line with dryer, FOB China",30000,300000,"Listings of USD 30,000 to 100,000 for 1 t/h class lines; up to three times listing allowed for a firm quote with spares and branded drives (assumption)",listing plus assumption,TIC-02; TIC-03; TIC-07,VN-direct,Low,inferred,our calculation; not a quote
+1.0,"Freight, insurance and clearance of the line",5000,20000,assumption,assumption,none (assumption),VN-direct,Low,inferred,our calculation; not a quote
+1.0,Installation and commissioning,10000,50000,Vendors send 1 to 2 engineers; local electrical and piping work (assumption),assumption on listing terms,TIC-07,VN-direct,Low,inferred,our calculation; not a quote
+1.0,"Utilities: transformer and switchgear, dryer heat source, compressor, water",50000,150000,assumption; connected load 140 to 280 kW per listings,assumption,TIC-02; TIC-03,VN-direct,Low,inferred,our calculation; not a quote
+1.0,"Bagging, metal detection, QA laboratory",30000,80000,assumption,assumption,none (assumption),VN-direct,Low,inferred,our calculation; not a quote
+1.0,"Food-grade fit-out of 2,000 to 3,000 m2 of rented factory at USD 50 to 150 per m2",100000,450000,assumption; rent itself is an operating cost (COST-21),assumption,COST-21,VN-direct,Low,inferred,our calculation; not a quote
+1.0,"Certification (HACCP or ISO 22000, halal), trials and pre-operating costs",50000,150000,assumption,assumption,none (assumption),VN-direct,Low,inferred,our calculation; not a quote
+1.0,Contingency 15%,41250,180000,assumption,assumption,none (assumption),VN-direct,Low,inferred,our calculation; not a quote
+1.0,"Total installed capex, Chinese-equipped 1 t/h line",316250,1380000,sum (our calculation),our calculation,TIC-02; TIC-03; TIC-07; COST-21,VN-direct,Low,inferred,our calculation; not a quote
+1.0,"Total installed capex, European-grade 1 t/h line (sensitivity)",2006750,5635000,"Part I equipment assumption USD 1.5 to 4.0 M (no verified quote) plus the non-line items above, plus 15%",package assumption plus our calculation,COST-21,VN-direct,Low,inferred,our calculation; not a quote
+0.5,"Extrusion line with dryer, FOB China",30000,240000,"Listings of USD 30,000 to 80,000 for 0.5 t/h class lines; up to three times listing (assumption)",listing plus assumption,TIC-03; TIC-10; TIC-02,VN-direct,Low,inferred,our calculation; not a quote
+0.5,"Freight, insurance and clearance of the line",5000,15000,assumption,assumption,none (assumption),VN-direct,Low,inferred,our calculation; not a quote
+0.5,Installation and commissioning,10000,40000,assumption,assumption on listing terms,TIC-07,VN-direct,Low,inferred,our calculation; not a quote
+0.5,Utilities,40000,100000,assumption; connected load 105 to 210 kW per listings,assumption,TIC-02; TIC-10,VN-direct,Low,inferred,our calculation; not a quote
+0.5,"Bagging, metal detection, QA laboratory",30000,60000,assumption,assumption,none (assumption),VN-direct,Low,inferred,our calculation; not a quote
+0.5,"Food-grade fit-out of 1,500 to 2,000 m2 at USD 50 to 150 per m2",75000,300000,assumption,assumption,COST-21,VN-direct,Low,inferred,our calculation; not a quote
+0.5,"Certification, trials and pre-operating costs",50000,120000,assumption,assumption,none (assumption),VN-direct,Low,inferred,our calculation; not a quote
+0.5,Contingency 15%,36000,131250,assumption,assumption,none (assumption),VN-direct,Low,inferred,our calculation; not a quote
+0.5,"Total installed capex, Chinese-equipped 0.5 t/h line",276000,1006250,sum (our calculation),our calculation,TIC-02; TIC-03; TIC-10; COST-21,VN-direct,Low,inferred,our calculation; not a quote
+1.0,Working capital at 90% utilisation (3 to 4 months of revenue at Chinese parity),2320000,3462000,"assumption: 1.5 months of imported flour, 1 month of finished stock for lunar peaks, 1.5 months of receivables",assumption,BUY-02,VN-direct,Low,inferred,our calculation; not a quote
+0.5,Working capital at 70% utilisation (3 to 4 months of revenue at Chinese parity),902000,1346000,as above,assumption,BUY-02,VN-direct,Low,inferred,our calculation; not a quote

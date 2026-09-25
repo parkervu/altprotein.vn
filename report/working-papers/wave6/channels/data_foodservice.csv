@@ -1,0 +1,46 @@
+record_type,subject,metric,value,unit,year,scope,source_ids,evidence_label,confidence,demand_evidence_type,notes
+market,foodservice,value_sales,26.6,USD billion,2024,Vietnam,CHN-03,VN-direct,Medium,revealed,Euromonitor; up 7%
+market,foodservice,outlets,323000,outlets,2024,Vietnam,CHN-03,VN-direct,Medium,revealed,Euromonitor
+market,full_service_restaurants,value_sales,18.3,USD billion,2024,Vietnam,CHN-03,VN-direct,Medium,revealed,"69% of sales; over 121,800 outlets"
+market,full_service_restaurants,outlets,121800,outlets,2024,Vietnam,CHN-03,VN-direct,Medium,revealed,
+market,cafes_and_bars,share_of_sales,18,percent,2024,Vietnam,CHN-03,VN-direct,Medium,revealed,"over 38,000 outlets"
+market,street_stalls_and_kiosks,share_of_sales,10,percent,2024,Vietnam,CHN-03,VN-direct,Medium,revealed,"nearly 152,000 outlets"
+market,street_stalls_and_kiosks,outlets,152000,outlets,2024,Vietnam,CHN-03,VN-direct,Medium,revealed,
+market,limited_service_restaurants,share_of_sales,3,percent,2024,Vietnam,CHN-03,VN-direct,Medium,revealed,"about 11,000 outlets"
+market,street_stalls_and_kiosks,sales_per_outlet,17500,USD per outlet per year,2024,Vietnam,CHN-03,VN-direct,Low,inferred,"our calculation: 10% of USD 26.6 bn / 152,000"
+market,full_service_restaurants,sales_per_outlet,150000,USD per outlet per year,2024,Vietnam,CHN-03,VN-direct,Low,inferred,our calculation
+market,accommodation_and_catering_gso,revenue,733920,VND billion,2024,Vietnam,CHN-06,VN-direct,Medium,revealed,GSO via Q&Me; up 12.9%; includes accommodation
+market,accommodation_and_catering_nso,revenue,843100,VND billion,2025,Vietnam,CHN-43,VN-direct,High,revealed,NSO via VietnamPlus; up 14.6%; about USD 32 bn
+market,foodservice_operators,closures_h1,50000,"operators, lower bound",2025,Vietnam,CHN-03,VN-direct,Low,revealed,iPOS and Nestle Professional; down 7.1% year on year
+market,foodservice_operators,count_mid_2024,304700,operators,2024,Vietnam,CHN-04,VN-direct,Low,revealed,"iPOS; after over 30,000 closures in H1 2024"
+market,food_delivery,spending,1.4,USD billion,2023,Vietnam,CHN-04,VN-direct,Low,revealed,Momentum Works
+chain_outlets,Lotteria,outlets,222,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,direct meat importer (CHN-03)
+chain_outlets,Jollibee,outlets,213,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,200 at end-2024; sales up 35% Q2 2025 (CHN-03)
+chain_outlets,KFC,outlets,172,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,GAIN 2024 says over 200 (CHN-04); disagreement
+chain_outlets,Pizza Hut,outlets,118,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,
+chain_outlets,The Pizza Company,outlets,74,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,
+chain_outlets,Domino's Pizza,outlets,59,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,
+chain_outlets,Popeyes,outlets,59,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,
+chain_outlets,Texas Chicken,outlets,42,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,
+chain_outlets,McDonald's,outlets,37,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,closed stores in 2024 (CHN-04)
+chain_outlets,Burger King,outlets,11,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,closed stores in 2024 (CHN-04)
+chain_outlets,fast_food_total_enumerated,outlets,1022,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,
+chain_outlets,Highlands Coffee,outlets,855,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,up 11%
+chain_outlets,Phuc Long,outlets,237,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,up 50%; Masan
+chain_outlets,Starbucks,outlets,127,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,up 22%
+chain_outlets,Katinat,outlets,93,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,up 35%
+chain_outlets,The Coffee House,outlets,93,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,down 34%; nearly 40% of outlets closed
+chain_outlets,Trung Nguyen,outlets,464,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,
+chain_outlets,GoGi House,outlets,146,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,Golden Gate group
+chain_outlets,Kichi-Kichi,outlets,116,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,Golden Gate group; hotpot
+chain_outlets,Manwah,outlets,55,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,Golden Gate group; hotpot
+chain_outlets,Pizza 4P's,outlets,33,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,
+chain_outlets,Pho 24,outlets,13,outlets,2025-03,Vietnam,CHN-06,VN-direct,Medium,revealed,
+plant_based_trial,KFC Vietnam,chay chicken burger price,39000,VND,2018,"all stores, 26 Jul to end of lunar July",CHN-22; CHN-23,VN-direct,Medium,revealed,"also seaweed rice with chay chicken floss VND 39,000 and salad VND 15,000; no outcome published; no repeat found"
+plant_based_trial,BiaCraft,Beyond Burger,,,2019,"3 venues, Ho Chi Minh City",supply study ECO-16,VN-direct,Medium,revealed,context from supply study; first documented modern plant-based meat in Vietnamese HoReCa
+plant_based_trial,Burger King,plant-based Whopper in Vietnam,0,launches found,2021,"Asia rollout: Japan, Philippines, China",CHN-26,general,Medium,revealed,clean negative: Vietnam not included; no Vietnam launch found
+plant_based_trial,Starbucks Vietnam,OmniFoods items,,,2023,limited-time summer menu,supply study ECO-20,VN-direct,Medium,revealed,context from supply study; ended
+plant_based_trial,Lotteria Vietnam,Burger Zero Meat price,39000,VND,2025,"HCMC, Hanoi, Hai Phong, Hue, Da Nang, Nha Trang, Can Tho",CHN-24; CHN-25,VN-direct,Medium,revealed,vegetable patty; launched 25 Jul 2025; no time limit stated; no sales data; current listing not verified
+plant_based_trial,Pizza 4P's,vegetarian menu,,,2025,all restaurants,CHN-27,VN-direct,Low,revealed,"cheese, vegetable and mushroom dishes; no analogues"
+behaviour,dining choice factors,top three factors,,,2024,Vietnam,CHN-04,VN-direct,Low,stated,"Decision Lab F&B Trends 2024: value for money, taste, ingredient quality"
+behaviour,"food away from home, Mekong Delta",change in share of food spending,6,percentage points,2020,"Mekong Delta, 2010 to 2020",CHN-56,VN-direct,Medium,revealed,VHLSS; paper has a 2026 correction

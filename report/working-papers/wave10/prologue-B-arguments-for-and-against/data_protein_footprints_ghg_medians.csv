@@ -1,0 +1,13 @@
+food,ghg_median_kg_co2e_per_100g_protein,source_ids,how_read
+Beef (herd type not stated by source),25,PRB-03; PRB-01,body text
+Lamb and mutton,20,PRB-03; PRB-01,'around 20'
+Prawns (farmed),10,PRB-03; PRB-01,'about 10'
+Cheese,8.4,PRB-03; PRB-01,chart description
+Pig meat,6.5,PRB-03; PRB-01,chart description
+Poultry meat,4.3,PRB-03; PRB-01,chart description
+Eggs,3.8,PRB-03; PRB-01,chart description
+Fish (farmed),3.5,PRB-03; PRB-01,chart description
+Tofu,1.6,PRB-03; PRB-01,'about 1.6'
+Other pulses (beans),0.65,PRB-03; PRB-01,chart description
+Nuts,0.8,PRB-03; PRB-01,chart description
+Peas,0.4,PRB-03; PRB-01,chart description

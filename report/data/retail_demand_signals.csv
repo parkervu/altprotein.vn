@@ -1,0 +1,41 @@
+record_id,topic,metric,segment,value,unit,n,notes,source_ids,evidence_label,confidence,demand_evidence_type
+RDS-001,assortment,SKUs logged,mass stores (8),140,SKUs,140,"Lotte Mart, Co.opmart, GO!, WinMart, Emart in Nha Trang and Ho Chi Minh City; convenience sample.",FORM-01,VN-direct,Medium,revealed
+RDS-002,assortment,SKUs logged,premium stores (3),46,SKUs,46,"Annam Gourmet, Nam An Market, Moonmilk; convenience sample.",FORM-01,VN-direct,Medium,revealed
+RDS-003,assortment,Share of SKUs that are imported finished products,mass stores,3.6,%,140,5 of 140 SKUs; origin as logged.,FORM-01,VN-direct,Medium,revealed
+RDS-004,assortment,Share of SKUs that are imported finished products,premium stores,67.4,%,46,31 of 46 SKUs; origin as logged.,FORM-01,VN-direct,Medium,revealed
+RDS-005,price point,Median pack price,tofu; mass stores,12600,VND per pack,8,"Range 9,900 to 19,500. Shelf or online price as logged.",FORM-01,VN-direct,Medium,revealed
+RDS-006,price point,Median pack price,plant milk; mass stores,27500,VND per pack,31,"Range 3,700 to 133,500. Shelf or online price as logged.",FORM-01,VN-direct,Medium,revealed
+RDS-007,price point,Median pack price,plant milk; premium stores,94900,VND per pack,14,"Range 14,000 to 158,900. Shelf or online price as logged.",FORM-01,VN-direct,Medium,revealed
+RDS-008,price point,Median pack price,plant yogurt/creamer; mass stores,38800,VND per pack,7,"Range 10,000 to 41,000. Shelf or online price as logged.",FORM-01,VN-direct,Medium,revealed
+RDS-009,price point,Median pack price,dumpling/spring roll/bun with vegetable filling; mass stores,45500,VND per pack,39,"Range 27,900 to 65,000. Shelf or online price as logged.",FORM-01,VN-direct,Medium,revealed
+RDS-010,price point,Median pack price,dumpling/spring roll/bun with vegetable filling; premium stores,85000,VND per pack,3,"Range 38,900 to 92,000. Shelf or online price as logged.",FORM-01,VN-direct,Medium,revealed
+RDS-011,price point,Median pack price,dried TVP/soy chunks; mass stores,49000,VND per pack,5,"Range 49,000 to 75,000. Shelf or online price as logged.",FORM-01,VN-direct,Medium,revealed
+RDS-012,price point,Median pack price,ready meal; mass stores,46400,VND per pack,6,"Range 25,000 to 72,900. Shelf or online price as logged.",FORM-01,VN-direct,Medium,revealed
+RDS-013,price point,Median pack price,canned analog; mass stores,57000,VND per pack,9,"Range 15,100 to 76,000. Shelf or online price as logged.",FORM-01,VN-direct,Medium,revealed
+RDS-014,price point,Median pack price,frozen meat/seafood analog; mass stores,71500,VND per pack,17,"Range 41,800 to 136,000. Shelf or online price as logged.",FORM-01,VN-direct,Medium,revealed
+RDS-015,price point,Median pack price,frozen meat/seafood analog; premium stores,179000,VND per pack,2,"Range 179,000 to 179,000. Shelf or online price as logged.",FORM-01,VN-direct,Medium,revealed
+RDS-016,price point,Median pack price,vegan cheese/spread; premium stores,156600,VND per pack,9,"Range 89,900 to 249,900. Shelf or online price as logged.",FORM-01,VN-direct,Medium,revealed
+RDS-017,price point,Median pack price,protein powder; premium stores,875900,VND per pack,4,"Range 309,900 to 1,439,900. Shelf or online price as logged.",FORM-01,VN-direct,Medium,revealed
+RDS-018,price point,Median pack price,snack/jerky; premium stores,32900,VND per pack,5,"Range 32,900 to 32,900. Shelf or online price as logged.",FORM-01,VN-direct,Medium,revealed
+RDS-019,protein cost,Median cost of 20 g of protein,tofu,13300,VND per 20 g protein,5,"Our calculation: price per 100 g protein divided by 5; label protein. Range 7,834 to 24,211.",FORM-01,VN-direct,Medium,inferred
+RDS-020,protein cost,Median cost of 20 g of protein,plant milk,91200,VND per 20 g protein,8,"Our calculation: price per 100 g protein divided by 5; label protein. Range 18,332 to 288,889.",FORM-01,VN-direct,Medium,inferred
+RDS-021,protein cost,Median cost of 20 g of protein,plant yogurt/creamer,105800,VND per 20 g protein,7,"Our calculation: price per 100 g protein divided by 5; label protein. Range 31,250 to 125,625.",FORM-01,VN-direct,Medium,inferred
+RDS-022,protein cost,Median cost of 20 g of protein,dumpling/spring roll/bun with vegetable filling,73800,VND per 20 g protein,18,"Our calculation: price per 100 g protein divided by 5; label protein. Range 31,111 to 345,528.",FORM-01,VN-direct,Medium,inferred
+RDS-023,protein cost,Median cost of 20 g of protein,dried TVP/soy chunks,12900,VND per 20 g protein,4,"Our calculation: price per 100 g protein divided by 5; label protein. Range 9,795 to 17,011.",FORM-01,VN-direct,Medium,inferred
+RDS-024,protein cost,Median cost of 20 g of protein,ready meal,59500,VND per 20 g protein,3,"Our calculation: price per 100 g protein divided by 5; label protein. Range 58,095 to 76,667.",FORM-01,VN-direct,Medium,inferred
+RDS-025,protein cost,Median cost of 20 g of protein,canned analog,64200,VND per 20 g protein,2,"Our calculation: price per 100 g protein divided by 5; label protein. Range 44,741 to 83,700.",FORM-01,VN-direct,Medium,inferred
+RDS-026,protein cost,Median cost of 20 g of protein,frozen meat/seafood analog,55700,VND per 20 g protein,9,"Our calculation: price per 100 g protein divided by 5; label protein. Range 13,198 to 124,306.",FORM-01,VN-direct,Medium,inferred
+RDS-027,protein cost,Median cost of 20 g of protein,vegan cheese/spread,175200,VND per 20 g protein,2,"Our calculation: price per 100 g protein divided by 5; label protein. Range 171,821 to 178,497.",FORM-01,VN-direct,Medium,inferred
+RDS-028,protein cost,Median cost of 20 g of protein,protein powder,71900,VND per 20 g protein,4,"Our calculation: price per 100 g protein divided by 5; label protein. Range 68,606 to 73,127.",FORM-01,VN-direct,Medium,inferred
+RDS-029,label,SKUs with chay in the product name,all stores,87,SKUs,186,47% of 186 SKUs.,FORM-01,VN-direct,Medium,revealed
+RDS-030,label,"Chay-named SKUs whose ingredient list names an allium (onion, garlic, shallot, leek)",chay-named SKUs with an ingredient list,35.9,%,64,"23 of 64; our keyword search of the logged key ingredients, which may be incomplete, so this is a lower bound.",FORM-01,VN-direct,Medium,inferred
+RDS-031,label,Chay-named SKUs whose ingredient list names egg or dairy,chay-named SKUs with an ingredient list,4.7,%,64,3 of 64; our keyword search; lower bound.,FORM-01,VN-direct,Medium,inferred
+RDS-032,label,Share of SKUs with a protein value captured,mass stores,44.3,%,140,"Protein value from label or collector lookup; a gap in capture, not only in labelling.",FORM-01,VN-direct,Low,revealed
+RDS-033,label,Share of SKUs with a protein value captured,premium stores,34.8,%,46,As above.,FORM-01,VN-direct,Low,revealed
+RDS-034,label,Locally made foods or drinks with a protein claim in the product name,all stores,2,SKUs,186,"Only Vinamilk Sữa Hạt Cao Đạm (high-protein nut milk, 5 g per 100 ml), in two variants. No chay food carried a protein claim in its name.",FORM-01,VN-direct,Medium,revealed
+RDS-035,price point,"Same-brand chay versus meat price difference, high-confidence pair",Vissan chả giò rế,-37.9,% per 100 g,1,Chay cheaper than meat version; four other pairs rest on low-confidence reads (range -51.9% to +18.5%).,FORM-01,VN-direct,Medium,revealed
+RDS-036,price point,"Plant milk shelf price, mass soy milk (Fami)",mass stores,22900,VND per litre,2,"Below cow milk (about VND 33,000 to 45,000 per litre in 2023, CON-35).",FORM-01; CON-35,VN-direct,High,revealed
+RDS-037,price point,"Plant milk shelf price, imported oat, almond and nut milks",premium stores mostly,94900,VND per litre,13,"Range 58,000 to 158,900; two to four times cow milk.",FORM-01,VN-direct,High,revealed
+RDS-038,price point,"High-protein nut milk (Vinamilk, 5 g protein per 100 ml)",mass stores,87200,VND per litre,2,The only mass-market plant product sold on protein content.,FORM-01,VN-direct,High,revealed
+RDS-039,assortment,Imported modern meat analogues logged,Nha Trang,0,SKUs,84,"Imported frozen meat or seafood analogues; Nha Trang had none, Ho Chi Minh City had them only in premium stores.",FORM-01,VN-direct,Medium,revealed
+RDS-040,assortment,Imported modern meat analogues logged,Ho Chi Minh City,2,SKUs,102,"Imported frozen meat or seafood analogues; Nha Trang had none, Ho Chi Minh City had them only in premium stores.",FORM-01,VN-direct,Medium,revealed

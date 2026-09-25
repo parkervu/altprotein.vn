@@ -3,13 +3,17 @@ import fs from 'node:fs';
 import { test } from 'node:test';
 import { renderMarkdown } from '../src/lib/markdown';
 import {
+  APPENDIX_GROUPS,
   PAGES,
   PAGE_BY_ID,
+  ROLE,
+  appendixCode,
   pageIdForPath,
   pagePath,
   localize,
   READING_ORDER,
 } from '../src/lib/site';
+import { MOVED_PAGES } from '../src/lib/redirects';
 import { PLAY_ROWS, PRESETS, weightedScore } from '../src/lib/widgets';
 import { cleanSnippet, searchRecords } from '../src/lib/search';
 import { STRINGS } from '../src/lib/i18n';
@@ -20,7 +24,8 @@ const strip = (html: string) =>
   html.replace(/<code>[\s\S]*?<\/code>/g, '').replace(/<[^>]+>/g, ' ');
 
 test('the seed holds every manifest page once, with its Markdown body', () => {
-  assert.equal(entries.length, 57);
+  assert.equal(entries.length, PAGES.length);
+  assert.equal(entries.length, 81);
   assert.deepEqual(new Set(entries.map((e) => e.id)), new Set(PAGES.map((p) => p.id)));
   for (const e of entries) {
     const file = fs.readFileSync(
@@ -79,7 +84,7 @@ test('vision badges appear only on the vision chapter', () => {
   for (const e of entries) {
     const r = renderMarkdown(e.data.body, { lang: 'en', pageId: e.id });
     const inline = r.html.replace(/<figure class="kn[\s\S]*?<\/figure>/g, '');
-    if (e.id !== 'ch19-vision-2050') assert.ok(!inline.includes('data-fx="vision"'), e.id);
+    if (e.id !== ROLE.vision) assert.ok(!inline.includes('data-fx="vision"'), e.id);
   }
 });
 
@@ -102,14 +107,19 @@ test('callouts are classified, with corrections styled consistently', () => {
   const all = entries
     .map((e) => renderMarkdown(e.data.body, { lang: 'en', pageId: e.id }).html)
     .join('\n');
-  assert.equal(all.match(/callout-correction/g)?.length, 60);
+  const corrections = entries
+    .map((e) => e.data.body.match(/^> \*\*Correction[^*]*\*\*/gm)?.length ?? 0)
+    .reduce((a, b) => a + b, 0);
+  assert.ok(corrections > 0);
+  assert.equal(all.match(/callout-correction/g)?.length, corrections);
+  assert.ok(all.includes('callout-draft'));
   assert.ok(all.includes('callout-vision'));
   assert.ok(all.includes('callout-speculative'));
   assert.ok(!all.includes('<blockquote><p><strong>'));
 });
 
 test('tables keep escaped tag pipes inside cells', () => {
-  const e = entries.find((x) => x.id === 'ch11-plays')!;
+  const e = entries.find((x) => x.id === ROLE.plays)!;
   const html = renderMarkdown(e.data.body, { lang: 'en', pageId: e.id }).html;
   assert.match(
     html,
@@ -138,12 +148,14 @@ test('links reject javascript URLs', () => {
 test('page paths round-trip, and the Vietnamese interface prefixes them', () => {
   for (const p of PAGES) assert.equal(pageIdForPath(pagePath(p.id)), p.id);
   assert.equal(pagePath('front-cover'), '/');
-  assert.equal(pagePath('ch11-plays'), '/report/ch11-plays');
+  assert.equal(pagePath('ch26-plays'), '/report/ch26-plays');
+  assert.equal(pagePath('app-m1-method'), '/appendices/app-m1-method');
+  assert.equal(pagePath('front-prologue-vi'), '/loi-mo-dau');
   assert.equal(localize('/', 'vi'), '/vi');
-  assert.equal(localize('/report/ch11-plays', 'vi'), '/vi/report/ch11-plays');
+  assert.equal(localize('/report/ch26-plays', 'vi'), '/vi/report/ch26-plays');
   assert.equal(localize('/data/companies.csv', 'vi'), '/data/companies.csv');
   assert.equal(localize('/downloads/x.zip', 'vi'), '/downloads/x.zip');
-  assert.equal(READING_ORDER.length, 57);
+  assert.equal(READING_ORDER.length, PAGES.length);
 });
 
 test('balanced play scores match the table in chapter 11', () => {
@@ -180,7 +192,10 @@ test('top three plays per preset match chapter 11', () => {
 test('search finds glossary terms in either language and cleans snippets', () => {
   assert.ok(searchRecords('protein thay the').some((r) => r.id === 'GL-001'));
   assert.ok(searchRecords('Emmay').some((r) => r.kind === 'company'));
-  assert.equal(cleanSnippet('a [@MAC-04] b {VN-direct|High} c [[ch11-plays]]'), 'a b c Plays');
+  assert.equal(
+    cleanSnippet('a [@MAC-04] b {VN-direct|High} c [[ch26-plays]] d {dx:revealed}'),
+    'a b c Plays d',
+  );
 });
 
 test('interface strings use no em or en dashes', () => {
@@ -203,4 +218,37 @@ test('every chart spec is rendered, themed only through CSS variables', async ()
     );
     assert.ok(!/[–—]/.test(c.svg + c.table), `${spec.id} has a dash`);
   }
+});
+
+test('every page the interface refers to by role exists', () => {
+  for (const [role, id] of Object.entries(ROLE)) assert.ok(PAGE_BY_ID.has(id), `${role}: ${id}`);
+  const manifest = JSON.parse(fs.readFileSync('report/site-manifest.json', 'utf8'));
+  assert.equal(ROLE.vision, manifest.tokens.foresight_tag.vision_only_on);
+});
+
+test('pages moved in v0.6 redirect to pages that exist, and no old id is reused', () => {
+  for (const [from, to] of Object.entries(MOVED_PAGES)) {
+    assert.ok(PAGE_BY_ID.has(to), `${from} -> ${to}`);
+    assert.ok(!PAGE_BY_ID.has(from), `${from} is a current page id`);
+  }
+});
+
+test('appendix codes and groups follow the manifest', () => {
+  assert.deepEqual(
+    APPENDIX_GROUPS.map((g) => g.id),
+    ['m', 's', 'd', 'f', 'r'],
+  );
+  assert.equal(appendixCode('app-s13-science'), 'S13');
+  assert.equal(
+    APPENDIX_GROUPS.flatMap((g) => g.pages).length,
+    PAGES.filter((p) => p.section === 'appendix').length,
+  );
+});
+
+test('demand evidence tags become their own badge', () => {
+  const html = renderMarkdown('Buyers pay more {VN-direct|High} {dx:revealed}.', {
+    lang: 'en',
+  }).html;
+  assert.match(html, /class="dx" data-dx="revealed"/);
+  assert.match(html, /class="ev"/);
 });

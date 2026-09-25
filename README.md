@@ -1,6 +1,6 @@
 # scoping.altprotein.vn
 
-The website for **Alternative protein in Vietnam: a supply-side scoping study** (AltProtein Vietnam, edition 1.1, September 2026). It publishes the full report package in `report/`: 57 pages (front matter, 20 chapters in five parts, six audience briefs, appendices A to Z), 92 data tables, 1,275 sources, 35 charts and the working papers.
+The website for **Alternative protein in Vietnam: a supply-side scoping study** (AltProtein Vietnam, draft v0.6, September 2026). It publishes the full report package in `report/`: 81 pages (nine front pages, 30 chapters in five parts, six audience briefs and 36 appendices coded M, S, D, F and R), 184 data tables, 2,384 sources, 56 charts and the working papers.
 
 Astro and EmDash on Cloudflare Workers, with D1 (content), R2 (CMS media) and KV (editor sessions).
 
@@ -49,11 +49,25 @@ Open [the site](http://127.0.0.1:4321) and [the local editor](http://127.0.0.1:4
 
 ## Editorial workflow
 
-- **Report pages** in the EmDash admin holds all 57 pages. Each has a title, a short title, a summary (used for cards and meta descriptions) and a **body in Markdown with the report tokens** exactly as in the package (see `report/STYLE.md`): `[@MAC-04]`, `{VN-direct|High}` (escaped as `{VN-direct\|High}` inside tables), `{fx:projection}`, `[[ch05-rules]]`, `{{kn:…}}`, `{{chart:…}}` and `> **Correction.** …` callouts. Save a draft, preview, then publish.
+- **Report pages** in the EmDash admin holds all 81 pages. Each has a title, a short title, a summary (used for cards and meta descriptions) and a **body in Markdown with the report tokens** exactly as in the package (see `report/STYLE.md`): `[@MAC-04]`, `{VN-direct|High}` (escaped as `{VN-direct\|High}` inside tables), `{fx:projection}`, `{dx:revealed}`, `[[ch07-rules]]`, `{{kn:…}}`, `{{chart:…}}` and `> **Correction.** …` callouts. Save a draft, preview, then publish.
 - Previews need a signed-in Editor or Administrator. Public pages send `private, no-store`.
 - The **structure** (which pages exist, their order, part and section, navigation, audiences and reading paths) comes from `report/site-manifest.json` and the page frontmatter, and the **data** (key numbers, sources, charts, CSVs) from `report/data` and `report/charts`. Changing those is a code change: edit `report/`, run `python3 report/tools/validate.py` (needs PyYAML) and `pnpm content:check`, and deploy.
 - After first setup, EmDash (D1) is the source of truth for page text. `pnpm content:seed` regenerates the seed from `report/content`; it does **not** overwrite a running CMS.
 - The site does not change the substance of the content. Where a chart spec's note was an instruction to the builder rather than a note for readers, `src/lib/charts.ts` shows a reader-facing version; the spec is unchanged.
+
+## Updating to a new report package
+
+1. Replace `report/` with the new package and run `python3 report/tools/validate.py` (0 errors).
+2. `pnpm content:seed`, then fix anything `pnpm test` reports. The tests fail if a page the interface refers to by role (`ROLE` in `src/lib/site.ts`) was renamed, or if a chart spec has no renderer in `scripts/charts/`.
+3. If page ids changed, add the old ids to `src/lib/redirects.ts` so links keep working.
+4. Deploy, then bring the live CMS in line with the seed. An administrator creates an API token (content read and write) in the admin, and:
+
+   ```sh
+   EMDASH_TOKEN=ec_pat_... node scripts/sync-content.mjs --url https://scoping.altprotein.vn          # shows the plan
+   EMDASH_TOKEN=ec_pat_... node scripts/sync-content.mjs --url https://scoping.altprotein.vn --apply  # applies it
+   ```
+
+   It creates new pages, updates changed ones (EmDash keeps the earlier version as a revision), and moves pages that left the report to the trash. Pages whose text already matches are left alone, so edits made in the CMS since the last package survive unless the package changed the same page.
 
 ## Validation
 
