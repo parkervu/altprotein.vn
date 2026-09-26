@@ -3,14 +3,14 @@ import Base from '../../layouts/Base.astro';
 import NotFound from '../../components/NotFound.astro';
 import { t } from '../../lib/i18n';
 import { DATASET_BY_SLUG } from '../../lib/datasets';
-import { PAGE_BY_ID, href, localize } from '../../lib/site';
+import { PAGE_BY_ID, ROLE, href, localize } from '../../lib/site';
 const lang = Astro.locals.lang ?? 'en';
 const s = t(lang);
 const vi = lang === 'vi';
 const d = DATASET_BY_SLUG.get(Astro.params.slug ?? '');
 if (!d) Astro.response.status = 404;
 const nf = new Intl.NumberFormat(vi ? 'vi-VN' : 'en-GB');
-const sourcesHref = href('app-t-sources', lang);
+const sourcesHref = href(ROLE.sources, lang);
 ---
 
 {d ? (
@@ -25,10 +25,7 @@ const sourcesHref = href('app-t-sources', lang);
         </li>
       </ol>
       <header class="page-head" style="max-width:60rem">
-        <p class="eyebrow">
-          {d.group === 'chart' ? s.dataChart : s.data}
-          {d.new_in && <span class="new-pill">{s.newIn11}</span>}
-        </p>
+        <p class="eyebrow">{d.group === 'chart' ? s.dataChart : s.data}</p>
         <h1>
           <code class="file-title">{d.file}</code>
         </h1>

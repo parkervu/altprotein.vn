@@ -1,0 +1,60 @@
+record_id,country,category,metric,value,unit,year,scope,source_ids,evidence_label,confidence,demand_evidence_type,notes
+ADB-001,United States,plant-based meat and seafood,retail dollar sales,1.4,USD billion,2021,SPINS MULO plus natural channel,GLB-02,general,High,revealed,Peak-year value; 0% growth vs 2020; category definitions later revised
+ADB-002,United States,plant-based meat and seafood,retail dollar sales,1.2,USD billion,2023,"SPINS MULO, natural, convenience",GLB-01,general,High,revealed,
+ADB-003,United States,plant-based meat and seafood,retail dollar sales,1.1,USD billion,2024,SPINS,GLB-01,general,High,revealed,
+ADB-004,United States,plant-based meat and seafood,retail dollar sales,1.0,USD billion,2025,"SPINS, 52 weeks to 30 Nov 2025",GLB-01,general,High,revealed,Down 10% in dollars and 11% in units vs 2024
+ADB-005,United States,plant-based meat and seafood,retail unit sales,281,million units,2021,SPINS,GLB-02,general,High,revealed,
+ADB-006,United States,plant-based meat and seafood,retail unit sales,173,million units,2025,SPINS,GLB-01,general,High,revealed,Units down 21% from 2023 to 2025
+ADB-007,United States,plant-based meat,share of total meat dollar sales,1.4,percent,2021,retail incl. estimated random-weight meat,GLB-02,general,High,revealed,2.7% of packaged meat dollar sales
+ADB-008,United States,plant-based meat,share of total meat dollar sales,0.7,percent,2025,retail incl. estimated random-weight meat,GLB-01,general,High,revealed,1.4% of packaged meat dollar sales (1.64% in 2024)
+ADB-009,United States,plant-based meat,"share of total meat dollar sales, natural channel",14,percent,2021,SPINS natural channel,GLB-02,general,Medium,revealed,"2025 page gives about 3%; the gap probably reflects a change in channel definition, so do not read as a trend"
+ADB-010,United States,plant-based meat,household penetration (bought at least once in year),19,percent,2021,Circana panel via SPINS,GLB-02,general,High,revealed,18% in 2020; the 2025 release restates the 2021 high as 20%
+ADB-011,United States,plant-based meat,household penetration (bought at least once in year),11,percent,2025,Circana panel via SPINS,GLB-01,general,High,revealed,Down from a high of 20% in 2021
+ADB-012,United States,plant-based meat,repeat rate (buyers purchasing more than once in year),64,percent,2021,Circana panel via SPINS,GLB-02,general,High,revealed,Same in 2020; 63% in 2022 (GLB-04); 60% or more and flat in 2025 (GLB-01)
+ADB-013,United States,plant-based meat,share of plant-based meat buyers who also bought animal meat,96,percent,2025,Circana panel,GLB-01,general,High,revealed,98% in 2021 (GLB-02)
+ADB-014,United States,plant-based meat,households that bought at least once over two years,20,percent,2018 to 2020,"IRI panel, 38,966 households",GLB-19,general,High,revealed,12% bought on multiple occasions; 40% of buyers bought once only
+ADB-015,United States,plant-based meat,households that never bought,68,percent,2014 to 2019,"NielsenIQ panel, 52,022 households",GLB-18,general,High,revealed,11% bought in one month only; 21% in multiple months; spending fell from about USD 8 in first month to under USD 2 per month
+ADB-016,United States,plant-based milk,share of total milk dollar sales,12,percent,2018,SPINS,GLB-02,general,High,revealed,
+ADB-017,United States,plant-based milk,share of total milk dollar sales,16,percent,2021,SPINS,GLB-02,general,High,revealed,Peak in retrieved series
+ADB-018,United States,plant-based milk,share of total milk dollar sales,13,percent,2025,SPINS,GLB-01,general,High,revealed,"12% of unit sales; penetration 38%, repeat 75%"
+ADB-019,United States,plant-based milk,household penetration,42,percent,2021,Circana panel via SPINS,GLB-02,general,High,revealed,38% in 2025 (GLB-01)
+ADB-020,United States,plant-based foods (all),share of total retail food and beverage dollar sales,1.1,percent,2025,SPINS,GLB-01,general,High,revealed,USD 7.9 billion; 60% of households bought some plant-based food
+ADB-021,United States,Beyond Meat,company net revenue,464.7,USD million,2021,global company revenue,GLB-46,general,Medium,revealed,Peak; 275.5 in 2025 (down 41%)
+ADB-022,Germany,plant-based meat,share of pre-packaged meat sales volume,3.0,percent,2022,Circana retail incl. discounters,GLB-09,general,High,revealed,
+ADB-023,Germany,plant-based meat,share of pre-packaged meat sales volume,3.1,percent,2024,Circana retail incl. discounters,GLB-09,general,High,revealed,Largest European market; value EUR 758.7 million; 53.9 million kg
+ADB-024,Germany,plant-based meat,sales volume change,-1.7,percent,2025,Circana,GLB-08,general,Medium,revealed,After +6.2% in 2024; average price +2.0% in 2025
+ADB-025,Germany,plant-based meat,households buying at least once per year,32.2,percent,2024,"NIQ Homescan, 20,000 households",GLB-09,general,High,revealed,32.6% in 2022 and 32.7% in 2023 (flat)
+ADB-026,Germany,plant-based meat,households buying 12 or more times per year,9.7,percent,2024,NIQ Homescan,GLB-09,general,High,revealed,"9.8% in 2022, 10.3% in 2023"
+ADB-027,Germany,plant-based milk and drinks,share of milk and dairy drinks sales value,9.9,percent,2024,Circana,GLB-09,general,High,revealed,8.8% of volume; GLB-08 gives 9.2% for 2025 (basis not stated)
+ADB-028,Germany,"tofu, tempeh and seitan",sales volume change,16.7,percent,2024,Circana,GLB-09,general,High,revealed,Average price EUR 6.82 per kg vs EUR 14.09 plant-based meat and EUR 9.68 animal meat
+ADB-029,Netherlands,plant-based meat,share of pre-packaged meat sales volume,4.6,percent,2022,Circana,GLB-10,general,High,revealed,
+ADB-030,Netherlands,plant-based meat,share of pre-packaged meat sales volume,4.1,percent,2024,Circana,GLB-10,general,High,revealed,Highest share found in any market; plant-based volume fell 1.6 million kg and animal meat 7.4 million kg 2022 to 2024
+ADB-031,Netherlands,plant-based meat,sales volume change,-10.7,percent,2025,Circana,GLB-08,general,Medium,revealed,After -6.2% in 2024 and -13.3% over 2022 to 2024
+ADB-032,Netherlands,all protein in supermarkets,plant share of protein sold (Protein Tracker),42.6,percent,2025,"13 chains, about 95% of supermarket sales",GLB-12,general,High,revealed,"42.0% in 2023, 42.7% in 2024; plant protein includes bread, rice, vegetables; 50% target for 2025 missed"
+ADB-033,Netherlands,plant-based milk and drinks,share of milk sales,8.9,percent,2025,Circana,GLB-08,general,Medium,revealed,Basis (value or volume) not stated in summary
+ADB-034,United Kingdom,plant-based meat,sales volume,35.4,million kg,year to Jan 2025,"Circana, excludes Aldi and Lidl",GLB-11,general,High,revealed,Down 11.5% in one year and 22.1% in two years; value GBP 333.0 million
+ADB-035,United Kingdom,plant-based meat,households buying at least once per year,31.6,percent,2024,"NIQ Homescan, 30,000 households",GLB-11,general,High,revealed,"38.7% in 2022, 35.4% in 2023"
+ADB-036,United Kingdom,plant-based meat,households buying 12 or more times per year,8.6,percent,2024,NIQ Homescan,GLB-11,general,High,revealed,10.4% in 2022
+ADB-037,United Kingdom,plant-based meat,sales volume change,-9.4,percent,2025,Circana,GLB-08,general,Medium,revealed,Average price +2.3%
+ADB-038,United Kingdom,plant-based milk and drinks,share of milk and dairy drinks sales volume,6.7,percent,year to Jan 2025,Circana,GLB-11,general,High,revealed,7.0% in year to Jan 2023; penetration rose from 30.5% to 31.8% (2022 to 2024)
+ADB-039,United Kingdom,plant-based alternative foods,share of individuals reporting any consumption,13.1,percent,2017 to 2019,"National Diet and Nutrition Survey, 15,655 people",GLB-40,general,High,revealed,6.7% in 2008 to 2011; self-reported diet diaries
+ADB-040,France,plant-based meat,sales volume change,16.8,percent,2025,Circana,GLB-08,general,Medium,revealed,Average price -2.8%; only large market with strong volume growth in 2025
+ADB-041,Spain,plant-based meat,sales volume change,-7.0,percent,2025,Circana,GLB-08,general,Medium,revealed,
+ADB-042,Italy,plant-based meat,sales volume change,4.1,percent,2025,Circana,GLB-08,general,Medium,revealed,
+ADB-043,Spain,plant-based milk and drinks,share of milk sales,10.4,percent,2025,Circana,GLB-08,general,Medium,revealed,Highest European share found
+ADB-044,World,plant-based meat and seafood,retail sales value,6.6,USD billion,2025,Euromonitor via GFI,GLB-05; GLB-06,general,Medium,revealed,"+8% nominal, about +4% real, volume +3% vs 2024; about three times 2015"
+ADB-045,World,plant-based meat and seafood,share of global retail sales in Europe plus North America,83,percent,2025,Euromonitor via GFI,GLB-05,general,Medium,revealed,"APAC, Latin America, Middle East and Africa together about 17%"
+ADB-046,World,"plant-based dairy, meat and other categories",retail sales value,28.9,USD billion,2025,Euromonitor via GFI,GLB-06; GLB-07,general,Medium,revealed,"Europe 10.1, APAC 9.2, North America 6.9 USD billion"
+ADB-047,Asia Pacific,plant-based dairy,share of global plant-based dairy sales,over 33,percent,2025,Euromonitor via GFI APAC,GLB-49,VN-adjacent,Medium,revealed,Driven by traditional soy milk
+ADB-048,Asia Pacific,meat and seafood substitutes,peak annual consumption growth,42,percent,2021,Euromonitor,GLB-47,VN-adjacent,Medium,revealed,"North America peaked at 46% in 2020, Western Europe 36% in 2020"
+ADB-049,Thailand,meat alternatives,retail sales value,20.8,USD million,2020,Euromonitor via USDA FAS,GLB-52,VN-adjacent,Medium,revealed,13.7 in 2016; 19.3 in 2019
+ADB-050,Thailand,dairy alternatives,retail sales value,803.3,USD million,2020,Euromonitor via USDA FAS,GLB-52,VN-adjacent,Medium,revealed,823.4 in 2019; meat alternatives were about 2.5% of the combined total in 2020 (our derivation)
+ADB-051,Thailand,meat and seafood substitutes,sales volume change,about 30,percent,2021 to 2024,Euromonitor via Madre Brava,GLB-53,VN-adjacent,Medium,revealed,Average price fell 8% over two years after a 2022 peak
+ADB-052,Japan,soy milk (all types),production,410712,kL,2024,Japan Soymilk Association,GLB-55,VN-adjacent,Medium,revealed,"Peak about 430,000 kL in 2020; unsweetened 137,052 kL, a record"
+ADB-053,Taiwan,plant-based food,retail sales value,36.0,USD million,2021,source not named (Euromonitor-type),GLB-57,VN-adjacent,Low,revealed,26.8 in 2017; tiny relative to about 3 million vegetarians
+ADB-054,Taiwan,vegetarians,population,about 3,million people,about 2023,secondary estimate,GLB-57,VN-adjacent,Low,stated,Method not given; commonly cited as over 10% of population (GLB-58)
+ADB-055,Taiwan,Beyond Meat retail,company sales,about 10,NT$ million per month,2019,company statement to press,GLB-58,VN-adjacent,Low,revealed,About USD 0.33 million per month at 30 NT$ per USD (our conversion); over half of buyers were vegetarians
+ADB-056,Taiwan,OmniPork dumplings at Bafang Yunji,units sold,over 1,million dumplings per week,2020,"about 1,000 outlets; NT$6 each",GLB-59,VN-adjacent,Low,revealed,Launch-period company claim; persistence unknown
+ADB-057,China,Beyond Meat on Tmall,units sold,under 600,units per month,2023,journalist observation,GLB-50,VN-adjacent,Low,revealed,Several domestic start-ups closed or dormant
+ADB-058,China,plant-based meat,share saying they have eaten it at least once,60.1,percent,published 2022 (fieldwork year not retrieved),"online survey N 1,206, age and gender matched",GLB-51,VN-adjacent,Medium,stated,Online panel; contrast with weak revealed sales
+ADB-059,Southeast Asia (6 markets incl. Vietnam),plant-based meat,share who regularly consume,5,percent,2024,online survey (GFI APAC and Good Growth Co.),GLB-48,VN-adjacent,Low,stated,44% heard of but never tried; probably the same survey as ECO-24

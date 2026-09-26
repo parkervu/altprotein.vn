@@ -1,0 +1,9 @@
+label,value,unit,as_of,context,source_ids,evidence,confidence,demand_evidence_type
+Adults who identify as Buddhist,38,percent of adults,2023,"Pew face-to-face probability sample n=2,255; no diet question; the only representative measure of the religious base",CHY-06,VN-direct,High,stated
+Chay seller sales in the 7th lunar month versus normal,2 to 3,times,2024 to 2026,Repeated across years and cities by independent sellers; mainstream retail rises 15 to 40%,CHY-16; CHY-18; CHY-20,VN-direct,Medium,revealed
+"Foody chay listings, Ho Chi Minh City (old boundary)","more than 1,873",listings,2026-09,"At least 3,275 across 23 former provinces; cumulative listings, not active outlets",CHY-31,VN-direct,Medium,revealed
+"Street chay rice plate versus meat rice plate, Ho Chi Minh City","15,000 to 30,000 versus 29,000 to 35,000",VND per plate,2024 to 2026,Chay is the cheaper meal at street level; supermarket chay 17 to 38% cheaper than same-brand meat,CHY-38; CHY-42; CHY-40; FORM-01,VN-direct,Low,revealed
+Soybeans used for food,"550,000",tonnes a year,2025/26,USDA Post estimate; about 5 kg per person; soy milk dominates,CHY-45,VN-direct,Medium,revealed
+Market mock meat cost per 100 g of protein,"128,000 to 191,000",VND per 100 g protein,2026,"Our derivation from VND 60,000 to 90,000 per kg and 4.7 g protein per 100 g; about 2 to 3 times tofu (VND 66,000)",CHY-20; FORM-01,VN-direct,Low,inferred
+Straw mushroom price in Vu Lan versus normal days,"about 160,000 versus 80,000 to 100,000",VND per kg,2026-08,Supply-constrained chay protein doubles in price at the peak; tofu does not,CHY-22; CHY-19,VN-direct,Low,revealed
+Online panel respondents who have eaten plant-based alternatives,86,percent,2021,"Rakuten online panel n=4,018; highest of 13 markets because tofu, soy milk and đồ chay count; not demand for novel products",CHY-02,VN-direct,Medium,stated

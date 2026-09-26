@@ -2,10 +2,10 @@ import { Marked, type Tokens, type TokenizerAndRendererExtension } from 'marked'
 import keyNumbersJson from '../generated/key-numbers.json';
 import sourcesJson from '../generated/sources.json';
 import { t, type Lang } from './i18n';
-import { escapeHtml, evidenceBadge, foresightBadge } from './html';
+import { demandBadge, escapeHtml, evidenceBadge, foresightBadge } from './html';
 
-export { escapeHtml, evidenceBadge, foresightBadge };
-import { href, PAGE_BY_ID, localize } from './site';
+export { demandBadge, escapeHtml, evidenceBadge, foresightBadge };
+import { href, PAGE_BY_ID, ROLE, localize } from './site';
 import { renderChartFigure } from './charts';
 import { renderScenarioExplorer } from './widgets';
 
@@ -23,6 +23,7 @@ export interface KeyNumber {
   confidence?: string;
   primary_page?: string;
   foresight_type?: string;
+  demand_evidence_type?: string;
   horizon?: string | number;
 }
 export interface Source {
@@ -78,6 +79,7 @@ const stripTags = (html: string) =>
     .trim();
 
 const CALLOUT_KINDS: [RegExp, string][] = [
+  [/^(draft for review|bản thảo)/i, 'draft'],
   [/^correction/i, 'correction'],
   [/^method note/i, 'method'],
   [/^(vision, not forecast|tầm nhìn)/i, 'vision'],
@@ -122,7 +124,7 @@ function keyNumberTile(state: State, id: string): string {
   return `<figure class="kn${vision ? ' kn-vision' : ''}" id="${escapeHtml(id)}" data-ev="${k.evidence === 'VN-direct' ? 'direct' : k.evidence === 'VN-adjacent' ? 'adjacent' : 'general'}">
 <div class="kn-value">${escapeHtml(k.value)}</div>
 <figcaption class="kn-label"${useVi ? ' lang="vi"' : ''}>${escapeHtml(labelText)}</figcaption>
-<div class="kn-meta">${k.as_of ? `<span class="kn-asof">${escapeHtml(k.as_of)}</span>` : ''}${k.derived ? `<span class="kn-derived">${escapeHtml(s.derived)}</span>` : ''}${k.evidence && k.confidence ? evidenceBadge(k.evidence, k.confidence, lang) : ''}${k.foresight_type ? foresightBadge(k.foresight_type, lang) : ''}${vision ? `<span class="kn-vision-label">${escapeHtml(s.visionNotForecast)}</span>` : ''}</div>
+<div class="kn-meta">${k.as_of ? `<span class="kn-asof">${escapeHtml(k.as_of)}</span>` : ''}${k.derived ? `<span class="kn-derived">${escapeHtml(s.derived)}</span>` : ''}${k.evidence && k.confidence ? evidenceBadge(k.evidence, k.confidence, lang) : ''}${k.foresight_type ? foresightBadge(k.foresight_type, lang) : ''}${k.demand_evidence_type ? demandBadge(k.demand_evidence_type, lang) : ''}${vision ? `<span class="kn-vision-label">${escapeHtml(s.visionNotForecast)}</span>` : ''}</div>
 ${k.context ? `<details class="kn-more"><summary>${lang === 'vi' ? 'Bối cảnh và nguồn' : 'Context and sources'}</summary><p lang="en">${escapeHtml(k.context)}${k.source_ids?.length ? ` ${citeLinks(state, k.source_ids)}` : ''}</p>${primary ? `<p><a href="${href(k.primary_page!, lang)}">${escapeHtml(PAGE_BY_ID.get(k.primary_page!)!.short_title)} →</a></p>` : ''}</details>` : ''}
 </figure>`;
 }
@@ -143,7 +145,7 @@ function buildMarked(state: State): Marked {
     name: 'evidence',
     level: 'inline',
     start: (src) => {
-      const i = src.search(/\{(VN-direct|VN-adjacent|general|fx:)/);
+      const i = src.search(/\{(VN-direct|VN-adjacent|general|fx:|dx:)/);
       return i < 0 ? undefined : i;
     },
     tokenizer(src) {
@@ -151,11 +153,15 @@ function buildMarked(state: State): Marked {
       if (m) return { type: 'evidence', raw: m[0], label: m[1], confidence: m[2] };
       m = /^\{fx:(trend|projection|estimate|signal|wildcard|vision)\}/.exec(src);
       if (m) return { type: 'evidence', raw: m[0], fx: m[1] };
+      m = /^\{dx:(stated|revealed|tested|inferred)\}/.exec(src);
+      if (m) return { type: 'evidence', raw: m[0], dx: m[1] };
     },
     renderer: (token) =>
       token.fx
         ? foresightBadge(token.fx as string, lang)
-        : evidenceBadge(token.label as string, token.confidence as string, lang),
+        : token.dx
+          ? demandBadge(token.dx as string, lang)
+          : evidenceBadge(token.label as string, token.confidence as string, lang),
   };
   const xref: TokenizerAndRendererExtension = {
     name: 'xref',
@@ -217,7 +223,7 @@ function buildMarked(state: State): Marked {
         else {
           flush();
           out.push(renderChartFigure(item.id, lang, (ids) => citeLinks(state, ids)));
-          if (item.id === 'chart-scenarios-2050' && state.opts.pageId === 'ch18-scenarios-2050')
+          if (item.id === 'chart-scenarios-2050' && state.opts.pageId === ROLE.scenarios)
             out.push(renderScenarioExplorer(lang));
         }
       }
@@ -307,6 +313,7 @@ export function plainText(markdown: string): string {
     .replace(/\[@[^\]]+\]/g, '')
     .replace(/\{(VN-direct|VN-adjacent|general)\\?\|(High|Medium|Low)\}/g, '')
     .replace(/\{fx:[a-z]+\}/g, '')
+    .replace(/\{dx:[a-z]+\}/g, '')
     .replace(/\{\{(kn|chart):[a-z0-9-]+\}\}/g, '')
     .replace(
       /\[\[([a-z0-9-]+)(#[a-z0-9-]+)?\]\]/g,

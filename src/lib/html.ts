@@ -52,3 +52,30 @@ export function foresightBadge(type: string, lang: Lang): string {
   const tip = `${lang === 'vi' ? 'Loại dự báo' : 'Foresight'}: ${info.en}. ${info.tip}.`;
   return `<span class="fx" data-fx="${type}" role="note" aria-label="${escapeHtml(tip)}" title="${escapeHtml(tip)}"><span aria-hidden="true">${escapeHtml(lang === 'vi' ? info.vi : info.en)}</span></span>`;
 }
+
+const DX_LABELS: Record<string, { en: string; vi: string; tip: string }> = {
+  stated: {
+    en: 'stated',
+    vi: 'được nêu',
+    tip: 'What people say: surveys, focus groups, stated intentions or willingness to pay',
+  },
+  revealed: {
+    en: 'revealed',
+    vi: 'bộc lộ',
+    tip: 'What people or firms do: sales, purchases, prices, trade, menus, shelves',
+  },
+  tested: {
+    en: 'tested',
+    vi: 'được thử',
+    tip: 'Tastings, real-money auctions, choice experiments or field trials',
+  },
+  inferred: { en: 'inferred', vi: 'suy luận', tip: 'Our inference or calculation' },
+};
+
+/** Badge for the kind of demand evidence (Part III). */
+export function demandBadge(type: string, lang: Lang): string {
+  const info = DX_LABELS[type];
+  if (!info) return '';
+  const tip = `${lang === 'vi' ? 'Bằng chứng về nhu cầu' : 'Demand evidence'}: ${info.en}. ${info.tip}.`;
+  return `<span class="dx" data-dx="${type}" role="note" aria-label="${escapeHtml(tip)}" title="${escapeHtml(tip)}"><span aria-hidden="true">${escapeHtml(lang === 'vi' ? info.vi : info.en)}</span></span>`;
+}

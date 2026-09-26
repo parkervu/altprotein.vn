@@ -1,0 +1,13 @@
+product,ingredient,grams_per_batch,share_of_batch_pct,price_vnd_per_kg_at_median_hog,price_basis,protein_g_per_100g_ingredient,source_ids,evidence_label,confidence,demand_evidence_type,notes
+cha lua or gio lua (recipe C1),lean pork,700,61.5,105436,1.8 x live hog (median 2019 to 2024),19.0,HXE-01; DIE-25; DIE-12,VN-direct,Medium,tested,"Recipe C1 (70 meat, 25 lard, 5 starch) had the highest texture liking (6.79 of 9) among 8 recipes, 68 consumers aged 18 to 26."
+cha lua or gio lua (recipe C1),pork fat (lard in the recipe),250,22.0,58576,1.0 x live hog (assumption),not counted,HXE-01,VN-direct,Low,inferred,Fat price is an assumption; it does not change savings.
+cha lua or gio lua (recipe C1),starch,50,4.4,12850,"cassava native starch, Q1 2026 midpoint",0,HXE-01; FS-12,VN-direct,Medium,revealed,"Recipes without starch showed large air holes, which cut liking."
+cha lua or gio lua (recipe C1),"fish sauce, sugar, MSG, polyphosphate, salt (10.8, 11.4, 5.1, 2.5, 7.6 g)",37.4,3.3,30000,assumption for the seasoning block,not counted,HXE-01,VN-direct,Low,inferred,Quantities from the recipe; price is our assumption.
+cha lua or gio lua (recipe C1),ice,100,8.8,0,,0,HXE-01,VN-direct,Medium,tested,
+cha lua or gio lua (recipe C1),cooking yield after steaming,,95,,assumption,,HXE-13,VN-direct,Low,inferred,Steamed 50 to 60 minutes (HXE-13); yield not reported in any source read. Finished protein about 12.3 g per 100 g from lean alone (our calculation).
+sterilised pork sausage (xuc xich),lean pork,550,55.0,105436,1.8 x live hog (median 2019 to 2024),19.0,BUY-05; DIE-25; DIE-12,VN-direct,High,revealed,Vissan Xuc xich tiet trung Heo declares lean pork 55% (VLA-020); its DHA nutrition version declares 58% lean plus soy protein (VLA-019).
+sterilised pork sausage (xuc xich),fat,150,15.0,58576,1.0 x live hog (assumption),not counted,BUY-05,VN-direct,Low,inferred,Share is our assumption (label lists fish fat or pork fat without a percentage).
+sterilised pork sausage (xuc xich),water or ice,200,20.0,0,,0,BUY-05,VN-direct,Low,inferred,Share is our assumption.
+sterilised pork sausage (xuc xich),corn or cassava starch,70,7.0,12850,cassava native starch price used,0,BUY-05; FS-12,VN-direct,Low,inferred,Share is our assumption.
+sterilised pork sausage (xuc xich),"sugar, salt, pepper, phosphate, preservative, flavour enhancer",30,3.0,30000,assumption,not counted,BUY-05,VN-direct,Low,inferred,Share and price are our assumptions.
+sterilised pork sausage (xuc xich),cooking yield (retort in casing),,98,,assumption,,,VN-direct,Low,inferred,Finished protein about 10.7 g per 100 g from lean alone (our calculation).

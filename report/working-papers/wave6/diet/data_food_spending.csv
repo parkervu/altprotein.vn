@@ -1,0 +1,180 @@
+record_id,indicator,year,geography,group,value,unit,source_ids,evidence_label,confidence,demand_evidence_type,notes
+DFS-001,"Share of eating, drinking and smoking in household consumption spending",2012,Vietnam,all households,56.0,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-002,"Share of eating, drinking and smoking in household consumption spending",2012,"Vietnam, urban",all households,53.0,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-003,"Share of eating, drinking and smoking in household consumption spending",2012,"Vietnam, rural",all households,58.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-004,"Share of eating, drinking and smoking in household consumption spending",2014,Vietnam,all households,52.6,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-005,"Share of eating, drinking and smoking in household consumption spending",2014,"Vietnam, urban",all households,50.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-006,"Share of eating, drinking and smoking in household consumption spending",2014,"Vietnam, rural",all households,54.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-007,"Share of eating, drinking and smoking in household consumption spending",2016,Vietnam,all households,51.0,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-008,"Share of eating, drinking and smoking in household consumption spending",2016,"Vietnam, urban",all households,48.6,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-009,"Share of eating, drinking and smoking in household consumption spending",2016,"Vietnam, rural",all households,52.9,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-010,"Share of eating, drinking and smoking in household consumption spending",2018,Vietnam,all households,47.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-011,"Share of eating, drinking and smoking in household consumption spending",2018,"Vietnam, urban",all households,45.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-012,"Share of eating, drinking and smoking in household consumption spending",2018,"Vietnam, rural",all households,48.9,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-013,"Share of eating, drinking and smoking in household consumption spending",2020,Vietnam,all households,49.6,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-014,"Share of eating, drinking and smoking in household consumption spending",2020,"Vietnam, urban",all households,48.1,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-015,"Share of eating, drinking and smoking in household consumption spending",2020,"Vietnam, rural",all households,50.9,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-016,"Share of eating, drinking and smoking in household consumption spending",2022,Vietnam,all households,48.2,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-017,"Share of eating, drinking and smoking in household consumption spending",2022,"Vietnam, urban",all households,47.0,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-018,"Share of eating, drinking and smoking in household consumption spending",2022,"Vietnam, rural",all households,49.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-019,"Share of eating, drinking and smoking in household consumption spending",2024,Vietnam,all households,49.1,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-020,"Share of eating, drinking and smoking in household consumption spending",2024,"Vietnam, urban",all households,47.7,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-021,"Share of eating, drinking and smoking in household consumption spending",2024,"Vietnam, rural",all households,50.4,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.5
+DFS-022,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,Vietnam,Meat,21.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-023,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,"Vietnam, urban",Meat,20.0,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-024,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,"Vietnam, rural",Meat,22.2,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-025,"Share of household food spending (VHLSS food structure, incl. eating out)",2014,Vietnam,Meat,21.9,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-026,"Share of household food spending (VHLSS food structure, incl. eating out)",2014,"Vietnam, urban",Meat,19.9,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-027,"Share of household food spending (VHLSS food structure, incl. eating out)",2014,"Vietnam, rural",Meat,23.4,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-028,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,Vietnam,Meat,21.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-029,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,"Vietnam, urban",Meat,18.7,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-030,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,"Vietnam, rural",Meat,23.4,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-031,"Share of household food spending (VHLSS food structure, incl. eating out)",2020,Vietnam,Meat,24.5,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-032,"Share of household food spending (VHLSS food structure, incl. eating out)",2020,"Vietnam, urban",Meat,21.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-033,"Share of household food spending (VHLSS food structure, incl. eating out)",2020,"Vietnam, rural",Meat,27.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-034,"Share of household food spending (VHLSS food structure, incl. eating out)",2022,Vietnam,Meat,27.0,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-035,"Share of household food spending (VHLSS food structure, incl. eating out)",2022,"Vietnam, urban",Meat,24.9,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-036,"Share of household food spending (VHLSS food structure, incl. eating out)",2022,"Vietnam, rural",Meat,28.6,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-037,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,Vietnam,Meat,26.7,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-038,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,"Vietnam, urban",Meat,23.4,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-039,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,"Vietnam, rural",Meat,29.7,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-040,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,Vietnam,Fish and shrimp,7.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-041,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,"Vietnam, urban",Fish and shrimp,6.5,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-042,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,"Vietnam, rural",Fish and shrimp,7.9,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-043,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,Vietnam,Fish and shrimp,8.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-044,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,"Vietnam, urban",Fish and shrimp,8.1,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-045,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,"Vietnam, rural",Fish and shrimp,8.4,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-046,"Share of household food spending (VHLSS food structure, incl. eating out)",2020,Vietnam,Fish and shrimp,8.2,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-047,"Share of household food spending (VHLSS food structure, incl. eating out)",2020,"Vietnam, urban",Fish and shrimp,7.9,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-048,"Share of household food spending (VHLSS food structure, incl. eating out)",2020,"Vietnam, rural",Fish and shrimp,8.5,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-049,"Share of household food spending (VHLSS food structure, incl. eating out)",2022,Vietnam,Fish and shrimp,7.8,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-050,"Share of household food spending (VHLSS food structure, incl. eating out)",2022,"Vietnam, urban",Fish and shrimp,8.1,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-051,"Share of household food spending (VHLSS food structure, incl. eating out)",2022,"Vietnam, rural",Fish and shrimp,7.6,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-052,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,Vietnam,Fish and shrimp,8.4,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-053,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,"Vietnam, urban",Fish and shrimp,8.5,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-054,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,"Vietnam, rural",Fish and shrimp,8.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-055,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,Vietnam,Eggs,1.4,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-056,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,"Vietnam, urban",Eggs,1.2,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-057,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,"Vietnam, rural",Eggs,1.6,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-058,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,Vietnam,Eggs,1.2,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-059,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,"Vietnam, urban",Eggs,0.9,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-060,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,"Vietnam, rural",Eggs,1.4,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-061,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,Vietnam,Eggs,1.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-062,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,"Vietnam, urban",Eggs,1.1,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-063,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,"Vietnam, rural",Eggs,1.6,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-064,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,Vietnam,Tofu,1.0,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-065,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,"Vietnam, urban",Tofu,0.7,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-066,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,"Vietnam, rural",Tofu,1.1,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-067,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,Vietnam,Tofu,0.7,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-068,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,"Vietnam, urban",Tofu,0.5,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-069,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,"Vietnam, rural",Tofu,0.8,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-070,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,Vietnam,Tofu,0.7,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-071,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,"Vietnam, urban",Tofu,0.6,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-072,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,"Vietnam, rural",Tofu,0.8,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-073,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,Vietnam,Beans and peas,0.4,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-074,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,"Vietnam, urban",Beans and peas,0.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-075,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,"Vietnam, rural",Beans and peas,0.4,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-076,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,Vietnam,Beans and peas,0.2,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-077,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,"Vietnam, urban",Beans and peas,0.2,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-078,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,"Vietnam, rural",Beans and peas,0.2,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-079,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,Vietnam,Rice,15.7,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-080,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,"Vietnam, urban",Rice,10.0,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-081,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,"Vietnam, rural",Rice,19.7,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-082,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,Vietnam,Rice,9.7,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-083,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,"Vietnam, urban",Rice,6.6,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-084,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,"Vietnam, rural",Rice,12.2,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-085,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,Vietnam,Rice,9.0,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-086,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,"Vietnam, urban",Rice,6.7,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-087,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,"Vietnam, rural",Rice,11.2,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-088,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,Vietnam,Eating out (meals away from home),21.6,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-089,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,"Vietnam, urban",Eating out (meals away from home),28.5,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-090,"Share of household food spending (VHLSS food structure, incl. eating out)",2010,"Vietnam, rural",Eating out (meals away from home),16.5,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-091,"Share of household food spending (VHLSS food structure, incl. eating out)",2012,Vietnam,Eating out (meals away from home),24.0,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-092,"Share of household food spending (VHLSS food structure, incl. eating out)",2012,"Vietnam, urban",Eating out (meals away from home),31.3,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-093,"Share of household food spending (VHLSS food structure, incl. eating out)",2012,"Vietnam, rural",Eating out (meals away from home),18.9,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-094,"Share of household food spending (VHLSS food structure, incl. eating out)",2014,Vietnam,Eating out (meals away from home),23.5,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-095,"Share of household food spending (VHLSS food structure, incl. eating out)",2014,"Vietnam, urban",Eating out (meals away from home),30.1,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-096,"Share of household food spending (VHLSS food structure, incl. eating out)",2014,"Vietnam, rural",Eating out (meals away from home),18.6,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-097,"Share of household food spending (VHLSS food structure, incl. eating out)",2016,Vietnam,Eating out (meals away from home),25.1,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-098,"Share of household food spending (VHLSS food structure, incl. eating out)",2016,"Vietnam, urban",Eating out (meals away from home),32.4,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-099,"Share of household food spending (VHLSS food structure, incl. eating out)",2016,"Vietnam, rural",Eating out (meals away from home),19.5,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-100,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,Vietnam,Eating out (meals away from home),26.7,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-101,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,"Vietnam, urban",Eating out (meals away from home),32.9,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-102,"Share of household food spending (VHLSS food structure, incl. eating out)",2018,"Vietnam, rural",Eating out (meals away from home),21.7,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-103,"Share of household food spending (VHLSS food structure, incl. eating out)",2020,Vietnam,Eating out (meals away from home),26.0,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-104,"Share of household food spending (VHLSS food structure, incl. eating out)",2020,"Vietnam, urban",Eating out (meals away from home),33.0,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-105,"Share of household food spending (VHLSS food structure, incl. eating out)",2020,"Vietnam, rural",Eating out (meals away from home),19.9,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-106,"Share of household food spending (VHLSS food structure, incl. eating out)",2022,Vietnam,Eating out (meals away from home),19.8,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-107,"Share of household food spending (VHLSS food structure, incl. eating out)",2022,"Vietnam, urban",Eating out (meals away from home),24.5,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-108,"Share of household food spending (VHLSS food structure, incl. eating out)",2022,"Vietnam, rural",Eating out (meals away from home),15.9,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-109,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,Vietnam,Eating out (meals away from home),22.5,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17. Eating out fell in 2022 after COVID-19 and had not regained its 2018 level by 2024.
+DFS-110,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,"Vietnam, urban",Eating out (meals away from home),29.6,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-111,"Share of household food spending (VHLSS food structure, incl. eating out)",2024,"Vietnam, rural",Eating out (meals away from home),16.1,%,DIE-05,VN-direct,High,revealed,VHLSS table 6.17
+DFS-112,Household food spending per person per month,2024,Vietnam,"All food, drink and eating out",1310.0,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-113,Household food spending per person per month,2024,"Vietnam, urban","All food, drink and eating out",1632.7,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-114,Household food spending per person per month,2024,"Vietnam, rural","All food, drink and eating out",1110.7,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-115,Household food spending per person per month,2024,Vietnam,Rice,118.5,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-116,Household food spending per person per month,2024,"Vietnam, urban",Rice,108.5,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-117,Household food spending per person per month,2024,"Vietnam, rural",Rice,124.6,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-118,Household food spending per person per month,2024,Vietnam,Meat,349.8,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-119,Household food spending per person per month,2024,"Vietnam, urban",Meat,381.5,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-120,Household food spending per person per month,2024,"Vietnam, rural",Meat,330.3,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-121,Household food spending per person per month,2024,Vietnam,Fish and shrimp,110.4,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-122,Household food spending per person per month,2024,"Vietnam, urban",Fish and shrimp,139.5,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-123,Household food spending per person per month,2024,"Vietnam, rural",Fish and shrimp,92.4,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-124,Household food spending per person per month,2024,Vietnam,Eggs,17.2,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-125,Household food spending per person per month,2024,"Vietnam, urban",Eggs,17.1,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-126,Household food spending per person per month,2024,"Vietnam, rural",Eggs,17.3,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-127,Household food spending per person per month,2024,Vietnam,Tofu,9.2,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-128,Household food spending per person per month,2024,"Vietnam, urban",Tofu,9.0,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-129,Household food spending per person per month,2024,"Vietnam, rural",Tofu,9.4,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-130,Household food spending per person per month,2024,Vietnam,Beans and peas,2.4,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-131,Household food spending per person per month,2024,"Vietnam, urban",Beans and peas,2.8,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-132,Household food spending per person per month,2024,"Vietnam, rural",Beans and peas,2.1,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-133,Household food spending per person per month,2024,Vietnam,Peanuts and sesame,2.9,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-134,Household food spending per person per month,2024,"Vietnam, urban",Peanuts and sesame,3.0,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-135,Household food spending per person per month,2024,"Vietnam, rural",Peanuts and sesame,2.8,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.16, current prices"
+DFS-136,Eating-out spending per person per month,2018,Vietnam,all,283.0,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-137,Eating-out spending per person per month,2018,Vietnam,quintile 1,78.4,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-138,Eating-out spending per person per month,2018,Vietnam,quintile 2,208.5,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-139,Eating-out spending per person per month,2018,Vietnam,quintile 3,231.0,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-140,Eating-out spending per person per month,2018,Vietnam,quintile 4,358.6,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-141,Eating-out spending per person per month,2018,Vietnam,quintile 5,539.0,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-142,Eating-out spending per person per month,2020,Vietnam,all,334.6,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-143,Eating-out spending per person per month,2020,Vietnam,quintile 1,107.5,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-144,Eating-out spending per person per month,2020,Vietnam,quintile 2,201.4,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-145,Eating-out spending per person per month,2020,Vietnam,quintile 3,301.9,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-146,Eating-out spending per person per month,2020,Vietnam,quintile 4,411.1,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-147,Eating-out spending per person per month,2020,Vietnam,quintile 5,651.4,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-148,Eating-out spending per person per month,2022,Vietnam,all,238.0,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-149,Eating-out spending per person per month,2022,Vietnam,quintile 1,57.4,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-150,Eating-out spending per person per month,2022,Vietnam,quintile 2,122.5,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-151,Eating-out spending per person per month,2022,Vietnam,quintile 3,177.2,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-152,Eating-out spending per person per month,2022,Vietnam,quintile 4,371.9,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-153,Eating-out spending per person per month,2022,Vietnam,quintile 5,408.0,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-154,Eating-out spending per person per month,2024,Vietnam,all,295.0,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-155,Eating-out spending per person per month,2024,Vietnam,quintile 1,79.4,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-156,Eating-out spending per person per month,2024,Vietnam,quintile 2,181.4,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-157,Eating-out spending per person per month,2024,Vietnam,quintile 3,285.1,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-158,Eating-out spending per person per month,2024,Vietnam,quintile 4,363.4,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-159,Eating-out spending per person per month,2024,Vietnam,quintile 5,558.5,thousand VND per person per month,DIE-05,VN-direct,High,revealed,"VHLSS table 6.18, current prices"
+DFS-160,Eating-out spending per person per month,2024,"Vietnam, Red River Delta (pre-2025 statistical region)",all households,289.8,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.19
+DFS-161,Eating-out spending per person per month,2024,"Vietnam, Northern midlands and mountains (pre-2025 statistical region)",all households,104.4,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.19
+DFS-162,Eating-out spending per person per month,2024,"Vietnam, North Central and Central coast (pre-2025 statistical region)",all households,274.0,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.19
+DFS-163,Eating-out spending per person per month,2024,"Vietnam, Central Highlands (pre-2025 statistical region)",all households,174.9,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.19
+DFS-164,Eating-out spending per person per month,2024,"Vietnam, South East (pre-2025 statistical region)",all households,538.6,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.19
+DFS-165,Eating-out spending per person per month,2024,"Vietnam, Mekong River Delta (pre-2025 statistical region)",all households,247.7,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.19
+DFS-166,Eating-out spending per person per month,2010,"Vietnam, urban",all households,224.6,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.10
+DFS-167,Eating-out spending per person per month,2010,"Vietnam, rural",all households,75.6,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.10
+DFS-168,Eating-out spending per person per month,2018,"Vietnam, urban",all households,469.2,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.10
+DFS-169,Eating-out spending per person per month,2018,"Vietnam, rural",all households,189.6,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.10
+DFS-170,Eating-out spending per person per month,2020,"Vietnam, urban",all households,545.9,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.10
+DFS-171,Eating-out spending per person per month,2020,"Vietnam, rural",all households,213.9,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.10
+DFS-172,Eating-out spending per person per month,2022,"Vietnam, urban",all households,340.6,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.10
+DFS-173,Eating-out spending per person per month,2022,"Vietnam, rural",all households,172.6,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.10
+DFS-174,Eating-out spending per person per month,2024,"Vietnam, urban",all households,482.7,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.10
+DFS-175,Eating-out spending per person per month,2024,"Vietnam, rural",all households,179.1,thousand VND per person per month,DIE-05,VN-direct,High,revealed,VHLSS table 6.10
+DFS-176,Average income per person per month,2024,Vietnam,all households,5.4,million VND,DIE-06,VN-direct,High,revealed,"Urban 6.9, rural 4.5; quintile 5 11.8, quintile 1 1.6 million VND. 46,995 households."
+DFS-177,Implied unit value of meat for home use,2024,Vietnam,all households,134.5,thousand VND per kg,DIE-05,VN-direct,Medium,inferred,Our derivation: 349.8 thousand VND / 2.60 kg per person per month (tables 6.16 and 6.20).
+DFS-178,Implied unit value of tofu for home use,2024,Vietnam,all households,21.4,thousand VND per kg,DIE-05,VN-direct,Medium,inferred,Our derivation: 9.2 thousand VND / 0.43 kg.
+DFS-179,Implied unit value of eggs for home use,2024,Vietnam,all households,3.37,thousand VND per egg,DIE-05,VN-direct,Medium,inferred,Our derivation: 17.2 thousand VND / 5.10 eggs; includes duck eggs.

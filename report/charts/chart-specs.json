@@ -40,7 +40,7 @@
    "placement": [
     "ch01-why-vietnam",
     "front-at-a-glance",
-    "app-h-feed-market"
+    "app-s6-feed-market"
    ],
    "alt_text": "Bar chart: about 99% of soy protein, 98% of soybeans, 79% of soybean meal, 74% of maize and 100% of wheat and DDGS used in Vietnam in 2025 were imported.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -103,7 +103,7 @@
    "confidence": "High",
    "placement": [
     "ch01-why-vietnam",
-    "app-h-feed-market"
+    "app-s6-feed-market"
    ],
    "alt_text": "Line: fishmeal averaged USD 1,433 per t in 2020, 1,706 in 2025 and reached 2,500 in August 2026.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -148,8 +148,8 @@
    "evidence": "VN-direct",
    "confidence": "Medium",
    "placement": [
-    "ch02-asset-map",
-    "app-c-feedstocks"
+    "ch04-asset-map",
+    "app-s4-feedstocks"
    ],
    "alt_text": "Range bars comparing paddy 43.5 Mt, sugarcane 13.3 Mt, cassava roots 10.2 Mt, cassava pulp about 4 to 8 Mt wet, rice bran 4.35 Mt, spent grain under 1 Mt, against 7.2 Mt of soybean meal fed.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -184,8 +184,8 @@
    "evidence": "VN-direct",
    "confidence": "Medium",
    "placement": [
-    "ch02-asset-map",
-    "app-c-feedstocks"
+    "ch04-asset-map",
+    "app-s4-feedstocks"
    ],
    "alt_text": "Map of Vietnam showing cassava concentrated in Tay Ninh and the Central Highlands, rice and aquaculture by-products in the Mekong Delta, and breweries near Ho Chi Minh City and Hanoi.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -216,8 +216,8 @@
    "evidence": "VN-direct",
    "confidence": "Medium",
    "placement": [
-    "ch03-industrial-base",
-    "app-f-facilities"
+    "ch05-industrial-base",
+    "app-s5-facilities"
    ],
    "alt_text": "Table of 13 capabilities: aerobic fermentation exists but is closed; food extrusion, protein isolation and food-grade contract fermentation were not found; feed mills, co-packers and accredited testing are available.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -252,8 +252,8 @@
    "evidence": "VN-direct",
    "confidence": "High",
    "placement": [
-    "ch04-alt-protein-today",
-    "app-d-retail-audit",
+    "ch02-alt-protein-today",
+    "app-s2-retail-audit",
     "brief-manufacturers"
    ],
    "alt_text": "Dot plot: filled wrappers, plant milks and seafood gels sit below 5 g of protein per 100 g; hydrated TVP and gluten analogues reach 12 to 25 g; dried slices 53 to 67 g as sold.",
@@ -289,9 +289,9 @@
    "evidence": "VN-direct",
    "confidence": "Medium",
    "placement": [
-    "ch04-alt-protein-today",
+    "ch02-alt-protein-today",
     "ch09-economics",
-    "app-d-retail-audit"
+    "app-s2-retail-audit"
    ],
    "alt_text": "Log-scale bars: tofu and dried TVP deliver protein at about 64,000 to 66,000 VND per 100 g, near meat; filled wrappers, plant milks and vegan cheese cost 5 to 13 times more per gram of protein.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -318,8 +318,8 @@
    "evidence": "VN-direct",
    "confidence": "Medium",
    "placement": [
-    "ch04-alt-protein-today",
-    "app-e-directory"
+    "ch02-alt-protein-today",
+    "app-s1-directory"
    ],
    "alt_text": "Timeline of events from 2019 to 2026, including Entobel's plants and financing, the 2025 administrative reforms, the GMO decree and the Food Safety Law revision.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -354,9 +354,9 @@
    "evidence": "VN-direct",
    "confidence": "Medium",
    "placement": [
-    "ch05-rules",
+    "ch07-rules",
     "brief-startups",
-    "app-g-regulation"
+    "app-s9-regulation"
    ],
    "alt_text": "Matrix showing that plant-based foods, koji and listed feed materials have clear routes, while fungal foods, precision fermentation made in Vietnam, cultivated meat and new microbial feed proteins face uncertain or unpublished routes.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -385,7 +385,7 @@
    "placement": [
     "ch06-knowledge-talent",
     "brief-research",
-    "app-k-research"
+    "app-s7-research"
    ],
    "alt_text": "Grouped bars: Vietnam is below Thailand, Malaysia and Singapore on plant-based and cultivated meat research intensity, level on fishmeal replacement, and second on spirulina.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -420,8 +420,8 @@
    "evidence": "VN-direct",
    "confidence": "Medium",
    "placement": [
-    "ch07-capital",
-    "app-m-capital"
+    "ch08-capital",
+    "app-s11-capital"
    ],
    "alt_text": "Bars: venture capital of USD 529 million (2023), 398 million (2024) and 509 million (2025); agriculture took 8, 74 and 1 million.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -446,8 +446,8 @@
    "evidence": "general",
    "confidence": "High",
    "placement": [
-    "ch07-capital",
-    "app-m-capital"
+    "ch08-capital",
+    "app-s11-capital"
    ],
    "alt_text": "Stacked bars: USD 881 million in 2025 (plant-based 450, fermentation 357, cultivated 74); USD 359 million in the first half of 2026; fermentation took 132 of about 197 million in the second quarter of 2026.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -468,16 +468,16 @@
     "row_highlight": "Vietnam",
     "label": "score_0_100"
    },
-   "notes": "Scores are relative ranks among nine countries, not cost estimates. See ch08 critique.",
+   "notes": "Scores are relative ranks among nine countries, not cost estimates. See ch03 critique.",
    "source_ids": [
     "RGN-01"
    ],
    "evidence": "VN-direct",
    "confidence": "High",
    "placement": [
-    "ch08-regional",
+    "ch03-regional",
     "brief-international",
-    "app-n-regional"
+    "app-s3-regional"
    ],
    "alt_text": "Heatmap: Vietnam scores 100 on labour, 97 on utilities and 93 on construction, but 26 on sugar and talent, 30 on business environment and 0 on regulatory readiness.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -509,8 +509,8 @@
    "evidence": "VN-adjacent",
    "confidence": "High",
    "placement": [
-    "ch08-regional",
-    "app-n-regional"
+    "ch03-regional",
+    "app-s3-regional"
    ],
    "alt_text": "Dot timeline: Singapore holds most approvals from 2019 to 2026; the United States, Australia and New Zealand follow; no approvals in Vietnam, Thailand, Korea or Malaysia.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -548,8 +548,8 @@
    "evidence": "VN-direct",
    "confidence": "High",
    "placement": [
-    "ch08-regional",
-    "app-n-regional"
+    "ch03-regional",
+    "app-s3-regional"
    ],
    "alt_text": "Bars: USD 1,063 million of cassava starch exported in 2023; China bought USD 757 million of starch, 114 million of modified starch and 104 million of dried cassava from Vietnam in 2024, but only USD 0.16 million of glucose syrup.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -590,7 +590,7 @@
    "confidence": "Low",
    "placement": [
     "ch09-economics",
-    "app-i-costs"
+    "app-s12-costs"
    ],
    "alt_text": "Two stacked bars: USD 2,227 and 6,612 per tonne of product; capital charges and maintenance are 54% and 67% of the total; labour and power are under 10%.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -624,7 +624,7 @@
     "ch09-economics",
     "front-at-a-glance",
     "brief-manufacturers",
-    "app-h-feed-market"
+    "app-s6-feed-market"
    ],
    "alt_text": "Range bars: soybean meal protein USD 796 to 876 per tonne; fishmeal protein 2,625 to 3,846; indicative Vietnamese fungal protein 4,050 to 14,700.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -655,7 +655,7 @@
    "confidence": "High",
    "placement": [
     "ch09-economics",
-    "app-i-costs"
+    "app-s12-costs"
    ],
    "alt_text": "Log-scale bars: parity needs capex below about USD 6,000 per annual tonne, against 16,000 to 23,000 in published SCP and mycoprotein studies and 96,000 for cultivated meat.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -688,7 +688,7 @@
    "confidence": "Medium",
    "placement": [
     "ch10-technology-fit",
-    "app-j-science"
+    "app-s13-science"
    ],
    "alt_text": "Heatmap: textured plant protein and functional microbial feed ingredients rate strong or moderate on most conditions; precision fermentation and cultivated meat rate weak on most.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -720,7 +720,7 @@
    "evidence": "VN-direct",
    "confidence": "Medium",
    "placement": [
-    "ch11-plays",
+    "ch26-plays",
     "front-at-a-glance",
     "brief-investors"
    ],
@@ -750,7 +750,7 @@
    "evidence": "VN-direct",
    "confidence": "Medium",
    "placement": [
-    "ch11-plays"
+    "ch26-plays"
    ],
    "alt_text": "Gantt bars: textured protein 0 to 2 years; feed ingredients, sugar hub, duckweed and koji 1 to 3; pilot fermentation and plant-drink proteins 2 to 4; precision fermentation 2 to 5; bulk fishmeal replacement 3 to 6; cultivated seafood 5 to 10 or more.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -780,7 +780,7 @@
    "evidence": "VN-direct",
    "confidence": "Medium",
    "placement": [
-    "ch12-policy-options",
+    "ch27-policy-options",
     "brief-policy"
    ],
    "alt_text": "Scatter of 24 ranked options: most tier 1 options sit at low effort and high impact; the pilot fermentation line is high effort and high impact.",
@@ -818,8 +818,8 @@
    "evidence": "VN-direct",
    "confidence": "Medium",
    "placement": [
-    "ch13-outlook",
-    "app-o-outlook"
+    "ch19-outlook-2035",
+    "app-f1-outlook"
    ],
    "alt_text": "Timeline: most Vietnamese rule changes cluster in 2025 to 2027, with 2030 strategy targets further out.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -847,8 +847,8 @@
    "evidence": "VN-direct",
    "confidence": "Low",
    "placement": [
-    "ch13-outlook",
-    "app-o-outlook"
+    "ch19-outlook-2035",
+    "app-f1-outlook"
    ],
    "alt_text": "Two-by-two diagram placing three scenarios: import price-taker (no route, narrow gap), feed-first build-out (wide gap), regulated regional hub (workable route).",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
@@ -856,7 +856,7 @@
   {
    "id": "chart-sources-by-type",
    "title": "What the evidence rests on",
-   "subtitle": "1,275 sources by type and research wave (waves 1 and 2: edition 1.0; waves 3 to 5: edition 1.1)",
+   "subtitle": "2,384 sources by type and research wave (waves 1 and 2: v0.1; waves 3 to 5: v0.2; wave 6: v0.3; waves 7 to 9: v0.4; wave 10: v0.5)",
    "type": "stacked-bar",
    "data": {
     "file": "sources/sources.csv",
@@ -875,10 +875,10 @@
    "evidence": "VN-direct",
    "confidence": "High",
    "placement": [
-    "app-a-method",
-    "app-t-sources"
+    "app-m1-method",
+    "app-r4-sources"
    ],
-   "alt_text": "Bars: 309 peer-reviewed, 287 press, 219 government or statistics, 140 company and 128 legal sources, among others, across five research waves.",
+   "alt_text": "Bars: 583 press, 468 peer-reviewed, 391 gov/statistics, 336 company, 227 other sources, among others, across ten research waves.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes."
   },
   {
@@ -912,7 +912,7 @@
     "Shade the top-right cell (impact 4 to 5, uncertainty 4 to 5) and label it \"scenario axes\".",
     "Jitter overlapping points slightly; label every point."
    ],
-   "notes": "Scores are AltProtein Vietnam judgement from the evidence in chapter 15, not measurements.",
+   "notes": "Scores are AltProtein Vietnam judgement from the evidence in chapter 20, not measurements.",
    "source_ids": [
     "GEO-31",
     "GEO-37",
@@ -924,12 +924,12 @@
    "evidence": "VN-direct",
    "confidence": "Low",
    "placement": [
-    "app-x-drivers-signals",
-    "ch15-drivers-2050"
+    "app-f2-drivers-signals",
+    "ch20-drivers-2050"
    ],
    "alt_text": "Scatter of 17 drivers by uncertainty and impact. Near-certain trends such as ageing, smallholder exit and import dependence sit at low uncertainty; feed-protein import stress and the structure of Asia's fermentation market sit at the top right, with the highest impact and uncertainty, and form the scenario axes.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
-   "edition": "1.1"
+   "version": "0.2"
   },
   {
    "id": "chart-frontier-windows",
@@ -970,12 +970,12 @@
    "evidence": "VN-direct",
    "confidence": "Low",
    "placement": [
-    "app-v-frontier-tech",
-    "ch16-frontier-technology"
+    "app-f3-frontier-tech",
+    "ch21-frontier-technology"
    ],
    "alt_text": "Gantt chart of 11 routes. AI-assisted enzymes and single-cell feed protein open between 2026 and 2030; contract precision fermentation and food mycoprotein 2030 to 2035; molecular farming from 2035; cellulosic sugar, cultivated seafood cells and bulk protein from power in the 2040s; cell-free synthesis not before 2050.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
-   "edition": "1.1"
+   "version": "0.2"
   },
   {
    "id": "chart-cost-paths-2050",
@@ -1019,17 +1019,17 @@
    "evidence": "VN-direct",
    "confidence": "Low",
    "placement": [
-    "app-v-frontier-tech",
-    "ch16-frontier-technology"
+    "app-f3-frontier-tech",
+    "ch21-frontier-technology"
    ],
    "alt_text": "Range bars: protein from power made in Vietnam falls from USD 6.9 to 12.6 per kg (2030) to 3.3 to 6.5 (2050); fungal feed protein from 3.0 to 12.5 to 2.2 to 9.5. Fishmeal protein costs 2.6 to 3.8 and soybean-meal protein 0.88 per kg. Only the low ends reach the fishmeal band; none reaches soybean meal.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
-   "edition": "1.1"
+   "version": "0.2"
   },
   {
    "id": "chart-sbm-scenarios-2050",
    "title": "Soybean-meal need to 2050 in four scenarios",
-   "subtitle": "Million tonnes a year, our model; shaded band: the vision range of chapter 19",
+   "subtitle": "Million tonnes a year, our model; shaded band: the vision range of chapter 24",
    "type": "line",
    "data": {
     "file": "charts/data/sbm_scenarios_2050.csv"
@@ -1061,12 +1061,12 @@
    "evidence": "VN-direct",
    "confidence": "Low",
    "placement": [
-    "app-w-balance-model",
-    "ch17-protein-balance-2050"
+    "app-f4-balance-model",
+    "ch22-protein-balance-2050"
    ],
    "alt_text": "Line chart: soybean-meal need rises from 7.2 Mt in 2025 to 10.4 Mt in 2050 on trend, 11.7 Mt on the high-growth path, 8.8 Mt with alternative protein and 7.0 Mt with the efficiency programme. The vision band runs from 7.8 to 8.3 Mt in 2030 to 7.0 to 8.8 Mt in 2050.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
-   "edition": "1.1"
+   "version": "0.2"
   },
   {
    "id": "chart-sbm-tornado",
@@ -1098,12 +1098,12 @@
    "evidence": "VN-direct",
    "confidence": "Low",
    "placement": [
-    "app-w-balance-model",
-    "ch17-protein-balance-2050"
+    "app-f4-balance-model",
+    "ch22-protein-balance-2050"
    ],
    "alt_text": "Tornado chart: the soybean-meal inclusion trend swings 2050 need by 3.7 Mt and the feed-conversion gain rate by 2.4 Mt; aquaculture growth, poultry demand, meat self-sufficiency and population each move it by about 0.8 to 1.1 Mt.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
-   "edition": "1.1"
+   "version": "0.2"
   },
   {
    "id": "chart-scenarios-2050",
@@ -1138,12 +1138,12 @@
    "evidence": "VN-direct",
    "confidence": "Low",
    "placement": [
-    "ch18-scenarios-2050",
+    "ch23-scenarios-2050",
     "front-at-a-glance"
    ],
    "alt_text": "Two-by-two grid. Top left: Regional workshop (benign imports, open market). Bottom left: Comfortable price-taker. Top right: Security build-out (chronic stress, open market). Bottom right: Squeezed importer.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
-   "edition": "1.1"
+   "version": "0.2"
   },
   {
    "id": "chart-play-robustness",
@@ -1183,11 +1183,11 @@
    "evidence": "VN-direct",
    "confidence": "Low",
    "placement": [
-    "ch18-scenarios-2050"
+    "ch23-scenarios-2050"
    ],
    "alt_text": "Heatmap of 16 plays by four scenarios. Feed-trial capacity, the protein-quality laboratory and the open cost model score 2 in every world. Bulk fishmeal replacement scores 0 in the two benign worlds; high-value precision fermentation scores 0 in the two Chinese-dominance worlds.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
-   "edition": "1.1"
+   "version": "0.2"
   },
   {
    "id": "chart-vision-backcast",
@@ -1222,11 +1222,11 @@
    "evidence": "VN-direct",
    "confidence": "Low",
    "placement": [
-    "ch19-vision-2050"
+    "ch24-vision-2050"
    ],
    "alt_text": "Timeline of 22 milestones from 2026 to 2050 in lanes by pillar: a protein balance and new-food route by 2028; about 1% microbial feed protein and an open pilot plant by 2030; soybean-meal need 7.0 to 8.8 Mt, 4 to 8% microbial feed protein and 15 to 50% non-marine omega-3 by 2050.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
-   "edition": "1.1"
+   "version": "0.2"
   },
   {
    "id": "chart-robust-moves",
@@ -1264,11 +1264,781 @@
    "evidence": "VN-direct",
    "confidence": "Low",
    "placement": [
-    "ch20-robust-moves"
+    "ch28-robust-moves"
    ],
    "alt_text": "Heatmap of 21 moves by four worlds. The nine no-regret moves pay off in all four. Options pay off mainly in the open-market worlds, bets mainly in the Security build-out world, and hedges in the stressed worlds.",
    "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
-   "edition": "1.1"
+   "version": "0.2"
+  },
+  {
+   "id": "chart-protein-price-ladder",
+   "title": "What 100 g of protein costs in Vietnam",
+   "subtitle": "Retail price, VND per 100 g of protein, September 2026; beef, shrimp and analogues are range midpoints",
+   "type": "horizontal-bar",
+   "data": {
+    "file": "charts/data/protein_price_ladder.csv"
+   },
+   "encoding": {
+    "y": "food",
+    "x": "vnd_per_100g_protein",
+    "x_scale": "log",
+    "color": "group",
+    "tooltip": [
+     "group"
+    ]
+   },
+   "annotations": [
+    "Shade a band from 34,000 to 45,000 labelled \"eggs and chicken: the mass price to beat\".",
+    "Mark lean pork (70,900) as \"mainstream meat reference\"."
+   ],
+   "notes": "Composition-table protein except the audit rows (label protein). Ranges: beef 130,000 to 143,000; shrimp 199,000 to 204,000; analogues 542,000 to 622,000.",
+   "source_ids": [
+    "COST-39",
+    "COST-40",
+    "COST-41",
+    "DIE-12",
+    "DIE-05",
+    "FORM-01"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "Medium",
+   "placement": [
+    "ch11-protein-diet"
+   ],
+   "alt_text": "Log-scale bars: soybeans and tofu deliver protein at 14,500 to 30,000 VND per 100 g, eggs and chicken at 34,300 to 44,800, lean pork at 70,900, beef about 137,000, shrimp about 201,000, filled chay wrappers 369,000 and imported analogues about 582,000.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-animal-protein-ladder",
+   "title": "The protein ladder: animal share of protein supply, 1961 to 2023",
+   "subtitle": "Per cent of protein supply from animal foods, Vietnam and neighbours (FAO food balance sheets)",
+   "type": "line",
+   "data": {
+    "file": "charts/data/animal_protein_share.csv"
+   },
+   "encoding": {
+    "x": "year",
+    "y": "animal_share_pct",
+    "series": "country",
+    "y_domain": [
+     0,
+     70
+    ],
+    "tooltip": [
+     "country"
+    ]
+   },
+   "annotations": [
+    "Highlight the Vietnam line; grey the others.",
+    "Shade 55 to 60% as \"where Japan, Korea, Taiwan and Malaysia level off\"."
+   ],
+   "notes": "FAO historic series to 2013 and new series from 2010; uneven year spacing.",
+   "source_ids": [
+    "DIE-07",
+    "DIE-08"
+   ],
+   "evidence": "VN-adjacent",
+   "confidence": "High",
+   "placement": [
+    "ch11-protein-diet"
+   ],
+   "alt_text": "Lines: Vietnam rises from about 20% of protein from animal foods in 1961 to 42% in 2023; Japan, Korea, Taiwan and Malaysia level off at 55 to 60%; Thailand stays near 40%.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-tofu-by-region",
+   "title": "Tofu is a northern food",
+   "subtitle": "Household use for home consumption, kg per person per month, 2024 (pre-2025 regions)",
+   "type": "grouped-bar",
+   "data": {
+    "file": "charts/data/home_protein_by_region.csv"
+   },
+   "encoding": {
+    "x": "region",
+    "y": [
+     "tofu_kg",
+     "meat_kg",
+     "fish_kg"
+    ],
+    "tooltip": []
+   },
+   "annotations": [
+    "Label the tofu bars; Red River Delta 0.69 kg is 3.6 times the Mekong Delta 0.19 kg."
+   ],
+   "notes": "VHLSS 2024 table 6.22; home use only, excludes eating out.",
+   "source_ids": [
+    "DIE-05"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "High",
+   "placement": [
+    "ch12-chay-baseline"
+   ],
+   "alt_text": "Grouped bars by region: tofu use is 0.68 to 0.69 kg per person a month in the north and 0.19 to 0.32 kg in the centre and south; meat is highest in the north; fish highest in the Mekong Delta.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-pbm-funnel",
+   "title": "Aware, curious, rarely buying",
+   "subtitle": "Plant-based meat: share of online respondents, Vietnam (n = 1,049) against the six-country average, 2023",
+   "type": "grouped-bar",
+   "data": {
+    "file": "charts/data/pbm_funnel.csv"
+   },
+   "encoding": {
+    "x": "stage",
+    "y": [
+     "vietnam_pct",
+     "six_country_average_pct"
+    ],
+    "y_domain": [
+     0,
+     100
+    ],
+    "tooltip": []
+   },
+   "annotations": [
+    "Note that \"plant-based meat\" probably includes traditional mock meat for many Vietnamese respondents."
+   ],
+   "notes": "Stated evidence from an online panel in the Hanoi region and Ho Chi Minh City.",
+   "source_ids": [
+    "CON-02"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "Medium",
+   "placement": [
+    "ch13-consumers"
+   ],
+   "alt_text": "Grouped bars: in Vietnam 90% have heard of plant-based meat, 42% have tried it, 20% eat it monthly, 3% weekly and 15% intend to reduce meat; six-country averages are 91, 47, 20, 5 and 21%.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-price-parity-choice",
+   "title": "Stated interest halves by +50%",
+   "subtitle": "Share who would choose plant-based meat over meat for a dish, by price relative to meat, 2023",
+   "type": "line",
+   "data": {
+    "file": "charts/data/price_parity_choice.csv"
+   },
+   "encoding": {
+    "x": "price_vs_meat_pct",
+    "y": [
+     "vietnam_pct",
+     "six_country_average_pct"
+    ],
+    "y_domain": [
+     0,
+     100
+    ],
+    "tooltip": []
+   },
+   "annotations": [
+    "Add a marker far off the axis: imported analogues on Vietnamese shelves cost 12 to 18 times eggs and chicken per gram of protein."
+   ],
+   "notes": "Stated choice, not willingness to pay (GFI).",
+   "source_ids": [
+    "CON-02",
+    "FORM-01"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "Medium",
+   "placement": [
+    "ch13-consumers"
+   ],
+   "alt_text": "Lines: Vietnamese respondents choosing plant-based meat fall from 88% at 20% cheaper to 74% at parity, 64% at +20%, 47% at +50% and 26% at double; the six-country average runs below at every point.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-search-interest",
+   "title": "Vietnamese search for nut milk, not plant meat",
+   "subtitle": "Google Trends annual mean index, Vietnam, one comparison set, 2019 to 2026 (2026 to September)",
+   "type": "line",
+   "data": {
+    "file": "charts/data/search_interest.csv"
+   },
+   "encoding": {
+    "x": "year",
+    "y": [
+     "sua_hat_nut_milk",
+     "thit_thuc_vat_plant_meat",
+     "sua_yen_mach_oat_milk",
+     "do_chay_vegetarian_food",
+     "thuan_chay_vegan"
+    ],
+    "tooltip": []
+   },
+   "annotations": [
+    "Label series in Vietnamese with English glosses."
+   ],
+   "notes": "Relative index within the set; not volumes.",
+   "source_ids": [
+    "CON-37"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "Medium",
+   "placement": [
+    "ch13-consumers"
+   ],
+   "alt_text": "Lines: search interest in sữa hạt (nut milk) rises from about 20 in 2019 to about 70 in 2026, while thịt thực vật (plant meat) stays between 1 and 5.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-protein-cost-serving",
+   "title": "What 20 g of protein costs, against a meal",
+   "subtitle": "Median VND for 20 g of protein by product type (retail audit, label protein) and retail benchmarks",
+   "type": "horizontal-bar-with-bands",
+   "data": {
+    "file": "charts/data/protein_cost_serving.csv",
+    "reference": "Bands: canteen protein-dish budget VND 7,500 to 14,000; street rice plate with meat VND 29,000 to 35,000"
+   },
+   "encoding": {
+    "y": "product",
+    "x": "vnd_per_20g_protein",
+    "x_scale": "log",
+    "color": "basis",
+    "tooltip": [
+     "basis"
+    ]
+   },
+   "annotations": [
+    "Draw the two bands as vertical shaded areas."
+   ],
+   "notes": "Our calculation: price per 100 g of protein divided by 5. Benchmarks from chapter 11.",
+   "source_ids": [
+    "FORM-01",
+    "DIE-12",
+    "CHY-40",
+    "CHN-39"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "Medium",
+   "placement": [
+    "ch13-consumers",
+    "app-d3-retail-demand-signals"
+   ],
+   "alt_text": "Log-scale bars: 20 g of protein costs about 7,000 to 14,000 VND from eggs, chicken, textured soy, tofu or lean pork, inside a canteen protein budget; 56,000 to 175,000 VND from packaged alternatives, above the 29,000 to 35,000 VND price of a street meal.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-us-pbm-trend",
+   "title": "The US reference case: boom and fade",
+   "subtitle": "US retail plant-based meat and seafood: sales (USD billion) and share of total meat sales (%)",
+   "type": "line",
+   "data": {
+    "file": "charts/data/us_pbm_trend.csv"
+   },
+   "encoding": {
+    "x": "year",
+    "y": "sales_usd_bn",
+    "y2_points": "share_of_total_meat_sales_pct",
+    "tooltip": [
+     "units_million"
+    ]
+   },
+   "annotations": [
+    "Note: household penetration fell from 19% (2021) to 11% (2025) while repeat stayed near 60%."
+   ],
+   "notes": "SPINS data published by GFI.",
+   "source_ids": [
+    "GLB-01",
+    "GLB-02"
+   ],
+   "evidence": "general",
+   "confidence": "High",
+   "placement": [
+    "ch13-consumers",
+    "app-d7-global-benchmarks",
+    "front-prologue",
+    "front-prologue-vi"
+   ],
+   "alt_text": "Line: US plant-based meat and seafood sales fell from USD 1.4 billion in 2021 to 1.0 billion in 2025, and their share of total meat sales from 1.4% to about 0.7%.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-institutional-meals",
+   "title": "Canteens dwarf the tourist niche",
+   "subtitle": "Meals a year, millions, log scale (our calculations)",
+   "type": "range-bar",
+   "data": {
+    "file": "charts/data/institutional_meals.csv"
+   },
+   "encoding": {
+    "y": "channel",
+    "x": "meals_million_mid",
+    "x_scale": "log",
+    "low": "meals_million_low",
+    "high": "meals_million_high",
+    "tooltip": []
+   },
+   "annotations": [
+    "Label each bar with its range."
+   ],
+   "notes": "Canteens: 4.15 million workers x about 300 days; schools: budget divided by subsidy; tourists: 5.5 million visitors x 4 nights x 2 meals x 2 to 5%.",
+   "source_ids": [
+    "CHN-37",
+    "CHN-39",
+    "CHN-29",
+    "CHN-47"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "Low",
+   "placement": [
+    "ch15-channels"
+   ],
+   "alt_text": "Log-scale range bars: up to about 1,000 to 1,245 million factory canteen meals a year, 100 to 150 million subsidised Hanoi primary school lunches, and 1 to 2 million vegetarian meals for international visitors to Khanh Hoa.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-plant-protein-imports",
+   "title": "Plant protein from China nearly tripled",
+   "subtitle": "China-reported exports to Vietnam, tonnes, by customs line, 2019 to 2025",
+   "type": "stacked-bar",
+   "data": {
+    "file": "charts/data/plant_protein_imports_china.csv"
+   },
+   "encoding": {
+    "x": "year",
+    "y": [
+     "hs3504_protein_substances_t",
+     "hs210610_textured_and_concentrates_t",
+     "hs1109_wheat_gluten_t"
+    ],
+    "tooltip": []
+   },
+   "annotations": [
+    "Label totals: 18,375 t (2019) and 53,976 t (2025).",
+    "Note: the 2024 jump in HS 3504 is probably partly feed-grade."
+   ],
+   "notes": "Partner-reported (mirror) data from UN Comtrade.",
+   "source_ids": [
+    "BUY-02"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "High",
+   "placement": [
+    "ch16-business-buyers"
+   ],
+   "alt_text": "Stacked bars: plant protein shipped from China to Vietnam rose from 18,375 t in 2019 to 53,976 t in 2025, with protein substances (HS 3504) jumping from 10,028 t in 2023 to 25,267 t in 2024.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-ingredient-price-ladder",
+   "title": "Two rungs: commodity plant protein and everything else",
+   "subtitle": "Border price, USD per kg of protein, 2025 (assumed protein grades)",
+   "type": "range-bar",
+   "data": {
+    "file": "charts/data/ingredient_price_ladder.csv"
+   },
+   "encoding": {
+    "y": "ingredient",
+    "low": "usd_per_kg_protein_low",
+    "high": "usd_per_kg_protein_high",
+    "tooltip": []
+   },
+   "annotations": [
+    "Mark the gap between about USD 2.4 and USD 7 as the choice a new ingredient must make."
+   ],
+   "notes": "FOB unit values and sampled shipments; protein shares are typical-grade assumptions.",
+   "source_ids": [
+    "BUY-02",
+    "BUY-07",
+    "BUY-09"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "Medium",
+   "placement": [
+    "ch16-business-buyers"
+   ],
+   "alt_text": "Range bars: Chinese gluten, textured protein and soy isolate cost USD 1.75 to 2.44 per kg of protein; Chinese pea 2.50 to 3.75; egg white, casein, Western pea and whey concentrate USD 7.38 to 17.56.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-tariff-edge",
+   "title": "Vietnam's tariff edge in Europe and Japan",
+   "subtitle": "Import duty, %: Vietnamese goods against Thai and Chinese goods (MFN, or RCEP for China into Japan), September 2026",
+   "type": "grouped-bar",
+   "data": {
+    "file": "charts/data/tariff_edge.csv"
+   },
+   "encoding": {
+    "x": "market_and_line",
+    "y": [
+     "vietnam_pct",
+     "competitor_pct"
+    ],
+    "tooltip": []
+   },
+   "annotations": [
+    "Note: EU food preparations also carry an agricultural component; UK rates 6 to 12% by line (upper value shown); US charges Vietnamese goods an extra 12.5%."
+   ],
+   "notes": "EU TARIC and UK tariff read on 24 September 2026; Japanese lines read programmatically, to be confirmed.",
+   "source_ids": [
+    "EXP-23",
+    "EXP-24",
+    "EXP-41",
+    "EXP-22"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "High",
+   "placement": [
+    "ch17-export-demand"
+   ],
+   "alt_text": "Grouped bars: Vietnamese textured protein, food preparations, plant drinks and prepared nuts enter the EU and UK at 0% against 9 to 12.8% for Thai and Chinese goods; Japan admits Vietnamese textured vegetable protein free against 6.6% for China.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-forecast-vs-actual",
+   "title": "Forecasts made at the peak overshot",
+   "subtitle": "USD billion, log scale: forecast against the latest comparable actual (2025)",
+   "type": "grouped-bar",
+   "data": {
+    "file": "charts/data/forecast_vs_actual.csv"
+   },
+   "encoding": {
+    "x": "forecast",
+    "y": [
+     "forecast_usd_bn",
+     "latest_actual_usd_bn"
+    ],
+    "y_scale": "log",
+    "tooltip": [
+     "basis"
+    ]
+   },
+   "annotations": [
+    "Note: target years 2029 and 2030 have not arrived; the comparison shows the growth each would still need."
+   ],
+   "notes": "Global retail sales from Euromonitor via GFI.",
+   "source_ids": [
+    "GLB-45",
+    "GLB-44",
+    "GLB-43",
+    "GLB-05",
+    "GLB-06"
+   ],
+   "evidence": "general",
+   "confidence": "Medium",
+   "placement": [
+    "ch18-demand-sizing",
+    "app-d7-global-benchmarks"
+   ],
+   "alt_text": "Log-scale grouped bars: Kearney forecast about USD 120 billion of novel plant-based meat in 2025 against USD 6.6 billion actual; Barclays USD 140 billion by 2029 and Bloomberg Intelligence USD 74 billion of alternative meat by 2030 against USD 6.6 billion in 2025.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-demand-routes",
+   "title": "What the routes deliver",
+   "subtitle": "Protein delivered by domestic or novel protein, kt a year, by route, scenario and year (our estimates)",
+   "type": "stacked-bar",
+   "data": {
+    "file": "charts/data/demand_routes.csv"
+   },
+   "encoding": {
+    "x": "scenario_year",
+    "y": [
+     "r1_import_substitution",
+     "r2_chay_occasions",
+     "r3_hybrids",
+     "r4_institutions",
+     "r5_household_analogues",
+     "r6_plant_milks",
+     "r7_exports"
+    ],
+    "marker": "salt_food_kt",
+    "tooltip": [
+     "scenario",
+     "year"
+    ]
+   },
+   "annotations": [
+    "Mark the S-ALT food assumption for each year as a dot labelled \"S-ALT (meat replaced)\".",
+    "Note: delivered protein is not displaced meat; see the next chart."
+   ],
+   "notes": "Demand model; scenarios, not forecasts.",
+   "source_ids": [
+    "BUY-02",
+    "CHY-06",
+    "CHN-37",
+    "GLB-09"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "Low",
+   "placement": [
+    "ch18-demand-sizing"
+   ],
+   "alt_text": "Stacked bars: on the benchmark path, domestic or novel protein delivers about 6 kt of protein in 2030, 19 kt in 2035 and 67 kt in 2050, mostly as import substitution; the stretch path delivers 14, 46 and 172 kt; incumbent drift 1, 3 and 11 kt.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-displacement-vs-salt",
+   "title": "Meat displaced: the routes against S-ALT",
+   "subtitle": "Meat protein displaced, kt a year (our estimates), against the Part IV S-ALT assumption and the meat already avoided by chay days",
+   "type": "grouped-bar",
+   "data": {
+    "file": "charts/data/displacement_vs_salt.csv"
+   },
+   "encoding": {
+    "x": "year",
+    "y": [
+     "d_drift_displaced_kt",
+     "d_bench_displaced_kt",
+     "d_stretch_displaced_kt",
+     "salt_assumption_kt",
+     "existing_chay_days_kt"
+    ],
+    "tooltip": []
+   },
+   "annotations": [
+    "Style existing chay days as a hatched bar labelled \"already in the baseline\"."
+   ],
+   "notes": "Uneven year spacing.",
+   "source_ids": [
+    "CHY-06",
+    "GLB-19",
+    "GLB-39"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "Low",
+   "placement": [
+    "ch18-demand-sizing"
+   ],
+   "alt_text": "Grouped bars: displaced meat protein reaches 2.4 kt in 2035 on the benchmark path and 9.2 kt on the stretch path, against 39.3 kt assumed by S-ALT; existing chay days already avoid about 32 kt.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-demand-sensitivity",
+   "title": "No single assumption closes the gap",
+   "subtitle": "Meat protein displaced in D-BENCH 2035, kt, with one assumption at its low and high value",
+   "type": "tornado",
+   "data": {
+    "file": "charts/data/demand_tornado.csv"
+   },
+   "encoding": {
+    "y": "assumption",
+    "low": "displaced_at_low_kt",
+    "high": "displaced_at_high_kt",
+    "centre": "central_kt",
+    "tooltip": [
+     "low_value",
+     "high_value"
+    ]
+   },
+   "annotations": [
+    "Add a note: S-ALT assumes 39.3 kt in 2035, off the scale."
+   ],
+   "notes": "One-at-a-time sensitivity.",
+   "source_ids": [
+    "CHY-06",
+    "BUY-04",
+    "CHN-37"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "Low",
+   "placement": [
+    "app-d8-demand-model"
+   ],
+   "alt_text": "Tornado: the share of people keeping chay days, the share of meat eaten processed and compensation on added chay days move 2035 displacement between about 2.0 and 3.0 kt; every other assumption moves it less.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.3"
+  },
+  {
+   "id": "chart-actor-coverage",
+   "title": "How well Part III answered the actors",
+   "subtitle": "118 demand questions from 80 named actors, by group and how far v0.3 answered them",
+   "type": "stacked-bar-horizontal",
+   "data": {
+    "file": "charts/data/actor_coverage.csv"
+   },
+   "encoding": {
+    "y": "group",
+    "x": [
+     "answered",
+     "partly",
+     "not_answered",
+     "out_of_scope"
+    ],
+    "tooltip": [
+     "group"
+    ]
+   },
+   "annotations": [
+    "One question answered in full across all groups."
+   ],
+   "notes": "Our coding of actor questions against Part III, v0.3.",
+   "source_ids": [
+    "AFN-05",
+    "AIS-01",
+    "AIB-01",
+    "APR-01"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "Medium",
+   "placement": [
+    "ch29-actor-check"
+   ],
+   "alt_text": "Horizontal stacked bars for four actor groups. Funders: 19 partly answered, 10 not answered, 1 out of scope. Investors and startups: 1 answered, 19 partly, 3 not, 2 out of scope. Incumbents: 16 partly, 14 not. Policy, research and international: 17 partly, 15 not, 1 out of scope.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.4"
+  },
+  {
+   "id": "chart-canteen-dish-mix",
+   "title": "What factory canteens serve",
+   "subtitle": "Lead protein of 172 protein dishes on five industrial caterers' published sample menus, % (2023 to 2025)",
+   "type": "bar-horizontal",
+   "data": {
+    "file": "charts/data/canteen_dish_mix.csv"
+   },
+   "encoding": {
+    "y": "lead_protein",
+    "x": "share_pct"
+   },
+   "annotations": [
+    "Tofu leads 8.7% of dishes; plant-only dishes are 2.9%; no textured soy or mock meat named."
+   ],
+   "notes": "Published sample menus, not served meals.",
+   "source_ids": [
+    "UPL-27",
+    "UPL-28",
+    "UPL-29",
+    "UPL-30",
+    "UPL-32"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "Medium",
+   "placement": [
+    "ch15-channels"
+   ],
+   "alt_text": "Horizontal bars: pork leads 33.1% of canteen protein dishes, fish 25.6%, chicken 13.4%, egg 9.9%, tofu 8.7%, beef 5.8%, seafood 2.3%, duck and other animal 0.6% each.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.4"
+  },
+  {
+   "id": "chart-funder-units",
+   "title": "The demand routes in funder units, 2035",
+   "subtitle": "Animals spared a year by route on the benchmark path (D-BENCH), by species, and CO2e avoided (our estimates)",
+   "type": "stacked-bar",
+   "data": {
+    "file": "charts/data/funder_units_2035.csv"
+   },
+   "encoding": {
+    "x": "route",
+    "y": [
+     "poultry_spared",
+     "pigs_spared",
+     "cattle_and_buffalo_spared"
+    ],
+    "secondary": "co2e_avoided_t"
+   },
+   "annotations": [
+    "Import substitution delivers the most protein but spares no animals."
+   ],
+   "notes": "National meat mix; a caterer meat mix gives about 0.60 million animals for canteens instead of 0.89 million. What-if estimates, not forecasts.",
+   "source_ids": [
+    "FUF-03",
+    "FUF-04",
+    "FUF-05",
+    "UPL-27"
+   ],
+   "evidence": "VN-direct",
+   "confidence": "Low",
+   "placement": [
+    "ch18-demand-sizing"
+   ],
+   "alt_text": "Stacked bars for 2035 on the benchmark path: added chay days spare about 1.23 million animals (1.18 million poultry), hybrids about 0.42 million, canteens and schools about 0.89 million, household analogues about 0.12 million, import substitution none; about 0.14 Mt CO2e avoided in total.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.4"
+  },
+  {
+   "id": "chart-protein-footprints",
+   "title": "Greenhouse gas footprint per 100 g of protein, by food",
+   "subtitle": "kg CO2e per 100 g of protein, global means; land use (m2 per 100 g of protein) in the tooltip",
+   "type": "horizontal-bar",
+   "data": {
+    "file": "charts/data/protein_footprints.csv"
+   },
+   "encoding": {
+    "y": "food",
+    "x": "ghg_kg_co2e_per_100g_protein",
+    "color": "group",
+    "tooltip": [
+     "land_m2_per_100g_protein"
+    ]
+   },
+   "annotations": [
+    "Global means; medians are lower for most foods (beef about 25 kg). Footprints vary widely within each food."
+   ],
+   "notes": "Poore and Nemecek (2018) as published by Our World in Data. Means, not medians; land includes grazing land, much of which cannot grow crops.",
+   "source_ids": [
+    "FUF-07",
+    "PRB-01",
+    "PRB-02",
+    "PRB-03"
+   ],
+   "evidence": "general",
+   "confidence": "High",
+   "placement": [
+    "front-prologue",
+    "front-prologue-vi"
+   ],
+   "alt_text": "Horizontal bars: per 100 g of protein, beef from beef herds averages about 50 kg CO2e, lamb 20, farmed prawns 18, dairy-herd beef 17, cheese 11, pork 7.6, farmed fish 6.0, poultry 5.7, eggs 4.2, tofu 2.0, groundnuts 1.2, other pulses 0.8, peas 0.4 and nuts 0.3.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.5"
+  },
+  {
+   "id": "chart-altprotein-investment-by-year",
+   "title": "Alternative protein investment: boom, then correction",
+   "subtitle": "Private investment raised by alternative protein companies, USD million, 2019 to first half of 2026",
+   "type": "stacked-bar",
+   "data": {
+    "file": "charts/data/altprotein_investment_by_year.csv"
+   },
+   "encoding": {
+    "x": "period",
+    "y": [
+     "plant_based_usd_m",
+     "fermentation_usd_m",
+     "cultivated_usd_m"
+    ]
+   },
+   "annotations": [
+    "2021 peak: about USD 7 billion in GFI's current series (USD 5.0 billion as first reported).",
+    "First half of 2026 is half a year."
+   ],
+   "notes": "GFI analysis of Net Zero Insights data (advocacy source). Plant-based 2019 to 2023 from GFI's June 2025 series; fermentation and cultivated from its April 2026 reports; plant-based 2020 to 2022 and all 2021 values rounded to USD 0.1 billion; cultivated counts privately held companies only. Sources disagree on 2024 pillars (see data/prologue_investment_by_year.csv).",
+   "source_ids": [
+    "CAP-51",
+    "PRC-01",
+    "PRC-02",
+    "PRC-04",
+    "GLB-06",
+    "FTB-17",
+    "FTB-24",
+    "HSC-10"
+   ],
+   "evidence": "general",
+   "confidence": "Medium",
+   "placement": [
+    "front-prologue",
+    "front-prologue-vi"
+   ],
+   "alt_text": "Stacked bars (GFI data): total alternative protein investment rose from about USD 1.4 billion in 2019 to about 7.1 billion in 2021, then fell to 3.2 billion in 2022, 1.6 billion in 2023, 1.1 billion in 2024 and 0.88 billion in 2025; fermentation took 252 of 359 million in the first half of 2026.",
+   "render": "Inline SVG generated at build time (no Chart.js). Accessible: include <title> and <desc>, and a visually hidden data table. Respect light and dark themes.",
+   "version": "0.5"
   }
  ]
 }

@@ -45,14 +45,15 @@ const pages = loadPages().map(({ entry, meta, body }) => {
     charts: meta.charts || [],
     related_data: meta.related_data || [],
     related_pages: meta.related_pages || [],
-    new_in: /^(ch1[5-9]|ch20|app-[u-z]-)/.test(meta.id) ? '1.1' : null,
   };
 });
 write('site.json', {
   title: manifest.title,
   publisher: manifest.publisher,
-  edition: manifest.edition,
-  editions: manifest.editions,
+  version: manifest.version,
+  status: manifest.status,
+  draft_notice: manifest.draft_notice,
+  versions: manifest.versions,
   audiences: manifest.audiences,
   audience_paths: manifest.audience_paths,
   nav: manifest.nav,
@@ -113,28 +114,24 @@ for (const block of dictionary.split(/^### /m).slice(1)) {
   for (const m of block.matchAll(/^\| `([^`]+)` \| (.*?) \| (.*?) \|$/gm)) cols[m[1]] = m[2].trim();
   columnDocs[name] = cols;
 }
-const futuresStart = dictionary.indexOf('## Files added in the futures round');
-const futuresFiles = new Set(
-  [...dictionary.slice(futuresStart).matchAll(/^\| \[?`?([a-z0-9_.-]+\.(?:csv|json))/gm)].map(
-    (m) => m[1],
-  ),
-);
+// The views the build brief asks the data browser to feature.
 const DATA_VIEWS = new Set([
   'companies.csv',
   'facilities.csv',
   'sources.csv',
   'open_questions.csv',
   'disagreements.csv',
+  'glossary.csv',
   'policy_options.csv',
-  'routes.csv',
   'retail_audit_skus.csv',
   'balance_outputs.csv',
+  'demand_outputs.csv',
   'scenarios_2050.csv',
   'signposts_2050.csv',
-  'play_robustness.csv',
   'robust_moves.csv',
-  'vision_milestones.csv',
-  'frontier_windows.csv',
+  'target_product_profiles.csv',
+  'demand_moves.csv',
+  'actor_register.csv',
 ]);
 const pageRefs = {};
 for (const p of pages) for (const d of p.related_data) (pageRefs[d] ||= []).push(p.id);
@@ -152,7 +149,6 @@ const addDataset = (dir, file, group) => {
     rows: rows.length,
     purpose: purposes[file]?.purpose || '',
     featured: DATA_VIEWS.has(file),
-    new_in: futuresFiles.has(file) ? '1.1' : null,
     pages: pageRefs[file] || [],
     columns: columns.map((c) => ({ name: c, doc: docs[c] || '' })),
   });
@@ -279,13 +275,23 @@ writeZip(path.join(DOWNLOADS, 'altprotein-vn-report-markdown.zip'), contentEntri
 // Charts (rendered to inline SVG at build time) ----------------------------------------
 let charts = {};
 let chartCss = '';
-try {
+{
   const mod = await import('./charts/index.mjs');
-  charts = mod.renderAllCharts(REPORT);
   chartCss = mod.chartCss || '';
-} catch (error) {
-  if (error.code !== 'ERR_MODULE_NOT_FOUND') throw error;
-  console.warn('Chart renderer not found; charts will render as placeholders.');
+  // Render chart by chart so one missing renderer names every other gap too.
+  const missing = [];
+  for (const spec of readJson('charts/chart-specs.json').charts) {
+    try {
+      charts[spec.id] = mod.renderChart(spec, REPORT);
+    } catch (error) {
+      missing.push(`${spec.id}: ${error.message}`);
+    }
+  }
+  if (missing.length) {
+    const message = `Charts that could not be rendered:\n  ${missing.join('\n  ')}`;
+    if (!process.argv.includes('--allow-missing-charts')) throw new Error(message);
+    console.warn(message);
+  }
 }
 write('charts.json', charts);
 fs.writeFileSync(path.join(GEN, 'charts.css'), chartCss);

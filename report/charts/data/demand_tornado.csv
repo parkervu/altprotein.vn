@@ -1,0 +1,11 @@
+assumption,low_value,high_value,displaced_at_low_kt,displaced_at_high_kt,central_kt
+r2_keeper_share,0.2,0.5,2.04,2.95,2.35
+r3_processed_share,0.03,0.08,2.06,2.77,2.35
+r2_compensation,0.0,0.6,2.73,1.96,2.35
+r4_net_displacement,0.5,1.0,2.1,2.51,2.35
+r4_canteen_meals_bn,0.6,1.2,2.11,2.46,2.35
+r3_net_displacement,0.7,1.0,2.19,2.42,2.35
+r4_protein_per_meal_g,15.0,25.0,2.18,2.51,2.35
+r5_net_displacement,0.0,0.5,2.26,2.47,2.35
+r5_kg_product_per_buyer,1.5,6.0,2.3,2.43,2.35
+r4_school_meals_bn,0.5,1.2,2.32,2.38,2.35

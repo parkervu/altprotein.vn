@@ -967,6 +967,34 @@ html[data-audience] .aud-chip.is-you {
 .fx[data-fx='vision']::before {
   background: currentColor;
 }
+.dx {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: 0.08em;
+  margin: 0 0.1em;
+  font-size: 0.68rem;
+  line-height: 1;
+  font-weight: 620;
+  padding: 2px 6px 3px 5px;
+  border-radius: 3px;
+  border: 1px solid color-mix(in srgb, var(--dx) 55%, transparent);
+  background: var(--dx-soft);
+  color: var(--dx);
+  white-space: nowrap;
+  cursor: help;
+}
+.dx::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 4px solid currentColor;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  margin-right: 4px;
+}
+.kn-meta .dx {
+  margin: 0;
+}
 .legend-row {
   display: flex;
   flex-wrap: wrap;
@@ -1095,6 +1123,13 @@ sup.cite a:hover {
   vertical-align: -0.02em;
   background: currentColor;
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+.callout-draft {
+  --c-line: var(--line-strong);
+  --c-bg: var(--surface-2);
+  --c-label: var(--ink);
+  border-style: dashed;
+  border-left-style: solid;
 }
 .callout-method,
 .callout-note {
@@ -1984,6 +2019,10 @@ html[data-audience] .card:not(.is-for-you):hover {
 .footer-inner a:hover {
   color: var(--brand-ink);
   text-decoration: underline;
+}
+.footer-draft strong {
+  color: var(--warn);
+  font-weight: 620;
 }
 .footer-base {
   max-width: 1440px;

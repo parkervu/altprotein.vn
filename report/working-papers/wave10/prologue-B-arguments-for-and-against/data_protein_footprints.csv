@@ -1,0 +1,15 @@
+food,ghg_kg_co2e_per_100g_protein,land_m2_per_100g_protein,source_ids
+Beef (beef herd),49.89,163.6,FUF-07; PRB-02; PRB-01
+Lamb and mutton,19.85,184.8,FUF-07; PRB-02; PRB-01
+Cheese,10.82,39.8,FUF-07; PRB-02; PRB-01
+Pig meat,7.61,10.7,FUF-07; PRB-02; PRB-01
+Poultry meat,5.70,7.1,FUF-07; PRB-02; PRB-01
+Fish (farmed),5.98,3.7,FUF-07; PRB-02; PRB-01
+Prawns (farmed),18.19,2.0,FUF-07; PRB-02; PRB-01
+Eggs,4.21,5.7,FUF-07; PRB-02; PRB-01
+Tofu,1.98,2.2,FUF-07; PRB-02; PRB-01
+Peas,0.44,3.4,FUF-07; PRB-02; PRB-01
+Nuts,0.26,7.9,FUF-07; PRB-02; PRB-01
+Beef (dairy herd),16.87,21.9,FUF-07; PRB-02; PRB-01
+Groundnuts,1.23,3.5,FUF-07; PRB-02; PRB-01
+Other pulses,0.84,7.3,FUF-07; PRB-02; PRB-01

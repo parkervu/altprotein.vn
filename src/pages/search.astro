@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { t } from '../lib/i18n';
 import { searchPages, searchRecords } from '../lib/search';
-import { PAGE_BY_ID, appendixLetter, chapterNumber, href, localize } from '../lib/site';
+import { PAGE_BY_ID, appendixCode, chapterNumber, href, localize } from '../lib/site';
 
 const lang = Astro.locals.lang ?? 'en';
 const s = t(lang);
@@ -18,7 +18,7 @@ const total = pages.length + records.length;
 const kicker = (id: string) => {
   const p = PAGE_BY_ID.get(id)!;
   if (p.section === 'report') return `${vi ? 'Chương' : 'Chapter'} ${chapterNumber(id)}`;
-  if (p.section === 'appendix') return `${vi ? 'Phụ lục' : 'Appendix'} ${appendixLetter(id)}`;
+  if (p.section === 'appendix') return `${vi ? 'Phụ lục' : 'Appendix'} ${appendixCode(id)}`;
   if (p.section === 'brief') return vi ? 'Bản tóm lược' : 'Brief';
   return vi ? 'Trang đầu' : 'Front matter';
 };

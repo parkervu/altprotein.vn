@@ -8,7 +8,6 @@ export interface Dataset {
   rows: number;
   purpose: string;
   featured: boolean;
-  new_in: string | null;
   pages: string[];
   columns: { name: string; doc: string }[];
 }

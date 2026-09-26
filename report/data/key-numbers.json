@@ -18,12 +18,14 @@
   "confidence": "High",
   "primary_page": "ch01-why-vietnam",
   "pages": [
+   "brief-policy",
+   "ch01-why-vietnam",
+   "front-at-a-glance",
    "front-cover",
    "front-exec-summary",
    "front-exec-summary-vi",
-   "front-at-a-glance",
-   "ch01-why-vietnam",
-   "brief-policy"
+   "front-prologue",
+   "front-prologue-vi"
   ]
  },
  {
@@ -45,8 +47,8 @@
   "confidence": "High",
   "primary_page": "ch01-why-vietnam",
   "pages": [
-   "front-at-a-glance",
-   "ch01-why-vietnam"
+   "ch01-why-vietnam",
+   "front-at-a-glance"
   ]
  },
  {
@@ -70,12 +72,12 @@
   "confidence": "Medium",
   "primary_page": "ch01-why-vietnam",
   "pages": [
-   "front-exec-summary",
-   "front-exec-summary-vi",
-   "front-at-a-glance",
-   "ch01-why-vietnam",
+   "brief-international",
    "brief-policy",
-   "brief-international"
+   "ch01-why-vietnam",
+   "front-at-a-glance",
+   "front-exec-summary",
+   "front-exec-summary-vi"
   ]
  },
  {
@@ -97,8 +99,8 @@
   "confidence": "High",
   "primary_page": "ch01-why-vietnam",
   "pages": [
-   "ch01-why-vietnam",
-   "app-h-feed-market"
+   "app-s6-feed-market",
+   "ch01-why-vietnam"
   ]
  },
  {
@@ -120,8 +122,8 @@
   "confidence": "High",
   "primary_page": "ch01-why-vietnam",
   "pages": [
-   "front-at-a-glance",
-   "ch01-why-vietnam"
+   "ch01-why-vietnam",
+   "front-at-a-glance"
   ]
  },
  {
@@ -143,13 +145,13 @@
   "confidence": "High",
   "primary_page": "ch01-why-vietnam",
   "pages": [
+   "app-s6-feed-market",
+   "brief-manufacturers",
+   "ch01-why-vietnam",
+   "front-at-a-glance",
    "front-cover",
    "front-exec-summary",
-   "front-exec-summary-vi",
-   "front-at-a-glance",
-   "ch01-why-vietnam",
-   "brief-manufacturers",
-   "app-h-feed-market"
+   "front-exec-summary-vi"
   ]
  },
  {
@@ -211,11 +213,11 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch02-asset-map",
+  "primary_page": "ch04-asset-map",
   "pages": [
-   "front-at-a-glance",
-   "ch02-asset-map",
-   "app-c-feedstocks"
+   "app-s4-feedstocks",
+   "ch04-asset-map",
+   "front-at-a-glance"
   ]
  },
  {
@@ -237,14 +239,14 @@
   "derived": true,
   "evidence": "VN-adjacent",
   "confidence": "Low",
-  "primary_page": "ch02-asset-map",
+  "primary_page": "ch04-asset-map",
   "pages": [
+   "app-s4-feedstocks",
+   "ch04-asset-map",
+   "front-at-a-glance",
    "front-cover",
    "front-exec-summary",
-   "front-exec-summary-vi",
-   "front-at-a-glance",
-   "ch02-asset-map",
-   "app-c-feedstocks"
+   "front-exec-summary-vi"
   ]
  },
  {
@@ -264,10 +266,10 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch02-asset-map",
+  "primary_page": "ch04-asset-map",
   "pages": [
-   "ch02-asset-map",
-   "app-c-feedstocks"
+   "app-s4-feedstocks",
+   "ch04-asset-map"
   ]
  },
  {
@@ -287,10 +289,10 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch02-asset-map",
+  "primary_page": "ch04-asset-map",
   "pages": [
-   "ch02-asset-map",
-   "app-c-feedstocks"
+   "app-s4-feedstocks",
+   "ch04-asset-map"
   ]
  },
  {
@@ -311,10 +313,10 @@
   "derived": true,
   "evidence": "VN-adjacent",
   "confidence": "Low",
-  "primary_page": "ch02-asset-map",
+  "primary_page": "ch04-asset-map",
   "pages": [
-   "ch02-asset-map",
-   "app-c-feedstocks"
+   "app-s4-feedstocks",
+   "ch04-asset-map"
   ]
  },
  {
@@ -334,11 +336,11 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch02-asset-map",
+  "primary_page": "ch04-asset-map",
   "pages": [
-   "front-at-a-glance",
-   "ch02-asset-map",
-   "app-c-feedstocks"
+   "app-s4-feedstocks",
+   "ch04-asset-map",
+   "front-at-a-glance"
   ]
  },
  {
@@ -362,12 +364,12 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch03-industrial-base",
+  "primary_page": "ch05-industrial-base",
   "pages": [
-   "front-exec-summary",
+   "app-s5-facilities",
+   "ch05-industrial-base",
    "front-at-a-glance",
-   "ch03-industrial-base",
-   "app-f-facilities"
+   "front-exec-summary"
   ]
  },
  {
@@ -386,11 +388,11 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch03-industrial-base",
+  "primary_page": "ch05-industrial-base",
   "pages": [
-   "front-at-a-glance",
-   "ch03-industrial-base",
-   "app-f-facilities"
+   "app-s5-facilities",
+   "ch05-industrial-base",
+   "front-at-a-glance"
   ]
  },
  {
@@ -410,11 +412,11 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch03-industrial-base",
+  "primary_page": "ch05-industrial-base",
   "pages": [
-   "ch03-industrial-base",
+   "app-s5-facilities",
    "brief-manufacturers",
-   "app-f-facilities"
+   "ch05-industrial-base"
   ]
  },
  {
@@ -434,10 +436,10 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch03-industrial-base",
+  "primary_page": "ch05-industrial-base",
   "pages": [
-   "ch03-industrial-base",
-   "app-f-facilities"
+   "app-s5-facilities",
+   "ch05-industrial-base"
   ]
  },
  {
@@ -456,14 +458,14 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch04-alt-protein-today",
+  "primary_page": "ch02-alt-protein-today",
   "pages": [
-   "front-exec-summary",
-   "front-exec-summary-vi",
-   "front-at-a-glance",
-   "ch04-alt-protein-today",
+   "app-s2-retail-audit",
    "brief-manufacturers",
-   "app-d-retail-audit"
+   "ch02-alt-protein-today",
+   "front-at-a-glance",
+   "front-exec-summary",
+   "front-exec-summary-vi"
   ]
  },
  {
@@ -483,13 +485,13 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch04-alt-protein-today",
+  "primary_page": "ch02-alt-protein-today",
   "pages": [
-   "front-exec-summary",
-   "front-at-a-glance",
-   "ch04-alt-protein-today",
+   "app-s2-retail-audit",
    "brief-manufacturers",
-   "app-d-retail-audit"
+   "ch02-alt-protein-today",
+   "front-at-a-glance",
+   "front-exec-summary"
   ]
  },
  {
@@ -501,7 +503,7 @@
   "value_high": 7957,
   "unit": "t",
   "as_of": "2023",
-  "context": "China-reported 2023 exports under HS 2106.10 (protein concentrates and textured protein) at about USD 1.6 per kg, plus 10,028 t of HS 3504 and 10,338 t of gluten. Meat processors also use these.",
+  "context": "China-reported 2023 exports under HS 2106.10 (protein concentrates and textured protein) at about USD 1.6 per kg (2023; USD 1.24 per kg FOB in 2025, about USD 1.29 to 1.38 landed duty-free), plus 10,028 t of HS 3504 and 10,338 t of gluten. Meat processors also use these.",
   "source_ids": [
    "FORM-05",
    "FORM-06",
@@ -510,10 +512,10 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch04-alt-protein-today",
+  "primary_page": "ch02-alt-protein-today",
   "pages": [
-   "ch04-alt-protein-today",
-   "app-d-retail-audit"
+   "app-s2-retail-audit",
+   "ch02-alt-protein-today"
   ]
  },
  {
@@ -533,10 +535,10 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch04-alt-protein-today",
+  "primary_page": "ch02-alt-protein-today",
   "pages": [
-   "ch04-alt-protein-today",
-   "app-e-directory"
+   "app-s1-directory",
+   "ch02-alt-protein-today"
   ]
  },
  {
@@ -557,10 +559,10 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch04-alt-protein-today",
+  "primary_page": "ch02-alt-protein-today",
   "pages": [
-   "ch04-alt-protein-today",
-   "app-e-directory"
+   "app-s1-directory",
+   "ch02-alt-protein-today"
   ]
  },
  {
@@ -579,44 +581,46 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch04-alt-protein-today",
+  "primary_page": "ch02-alt-protein-today",
   "pages": [
-   "ch04-alt-protein-today",
-   "app-e-directory"
+   "app-s1-directory",
+   "ch02-alt-protein-today"
   ]
  },
  {
   "id": "kn-food-law-window",
-  "label": "Food Safety Law expected before the National Assembly",
-  "label_vi": "Kỳ họp Quốc hội xem xét Luật An toàn thực phẩm sửa đổi",
-  "value": "October to November 2026 (expected)",
+  "label": "Food Safety Law: first reading and vote",
+  "label_vi": "Luật An toàn thực phẩm sửa đổi: cho ý kiến lần đầu và thông qua",
+  "value": "First reading October 2026; vote May 2027",
   "value_low": null,
   "value_high": null,
   "unit": "date",
-  "as_of": "2026",
-  "context": "The one near-term window to add a new-food clause. The draft was notified to the WTO in August 2026; the session timing is not yet confirmed on the agenda, and entry into force on 1 January 2027 is possible.",
+  "as_of": "September 2026",
+  "context": "The National Assembly Standing Committee agreed on 24 September 2026 to take first comments at the October 2026 session and to consider passage at the May 2027 session, so a new-food clause needs to be in the draft revised between the two sessions, in practice by early 2027. The draft was notified to the WTO in August 2026.",
   "source_ids": [
    "REG-12",
    "REG2-04",
-   "REG-14"
+   "APR-07",
+   "APR-08"
   ],
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch05-rules",
+  "primary_page": "ch07-rules",
   "pages": [
-   "front-cover",
-   "front-exec-summary",
-   "front-exec-summary-vi",
-   "front-at-a-glance",
-   "ch05-rules",
-   "ch12-policy-options",
-   "ch13-outlook",
+   "app-s9-regulation",
+   "brief-international",
    "brief-investors",
    "brief-policy",
-   "brief-international",
-   "app-g-regulation"
-  ]
+   "ch07-rules",
+   "ch27-policy-options",
+   "ch19-outlook-2035",
+   "front-at-a-glance",
+   "front-cover",
+   "front-exec-summary",
+   "front-exec-summary-vi"
+  ],
+  "version_note": "Updated in v0.4"
  },
  {
   "id": "kn-feed-trial-agency-days",
@@ -635,10 +639,10 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch05-rules",
+  "primary_page": "ch07-rules",
   "pages": [
-   "ch05-rules",
-   "app-g-regulation"
+   "app-s9-regulation",
+   "ch07-rules"
   ]
  },
  {
@@ -657,10 +661,10 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch05-rules",
+  "primary_page": "ch07-rules",
   "pages": [
-   "ch05-rules",
-   "app-g-regulation"
+   "app-s9-regulation",
+   "ch07-rules"
   ]
  },
  {
@@ -679,10 +683,10 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch05-rules",
+  "primary_page": "ch07-rules",
   "pages": [
-   "ch05-rules",
-   "app-g-regulation"
+   "app-s9-regulation",
+   "ch07-rules"
   ]
  },
  {
@@ -694,7 +698,7 @@
   "value_high": 0.31,
   "unit": "ratio",
   "as_of": "2015 to Sep 2026",
-  "context": "Plant-based or cultivated meat records per 10,000 publications, 2015 to September 2026: Vietnam 0.37 against Thailand 1.58 on OpenAIRE, about 23% (our calculation). Edition 1.1 adds OpenAlex: 4.1 against 13.4 core-basket works per 10,000 national publications, 2015 to 2025, about 31%. Counts are lower bounds.",
+  "context": "Plant-based or cultivated meat records per 10,000 publications, 2015 to September 2026: Vietnam 0.37 against Thailand 1.58 on OpenAIRE, about 23% (our calculation). Version 0.2 adds OpenAlex: 4.1 against 13.4 core-basket works per 10,000 national publications, 2015 to 2025, about 31%. Counts are lower bounds.",
   "source_ids": [
    "BIB-01",
    "HSC-01"
@@ -704,10 +708,10 @@
   "confidence": "Medium",
   "primary_page": "ch06-knowledge-talent",
   "pages": [
-   "front-at-a-glance",
-   "ch06-knowledge-talent",
+   "app-s7-research",
    "brief-research",
-   "app-k-research"
+   "ch06-knowledge-talent",
+   "front-at-a-glance"
   ]
  },
  {
@@ -728,10 +732,10 @@
   "confidence": "High",
   "primary_page": "ch06-knowledge-talent",
   "pages": [
-   "ch06-knowledge-talent",
+   "app-s7-research",
+   "app-s8-labs-talent",
    "brief-research",
-   "app-k-research",
-   "app-l-labs-talent"
+   "ch06-knowledge-talent"
   ]
  },
  {
@@ -753,13 +757,13 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch07-capital",
+  "primary_page": "ch08-capital",
   "pages": [
-   "front-at-a-glance",
-   "ch07-capital",
-   "brief-investors",
+   "app-s11-capital",
    "brief-international",
-   "app-m-capital"
+   "brief-investors",
+   "ch08-capital",
+   "front-at-a-glance"
   ]
  },
  {
@@ -779,10 +783,10 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch07-capital",
+  "primary_page": "ch08-capital",
   "pages": [
-   "ch07-capital",
-   "app-m-capital"
+   "app-s11-capital",
+   "ch08-capital"
   ]
  },
  {
@@ -801,15 +805,15 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch07-capital",
+  "primary_page": "ch08-capital",
   "pages": [
-   "front-exec-summary",
-   "front-exec-summary-vi",
-   "front-at-a-glance",
-   "ch07-capital",
-   "brief-investors",
+   "app-s11-capital",
    "brief-international",
-   "app-m-capital"
+   "brief-investors",
+   "ch08-capital",
+   "front-at-a-glance",
+   "front-exec-summary",
+   "front-exec-summary-vi"
   ]
  },
  {
@@ -828,10 +832,10 @@
   "derived": false,
   "evidence": "general",
   "confidence": "High",
-  "primary_page": "ch07-capital",
+  "primary_page": "ch08-capital",
   "pages": [
-   "ch07-capital",
-   "app-m-capital"
+   "app-s11-capital",
+   "ch08-capital"
   ]
  },
  {
@@ -851,14 +855,14 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch08-regional",
+  "primary_page": "ch03-regional",
   "pages": [
-   "front-exec-summary",
-   "front-at-a-glance",
-   "ch08-regional",
-   "brief-policy",
+   "app-s3-regional",
    "brief-international",
-   "app-n-regional"
+   "brief-policy",
+   "ch03-regional",
+   "front-at-a-glance",
+   "front-exec-summary"
   ]
  },
  {
@@ -878,10 +882,10 @@
   "derived": false,
   "evidence": "VN-adjacent",
   "confidence": "High",
-  "primary_page": "ch08-regional",
+  "primary_page": "ch03-regional",
   "pages": [
-   "ch08-regional",
-   "app-n-regional"
+   "app-s3-regional",
+   "ch03-regional"
   ]
  },
  {
@@ -900,15 +904,15 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch08-regional",
+  "primary_page": "ch03-regional",
   "pages": [
-   "front-at-a-glance",
-   "ch08-regional",
-   "app-n-regional"
+   "app-s3-regional",
+   "ch03-regional",
+   "front-at-a-glance"
   ]
  },
  {
-  "id": "kn-protein-ingredient-imports",
+  "id": "kn-food-protein-ingredient-imports-2023",
   "label": "Food protein ingredient imports",
   "label_vi": "Kim ngạch nhập khẩu nguyên liệu đạm thực phẩm",
   "value": "about USD 56 million",
@@ -924,11 +928,13 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch08-regional",
+  "primary_page": "ch03-regional",
   "pages": [
-   "ch08-regional",
-   "app-n-regional"
-  ]
+   "app-s3-regional",
+   "ch03-regional",
+   "ch16-business-buyers"
+  ],
+  "version_note": "Id changed in v0.6 (was a duplicate of kn-protein-ingredient-imports)"
  },
  {
   "id": "kn-labour-share-cost",
@@ -946,9 +952,9 @@
   "derived": false,
   "evidence": "general",
   "confidence": "High",
-  "primary_page": "ch08-regional",
+  "primary_page": "ch03-regional",
   "pages": [
-   "ch08-regional"
+   "ch03-regional"
   ]
  },
  {
@@ -970,9 +976,9 @@
   "confidence": "High",
   "primary_page": "ch09-economics",
   "pages": [
-   "ch09-economics",
+   "app-s12-costs",
    "brief-startups",
-   "app-i-costs"
+   "ch09-economics"
   ]
  },
  {
@@ -994,9 +1000,9 @@
   "confidence": "High",
   "primary_page": "ch09-economics",
   "pages": [
-   "ch09-economics",
+   "app-s12-costs",
    "brief-startups",
-   "app-i-costs"
+   "ch09-economics"
   ]
  },
  {
@@ -1018,8 +1024,8 @@
   "confidence": "High",
   "primary_page": "ch09-economics",
   "pages": [
-   "ch09-economics",
-   "app-i-costs"
+   "app-s12-costs",
+   "ch09-economics"
   ]
  },
  {
@@ -1046,12 +1052,12 @@
   "confidence": "Low",
   "primary_page": "ch09-economics",
   "pages": [
-   "front-exec-summary",
-   "front-exec-summary-vi",
-   "front-at-a-glance",
-   "ch09-economics",
+   "app-s12-costs",
    "brief-investors",
-   "app-i-costs"
+   "ch09-economics",
+   "front-at-a-glance",
+   "front-exec-summary",
+   "front-exec-summary-vi"
   ]
  },
  {
@@ -1073,39 +1079,42 @@
   "confidence": "High",
   "primary_page": "ch09-economics",
   "pages": [
-   "front-exec-summary",
-   "front-at-a-glance",
-   "ch09-economics",
+   "app-s6-feed-market",
    "brief-investors",
-   "app-h-feed-market"
+   "ch09-economics",
+   "front-at-a-glance",
+   "front-exec-summary"
   ]
  },
  {
   "id": "kn-tvp-cost",
   "label": "Indicative cost of textured soy protein",
   "label_vi": "Giá thành ước tính của đạm đậu nành tạo cấu trúc",
-  "value": "3,700 to 10,700 VND per 100 g protein",
-  "value_low": 3700,
-  "value_high": 10700,
+  "value": "about 3,800 to 7,900 VND per 100 g protein",
+  "value_low": 3800,
+  "value_high": 7900,
   "unit": "VND per 100 g protein",
   "as_of": "2026",
-  "context": "Our indicative 2026 cost for a 3,000 t a year extrusion line on imported soy flour or concentrate. It is a small fraction of retail meat and egg protein prices.",
+  "context": "Our indicative 2026 full cost of domestic dry textured soy (USD 0.76 to 1.57 per kg) for 0.5 and 1 t per hour lines on imported food-grade soy flour, at 50 to 90% utilisation. Flour is 63 to 85% of cost; Chinese product lands at about USD 1.29 to 1.38 per kg at the 0% duty that applies, so the delivered flour price decides whether a line pays.",
   "source_ids": [
    "COST-01",
    "COST-19",
    "COST-21",
-   "COST-28"
+   "COST-28",
+   "TIC-12",
+   "TIC-13"
   ],
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
   "primary_page": "ch09-economics",
   "pages": [
-   "front-at-a-glance",
-   "ch09-economics",
+   "app-s12-costs",
    "brief-startups",
-   "app-i-costs"
-  ]
+   "ch09-economics",
+   "front-at-a-glance"
+  ],
+  "version_note": "Updated in v0.4"
  },
  {
   "id": "kn-retail-protein-floor",
@@ -1127,9 +1136,9 @@
   "confidence": "Medium",
   "primary_page": "ch09-economics",
   "pages": [
-   "front-at-a-glance",
+   "brief-startups",
    "ch09-economics",
-   "brief-startups"
+   "front-at-a-glance"
   ]
  },
  {
@@ -1152,9 +1161,9 @@
   "confidence": "Low",
   "primary_page": "ch09-economics",
   "pages": [
-   "ch09-economics",
+   "app-s12-costs",
    "brief-startups",
-   "app-i-costs"
+   "ch09-economics"
   ]
  },
  {
@@ -1179,10 +1188,10 @@
   "confidence": "High",
   "primary_page": "ch10-technology-fit",
   "pages": [
-   "front-at-a-glance",
-   "ch10-technology-fit",
+   "app-s13-science",
    "brief-research",
-   "app-j-science"
+   "ch10-technology-fit",
+   "front-at-a-glance"
   ]
  },
  {
@@ -1204,10 +1213,10 @@
   "confidence": "High",
   "primary_page": "ch10-technology-fit",
   "pages": [
-   "ch10-technology-fit",
+   "app-s6-feed-market",
+   "app-s13-science",
    "brief-manufacturers",
-   "app-h-feed-market",
-   "app-j-science"
+   "ch10-technology-fit"
   ]
  },
  {
@@ -1230,9 +1239,9 @@
   "confidence": "High",
   "primary_page": "ch10-technology-fit",
   "pages": [
-   "ch10-technology-fit",
+   "app-s13-science",
    "brief-research",
-   "app-j-science"
+   "ch10-technology-fit"
   ]
  },
  {
@@ -1255,8 +1264,8 @@
   "confidence": "Medium",
   "primary_page": "ch10-technology-fit",
   "pages": [
-   "ch10-technology-fit",
-   "app-j-science"
+   "app-s13-science",
+   "ch10-technology-fit"
   ]
  },
  {
@@ -1273,9 +1282,9 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch11-plays",
+  "primary_page": "ch26-plays",
   "pages": [
-   "ch11-plays"
+   "ch26-plays"
   ]
  },
  {
@@ -1292,9 +1301,9 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch11-plays",
+  "primary_page": "ch26-plays",
   "pages": [
-   "ch11-plays"
+   "ch26-plays"
   ]
  },
  {
@@ -1306,14 +1315,14 @@
   "value_high": 33,
   "unit": "count",
   "as_of": "Sep 2026",
-  "context": "Our count from policy_options.csv (September 2026): 33 options, of which chapter 12 ranks 24; the other nine earlier options are kept but superseded by more specific ones.",
+  "context": "Our count from policy_options.csv (September 2026): 33 options, of which chapter 27 ranks 24; the other nine earlier options are kept but superseded by more specific ones.",
   "source_ids": [],
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch12-policy-options",
+  "primary_page": "ch27-policy-options",
   "pages": [
-   "ch12-policy-options"
+   "ch27-policy-options"
   ]
  },
  {
@@ -1330,9 +1339,9 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch12-policy-options",
+  "primary_page": "ch27-policy-options",
   "pages": [
-   "ch12-policy-options"
+   "ch27-policy-options"
   ]
  },
  {
@@ -1344,7 +1353,7 @@
   "value_high": 32,
   "unit": "Mt",
   "as_of": "2030 target",
-  "context": "Set by the livestock strategy (Decision 1520/2020), against about 22 Mt of livestock and poultry feed in 2025. The texts do not make clear whether the target includes aquafeed.",
+  "context": "Set by the livestock strategy (Decision 1520/2020), against about 22 Mt of livestock and poultry feed in 2025. The feed scheme (Decision 1625/QD-TTg, 2023) indicates that the target covers livestock feed only (Medium confidence); see kn-feed-target-livestock-2030 for the comparison with our model.",
   "source_ids": [
    "REG-54",
    "MAC-23"
@@ -1352,12 +1361,12 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch13-outlook",
+  "primary_page": "ch19-outlook-2035",
   "pages": [
-   "front-at-a-glance",
-   "ch13-outlook",
+   "app-f1-outlook",
    "brief-policy",
-   "app-o-outlook"
+   "ch19-outlook-2035",
+   "front-at-a-glance"
   ]
  },
  {
@@ -1376,10 +1385,10 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch13-outlook",
+  "primary_page": "ch19-outlook-2035",
   "pages": [
-   "ch13-outlook",
-   "app-o-outlook"
+   "app-f1-outlook",
+   "ch19-outlook-2035"
   ]
  },
  {
@@ -1398,74 +1407,73 @@
   "derived": true,
   "evidence": "general",
   "confidence": "High",
-  "primary_page": "ch13-outlook",
+  "primary_page": "ch19-outlook-2035",
   "pages": [
-   "ch13-outlook",
-   "app-h-feed-market",
-   "app-o-outlook"
+   "app-s6-feed-market",
+   "app-f1-outlook",
+   "ch19-outlook-2035"
   ]
  },
  {
   "id": "kn-open-questions",
   "label": "Open questions in the register",
   "label_vi": "Số câu hỏi còn bỏ ngỏ",
-  "value": "155",
-  "value_low": 155,
-  "value_high": 155,
+  "value": "376",
+  "value_low": 376,
+  "value_high": 376,
   "unit": "count",
   "as_of": "Sep 2026",
-  "context": "Our count from open_questions.csv (edition 1.1, September 2026), including 28 added by the futures round. Each question records why it matters, the cheapest way to close it and who to ask; chapter 14 ranks the twenty that matter most.",
+  "context": "Our count from open_questions.csv (v0.4, September 2026), including 28 added by the futures round, 114 by the demand round and 107 by the actor check and expansion waves 7 to 9. Each question records why it matters, the cheapest way to close it and who to ask; chapter 30 ranks the twenty supply-side questions that matter most.",
   "source_ids": [],
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch14-unknowns",
+  "primary_page": "ch30-unknowns",
   "pages": [
-   "ch14-unknowns",
-   "app-a-method",
-   "app-q-open-questions"
+   "app-m1-method",
+   "app-r1-open-questions",
+   "ch30-unknowns"
   ]
  },
  {
   "id": "kn-disagreements",
   "label": "Recorded disagreements between sources",
   "label_vi": "Số điểm bất nhất giữa các nguồn",
-  "value": "170",
-  "value_low": 170,
-  "value_high": 170,
+  "value": "352",
+  "value_low": 352,
+  "value_high": 352,
   "unit": "count",
   "as_of": "Sep 2026",
-  "context": "Our count from disagreements.csv (edition 1.1, September 2026), including 28 added by the futures round. Each entry gives both claims and the position we took; we never average disagreeing numbers.",
+  "context": "Our count from disagreements.csv (v0.4, September 2026), including 28 added by the futures round, 89 by the demand round and 93 by the actor check and expansion waves 7 to 9. Each entry gives both claims and the position we took; we never average disagreeing numbers.",
   "source_ids": [],
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch14-unknowns",
+  "primary_page": "ch30-unknowns",
   "pages": [
-   "ch14-unknowns",
-   "app-a-method",
-   "app-r-disagreements"
+   "app-m1-method",
+   "app-r2-disagreements",
+   "ch30-unknowns"
   ]
  },
  {
   "id": "kn-sources-count",
   "label": "Sources logged",
   "label_vi": "Số nguồn tài liệu đã ghi nhận",
-  "value": "1,275",
-  "value_low": 1275,
-  "value_high": 1275,
+  "value": "2,384",
+  "value_low": 2384,
+  "value_high": 2384,
   "unit": "count",
-  "as_of": "Sep 2026 (edition 1.1)",
-  "context": "Our count from sources.csv: 599 sources from wave 1 and 207 from wave 2 (edition 1.0), plus 469 from the futures round (waves 3 to 5, edition 1.1), including press, peer-reviewed papers, company pages, statistics and legal texts. Three rows record our own calculation scripts.",
+  "as_of": "Sep 2026",
+  "context": "Our count from sources.csv: 599 sources from wave 1 and 207 from wave 2 (v0.1), 469 from the futures round (waves 3 to 5, v0.2), 451 from the demand round (wave 6, v0.3), 577 from the actor check and expansion waves 7 to 9 (v0.4) and 81 from the prologue research (wave 10, v0.5), including press, peer-reviewed papers, company pages, statistics and legal texts.",
   "source_ids": [],
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "app-t-sources",
+  "primary_page": "app-r4-sources",
   "pages": [
-   "app-a-method",
-   "app-t-sources",
-   "app-u-futures-method"
+   "app-m1-method",
+   "app-r4-sources"
   ]
  },
  {
@@ -1484,9 +1492,9 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "app-p-admin-map",
+  "primary_page": "app-s10-admin-map",
   "pages": [
-   "app-p-admin-map"
+   "app-s10-admin-map"
   ]
  },
  {
@@ -1505,14 +1513,14 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch15-drivers-2050",
+  "primary_page": "ch20-drivers-2050",
   "pages": [
-   "app-x-drivers-signals",
-   "ch15-drivers-2050"
+   "app-f2-drivers-signals",
+   "ch20-drivers-2050"
   ],
   "foresight_type": "projection",
   "horizon": "2035 to 2040",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-ag-emissions-cap-2050",
@@ -1532,14 +1540,14 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch15-drivers-2050",
+  "primary_page": "ch20-drivers-2050",
   "pages": [
-   "app-y-targets-hubs",
-   "ch15-drivers-2050"
+   "app-f5-targets-hubs",
+   "ch20-drivers-2050"
   ],
   "foresight_type": "projection",
   "horizon": "2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-delta-subsidence",
@@ -1560,15 +1568,15 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch15-drivers-2050",
+  "primary_page": "ch20-drivers-2050",
   "pages": [
-   "app-x-drivers-signals",
+   "app-f2-drivers-signals",
    "brief-international",
-   "ch15-drivers-2050"
+   "ch20-drivers-2050"
   ],
   "foresight_type": "trend",
   "horizon": "2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-maize-joint-loss-4c",
@@ -1586,16 +1594,16 @@
   "derived": false,
   "evidence": "general",
   "confidence": "High",
-  "primary_page": "ch15-drivers-2050",
+  "primary_page": "ch20-drivers-2050",
   "pages": [
-   "app-x-drivers-signals",
+   "app-f2-drivers-signals",
    "brief-manufacturers",
-   "ch15-drivers-2050",
+   "ch20-drivers-2050",
    "front-at-a-glance"
   ],
   "foresight_type": "projection",
   "horizon": "2040s (2 °C)",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-p2p-cost-vn-2050",
@@ -1614,16 +1622,16 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch16-frontier-technology",
+  "primary_page": "ch21-frontier-technology",
   "pages": [
-   "app-v-frontier-tech",
+   "app-f3-frontier-tech",
    "brief-investors",
-   "ch16-frontier-technology",
+   "ch21-frontier-technology",
    "front-at-a-glance"
   ],
   "foresight_type": "estimate",
   "horizon": "2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-learning-rate-fermentation",
@@ -1644,14 +1652,14 @@
   "derived": false,
   "evidence": "general",
   "confidence": "Medium",
-  "primary_page": "ch16-frontier-technology",
+  "primary_page": "ch21-frontier-technology",
   "pages": [
-   "app-v-frontier-tech",
-   "ch16-frontier-technology"
+   "app-f3-frontier-tech",
+   "ch21-frontier-technology"
   ],
   "foresight_type": "trend",
   "horizon": "2030 to 2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-fungal-protein-floor",
@@ -1675,15 +1683,15 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch16-frontier-technology",
+  "primary_page": "ch21-frontier-technology",
   "pages": [
-   "app-v-frontier-tech",
+   "app-f3-frontier-tech",
    "brief-startups",
-   "ch16-frontier-technology"
+   "ch21-frontier-technology"
   ],
   "foresight_type": "estimate",
   "horizon": "2030 to 2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-p2p-energy-per-mt",
@@ -1703,14 +1711,14 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch16-frontier-technology",
+  "primary_page": "ch21-frontier-technology",
   "pages": [
-   "app-v-frontier-tech",
-   "ch16-frontier-technology"
+   "app-f3-frontier-tech",
+   "ch21-frontier-technology"
   ],
   "foresight_type": "estimate",
   "horizon": "2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-vn-gas-protein-papers",
@@ -1729,15 +1737,15 @@
   "derived": false,
   "evidence": "VN-direct",
   "confidence": "High",
-  "primary_page": "ch16-frontier-technology",
+  "primary_page": "ch21-frontier-technology",
   "pages": [
-   "app-v-frontier-tech",
+   "app-f3-frontier-tech",
    "brief-research",
-   "ch16-frontier-technology"
+   "ch21-frontier-technology"
   ],
   "foresight_type": "trend",
   "horizon": "2026",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-sbm-need-2050",
@@ -1756,11 +1764,11 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch17-protein-balance-2050",
+  "primary_page": "ch22-protein-balance-2050",
   "pages": [
-   "app-w-balance-model",
+   "app-f4-balance-model",
    "brief-manufacturers",
-   "ch17-protein-balance-2050",
+   "ch22-protein-balance-2050",
    "front-at-a-glance",
    "front-cover",
    "front-exec-summary",
@@ -1768,7 +1776,7 @@
   ],
   "foresight_type": "estimate",
   "horizon": "2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-sbm-range-2050",
@@ -1786,15 +1794,15 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch17-protein-balance-2050",
+  "primary_page": "ch22-protein-balance-2050",
   "pages": [
-   "app-w-balance-model",
-   "ch17-protein-balance-2050",
+   "app-f4-balance-model",
+   "ch22-protein-balance-2050",
    "front-at-a-glance"
   ],
   "foresight_type": "estimate",
   "horizon": "2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-land-abroad-feed",
@@ -1813,15 +1821,15 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch17-protein-balance-2050",
+  "primary_page": "ch22-protein-balance-2050",
   "pages": [
-   "app-w-balance-model",
-   "ch17-protein-balance-2050",
+   "app-f4-balance-model",
+   "ch22-protein-balance-2050",
    "front-at-a-glance"
   ],
   "foresight_type": "estimate",
   "horizon": "2025, 2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-efficiency-vs-alt",
@@ -1839,18 +1847,18 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch17-protein-balance-2050",
+  "primary_page": "ch22-protein-balance-2050",
   "pages": [
-   "app-w-balance-model",
+   "app-f4-balance-model",
    "brief-manufacturers",
-   "ch17-protein-balance-2050",
+   "ch22-protein-balance-2050",
    "front-at-a-glance",
    "front-exec-summary",
    "front-exec-summary-vi"
   ],
   "foresight_type": "estimate",
   "horizon": "2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-salt-plants-2050",
@@ -1869,15 +1877,15 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch17-protein-balance-2050",
+  "primary_page": "ch22-protein-balance-2050",
   "pages": [
-   "app-w-balance-model",
+   "app-f4-balance-model",
    "brief-investors",
-   "ch17-protein-balance-2050"
+   "ch22-protein-balance-2050"
   ],
   "foresight_type": "estimate",
   "horizon": "2030, 2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-omega3-need-2050",
@@ -1896,15 +1904,15 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch17-protein-balance-2050",
+  "primary_page": "ch22-protein-balance-2050",
   "pages": [
-   "app-z-aquafeed-feedstock-futures",
+   "app-f6-aquafeed-feedstock-futures",
    "brief-startups",
-   "ch17-protein-balance-2050"
+   "ch22-protein-balance-2050"
   ],
   "foresight_type": "estimate",
   "horizon": "2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-feed-target-livestock-2030",
@@ -1924,15 +1932,15 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Medium",
-  "primary_page": "ch17-protein-balance-2050",
+  "primary_page": "ch22-protein-balance-2050",
   "pages": [
-   "app-w-balance-model",
+   "app-f4-balance-model",
    "brief-policy",
-   "ch17-protein-balance-2050"
+   "ch22-protein-balance-2050"
   ],
   "foresight_type": "estimate",
   "horizon": "2030",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-anchoveta-2026",
@@ -1952,14 +1960,14 @@
   "derived": false,
   "evidence": "general",
   "confidence": "Medium",
-  "primary_page": "ch18-scenarios-2050",
+  "primary_page": "ch23-scenarios-2050",
   "pages": [
-   "app-x-drivers-signals",
-   "ch18-scenarios-2050"
+   "app-f2-drivers-signals",
+   "ch23-scenarios-2050"
   ],
   "foresight_type": "signal",
   "horizon": "2026 to 2027",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-no-regret-plays",
@@ -1978,13 +1986,13 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch18-scenarios-2050",
+  "primary_page": "ch23-scenarios-2050",
   "pages": [
-   "ch18-scenarios-2050"
+   "ch23-scenarios-2050"
   ],
   "foresight_type": "estimate",
   "horizon": "2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-vision-sbm-2050",
@@ -2004,17 +2012,17 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch19-vision-2050",
+  "primary_page": "ch24-vision-2050",
   "pages": [
    "brief-policy",
-   "ch19-vision-2050",
+   "ch24-vision-2050",
    "front-at-a-glance",
    "front-exec-summary",
    "front-exec-summary-vi"
   ],
   "foresight_type": "vision",
   "horizon": "2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-vision-microbial-share-2050",
@@ -2034,15 +2042,15 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch19-vision-2050",
+  "primary_page": "ch24-vision-2050",
   "pages": [
-   "ch19-vision-2050",
+   "ch24-vision-2050",
    "front-exec-summary",
    "front-exec-summary-vi"
   ],
   "foresight_type": "vision",
   "horizon": "2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-vision-omega3-2050",
@@ -2062,14 +2070,14 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch19-vision-2050",
+  "primary_page": "ch24-vision-2050",
   "pages": [
-   "app-z-aquafeed-feedstock-futures",
-   "ch19-vision-2050"
+   "app-f6-aquafeed-feedstock-futures",
+   "ch24-vision-2050"
   ],
   "foresight_type": "vision",
   "horizon": "2050",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-protein-plan-horizons",
@@ -2091,14 +2099,14 @@
   "derived": false,
   "evidence": "general",
   "confidence": "Medium",
-  "primary_page": "ch19-vision-2050",
+  "primary_page": "ch24-vision-2050",
   "pages": [
-   "app-y-targets-hubs",
-   "ch19-vision-2050"
+   "app-f5-targets-hubs",
+   "ch24-vision-2050"
   ],
   "foresight_type": "trend",
   "horizon": "2035",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-no-regret-moves",
@@ -2117,18 +2125,18 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch20-robust-moves",
+  "primary_page": "ch28-robust-moves",
   "pages": [
    "brief-international",
    "brief-policy",
-   "ch20-robust-moves",
+   "ch28-robust-moves",
    "front-at-a-glance",
    "front-exec-summary",
    "front-exec-summary-vi"
   ],
   "foresight_type": "estimate",
   "horizon": "2030",
-  "edition": "1.1"
+  "version": "0.2"
  },
  {
   "id": "kn-capital-charge-lever",
@@ -2153,13 +2161,1493 @@
   "derived": true,
   "evidence": "VN-direct",
   "confidence": "Low",
-  "primary_page": "ch20-robust-moves",
+  "primary_page": "ch28-robust-moves",
   "pages": [
    "brief-investors",
-   "ch20-robust-moves"
+   "ch28-robust-moves"
   ],
   "foresight_type": "estimate",
   "horizon": "2030",
-  "edition": "1.1"
+  "version": "0.2"
+ },
+ {
+  "id": "kn-meat-intake-2020",
+  "label": "Meat eaten per person per day (2020)",
+  "label_vi": "Lượng thịt tiêu thụ bình quân mỗi người mỗi ngày (2020)",
+  "value": "136.4 g",
+  "value_low": 136.4,
+  "value_high": 136.4,
+  "unit": "g per person per day",
+  "as_of": "2020",
+  "context": "National General Nutrition Survey 2019 to 2020; urban residents 155.3 g; 84 g in 2010. The national recommendation is 50 to 80 g.",
+  "source_ids": [
+   "DIE-01",
+   "DIE-02"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch11-protein-diet",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch11-protein-diet",
+   "front-at-a-glance"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-animal-protein-share",
+  "label": "Share of protein supply from animal foods (2023)",
+  "label_vi": "Tỷ trọng đạm từ thực phẩm động vật trong nguồn cung đạm (2023)",
+  "value": "42%",
+  "value_low": 42,
+  "value_high": 42,
+  "unit": "%",
+  "as_of": "2023",
+  "context": "43.2 of 102.2 g of protein per person per day (FAO food balance sheets); 21% in 1990 and 28% in 2000. Neighbours level off at 55 to 60%.",
+  "source_ids": [
+   "DIE-07",
+   "DIE-08"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch11-protein-diet",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch11-protein-diet"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-meat-growth-2035",
+  "label": "Rise in meat eaten per person, 2025 to 2035 (projection)",
+  "label_vi": "Mức tăng tiêu thụ thịt bình quân đầu người, 2025 đến 2035 (dự báo)",
+  "value": "+25%",
+  "value_low": 25,
+  "value_high": 25,
+  "unit": "%",
+  "as_of": "2026 outlook",
+  "context": "OECD-FAO baseline: 49.8 to 62.2 kg per person (retail weight); poultry from 17.0 to 25.8 kg. With population growth, about 1.56 Mt more meat a year by 2035 (our calculation).",
+  "source_ids": [
+   "DIE-11",
+   "DIE-36"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch11-protein-diet",
+  "foresight_type": "projection",
+  "horizon": "2035",
+  "demand_evidence_type": "inferred",
+  "pages": [
+   "ch11-protein-diet"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-protein-price-floor",
+  "label": "Retail price of protein from eggs and chicken",
+  "label_vi": "Giá bán lẻ đạm từ trứng và thịt gà",
+  "value": "VND 34,000 to 45,000 per 100 g of protein",
+  "value_low": 34000,
+  "value_high": 45000,
+  "unit": "VND per 100 g protein",
+  "as_of": "September 2026",
+  "context": "Hen eggs 34,300; chicken thigh 39,000; chicken breast 44,800. Lean pork about 70,900; tofu about 30,000; beef 130,000 to 143,000. Bach Hoa Xanh, WinMart and Co.op online, 24 September 2026.",
+  "source_ids": [
+   "COST-39",
+   "COST-40",
+   "COST-41",
+   "DIE-12"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch11-protein-diet",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "brief-startups",
+   "ch11-protein-diet",
+   "ch25-demand-to-frontier",
+   "front-at-a-glance"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-analogue-price-gap",
+  "label": "Price of imported plant-based analogues against eggs and chicken, per gram of protein",
+  "label_vi": "Giá thịt thực vật nhập khẩu so với trứng và thịt gà, tính theo gam đạm",
+  "value": "12 to 18 times",
+  "value_low": 12,
+  "value_high": 18,
+  "unit": "times",
+  "as_of": "September 2026",
+  "context": "VND 542,000 to 622,000 per 100 g of protein on shelf, against VND 34,000 to 45,000 for eggs and chicken. The premiums that coincided with stalling demand in the US and Europe were 35 to 100% per kg.",
+  "source_ids": [
+   "FORM-01",
+   "DIE-12",
+   "GLB-03",
+   "GLB-09"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch11-protein-diet",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch11-protein-diet",
+   "front-at-a-glance",
+   "front-cover",
+   "front-exec-summary",
+   "front-exec-summary-vi"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-stunting",
+  "label": "Children under five who are stunted (2023)",
+  "label_vi": "Tỷ lệ trẻ dưới 5 tuổi thấp còi (2023)",
+  "value": "18%",
+  "value_low": 18,
+  "value_high": 18,
+  "unit": "%",
+  "as_of": "2023",
+  "context": "32% among ethnic minority children (UNICEF 2027 to 2031 country programme); 19.6% in 2020 and 29.3% in 2010. Stunting is largely set before age two.",
+  "source_ids": [
+   "APR-27",
+   "DIE-01",
+   "DIE-03"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch11-protein-diet",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch11-protein-diet"
+  ],
+  "version": "0.3",
+  "version_note": "Updated in v0.4"
+ },
+ {
+  "id": "kn-chay-days-share",
+  "label": "Meat protein already avoided by chay days (estimate)",
+  "label_vi": "Lượng đạm thịt đã được thay thế nhờ các ngày ăn chay (ước tính)",
+  "value": "about 25,000 t a year (about 2.5% of meat protein)",
+  "value_low": 13000,
+  "value_high": 67000,
+  "unit": "t protein a year",
+  "as_of": "2025",
+  "context": "Assumes 30% of people keep 2.5 chay days a month (illustrative range 1.3 to 6.7% of person-days; a 2021 national diet survey found 7.9% of adults ate no meat, poultry or fish on the previous day, which makes about 5% the practical upper bound). Same order as the Part IV S-ALT assumption for 2030 to 2035, but already in the meat baseline. Our calculation.",
+  "source_ids": [
+   "APR-36",
+   "BRD-01",
+   "CHY-06",
+   "CHY-09",
+   "CHY-10"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch12-chay-baseline",
+  "foresight_type": "estimate",
+  "horizon": "2025",
+  "demand_evidence_type": "inferred",
+  "pages": [
+   "brief-international",
+   "brief-manufacturers",
+   "brief-policy",
+   "ch12-chay-baseline",
+   "ch18-demand-sizing",
+   "front-at-a-glance"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-vu-lan-uplift",
+  "label": "Chay sales in the seventh lunar month against normal",
+  "label_vi": "Doanh số đồ chay trong tháng bảy âm lịch so với ngày thường",
+  "value": "2 to 3 times in specialist channels; +15 to 40% in mainstream retail",
+  "value_low": 1.15,
+  "value_high": 3,
+  "unit": "times normal",
+  "as_of": "2024 to 2026",
+  "context": "Synthesis of seller and retailer reports across four years and three regions; tofu makers raise output with prices unchanged, fresh mushroom prices roughly double.",
+  "source_ids": [
+   "CHY-16",
+   "CHY-17",
+   "CHY-18",
+   "CHY-19",
+   "CHY-20",
+   "CHY-22"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch12-chay-baseline",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch12-chay-baseline"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-chay-listings",
+  "label": "Chay restaurant listings on Foody",
+  "label_vi": "Số địa điểm ăn chay trên Foody",
+  "value": "at least 3,275",
+  "value_low": 3275,
+  "value_high": 3275,
+  "unit": "listings",
+  "as_of": "September 2026",
+  "context": "23 former provinces; 1,873 in Ho Chi Minh City, 401 in Hanoi, 201 in Da Nang. Cumulative and including closed venues. The largest chain we could count has 14 outlets.",
+  "source_ids": [
+   "CHY-31",
+   "CHY-32"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch12-chay-baseline",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch12-chay-baseline"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-soy-milk-market",
+  "label": "Branded soy milk sales (2025, derivation)",
+  "label_vi": "Doanh thu sữa đậu nành có thương hiệu (2025, ước tính)",
+  "value": "about VND 5,300 billion (USD 204 million)",
+  "value_low": 5300,
+  "value_high": 5300,
+  "unit": "VND billion",
+  "as_of": "2025",
+  "context": "Vinasoy soy-milk revenue of about VND 4,800 billion divided by its 90.6% share of branded soy milk (2024). The only modern plant category with traceable scale in Vietnam.",
+  "source_ids": [
+   "CON-26",
+   "CON-27",
+   "CON-28"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch12-chay-baseline",
+  "demand_evidence_type": "inferred",
+  "pages": [
+   "ch12-chay-baseline",
+   "front-at-a-glance"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-intend-cut-meat",
+  "label": "Urban online respondents who intend to eat less meat",
+  "label_vi": "Tỷ lệ người được khảo sát trực tuyến ở đô thị dự định giảm ăn thịt",
+  "value": "15%",
+  "value_low": 15,
+  "value_high": 15,
+  "unit": "%",
+  "as_of": "2023",
+  "context": "GFI APAC survey, online panel in the Hanoi region and Ho Chi Minh City (n = 1,049); lowest of six Southeast Asian countries (average 21%). Respondents report 43.3 meat-eating occasions a month.",
+  "source_ids": [
+   "CON-02"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch13-consumers",
+  "demand_evidence_type": "stated",
+  "pages": [
+   "brief-research",
+   "ch13-consumers",
+   "front-at-a-glance",
+   "front-exec-summary",
+   "front-exec-summary-vi"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-pbm-weekly",
+  "label": "Urban online respondents who eat plant-based meat weekly",
+  "label_vi": "Tỷ lệ người được khảo sát ăn thịt thực vật hằng tuần",
+  "value": "3%",
+  "value_low": 3,
+  "value_high": 3,
+  "unit": "%",
+  "as_of": "2023",
+  "context": "90% have heard of plant-based meat, 42% have tried it, 20% eat it monthly. Much of this is probably traditional mock meat. Same survey as above.",
+  "source_ids": [
+   "CON-02",
+   "CON-03"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch13-consumers",
+  "demand_evidence_type": "stated",
+  "pages": [
+   "ch13-consumers",
+   "front-at-a-glance"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-parity-choice",
+  "label": "Would choose plant-based meat over meat, by relative price",
+  "label_vi": "Tỷ lệ chọn thịt thực vật thay vì thịt, theo mức giá tương đối",
+  "value": "74% at parity; 47% at +50%; 26% at double",
+  "value_low": 26,
+  "value_high": 74,
+  "unit": "% of respondents",
+  "as_of": "2023",
+  "context": "Stated choice in an online survey; GFI says it shows relative interest, not willingness to pay. Vietnam highest of six countries at parity.",
+  "source_ids": [
+   "CON-02"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch13-consumers",
+  "demand_evidence_type": "stated",
+  "pages": [
+   "ch13-consumers"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-search-ratio",
+  "label": "Search interest in nut milk against plant meat",
+  "label_vi": "Mức quan tâm tìm kiếm sữa hạt so với thịt thực vật",
+  "value": "17 times",
+  "value_low": 17,
+  "value_high": 17,
+  "unit": "times",
+  "as_of": "2019 to 2026",
+  "context": "Google Trends, Vietnam: sữa hạt against thịt thực vật, average 2019 to September 2026. Nut milk has tripled since 2019; plant meat peaked in 2021 to 2022 and fell about 60%.",
+  "source_ids": [
+   "CON-37"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch13-consumers",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch13-consumers"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-protein-cost-serving",
+  "label": "Cost of 20 g of protein from a chay wrapper against a street meal",
+  "label_vi": "Chi phí cho 20 g đạm từ đồ chay cuốn so với một suất cơm bình dân",
+  "value": "about VND 74,000 against VND 29,000 to 35,000 for a meal",
+  "value_low": 74000,
+  "value_high": 74000,
+  "unit": "VND",
+  "as_of": "September 2026",
+  "context": "Median of filled chay wrappers in the retail audit, on label protein (our calculation). Tofu or dried textured soy about VND 13,000; frozen analogue about VND 56,000; eggs or chicken VND 7,000 to 9,000.",
+  "source_ids": [
+   "FORM-01",
+   "CHY-40"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch13-consumers",
+  "demand_evidence_type": "inferred",
+  "pages": [
+   "app-d3-retail-demand-signals",
+   "brief-startups",
+   "ch13-consumers"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-us-pbm-decline",
+  "label": "US plant-based meat retail sales, 2021 to 2025",
+  "label_vi": "Doanh số bán lẻ thịt thực vật tại Mỹ, 2021 đến 2025",
+  "value": "USD 1.4 billion to 1.0 billion",
+  "value_low": 1.0,
+  "value_high": 1.4,
+  "unit": "USD billion",
+  "as_of": "2025",
+  "context": "Share of total meat sales halved from 1.4% to about 0.7%; households buying fell from about 20% to 11% while the repeat rate stayed near 60%.",
+  "source_ids": [
+   "GLB-01",
+   "GLB-02"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "High",
+  "primary_page": "ch13-consumers",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch13-consumers"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-west-ceiling",
+  "label": "Plant-based meat share of pre-packaged meat after about ten years",
+  "label_vi": "Tỷ trọng thịt thực vật trong thịt đóng gói sau khoảng mười năm",
+  "value": "3.1 to 4.1%",
+  "value_low": 3.1,
+  "value_high": 4.1,
+  "unit": "% of volume",
+  "as_of": "2024",
+  "context": "Germany 3.1%, Netherlands 4.1% (down from 4.6% in 2022); well under 1% of total meat value; monthly buyers 8.6 to 9.7% of households.",
+  "source_ids": [
+   "GLB-09",
+   "GLB-10",
+   "GLB-11"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "High",
+  "primary_page": "ch13-consumers",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch13-consumers"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-gmo-premium",
+  "label": "Premium paid for soymilk labelled non-GM (auction)",
+  "label_vi": "Mức giá sẵn lòng trả thêm cho sữa đậu nành không biến đổi gen (đấu giá thực nghiệm)",
+  "value": "84%",
+  "value_low": 84,
+  "value_high": 84,
+  "unit": "%",
+  "as_of": "2021 (publication)",
+  "context": "Experimental auction in Vietnam. Precision-fermented proteins probably count as products of a GMO under Decree 43/2026, and their likely buyers market non-GMO.",
+  "source_ids": [
+   "NOV-08"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch14-frontier-demand",
+  "demand_evidence_type": "tested",
+  "pages": [
+   "ch14-frontier-demand"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-cultivated-sg-servings",
+  "label": "Cultivated chicken servings sold in Singapore, December 2020 to May 2024",
+  "label_vi": "Số suất thịt gà nuôi cấy bán tại Singapore, 12/2020 đến 5/2024",
+  "value": "more than 2,000",
+  "value_low": 2000,
+  "value_high": 2000,
+  "unit": "servings",
+  "as_of": "May 2024",
+  "context": "Company claim. Another firm reported more than 25,000 dishes from April 2024 to August 2025. In November 2025 Singapore's food agency cited weaker-than-expected acceptance.",
+  "source_ids": [
+   "NOV-10",
+   "NOV-14",
+   "NOV-22"
+  ],
+  "derived": false,
+  "evidence": "VN-adjacent",
+  "confidence": "Low",
+  "primary_page": "ch14-frontier-demand",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch14-frontier-demand"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-blend-preference",
+  "label": "Preferred animal share in blended meat (blind test)",
+  "label_vi": "Tỷ lệ thịt động vật được ưa thích trong sản phẩm thịt pha trộn (thử mù)",
+  "value": "about 75% animal",
+  "value_low": 75,
+  "value_high": 75,
+  "unit": "% animal meat",
+  "as_of": "November 2025",
+  "context": "Singapore double-blind test of 20 blends; blends 1.8 times as likely as plant-based meat to be liked; a chicken mince with 30 to 50% plant protein beat 100% chicken.",
+  "source_ids": [
+   "NOV-37",
+   "NOV-39",
+   "NOV-40"
+  ],
+  "derived": false,
+  "evidence": "VN-adjacent",
+  "confidence": "Medium",
+  "primary_page": "ch14-frontier-demand",
+  "demand_evidence_type": "tested",
+  "pages": [
+   "ch14-frontier-demand"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-vissan-soy-share",
+  "label": "Vissan meat formulations listing soy protein",
+  "label_vi": "Tỷ lệ công thức sản phẩm thịt của Vissan có đạm đậu nành",
+  "value": "31% (19 of 61)",
+  "value_low": 31,
+  "value_high": 31,
+  "unit": "%",
+  "as_of": "September 2026",
+  "context": "Online label audit of 118 products; 36% list at least one added protein (soy, wheat, milk or egg white), mostly in value lines. Vietnam already eats low-inclusion blends.",
+  "source_ids": [
+   "BUY-05"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch16-business-buyers",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "brief-manufacturers",
+   "ch14-frontier-demand",
+   "ch16-business-buyers"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-food-retail-traditional",
+  "label": "Share of food retail through traditional channels (2024)",
+  "label_vi": "Tỷ trọng bán lẻ thực phẩm qua kênh truyền thống (2024)",
+  "value": "83%",
+  "value_low": 83,
+  "value_high": 83,
+  "unit": "% of value",
+  "as_of": "2024",
+  "context": "Of USD 55.5 billion food retail sales. Supermarkets 9%, hypermarkets 3%, convenience 1%, food e-commerce about 1%. About 80% of fresh meat is sold through traditional channels.",
+  "source_ids": [
+   "CHN-01",
+   "CHN-18"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch15-channels",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch15-channels",
+   "front-at-a-glance"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-two-chains-stores",
+  "label": "Stores of the two largest grocery chains (2026)",
+  "label_vi": "Số cửa hàng của hai chuỗi bán lẻ thực phẩm lớn nhất (2026)",
+  "value": "about 8,750",
+  "value_low": 8753,
+  "value_high": 8753,
+  "unit": "stores",
+  "as_of": "mid-2026",
+  "context": "Bach Hoa Xanh 3,612 (end of August 2026) and WinCommerce 5,141 (mid-2026), each opening about 1,000 stores a year, now mostly rural.",
+  "source_ids": [
+   "CHN-12",
+   "CHN-15"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch15-channels",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch15-channels"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-canteen-meals",
+  "label": "Factory canteen meals a year (upper bound)",
+  "label_vi": "Số suất ăn ca tại khu công nghiệp mỗi năm (mức trần)",
+  "value": "up to about 1.2 billion",
+  "value_low": 1.0,
+  "value_high": 1.2,
+  "unit": "billion meals",
+  "as_of": "2023 to 2026",
+  "context": "4.15 million industrial-park workers x about 300 meal days; meals cost VND 20,000 to 35,000; food is 60 to 80% of the price. Our calculation.",
+  "source_ids": [
+   "CHN-37",
+   "CHN-39",
+   "CHN-41"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch15-channels",
+  "demand_evidence_type": "inferred",
+  "pages": [
+   "brief-policy",
+   "ch15-channels",
+   "front-at-a-glance"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-canteen-protein-budget",
+  "label": "Budget for the protein dish of a canteen meal",
+  "label_vi": "Ngân sách cho món đạm trong một suất ăn ca",
+  "value": "VND 7,500 to 14,000",
+  "value_low": 7500,
+  "value_high": 14000,
+  "unit": "VND per meal",
+  "as_of": "2026",
+  "context": "20 g of protein costs VND 6,900 to 9,000 from eggs or chicken, VND 22,400 from a branded retail analogue and VND 740 to 2,140 from textured protein at indicative ex-factory cost. Our calculation.",
+  "source_ids": [
+   "CHN-39",
+   "CHN-41",
+   "FORM-01"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch15-channels",
+  "demand_evidence_type": "inferred",
+  "pages": [
+   "ch15-channels",
+   "ch25-demand-to-frontier"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-protein-ingredient-imports",
+  "label": "Protein-ingredient imports (2023)",
+  "label_vi": "Kim ngạch nhập khẩu nguyên liệu đạm (2023)",
+  "value": "USD 285 million",
+  "value_low": 285,
+  "value_high": 285,
+  "unit": "USD million",
+  "as_of": "2023",
+  "context": "13 customs lines; plant proteins USD 87 million, dairy proteins USD 119 million, gelatin USD 62 million, egg proteins USD 16 million. Includes some feed-grade and supplement products.",
+  "source_ids": [
+   "BUY-01",
+   "BUY-02"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch16-business-buyers",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "app-s3-regional",
+   "ch03-regional",
+   "ch16-business-buyers"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-china-plant-protein-tonnage",
+  "label": "Plant proteins shipped from China to Vietnam, 2019 to 2025",
+  "label_vi": "Khối lượng đạm thực vật Trung Quốc xuất sang Việt Nam, 2019 đến 2025",
+  "value": "18,375 t to 53,976 t",
+  "value_low": 18375,
+  "value_high": 53976,
+  "unit": "t",
+  "as_of": "2025",
+  "context": "China-reported HS 3504, 2106.10 and 1109; USD 59.7 million in 2025. Part of the 2024 jump is probably feed-grade (not verified).",
+  "source_ids": [
+   "BUY-02"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch16-business-buyers",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "brief-investors",
+   "ch16-business-buyers",
+   "front-at-a-glance",
+   "front-cover",
+   "front-exec-summary",
+   "front-exec-summary-vi"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-border-protein-price",
+  "label": "Border price of commodity plant proteins, per kg of protein",
+  "label_vi": "Giá biên giới của đạm thực vật thông dụng, tính trên mỗi kg đạm",
+  "value": "USD 1.7 to 2.4",
+  "value_low": 1.7,
+  "value_high": 2.4,
+  "unit": "USD per kg protein",
+  "as_of": "2025",
+  "context": "Chinese gluten, textured protein and soy isolate. Egg, dairy and Western pea proteins cost USD 7 to 11 per kg of protein.",
+  "source_ids": [
+   "BUY-02",
+   "BUY-07",
+   "BUY-09"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch16-business-buyers",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch16-business-buyers"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-textured-protein-exports",
+  "label": "Vietnam's exports of textured protein and protein concentrates (2023)",
+  "label_vi": "Kim ngạch xuất khẩu đạm tạo cấu trúc và đạm cô đặc của Việt Nam (2023)",
+  "value": "USD 0.52 million",
+  "value_low": 0.52,
+  "value_high": 0.52,
+  "unit": "USD million",
+  "as_of": "2023",
+  "context": "HS 2106.10. Imports of the same code were about USD 34 million; China exported USD 380 million in 2024.",
+  "source_ids": [
+   "EXP-39",
+   "EXP-40",
+   "BUY-01"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch17-export-demand",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch17-export-demand"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-eu-tariff-edge",
+  "label": "EU tariff on textured protein: Vietnam against most countries",
+  "label_vi": "Thuế nhập khẩu EU với đạm tạo cấu trúc: Việt Nam so với đa số nước",
+  "value": "0% against 12.8%",
+  "value_low": 0,
+  "value_high": 12.8,
+  "unit": "%",
+  "as_of": "September 2026",
+  "context": "EU and Vietnam free trade agreement; Thai and Chinese goods pay 12.8%. Similar zero rates for food preparations, plant drinks and prepared nuts, and in the UK and (for textured vegetable protein) Japan.",
+  "source_ids": [
+   "EXP-23",
+   "EXP-24",
+   "EXP-41"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch17-export-demand",
+  "pages": [
+   "ch17-export-demand",
+   "front-at-a-glance"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-us-301-tariff",
+  "label": "Extra US tariff on Vietnamese goods from 24 July 2026",
+  "label_vi": "Thuế bổ sung của Mỹ với hàng Việt Nam từ 24/7/2026",
+  "value": "12.5%",
+  "value_low": 12.5,
+  "value_high": 12.5,
+  "unit": "%",
+  "as_of": "July 2026",
+  "context": "Section 301 action; 10% for Malaysia, Indonesia and India; cashews and coconuts exempt, prepared plant-based foods not.",
+  "source_ids": [
+   "EXP-22"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch17-export-demand",
+  "pages": [
+   "ch17-export-demand"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-forecast-overshoot",
+  "label": "Kearney 2019 forecast against actual, plant-based meat share of meat in 2025",
+  "label_vi": "Dự báo của Kearney năm 2019 so với thực tế: tỷ trọng thịt thực vật trong thị trường thịt năm 2025",
+  "value": "10% forecast; about 0.55% actual",
+  "value_low": 0.55,
+  "value_high": 10,
+  "unit": "% of global meat market",
+  "as_of": "2025",
+  "context": "USD 6.6 billion global retail sales against a forecast of about USD 120 billion. Forecasts made at the 2019 to 2021 peak overshot by one to two orders of magnitude.",
+  "source_ids": [
+   "GLB-45",
+   "GLB-05"
+  ],
+  "derived": true,
+  "evidence": "general",
+  "confidence": "Medium",
+  "primary_page": "ch18-demand-sizing",
+  "demand_evidence_type": "inferred",
+  "pages": [
+   "ch18-demand-sizing"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-demand-bench-2035",
+  "label": "Benchmark path, 2035: protein delivered and meat protein displaced",
+  "label_vi": "Kịch bản tham chiếu, 2035: lượng đạm cung ứng và lượng đạm thịt được thay thế",
+  "value": "about 19,000 t delivered; about 2,400 t (0.2%) displaced",
+  "value_low": 2.35,
+  "value_high": 19.05,
+  "unit": "kt protein",
+  "as_of": "2035",
+  "context": "Demand model, scenario D-BENCH. Most delivered protein replaces imported ingredients; about 11,000 to 17,000 t of it would be made in Vietnam (v0.4 reading: only import substitution applies an explicit domestic share). Displacement falls to about 2,300 t if school sales into the plant-protein slot displace tofu, not meat. The Part IV S-ALT scenario assumes 39,300 t (3%) displaced in 2035. Our estimate, not a forecast.",
+  "source_ids": [
+   "BUY-02",
+   "CHY-06",
+   "GLB-09"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch18-demand-sizing",
+  "foresight_type": "estimate",
+  "horizon": "2035",
+  "demand_evidence_type": "inferred",
+  "pages": [
+   "brief-international",
+   "brief-investors",
+   "ch18-demand-sizing",
+   "ch25-demand-to-frontier",
+   "front-at-a-glance",
+   "front-exec-summary",
+   "front-exec-summary-vi"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-salt-translation",
+  "label": "What S-ALT 2030 would need from hybrids alone",
+  "label_vi": "Điều kiện để đạt S-ALT năm 2030 chỉ bằng sản phẩm thịt pha trộn",
+  "value": "74% of all processed meat, with 30% of its meat replaced",
+  "value_low": 74,
+  "value_high": 74,
+  "unit": "% of processed meat",
+  "as_of": "2030",
+  "context": "Alternatives: 39% of all canteen and school meal protein; about 131 million regular analogue buyers; or about 0.43 extra chay days per person per month. Our estimate.",
+  "source_ids": [
+   "BUY-04",
+   "CHN-37",
+   "GLB-19"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch18-demand-sizing",
+  "foresight_type": "estimate",
+  "horizon": "2030",
+  "demand_evidence_type": "inferred",
+  "pages": [
+   "ch18-demand-sizing"
+  ],
+  "version": "0.3"
+ },
+ {
+  "id": "kn-actor-check",
+  "label": "Actor questions that Part III (v0.3) answered in full",
+  "label_vi": "Số câu hỏi của các bên liên quan được Phần III (phiên bản 0.3) trả lời đầy đủ",
+  "value": "1 of 118",
+  "value_low": 1,
+  "value_high": 118,
+  "unit": "questions",
+  "as_of": "September 2026",
+  "context": "80 named actors in four groups; Part III partly answered 71 questions and did not answer 42; 4 were out of scope. Our assessment.",
+  "source_ids": [
+   "AFN-05",
+   "AIS-01",
+   "AIB-01",
+   "APR-01"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch29-actor-check",
+  "pages": [
+   "app-m4-actor-check-waves",
+   "ch29-actor-check",
+   "front-at-a-glance",
+   "front-cover",
+   "front-exec-summary",
+   "front-exec-summary-vi"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-school-plant-days",
+  "label": "School lunch days with any plant protein in a protein dish",
+  "label_vi": "Tỷ lệ ngày ăn bán trú có đạm thực vật trong món đạm",
+  "value": "15.1% of days",
+  "value_low": 15.1,
+  "value_high": 15.1,
+  "unit": "% of 239 school days",
+  "as_of": "March to September 2026",
+  "context": "48 published school-weeks from 22 primary schools in Ho Chi Minh City, Hanoi and Hai Phong; only 9 of 48 weeks met the twice-weekly plant-protein rule of Decision 3958/QĐ-BYT; no dish used textured soy or mock meat.",
+  "source_ids": [
+   "PMR-10",
+   "PMR-31",
+   "AIB-39"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch15-channels",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "brief-policy",
+   "ch15-channels",
+   "ch29-actor-check",
+   "front-at-a-glance",
+   "front-exec-summary",
+   "front-exec-summary-vi"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-menu-software-floor",
+  "label": "Animal-protein standard printed by the school menu software",
+  "label_vi": "Chuẩn đạm động vật in trong phần mềm xây dựng thực đơn bán trú",
+  "value": "at least 48% of protein",
+  "value_low": 48,
+  "value_high": 48,
+  "unit": "% of protein per lunch",
+  "as_of": "May 2026",
+  "context": "Printed on nutrition sheets from the MOET, Ajinomoto and NIN menu software; national guidance (Decision 3958/QĐ-BYT) sets no animal share. 9 of 25 published days fell below it.",
+  "source_ids": [
+   "PMR-26",
+   "AIB-39"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch15-channels",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch15-channels"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-upland-meals-animal",
+  "label": "Upland boarding-school main meals with a meat, fish or egg dish",
+  "label_vi": "Tỷ lệ bữa chính có thịt, cá hoặc trứng ở trường phổ thông dân tộc bán trú",
+  "value": "240 of 242 meals",
+  "value_low": 99.2,
+  "value_high": 99.2,
+  "unit": "meals",
+  "as_of": "2026",
+  "context": "13 ethnic-minority boarding schools in five provinces, 22 published school-weeks; pork led 74% of main meals; 86% of breakfasts had little or no animal food.",
+  "source_ids": [
+   "UPL-01",
+   "UPL-04",
+   "UPL-09"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch15-channels",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch15-channels"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-canteen-dish-mix",
+  "label": "Protein dishes on factory caterers' menus, by lead protein",
+  "label_vi": "Cơ cấu món đạm trong thực đơn suất ăn công nghiệp",
+  "value": "pork 33%, fish 26%, chicken 13%, tofu 9%",
+  "value_low": null,
+  "value_high": null,
+  "unit": "% of 172 protein dishes",
+  "as_of": "2023 to 2025",
+  "context": "Five caterers' published sample menus; minced or processed meat 17% of protein dishes; plant-only dishes 3%; no textured soy or mock meat named.",
+  "source_ids": [
+   "UPL-27",
+   "UPL-28",
+   "UPL-29",
+   "UPL-30",
+   "UPL-32"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch15-channels",
+  "demand_evidence_type": "stated",
+  "pages": [
+   "ch15-channels"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-fta-duty-china",
+  "label": "Import duty on Chinese textured protein, isolates and gluten",
+  "label_vi": "Thuế nhập khẩu đạm tạo cấu trúc, đạm phân lập và gluten từ Trung Quốc",
+  "value": "0%",
+  "value_low": 0,
+  "value_high": 0,
+  "unit": "% (ACFTA and RCEP)",
+  "as_of": "2025 to 2027",
+  "context": "HS 2106.10, 3504 and 1109 enter at 0% from China, ASEAN and Korea with a certificate of origin; the MFN rates of 5%, 3% and 10% apply only to other origins. A domestic maker has no tariff shelter.",
+  "source_ids": [
+   "FTR-32",
+   "FTR-33"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch16-business-buyers",
+  "pages": [
+   "brief-investors",
+   "brief-policy",
+   "ch07-rules",
+   "ch16-business-buyers",
+   "ch29-actor-check",
+   "front-at-a-glance",
+   "front-exec-summary",
+   "front-exec-summary-vi"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-sugary-drink-excise",
+  "label": "Excise on drinks above 5 g sugar per 100 ml",
+  "label_vi": "Thuế tiêu thụ đặc biệt với đồ uống trên 5 g đường/100 ml",
+  "value": "8% (2027); 10% (2028)",
+  "value_low": 8,
+  "value_high": 10,
+  "unit": "% ad valorem",
+  "as_of": "2027 to 2028",
+  "context": "Law 66/2025/QH15; dairy is exempt; whether sweetened soy, nut and oat milks are in scope is unresolved; core Fami soy milks carry 6.5 to 9.3 g sugar per 100 ml.",
+  "source_ids": [
+   "FTR-01",
+   "FTR-02",
+   "FTR-05"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch13-consumers",
+  "pages": [
+   "brief-manufacturers",
+   "brief-policy",
+   "ch13-consumers"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-animals-spared-2035",
+  "label": "Animals spared a year by the displacing routes, benchmark path (2035)",
+  "label_vi": "Số con vật tránh được mỗi năm theo kịch bản tham chiếu (2035)",
+  "value": "about 2.4 to 2.7 million",
+  "value_low": 2.4,
+  "value_high": 2.7,
+  "unit": "million animals a year",
+  "as_of": "2035",
+  "context": "D-BENCH; 93 to 94% chickens and ducks; import substitution spares none. The range reflects the caterer and national meat mixes. Our estimate, not a forecast.",
+  "source_ids": [
+   "FUF-03",
+   "UPL-27"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch18-demand-sizing",
+  "demand_evidence_type": "inferred",
+  "pages": [
+   "brief-international",
+   "ch18-demand-sizing",
+   "ch29-actor-check",
+   "front-at-a-glance"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-co2e-avoided-2035",
+  "label": "CO2e avoided a year by the displacing routes, benchmark path (2035)",
+  "label_vi": "Lượng CO2e tránh được mỗi năm theo kịch bản tham chiếu (2035)",
+  "value": "about 0.14 Mt (0.08 to 0.25)",
+  "value_low": 0.08,
+  "value_high": 0.25,
+  "unit": "Mt CO2e a year",
+  "as_of": "2035",
+  "context": "D-BENCH, net of the replacing protein; about half from displacing beef and buffalo. Treat climate as a co-benefit. Our estimate, not a forecast.",
+  "source_ids": [
+   "FUF-04",
+   "FUF-05",
+   "FUF-07"
+  ],
+  "derived": true,
+  "evidence": "general",
+  "confidence": "Low",
+  "primary_page": "ch18-demand-sizing",
+  "demand_evidence_type": "inferred",
+  "pages": [
+   "brief-international",
+   "ch18-demand-sizing"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-funder-fit",
+  "label": "Original demand moves with a funder whose scope fits and that accepts Vietnam",
+  "label_vi": "Số biện pháp phía cầu ban đầu có nhà tài trợ phù hợp và phạm vi tài trợ gồm cả Việt Nam",
+  "value": "4 of 19",
+  "value_low": 4,
+  "value_high": 19,
+  "unit": "moves",
+  "as_of": "September 2026",
+  "context": "Consumer-acceptance studies and a label test (Bezos Centre at NUS); naming and GMO rules (Nova Vista). Diet-change and culture-change work is excluded by Nova Vista and ACE Movement Grants; ReRoot Asia excludes Vietnam. Of the two moves added in v0.4, DMV-20 has no external payer and DMV-21 needs none.",
+  "source_ids": [
+   "AFN-05",
+   "AFN-15",
+   "AFN-29",
+   "FUF-01"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch25-demand-to-frontier",
+  "demand_evidence_type": "stated",
+  "pages": [
+   "brief-international",
+   "brief-research",
+   "ch25-demand-to-frontier",
+   "ch29-actor-check",
+   "front-at-a-glance",
+   "front-exec-summary",
+   "front-exec-summary-vi"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-tvp-line-capex",
+  "label": "Installed cost of a Chinese-equipped dry textured-soy line",
+  "label_vi": "Chi phí lắp đặt dây chuyền đạm đậu tương tạo cấu trúc dạng khô thiết bị Trung Quốc",
+  "value": "USD 0.3 to 1.4 million",
+  "value_low": 0.3,
+  "value_high": 1.4,
+  "unit": "USD million",
+  "as_of": "2026",
+  "context": "Lines of 0.5 to 1 t/h with dryer are listed at USD 11,000 to 100,000 (list prices, not quotes); working capital of USD 0.6 to 3.5 million is the larger need. Our calculation.",
+  "source_ids": [
+   "TIC-02",
+   "TIC-03",
+   "TIC-07"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch25-demand-to-frontier",
+  "pages": [
+   "brief-investors",
+   "brief-startups",
+   "ch09-economics",
+   "ch25-demand-to-frontier"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-t1-flour-breakeven",
+  "label": "Delivered soy-flour price above which a 1 t/h textured-soy line earns less than 15% at Chinese parity",
+  "label_vi": "Giá bột đậu tương giao tận nơi mà trên mức đó dây chuyền đạm tạo cấu trúc 1 tấn/giờ không còn đạt biên lợi nhuận 15% khi bán ngang giá hàng Trung Quốc",
+  "value": "about USD 700 to 940 per t",
+  "value_low": 700,
+  "value_high": 940,
+  "unit": "USD per t of food-grade defatted soy flour",
+  "as_of": "2026",
+  "context": "For a 15% margin at Chinese landed parity at 0% duty (USD 1.29 per kg) on a 1 t/h line at 70% utilisation; about USD 700 per t with heavy overheads and about USD 940 per t when run lean. Flour is 63 to 85% of cost. Our calculation.",
+  "source_ids": [
+   "TIC-12",
+   "TIC-13"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch25-demand-to-frontier",
+  "pages": [
+   "brief-investors",
+   "ch09-economics",
+   "ch25-demand-to-frontier"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-firm-outcomes",
+  "label": "Vietnamese meat-analogue startups still active",
+  "label_vi": "Số công ty khởi nghiệp thịt thực vật Việt Nam còn hoạt động",
+  "value": "0 of 4",
+  "value_low": 0,
+  "value_high": 4,
+  "unit": "firms",
+  "as_of": "September 2026",
+  "context": "All three Vietnamese makers of traditional formats are active. Of 24 regional and Vietnamese firms since 2019, 7 are active, 4 pivoted (all towards private label, co-manufacturing or non-food), 2 exited and 11 are dormant.",
+  "source_ids": [
+   "AIS-28",
+   "AIS-39",
+   "BRD-08"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch15-channels",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "brief-startups",
+   "ch15-channels"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-flesh-free-days",
+  "label": "Adults who ate no meat, poultry or fish on the previous day (2021)",
+  "label_vi": "Tỷ lệ người trưởng thành không ăn thịt, gia cầm, cá trong ngày hôm trước (2021)",
+  "value": "7.9% (5.3 to 11.0)",
+  "value_low": 5.3,
+  "value_high": 11.0,
+  "unit": "% of adults",
+  "as_of": "November to December 2021",
+  "context": "Global Diet Quality Project, Gallup, 1,007 adults; a ceiling for chay-day person-days that supports the 2.5% central estimate and caps the upper bound near 5%. 40% ate beans, tofu or soy milk.",
+  "source_ids": [
+   "APR-36",
+   "BRD-01"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch12-chay-baseline",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch12-chay-baseline"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-high-protein-claim",
+  "label": "Protein content needed for a high-protein claim",
+  "label_vi": "Hàm lượng đạm để được công bố \"cao đạm\"",
+  "value": "10 g per 100 g",
+  "value_low": 10,
+  "value_high": 10,
+  "unit": "g protein per 100 g of solid food",
+  "as_of": "2025",
+  "context": "TCVN 14429:2025 (voluntary, Codex-based): source at 5 g and high at 10 g per 100 g, or 2.5 g and 5 g per 100 kcal. 20 of 43 audited foods already meet the source condition; none makes the claim.",
+  "source_ids": [
+   "LBL-03",
+   "FORM-01"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch13-consumers",
+  "pages": [
+   "ch13-consumers"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-feed-yeast-imports",
+  "label": "Inactive yeast imported for food and feed (HS 2102.20)",
+  "label_vi": "Lượng nấm men bất hoạt nhập khẩu (HS 2102.20)",
+  "value": "9,193 t (USD 13.5 million); 95% at about USD 1.1 per kg",
+  "value_low": 9193,
+  "value_high": 9193,
+  "unit": "t",
+  "as_of": "2025",
+  "context": "8,729 t (95%) came in at below USD 2 per kg, averaging USD 1.10 per kg FOB; 464 t of specialty products averaged USD 8.55. 2.4 times the 2019 tonnage; the trade code does not separate feed from food. The revealed price a Vietnamese microbial feed ingredient must beat. Vietnam also exported 8,166 t.",
+  "source_ids": [
+   "FBA-17"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch17-export-demand",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "brief-investors",
+   "brief-manufacturers",
+   "ch17-export-demand"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-stuffed-pasta-exports",
+  "label": "Vietnam's exports of dumplings and other stuffed pasta",
+  "label_vi": "Kim ngạch xuất khẩu há cảo và các loại mì nhồi nhân",
+  "value": "USD 128.2 million",
+  "value_low": 128.2,
+  "value_high": 128.2,
+  "unit": "USD million",
+  "as_of": "2023",
+  "context": "HS 1902.20, 30,013 t; the existing export base for plant-protein wrapped foods. Vietnam out-supplies China in the UK, US and Korea.",
+  "source_ids": [
+   "XBA-29"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "High",
+  "primary_page": "ch17-export-demand",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "brief-manufacturers",
+   "ch17-export-demand",
+   "front-at-a-glance"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-hybrid-saving",
+  "label": "Processor saving from replacing 20% of lean with textured soy in chả lụa",
+  "label_vi": "Mức tiết kiệm khi thay 20% thịt nạc bằng đạm đậu tương trong chả lụa",
+  "value": "VND 9,100 to 16,600 per kg",
+  "value_low": 9100,
+  "value_high": 16600,
+  "unit": "VND per kg of product",
+  "as_of": "2019 to 2020 hog prices",
+  "context": "Extension pays at every hog price since 2019; hydrated soy costs a sixth to a twelfth of lean trimmings. A new extender must beat soy, not meat. Our calculation.",
+  "source_ids": [
+   "HXE-01",
+   "DIE-25",
+   "TIC-12"
+  ],
+  "derived": true,
+  "evidence": "VN-direct",
+  "confidence": "Low",
+  "primary_page": "ch14-frontier-demand",
+  "pages": [
+   "brief-manufacturers",
+   "brief-research",
+   "ch14-frontier-demand"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-meat-in-chay-cases",
+  "label": "Confirmed reports of meat found in a Vietnamese chay product",
+  "label_vi": "Số vụ được xác nhận phát hiện thịt trong đồ chay",
+  "value": "0 (2015 to 2026)",
+  "value_low": 0,
+  "value_high": 0,
+  "unit": "reports",
+  "as_of": "September 2026",
+  "context": "One unconfirmed 2021 seizure in An Giang; chay safety cases are about borax, microbes and unlabelled goods. Fake chay is a latent rumour, not a live scandal.",
+  "source_ids": [
+   "TRU-18",
+   "TRU-22"
+  ],
+  "derived": false,
+  "evidence": "VN-direct",
+  "confidence": "Medium",
+  "primary_page": "ch12-chay-baseline",
+  "demand_evidence_type": "revealed",
+  "pages": [
+   "ch12-chay-baseline"
+  ],
+  "version": "0.4"
+ },
+ {
+  "id": "kn-soy-fed-to-animals",
+  "label": "Share of the world's soy fed to livestock",
+  "label_vi": "Tỷ lệ đậu nành thế giới dùng làm thức ăn chăn nuôi",
+  "value": "about 77%",
+  "value_low": 77,
+  "value_high": 77,
+  "unit": "% of world soy",
+  "as_of": "2018 to 2019",
+  "context": "About 6% of soy is eaten directly as food; 87% of soybeans are crushed and 99% of the meal goes to feed (USDA data via Our World in Data).",
+  "source_ids": [
+   "PRA-21",
+   "PRA-20"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "Medium",
+  "primary_page": "front-prologue",
+  "pages": [
+   "front-prologue",
+   "front-prologue-vi"
+  ],
+  "version": "0.5"
+ },
+ {
+  "id": "kn-livestock-emissions-share",
+  "label": "Livestock's share of human-caused greenhouse gas emissions",
+  "label_vi": "Tỷ trọng phát thải khí nhà kính do chăn nuôi",
+  "value": "about 12% (FAO 2023) or 14.5% (FAO 2013)",
+  "value_low": 12,
+  "value_high": 14.5,
+  "unit": "% of anthropogenic emissions",
+  "as_of": "2015 and 2005 reference years",
+  "context": "6.2 Gt CO2e for 2015 in FAO's latest estimate; 7.1 Gt for 2005 in its earlier one. The two use different reference years and model versions, so the lower figure is not evidence that emissions fell. Food systems as a whole: about 34% (2015).",
+  "source_ids": [
+   "PRB-07",
+   "PRB-08",
+   "PRB-09"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "High",
+  "primary_page": "front-prologue",
+  "pages": [
+   "front-prologue",
+   "front-prologue-vi"
+  ],
+  "version": "0.5"
+ },
+ {
+  "id": "kn-land-animals-slaughtered",
+  "label": "Land animals slaughtered for meat worldwide",
+  "label_vi": "Số động vật trên cạn bị giết mổ lấy thịt trên thế giới",
+  "value": "about 86 billion",
+  "value_low": 86,
+  "value_high": 86,
+  "unit": "billion animals a year",
+  "as_of": "2024",
+  "context": "91% chickens; about 1.5 billion pigs and 305 million cattle. Our sum of FAOSTAT counts for seven species, so a floor. Fish estimates run into the trillions and are highly uncertain.",
+  "source_ids": [
+   "PRB-15",
+   "PRB-16"
+  ],
+  "derived": true,
+  "evidence": "general",
+  "confidence": "High",
+  "primary_page": "front-prologue",
+  "pages": [
+   "front-prologue",
+   "front-prologue-vi"
+  ],
+  "version": "0.5"
+ },
+ {
+  "id": "kn-altprotein-investment-2025",
+  "label": "Global private investment in alternative protein companies",
+  "label_vi": "Vốn đầu tư tư nhân toàn cầu vào doanh nghiệp protein thay thế",
+  "value": "USD 881 million",
+  "value_low": 881,
+  "value_high": 881,
+  "unit": "USD million",
+  "as_of": "2025",
+  "context": "The first year below USD 1 billion since 2018; the 2021 peak was about USD 7 billion in GFI's current series. USD 359 million in the first half of 2026, 252 million of it for fermentation. GFI (advocacy) analysis of Net Zero Insights data.",
+  "source_ids": [
+   "CAP-51",
+   "PRC-01",
+   "HSC-10"
+  ],
+  "derived": false,
+  "evidence": "general",
+  "confidence": "Medium",
+  "primary_page": "front-prologue",
+  "pages": [
+   "front-prologue",
+   "front-prologue-vi"
+  ],
+  "version": "0.5"
  }
 ]

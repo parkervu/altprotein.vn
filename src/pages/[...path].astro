@@ -3,13 +3,19 @@ import Base from '../layouts/Base.astro';
 import PageView from '../components/PageView.astro';
 import NotFound from '../components/NotFound.astro';
 import { loadPage, mayPreview, renderPage } from '../lib/content';
-import { PAGE_BY_ID, pageIdForPath, localize } from '../lib/site';
+import { PAGE_BY_ID, href, pageIdForPath, localize } from '../lib/site';
+import { MOVED_PAGES } from '../lib/redirects';
 
 const lang = Astro.locals.lang ?? 'en';
 const path = `/${Astro.params.path ?? ''}`;
 
 // Links from the first edition of the site.
 if (/^\/chapters(\/|$)/.test(path)) return Astro.redirect(localize('/report', lang), 301);
+
+// Pages that moved when the report was regrouped in v0.6.
+const moved = /^\/(report|appendices)\/([a-z0-9-]+)$/.exec(path);
+if (moved && MOVED_PAGES[moved[2]])
+  return Astro.redirect(href(MOVED_PAGES[moved[2]], lang) + Astro.url.search, 301);
 
 const id = pageIdForPath(path);
 if (Astro.url.searchParams.has('_preview') && !mayPreview(Astro.locals.user))
@@ -50,9 +56,20 @@ const section =
       ? 'briefs'
       : meta?.section === 'appendix'
         ? 'appendices'
-        : meta?.id.startsWith('front-exec')
+        : meta &&
+            [
+              'front-two-minute',
+              'front-exec-summary',
+              'front-exec-summary-vi',
+              'front-at-a-glance',
+            ].includes(meta.id)
           ? 'summary'
-          : undefined;
+          : meta &&
+              ['front-prologue', 'front-prologue-vi', 'front-how-to-read', 'front-faq'].includes(
+                meta.id,
+              )
+            ? 'start'
+            : undefined;
 ---
 
 {meta && data && rendered ? (

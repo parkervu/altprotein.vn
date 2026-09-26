@@ -1,0 +1,11 @@
+record_id,parameter,low_value,high_value,base_displaced_kt,displaced_at_low_kt,displaced_at_high_kt,max_change_kt,scenario,year,notes
+DMS-001,r2_keeper_share,0.2,0.5,2.35,2.04,2.95,0.6,D-BENCH,2035,One assumption varied at a time; all else at D-BENCH values.
+DMS-002,r3_processed_share,0.03,0.08,2.35,2.06,2.77,0.42,D-BENCH,2035,One assumption varied at a time; all else at D-BENCH values.
+DMS-003,r2_compensation,0.0,0.6,2.35,2.73,1.96,0.39,D-BENCH,2035,One assumption varied at a time; all else at D-BENCH values.
+DMS-004,r4_net_displacement,0.5,1.0,2.35,2.1,2.51,0.24,D-BENCH,2035,One assumption varied at a time; all else at D-BENCH values.
+DMS-005,r4_canteen_meals_bn,0.6,1.2,2.35,2.11,2.46,0.23,D-BENCH,2035,One assumption varied at a time; all else at D-BENCH values.
+DMS-006,r3_net_displacement,0.7,1.0,2.35,2.19,2.42,0.16,D-BENCH,2035,One assumption varied at a time; all else at D-BENCH values.
+DMS-007,r4_protein_per_meal_g,15.0,25.0,2.35,2.18,2.51,0.16,D-BENCH,2035,One assumption varied at a time; all else at D-BENCH values.
+DMS-008,r5_net_displacement,0.0,0.5,2.35,2.26,2.47,0.13,D-BENCH,2035,One assumption varied at a time; all else at D-BENCH values.
+DMS-009,r5_kg_product_per_buyer,1.5,6.0,2.35,2.3,2.43,0.09,D-BENCH,2035,One assumption varied at a time; all else at D-BENCH values.
+DMS-010,r4_school_meals_bn,0.5,1.2,2.35,2.32,2.38,0.03,D-BENCH,2035,One assumption varied at a time; all else at D-BENCH values.

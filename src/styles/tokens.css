@@ -26,6 +26,8 @@
 
   --fx: #4a3aa7;
   --fx-soft: #eeebfb;
+  --dx: #9c4a12;
+  --dx-soft: #fbece2;
   --vision: #a4285f;
   --vision-soft: #fbe8f0;
   --warn: #8a5100;
@@ -86,6 +88,8 @@
     --grey-ink: #b8c3c0;
     --fx: #b3a8f5;
     --fx-soft: #221d3d;
+    --dx: #f0a878;
+    --dx-soft: #33200f;
     --vision: #f39cc3;
     --vision-soft: #3a1a2a;
     --warn: #f2b865;
@@ -141,6 +145,8 @@
   --grey-ink: #b8c3c0;
   --fx: #b3a8f5;
   --fx-soft: #221d3d;
+  --dx: #f0a878;
+  --dx-soft: #33200f;
   --vision: #f39cc3;
   --vision-soft: #3a1a2a;
   --warn: #f2b865;

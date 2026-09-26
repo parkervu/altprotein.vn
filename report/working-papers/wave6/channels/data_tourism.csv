@@ -1,0 +1,35 @@
+metric,market_or_place,value,unit,period,source_ids,evidence_label,confidence,demand_evidence_type,notes
+international_arrivals,Vietnam,21170000,visitors,2025,CHN-44; CHN-43,VN-direct,High,revealed,up 20.4%; record
+international_arrivals,Vietnam,15900000,visitors,2026 Jan to Aug,CHN-45,VN-direct,High,revealed,up 14.4%; 2026 target 25 million
+international_arrivals,China,5280000,visitors,2025,CHN-44; CHN-43,VN-direct,High,revealed,up 41.3%; 25% of total
+international_arrivals,China,3500000,visitors,2026 Jan to Aug,CHN-45,VN-direct,High,revealed,up 0.3%
+international_arrivals,South Korea,4330000,visitors,2025,CHN-44,VN-direct,High,revealed,slight decline
+international_arrivals,South Korea,2800000,visitors,2026 Jan to Aug,CHN-45,VN-direct,High,revealed,down 5.2%
+international_arrivals,Taiwan,1230000,visitors,2025,CHN-44,VN-direct,High,revealed,approximate
+international_arrivals,Taiwan,861000,visitors,2026 Jan to Aug,CHN-45,VN-direct,High,revealed,up 2.6%
+international_arrivals,United States,848000,visitors,2025,CHN-46,VN-direct,Medium,revealed,secondary compilation of NSO data
+international_arrivals,Americas,887400,visitors,2026 Jan to Aug,CHN-45,VN-direct,High,revealed,up 20.7%
+international_arrivals,Japan,814000,visitors,2025,CHN-46; CHN-43,VN-direct,Medium,revealed,up 14.4%
+international_arrivals,Japan,589300,visitors,2026 Jan to Aug,CHN-45,VN-direct,High,revealed,up 9.2%
+international_arrivals,India,746000,visitors,2025,CHN-46; CHN-43,VN-direct,Medium,revealed,up 48.9%; about 3.5% of arrivals (our calculation)
+international_arrivals,India,612400,visitors,2026 Jan to Aug,CHN-45; CHN-52,VN-direct,High,revealed,"up 38.2%; 102,000 in all of 2019"
+international_arrivals,Russia,690000,visitors,2025,CHN-44,VN-direct,High,revealed,nearly triple 2024
+international_arrivals,Russia,1000000,"visitors, lower bound",2026 Jan to Aug,CHN-45,VN-direct,High,revealed,up 165.7%; 3rd market
+international_arrivals,Malaysia,573000,visitors,2025,CHN-46; CHN-43,VN-direct,Medium,revealed,up 15.8%; up 20.5% Jan to Aug 2026 (CHN-51)
+international_arrivals,Australia,548000,visitors,2025,CHN-46,VN-direct,Medium,revealed,
+international_arrivals_growth,Indonesia,26.7,percent year on year,2026 Jan to Aug,CHN-51,VN-direct,Low,revealed,count not retrieved
+international_arrivals,Europe,2700000,visitors,2026 Jan to Aug,CHN-45,VN-direct,High,revealed,up 53.4%
+total_visitors,Khanh Hoa,16400000,visitors,2025,CHN-47,VN-direct,Medium,revealed,up 14%; merger scope with former Ninh Thuan not stated
+international_visitors,Khanh Hoa,5500000,visitors,2025,CHN-47,VN-direct,Medium,revealed,
+international_visitors,Khanh Hoa,4600000,visitors,2025 Jan to Oct,CHN-49,VN-direct,Medium,revealed,"up 17.6%; Korea, China, Russia main markets"
+international_visitors,Khanh Hoa,741800,visitors,2026 Jan to Feb,CHN-48,VN-direct,Medium,revealed,up 29.2%
+international_visitors_target,Khanh Hoa,6300000,visitors,2026,CHN-48,VN-direct,Medium,inferred,provincial target
+russian_visitors,Khanh Hoa,750000,"visitors, lower bound",2026 Jan to Aug,CHN-50,VN-direct,Low,revealed,triple previous year; stays 5 to 7 days
+daily_flights,Korea to Cam Ranh,20,"flights per day, approx",2026-03,CHN-48,VN-direct,Medium,revealed,Russia and China 5 to 6 each
+tourism_revenue,Khanh Hoa,66700,VND billion,2025,CHN-47,VN-direct,Medium,revealed,
+rooms,Khanh Hoa,70500,rooms,2025,CHN-47,VN-direct,Medium,revealed,over 40% four and five star
+vegetarian_or_vegan_meal_occasions_from_international_visitors,Khanh Hoa,1500000,"meal occasions per year, midpoint of 0.9 to 2.2 million",2025,CHN-47,VN-direct,Low,inferred,our calculation: 5.5 million x 4 nights x 2 meals out x 2% to 5%; all multipliers are assumptions
+vegetarian_self_identified,India,39,percent of population,not stated,CHN-53,general,Medium,stated,abstract only; varies 8% to 92% by religion
+vegetarian,Canada,1.3,percent of population,2015,CHN-54,general,Medium,stated,"vegan 0.3%; Germany 2.5% (2014), USA 4.0% (2012) per same paper"
+halal_restaurant_count,Vietnam,,,,,VN-direct,Low,inferred,not found; open question
+happycow_listings,"Nha Trang, Da Nang, Hoi An, HCMC, Hanoi, Phu Quoc",,,,,VN-direct,Low,inferred,site blocked automated access; open question

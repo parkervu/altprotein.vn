@@ -12,7 +12,7 @@ test('editor can save, privately preview and publish a page; reseeding preserves
     extraHTTPHeaders: { Origin: baseURL, 'X-EmDash-Request': '1' },
   });
   expect((await editor.post('/_emdash/api/setup/dev-bypass')).ok()).toBeTruthy();
-  const endpoint = '/_emdash/api/content/pages/ch14-unknowns';
+  const endpoint = '/_emdash/api/content/pages/ch30-unknowns';
   const originalResponse = await editor.get(endpoint);
   expect(originalResponse.ok()).toBeTruthy();
   const original = (await originalResponse.json()).data.item;
@@ -21,12 +21,12 @@ test('editor can save, privately preview and publish a page; reseeding preserves
   try {
     const saved = await editor.put(endpoint, { data: { data: { ...original.data, body } } });
     expect(saved.ok(), await saved.text()).toBeTruthy();
-    await page.goto('/report/ch14-unknowns');
+    await page.goto('/report/ch30-unknowns');
     await expect(page.locator('.prose')).not.toContainText(marker);
     const previewResponse = await editor.post(endpoint + '/preview-url', { data: {} });
     expect(previewResponse.ok()).toBeTruthy();
     const preview = (await previewResponse.json()).data.url as string;
-    expect(preview).toContain('/pages/ch14-unknowns');
+    expect(preview).toContain('/pages/ch30-unknowns');
     expect((await request.get(preview)).status()).toBe(403);
     const privatePreview = await editor.get(preview);
     expect(privatePreview.status()).toBe(200);

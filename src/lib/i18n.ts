@@ -23,8 +23,6 @@ const en = {
   language: 'Language',
   switchTo: 'Tiếng Việt',
   switchToLabel: 'Xem giao diện tiếng Việt',
-  newIn11: 'New in edition 1.1',
-  new: 'New',
   minRead: (n: number) => `${n} min read`,
   onThisPage: 'On this page',
   previous: 'Previous',
@@ -59,8 +57,6 @@ const en = {
   partsHeading: 'The report in five parts',
   briefsHeading: 'Briefs for each audience',
   appendicesHeading: 'Appendices',
-  appendicesEvidence: 'Evidence (A to T)',
-  appendicesFutures: 'Futures evidence (U to Z)',
   dataHeading: 'Open data',
   dataIntro:
     'Every table behind the report, with the column descriptions from the data dictionary. Filter, sort and download as CSV.',
@@ -101,13 +97,12 @@ const en = {
   glossaryFilter: 'Find a term in English or Vietnamese',
   allCategories: 'All categories',
   about: 'About this study',
-  cite: 'How to cite',
   editorSignIn: 'Editor sign in',
   notAdvice: 'Scoping research. Not investment, legal or engineering advice.',
   footerLine:
     'An evidence-tagged scoping study of what Vietnam could make, from what, under which rules, at what cost, and who could do it.',
   notFound: 'Page not found',
-  notFoundText: 'We could not find that page. It may have moved in edition 1.1.',
+  notFoundText: 'We could not find that page. It may have moved when the report was regrouped.',
   backHome: 'Back to the home page',
   print: 'Print',
   plays: {
@@ -168,8 +163,6 @@ const vi: Dict = {
   language: 'Ngôn ngữ',
   switchTo: 'English',
   switchToLabel: 'View the interface in English',
-  newIn11: 'Mới trong ấn bản 1.1',
-  new: 'Mới',
   minRead: (n: number) => `${n} phút đọc`,
   onThisPage: 'Trong trang này',
   previous: 'Trang trước',
@@ -204,8 +197,6 @@ const vi: Dict = {
   partsHeading: 'Báo cáo gồm năm phần',
   briefsHeading: 'Bản tóm lược cho từng nhóm độc giả',
   appendicesHeading: 'Phụ lục',
-  appendicesEvidence: 'Bằng chứng (A đến T)',
-  appendicesFutures: 'Bằng chứng về tương lai (U đến Z)',
   dataHeading: 'Dữ liệu mở',
   dataIntro:
     'Toàn bộ bảng số liệu của báo cáo, kèm mô tả cột từ từ điển dữ liệu. Có thể lọc, sắp xếp và tải về dạng CSV.',
@@ -246,13 +237,13 @@ const vi: Dict = {
   glossaryFilter: 'Tìm thuật ngữ tiếng Anh hoặc tiếng Việt',
   allCategories: 'Tất cả nhóm',
   about: 'Về nghiên cứu này',
-  cite: 'Cách trích dẫn',
   editorSignIn: 'Đăng nhập biên tập',
   notAdvice: 'Nghiên cứu xác định phạm vi. Không phải tư vấn đầu tư, pháp lý hay kỹ thuật.',
   footerLine:
     'Nghiên cứu xác định phạm vi có gắn nhãn bằng chứng: Việt Nam có thể sản xuất gì, từ nguyên liệu nào, theo quy định nào, với chi phí bao nhiêu và ai có thể làm.',
   notFound: 'Không tìm thấy trang',
-  notFoundText: 'Chúng tôi không tìm thấy trang này. Có thể trang đã được chuyển trong ấn bản 1.1.',
+  notFoundText:
+    'Chúng tôi không tìm thấy trang này. Có thể trang đã được chuyển khi báo cáo được sắp xếp lại.',
   backHome: 'Về trang chủ',
   print: 'In',
   plays: {
@@ -298,17 +289,21 @@ export function t(lang: Lang): Dict {
 const VI_LABELS: Record<string, string> = {
   Home: 'Trang chủ',
   Summary: 'Tóm tắt',
+  'Start here': 'Bắt đầu từ đây',
   Report: 'Báo cáo',
   'For you': 'Dành cho bạn',
   Appendices: 'Phụ lục',
   Data: 'Dữ liệu',
-  'I. The case': 'I. Luận cứ',
-  'II. The conditions': 'II. Các điều kiện',
-  'III. The opportunity': 'III. Cơ hội',
-  'IV. Looking ahead': 'IV. Nhìn về phía trước',
-  'V. Futures 2030 to 2050': 'V. Tương lai 2030 đến 2050',
-  'Evidence (A to T)': 'Bằng chứng (A đến T)',
-  'Futures evidence (U to Z)': 'Bằng chứng về tương lai (U đến Z)',
+  'I. Context': 'I. Bối cảnh',
+  'II. Supply: what Vietnam can make': 'II. Phía cung: Việt Nam có thể sản xuất gì',
+  'III. Demand: who would buy it': 'III. Phía cầu: ai sẽ mua',
+  'IV. Futures: 2035 and 2050': 'IV. Tương lai: 2035 và 2050',
+  'V. What to do': 'V. Nên làm gì',
+  'Method and record (M1 to M5)': 'Phương pháp và hồ sơ (M1 đến M5)',
+  'Context and supply evidence (S1 to S13)': 'Bằng chứng về bối cảnh và phía cung (S1 đến S13)',
+  'Demand evidence (D1 to D8)': 'Bằng chứng về phía cầu (D1 đến D8)',
+  'Futures evidence (F1 to F6)': 'Bằng chứng về tương lai (F1 đến F6)',
+  'Registers (R1 to R4)': 'Các sổ đăng ký (R1 đến R4)',
   investors: 'Nhà đầu tư',
   policy: 'Nhà hoạch định chính sách',
   startups: 'Startup và nhà sáng lập',
@@ -316,10 +311,12 @@ const VI_LABELS: Record<string, string> = {
   research: 'Trường đại học và viện nghiên cứu',
   international: 'Tổ chức quốc tế',
   'vietnamese-readers': 'Độc giả tiếng Việt',
+  newcomers: 'Người mới tìm hiểu',
 };
 
 const EN_AUDIENCE: Record<string, string> = {
   'vietnamese-readers': 'Vietnamese readers',
+  newcomers: 'New to alternative protein',
 };
 
 export function label(text: string, lang: Lang): string {

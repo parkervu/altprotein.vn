@@ -99,6 +99,7 @@ export function hLayout(o) {
   if (o.over) parts.push(o.over(ctx));
   y = bottom + (o.ticks ? (o.axisTitle ? 44 : 28) : 8);
   if (o.foot && o.foot.length) {
+    y += 8;
     for (const f of o.foot) {
       const lines = wrap(f, W - 8, 12);
       parts.push(textLines(0, y + 6, lines, { size: 12, fill: MUTED, lineH: 15 }));

@@ -15,6 +15,7 @@ import * as lines from './lines.mjs';
 import * as grids from './grids.mjs';
 import * as tl from './timelines.mjs';
 import * as html from './html.mjs';
+import * as dm from './demand.mjs';
 
 export { chartCss } from './html.mjs';
 
@@ -55,6 +56,28 @@ const RENDERERS = {
   'chart-play-robustness': grids.playRobustness,
   'chart-vision-backcast': tl.visionBackcast,
   'chart-robust-moves': grids.robustMoves,
+  // added with report v0.6
+  'chart-protein-price-ladder': dm.proteinPriceLadder,
+  'chart-animal-protein-ladder': dm.animalProteinLadder,
+  'chart-tofu-by-region': dm.tofuByRegion,
+  'chart-pbm-funnel': dm.pbmFunnel,
+  'chart-price-parity-choice': dm.priceParityChoice,
+  'chart-search-interest': dm.searchInterest,
+  'chart-protein-cost-serving': dm.proteinCostServing,
+  'chart-us-pbm-trend': dm.usPbmTrend,
+  'chart-institutional-meals': dm.institutionalMeals,
+  'chart-plant-protein-imports': dm.plantProteinImports,
+  'chart-ingredient-price-ladder': dm.ingredientPriceLadder,
+  'chart-tariff-edge': dm.tariffEdge,
+  'chart-forecast-vs-actual': dm.forecastVsActual,
+  'chart-demand-routes': dm.demandRoutes,
+  'chart-displacement-vs-salt': dm.displacementVsSalt,
+  'chart-demand-sensitivity': dm.demandSensitivity,
+  'chart-actor-coverage': dm.actorCoverage,
+  'chart-canteen-dish-mix': dm.canteenDishMix,
+  'chart-funder-units': dm.funderUnits,
+  'chart-protein-footprints': dm.proteinFootprints,
+  'chart-altprotein-investment-by-year': dm.altproteinInvestmentByYear,
 };
 
 function dataCtx(reportDir) {

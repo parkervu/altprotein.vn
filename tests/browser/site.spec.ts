@@ -11,8 +11,12 @@ const FRONT: Record<string, string> = {
   'front-cover': '/',
   'front-exec-summary': '/summary',
   'front-exec-summary-vi': '/tom-tat',
+  'front-two-minute': '/two-minutes',
   'front-at-a-glance': '/at-a-glance',
+  'front-prologue': '/prologue',
+  'front-prologue-vi': '/loi-mo-dau',
   'front-how-to-read': '/how-to-read',
+  'front-faq': '/faq',
 };
 const SECTION: Record<string, string> = {
   report: '/report',
@@ -47,18 +51,27 @@ test('routes, redirects, the Vietnamese interface and access rules', async ({ re
   const old = await request.get('/chapters/1-anything', { maxRedirects: 0 });
   expect(old.status()).toBe(301);
   expect(old.headers()['location']).toBe('/report');
-  const p = await request.get('/pages/ch11-plays', { maxRedirects: 0 });
-  expect(p.headers()['location']).toBe('/report/ch11-plays');
-  expect((await request.get('/report/ch11-plays?_preview=invalid')).status()).toBe(403);
-  const vi = await request.get('/vi/report/ch11-plays');
+  const p = await request.get('/pages/ch26-plays', { maxRedirects: 0 });
+  expect(p.headers()['location']).toBe('/report/ch26-plays');
+  // Pages that moved when the report was regrouped in v0.6.
+  const movedChapter = await request.get('/report/ch11-plays', { maxRedirects: 0 });
+  expect(movedChapter.status()).toBe(301);
+  expect(movedChapter.headers()['location']).toBe('/report/ch26-plays');
+  const movedAppendix = await request.get('/vi/appendices/app-t-sources', { maxRedirects: 0 });
+  expect(movedAppendix.headers()['location']).toBe('/vi/appendices/app-r4-sources');
+  expect((await request.get('/report/ch26-plays?_preview=invalid')).status()).toBe(403);
+  const vi = await request.get('/vi/report/ch26-plays');
   expect(vi.status()).toBe(200);
   const html = await vi.text();
   expect(html).toContain('<html lang="vi"');
   expect(html).toContain('Báo cáo này là bản dự thảo và có thể thay đổi.');
-  expect(await (await request.get('/')).text()).toContain(
-    'This report is a draft and subject to change.',
-  );
-  expect(html).toContain('href="/vi/report/ch12-policy-options"');
+  expect(html).toContain(site.draft_notice.vi);
+  const home = await (await request.get('/')).text();
+  expect(home).toContain('This report is a draft and subject to change.');
+  // The manifest's draft notice appears in the banner and the footer of every page.
+  expect(home.split(site.draft_notice.en).length - 1).toBeGreaterThanOrEqual(2);
+  expect(home).not.toContain('Suggested citation');
+  expect(html).toContain('href="/vi/report/ch27-policy-options"');
   for (const path of [
     '/report',
     '/briefs',
@@ -75,7 +88,7 @@ test('routes, redirects, the Vietnamese interface and access rules', async ({ re
 });
 
 test('plays can be re-ranked and opened', async ({ page }) => {
-  await page.goto('/report/ch11-plays');
+  await page.goto('/report/ch26-plays');
   const bars = page.locator('.plays-bars li');
   await expect(bars).toHaveCount(10);
   await expect(bars.first()).toContainText('T4');
@@ -90,7 +103,7 @@ test('plays can be re-ranked and opened', async ({ page }) => {
 });
 
 test('scenario explorer works with the keyboard', async ({ page }) => {
-  await page.goto('/report/ch18-scenarios-2050');
+  await page.goto('/report/ch23-scenarios-2050');
   const tabA = page.getByRole('tab', { name: /Regional workshop/ });
   await expect(tabA).toHaveAttribute('aria-selected', 'true');
   await tabA.focus();
@@ -123,7 +136,7 @@ test('data browser filters, sorts and search finds data', async ({ page }) => {
 
 test('theme toggle, mobile layout and print', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/report/ch08-regional');
+  await page.goto('/report/ch03-regional');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(
     true,
   );
