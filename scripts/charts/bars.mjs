@@ -40,7 +40,7 @@ const uniq = (arr) => [...new Set(arr)];
 const cap = (s) => String(s).charAt(0).toUpperCase() + String(s).slice(1);
 
 /** Horizontal stacked segments with 2px surface gaps; last segment gets the rounded data end. */
-function stackH(scale, x0, y, h, segs) {
+export function stackH(scale, x0, y, h, segs) {
   let cum = 0;
   const out = [];
   const visible = segs.filter((s) => s.v > 0);
@@ -530,17 +530,49 @@ export function costStackFungal(spec, D) {
 
 // ---------------------------------------------------------------------------
 export function sourcesByType(spec, D) {
-  const rows = D.csv(spec.data.file);
-  const waves = uniq(rows.map((r) => r.wave)).sort();
+  const isWave = (w) => /^wave\d+$/.test(w);
+  const cols = Object.keys(D.csv(spec.data.file)[0] || {});
+  const rows = D.csv(spec.data.file).map((r) => {
+    if (isWave(r.wave)) return r;
+    // A row with an unquoted comma shifts its later fields one column right; read them from there.
+    const at = (k, n) => r[cols[cols.indexOf(k) + n]];
+    for (let n = 1; n <= 3; n++)
+      if (isWave(at('wave', n) || ''))
+        return { ...r, wave: at('wave', n), source_type: at('source_type', n) };
+    return r;
+  });
+  const waveNo = (w) => num(String(w).replace(/\D/g, ''));
+  // Ten waves exceed the eight series colours: stack by the release bands named in the subtitle
+  // ("waves 1 and 2: v0.1; waves 3 to 5: v0.2; ..."), falling back to single waves.
+  const bands = [
+    ...String(spec.subtitle || '').matchAll(
+      /waves?\s+(\d+)(?:\s+(?:and|to)\s+(\d+))?:\s*(v[\d.]+)/g,
+    ),
+  ].map((m) => ({
+    lo: +m[1],
+    hi: +(m[2] || m[1]),
+    label: `${m[2] ? `Waves ${m[1]} ${/ to /.test(m[0]) ? 'to' : 'and'} ${m[2]}` : `Wave ${m[1]}`} (${m[3]})`,
+  }));
+  const bandOf = (w) => {
+    const n = waveNo(w);
+    const b = bands.find((x) => n >= x.lo && n <= x.hi);
+    return b ? b.label : `Wave ${n}`;
+  };
+  const waves = uniq(
+    uniq(rows.map((r) => r.wave))
+      .sort((a, b) => waveNo(a) - waveNo(b))
+      .map(bandOf),
+  ).slice(0, 8);
   const types = {};
   for (const r of rows) {
-    types[r.source_type] ??= Object.fromEntries(waves.map((w) => [w, 0]));
-    types[r.source_type][r.wave]++;
+    const t = r.source_type || 'unrecorded';
+    types[t] ??= Object.fromEntries(waves.map((w) => [w, 0]));
+    types[t][bandOf(r.wave)]++;
   }
   const agg = Object.entries(types)
     .map(([t, c]) => ({ type: t, counts: c, total: Object.values(c).reduce((a, b) => a + b, 0) }))
     .sort((a, b) => b.total - a.total || a.type.localeCompare(b.type));
-  const wl = (w) => `Wave ${w.replace(/\D/g, '')}`;
+  const wl = (w) => w;
   const max = Math.max(...agg.map((a) => a.total));
   const L = hLayout({
     legend: waves.map((w, i) => ({ label: wl(w), color: S(i + 1) })),

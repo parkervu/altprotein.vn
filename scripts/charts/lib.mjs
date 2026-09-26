@@ -217,6 +217,22 @@ export function vRangeBar(x, w, y0, y1, fill, extra = '') {
   return `<rect x="${r2(x)}" y="${r2(top)}" width="${r2(w)}" height="${r2(h)}" rx="${r2(r)}" style="fill:${fill}${extra}"/>`;
 }
 
+/** Outlined rectangle filled with 45-degree hatching (no <pattern>, so no ids). */
+export function hatchRect(x, y, w, h, col, step = 5) {
+  if (w < 0.5 || h < 0.5) return '';
+  let d = '';
+  for (let k = -h + step / 2; k < w; k += step) {
+    const t0 = Math.max(0, -k);
+    const t1 = Math.min(h, w - k);
+    if (t1 > t0) d += `M${r2(x + k + t0)},${r2(y + h - t0)}L${r2(x + k + t1)},${r2(y + h - t1)}`;
+  }
+  const i = 0.75;
+  return (
+    `<path d="${d}" style="fill:none;stroke:${col};stroke-width:1.25"/>` +
+    `<rect x="${r2(x + i)}" y="${r2(y + i)}" width="${r2(Math.max(w - 2 * i, 0))}" height="${r2(Math.max(h - 2 * i, 0))}" rx="2" style="fill:none;stroke:${col};stroke-width:1.5"/>`
+  );
+}
+
 /** Wrap a data mark for hover and focus. lines: first "Label: value unit", then extras. */
 export function mark(lines, inner, attrs = '') {
   const arr = (Array.isArray(lines) ? lines : [lines])
@@ -327,6 +343,9 @@ export function legend(items, x = 0, y = 0, maxW = W) {
         break;
       case 'outline':
         sym = `<rect x="${cx + 1}" y="${cy - 5}" width="10" height="10" rx="2" style="fill:none;stroke:${c};stroke-width:1.5"/>`;
+        break;
+      case 'hatch':
+        sym = hatchRect(cx, cy - 6, 12, 12, c, 4);
         break;
       default:
         sym = `<rect x="${cx}" y="${cy - 6}" width="12" height="12" rx="2" style="fill:${c}"/>`;
